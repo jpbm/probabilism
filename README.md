@@ -1,3 +1,3 @@
 # Probabilism
 
-Just some random calculations. 
+Random calculations for rust removal... or perhaps you're just looking for answers!
