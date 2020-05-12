@@ -1,6 +1,6 @@
 # Probabilism
 
-Random calculations for rust removal, or perhaps you're just looking for answers.
+A collection of *random* calculations for rust removal, or perhaps I was just looking for answers.
 
 ![](img/cover.png)
 
