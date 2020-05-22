@@ -4,6 +4,8 @@
 \usepackage[utf8]{inputenc}
 
 \usepackage{geometry}
+\usepackage{amssymb}
+
 \geometry{%
   textwidth  = 156mm ,
   textheight = 234mm ,
@@ -57,9 +59,10 @@
 
 \titlespacing*{\chapter}{0pt}{0pt}{3cm}
 \titlespacing*{\section}{0pt}{.75pc}{.5pc}
+
 \newpagestyle{main}{%
   \sethead[%
-    \ifx\chap@author\@empty
+    \ifx\chap@author\@emptys
       {\makebox[1.5pc][l]{\thepage}{\lsstyle\MakeUppercase\chaptertitle}}%
     \else
       {\makebox[1.5pc][l]{\thepage}{\lsstyle\MakeUppercase\chap@author}}%
@@ -87,6 +90,8 @@
 
 
 \begin{document}
+
+Far from complete and far from correct. These notes exist because I learn better when I express things in my own words. In some cases I might be assembling material for teaching purposes. Might delete later.
 
 \input{./chapters/ch1.tex}
 \input{./chapters/combinatorics.tex}
