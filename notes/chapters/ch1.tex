@@ -1,0 +1,54 @@
+% \chapauthor{J. P. Balthasar Mueller}
+\chapter{Linear Algebra}
+
+\begin{multicols}{2}[\subsubsection*{Contents of this chapter}]
+   \printcontents{}{1}{\setcounter{tocdepth}{2}}
+\end{multicols}
+
+\section{Spectral Theorem}
+
+\section{Singular Value Decomposition}
+
+\section{Generalized Eigenvectors}
+
+\section{Multilinear Maps}
+
+A multilinear map is a more general case of a linear map, which acts more than one vector in a way that is linear in each of its arguments.
+
+\begin{equation}	
+f: V_1 \times V_2 \times ... \times V_n \rightarrow W
+\end{equation}
+
+Where $V_1, V_2, ... , V_n$ and $W$ are vector spaces. An example would be the addition or subtraction of two or more vectors.
+
+\section{Multilinear Forms}
+Multilinear forms are multilinear maps that have a scalar output. An example is the dot product between two vectors, or summing over the elements of one or more vectors.
+
+\begin{equation}
+f: V_1 \times V_2 \times ... \times V_n \rightarrow K
+\end{equation}
+
+Where $V_1, V_2, ... , V_n$ and $K$ is a scalar field.
+
+
+\section{Taking Derivatives}
+
+\begin{equation}
+\begin{array}{l}
+\frac{d}{d\mathbf{x}} \left(u^Tx\right) = \left[\frac{d}{dx_1}\left(\sum_i u_i x_i\right),...,\frac{d}{dx_n}\left(\sum_i u_i x_i\right)\right] = u^T\\
+\\
+\frac{d}{d\mathbf{x}} \left(x^Tu\right) = \left[\frac{d}{dx_1}\left(\sum_i u_i x_i\right),...,\frac{d}{dx_n}\left(\sum_i u_i x_i\right)\right] = u^T\\
+\\
+\frac{d}{d\mathbf{x}} \left(x^Tx\right) = \left[\frac{d}{dx_1}\left(\sum_i x_i^2\right),...,\frac{d}{dx_n}\left(\sum_i x_i^2\right)\right] = 2x^T\\
+\\
+\frac{d}{d\mathbf{x}} \left(\mathbf{A}x\right) = \left[
+\begin{array}{ccc} 
+\underbrace{\frac{d}{dx_1}\left(\sum_i A_{1i} x_i\right)}_{A_{11}} &...& \underbrace{\frac{d}{dx_n}\left(\sum_i A_{1i} x_i\right)}_{A_1n}\\
+\vdots&\vdots&\vdots\\
+\underbrace{\frac{d}{dx_1}\left(\sum_i A_{ni} x_i\right)}_{A_{n1}} &...& \underbrace{\frac{d}{dx_n}\left(\sum_i A_{ni} x_i\right)}_{A_{nn}}\\
+\end{array}\right] = \mathbf{A}\\
+\end{array}
+\end{equation}
+
+
+\chapauthor{}

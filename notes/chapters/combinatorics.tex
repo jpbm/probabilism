@@ -1,0 +1,49 @@
+% \chapauthor{J. P. Balthasar Mueller}
+\chapter{Combinatorics}
+
+\begin{multicols}{2}[\subsubsection*{Contents of this chapter}]
+   \printcontents{}{1}{\setcounter{tocdepth}{2}}
+\end{multicols}
+
+
+\section{The Twentyfold Way}
+
+The twentyfold is a taxonomy of distribution problems developed by Kenneth Bogard in his book \textit{Combinatorics through Guided Discovery}. It divides up the way in which $k$ objects may be assigned to $n$ individuals, subject to whether the objects are distinct or identical, and subject to conditions on how the objects are received.
+
+The weakness (in my opinion) is that the language of "objects" and "recipients" is unclear because in practice it's not obvious which is which: if there are $k$ students and $n$ teachers, do the teachers receive students, or do the students receive a teacher? 
+
+The best way I can think of to resolve this is to say that an object can have only one recipient, but a recipient might receive more than one object. A more formal path is to think of the act of creating combinations in terms of functions. The elements of the domain are the objects. The elements of the range are the recipients. A function can be many-to-one, but it should not be one-to-many. 
+
+\subparagraph{Favorite Teachers} At a school with $k$ students and $n$ teachers, the students all have a favorite teacher. (They might all like the same one.). How many ways are there for the $k$ students to pick a favorite? 
+
+\textit{Objects:} $k$ students. \textit{Recipients:} $n$ teachers. Many students might have one favorite teacher. There are $n^k$ combinations. 
+
+\subparagraph{Picking Team Mates} Out of a choice of $n$ athletes, a coach must assemble a team of $k$. How many ways are there to form a team? 
+
+\textit{Objects:} n athletes. \textit{Recipients:} team, not on the team. Many athletes can be assigned to one outcome of being on the team or not being on the team. There are ${n \choose k}$ combinations for the team, which is the same number as the ${n \choose n-k}$ selections for the bench. 
+
+\subsection{Distinct Objects, Without Conditions}
+
+\subsubsection{Distinct Recipients}
+The $k$ objects are assigned to $n$ recipients with no conditions as to the number of objects each recipient receives. This is the same as assigning the elements of a $k$-tuple from a selection of $n$ with replacement.
+
+\begin{equation}
+\begin{array}{l}
+S = \{ (i_1,i_2,...,i_k) | i_j \in A, |A| = n \}\\
+\\
+|S| = n^k
+\end{array}
+\end{equation}
+
+\subparagraph{Binary Strings of Length $k$} The $k$ distinct positions of a binary string $(i_1,i_2,...,i_k)$ of length $k$ are assigned to an element of the set $A\in[0,1]$. The number of possible binary strings of length $k$ is $2^k$.
+
+\subparagraph{Subsets of a $k$-Element Set} The subsets of a set of $k$ distinct elements are formed by assigning each of its $k$ distinguishable elements to one of the two labels $A\in [\mathrm{included},\mathrm{excluded}]$. The number of possible subsets, including the empty subset and the full set, is $2^k$.
+
+\subsubsection{Indistinct Recipients}
+
+\subsection{Distinct Objects, At Most One is Assigned}
+\subsubsection{Distinct Recipients}
+Exacly one of $k$ distinct objects are assigned to a single one of $n$ recipients. 
+
+\chapauthor{}
+

@@ -1,0 +1,101 @@
+\documentclass[openright,twoside,10pt]{book}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+\usepackage{geometry}
+\geometry{%
+  textwidth  = 156mm ,
+  textheight = 234mm ,
+  a4paper            ,
+  includehead        ,
+  hcentering         ,
+  vcentering
+}
+
+\usepackage[osf,proportional,space]{erewhon}
+\usepackage[rigidchapters,pagestyles]{titlesec}
+\usepackage{titletoc,lipsum,multicol}
+	
+\makeatletter
+\newcommand\chap@author{}
+\newcommand\chapauthor[1]{%
+  \cleardoublepage
+  \gdef\chap@author{#1}%
+}
+\def\chap@author{}
+
+\titleformat{\chapter}[hang]
+  {\LARGE\bfseries\filright}
+  {\thechapter}
+  {0pt}
+  {%
+    \ifx\chap@author\@empty\else
+      \setlength{\unitlength}{1mm}%
+      \begin{picture}(0,0)
+        \put(0,-17){\makebox(0,0)[l]{\Large\mdseries\itshape \chap@author}}
+      \end{picture}%
+    \fi
+  }
+  [%
+    \thispagestyle{empty}%s
+    \ifx\chap@author\@empty\else
+      \addtocontents{toc}{%
+        \vspace{-5pt}%
+        \protect\contentsline{chapter}{\mdseries\itshape \chap@author}{}{}%
+      }%
+      \addtocontents{toc}{\addvspace{5pt}}%
+    \fi	
+    \startcontents
+  ]
+
+\titleformat{\section}[hang]
+  {\Large\bfseries\filright}
+  {\thesection}
+  {0pt}	
+  {}
+
+\titlespacing*{\chapter}{0pt}{0pt}{3cm}
+\titlespacing*{\section}{0pt}{.75pc}{.5pc}
+\newpagestyle{main}{%
+  \sethead[%
+    \ifx\chap@author\@empty
+      {\makebox[1.5pc][l]{\thepage}{\lsstyle\MakeUppercase\chaptertitle}}%
+    \else
+      {\makebox[1.5pc][l]{\thepage}{\lsstyle\MakeUppercase\chap@author}}%
+    \fi]
+    [][]
+    {}{}{}
+}
+
+\renewcommand\@makefntext[1]{%
+  \parindent 1em%
+  \noindent
+  \hb@xt@1.8em{\hss\@makefnmark\hspace{0.5em}}#1}
+
+\let\footnoterule\relax
+
+\makeatother
+
+\usepackage[activate=true]{microtype}
+
+\pagestyle{main}
+
+\setcounter{secnumdepth}{-1}
+
+\raggedbottom
+
+
+\begin{document}
+
+\input{./chapters/ch1.tex}
+\input{./chapters/combinatorics.tex}
+\input{./chapters/ch2.tex}
+
+
+
+
+\tableofcontents
+
+\end{document}
+

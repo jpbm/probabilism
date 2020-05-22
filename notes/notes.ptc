@@ -1,0 +1,32 @@
+\contentsline {chapter}{Linear Algebra}{1}
+\ttl@starttoc {default@1}
+\contentsline {section}{Spectral Theorem}{1}
+\contentsline {section}{Singular Value Decomposition}{1}
+\contentsline {section}{Generalized Eigenvectors}{1}
+\contentsline {section}{Multilinear Maps}{1}
+\contentsline {section}{Multilinear Forms}{1}
+\contentsline {section}{Taking Derivatives}{2}
+\contentsline {chapter}{Combinatorics}{3}
+\ttl@stoptoc {default@1}
+\ttl@starttoc {default@2}
+\contentsline {section}{The Twentyfold Way}{3}
+\contentsline {subparagraph}{Favorite Teachers}{3}
+\contentsline {subparagraph}{Picking Team Mates}{3}
+\contentsline {subsection}{Distinct Objects, Without Conditions}{3}
+\contentsline {subsubsection}{Distinct Recipients}{3}
+\contentsline {subparagraph}{Binary Strings of Length $k$}{3}
+\contentsline {subparagraph}{Subsets of a $k$-Element Set}{4}
+\contentsline {subsubsection}{Indistinct Recipients}{4}
+\contentsline {subsection}{Distinct Objects, At Most One is Assigned}{4}
+\contentsline {subsubsection}{Distinct Recipients}{4}
+\contentsline {chapter}{Linear Regression}{5}
+\ttl@stoptoc {default@2}
+\ttl@starttoc {default@3}
+\contentsline {section}{Ordinary Linear Regression}{5}
+\contentsline {section}{$R^2$ Value}{5}
+\contentsline {section}{Regression Diagnostics}{5}
+\contentsline {section}{t-Statistics}{5}
+\contentsline {section}{AIC and BIC}{5}
+\ttl@stoptoc {default@3}
+\ttl@starttoc {default@4}
+\contentsfinish 
