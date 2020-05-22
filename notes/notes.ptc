@@ -11,23 +11,41 @@
 \ttl@stoptoc {default@1}
 \ttl@starttoc {default@2}
 \contentsline {section}{The Twentyfold Way}{5}
-\contentsline {subparagraph}{Favorite Teachers}{5}
-\contentsline {subparagraph}{Assembling A Team}{5}
+\contentsline {subparagraph}{Favorite Teachers}{6}
+\contentsline {subparagraph}{Assembling a Team}{6}
 \contentsline {subsection}{Distinct Objects, Without Conditions}{6}
 \contentsline {subsubsection}{Distinct Recipients}{6}
+\contentsline {subparagraph}{Functions}{6}
 \contentsline {subparagraph}{Binary Strings of Length $k$}{6}
 \contentsline {subparagraph}{Subsets of a $k$-Element Set}{6}
 \contentsline {subsubsection}{Indistinct Recipients}{6}
-\contentsline {subsection}{Distinct Objects, At Most One is Assigned}{6}
+\contentsline {subparagraph}{Everyone Gets A Car}{6}
+\contentsline {subsection}{Distinct Objects, Every Recipient Receives At Most One}{6}
 \contentsline {subsubsection}{Distinct Recipients}{6}
-\contentsline {chapter}{Linear Regression}{7}
+\contentsline {subparagraph}{One-to-One Functions}{7}
+\contentsline {subparagraph}{k-element Permutations of $n$ elements}{7}
+\contentsline {subparagraph}{Books on a Shelf}{7}
+\contentsline {subsubsection}{Indistinct Recipients}{7}
+\contentsline {subparagraph}{Distributing Candy}{7}
+\contentsline {subsection}{Distinct Objects, Every Recipient Receives at Least One}{7}
+\contentsline {subsubsection}{Distinct Recipients}{7}
+\contentsline {subparagraph}{Onto Functions}{7}
+\contentsline {subsubsection}{Indistinct Recipients}{7}
+\contentsline {subsection}{Distinct Objects, Every Recipient Receives Exactly One}{7}
+\contentsline {subsubsection}{Distinct Recipients}{7}
+\contentsline {subparagraph}{Bijective Functions}{7}
+\contentsline {subparagraph}{Permutations}{8}
+\contentsline {subparagraph}{Unique Identifiers}{8}
+\contentsline {subsubsection}{Indistinct Recipients}{8}
+\contentsline {subparagraph}{Distribute without Leftovers}{9}
+\contentsline {chapter}{Linear Regression}{11}
 \ttl@stoptoc {default@2}
 \ttl@starttoc {default@3}
-\contentsline {section}{Ordinary Linear Regression}{7}
-\contentsline {section}{$R^2$ Value}{7}
-\contentsline {section}{Regression Diagnostics}{7}
-\contentsline {section}{t-Statistics}{7}
-\contentsline {section}{AIC and BIC}{7}
+\contentsline {section}{Ordinary Linear Regression}{11}
+\contentsline {section}{$R^2$ Value}{11}
+\contentsline {section}{Regression Diagnostics}{11}
+\contentsline {section}{t-Statistics}{11}
+\contentsline {section}{AIC and BIC}{11}
 \ttl@stoptoc {default@3}
 \ttl@starttoc {default@4}
 \contentsfinish 

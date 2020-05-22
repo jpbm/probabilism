@@ -16,40 +16,124 @@ The twentyfold way is a taxonomy of distribution problems developed by Kenneth B
 \end{quote}
 
 
-The weakness (in my opinion) is that the language of "objects" and "recipients" is unclear because in practice it's not obvious which is which: if there are $k$ students and $n$ teachers, do the teachers receive students, or do the students receive a teacher? 
+What I like about this approach is that the challenge with most of the basic combinatorics problems is to figure out the right way of counting. For this reason, the idea of having a unified handbook-like taxonomy is very appealing. The weakness (in my opinion) is that the language of "objects" and "recipients" is unclear because in practice it's not obvious which is which: if there are $k$ students and $n$ teachers, do the teachers receive students, or do the students receive a teacher? 
 
-The best way I can think of to resolve this is to say that an object can have only one recipient, but a recipient might receive more than one object. A more formal path is to think of the act of creating combinations in terms of functions. The elements of the domain are the objects. The elements of the range are the recipients. A function can be many-to-one, but it should not be one-to-many. 
+A way to resolve this is to say that an object can have only one recipient, but that a recipient might receive more than one object. A more formal path is to think of the act of creating combinations in terms of functions. 
 
-\subparagraph{Favorite Teachers} At a school with $k$ students and $n$ teachers, the students all have a favorite teacher. (They might all like the same one.). How many ways are there for the $k$ students to pick a favorite? 
+\begin{itemize}
+\item The elements of the domain are the objects. 
+\item The elements of the range are the recipients. 
+\item A function can be many-to-one, but it should not be one-to-many. 
+\end{itemize}
+
+\subparagraph{Favorite Teachers} At a school with $k$ students and $n$ teachers, the students all have a favorite teacher. (They might all like the same one.). How many ways are there for all of the $k$ students to pick a favorite? 
 
 \textit{Objects:} $k$ students. \textit{Recipients:} $n$ teachers. Many students might have one favorite teacher. There are $n^k$ combinations. 
 
-\subparagraph{Assembling A Team} Out of a choice of $n$ athletes, a coach must assemble a team of $k$. How many ways are there to form a team? 
+\subparagraph{Assembling a Team} Out of a choice of $n$ athletes, a coach must assemble a team of $k$. How many ways are there to form a team? 
 
 \textit{Objects:} n athletes. \textit{Recipients:} team, not on the team. Many athletes can be assigned to one outcome of being on the team or not being on the team. There are ${n \choose k}$ combinations for the team, which is the same number as the ${n \choose n-k}$ selections for the bench. 
 
 \subsection{Distinct Objects, Without Conditions}
 
 \subsubsection{Distinct Recipients}
-The $k$ objects are assigned to $n$ recipients with no conditions as to the number of objects each recipient receives. This is the same as assigning the elements of a $k$-tuple from a selection of $n$ with replacement.
+The $k$ objects are assigned to $n$ recipients with no conditions as to the number of objects each recipient receives. This is the same as assigning the elements of a $k$-tuple from a selection of $n$ \underline{with} replacement.
 
 \begin{equation}	
 \begin{array}{l}
-S = \{ (i_1,i_2,...,i_k) | i_j \in A, |A| = n \}\\
+S = \{ (a_1,a_2,...,a_k) | a_i \in A, |A| = n \}\\
 \\
 |S| = n^k
 \end{array}
 \end{equation}
+
+\subparagraph{Functions} All possible functions $f:x \rightarrow y$ with $\{x | x\in A, |A| = k \}$ and $\{y | y\in B, |B| = n\}$.
 
 \subparagraph{Binary Strings of Length $k$} The $k$ distinct positions of a binary string $(i_1,i_2,...,i_k)$ of length $k$ are assigned to an element of the set $A\in[0,1]$. The number of possible binary strings of length $k$ is $2^k$.
 
 \subparagraph{Subsets of a $k$-Element Set} The subsets of a set of $k$ distinct elements are formed by assigning each of its $k$ distinguishable elements to one of the two labels $A\in [\mathrm{included},\mathrm{excluded}]$. The number of possible subsets, including the empty subset and the full set, is $2^k$.
 
 \subsubsection{Indistinct Recipients}
+The $k$ objects are assigned to a recipient that is not distinct. This is the same as assigning the elements of a $k$-tuple to the same value \underline{with} replacement. This case is just like the case for distinct recipients with $n=1$.
+\begin{equation}	
+\begin{array}{l}
+S = \{ (a_1,a_2,...,a_k) | a_i = a_j\}\\
+\\
+|S| = 1^k
+\end{array}
+\end{equation}
 
-\subsection{Distinct Objects, At Most One is Assigned}
+\subparagraph{Everyone Gets A Car} How many ways are there to give a car to everyone? One. Everyone gets a car.
+
+
+\subsection{Distinct Objects, Every Recipient Receives At Most One}
 \subsubsection{Distinct Recipients}
-Exacly one of $k$ distinct objects are assigned to a single one of $n$ recipients. 
+At most one of $k$ distinct objects are assigned to one of $n$ distinct recipients. This is the same as assigning the elements of a $k$-tuple from a selection of $n$ \underline{without} replacement, so that first there are $n$ choices, then $n-1$ choices, $n-2$, etc...
+
+\begin{equation}	
+\begin{array}{l}
+S = \{ (a_1,a_2,...,a_k) | a_i \in A, |A| = n, a_i\neq a_j\}\\
+\\
+|S| = \frac{n!}{(n-k)!}\ \ \mathrm{if\ }k\leq n,\ 0\ \mathrm{otherwise.}
+\end{array}
+\end{equation}
+
+\subparagraph{One-to-One Functions} All possible functions $f:x \rightarrow y$ with $\{x | x\in A, |A| = k \}$ and $\{y | y\in B, |B| = n\}$ subject to the constraint that $f(a) = f(b)$ implies $a=b$. That is, the functions are one-to-one, or injective.
+
+\subparagraph{k-element Permutations of $n$ elements}  Each of the $k$ positions in a $k$-element permutation are distinct objects. These are each assigned to one of $n$ possible values, where each value can only show up once. 
+
+\subparagraph{Books on a Shelf} How many ways are there to order $k$ books on a library shelf when there are $n$ different books available. 
+
+\subsubsection{Indistinct Recipients}
+At most one of $k$ distinct objects are assigned to one of $n$ indistinct recipients. This is the same as assigning the elements of a $k$-tuple from a selection of $n$ \underline{without} replacement. Except ,since the recipients are all indistinct, there is only one type of choice of recipient for each object. Either each object finds a recipient if $k\leq n$, or it is impossible to distribute at most one object to each recipient because $n < k$.
+
+\begin{equation}	s
+\begin{array}{l}
+S = \{ (a_1,a_2,...,a_k) | a_i \in A, |A| = n, a_i=a_j\}\\
+\\
+|S| = 1\ \ \mathrm{if\ }k\leq n,\ 0\ \mathrm{otherwise.}
+\end{array}
+\end{equation}
+
+\subparagraph{Distributing Candy} There are $n$ pieces of identical candy and $k$ kids. How many ways are there to give each kid a piece of candy? If there is enough candy, the answer is one. Everyone gets candy. If there is not enough candy then the answer is zero. There is no way to give everyone candy if there's not enough candy.
+
+\subsection{Distinct Objects, Every Recipient Receives at Least One}
+
+\subsubsection{Distinct Recipients}
+
+\subparagraph{Onto Functions} All possible functions $f:x \rightarrow y$ with $\{x | x\in A, |A| = k \}$ and $\{y | y\in B, |B| = n\}$ subject to the constraint that there is an element $x$ in the domain so that $f(x)=y$ for each element $y$ of the codomain. That is the functions are onto, or surjective.
+\subsubsection{Indistinct Recipients}
+
+\subsection{Distinct Objects, Every Recipient Receives Exactly One}
+
+\subsubsection{Distinct Recipients}
+One of $k$ distinct objects are assigned to each of $n$ distinct recipients. This is the same as assigning the elements of a $k$-tuple from a selection of $n$ \underline{without} replacement and with the requirement that all of the $n$ are selected.
+
+\begin{equation}	
+\begin{array}{l}
+S = \{ (a_1,a_2,...,a_k) | a_i \in A, |A| = k = n, a_i\neq a_j\}\\
+\\
+|S| = n! = k!\ \ \mathrm{if\ }k=n,\ 0\ \mathrm{otherwise.}
+\end{array}
+\end{equation}
+
+\subparagraph{Bijective Functions} All possible functions $f:x \rightarrow y$ with $\{x | x\in A, |A| = k \}$ and $\{y | y\in B, |B| = n\}$ subject to the constraints that $f(a) = f(b)$ implies $a=b$ and that there is an element $x$ in the domain so that $f(x)=y$ for each element $y$ of the codomain. That is, the functions are one-to-one and onto, of bijective.
+
+\subparagraph{Permutations} Since each of the $k$ objects is given to a different one of the $n$ recipients, there must be as many recipients as there are objects and $k=n$. The number of ways of assigning $k$ objects to $n$ recipients is $k!=n!$.
+
+\subparagraph{Unique Identifiers} Each of $k$ entries in a database is given one of $n=k$ unique identifiers, so that each identifier leads to an entry and each entry has an identifier. 
+
+\subsubsection{Indistinct Recipients}
+
+\begin{equation}	
+\begin{array}{l}
+S = \{ (a_1,a_2,...,a_k) | a_i \in A, |A| = k, a_i=a_j\}\\
+\\
+|S| = 1\ \ \mathrm{if\ }k = n,\ 0\ \mathrm{otherwise.}
+\end{array}
+\end{equation}
 
 \chapauthor{}
+
+\subparagraph{Distribute without Leftovers} $n$ children are supposed to be given exactly one of $k$ pieces of candy. How many ways are there to distribute candy so that every child receives one piece of candy and in the end there is no candy left over? 
 
