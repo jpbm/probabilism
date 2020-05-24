@@ -101,8 +101,22 @@ S = \{ (a_1,a_2,...,a_k) | a_i \in A, |A| = n, a_i=a_j\}\\
 
 \subsubsection{Distinct Recipients}
 
+\begin{equation}
+|A| = n!S(k,n) =n! \left\{ \begin{array}{c} k \\n \end{array}\right\} = n! \sum_{j=0}^k (-1)^{k-j} {k \choose j }j^n
+\end{equation}
+
+Where $S(k,n)$	 denotes the Stirling function of the second kind.
+
 \subparagraph{Onto Functions} All possible functions $f:x \rightarrow y$ with $\{x | x\in A, |A| = k \}$ and $\{y | y\in B, |B| = n\}$ subject to the constraint that there is an element $x$ in the domain so that $f(x)=y$ for each element $y$ of the codomain. That is the functions are onto, or surjective.
+
+
 \subsubsection{Indistinct Recipients}
+The number of ways to divide $k$ distinct objects into $n$ non-empty subets is given by the Stirling number of the second kind:
+
+\begin{equation}
+|A| = S(k,n) = \left\{ \begin{array}{c} k \\n \end{array} \right\} = \sum_{j=0}^k (-1)^{k-j} {k \choose j }j^n
+\end{equation}
+
 
 \subsection{Distinct Objects, Every Recipient Receives Exactly One}
 
@@ -139,7 +153,7 @@ S = \{ (a_1,a_2,...,a_k) | a_i \in A, |A| = k, a_i=a_j\}\\
  
 
 
-\subsection{Distinct Objects, Distributed Ordered Groups}
+\subsection{Distinct Objects, Distributed in Ordered Groups}
 
 \subsubsection{Distinct Recipients}
 $k$ objects are distributed to $n$ different recipients with an internal ordering, so that each recipient receives an ordered list. This is the same as creating a list of $n$ sequences that are sampled from $k$ \underline{without replacement}. 
@@ -148,7 +162,7 @@ $k$ objects are distributed to $n$ different recipients with an internal orderin
 \begin{array}{l}
 S = \{ (\mathbf{a}_{\{i_1\}}  = ( a_{i_{1,1}},a_{i_{1,1}},...,a_{i_{1,l}} ),\mathbf{a}_{\{i_2\}},...,\mathbf{a}_{\{i_n\}}) | \sum^n_j |\mathbf{a}_{i_j}| = k, a_{i_{j,i}} \in A, |A| = n \} \\
 \\
-|S| = \frac{(k + n - 1)!}{(n-1)!} = ( k+n-1)^{\underline{k}}
+|S| = \frac{(k + n - 1)!}{(n-1)!} = ( k+n-1)^{\underline{k}} = k! {k+n-1 \choose k}
 \end{array}
 \end{equation}
 
@@ -162,7 +176,7 @@ S = \{ (\mathbf{a}_{\{i_1\}}  = ( a_{i_{1,1}},a_{i_{1,1}},...,a_{i_{1,l}} ),\mat
 $k$ objects are broken up into $n$ 
 
 \begin{equation}
-\sum_{i=1}^n L(k,i) 
+|S| = \sum_{i=1}^n L(k,i) 
 \end{equation}
 
 where $L(k,n)$ are the Lah numbers, which describe "How many ways can $k$ objects be distributed to $n$ recipients if order matters and each recipient receives at least 1". They are given by:
@@ -172,6 +186,124 @@ L(k,n)= {k \choose n} (k-1)^{\underline{k-n}} = \frac{k!}{n!}{ k-1 \choose n-1 }
 \end{equation}
 
 The sum considers the case where all $k$ objects are given to $i\leq n$ recipients, with the remaining recipients receiving none. The expression is more complicated than simply dividing the case for indistinct recipients by $n!$, because more than one of the recipients might receive the same number of objects, in which case i.e. the distribution $[(0),(0),(1,2)]$ would be counted twice.
+
+\subparagraph{Broken Permutations $\leq n$ Parts} The permutations of $k$ distinct elements are ordered sequences of length $k$. If the sequence is cut up into \underline{up to} $n$ different parts of non-zero length, then what results are \textit{broken permutations}.
+
+\subparagraph{Books into Boxes} $k$ different books are put into $n$ identical boxes. How many ways are there to pack the boxes if you keep track of the order in which the books in each box are stacked? 
+
+
+% Distinct Objects, Distributed in Ordered Groups of At Least One
+\subsection{Distinct Objects, Distributed in Ordered Groups of At Least One}
+
+\subsubsection{Distinct Recipients}
+
+\begin{equation}
+|S| = \frac{k!}{(k-n)!}\frac{(k-1)!}{(n-1)!} = k^{\underline{n}} (k-1)^{\underline{k-n}}
+\end{equation}
+
+\subparagraph{Ordered Onto Functions} All functions $f: x \rightarrow y$ with $\{x | x\in A, |A| = k \}$ and $\{y | y\in B, |B| = n\}$ that assign ordered sequences of elements in $x$ to elements of $y$, where every element $y\in B$ has an assignment of at least one element.
+
+\subsubsection{Indistinct Recipients}
+$k$ elements are divided into $n$ ordered sequences of minimum length 1.
+
+\begin{equation}
+L(k,n)= {k \choose n} (k-1)^{\underline{k-n}} = \frac{k!}{n!}{ k-1 \choose n-1 }
+\end{equation}
+	
+	
+\subparagraph{Broken Permutations $n$ parts} The permutations of $k$ distinct elements are ordered sequences of length $k$. If the sequence is cut up into up to $n$ different parts, then what results are \textit{broken permutations}.
+
+\subparagraph{Books into Boxes} $k$ different books are put into $n$ identical boxes, so that there is at least one book in each box. How many ways are there to pack the boxes if you keep track of the order in which the books in each box are stacked? 
+
+
+% Identical Objects
+\subsection{Identical Objects}
+
+\subsubsection{Distinct Recipients}
+
+\begin{equation}
+|S| = {k+n-1 \choose k}
+\end{equation}
+
+\subparagraph{Multisets} Multisets are sets in which identical elements might show up several times. For example $\{a,a,b,b,b\}$. They can also be described in terms of the multiplicity of their elements. For example $[a:2, b:3, c:0]$. How many multisets can be formed with $k$ different elements of $n$ different classes?
+
+\subparagraph{Integer Sums} How many different configurations of the $n$ integers $\{ x_i\}_n$ satisfy $x_1 + x_2 + ... + x_n = k$?
+
+\subparagraph{Bosons in Degenerate States} In how many ways might $k$ Bosons populate $n$ degenerate states?
+
+
+\subsubsection{Indistinct Recipients}
+
+\begin{equation}
+|S| = \sum_{i=1}^n P(k,i)
+\end{equation}
+
+\subparagraph{Number Partitions}
+
+\subparagraph{Unlabeled Multiplicities of Multisets} For multisets of $k$ elements with $n$ different classes, what is the number of possible multiplicities? For example, a multiset of $k=3$ elements from $n=2$ classes could have multiplicities $[a:3,b:0], [a:2,b:1],[a:1,b:2],[a:0,b:3]$. If we do not care about the labels $a,b$, then the ways that the the $k$ elements migth be distributed are $[3,0]$ and $[2,1]$.
+
+\subparagraph{Boxes of Marbles} $k$ marbles are randomly put into $n$ boxes. How many ways are there for the weight to be distributed among the boxes?
+
+
+
+% Identical Objects, Each gets at most one
+\subsection{Identical Objects, Each Receives At Most One}
+
+\subsubsection{Distinct Recipients}
+$k$ identical objects are distributed across $n$ recipients so that each recipient recieves at most one. That amounts to choosing $k$ out of the $n$ recipients who will receive an object.
+
+\begin{equation}
+|S| = { n \choose k}
+\end{equation}
+
+
+\subparagraph{Subsets} $k$ element subsets of a set of size $n$.
+
+\subparagraph{Binary Labels} The problem can also be thought of as assigning a binary label to $n$ elements, where there are $k$ times $1$ and $n-k$ times 0.
+
+\subsubsection{Indistinct Recipients}
+
+\begin{equation}
+|S| = 1\ \ \mathrm{if\ }k \leq n,\ 0\ \mathrm{otherwise}
+\end{equation}  
+
+\subparagraph{Boxes} How many ways are there to put $k$ marbles in $n$ boxes, if each box is only big enough for one marble. One, if there are enough boxes, or zero, if there aren't enough boxes.
+
+
+% Identical Everyone Gets At Least one
+\subsection{Identical Objects, Each Receives At Least One}
+
+\subsubsection{Distinct Recipients}
+This problem is the same as giving each of $n$ recipients one of $k$ objects, and then distributing the remaining $k-n$ objects arbitrarily.  
+
+\begin{equation}
+|S| = {k+n-1-k \choose k-n}= {n-1 \choose k-1}
+\end{equation}
+
+\subparagraph{Compositions $n$ Parts} How many ways are there to assign $k$ identical objects to $n$ labeled sets of at least one object?
+
+\subsubsection{Indistinct Recipients}
+
+\begin{equation}
+|S| = P(k,n)
+\end{equation}
+
+\subparagraph{Partitions in $n$ Parts} How many ways are there to make $n$ piles from $k$ objects.
+
+% Identical Each Gets Exactly one
+\subsection{Identical Objects, Each Receives Exactly One}
+
+\subsubsection{Distinct Recipients}
+
+\begin{equation}
+|S| = 1\ \ \mathrm{if\ }k = n,\ 0\ \mathrm{otherwise}
+\end{equation}  
+
+\subsubsection{Indistinct Recipients}
+
+\begin{equation}
+|S| = 1\ \ \mathrm{if\ }k = n,\ 0\ \mathrm{otherwise}
+\end{equation}  
 
 \chapauthor{}
 
