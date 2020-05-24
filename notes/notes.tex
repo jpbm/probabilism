@@ -4,8 +4,8 @@
 \usepackage[utf8]{inputenc}
 
 \usepackage{geometry}
-\usepackage{amssymb}
 \usepackage{amsmath}
+\usepackage{amssymb}
 
 \geometry{%
   textwidth  = 156mm ,
@@ -31,7 +31,7 @@
 \titleformat{\chapter}[hang]
   {\LARGE\bfseries\filright}
   {\thechapter}
-  {0pt}
+  {7pt} % {0pt}
   {%
     \ifx\chap@author\@empty\else
       \setlength{\unitlength}{1mm}%
@@ -55,11 +55,15 @@
 \titleformat{\section}[hang]
   {\Large\bfseries\filright}
   {\thesection}
-  {0pt}	
+  {7pt} %{0pt} % section title distance between numbering and Title	
   {}
 
-\titlespacing*{\chapter}{0pt}{0pt}{3cm}
+%\titlespacing*{\chapter}{0pt}{0pt}{3cm}
+%\titlespacing*{\section}{0pt}{.75pc}{.5pc}
+
+\titlespacing*{\chapter}{0pt}{0pt}{3cm} % title positions
 \titlespacing*{\section}{0pt}{.75pc}{.5pc}
+\titlespacing*{\subsection}{0pt}{2pc}{0.5pc}
 
 \newpagestyle{main}{%
   \sethead[%
@@ -85,7 +89,8 @@
 
 \pagestyle{main}
 
-\setcounter{secnumdepth}{-1}
+%\setcounter{secnumdepth}{-1}
+\setcounter{secnumdepth}{3}
 
 \raggedbottom
 

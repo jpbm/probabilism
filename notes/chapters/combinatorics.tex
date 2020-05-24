@@ -12,7 +12,7 @@ The twentyfold way is a taxonomy of distribution problems developed by Kenneth B
 
 
 \begin{quote}
-\textit{When we are passing out objects to recipients, we may think of the objects as being either identical or distinct. We may also think of the recipients as being either identical (as in the case of putting fruit into plastic bags in the grocery store) or distinct (as in the case of passing fruit out to children). We may restrict the distributions to those that give at least one object to each recipient, or those that give exactly one object to each recipient, or those that give at most one object to each recipient, or we may have no such restrictions. If the objects are distinct, it may be that the order in which the objects are received is relevant (think about putting books onto the shelves in a bookcase) or that the order in which the objects are received is irrelevant (think about dropping a handful of candy into a child?s trick or treat bag). If we ignore the possibility that the order in which objects are received matters, we have created $2\times2\times4 = 16$ distribution problems. In the cases where a recipient can receive more than one distinct object, we also have four more problems when the order objects are received matters. Thus we have 20 possible distribution problems.} - Bogart, "Combinatorics Though Guided Discovery", Chapter 3.
+\textit{When we are passing out objects to recipients, we may think of the objects as being either identical or distinct. We may also think of the recipients as being either identical (as in the case of putting fruit into plastic bags in the grocery store) or distinct (as in the case of passing fruit out to children). We may restrict the distributions to those that give at least one object to each recipient, or those that give exactly one object to each recipient, or those that give at most one object to each recipient, or we may have no such restrictions. If the objects are distinct, it may be that the order in which the objects are received is relevant (think about putting books onto the shelves in a bookcase) or that the order in which the objects are received is irrelevant (think about dropping a handful of candy into a child?s trick or treat bag). If we ignore the possibility that the order in which objects are received matters, we have created $2\times2\times4 = 16$ distribution problems. In the cases where a recipient can receive more than one distinct object, we also have four more problems when the order objects are received matters. Thus we have 20 possible distribution problems.} - Bogart, \textit{Combinatorics Though Guided Discovery}, Chapter 3.
 \end{quote}
 
 
@@ -74,7 +74,7 @@ At most one of $k$ distinct objects are assigned to one of $n$ distinct recipien
 \begin{array}{l}
 S = \{ (a_1,a_2,...,a_k) | a_i \in A, |A| = n, a_i\neq a_j\}\\
 \\
-|S| = \frac{n!}{(n-k)!}\ \ \mathrm{if\ }k\leq n,\ 0\ \mathrm{otherwise.}
+|S| = \frac{n!}{(n-k)!} = n^{\underline{k}}\ \ \mathrm{if\ }k\leq n,\ 0\ \mathrm{otherwise.}
 \end{array}
 \end{equation}
 
@@ -87,7 +87,7 @@ S = \{ (a_1,a_2,...,a_k) | a_i \in A, |A| = n, a_i\neq a_j\}\\
 \subsubsection{Indistinct Recipients}
 At most one of $k$ distinct objects are assigned to one of $n$ indistinct recipients. This is the same as assigning the elements of a $k$-tuple from a selection of $n$ \underline{without} replacement. Except ,since the recipients are all indistinct, there is only one type of choice of recipient for each object. Either each object finds a recipient if $k\leq n$, or it is impossible to distribute at most one object to each recipient because $n < k$.
 
-\begin{equation}	s
+\begin{equation}
 \begin{array}{l}
 S = \{ (a_1,a_2,...,a_k) | a_i \in A, |A| = n, a_i=a_j\}\\
 \\
@@ -133,7 +133,52 @@ S = \{ (a_1,a_2,...,a_k) | a_i \in A, |A| = k, a_i=a_j\}\\
 \end{array}
 \end{equation}
 
+
+
+\subparagraph{Distribute without Leftovers} $k$ students are assigned to $n$ identical textbooks. How many ways are there for each child to have a textbook so that there are no textbooks left over? 
+ 
+
+
+\subsection{Distinct Objects, Distributed Ordered Groups}
+
+\subsubsection{Distinct Recipients}
+$k$ objects are distributed to $n$ different recipients with an internal ordering, so that each recipient receives an ordered list. This is the same as creating a list of $n$ sequences that are sampled from $k$ \underline{without replacement}. 
+
+\begin{equation}
+\begin{array}{l}
+S = \{ (\mathbf{a}_{\{i_1\}}  = ( a_{i_{1,1}},a_{i_{1,1}},...,a_{i_{1,l}} ),\mathbf{a}_{\{i_2\}},...,\mathbf{a}_{\{i_n\}}) | \sum^n_j |\mathbf{a}_{i_j}| = k, a_{i_{j,i}} \in A, |A| = n \} \\
+\\
+|S| = \frac{(k + n - 1)!}{(n-1)!} = ( k+n-1)^{\underline{k}}
+\end{array}
+\end{equation}
+
+
+\subparagraph{Ordered Functions}  All functions $f: x \rightarrow y$ with $\{x | x\in A, |A| = k \}$ and $\{y | y\in B, |B| = n\}$ that assign ordered sequences of elements in $x$ to elements of $y$.
+
+\subparagraph{Labeled Bookshelves} $k$ books are distributed across $n$ different bookshelves. The books may all be on the same shelf, or shelves may be empty. The ordering of the books on each of the shelves matters.
+
+
+\subsubsection{Indistinct Recipients}
+$k$ objects are broken up into $n$ 
+
+\begin{equation}
+\sum_{i=1}^n L(k,i) 
+\end{equation}
+
+where $L(k,n)$ are the Lah numbers, which describe "How many ways can $k$ objects be distributed to $n$ recipients if order matters and each recipient receives at least 1". They are given by:
+
+\begin{equation}
+L(k,n)= {k \choose n} (k-1)^{\underline{k-n}} = \frac{k!}{n!}{ k-1 \choose n-1 }
+\end{equation}
+
+The sum considers the case where all $k$ objects are given to $i\leq n$ recipients, with the remaining recipients receiving none. The expression is more complicated than simply dividing the case for indistinct recipients by $n!$, because more than one of the recipients might receive the same number of objects, in which case i.e. the distribution $[(0),(0),(1,2)]$ would be counted twice.
+
 \chapauthor{}
 
-\subparagraph{Distribute without Leftovers} $n$ children are supposed to be given exactly one of $k$ pieces of candy. How many ways are there to distribute candy so that every child receives one piece of candy and in the end there is no candy left over? 
+
+
+
+
+
+
 
