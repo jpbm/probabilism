@@ -6,6 +6,59 @@
 \end{multicols}
 
 
+
+\section{Useful Expansions and Identities}
+% Binomial Expansion
+\subsection{Binomial Expansion}
+
+\begin{equation}
+(x + y)^n = \sum_{i=0}^n {n \choose i} x^{n-i}y^i
+\end{equation}
+
+with:
+
+\begin{equation}
+{n \choose k} = \frac{n!}{k!(n-k)!}
+\end{equation}
+
+\subsection{Multinomial Expansion}
+
+\begin{equation}
+(x_1 + x_2 + x_3 + \hdots + x_k)^n = \sum_{\begin{array}{c} i_1,i_2,i_3,\hdots,i_k \\ \sum_j i_j = n\end{array}} {n \choose i_1,i_2,\hdots i_k}x^{i_1}x^{i_2}x^{i_3}\hdots x^{i_k}
+\end{equation}
+
+with:
+
+\begin{equation}
+{n \choose i_1,i_2,\hdots i_k} = \frac{n!}{i_1!i_2!,i_3!\hdots i_k!}
+\end{equation}
+
+Where the sum over all possible exponents $i_j$ so that $\sum_j i_j = n$ has ${n+k-1 \choose n}$ terms. 
+
+\subsection{Polynomial Identity}
+I don't know what this is called, but it's useful.
+
+\begin{equation}
+\prod_i^n (1-x_i) = \sum_{s=0}^{n} (-1)^s \sum_{0\leq \underbrace{i_1,i_2,...,i_s }_{\{i\}_s} \leq n} \prod_{i \in \{i\}_s} x_i
+\end{equation}
+
+Where $\{i\}_s$ is a set of $s$ indices that range between $0$ and $n$, and the sum is over all possible such sets, of which there are ${n \choose s}$.  
+
+\subsection{Factorial Expansion}
+
+\begin{equation}
+x^{\underline{n}} = \frac{x!}{(x-n)!} = \sum_{k=0}^n s(n,k)x^k
+\end{equation}
+
+where
+
+\begin{equation}
+s(n,k) = (-1)^{n-k}\left[\begin{array}{c} n\\k \end{array}\right]
+\end{equation}
+
+
+
+% Twentyfold Way
 \section{The Twentyfold Way}
 
 The twentyfold way is a taxonomy of distribution problems developed by Kenneth Bogard in his book \textit{Combinatorics through Guided Discovery}. It divides up the way in which $k$ objects may be assigned to $n$ individuals, subject to whether the objects are distinct or identical, and subject to conditions on how the objects are received.
@@ -238,7 +291,9 @@ L(k,n)= {k \choose n} (k-1)^{\underline{k-n}} = \frac{k!}{n!}{ k-1 \choose n-1 }
 |S| = \sum_{i=1}^n P(k,i)
 \end{equation}
 
-\subparagraph{Number Partitions}
+It turns out that there is no known formula for $P(k,n)$!
+
+\subparagraph{Number Partitions} How many ways are there to divide $k$ objects across \underline{up to} $n$ piles
 
 \subparagraph{Unlabeled Multiplicities of Multisets} For multisets of $k$ elements with $n$ different classes, what is the number of possible multiplicities? For example, a multiset of $k=3$ elements from $n=2$ classes could have multiplicities $[a:3,b:0], [a:2,b:1],[a:1,b:2],[a:0,b:3]$. If we do not care about the labels $a,b$, then the ways that the the $k$ elements migth be distributed are $[3,0]$ and $[2,1]$.
 
@@ -287,6 +342,8 @@ This problem is the same as giving each of $n$ recipients one of $k$ objects, an
 \begin{equation}
 |S| = P(k,n)
 \end{equation}
+
+It turns out that there is no known formula for $P(k,n)$!
 
 \subparagraph{Partitions in $n$ Parts} How many ways are there to make $n$ piles from $k$ objects.
 
