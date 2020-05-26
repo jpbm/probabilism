@@ -4,87 +4,88 @@
 \contentsline {subsection}{\numberline {1.1.2}Multinomial Expansion}{3}
 \contentsline {subsection}{\numberline {1.1.3}Polynomial Identity}{4}
 \contentsline {subsection}{\numberline {1.1.4}Factorial Expansion}{4}
-\contentsline {section}{\numberline {1.2}The Twentyfold Way}{4}
+\contentsline {section}{\numberline {1.2}Stirling Numbers of the Second Kind}{4}
+\contentsline {section}{\numberline {1.3}The Twentyfold Way}{5}
 \contentsline {subparagraph}{Favorite Teachers}{5}
 \contentsline {subparagraph}{Assembling a Team}{5}
-\contentsline {subsection}{\numberline {1.2.1}Distinct Objects, Without Conditions}{5}
-\contentsline {subsubsection}{\numberline {1.2.1.1}Distinct Recipients}{5}
-\contentsline {subparagraph}{Functions}{5}
-\contentsline {subparagraph}{Binary Strings of Length $k$}{5}
-\contentsline {subparagraph}{Subsets of a $k$-Element Set}{5}
-\contentsline {subsubsection}{\numberline {1.2.1.2}Indistinct Recipients}{5}
-\contentsline {subparagraph}{Everyone Gets A Car}{5}
-\contentsline {subsection}{\numberline {1.2.2}Distinct Objects, Every Recipient Receives At Most One}{5}
-\contentsline {subsubsection}{\numberline {1.2.2.1}Distinct Recipients}{5}
+\contentsline {subsection}{\numberline {1.3.1}Distinct Objects, Without Conditions}{5}
+\contentsline {subsubsection}{\numberline {1.3.1.1}Distinct Recipients}{5}
+\contentsline {subparagraph}{Functions}{6}
+\contentsline {subparagraph}{Binary Strings of Length $k$}{6}
+\contentsline {subparagraph}{Subsets of a $k$-Element Set}{6}
+\contentsline {subsubsection}{\numberline {1.3.1.2}Indistinct Recipients}{6}
+\contentsline {subparagraph}{Everyone Gets A Car}{6}
+\contentsline {subsection}{\numberline {1.3.2}Distinct Objects, Every Recipient Receives At Most One}{6}
+\contentsline {subsubsection}{\numberline {1.3.2.1}Distinct Recipients}{6}
 \contentsline {subparagraph}{One-to-One Functions}{6}
 \contentsline {subparagraph}{k-element Permutations of $n$ elements}{6}
 \contentsline {subparagraph}{Books on a Shelf}{6}
-\contentsline {subsubsection}{\numberline {1.2.2.2}Indistinct Recipients}{6}
-\contentsline {subparagraph}{Distributing Candy}{6}
-\contentsline {subsection}{\numberline {1.2.3}Distinct Objects, Every Recipient Receives at Least One}{6}
-\contentsline {subsubsection}{\numberline {1.2.3.1}Distinct Recipients}{6}
-\contentsline {subparagraph}{Onto Functions}{6}
-\contentsline {subsubsection}{\numberline {1.2.3.2}Indistinct Recipients}{6}
-\contentsline {subsection}{\numberline {1.2.4}Distinct Objects, Every Recipient Receives Exactly One}{7}
-\contentsline {subsubsection}{\numberline {1.2.4.1}Distinct Recipients}{7}
+\contentsline {subsubsection}{\numberline {1.3.2.2}Indistinct Recipients}{7}
+\contentsline {subparagraph}{Distributing Candy}{7}
+\contentsline {subsection}{\numberline {1.3.3}Distinct Objects, Every Recipient Receives at Least One}{7}
+\contentsline {subsubsection}{\numberline {1.3.3.1}Distinct Recipients}{7}
+\contentsline {subparagraph}{Onto Functions}{7}
+\contentsline {subsubsection}{\numberline {1.3.3.2}Indistinct Recipients}{7}
+\contentsline {subsection}{\numberline {1.3.4}Distinct Objects, Every Recipient Receives Exactly One}{7}
+\contentsline {subsubsection}{\numberline {1.3.4.1}Distinct Recipients}{7}
 \contentsline {subparagraph}{Bijective Functions}{7}
-\contentsline {subparagraph}{Permutations}{7}
-\contentsline {subparagraph}{Unique Identifiers}{7}
-\contentsline {subsubsection}{\numberline {1.2.4.2}Indistinct Recipients}{7}
-\contentsline {subparagraph}{Distribute without Leftovers}{7}
-\contentsline {subsection}{\numberline {1.2.5}Distinct Objects, Distributed in Ordered Groups}{7}
-\contentsline {subsubsection}{\numberline {1.2.5.1}Distinct Recipients}{7}
-\contentsline {subparagraph}{Ordered Functions}{7}
-\contentsline {subparagraph}{Labeled Bookshelves}{7}
-\contentsline {subsubsection}{\numberline {1.2.5.2}Indistinct Recipients}{8}
+\contentsline {subparagraph}{Permutations}{8}
+\contentsline {subparagraph}{Unique Identifiers}{8}
+\contentsline {subsubsection}{\numberline {1.3.4.2}Indistinct Recipients}{8}
+\contentsline {subparagraph}{Distribute without Leftovers}{8}
+\contentsline {subsection}{\numberline {1.3.5}Distinct Objects, Distributed in Ordered Groups}{8}
+\contentsline {subsubsection}{\numberline {1.3.5.1}Distinct Recipients}{8}
+\contentsline {subparagraph}{Ordered Functions}{8}
+\contentsline {subparagraph}{Labeled Bookshelves}{8}
+\contentsline {subsubsection}{\numberline {1.3.5.2}Indistinct Recipients}{8}
 \contentsline {subparagraph}{Broken Permutations $\leq n$ Parts}{8}
-\contentsline {subparagraph}{Books into Boxes}{8}
-\contentsline {subsection}{\numberline {1.2.6}Distinct Objects, Distributed in Ordered Groups of At Least One}{8}
-\contentsline {subsubsection}{\numberline {1.2.6.1}Distinct Recipients}{8}
-\contentsline {subparagraph}{Ordered Onto Functions}{8}
-\contentsline {subsubsection}{\numberline {1.2.6.2}Indistinct Recipients}{8}
-\contentsline {subparagraph}{Broken Permutations $n$ parts}{8}
-\contentsline {subparagraph}{Books into Boxes}{8}
-\contentsline {subsection}{\numberline {1.2.7}Identical Objects}{8}
-\contentsline {subsubsection}{\numberline {1.2.7.1}Distinct Recipients}{8}
+\contentsline {subparagraph}{Books into Boxes}{9}
+\contentsline {subsection}{\numberline {1.3.6}Distinct Objects, Distributed in Ordered Groups of At Least One}{9}
+\contentsline {subsubsection}{\numberline {1.3.6.1}Distinct Recipients}{9}
+\contentsline {subparagraph}{Ordered Onto Functions}{9}
+\contentsline {subsubsection}{\numberline {1.3.6.2}Indistinct Recipients}{9}
+\contentsline {subparagraph}{Broken Permutations $n$ parts}{9}
+\contentsline {subparagraph}{Books into Boxes}{9}
+\contentsline {subsection}{\numberline {1.3.7}Identical Objects}{9}
+\contentsline {subsubsection}{\numberline {1.3.7.1}Distinct Recipients}{9}
 \contentsline {subparagraph}{Multisets}{9}
 \contentsline {subparagraph}{Integer Sums}{9}
 \contentsline {subparagraph}{Bosons in Degenerate States}{9}
-\contentsline {subsubsection}{\numberline {1.2.7.2}Indistinct Recipients}{9}
+\contentsline {subsubsection}{\numberline {1.3.7.2}Indistinct Recipients}{9}
 \contentsline {subparagraph}{Number Partitions}{9}
-\contentsline {subparagraph}{Unlabeled Multiplicities of Multisets}{9}
-\contentsline {subparagraph}{Boxes of Marbles}{9}
-\contentsline {subsection}{\numberline {1.2.8}Identical Objects, Each Receives At Most One}{9}
-\contentsline {subsubsection}{\numberline {1.2.8.1}Distinct Recipients}{9}
-\contentsline {subparagraph}{Subsets}{9}
-\contentsline {subparagraph}{Binary Labels}{9}
-\contentsline {subsubsection}{\numberline {1.2.8.2}Indistinct Recipients}{9}
-\contentsline {subparagraph}{Boxes}{9}
-\contentsline {subsection}{\numberline {1.2.9}Identical Objects, Each Receives At Least One}{10}
-\contentsline {subsubsection}{\numberline {1.2.9.1}Distinct Recipients}{10}
+\contentsline {subparagraph}{Unlabeled Multiplicities of Multisets}{10}
+\contentsline {subparagraph}{Boxes of Marbles}{10}
+\contentsline {subsection}{\numberline {1.3.8}Identical Objects, Each Receives At Most One}{10}
+\contentsline {subsubsection}{\numberline {1.3.8.1}Distinct Recipients}{10}
+\contentsline {subparagraph}{Subsets}{10}
+\contentsline {subparagraph}{Binary Labels}{10}
+\contentsline {subsubsection}{\numberline {1.3.8.2}Indistinct Recipients}{10}
+\contentsline {subparagraph}{Boxes}{10}
+\contentsline {subsection}{\numberline {1.3.9}Identical Objects, Each Receives At Least One}{10}
+\contentsline {subsubsection}{\numberline {1.3.9.1}Distinct Recipients}{10}
 \contentsline {subparagraph}{Compositions $n$ Parts}{10}
-\contentsline {subsubsection}{\numberline {1.2.9.2}Indistinct Recipients}{10}
+\contentsline {subsubsection}{\numberline {1.3.9.2}Indistinct Recipients}{10}
 \contentsline {subparagraph}{Partitions in $n$ Parts}{10}
-\contentsline {subsection}{\numberline {1.2.10}Identical Objects, Each Receives Exactly One}{10}
-\contentsline {subsubsection}{\numberline {1.2.10.1}Distinct Recipients}{10}
-\contentsline {subsubsection}{\numberline {1.2.10.2}Indistinct Recipients}{10}
-\contentsline {chapter}{\numberline {2}Linear Algebra}{11}
-\contentsline {section}{\numberline {2.1}Spectral Theorem}{11}
-\contentsline {section}{\numberline {2.2}Singular Value Decomposition}{11}
-\contentsline {section}{\numberline {2.3}Cholesky Decomposition}{11}
-\contentsline {section}{\numberline {2.4}Generalized Eigenvectors}{11}
-\contentsline {section}{\numberline {2.5}Affine Transformations}{11}
-\contentsline {section}{\numberline {2.6}Multilinear Maps}{12}
-\contentsline {section}{\numberline {2.7}Multilinear Forms}{12}
-\contentsline {section}{\numberline {2.8}Types of Matrices}{12}
-\contentsline {subsection}{\numberline {2.8.1}Hermitian}{12}
-\contentsline {subsubsection}{\numberline {2.8.1.1}Properties}{12}
-\contentsline {subsection}{\numberline {2.8.2}Triangular}{12}
-\contentsline {section}{\numberline {2.9}Taking Derivatives}{13}
-\contentsline {chapter}{\numberline {3}Linear Regression}{15}
-\contentsline {section}{\numberline {3.1}Ordinary Linear Regression}{15}
-\contentsline {section}{\numberline {3.2}$R^2$ Value}{15}
-\contentsline {section}{\numberline {3.3}Regression Diagnostics}{15}
-\contentsline {section}{\numberline {3.4}t-Statistics}{15}
-\contentsline {section}{\numberline {3.5}AIC and BIC}{15}
+\contentsline {subsection}{\numberline {1.3.10}Identical Objects, Each Receives Exactly One}{11}
+\contentsline {subsubsection}{\numberline {1.3.10.1}Distinct Recipients}{11}
+\contentsline {subsubsection}{\numberline {1.3.10.2}Indistinct Recipients}{11}
+\contentsline {chapter}{\numberline {2}Linear Algebra}{13}
+\contentsline {section}{\numberline {2.1}Spectral Theorem}{13}
+\contentsline {section}{\numberline {2.2}Singular Value Decomposition}{13}
+\contentsline {section}{\numberline {2.3}Cholesky Decomposition}{13}
+\contentsline {section}{\numberline {2.4}Generalized Eigenvectors}{13}
+\contentsline {section}{\numberline {2.5}Affine Transformations}{13}
+\contentsline {section}{\numberline {2.6}Multilinear Maps}{14}
+\contentsline {section}{\numberline {2.7}Multilinear Forms}{14}
+\contentsline {section}{\numberline {2.8}Types of Matrices}{14}
+\contentsline {subsection}{\numberline {2.8.1}Hermitian}{14}
+\contentsline {subsubsection}{\numberline {2.8.1.1}Properties}{14}
+\contentsline {subsection}{\numberline {2.8.2}Triangular}{14}
+\contentsline {section}{\numberline {2.9}Taking Derivatives}{15}
+\contentsline {chapter}{\numberline {3}Linear Regression}{17}
+\contentsline {section}{\numberline {3.1}Ordinary Linear Regression}{17}
+\contentsline {section}{\numberline {3.2}$R^2$ Value}{17}
+\contentsline {section}{\numberline {3.3}Regression Diagnostics}{17}
+\contentsline {section}{\numberline {3.4}t-Statistics}{17}
+\contentsline {section}{\numberline {3.5}AIC and BIC}{17}
 \contentsfinish 

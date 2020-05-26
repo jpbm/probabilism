@@ -56,7 +56,46 @@ where
 s(n,k) = (-1)^{n-k}\left[\begin{array}{c} n\\k \end{array}\right]
 \end{equation}
 
+are the stirling numbers of the first kind.
 
+% Stirling NUmbers of the second kinds
+\section{Stirling Numbers of the Second Kind}
+
+Stirling numbers of the second kind $S(k,n)$ measure the amount of ways in which $k$ objects can be divided into $n$ groups. (The groups can't be empty). They are given by an explicit formula:
+
+\begin{equation}
+S(k,n) = \frac{1}{n!}\sum_{i=1}^n (-1)^{n-j} {n \choose j}j^k
+\end{equation}
+
+They can also be generated via the recurrence relation:
+
+\begin{equation}
+\left\{\begin{array}{c}k+1\\n\end{array}\right\} = n\left\{\begin{array}{c}k\\n\end{array}\right\} + \left\{\begin{array}{c}k\\n-1\end{array}\right\}
+\end{equation}
+
+The recurrence relation is explained by adding the combinations corresponding to two cases. If the $k+1$st object is added to one of the $n$ existing subsets with $k$ objects, then that corresponds to:
+
+\begin{equation}
+n\left\{\begin{array}{c}k\\n\end{array}\right\} = 1
+\end{equation}
+
+Possbilities. If the $k+1$st object is in a set by itself (a singleton), then the remaining objects are distributed over $n-1$ set. The combinations arising from this are:
+
+\begin{equation}
+\left\{\begin{array}{c}k\\n-1\end{array}\right\} = 1
+\end{equation}
+
+Furthermore, the following holds:
+
+\begin{equation}
+\left\{\begin{array}{c}0\\0\end{array}\right\} = 1
+\end{equation}
+
+\begin{equation}
+\left\{\begin{array}{c}k\\0\end{array}\right\} = \left\{\begin{array}{c}0\\n\end{array}\right\} = 0
+\end{equation}
+
+And $S(k,n) = 0$ if $n>k$.
 
 % Twentyfold Way
 \section{The Twentyfold Way}
@@ -107,14 +146,21 @@ S = \{ (a_1,a_2,...,a_k) | a_i \in A, |A| = n \}\\
 \subparagraph{Subsets of a $k$-Element Set} The subsets of a set of $k$ distinct elements are formed by assigning each of its $k$ distinguishable elements to one of the two labels $A\in [\mathrm{included},\mathrm{excluded}]$. The number of possible subsets, including the empty subset and the full set, is $2^k$.
 
 \subsubsection{Indistinct Recipients}
-The $k$ objects are assigned to a recipient that is not distinct. This is the same as assigning the elements of a $k$-tuple to the same value \underline{with} replacement. This case is just like the case for distinct recipients with $n=1$.
-\begin{equation}	
-\begin{array}{l}
-S = \{ (a_1,a_2,...,a_k) | a_i = a_j\}\\
-\\
-|S| = 1^k
-\end{array}
+The $k$ objects are assigned to a recipient that is not distinct. 
+
+\begin{equation}
+|A| = \sum_{i=1}^k S(n,i)
 \end{equation}
+
+Where $S(k,n)$ is the Stirling number of the second kind that gives the number of ways that $k$ objects can be distributed across $n$ indistinct sets. The sum above describes the partition of the $k$ objects into \underline{up to} $n$ parts.  
+
+A closed form expression for Stirling Numbers of the second kind is: 
+
+\begin{equation}
+S(k,n) = \left\{ \begin{array}{c} k \\n \end{array} \right\} = \frac{1}{n!}\sum_{j=0}^n (-1)^{n-j} {n \choose j }j^k
+\end{equation}
+
+Note that for 
 
 \subparagraph{Everyone Gets A Car} How many ways are there to give a car to everyone? One. Everyone gets a car.
 
@@ -155,8 +201,7 @@ S = \{ (a_1,a_2,...,a_k) | a_i \in A, |A| = n, a_i=a_j\}\\
 \subsubsection{Distinct Recipients}
 
 \begin{equation}
-|A| = n!S(k,n) =n! \left\{ \begin{array}{c} k \\n \end{array}\right\} = n! \sum_{j=0}^k (-1)^{k-j} {k \choose j }j^n
-\end{equation}
+|A| = n!S(k,n) =n! \left\{ \begin{array}{c} k \\n \end{array}\right\} = n! \frac{1}{n!}\sum_{j=0}^n (-1)^{n-j} {n \choose j }j^k\end{equation}
 
 Where $S(k,n)$	 denotes the Stirling function of the second kind.
 
@@ -167,8 +212,7 @@ Where $S(k,n)$	 denotes the Stirling function of the second kind.
 The number of ways to divide $k$ distinct objects into $n$ non-empty subets is given by the Stirling number of the second kind:
 
 \begin{equation}
-|A| = S(k,n) = \left\{ \begin{array}{c} k \\n \end{array} \right\} = \sum_{j=0}^k (-1)^{k-j} {k \choose j }j^n
-\end{equation}
+|A| = S(k,n) = \left\{ \begin{array}{c} k \\n \end{array} \right\} = \frac{1}{n!}\sum_{j=0}^n (-1)^{n-j} {n \choose j }j^k	\end{equation}
 
 
 \subsection{Distinct Objects, Every Recipient Receives Exactly One}
