@@ -97,6 +97,51 @@ Furthermore, the following holds:
 
 And $S(k,n) = 0$ if $n>k$.
 
+
+
+% binomial coefficients
+\section{Binomial Coefficients}
+
+The binomial coefficient for $n\geq 0$:
+
+\begin{equation}
+{n \choose k} = \frac{n!}{k! (n-k)!}
+\end{equation}
+
+For $0\leq k \leq n$ and $0$ otherwise.
+
+Gives the number of $k$-sized subsets that can be sampled from a set of size $n$. Alternatively: $k$ identical objects are distributed across $n$ distinct recipients.
+
+They can be generalized for negative $n$.
+
+For $n<0$ and $k\geq 0$:
+
+\begin{equation}
+{-n \choose k} = \frac{1}{k!}\prod_{i=0}^{k-1}(-n-i) = (-1)^k {n+k-1 \choose k}
+\end{equation}
+
+For $n<0$ and $k\leq n$:
+
+\begin{equation}
+{-n \choose -k} = (-1)^{k-n} {k-1 \choose k-n}
+\end{equation}
+
+
+\textit{[double check this. based on https://arxiv.org/pdf/1105.3689.pdf]}
+
+And $0$ otherwise (i.e. if $n<k<0$). 
+
+Which is mainly useful in the context of generating functions. Specifically:
+
+\begin{equation}
+\frac{1}{(y-x)^n} = \sum_{i=0}^\infty {-n \choose i} (-1)^i x^iy^{n-i}
+\end{equation}
+
+
+
+
+
+
 % Twentyfold Way
 \section{The Twentyfold Way}
 
