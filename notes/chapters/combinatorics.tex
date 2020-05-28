@@ -8,18 +8,119 @@
 
 
 \section{Useful Expansions and Identities}
+
+
+
+% binomial coefficients
+\subsection{Binomial Coefficients and Binomial Expansions}
+
+For two positive integers $n$ and $k$, the binomial coefficient "$n$ choose $k$" is written:
+
+\begin{equation}
+{n \choose k} = \left\{ \begin{array}{c} 
+\frac{n!}{k!(n-k)!}\ \ \mathrm{for\ }n\geq k\\
+\\
+0 \ \ \mathrm{otherwise}
+\end{array}\right.
+\end{equation}
+
+The term can be defined for negative arguments, which is comes up often when working with generating functions.
+
+\begin{equation}
+{-n \choose k} = \left\{\begin{array}{c}
+(-1)^k { n+k-1 \choose k}\ \ \mathrm{for\ }n\geq k\\
+\\
+0 \ \ \mathrm{otherwise}
+\end{array}\right.
+\end{equation}
+
+
+\begin{equation}
+{-n \choose -k} = \left\{\begin{array}{c}
+(-1)^{k-n} {k-1 \choose k-n}\ \ \mathrm{for\ }n\geq k\\
+\\
+0 \ \ \mathrm{otherwise}
+\end{array}\right.
+\end{equation}
+
+The generalizations are derived in https://arxiv.org/pdf/1105.3689.pdf using symmetry arguments.
+
+
 % Binomial Expansion
-\subsection{Binomial Expansion}
+The binomial expansion can be proven either by expanding the polynomial or by creating the Taylor series for the polynomial.
 
 \begin{equation}
-(x + y)^n = \sum_{i=0}^n {n \choose i} x^{n-i}y^i
+(x + y)^n = \sum_{k=0}^n {n \choose k} x^k y^{n-k}
 \end{equation}
 
-with:
+This holds also for negative integer exponents $n$, in which case:
 
 \begin{equation}
-{n \choose k} = \frac{n!}{k!(n-k)!}
+\frac{1}{(y+x)^n} = \sum_{k=0}^\infty {-n \choose k} x^k y^{-n-k} = (-1)^k { n+k-1 \choose k} x^k y^{-(n+k)}
 \end{equation}
+
+\subsubsection{Derivation of the Binomial Theorem for a Negative Exponent}
+
+Let $f(x) = \frac{1}{(y+x)^n} = (y+x)^{-n}$. The Taylor expansion about the point $x=0$ is:
+
+\begin{equation}
+f(x) = \sum_{k=0}^\infty \frac{f^{(k)}(x=0)}{k!} x^k
+\label{eq:taylor}
+\end{equation}
+
+The derivatives of $f$ are:
+
+\begin{equation}
+\begin{array}{ll}
+f^{(0)}(x) &= (y+x)^{-n}\\
+f^{(1)}(x) &= (y+x)^{-(n+1)}(-1)n\\
+f^{(2)}(x) &= (y+x)^{-(n+2)}(-1)^2 n(n+1)\\
+&\vdots\\
+f^{(k)}(x) &= (y+x)^{-(n+k)}(-1)^k n(n+1)\hdots	(n+k-1)\\
+&=  (y+x)^{-(n+k)}(-1)^k \frac{(n+k-1)!}{(n-1)!}
+\end{array}
+\label{eq:derivatives}
+\end{equation} 
+
+Combing Eqns. \ref{eq:taylor} and \ref{eq:derivatives} gives:
+
+\begin{equation}
+f(x) = \sum_{k=0}^\infty (-1)^k {n+k-1 \choose k} x^k y^{-(n+k)}
+\end{equation}
+
+
+\subsubsection{Derivation of the Binomial Theorem for a Fractional Exponent}
+
+Following much the same logic as for a negative exponent, for a fractional exponent the Taylor series is also infinite. 
+
+Let $f(x) = (y+x)^{m}$ with $m\notin \mathbb{Z}$. 
+
+The derivatives of $f$ are:
+
+\begin{equation}
+\begin{array}{ll}
+f^{(0)}(x) &= (y+x)^{m}\\
+f^{(1)}(x) &= (y+x)^{m-1}m\\
+f^{(2)}(x) &= (y+x)^{m-2}m(m-1)\\
+&\vdots\\
+f^{(k)}(x) &= (y+x)^{n-k}m(m-1)\hdots	(m-k+1)\\
+\end{array}
+\label{eq:derivatives2}
+\end{equation} 
+
+Combing Eqns. \ref{eq:taylor} and \ref{eq:derivatives2} gives:
+
+\begin{equation}
+f(x) = \sum_{k=0}^\infty { m \choose k } x^k y^{m-k}
+\end{equation}
+
+Where, boldly, I defined ${ m \choose k}$ to mean:
+
+\begin{equation}
+{m \choose k} = \frac{m(m-1)(m-2)\hdots(m-k+2)(m-k+1)}{k!}
+\end{equation}
+
+
 
 \subsection{Multinomial Expansion}
 
@@ -58,10 +159,13 @@ s(n,k) = (-1)^{n-k}\left[\begin{array}{c} n\\k \end{array}\right]
 
 are the stirling numbers of the first kind.
 
-% Stirling NUmbers of the second kinds
+% Stirling Numbers of the second kinds
 \section{Stirling Numbers of the Second Kind}
+\label{sec:stirling2}
 
-Stirling numbers of the second kind $S(k,n)$ measure the amount of ways in which $k$ objects can be divided into $n$ groups. (The groups can't be empty). They are given by an explicit formula:
+Stirling numbers of the second kind $S(k,n)$ measure the amount of ways in which $k$ objects can be divided into $n$ non-empty groups. They give the number of onto functions from a set of $k$ distinct objects to $n$ indistinct recipients. For example: how many ways can a set of $k$ pool balls be put into $n$ bags, so that there is at least one ball in each bag. All the pool balls have numbers on them and have different colors, so that $n=2$ bags containing $[(1,2,3), (4)] $ and $[(1,2,4),(3)]$ count as different. This sort of problem is discussed at length in section \ref{twentyfoldway}
+
+They are given by an explicit formula:
 
 \begin{equation}
 S(k,n) = \frac{1}{n!}\sum_{i=1}^n (-1)^{n-j} {n \choose j}j^k
@@ -99,51 +203,10 @@ And $S(k,n) = 0$ if $n>k$.
 
 
 
-% binomial coefficients
-\section{Binomial Coefficients}
-
-The binomial coefficient for $n\geq 0$:
-
-\begin{equation}
-{n \choose k} = \frac{n!}{k! (n-k)!}
-\end{equation}
-
-For $0\leq k \leq n$ and $0$ otherwise.
-
-Gives the number of $k$-sized subsets that can be sampled from a set of size $n$. Alternatively: $k$ identical objects are distributed across $n$ distinct recipients.
-
-They can be generalized for negative $n$.
-
-For $n<0$ and $k\geq 0$:
-
-\begin{equation}
-{-n \choose k} = \frac{1}{k!}\prod_{i=0}^{k-1}(-n-i) = (-1)^k {n+k-1 \choose k}
-\end{equation}
-
-For $n<0$ and $k\leq n$:
-
-\begin{equation}
-{-n \choose -k} = (-1)^{k-n} {k-1 \choose k-n}
-\end{equation}
-
-
-\textit{[double check this. based on https://arxiv.org/pdf/1105.3689.pdf]}
-
-And $0$ otherwise (i.e. if $n<k<0$). 
-
-Which is mainly useful in the context of generating functions. Specifically:
-
-\begin{equation}
-\frac{1}{(y-x)^n} = \sum_{i=0}^\infty {-n \choose i} (-1)^i x^iy^{n-i}
-\end{equation}
-
-
-
-
-
 
 % Twentyfold Way
 \section{The Twentyfold Way}
+\label{twentyfoldway}
 
 The twentyfold way is a taxonomy of distribution problems developed by Kenneth Bogard in his book \textit{Combinatorics through Guided Discovery}. It divides up the way in which $k$ objects may be assigned to $n$ individuals, subject to whether the objects are distinct or identical, and subject to conditions on how the objects are received.
 
@@ -171,8 +234,12 @@ A way to resolve this is to say that an object can have only one recipient, but 
 
 \textit{Objects:} n athletes. \textit{Recipients:} team, not on the team. Many athletes can be assigned to one outcome of being on the team or not being on the team. There are ${n \choose k}$ combinations for the team, which is the same number as the ${n \choose n-k}$ selections for the bench. 
 
-\subsection{Distinct Objects, Without Conditions}
 
+% Distinct Objects, No Conditions
+\subsection{Distinct Objects, No Conditions on Distributing}
+
+
+%% Distinct Recipients
 \subsubsection{Distinct Recipients}
 The $k$ objects are assigned to $n$ recipients with no conditions as to the number of objects each recipient receives. This is the same as assigning the elements of a $k$-tuple from a selection of $n$ \underline{with} replacement.
 
@@ -184,12 +251,17 @@ S = \{ (a_1,a_2,...,a_k) | a_i \in A, |A| = n \}\\
 \end{array}
 \end{equation}
 
+
+
+\subparagraph{Pool Balls into Labeled Buckets} All possible ways to put $k$ pool balls, which all have different numbers and colors, into $n$ labeled buckets. Some of the buckets might be empty, and others might contain more than one of the pool balls.
+
 \subparagraph{Functions} All possible functions $f:x \rightarrow y$ with $\{x | x\in A, |A| = k \}$ and $\{y | y\in B, |B| = n\}$.
 
 \subparagraph{Binary Strings of Length $k$} The $k$ distinct positions of a binary string $(i_1,i_2,...,i_k)$ of length $k$ are assigned to an element of the set $A\in[0,1]$. The number of possible binary strings of length $k$ is $2^k$.
 
 \subparagraph{Subsets of a $k$-Element Set} The subsets of a set of $k$ distinct elements are formed by assigning each of its $k$ distinguishable elements to one of the two labels $A\in [\mathrm{included},\mathrm{excluded}]$. The number of possible subsets, including the empty subset and the full set, is $2^k$.
 
+%% Indistinct Recipients
 \subsubsection{Indistinct Recipients}
 The $k$ objects are assigned to a recipient that is not distinct. 
 
@@ -197,22 +269,25 @@ The $k$ objects are assigned to a recipient that is not distinct.
 |A| = \sum_{i=1}^k S(n,i)
 \end{equation}
 
-Where $S(k,n)$ is the Stirling number of the second kind that gives the number of ways that $k$ objects can be distributed across $n$ indistinct sets. The sum above describes the partition of the $k$ objects into \underline{up to} $n$ parts.  
+Where $S(k,n)$ is the Stirling number of the second kind that gives the number of ways that $k$ objects can be distributed across $n$ non-empty indistinct sets. The sum above takes care of the case where the $k$ objects are divided into \underline{up to} $n$ collections.  
 
-A closed form expression for Stirling Numbers of the second kind is: 
+A closed form expression for the Stirling Numbers of the second kind is (c.f. section \ref{sec:stirling2}): 
 
 \begin{equation}
 S(k,n) = \left\{ \begin{array}{c} k \\n \end{array} \right\} = \frac{1}{n!}\sum_{j=0}^n (-1)^{n-j} {n \choose j }j^k
+\label{eq:stirling2}
 \end{equation}
 
-Note that for 
 
-\subparagraph{Everyone Gets A Car} How many ways are there to give a car to everyone? One. Everyone gets a car.
+\subparagraph{Pool Balls into Unlabeled Bags} All possible ways to put $k$ pool balls, which all have different numbers and colors, into $n$ unlabeled bags. Some of the bags might be empty, and others might contain more than one of the pool balls.
 
 
+% Distinct Objects, At Most One
 \subsection{Distinct Objects, Every Recipient Receives At Most One}
+
+%% Distinct Recipients
 \subsubsection{Distinct Recipients}
-At most one of $k$ distinct objects are assigned to one of $n$ distinct recipients. This is the same as assigning the elements of a $k$-tuple from a selection of $n$ \underline{without} replacement, so that first there are $n$ choices, then $n-1$ choices, $n-2$, etc...
+At most one of $k$ distinct objects are assigned to one of $n$ distinct recipients. This is the same as assigning the elements of a $k$-tuple from a selection of $n$ \underline{without} replacement, so that first there are $n$ choices, then $n-1$ choices, $n-2$, etc.
 
 \begin{equation}	
 \begin{array}{l}
@@ -222,12 +297,16 @@ S = \{ (a_1,a_2,...,a_k) | a_i \in A, |A| = n, a_i\neq a_j\}\\
 \end{array}
 \end{equation}
 
+\subparagraph{At Most One Pool Ball into Labeled Buckets} All possible ways to put $k$ pool balls, which all have different numbers and colors, into $n$ labeled buckets, but the buckets can have at most one pool ball in them. In other words, you choose any $k$ out of the $n$ labeled buckets and put one pool ball into them. 
+
 \subparagraph{One-to-One Functions} All possible functions $f:x \rightarrow y$ with $\{x | x\in A, |A| = k \}$ and $\{y | y\in B, |B| = n\}$ subject to the constraint that $f(a) = f(b)$ implies $a=b$. That is, the functions are one-to-one, or injective.
 
 \subparagraph{k-element Permutations of $n$ elements}  Each of the $k$ positions in a $k$-element permutation are distinct objects. These are each assigned to one of $n$ possible values, where each value can only show up once. 
 
 \subparagraph{Books on a Shelf} How many ways are there to order $k$ books on a library shelf when there are $n$ different books available. 
 
+
+%% Indistinct Recipients
 \subsubsection{Indistinct Recipients}
 At most one of $k$ distinct objects are assigned to one of $n$ indistinct recipients. This is the same as assigning the elements of a $k$-tuple from a selection of $n$ \underline{without} replacement. Except ,since the recipients are all indistinct, there is only one type of choice of recipient for each object. Either each object finds a recipient if $k\leq n$, or it is impossible to distribute at most one object to each recipient because $n < k$.
 
@@ -239,10 +318,17 @@ S = \{ (a_1,a_2,...,a_k) | a_i \in A, |A| = n, a_i=a_j\}\\
 \end{array}
 \end{equation}
 
+
+
+\subparagraph{At Most One Pool Ball into Unlabeled Bags} All possible ways to put $k$ pool balls, which all have different numbers and colors, into $n$ unlabeled bags, but the bags can have at most one pool ball in them. The bags are identical, so the only result is one where there are $k$ bags with a ball in them and $n-k$ without a ball in them. If there are not enough bags, then there is no possible result. 
+
 \subparagraph{Distributing Candy} There are $n$ pieces of identical candy and $k$ kids. How many ways are there to give each kid a piece of candy? If there is enough candy, the answer is one. Everyone gets candy. If there is not enough candy then the answer is zero. There is no way to give everyone candy if there's not enough candy.
 
+
+% Distinct Objects, At Least One
 \subsection{Distinct Objects, Every Recipient Receives at Least One}
 
+%% Distinct Recipients
 \subsubsection{Distinct Recipients}
 
 \begin{equation}
@@ -250,18 +336,28 @@ S = \{ (a_1,a_2,...,a_k) | a_i \in A, |A| = n, a_i=a_j\}\\
 
 Where $S(k,n)$	 denotes the Stirling function of the second kind.
 
+
+\subparagraph{At Least One Pool Ball into Labeled Buckets} All possible ways to put $k$ pool balls, which all have different numbers and colors, into $n$ labeled buckets, so that all of the buckets have at least one ball in them. This is the same number of combinations as if the buckets were unlabeled, but multiplied with $n!$ ways of applying a label to them.
+
 \subparagraph{Onto Functions} All possible functions $f:x \rightarrow y$ with $\{x | x\in A, |A| = k \}$ and $\{y | y\in B, |B| = n\}$ subject to the constraint that there is an element $x$ in the domain so that $f(x)=y$ for each element $y$ of the codomain. That is the functions are onto, or surjective.
 
 
+%% Indistinct Recipients
 \subsubsection{Indistinct Recipients}
-The number of ways to divide $k$ distinct objects into $n$ non-empty subets is given by the Stirling number of the second kind:
+The number of ways to divide $k$ distinct objects into $n$ non-empty subets is given by the Stirling number of the second kind (c.f. section \ref{sec:stirling2}):
 
 \begin{equation}
 |A| = S(k,n) = \left\{ \begin{array}{c} k \\n \end{array} \right\} = \frac{1}{n!}\sum_{j=0}^n (-1)^{n-j} {n \choose j }j^k	\end{equation}
 
 
+
+\subparagraph{At Least One Pool Ball into Unlabeled Bags} All possible ways to put $k$ pool balls, which all have different numbers and colors, into $n$ unlabeled bags, so that none of the bags are empty. 
+
+
+% Distinct Objects, Everyone received exactly one
 \subsection{Distinct Objects, Every Recipient Receives Exactly One}
 
+% distinct recipients
 \subsubsection{Distinct Recipients}
 One of $k$ distinct objects are assigned to each of $n$ distinct recipients. This is the same as assigning the elements of a $k$-tuple from a selection of $n$ \underline{without} replacement and with the requirement that all of the $n$ are selected.
 
@@ -273,12 +369,15 @@ S = \{ (a_1,a_2,...,a_k) | a_i \in A, |A| = k = n, a_i\neq a_j\}\\
 \end{array}
 \end{equation}
 
+\subparagraph{Exactly One Pool Ball into Labeled Buckets} All possible ways to put $k$ pool balls, which all have different numbers and colors, into $n$ labeled buckets, that there is one pool ball in each bucket. This is the same as putting one pool ball into unlabeled buckets and multiplying by the $n!$ ways of attaching a label to the buckets. If there isn't the same amount of balls and buckets then there is no possible way for them to be matched one-for-one.
+
 \subparagraph{Bijective Functions} All possible functions $f:x \rightarrow y$ with $\{x | x\in A, |A| = k \}$ and $\{y | y\in B, |B| = n\}$ subject to the constraints that $f(a) = f(b)$ implies $a=b$ and that there is an element $x$ in the domain so that $f(x)=y$ for each element $y$ of the codomain. That is, the functions are one-to-one and onto, of bijective.
 
 \subparagraph{Permutations} Since each of the $k$ objects is given to a different one of the $n$ recipients, there must be as many recipients as there are objects and $k=n$. The number of ways of assigning $k$ objects to $n$ recipients is $k!=n!$.
 
 \subparagraph{Unique Identifiers} Each of $k$ entries in a database is given one of $n=k$ unique identifiers, so that each identifier leads to an entry and each entry has an identifier. 
 
+% indistinct recipients
 \subsubsection{Indistinct Recipients}
 
 \begin{equation}	
@@ -290,11 +389,12 @@ S = \{ (a_1,a_2,...,a_k) | a_i \in A, |A| = k, a_i=a_j\}\\
 \end{equation}
 
 
+\subparagraph{Exactly One Pool Ball into Unlabeled Bags} All possible ways to put $k$ pool balls, which all have different numbers and colors, into $n$ unlabeled bags, that there is one pool ball in each bag. The result is that you either have $n$ bags with $n=k$ balls in them, if the two have matching numbers, or that you either have a bag or a ball left over and there is no way to match them one-for-one.
 
 \subparagraph{Distribute without Leftovers} $k$ students are assigned to $n$ identical textbooks. How many ways are there for each child to have a textbook so that there are no textbooks left over? 
- 
 
 
+% Distinct Objects, Ordered Groups
 \subsection{Distinct Objects, Distributed in Ordered Groups}
 
 \subsubsection{Distinct Recipients}
@@ -450,8 +550,6 @@ It turns out that there is no known formula for $P(k,n)$!
 \begin{equation}
 |S| = 1\ \ \mathrm{if\ }k = n,\ 0\ \mathrm{otherwise}
 \end{equation}  
-
-\chapauthor{}
 
 
 
