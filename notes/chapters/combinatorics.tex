@@ -7,14 +7,14 @@
 
 
 
-\section{Useful Expansions and Identities}
+\section{Useful Expressions}
 
 
 
 % binomial coefficients
 \subsection{Binomial Coefficients and Binomial Expansions}
 
-For two positive integers $n$ and $k$, the binomial coefficient "$n$ choose $k$" is written:
+For two positive integers $n$ and $k$, the binomial coefficient "$n$ choose $k$" is:
 
 \begin{equation}
 {n \choose k} = \left\{ \begin{array}{c} 
@@ -43,7 +43,7 @@ The term can be defined for negative arguments, which is comes up often when wor
 \end{array}\right.
 \end{equation}
 
-The generalizations are derived in https://arxiv.org/pdf/1105.3689.pdf using symmetry arguments.
+The generalizations can, for example, be derived using symmetry arguments and the Gamma function, which is the generalization of the factorial to non-integers (cf.  \citeasnoun{kronenburg2011binomial}).
 
 
 % Binomial Expansion
@@ -121,7 +121,7 @@ Where, boldly, I defined ${ m \choose k}$ to mean:
 \end{equation}
 
 
-
+% Multinomial Expansion
 \subsection{Multinomial Expansion}
 
 \begin{equation}
@@ -136,7 +136,7 @@ with:
 
 Where the sum over all possible exponents $i_j$ so that $\sum_j i_j = n$ has ${n+k-1 \choose n}$ terms. 
 
-\subsection{Polynomial Identity}
+\subsection{Unknown Polynomial Identity}
 I don't know what this is called, but it's useful.
 
 \begin{equation}
@@ -145,6 +145,8 @@ I don't know what this is called, but it's useful.
 
 Where $\{i\}_s$ is a set of $s$ indices that range between $0$ and $n$, and the sum is over all possible such sets, of which there are ${n \choose s}$.  
 
+
+% Factorial Expansion
 \subsection{Factorial Expansion}
 
 \begin{equation}
@@ -159,8 +161,10 @@ s(n,k) = (-1)^{n-k}\left[\begin{array}{c} n\\k \end{array}\right]
 
 are the stirling numbers of the first kind.
 
+
+
 % Stirling Numbers of the second kinds
-\section{Stirling Numbers of the Second Kind}
+\subsection{Stirling Numbers of the Second Kind}
 \label{sec:stirling2}
 
 Stirling numbers of the second kind $S(k,n)$ measure the amount of ways in which $k$ objects can be divided into $n$ non-empty groups. They give the number of onto functions from a set of $k$ distinct objects to $n$ indistinct recipients. For example: how many ways can a set of $k$ pool balls be put into $n$ bags, so that there is at least one ball in each bag. All the pool balls have numbers on them and have different colors, so that $n=2$ bags containing $[(1,2,3), (4)] $ and $[(1,2,4),(3)]$ count as different. This sort of problem is discussed at length in section \ref{twentyfoldway}
@@ -208,7 +212,7 @@ And $S(k,n) = 0$ if $n>k$.
 \section{The Twentyfold Way}
 \label{twentyfoldway}
 
-The twentyfold way is a taxonomy of distribution problems developed by Kenneth Bogard in his book \textit{Combinatorics through Guided Discovery}. It divides up the way in which $k$ objects may be assigned to $n$ individuals, subject to whether the objects are distinct or identical, and subject to conditions on how the objects are received.
+The twentyfold way is a taxonomy of distribution problems developed by Kenneth Bogard in his book \textit{Combinatorics through Guided Discovery} \cite{bogart2004combinatorics}. It divides up the way in which $k$ objects may be assigned to $n$ individuals, subject to whether the objects are distinct or identical, and subject to conditions on how the objects are received.
 
 
 \begin{quote}
@@ -236,7 +240,7 @@ A way to resolve this is to say that an object can have only one recipient, but 
 
 
 % Distinct Objects, No Conditions
-\subsection{Distinct Objects, No Conditions on Distributing}
+\subsection{Distinct Objects}
 
 
 %% Distinct Recipients
@@ -260,6 +264,7 @@ S = \{ (a_1,a_2,...,a_k) | a_i \in A, |A| = n \}\\
 \subparagraph{Binary Strings of Length $k$} The $k$ distinct positions of a binary string $(i_1,i_2,...,i_k)$ of length $k$ are assigned to an element of the set $A\in[0,1]$. The number of possible binary strings of length $k$ is $2^k$.
 
 \subparagraph{Subsets of a $k$-Element Set} The subsets of a set of $k$ distinct elements are formed by assigning each of its $k$ distinguishable elements to one of the two labels $A\in [\mathrm{included},\mathrm{excluded}]$. The number of possible subsets, including the empty subset and the full set, is $2^k$.
+
 
 %% Indistinct Recipients
 \subsubsection{Indistinct Recipients}
@@ -369,7 +374,7 @@ S = \{ (a_1,a_2,...,a_k) | a_i \in A, |A| = k = n, a_i\neq a_j\}\\
 \end{array}
 \end{equation}
 
-\subparagraph{Exactly One Pool Ball into Labeled Buckets} All possible ways to put $k$ pool balls, which all have different numbers and colors, into $n$ labeled buckets, that there is one pool ball in each bucket. This is the same as putting one pool ball into unlabeled buckets and multiplying by the $n!$ ways of attaching a label to the buckets. If there isn't the same amount of balls and buckets then there is no possible way for them to be matched one-for-one.
+\subparagraph{Exactly One Pool Ball into Each Labeled Buckets} All possible ways to put $k$ pool balls, which all have different numbers and colors, into $n$ labeled buckets, that there is one pool ball in each bucket. This is the same as putting one pool ball into unlabeled buckets and multiplying by the $n!$ ways of attaching a label to the buckets. If there isn't the same amount of balls and buckets then there is no possible way for them to be matched one-for-one.
 
 \subparagraph{Bijective Functions} All possible functions $f:x \rightarrow y$ with $\{x | x\in A, |A| = k \}$ and $\{y | y\in B, |B| = n\}$ subject to the constraints that $f(a) = f(b)$ implies $a=b$ and that there is an element $x$ in the domain so that $f(x)=y$ for each element $y$ of the codomain. That is, the functions are one-to-one and onto, of bijective.
 
@@ -389,7 +394,7 @@ S = \{ (a_1,a_2,...,a_k) | a_i \in A, |A| = k, a_i=a_j\}\\
 \end{equation}
 
 
-\subparagraph{Exactly One Pool Ball into Unlabeled Bags} All possible ways to put $k$ pool balls, which all have different numbers and colors, into $n$ unlabeled bags, that there is one pool ball in each bag. The result is that you either have $n$ bags with $n=k$ balls in them, if the two have matching numbers, or that you either have a bag or a ball left over and there is no way to match them one-for-one.
+\subparagraph{Exactly One Pool Ball into Each Unlabeled Bag} All possible ways to put $k$ pool balls, which all have different numbers and colors, into $n$ unlabeled bags, that there is one pool ball in each bag. The result is that you either have $n$ bags with $n=k$ balls in them, if the two have matching numbers, or that you either have a bag or a ball left over and there is no way to match them one-for-one.
 
 \subparagraph{Distribute without Leftovers} $k$ students are assigned to $n$ identical textbooks. How many ways are there for each child to have a textbook so that there are no textbooks left over? 
 
@@ -397,6 +402,7 @@ S = \{ (a_1,a_2,...,a_k) | a_i \in A, |A| = k, a_i=a_j\}\\
 % Distinct Objects, Ordered Groups
 \subsection{Distinct Objects, Distributed in Ordered Groups}
 
+%% Distinct Recipients
 \subsubsection{Distinct Recipients}
 $k$ objects are distributed to $n$ different recipients with an internal ordering, so that each recipient receives an ordered list. This is the same as creating a list of $n$ sequences that are sampled from $k$ \underline{without replacement}. 
 
@@ -409,11 +415,11 @@ S = \{ (\mathbf{a}_{\{i_1\}}  = ( a_{i_{1,1}},a_{i_{1,1}},...,a_{i_{1,l}} ),\mat
 \end{equation}
 
 
+\subparagraph{Books on Labeled Bookshelves} $k$ books are distributed across $n$ different bookshelves. The books may all be on the same shelf, or shelves may be empty. The ordering of the books on each of the shelves matters. This is the same as taking all the $k!$ permutations of the $k$ books and multiplying it by the way of dividing that permutation up onto $n$ shelves. 
+
 \subparagraph{Ordered Functions}  All functions $f: x \rightarrow y$ with $\{x | x\in A, |A| = k \}$ and $\{y | y\in B, |B| = n\}$ that assign ordered sequences of elements in $x$ to elements of $y$.
 
-\subparagraph{Labeled Bookshelves} $k$ books are distributed across $n$ different bookshelves. The books may all be on the same shelf, or shelves may be empty. The ordering of the books on each of the shelves matters.
-
-
+%% Indistinct Recipients
 \subsubsection{Indistinct Recipients}
 $k$ objects are broken up into $n$ 
 
@@ -427,7 +433,11 @@ where $L(k,n)$ are the Lah numbers, which describe "How many ways can $k$ object
 L(k,n)= {k \choose n} (k-1)^{\underline{k-n}} = \frac{k!}{n!}{ k-1 \choose n-1 }
 \end{equation}
 
-The sum considers the case where all $k$ objects are given to $i\leq n$ recipients, with the remaining recipients receiving none. The expression is more complicated than simply dividing the case for indistinct recipients by $n!$, because more than one of the recipients might receive the same number of objects, in which case i.e. the distribution $[(0),(0),(1,2)]$ would be counted twice.
+The sum considers the case where all $k$ objects are given to $i\leq n$ recipients, with the remaining recipients receiving none. Note that the expression is more complicated than simply dividing the case for indistinct recipients by $n!$, because more than one of the recipients might receive the same number of objects, in which case i.e. the distribution $[(0),(0),(1,2)]$ would be counted twice. The expression is analogous to the expression for distinct objects distributed to indistinct recipients, but where the objects did not have an internal ordering. In that case, instead of a sum over the Lah numbers, the sum is over the Stirling numbers of the second kind. 
+
+The Lah numbers can be derived by imagining that first one of the $k$ distinct objects is distributed to the $n$ indistinct recipients, to make sure that each recipient receives at least one, and then adding the remaining objects to the first without restrictions. After the first $n$ distinct objects have been distributed to the recipients, the recipients are no longer indistinct, because they each have been labeled by the object they have already received. There are ${k \choose n}$ ways of distributing the first $n$ objects and $(k-n)!{k-n+n-1 \choose k-n}$ ways to add the $k-n$ remaining objects.
+
+\subparagraph{Books into Unlabeled Boxes} $k$ books are stacked into up to $n$ different unlabeled boxes. Some of the boxes may be empty, and others may contain more than one book. The sequence in which the books are stacked in each box matters. If there are $n-r$ empty boxes and $r$ boxes that have at least one book in them, then there are ${k \choose r}$ ways of putting the first book in each of the boxes. Then there are $(k-r)!{k-r+r-1 \choose k-n}$ ways to stack the remaining books on top of those first books. 
 
 \subparagraph{Broken Permutations $\leq n$ Parts} The permutations of $k$ distinct elements are ordered sequences of length $k$. If the sequence is cut up into \underline{up to} $n$ different parts of non-zero length, then what results are \textit{broken permutations}.
 
@@ -437,14 +447,18 @@ The sum considers the case where all $k$ objects are given to $i\leq n$ recipien
 % Distinct Objects, Distributed in Ordered Groups of At Least One
 \subsection{Distinct Objects, Distributed in Ordered Groups of At Least One}
 
+% Distinct Recipients
 \subsubsection{Distinct Recipients}
 
 \begin{equation}
 |S| = \frac{k!}{(k-n)!}\frac{(k-1)!}{(n-1)!} = k^{\underline{n}} (k-1)^{\underline{k-n}}
 \end{equation}
 
+\subparagraph{Books on Labeled Bookshelves} $k$ books are distributed across $n$ different labeled bookshelves. There is at least one book on each shelf. This is the same as picking $n$ books to go on the shelves first, so that all of the shelves have at least one book on them, and then distributing the remainder without restrictions. There are $k^{\underline{n}}$ ways of picking the first $n$ books for each of the $n$ shelves, and $(k-n+n-1)^{\underline{k-n}}$ ways to add the remaining $k-n$ books. 
+
 \subparagraph{Ordered Onto Functions} All functions $f: x \rightarrow y$ with $\{x | x\in A, |A| = k \}$ and $\{y | y\in B, |B| = n\}$ that assign ordered sequences of elements in $x$ to elements of $y$, where every element $y\in B$ has an assignment of at least one element.
 
+%% Indistinct Recipients
 \subsubsection{Indistinct Recipients}
 $k$ elements are divided into $n$ ordered sequences of minimum length 1.
 
@@ -452,7 +466,8 @@ $k$ elements are divided into $n$ ordered sequences of minimum length 1.
 L(k,n)= {k \choose n} (k-1)^{\underline{k-n}} = \frac{k!}{n!}{ k-1 \choose n-1 }
 \end{equation}
 	
-	
+\subparagraph{Books into Unlabeled Boxes} $k$ books are stacked into up to $n$ different unlabeled boxes. All of the $n$ boxes have at least one book in them. The sequence in which the books are stacked in each box matters. There are ${k \choose n}$ ways of putting the first book in each of the boxes. Then there are $(k-n)!{k-n+n-1 \choose k-n}$ ways to stack the remaining $k-n$ books on top of those first books. 
+
 \subparagraph{Broken Permutations $n$ parts} The permutations of $k$ distinct elements are ordered sequences of length $k$. If the sequence is cut up into up to $n$ different parts, then what results are \textit{broken permutations}.
 
 \subparagraph{Books into Boxes} $k$ different books are put into $n$ identical boxes, so that there is at least one book in each box. How many ways are there to pack the boxes if you keep track of the order in which the books in each box are stacked? 
@@ -461,11 +476,16 @@ L(k,n)= {k \choose n} (k-1)^{\underline{k-n}} = \frac{k!}{n!}{ k-1 \choose n-1 }
 % Identical Objects
 \subsection{Identical Objects}
 
+%% Distinct Recipients
 \subsubsection{Distinct Recipients}
 
 \begin{equation}
 |S| = {k+n-1 \choose k}
 \end{equation}
+
+This coefficient can be easily derives using the "Stars and Bars" concept. A short way of explaining this is as follows: picture putting all the $k$ identical objects in a line (stars). Picture having dividers (bars) to divide the $k$ objects into $n$ groups. For $n$ groups, it is necessary to use $n-1$ dividers. Empty groups result when the dividers sit right next to each other with no object in between them, or if a divider is at the end of a sequence. In total, the objects and the dividers make for a sequence in which $k+n-1$ spots are taken up by either an object or a divider. To pick a particular way of dividing the $k$ objects up, you can either pick the $n-1$ locations of the sequence in which the dividers are located, or, equivalently, the locations in which the objects are located. There are ${k+n-1\choose n-1}={k+n-1\choose k}$ to do so.  
+
+\subparagraph{Ping Pong Balls into Labeled Buckets} $k$ identical ping pong balls are put into $n$ labeled buckets. Some of the buckets may be empty, and other buckets might have more than one ball in them.  
 
 \subparagraph{Multisets} Multisets are sets in which identical elements might show up several times. For example $\{a,a,b,b,b\}$. They can also be described in terms of the multiplicity of their elements. For example $[a:2, b:3, c:0]$. How many multisets can be formed with $k$ different elements of $n$ different classes?
 
@@ -473,16 +493,18 @@ L(k,n)= {k \choose n} (k-1)^{\underline{k-n}} = \frac{k!}{n!}{ k-1 \choose n-1 }
 
 \subparagraph{Bosons in Degenerate States} In how many ways might $k$ Bosons populate $n$ degenerate states?
 
-
+%% Indistinct Recipients
 \subsubsection{Indistinct Recipients}
 
 \begin{equation}
 |S| = \sum_{i=1}^n P(k,i)
 \end{equation}
 
-It turns out that there is no known formula for $P(k,n)$!
+It turns out that there is no known formula for $P(k,n)$.
 
-\subparagraph{Number Partitions} How many ways are there to divide $k$ objects across \underline{up to} $n$ piles
+\subparagraph{Ping Pong Balls into Unlabeled Bags} $k$ identical ping pong balls are put into $n$ unlabeled bags. Some of the bags might be empty, and other bags might have more than one ball in them.
+
+\subparagraph{Number Partitions} How many ways are there to divide $k$ objects across \underline{up to} $n$ piles. How many ways are there to divide an integer $k$ into a sum of $n$ integers (including zeros). For example: for $k=5$, $n=3$, the partitions are $5+0+0, 4+1+0, 3+2+0, 3+1+1, 2+2+1$.
 
 \subparagraph{Unlabeled Multiplicities of Multisets} For multisets of $k$ elements with $n$ different classes, what is the number of possible multiplicities? For example, a multiset of $k=3$ elements from $n=2$ classes could have multiplicities $[a:3,b:0], [a:2,b:1],[a:1,b:2],[a:0,b:3]$. If we do not care about the labels $a,b$, then the ways that the the $k$ elements migth be distributed are $[3,0]$ and $[2,1]$.
 
@@ -493,6 +515,7 @@ It turns out that there is no known formula for $P(k,n)$!
 % Identical Objects, Each gets at most one
 \subsection{Identical Objects, Each Receives At Most One}
 
+%% Distinct Recipients
 \subsubsection{Distinct Recipients}
 $k$ identical objects are distributed across $n$ recipients so that each recipient recieves at most one. That amounts to choosing $k$ out of the $n$ recipients who will receive an object.
 
@@ -501,15 +524,20 @@ $k$ identical objects are distributed across $n$ recipients so that each recipie
 \end{equation}
 
 
-\subparagraph{Subsets} $k$ element subsets of a set of size $n$.
+\subparagraph{At Most One Ping Pong Balls into Labeled Buckets} $k$ identical ping pong balls are distributed across $n$ different buckets, so that $k$ buckets have one ball in them and $n-k$ buckets are empty. This is the same as choosing $k$ out of the $n$ buckets, for which there are $n\times(n-1)\times(n-2)\times\hdots\times(n-k+1)$ choices for the $k$ balls, and correcting for the internal orderings of the $k$ balls by dividing by $k!$ because the balls are identical.
 
-\subparagraph{Binary Labels} The problem can also be thought of as assigning a binary label to $n$ elements, where there are $k$ times $1$ and $n-k$ times 0.
+\subparagraph{Subsets} $k$ element subsets of a set of size $n$. The subsets are formed by either choosing the $k$ elements that are included or the $n-k$ elements that are excluded.
 
+\subparagraph{Set Binary Labels} The problem can also be thought of as assigning a binary label to $n$ elements, where there are $k$ times $1$ and $n-k$ times 0.
+
+%% Indistinct Recipients
 \subsubsection{Indistinct Recipients}
 
 \begin{equation}
 |S| = 1\ \ \mathrm{if\ }k \leq n,\ 0\ \mathrm{otherwise}
-\end{equation}  
+\end{equation}
+
+\subparagraph{At Most One Ping Pong Ball into Unlabeled Bags}  $k$ identical ping pong balls are put into $n$ identical bags. The result is either $k$ bags with ping pong balls and $n-k$ empty bags, or there is no possible result if there are not enough bags (i.e. if $k>n$).
 
 \subparagraph{Boxes} How many ways are there to put $k$ marbles in $n$ boxes, if each box is only big enough for one marble. One, if there are enough boxes, or zero, if there aren't enough boxes.
 
@@ -517,6 +545,7 @@ $k$ identical objects are distributed across $n$ recipients so that each recipie
 % Identical Everyone Gets At Least one
 \subsection{Identical Objects, Each Receives At Least One}
 
+%% Distinct Recipients
 \subsubsection{Distinct Recipients}
 This problem is the same as giving each of $n$ recipients one of $k$ objects, and then distributing the remaining $k-n$ objects arbitrarily.  
 
@@ -524,32 +553,48 @@ This problem is the same as giving each of $n$ recipients one of $k$ objects, an
 |S| = {k+n-1-k \choose k-n}= {n-1 \choose k-1}
 \end{equation}
 
+This can be derived by picturing first distributing one object to each of the $n$ recipients, ensuring that each recipient has at least one, and then distributing the remaining $k-n$ objects arbitrarily. There is only one way to give each recipient one of the identical objects, and then there are ${k-n+n-1\choose k-n}$ ways to distribute the remaining $k-n$ objects arbitrarily across the recipients.
+
+\subparagraph{At Least One Ping Pong Ball into Labeled Buckets} $k$ ping pong balls are distributed into $n$ labeled buckets so that there is at least one ping pong ball in each bucket. The labeled buckets may have more than one ping pong ball in them.
+
 \subparagraph{Compositions $n$ Parts} How many ways are there to assign $k$ identical objects to $n$ labeled sets of at least one object?
 
+% Indistinct Recipients
 \subsubsection{Indistinct Recipients}
 
 \begin{equation}
 |S| = P(k,n)
 \end{equation}
 
-It turns out that there is no known formula for $P(k,n)$!
+It turns out that there is no known formula for $P(k,n)$.
+
+\subparagraph{At Least One Ping Pong Ball in Unlabeled Bags} $k$ identical ping pong balls are distributed across $n$ unlabeled bags, so that none of the bags are empty. 
 
 \subparagraph{Partitions in $n$ Parts} How many ways are there to make $n$ piles from $k$ objects.
+
+
 
 % Identical Each Gets Exactly one
 \subsection{Identical Objects, Each Receives Exactly One}
 
+%% Distinct Recipients 
 \subsubsection{Distinct Recipients}
 
 \begin{equation}
 |S| = 1\ \ \mathrm{if\ }k = n,\ 0\ \mathrm{otherwise}
 \end{equation}  
 
+\subparagraph{One Ping Pong Ball into Each Labeled Bucket} $k$ identical ping pong balls are distributed across $n$ labeled buckets so that each bucket has one ping pong ball in it. If $k=n$, then there is one way to put one ball in each bucket. If the numbers do not match up, then there is no way to match them one-for-one.
+
+%% Indistinct Recipients
 \subsubsection{Indistinct Recipients}
 
 \begin{equation}
 |S| = 1\ \ \mathrm{if\ }k = n,\ 0\ \mathrm{otherwise}
 \end{equation}  
+
+\subparagraph{One Ping Pong Ball into Each Unlabeled Bag} $k$ identical ping pong balls are distributed across $n$ identical bags so that each bags has one ping pong ball in it. If $k=n$, then there is one way to put one ball in each bag. If the numbers do not match up, then there is no way to match them one-for-one.
+
 
 
 

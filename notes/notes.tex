@@ -7,8 +7,12 @@
 \usepackage{amsmath}
 \usepackage{amssymb}
 
+\usepackage{cite}
+
 
 %\usepackage{hyperref}
+ \usepackage{url}
+ \usepackage{harvard}
 
 
 %\hypersetup{
@@ -44,7 +48,7 @@
 \titleformat{\chapter}[hang]
   {\LARGE\bfseries\filright}
   {\thechapter}
-  {7pt} % {0pt}
+  {7pt} % {0pt}	
   {%
     \ifx\chap@author\@empty\else
       \setlength{\unitlength}{1mm}%
@@ -120,6 +124,9 @@ Far from complete and far from correct. These notes exist because I learn better
 \input{./chapters/linearalgebra.tex}
 \input{./chapters/linearregression.tex}
 
+
+\bibliographystyle{agsm}
+\bibliography{references}
 
 
 \tableofcontents
