@@ -5,6 +5,16 @@ Bogart, K.~P.  \harvardyearleft 2004\harvardyearright , {\em Combinatorics
   through guided discovery}, Kenneth P. Bogart.
 \newline\harvardurl{\url{https://bogart.openmathbooks.org/}}
 
+\harvarditem{Colyer}{2019}{morningpaper2019nnmf}
+Colyer, A.  \harvardyearleft 2019\harvardyearright , `The why and how of
+  nonnegative matrix factorization'.
+\newline\harvardurl{\url{https://blog.acolyer.org/2019/02/18/the-why-and-how-of-nonnegative-matrix-factorization/}}
+
+\harvarditem{Gillis}{2014}{gillis2014and}
+Gillis, N.  \harvardyearleft 2014\harvardyearright , `The why and how of
+  nonnegative matrix factorization', {\em Regularization, optimization,
+  kernels, and support vector machines} {\bf 12}(257),~257--291.
+
 \harvarditem{Kronenburg}{2011}{kronenburg2011binomial}
 Kronenburg, M.  \harvardyearleft 2011\harvardyearright , `The binomial
   coefficient for negative arguments', {\em arXiv preprint arXiv:1105.3689} .

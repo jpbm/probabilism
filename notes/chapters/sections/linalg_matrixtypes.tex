@@ -1,0 +1,31 @@
+\section{Types of Matrices}
+
+\subsection{Hermitian}
+Hermitian matrices are matrices that are equal to their complex transpose. That is:
+
+\begin{equation}
+{\mathbf{A}^{*}}^T = \mathbf{A}^\dagger = \mathbf{A} 
+\end{equation}
+
+Hermitian matrices are like a generalization of symmetric matrices to include complex numbers. 
+
+\subsubsection{Properties}
+There are many properties. 
+\begin{itemize}
+\item By definition: $\mathbf{A} = \mathbf{A}^\dagger$
+\item Diagonal Entries are all real, since $a_{i,i} = a_{i,i}^*$
+\item Inverse is also hermitian:  $\mathbf{A}^{-1} ={ \mathbf{A}^{-1}}^\dagger$
+\item Diagonalizable with real eigenvalues and orthogonal eigenvectors $\in \mathbb{C}^n$.
+\end{itemize}
+
+
+\subsection{Triangular}
+A lower triangular matrix is a matrix that has all-zero entries above the diagonal.
+
+\begin{equation}
+\mathbf{L} = \left[\begin{array}{cccccc} l_{1,1}&&&&&0\\l_{2,1}&l_{2,2}&&&&\\l_{3,1}&l_{3,2}&\ddots&&&\\  \vdots&\vdots&\ddots&\ddots&&\\ \vdots&\vdots&&\ddots&\ddots&\\  l_{n,1}&l_{n,2}&\hdots&\hdots&l_{n,n-1}&l_{n,n}\end{array}\right]
+\end{equation}
+
+Upper triangular matrices are matrices that have all-zero entries below the diagonal.
+
+

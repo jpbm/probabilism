@@ -1,8 +1,6 @@
 % \chapauthor{J. P. Balthasar Mueller}
 \chapter{Linear Algebra}
 
-Resolution for the new year: every time you have to look something up, try to make a note of it.
-
 \begin{multicols}{2}[\subsubsection*{Contents of this chapter}]
    \printcontents{}{1}{\setcounter{tocdepth}{2}}
 \end{multicols}
@@ -27,9 +25,21 @@ The Cholesky Decomposition exists when a matrix is hermitian and positive-defini
 Where $\mathbf{L}$ is a lower-triangular matrix with positive, real diagonal entries. When $\mathbf{A}$ is real, then so is $\mathbf{L}$. The Cholesky decomposition enables fast solution of a linear system, but it can also be used to create correlated random variables in Monte Carlo simulations. 
 
 \subsubsection{Creating Correlated Random Variables}
-Let $\mathbf{u}_t$ be a vector of uncorrelated samples. If the covariance matrix of the system to be simulated is  $\mathbf{\Sigma}$ with Cholesky decomposition $\mathbf{\Sigma} = \mathbf{LL}^\dagger$, then the vector $\mathbf{v}_t = \mathbf{Lu}_t$ has the desired covariance.
+Let $\mathbf{u}_t$ be a vector of uncorrelated samples with sandard deviation 1. If the covariance matrix of the system to be simulated is  $\mathbf{\Sigma}$ with Cholesky decomposition $\mathbf{\Sigma} = \mathbf{LL}^\dagger$, then the vector $\mathbf{v}_t = \mathbf{Lu}_t$ has the desired covariance.
+
+\begin{figure}
+\centering
+\includegraphics[scale=0.5]{cholesky1.png}
+\includegraphics[scale=0.5]{cholesky2.png}
+\caption{Creating correlated random variables from uncorrelated random variables using the Cholesky decomposition of the covariance matrix. The 5 uncorrelated random variables are sampled from a standard normal distribution. It is difficult to see a difference between the correlated and uncorrelated random walks.}
+\end{figure}
+
+\section{Non-Negative Matrix Factorization}
+Non-Negative Matrix Factorization works for positive matrices and is interesting as a method for dimensionality reduction. It works by expressing a matrix $\mathbf{X}\in\mathbb{R}^{p\times n}_+$ in terms of two smaller positive matrices $\mathbf{W}\in\mathbb{R}_+^{p\times r}$ and $\mathbf{H}\in \mathbb{R}^{r\times n}_+$. An excellent introduction is in \possessivecite{morningpaper2019nnmf} blog post and in \citeasnoun{gillis2014and}. 
+
 
 \section{Generalized Eigenvectors}
+
 
 \section{Affine Transformations}
 
@@ -67,35 +77,8 @@ f: V_1 \times V_2 \times ... \times V_n \rightarrow K
 Where $V_1, V_2, ... , V_n$ and $K$ is a scalar field.
 
 
-\section{Types of Matrices}
-
-\subsection{Hermitian}
-Hermitian matrices are matrices that are equal to their complex transpose. That is:
-
-\begin{equation}
-{\mathbf{A}^{*}}^T = \mathbf{A}^\dagger = \mathbf{A} 
-\end{equation}
-
-Hermitian matrices are like a generalization of symmetric matrices to include complex numbers. 
-
-\subsubsection{Properties}
-There are many properties. 
-\begin{itemize}
-\item By definition: $\mathbf{A} = \mathbf{A}^\dagger$
-\item Diagonal Entries are all real, since $a_{i,i} = a_{i,i}^*$
-\item Inverse is also hermitian:  $\mathbf{A}^{-1} ={ \mathbf{A}^{-1}}^\dagger$
-\item Diagonalizable with real eigenvalues and orthogonal eigenvectors $\in \mathbb{C}^n$.
-\end{itemize}
-
-
-\subsection{Triangular}
-A lower triangular matrix is a matrix that has all-zero entries above the diagonal.
-
-\begin{equation}
-\mathbf{L} = \left[\begin{array}{cccccc} l_{1,1}&&&&&0\\l_{2,1}&l_{2,2}&&&&\\l_{3,1}&l_{3,2}&\ddots&&&\\  \vdots&\vdots&\ddots&\ddots&&\\ \vdots&\vdots&&\ddots&\ddots&\\  l_{n,1}&l_{n,2}&\hdots&\hdots&l_{n,n-1}&l_{n,n}\end{array}\right]
-\end{equation}
-
-Upper triangular matrices are matrices that have all-zero entries below the diagonal.
+\input{./chapters/sections/linalg_matrixtypes.tex}
+\input{./chapters/sections/linalg_norms.tex}
 
 \section{Taking Derivatives}
 

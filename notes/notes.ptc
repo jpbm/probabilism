@@ -8,7 +8,7 @@
 \contentsline {subsection}{\numberline {1.1.3}Unknown Polynomial Identity}{5}
 \contentsline {subsection}{\numberline {1.1.4}Factorial Expansion}{5}
 \contentsline {subsection}{\numberline {1.1.5}Stirling Numbers of the Second Kind}{5}
-\contentsline {section}{\numberline {1.2}The Twentyfold Way}{6}
+\contentsline {section}{\numberline {1.2}Taxonomy of Distribution Problems: The Twentyfold Way}{6}
 \contentsline {subparagraph}{Favorite Teachers}{6}
 \contentsline {subparagraph}{Assembling a Team}{6}
 \contentsline {subsection}{\numberline {1.2.1}Distinct Objects}{7}
@@ -18,49 +18,49 @@
 \contentsline {subparagraph}{Binary Strings of Length $k$}{7}
 \contentsline {subparagraph}{Subsets of a $k$-Element Set}{7}
 \contentsline {subsubsection}{\numberline {1.2.1.2}Indistinct Recipients}{7}
-\contentsline {subparagraph}{Pool Balls into Unlabeled Bags}{7}
-\contentsline {subsection}{\numberline {1.2.2}Distinct Objects, Every Recipient Receives At Most One}{7}
-\contentsline {subsubsection}{\numberline {1.2.2.1}Distinct Recipients}{7}
+\contentsline {subparagraph}{Pool Balls into Unlabeled Bags}{8}
+\contentsline {subsection}{\numberline {1.2.2}Distinct Objects, Every Recipient Receives At Most One}{8}
+\contentsline {subsubsection}{\numberline {1.2.2.1}Distinct Recipients}{8}
 \contentsline {subparagraph}{At Most One Pool Ball into Labeled Buckets}{8}
 \contentsline {subparagraph}{One-to-One Functions}{8}
 \contentsline {subparagraph}{k-element Permutations of $n$ elements}{8}
 \contentsline {subparagraph}{Books on a Shelf}{8}
 \contentsline {subsubsection}{\numberline {1.2.2.2}Indistinct Recipients}{8}
 \contentsline {subparagraph}{At Most One Pool Ball into Unlabeled Bags}{8}
-\contentsline {subparagraph}{Distributing Candy}{8}
-\contentsline {subsection}{\numberline {1.2.3}Distinct Objects, Every Recipient Receives at Least One}{8}
-\contentsline {subsubsection}{\numberline {1.2.3.1}Distinct Recipients}{8}
-\contentsline {subparagraph}{At Least One Pool Ball into Labeled Buckets}{8}
-\contentsline {subparagraph}{Onto Functions}{8}
+\contentsline {subparagraph}{Distributing Candy}{9}
+\contentsline {subsection}{\numberline {1.2.3}Distinct Objects, Every Recipient Receives at Least One}{9}
+\contentsline {subsubsection}{\numberline {1.2.3.1}Distinct Recipients}{9}
+\contentsline {subparagraph}{At Least One Pool Ball into Labeled Buckets}{9}
+\contentsline {subparagraph}{Onto Functions}{9}
 \contentsline {subsubsection}{\numberline {1.2.3.2}Indistinct Recipients}{9}
 \contentsline {subparagraph}{At Least One Pool Ball into Unlabeled Bags}{9}
 \contentsline {subsection}{\numberline {1.2.4}Distinct Objects, Every Recipient Receives Exactly One}{9}
 \contentsline {subsubsection}{\numberline {1.2.4.1}Distinct Recipients}{9}
 \contentsline {subparagraph}{Exactly One Pool Ball into Each Labeled Buckets}{9}
-\contentsline {subparagraph}{Bijective Functions}{9}
-\contentsline {subparagraph}{Permutations}{9}
-\contentsline {subparagraph}{Unique Identifiers}{9}
-\contentsline {subsubsection}{\numberline {1.2.4.2}Indistinct Recipients}{9}
-\contentsline {subparagraph}{Exactly One Pool Ball into Each Unlabeled Bag}{9}
-\contentsline {subparagraph}{Distribute without Leftovers}{9}
+\contentsline {subparagraph}{Bijective Functions}{10}
+\contentsline {subparagraph}{Permutations}{10}
+\contentsline {subparagraph}{Unique Identifiers}{10}
+\contentsline {subsubsection}{\numberline {1.2.4.2}Indistinct Recipients}{10}
+\contentsline {subparagraph}{Exactly One Pool Ball into Each Unlabeled Bag}{10}
+\contentsline {subparagraph}{Distribute without Leftovers}{10}
 \contentsline {subsection}{\numberline {1.2.5}Distinct Objects, Distributed in Ordered Groups}{10}
 \contentsline {subsubsection}{\numberline {1.2.5.1}Distinct Recipients}{10}
 \contentsline {subparagraph}{Books on Labeled Bookshelves}{10}
 \contentsline {subparagraph}{Ordered Functions}{10}
 \contentsline {subsubsection}{\numberline {1.2.5.2}Indistinct Recipients}{10}
-\contentsline {subparagraph}{Books into Unlabeled Boxes}{10}
-\contentsline {subparagraph}{Broken Permutations $\leq n$ Parts}{10}
+\contentsline {subparagraph}{Books into Unlabeled Boxes}{11}
+\contentsline {subparagraph}{Broken Permutations $\leq n$ Parts}{11}
 \contentsline {subparagraph}{Books into Boxes}{11}
 \contentsline {subsection}{\numberline {1.2.6}Distinct Objects, Distributed in Ordered Groups of At Least One}{11}
 \contentsline {subsubsection}{\numberline {1.2.6.1}Distinct Recipients}{11}
 \contentsline {subparagraph}{Books on Labeled Bookshelves}{11}
 \contentsline {subparagraph}{Ordered Onto Functions}{11}
 \contentsline {subsubsection}{\numberline {1.2.6.2}Indistinct Recipients}{11}
-\contentsline {subparagraph}{Books into Unlabeled Boxes}{11}
-\contentsline {subparagraph}{Broken Permutations $n$ parts}{11}
-\contentsline {subparagraph}{Books into Boxes}{11}
-\contentsline {subsection}{\numberline {1.2.7}Identical Objects}{11}
-\contentsline {subsubsection}{\numberline {1.2.7.1}Distinct Recipients}{11}
+\contentsline {subparagraph}{Books into Unlabeled Boxes}{12}
+\contentsline {subparagraph}{Broken Permutations $n$ parts}{12}
+\contentsline {subparagraph}{Books into Boxes}{12}
+\contentsline {subsection}{\numberline {1.2.7}Identical Objects}{12}
+\contentsline {subsubsection}{\numberline {1.2.7.1}Distinct Recipients}{12}
 \contentsline {subparagraph}{Ping Pong Balls into Labeled Buckets}{12}
 \contentsline {subparagraph}{Multisets}{12}
 \contentsline {subparagraph}{Integer Sums}{12}
@@ -68,26 +68,26 @@
 \contentsline {subsubsection}{\numberline {1.2.7.2}Indistinct Recipients}{12}
 \contentsline {subparagraph}{Ping Pong Balls into Unlabeled Bags}{12}
 \contentsline {subparagraph}{Number Partitions}{12}
-\contentsline {subparagraph}{Unlabeled Multiplicities of Multisets}{12}
-\contentsline {subparagraph}{Boxes of Marbles}{12}
-\contentsline {subsection}{\numberline {1.2.8}Identical Objects, Each Receives At Most One}{12}
-\contentsline {subsubsection}{\numberline {1.2.8.1}Distinct Recipients}{12}
-\contentsline {subparagraph}{At Most One Ping Pong Balls into Labeled Buckets}{12}
-\contentsline {subparagraph}{Subsets}{12}
-\contentsline {subparagraph}{Set Binary Labels}{12}
+\contentsline {subparagraph}{Unlabeled Multiplicities of Multisets}{13}
+\contentsline {subparagraph}{Boxes of Marbles}{13}
+\contentsline {subsection}{\numberline {1.2.8}Identical Objects, Each Receives At Most One}{13}
+\contentsline {subsubsection}{\numberline {1.2.8.1}Distinct Recipients}{13}
+\contentsline {subparagraph}{At Most One Ping Pong Balls into Labeled Buckets}{13}
+\contentsline {subparagraph}{Subsets}{13}
+\contentsline {subparagraph}{Set Binary Labels}{13}
 \contentsline {subsubsection}{\numberline {1.2.8.2}Indistinct Recipients}{13}
 \contentsline {subparagraph}{At Most One Ping Pong Ball into Unlabeled Bags}{13}
 \contentsline {subparagraph}{Boxes}{13}
 \contentsline {subsection}{\numberline {1.2.9}Identical Objects, Each Receives At Least One}{13}
 \contentsline {subsubsection}{\numberline {1.2.9.1}Distinct Recipients}{13}
-\contentsline {subparagraph}{At Least One Ping Pong Ball into Labeled Buckets}{13}
-\contentsline {subparagraph}{Compositions $n$ Parts}{13}
-\contentsline {subsubsection}{\numberline {1.2.9.2}Indistinct Recipients}{13}
-\contentsline {subparagraph}{At Least One Ping Pong Ball in Unlabeled Bags}{13}
-\contentsline {subparagraph}{Partitions in $n$ Parts}{13}
-\contentsline {subsection}{\numberline {1.2.10}Identical Objects, Each Receives Exactly One}{13}
-\contentsline {subsubsection}{\numberline {1.2.10.1}Distinct Recipients}{13}
-\contentsline {subparagraph}{One Ping Pong Ball into Each Labeled Bucket}{13}
+\contentsline {subparagraph}{At Least One Ping Pong Ball into Labeled Buckets}{14}
+\contentsline {subparagraph}{Compositions $n$ Parts}{14}
+\contentsline {subsubsection}{\numberline {1.2.9.2}Indistinct Recipients}{14}
+\contentsline {subparagraph}{At Least One Ping Pong Ball in Unlabeled Bags}{14}
+\contentsline {subparagraph}{Partitions in $n$ Parts}{14}
+\contentsline {subsection}{\numberline {1.2.10}Identical Objects, Each Receives Exactly One}{14}
+\contentsline {subsubsection}{\numberline {1.2.10.1}Distinct Recipients}{14}
+\contentsline {subparagraph}{One Ping Pong Ball into Each Labeled Bucket}{14}
 \contentsline {subsubsection}{\numberline {1.2.10.2}Indistinct Recipients}{14}
 \contentsline {subparagraph}{One Ping Pong Ball into Each Unlabeled Bag}{14}
 \contentsline {chapter}{\numberline {2}Linear Algebra}{15}
@@ -97,15 +97,20 @@
 \contentsline {section}{\numberline {2.2}Singular Value Decomposition}{15}
 \contentsline {section}{\numberline {2.3}Cholesky Decomposition}{15}
 \contentsline {subsubsection}{\numberline {2.3.0.1}Creating Correlated Random Variables}{15}
-\contentsline {section}{\numberline {2.4}Generalized Eigenvectors}{15}
-\contentsline {section}{\numberline {2.5}Affine Transformations}{15}
-\contentsline {section}{\numberline {2.6}Multilinear Maps}{16}
-\contentsline {section}{\numberline {2.7}Multilinear Forms}{16}
-\contentsline {section}{\numberline {2.8}Types of Matrices}{16}
-\contentsline {subsection}{\numberline {2.8.1}Hermitian}{16}
-\contentsline {subsubsection}{\numberline {2.8.1.1}Properties}{16}
-\contentsline {subsection}{\numberline {2.8.2}Triangular}{16}
-\contentsline {section}{\numberline {2.9}Taking Derivatives}{17}
+\contentsline {section}{\numberline {2.4}Non-Negative Matrix Factorization}{15}
+\contentsline {section}{\numberline {2.5}Generalized Eigenvectors}{15}
+\contentsline {section}{\numberline {2.6}Affine Transformations}{15}
+\contentsline {section}{\numberline {2.7}Multilinear Maps}{17}
+\contentsline {section}{\numberline {2.8}Multilinear Forms}{17}
+\contentsline {section}{\numberline {2.9}Types of Matrices}{17}
+\contentsline {subsection}{\numberline {2.9.1}Hermitian}{17}
+\contentsline {subsubsection}{\numberline {2.9.1.1}Properties}{17}
+\contentsline {subsection}{\numberline {2.9.2}Triangular}{17}
+\contentsline {section}{\numberline {2.10}Matrix Norms}{18}
+\contentsline {subsection}{\numberline {2.10.1}Operator Norm}{18}
+\contentsline {subsection}{\numberline {2.10.2}Frobenius Norm}{18}
+\contentsline {subsection}{\numberline {2.10.3}$L_{2,1}$ and $L_{p,q}$ Norms}{18}
+\contentsline {section}{\numberline {2.11}Taking Derivatives}{18}
 \contentsline {chapter}{\numberline {3}Linear Regression}{19}
 \ttl@stoptoc {default@2}
 \ttl@starttoc {default@3}
