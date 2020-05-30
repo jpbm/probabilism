@@ -41,63 +41,11 @@ Non-Negative Matrix Factorization works for positive matrices and is interesting
 \section{Generalized Eigenvectors}
 
 
-\section{Affine Transformations}
 
-Affine transformations are the combination of a linear map and a translation, which has the form $f(\mathbf{x}) = \mathbf{A}\mathbf{x} + \mathbf{b}$. 
-
-\begin{equation}
-f: V \rightarrow W
-\end{equation}
-
-Where $V$ and $W$ are vector spaces. Affine transformations can be expresses as matrices by adding an entry with a constant to the vectors that describe a point in space. For example, for $\mathbf{x} \in \mathbb{R}^n$,  the affine transform $f(\mathbf{x}) = \mathbf{A}\mathbf{x} + \mathbf{b}$ with $A\in\mathbb{R}^{n,n}$ and $x,b \in \mathbb{R}^{n}$ can be expressed as the product of a rectangular matrix $\mathbf{M}$ and a vector $\mathbf{c}$ as:
-
-\begin{equation}
-\mathbf{A}\mathbf{x} + \mathbf{b} = \underbrace{\left[\begin{array}{c|c} \mathbf{A} & \mathbf{b} \end{array}\right]}_{\mathbf{M}} \underbrace{\left[\begin{array}{c} \mathbf{x} \\ 1\end{array} \right]}_{\mathbf{c}}
-\end{equation}
-
-Where $\mathbf{c}^T = \left[x_1,x_2,x_3,...,x_n,1\right]$ and $\mathbf{M} \in \mathbb{R}^{n,n+1}$.
-
-\section{Multilinear Maps}
-
-A multilinear map acts on several vectors in a way that is linear in each of its arguments. A $k$-linear map acts on $k$ vectors, where $k=2$ are bilinear maps and $k=1$ are linear maps.
-
-\begin{equation}	
-f: V_1 \times V_2 \times ... \times V_n \rightarrow W
-\end{equation}
-
-Where $V_1, V_2, ... , V_n$ and $W$ are vector spaces. An example would be the addition or subtraction of two or more vectors.
-
-\section{Multilinear Forms}
-Multilinear forms are multilinear maps that have a scalar output. An example is the dot product between two vectors, or summing over the elements of one or more vectors.
-
-\begin{equation}
-f: V_1 \times V_2 \times ... \times V_n \rightarrow K
-\end{equation}
-
-Where $V_1, V_2, ... , V_n$ and $K$ is a scalar field.
-
-
+\input{./chapters/sections/linalg_transformations.tex}
 \input{./chapters/sections/linalg_matrixtypes.tex}
 \input{./chapters/sections/linalg_norms.tex}
-
-\section{Taking Derivatives}
-
-\begin{equation}
-\begin{array}{l}
-\frac{d}{d\mathbf{x}} \left(\mathbf{u}^T\mathbf{x}\right) = \left[\frac{d}{dx_1}\left(\sum_i u_i x_i\right),...,\frac{d}{dx_n}\left(\sum_i u_i x_i\right)\right] = \mathbf{u}^T\\
-\\
-\frac{d}{d\mathbf{x}} \left(\mathbf{x}^T\mathbf{u}\right) = \left[\frac{d}{dx_1}\left(\sum_i u_i x_i\right),...,\frac{d}{dx_n}\left(\sum_i u_i x_i\right)\right] = \mathbf{u}^T\\
-\\
-\frac{d}{d\mathbf{x}} \left(\mathbf{x}^T\mathbf{x}\right) = \left[\frac{d}{dx_1}\left(\sum_i x_i^2\right),...,\frac{d}{dx_n}\left(\sum_i x_i^2\right)\right] = 2\mathbf{x}^T\\
-\\
-\frac{d}{d\mathbf{x}} \left(\mathbf{A}x\right) = \left[
-\begin{array}{ccc} 
-\underbrace{\frac{d}{dx_1}\left(\sum_i A_{1i} x_i\right)}_{A_{11}} &...& \underbrace{\frac{d}{dx_n}\left(\sum_i A_{1i} x_i\right)}_{A_1n}\\
-\vdots&\vdots&\vdots\\
-\underbrace{\frac{d}{dx_1}\left(\sum_i A_{ni} x_i\right)}_{A_{n1}} &...& \underbrace{\frac{d}{dx_n}\left(\sum_i A_{ni} x_i\right)}_{A_{nn}}\\
-\end{array}\right] = \mathbf{A}\\
-\end{array}
-\end{equation}
+\input{./chapters/sections/linalg_diff.tex}
 
 
 \chapauthor{}

@@ -1,0 +1,37 @@
+\section{Types of Transformations}
+
+\subsection{Affine Transformations}
+
+Affine transformations are the combination of a linear map and a translation, which has the form $f(\mathbf{x}) = \mathbf{A}\mathbf{x} + \mathbf{b}$. 
+
+\begin{equation}
+f: V \rightarrow W
+\end{equation}
+
+Where $V$ and $W$ are vector spaces. Affine transformations can be expresses as matrices by adding an entry with a constant to the vectors that describe a point in space. For example, for $\mathbf{x} \in \mathbb{R}^n$,  the affine transform $f(\mathbf{x}) = \mathbf{A}\mathbf{x} + \mathbf{b}$ with $A\in\mathbb{R}^{n,n}$ and $x,b \in \mathbb{R}^{n}$ can be expressed as the product of a rectangular matrix $\mathbf{M}$ and a vector $\mathbf{c}$ as:
+
+\begin{equation}
+\mathbf{A}\mathbf{x} + \mathbf{b} = \underbrace{\left[\begin{array}{c|c} \mathbf{A} & \mathbf{b} \end{array}\right]}_{\mathbf{M}} \underbrace{\left[\begin{array}{c} \mathbf{x} \\ 1\end{array} \right]}_{\mathbf{c}}
+\end{equation}
+
+Where $\mathbf{c}^T = \left[x_1,x_2,x_3,...,x_n,1\right]$ and $\mathbf{M} \in \mathbb{R}^{n,n+1}$.
+
+\subsection{Multilinear Maps}
+
+A multilinear map acts on several vectors in a way that is linear in each of its arguments. A $k$-linear map acts on $k$ vectors, where $k=2$ are bilinear maps and $k=1$ are linear maps.
+
+\begin{equation}	
+f: V_1 \times V_2 \times ... \times V_n \rightarrow W
+\end{equation}
+
+Where $V_1, V_2, ... , V_n$ and $W$ are vector spaces. An example would be the addition or subtraction of two or more vectors.
+
+\subsection{Multilinear Forms}
+Multilinear forms are multilinear maps that have a scalar output. An example is the dot product between two vectors, or summing over the elements of one or more vectors.
+
+\begin{equation}
+f: V_1 \times V_2 \times ... \times V_n \rightarrow K
+\end{equation}
+
+Where $V_1, V_2, ... , V_n$ and $K$ is a scalar field.
+

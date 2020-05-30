@@ -1,0 +1,30 @@
+\section{Taking Derivatives}
+
+A concise resource for all this is \citeasnoun{barnesmatrixdiff}. Below are some of the most frequent and useful identities.  
+
+\begin{equation}
+\begin{array}{l}
+\frac{\partial }{\partial \mathbf{x}} \left(\mathbf{u}^T\mathbf{x}\right) = \left[\frac{\partial }{\partial x_1}\left(\sum_i u_i x_i\right),...,\frac{\partial }{\partial x_n}\left(\sum_i u_i x_i\right)\right] = \mathbf{u}^T\\
+\\
+\frac{\partial }{\partial \mathbf{x}} \left(\mathbf{x}^T\mathbf{u}\right) = \left[\frac{\partial }{\partial x_1}\left(\sum_i u_i x_i\right),...,\frac{\partial }{\partial x_n}\left(\sum_i u_i x_i\right)\right] = \mathbf{u}^T\\
+\\
+\frac{\partial }{\partial \mathbf{x}} \left(\mathbf{x}^T\mathbf{x}\right) = \left[\frac{\partial }{\partial x_1}\left(\sum_i x_i^2\right),...,\frac{\partial }{\partial x_n}\left(\sum_i x_i^2\right)\right] = 2\mathbf{x}^T\\
+\\
+\frac{\partial }{\partial \mathbf{x}} \left(\mathbf{Ax}\right) = \left[
+\begin{array}{ccc} 
+\underbrace{\frac{\partial }{\partial x_1}\left(\sum_i A_{1i} x_i\right)}_{A_{11}} &...& \underbrace{\frac{\partial }{\partial x_n}\left(\sum_i A_{1i} x_i\right)}_{A_1n}\\
+\vdots&\vdots&\vdots\\
+\underbrace{\frac{\partial }{\partial x_1}\left(\sum_i A_{ni} x_i\right)}_{A_{n1}} &...& \underbrace{\frac{\partial }{\partial x_n}\left(\sum_i A_{ni} x_i\right)}_{A_{nn}}\\
+\end{array}\right] = \mathbf{A}\\
+\end{array}
+\end{equation}
+
+The derivative of a matrix after a vector is known as the Jacobian. The Jacobian of some function $f: \mathbb{R}^n \rightarrow \mathbb{R}^m$ is:
+
+\begin{equation}
+\frac{\partial  f(\mathbf{x}}{\partial \mathbf{x}}=\left[\begin{array}{ccc}
+\frac{\partial  f_1}{\partial  x_1} & \hdots & \frac{\partial  f_1}{\partial  x_n} \\
+\vdots & \vdots & \vdots \\
+\frac{\partial  f_m}{\partial  x_1} & \hdots & \frac{\partial  f_m}{\partial  x_n} \\
+\end{array}\right]
+\end{equation}

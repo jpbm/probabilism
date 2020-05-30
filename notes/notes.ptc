@@ -98,27 +98,31 @@
 \contentsline {section}{\numberline {2.3}Cholesky Decomposition}{15}
 \contentsline {subsubsection}{\numberline {2.3.0.1}Creating Correlated Random Variables}{15}
 \contentsline {section}{\numberline {2.4}Non-Negative Matrix Factorization}{15}
-\contentsline {section}{\numberline {2.5}Generalized Eigenvectors}{15}
-\contentsline {section}{\numberline {2.6}Affine Transformations}{15}
-\contentsline {section}{\numberline {2.7}Multilinear Maps}{17}
-\contentsline {section}{\numberline {2.8}Multilinear Forms}{17}
-\contentsline {section}{\numberline {2.9}Types of Matrices}{17}
-\contentsline {subsection}{\numberline {2.9.1}Hermitian}{17}
-\contentsline {subsubsection}{\numberline {2.9.1.1}Properties}{17}
-\contentsline {subsection}{\numberline {2.9.2}Triangular}{17}
-\contentsline {section}{\numberline {2.10}Matrix Norms}{18}
-\contentsline {subsection}{\numberline {2.10.1}Operator Norm}{18}
-\contentsline {subsection}{\numberline {2.10.2}Frobenius Norm}{18}
-\contentsline {subsection}{\numberline {2.10.3}$L_{2,1}$ and $L_{p,q}$ Norms}{18}
-\contentsline {section}{\numberline {2.11}Taking Derivatives}{18}
-\contentsline {chapter}{\numberline {3}Linear Regression}{19}
+\contentsline {section}{\numberline {2.5}Generalized Eigenvectors}{17}
+\contentsline {section}{\numberline {2.6}Types of Transformations}{17}
+\contentsline {subsection}{\numberline {2.6.1}Affine Transformations}{17}
+\contentsline {subsection}{\numberline {2.6.2}Multilinear Maps}{17}
+\contentsline {subsection}{\numberline {2.6.3}Multilinear Forms}{17}
+\contentsline {section}{\numberline {2.7}Types of Matrices}{17}
+\contentsline {subsection}{\numberline {2.7.1}Hermitian}{17}
+\contentsline {subsubsection}{\numberline {2.7.1.1}Properties}{17}
+\contentsline {subsection}{\numberline {2.7.2}Triangular}{18}
+\contentsline {section}{\numberline {2.8}Matrix Norms and Vector Norms}{18}
+\contentsline {subsection}{\numberline {2.8.1}$||\mathbf {A}||_{(\alpha )}$ Operator Norm}{18}
+\contentsline {subsection}{\numberline {2.8.2}$||\mathbf {A}||_q$ q-Norms}{18}
+\contentsline {subsection}{\numberline {2.8.3}$||\mathbf {A}||_F$ Frobenius Norm}{19}
+\contentsline {subsection}{\numberline {2.8.4}$||\mathbf {A}||_{(1)}$ (1)-Norm}{19}
+\contentsline {subsection}{\numberline {2.8.5}$||\mathbf {A}||_{(\infty )}$ ($\infty $)-Norm}{19}
+\contentsline {subsection}{\numberline {2.8.6}$||\mathbf {A}||_{(2)}$ (2)-Norm}{19}
+\contentsline {section}{\numberline {2.9}Taking Derivatives}{19}
+\contentsline {chapter}{\numberline {3}Linear Regression}{21}
 \ttl@stoptoc {default@2}
 \ttl@starttoc {default@3}
-\contentsline {section}{\numberline {3.1}Ordinary Linear Regression}{19}
-\contentsline {section}{\numberline {3.2}$R^2$ Value}{19}
-\contentsline {section}{\numberline {3.3}Regression Diagnostics}{19}
-\contentsline {section}{\numberline {3.4}t-Statistics}{19}
-\contentsline {section}{\numberline {3.5}AIC and BIC}{19}
+\contentsline {section}{\numberline {3.1}Ordinary Linear Regression}{21}
+\contentsline {section}{\numberline {3.2}$R^2$ Value}{21}
+\contentsline {section}{\numberline {3.3}Regression Diagnostics}{21}
+\contentsline {section}{\numberline {3.4}t-Statistics}{21}
+\contentsline {section}{\numberline {3.5}AIC and BIC}{21}
 \ttl@stoptoc {default@3}
 \ttl@starttoc {default@4}
 \ttl@stoptoc {default@4}

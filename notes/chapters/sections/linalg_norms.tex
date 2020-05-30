@@ -1,4 +1,4 @@
-\section{Matrix Norms}
+\section{Matrix Norms and Vector Norms}
 
 Matrix norms are functions $||\cdot|| K^{m\times n} \rightarrow \mathbb{R}$ where $K$ is a field of real or complex numbers. They satisfy:
 
@@ -9,13 +9,70 @@ Matrix norms are functions $||\cdot|| K^{m\times n} \rightarrow \mathbb{R}$ wher
 \item $||A||=0 \implies A_{n,m}=0$ (definiteness)
 \end{itemize}
 
-A norm is submultiplicative if it satisfied $||AB||\leq||A||||B||$.
-
-\subsection{Operator Norm}
-Operator norms 
+A norm is submultiplicative if it satisfies $||AB||\leq||A||||B||$, which \citeasnoun{rgeraNotes} calls a requirement of "useful matrix norms".
 
 
-\subsection{Frobenius Norm}
+
+\subsection{$||\mathbf{A}||_{(\alpha)}$ Operator Norm}
+The operator norm describes the largest change in size that it may impart on any of its inputs. That means that the operator norm is defined with respect to a definition of length in both domain and codomain. I.e., for an operator $\mathbf{A}$ and a given way of measuring size $||\cdot||_{(\alpha)}||$
+
+\begin{equation}
+||\mathbf{A}||_{(\alpha)} = \sup\left\{\frac{||\mathbf{A}\mathbf{v}||_{\alpha}}{||\mathbf{x}||_{\alpha}}: \mathbf{v} \in V\right\}
+\end{equation}
+
+When the operator is given by a matrix $\mathbf{A}$, and the length of the vector $\mathbf{x}$ is measured using the usual euclidian 2-norm ($||\cdot||_{2}$), then the operator norm is given by the square root of the largest eigenvalue of $\mathbf{A^T A}$. In that case, the operator norm is the same as the 2-norm (cf. section \ref{2norm}).
+
+Note that $||A||_{(q)}$ and $||A||_q$ are two different things. The former measures the change in input size, where the size of the input is measured according to the latter. That is the reason for why the 1-Norm and 2-Norms are so different from the vector norms $L_1$ and $L_2$.
 
 
-\subsection{$L_{2,1}$ and $L_{p,q}$ Norms}
+% q-norm
+\subsection{$||\mathbf{A}||_q$ q-Norms}
+The $q$ norms for a matrix $\mathbf{A} \in \mathbb{R}^{m\times n}$ with entries $a_{i,j}$ in row $i$ and column $j$ are defined:
+
+\begin{equation}
+||\mathbf{A}||_q = \left(\sum_{i}\sum_{j} a^q_{i,j}\right)^{1/q}
+\end{equation}
+
+For $q=2$, this becomes the Frobenius norm (section \ref{frobenius}). 
+
+% frobenius
+\subsection{$||\mathbf{A}||_F$ Frobenius Norm}
+\label{frobenius}
+The Frobenius Norm is the sum of the squares of all entries of a matrix. Let $\mathbf{A} \in \mathbb{R}^{m\times n}$ be a matrix with entires $a_{i,j}$ in row $i$ and column $j$, then:
+
+\begin{equation}
+||\mathbf{A}||_F = \sqrt{\sum_{i}\sum_{j} a^2_{i,j}}
+\end{equation}
+
+The Frobenius norm is invariant under rotations, and $||\mathbf{A}||_F = \sqrt{\sum_i \sigma_i^2}$ where $\sigma_i$ are the singular values of $\mathbf{A}$. 
+
+\subsection{$||\mathbf{A}||_{(1)}$ (1)-Norm}
+Let $\mathbf{A}$ be a matrix with entires $a_{i,j}$ in row $i$ and column $j$, then:
+
+\begin{equation}
+||\mathbf{A}||_1 = \max_{1\leq j \leq n} \sum^m_{i=1} |a_{i,j} |
+\end{equation}
+
+That is, it is the maximum of the sums of the absolute values of any of the columns of $\mathbf{A}$.
+
+\subsection{$||\mathbf{A}||_{(\infty)}$ ($\infty$)-Norm}
+
+Let $\mathbf{A}$ be a matrix with entires $a_{i,j}$ in row $i$ and column $j$, then:
+
+\begin{equation}
+||\mathbf{A}||_\infty = \max_{1\leq i \leq m} \sum^n_{j=1} |a_{i,j} |
+\end{equation}
+
+That is, it is the maximum of the sums of the absolute values of any of the rows of $\mathbf{A}$.
+
+\subsection{$||\mathbf{A}||_{(2)}$ (2)-Norm}
+\label{2norm}
+
+Let $\mathbf{A} \in \mathbb{R}^{m\times n}$ be a matrix with entires $a_{i,j}$ in row $i$ and column $j$, then:
+
+\begin{equation}
+||A||_(2) = \max_{\mathbf{x}\neq 0} \frac{||\mathbf{Ax}||_2}{||\mathbf{x}||_2}
+\end{equation}
+
+Which is the square root of the largest eigenvalue of $A^T A$. Or, equivalently, $||A||_{(2)} = \sigma_1$, where $\sigma_1$ is the largest singular value of the SVD of $\mathbf{A} = \mathbf{U\Sigma V}^T$. That means that $||A^{-1}|| = \frac{1}{\sigma_n}$, where $\sigma_n$ is the smallest singular value of the SVD of $\mathbf{A}$.
+

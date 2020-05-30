@@ -1,5 +1,10 @@
 \begin{thebibliography}{xx}
 
+\harvarditem{Barnes}{n/a}{barnesmatrixdiff}
+Barnes, R.~J.  \harvardyearleft n/a\harvardyearright , `Matrix differentiation
+  (and some other stuff)'.
+\newline\harvardurl{\url{https://atmos.washington.edu/~dennis/MatrixCalculus.pdf}}
+
 \harvarditem{Bogart}{2004}{bogart2004combinatorics}
 Bogart, K.~P.  \harvardyearleft 2004\harvardyearright , {\em Combinatorics
   through guided discovery}, Kenneth P. Bogart.
@@ -9,6 +14,11 @@ Bogart, K.~P.  \harvardyearleft 2004\harvardyearright , {\em Combinatorics
 Colyer, A.  \harvardyearleft 2019\harvardyearright , `The why and how of
   nonnegative matrix factorization'.
 \newline\harvardurl{\url{https://blog.acolyer.org/2019/02/18/the-why-and-how-of-nonnegative-matrix-factorization/}}
+
+\harvarditem{Gera}{2009}{rgeraNotes}
+Gera, R.  \harvardyearleft 2009\harvardyearright , `Numerical linear algebra
+  lecture notes, chapter 7'.
+\newline\harvardurl{\url{http://faculty.nps.edu/rgera/MA3042/2009/ch7.4.pdf}}
 
 \harvarditem{Gillis}{2014}{gillis2014and}
 Gillis, N.  \harvardyearleft 2014\harvardyearright , `The why and how of
