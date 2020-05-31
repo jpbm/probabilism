@@ -1,4 +1,4 @@
-\section{Taking Derivatives}
+\section{Vector and Matrix Derivatives}
 
 Derivatives involving matrices and vectors can look nonintuitive when the usual symbolic matrix notation is used, but can be derived handily when index notation is used. A very concise and helpful resource for this is \citeasnoun{barnesmatrixdiff}. 
 
@@ -49,5 +49,32 @@ That is, the derivative of the inverse function at a point $b=f(a)$ of the range
 
 In words: the Jacobian of the inverse function at the point $\mathbf{b} = \mathbf{f}(\mathbf{a})$ is the matrix inverse of the Jacobian of the function at the point $\mathbf{a}$. The sufficient condition is that the Jacobian $\nabla_\mathbf{x}\mathbf{f}$ is continuous and \textit{nonsingular} near $\mathbf{a}$.
 
+\subsection{Critical Points}
+Critical points are points where the Jacobian does not have maximal rank. In case of a square Jacobian, this means that the Jacobian is singular. 
+
+\subsection{Differential Volume Element (Change of Variables)}
+The Jacobian is used when transforming between different coordinate systems. Consider a transformation $\mathbf{x} = \mathbf{H}(\mathbf{y})$, then:
+
+\begin{equation}
+\mathrm{d}^n x = \left|\nabla_\mathrm{y} \mathbf{H} \right| \mathrm{d}^n y
+\end{equation}
+
+And:
+
+\begin{equation}
+\int_\mathbf{x} \mathrm{d}^n\mathbf{x} f(\mathbf{x}) = \int_\mathbf{y} \mathrm{d}^n\mathbf{y} \left|\nabla_\mathrm{y} \mathbf{H} \right| f(\mathbf{H}(\mathbf{y}))
+\end{equation}
+
+Alternatively, if $\mathbf{y} = \mathbf{H}^{-1}(\mathbf{x})$:
+
+ \begin{equation}
+ \begin{array}{rl}
+ \mathrm{d}^n y &= \left|\nabla_\mathrm{x} \mathbf{H}^{-1}(\mathbf{x})\right| \mathrm{d}^n x\\
+ &= \left| \left[ \nabla_\mathrm{y} \mathbf{H}(\mathbf{y}) \right]^{-1} \right| \mathrm{d}^n x\\
+ \mathrm{d}^n x &= \frac{1}{\left| \left[ \nabla_\mathrm{y} \mathbf{H}(\mathbf{y}) \right]^{-1} \right|}  \mathrm{d}^n y 
+ \end{array}
+ \end{equation}
+
+The Jacobian has to be nonsingular within the domain of integration. This implies that $\mathbf{x}$ and $\mathbf{y}$ have to have the same dimension. In the context of probability theory that sometimes requires artificially defining additional variables so that $\mathbf{H}$ is bijective because the quantity of interest has lower dimension (for example, if you calculate the mean of a random variable). 
 
 \subsection{Hessian}

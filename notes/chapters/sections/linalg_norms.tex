@@ -1,20 +1,54 @@
-\section{Matrix Norms and Vector Norms}
+\section{Properties of Norms}
 
-Matrix norms are functions $||\cdot|| K^{m\times n} \rightarrow \mathbb{R}$ where $K$ is a field of real or complex numbers. They satisfy:
+\section{$L^p$ Lebesgue Vector Norms}
+\label{lpnorms}
+
+Let $p\geq1$ be a real number, then the $p$-norm or $L^p$ norm of a vector $\mathbf{x}\in\mathbb{C}^n$ is defined as:
+
+\begin{equation}
+\mathbf{x} = \left[ \sum^n_i |x_i|^p \right]^{1/p}
+\end{equation}
+
+The expression can still be useful for $0<p<1$, but in that case the result is not a proper norm, because it is not subadditive (does not satisfy $f(x+y) \leq f(x) + f(y)$). $p$-norms are closely related to expressions for the generalized mean.
+
+\subsection{$L^{1}$ Taxicab / Manhattan Norm}
+
+\subsection{$L^{2}$ Euclidian Norm}
+
+\subsection{$L^{\infty}$ Maximum Norm} 
+
+\begin{equation}
+||\mathbf{x}||_{\infty} = \max(x_1,x_2,...,x_n)
+\end{equation}
+
+\subsection{$L^{-\infty}$ Minimum Norm} 
+
+Formally, I only came across values $0<p$, but it is my opinion that $-\infty$ picks out the minimum value:
+
+\begin{equation}
+||\mathbf{x}||^{-\infty} = \min(x_1,x_2,...,x_n)
+\end{equation}
+
+
+
+\section{Operator and Matrix Norms}
+
+Matrix norms are functions $||\cdot||: K^{m\times n} \rightarrow \mathbb{R}$ where $K$ is a field of real or complex numbers. They satisfy:
 
 \begin{itemize}
 \item $||\alpha A|| = |a| ||A||$ (absolutely homogenous)
-\item $||A+B|| \leq ||A|| + ||B||$ (triangle inequality)
+\item $||A+B|| \leq ||A|| + ||B||$ (triangle inequality, subadditivity)
 \item $||A||\geq 0$ (positive valued)
 \item $||A||=0 \implies A_{n,m}=0$ (definiteness)
 \end{itemize}
 
 A norm is submultiplicative if it satisfies $||AB||\leq||A||||B||$, which \citeasnoun{rgeraNotes} calls a requirement of "useful matrix norms".
 
-
+\subparagraph{} 
+The main risk of confusion is that norms for operators and vectors are different animals. Norms for operators normally measure some relationship between input and output. Norms for vectors are normally some kind of size, length or distance metric. In as far as matrices can be thought of as both operators and multidimensional vectors, norms of either type may be applied to them. People's notation and language is all over the place. Below I've used $||\cdot||_{(\alpha)}$ to denote norms in the operator sense and $||\cdot||_{\alpha}$ in the vector sense. 
 
 \subsection{$||\mathbf{A}||_{(\alpha)}$ Operator Norm}
-The operator norm describes the largest change in size that it may impart on any of its inputs. That means that the operator norm is defined with respect to a definition of length in both domain and codomain. I.e., for an operator $\mathbf{A}$ and a given way of measuring size $||\cdot||_{(\alpha)}||$
+The operator norm describes the largest change in size that it may impart on any of its inputs. That means that the operator norm is defined with respect to a definition of size in both domain and codomain. I.e., for an operator $\mathbf{A}$ and a given way of measuring size $||\cdot||_{\alpha}$:
 
 \begin{equation}
 ||\mathbf{A}||_{(\alpha)} = \sup\left\{\frac{||\mathbf{A}\mathbf{v}||_{\alpha}}{||\mathbf{x}||_{\alpha}}: \mathbf{v} \in V\right\}
@@ -26,14 +60,16 @@ Note that $||A||_{(q)}$ and $||A||_q$ are two different things. The former measu
 
 
 % q-norm
-\subsection{$||\mathbf{A}||_q$ q-Norms}
+\subsection{$||\mathbf{A}||_q$ $q$-Norms}
+\label{qnorms}
+
 The $q$ norms for a matrix $\mathbf{A} \in \mathbb{R}^{m\times n}$ with entries $a_{i,j}$ in row $i$ and column $j$ are defined:
 
 \begin{equation}
 ||\mathbf{A}||_q = \left(\sum_{i}\sum_{j} a^q_{i,j}\right)^{1/q}
 \end{equation}
 
-For $q=2$, this becomes the Frobenius norm (section \ref{frobenius}). 
+For $q=2$, this becomes the Frobenius norm (section \ref{frobenius}). For vectors $\mathbf{v}\in\mathbb{R}^{n}$, the $q$-norm is more known as $p$-norm or $L^p$ norm (cf. section \ref{lpnorms}). 
 
 % frobenius
 \subsection{$||\mathbf{A}||_F$ Frobenius Norm}
@@ -50,7 +86,7 @@ The Frobenius norm is invariant under rotations, and $||\mathbf{A}||_F = \sqrt{\
 Let $\mathbf{A}$ be a matrix with entires $a_{i,j}$ in row $i$ and column $j$, then:
 
 \begin{equation}
-||\mathbf{A}||_1 = \max_{1\leq j \leq n} \sum^m_{i=1} |a_{i,j} |
+||\mathbf{A}||_{(1)} = \max_{1\leq j \leq n} \sum^m_{i=1} |a_{i,j} |
 \end{equation}
 
 That is, it is the maximum of the sums of the absolute values of any of the columns of $\mathbf{A}$.
@@ -60,7 +96,7 @@ That is, it is the maximum of the sums of the absolute values of any of the colu
 Let $\mathbf{A}$ be a matrix with entires $a_{i,j}$ in row $i$ and column $j$, then:
 
 \begin{equation}
-||\mathbf{A}||_\infty = \max_{1\leq i \leq m} \sum^n_{j=1} |a_{i,j} |
+||\mathbf{A}||_{(\infty)} = \max_{1\leq i \leq m} \sum^n_{j=1} |a_{i,j} |
 \end{equation}
 
 That is, it is the maximum of the sums of the absolute values of any of the rows of $\mathbf{A}$.
@@ -71,8 +107,11 @@ That is, it is the maximum of the sums of the absolute values of any of the rows
 Let $\mathbf{A} \in \mathbb{R}^{m\times n}$ be a matrix with entires $a_{i,j}$ in row $i$ and column $j$, then:
 
 \begin{equation}
-||A||_(2) = \max_{\mathbf{x}\neq 0} \frac{||\mathbf{Ax}||_2}{||\mathbf{x}||_2}
+||A||_{(2)} = \max_{\mathbf{x}\neq 0} \frac{||\mathbf{Ax}||_2}{||\mathbf{x}||_2}
 \end{equation}
 
 Which is the square root of the largest eigenvalue of $A^T A$. Or, equivalently, $||A||_{(2)} = \sigma_1$, where $\sigma_1$ is the largest singular value of the SVD of $\mathbf{A} = \mathbf{U\Sigma V}^T$. That means that $||A^{-1}|| = \frac{1}{\sigma_n}$, where $\sigma_n$ is the smallest singular value of the SVD of $\mathbf{A}$.
+
+
+
 
