@@ -1,0 +1,32 @@
+\section{Spectral Theorems, Diagonalization}
+
+Spectral theorems deal with diagonalizable linear operators. A hermitian matrix $\mathbf{A} \in \mathbb{C}^{n\times n}$ can be expressed as:
+
+\begin{equation}
+\mathbf{A} = \left[\begin{array}{cccc}
+\vrule&\vrule&\hdots&\vrule\\
+v_1&v_2&\ddots&v_n\\
+\vrule&\vrule&\hdots&\vrule
+\end{array}\right]\left[\begin{array}{cccc}
+\lambda_1&0&\hdots&0\\ 
+0&\lambda_2&\hdots&0\\
+\vdots&\vdots&\ddots&\vdots\\
+0&\hdots&\hdots&\lambda_n
+\end{array}\right]
+\left[
+\begin{array}{ccc}
+\rule[.5ex]{3.5em}{0.4pt}&v_1&\rule[.5ex]{3.5em}{0.4pt}\\
+\rule[.5ex]{3.5em}{0.4pt}&v_2&\rule[.5ex]{3.5em}{0.4pt}\\
+\vdots&\ddots&\vdots\\
+\rule[.5ex]{3.5em}{0.4pt}&v_n&\rule[.5ex]{3.5em}{0.4pt}\\
+\end{array}
+\right]
+\end{equation}
+
+Where $v_i$ are the eigenvectors and $\lambda_i$ are the eigenvalues of $\mathbf{A}$. Since $\mathbf{A}$ is Hermitian, the eigenvalues are real and positive and the eigenvectors are orthonormal. The diagonalization enables the expression of $\mathbf{A}$ in terms of projections on the eigenvectors:
+
+\begin{equation}
+\mathbf{A} = \sum_i \lambda_i (v_i \otimes v_i)
+\end{equation}
+
+Where $\otimes$ is the outer product. Since the eigenvectors are an orthonormal basis, $\sum_i v_i \otimes v_i = \mathbb{I}$.
