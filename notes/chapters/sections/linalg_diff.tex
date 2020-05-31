@@ -1,30 +1,53 @@
 \section{Taking Derivatives}
 
-A concise resource for all this is \citeasnoun{barnesmatrixdiff}. Below are some of the most frequent and useful identities.  
+Derivatives involving matrices and vectors can look nonintuitive when the usual symbolic matrix notation is used, but can be derived handily when index notation is used. A very concise and helpful resource for this is \citeasnoun{barnesmatrixdiff}. 
+
+
+\subsection{Jacobian}
+It is particularly helpful to remember the Jacobian, which is the derivative of a function with respect of a vector. The Jacobian of some function $f: \mathbb{R}^n \rightarrow \mathbb{R}^m$ is:
 
 \begin{equation}
-\begin{array}{l}
-\frac{\partial }{\partial \mathbf{x}} \left(\mathbf{u}^T\mathbf{x}\right) = \left[\frac{\partial }{\partial x_1}\left(\sum_i u_i x_i\right),...,\frac{\partial }{\partial x_n}\left(\sum_i u_i x_i\right)\right] = \mathbf{u}^T\\
-\\
-\frac{\partial }{\partial \mathbf{x}} \left(\mathbf{x}^T\mathbf{u}\right) = \left[\frac{\partial }{\partial x_1}\left(\sum_i u_i x_i\right),...,\frac{\partial }{\partial x_n}\left(\sum_i u_i x_i\right)\right] = \mathbf{u}^T\\
-\\
-\frac{\partial }{\partial \mathbf{x}} \left(\mathbf{x}^T\mathbf{x}\right) = \left[\frac{\partial }{\partial x_1}\left(\sum_i x_i^2\right),...,\frac{\partial }{\partial x_n}\left(\sum_i x_i^2\right)\right] = 2\mathbf{x}^T\\
-\\
-\frac{\partial }{\partial \mathbf{x}} \left(\mathbf{Ax}\right) = \left[
-\begin{array}{ccc} 
-\underbrace{\frac{\partial }{\partial x_1}\left(\sum_i A_{1i} x_i\right)}_{A_{11}} &...& \underbrace{\frac{\partial }{\partial x_n}\left(\sum_i A_{1i} x_i\right)}_{A_1n}\\
-\vdots&\vdots&\vdots\\
-\underbrace{\frac{\partial }{\partial x_1}\left(\sum_i A_{ni} x_i\right)}_{A_{n1}} &...& \underbrace{\frac{\partial }{\partial x_n}\left(\sum_i A_{ni} x_i\right)}_{A_{nn}}\\
-\end{array}\right] = \mathbf{A}\\
-\end{array}
-\end{equation}
-
-The derivative of a matrix after a vector is known as the Jacobian. The Jacobian of some function $f: \mathbb{R}^n \rightarrow \mathbb{R}^m$ is:
-
-\begin{equation}
-\frac{\partial  f(\mathbf{x}}{\partial \mathbf{x}}=\left[\begin{array}{ccc}
+\frac{\mathrm{d}  \mathbf{f}(\mathbf{x})}{\mathrm{d} \mathbf{x}}=\left[\frac{\partial \mathbf{f}}{\partial x_1}, \hdots, \frac{\partial \mathbf{f}}{\partial x_n} \right]=\left[\begin{array}{ccc}
 \frac{\partial  f_1}{\partial  x_1} & \hdots & \frac{\partial  f_1}{\partial  x_n} \\
 \vdots & \vdots & \vdots \\
 \frac{\partial  f_m}{\partial  x_1} & \hdots & \frac{\partial  f_m}{\partial  x_n} \\
 \end{array}\right]
 \end{equation}
+
+I enjoy writing the gradient $\frac{\mathrm{d}}{\mathrm{d}\mathbf{x}}$ as $\nabla_\mathbf{x}$. The relationships below can all be derived as applications of the Jacobian.
+
+\begin{equation}
+\begin{array}{l}
+\nabla_\mathbf{x} \left(\mathbf{u}^T\mathbf{x}\right) = \left[\frac{\partial }{\partial x_1}\left(\sum_i u_i x_i\right),...,\frac{\partial }{\partial x_n}\left(\sum_i u_i x_i\right)\right] = \mathbf{u}^T\\
+\\
+\nabla_\mathbf{x} \left(\mathbf{x}^T\mathbf{u}\right) = \left[\frac{\partial }{\partial x_1}\left(\sum_i u_i x_i\right),...,\frac{\partial }{\partial x_n}\left(\sum_i u_i x_i\right)\right] = \mathbf{u}^T\\
+\\
+\nabla_\mathbf{x} \left(\mathbf{x}^T\mathbf{x}\right) = \left[\frac{\partial }{\partial x_1}\left(\sum_i x_i^2\right),...,\frac{\partial }{\partial x_n}\left(\sum_i x_i^2\right)\right] = 2\mathbf{x}^T\\
+\\
+\nabla_\mathbf{x} \left(\mathbf{Ax}\right) = \left[
+\begin{array}{ccc} 
+\underbrace{\frac{\partial }{\partial x_1}\left(\sum_i A_{1i} x_i\right)}_{A_{11}} &...& \underbrace{\frac{\partial }{\partial x_n}\left(\sum_i A_{1i} x_i\right)}_{A_1n}\\
+\vdots&\vdots&\vdots\\
+\underbrace{\frac{\partial }{\partial x_1}\left(\sum_i A_{ni} x_i\right)}_{A_{n1}} &...& \underbrace{\frac{\partial }{\partial x_n}\left(\sum_i A_{ni} x_i\right)}_{A_{nn}}\\
+\end{array}\right] = \mathbf{A}
+\end{array}
+\end{equation}
+
+
+\subsection{Inverse Function Theorem}
+The inverse function theorem gives a sufficient condition for the invertibility of a function near some point in its domain. If the derivative $f'$ of a function $f$ is continuous and non-zero near some point $a$ within its domain, then the function is invertible near that point. If $b = f(a)$, then:
+
+\begin{equation}
+\frac{d\left[f^{-1}(b)\right]}{dx} = \frac{1}{\frac{df(a)}{dx}}
+\end{equation}
+
+That is, the derivative of the inverse function at a point $b=f(a)$ of the range, is the reciprocal of the derivative of the function near the point $a$ in the domain. This extends to multivariable calculus. Given a function $\mathbf{f}: \mathbf{x} \rightarrow \mathbf{y}$:
+
+\begin{equation}
+\nabla_\mathbf{y}\left[\mathbf{f}^{-1}\right] = \left[\nabla_\mathbf{x} \mathbf{f} \right]^{-1}
+\end{equation}
+
+In words: the Jacobian of the inverse function at the point $\mathbf{b} = \mathbf{f}(\mathbf{a})$ is the matrix inverse of the Jacobian of the function at the point $\mathbf{a}$. The sufficient condition is that the Jacobian $\nabla_\mathbf{x}\mathbf{f}$ is continuous and \textit{nonsingular} near $\mathbf{a}$.
+
+
+\subsection{Hessian}
