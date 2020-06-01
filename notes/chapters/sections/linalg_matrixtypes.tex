@@ -1,11 +1,12 @@
 \section{Types of Matrices}
 
-\subsection{Hermitian}
+\subsection{$\mathbf{A}^{dagger} = \mathbf{A}$ Hermitian}
 Hermitian matrices are matrices that are equal to their complex transpose. That is:
 
 \begin{equation}
 {\mathbf{A}^{*}}^T = \mathbf{A}^\dagger = \mathbf{A} 
 \end{equation}
+
 
 Hermitian matrices are like a generalization of symmetric matrices to include complex numbers. 
 
@@ -19,6 +20,15 @@ There are many properties.
 \end{itemize}
 
 
+\subsection{$\mathbf{A}^{\datter} = -\mathbf{A}$ Skew Hermitian}
+Skew Hermitian matrices that are equal to the negative of their complex transpose. That is:
+
+\begin{equation}
+{\mathbf{A}^{*}}^T = \mathbf{A}^\dagger = -\mathbf{A} 
+\end{equation}
+
+
+
 \subsection{Triangular}
 A lower triangular matrix is a matrix that has all-zero entries above the diagonal.
 
@@ -27,5 +37,12 @@ A lower triangular matrix is a matrix that has all-zero entries above the diagon
 \end{equation}
 
 Upper triangular matrices are matrices that have all-zero entries below the diagonal.
+
+
+\subsection{$\mathbf{U}^{\dagger}\mathbf{U} = \mathbf{I}$ Unitary}
+Unitary matrices satisfy $\mathbf{U}^{\dagger}\mathbf{U} = \mathbf{UU}^{\dagger}=\mathbf{I}$, and they have $det(\mathbf{U}) = 1$. They are diagonalizable and can be expressed as $e^{i\mathbf{H}}$ where $\mathbf{H}$ is a Hermitian matrix. Rotation matrices in complex space are Unitary. For real matrices, unitary matrices are the same as orthogonal matrices.
+
+\subsection{$\mathbf{A}^{T}\mathbf{A} = \mathbf{I}$ Orthogonal} 
+Orthogonal matrices satisfy $\mathbf{A}^{-1} = \mathbf{A}^T$. The rows (and columns) of $\mathbf{A}$ are an orthonormal basis.
 
 

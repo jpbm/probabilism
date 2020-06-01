@@ -94,44 +94,49 @@
 \contentsline {subsection}{\numberline {1.3.2}Basket of Goods}{15}
 \contentsline {subsection}{\numberline {1.3.3}Example: Dice}{16}
 \contentsline {chapter}{\numberline {2}Linear Algebra and Multivariable Calculus}{19}
-\contentsline {section}{\numberline {2.1}Singular Value Decomposition}{19}
-\contentsline {section}{\numberline {2.2}Cholesky Decomposition}{19}
-\contentsline {subsubsection}{\numberline {2.2.0.1}Creating Correlated Random Variables}{19}
-\contentsline {section}{\numberline {2.3}Non-Negative Matrix Factorization}{19}
-\contentsline {section}{\numberline {2.4}Generalized Eigenvectors}{21}
-\contentsline {section}{\numberline {2.5}Spectral Theorems, Diagonalization}{21}
-\contentsline {section}{\numberline {2.6}Types of Transformations}{21}
-\contentsline {subsection}{\numberline {2.6.1}Affine Transformations}{21}
-\contentsline {subsection}{\numberline {2.6.2}Multilinear Maps}{21}
-\contentsline {subsection}{\numberline {2.6.3}Multilinear Forms}{21}
-\contentsline {section}{\numberline {2.7}Types of Matrices}{22}
-\contentsline {subsection}{\numberline {2.7.1}Hermitian}{22}
-\contentsline {subsubsection}{\numberline {2.7.1.1}Properties}{22}
-\contentsline {subsection}{\numberline {2.7.2}Triangular}{22}
-\contentsline {section}{\numberline {2.8}Properties of Norms}{22}
-\contentsline {section}{\numberline {2.9}$L^p$ Lebesgue Vector Norms}{22}
-\contentsline {subsection}{\numberline {2.9.1}$L^{1}$ Taxicab / Manhattan Norm}{22}
-\contentsline {subsection}{\numberline {2.9.2}$L^{2}$ Euclidian Norm}{22}
-\contentsline {subsection}{\numberline {2.9.3}$L^{\infty }$ Maximum Norm}{22}
-\contentsline {subsection}{\numberline {2.9.4}$L^{-\infty }$ Minimum Norm}{23}
-\contentsline {section}{\numberline {2.10}Operator and Matrix Norms}{23}
-\contentsline {subparagraph}{}{23}
-\contentsline {subsection}{\numberline {2.10.1}$||\mathbf {A}||_{(\alpha )}$ Operator Norm}{23}
-\contentsline {subsection}{\numberline {2.10.2}$||\mathbf {A}||_q$ $q$-Norms}{23}
-\contentsline {subsection}{\numberline {2.10.3}$||\mathbf {A}||_F$ Frobenius Norm}{24}
-\contentsline {subsection}{\numberline {2.10.4}$||\mathbf {A}||_{(1)}$ (1)-Norm}{24}
-\contentsline {subsection}{\numberline {2.10.5}$||\mathbf {A}||_{(\infty )}$ ($\infty $)-Norm}{24}
-\contentsline {subsection}{\numberline {2.10.6}$||\mathbf {A}||_{(2)}$ (2)-Norm}{24}
-\contentsline {section}{\numberline {2.11}Vector and Matrix Derivatives}{24}
-\contentsline {subsection}{\numberline {2.11.1}Jacobian}{24}
-\contentsline {subsection}{\numberline {2.11.2}Inverse Function Theorem}{25}
-\contentsline {subsection}{\numberline {2.11.3}Critical Points}{25}
-\contentsline {subsection}{\numberline {2.11.4}Differential Volume Element / Change of Variables}{25}
-\contentsline {subsection}{\numberline {2.11.5}Hessian}{26}
-\contentsline {chapter}{\numberline {3}Linear Regression}{27}
-\contentsline {section}{\numberline {3.1}Ordinary Linear Regression}{27}
-\contentsline {section}{\numberline {3.2}$R^2$ Value}{27}
-\contentsline {section}{\numberline {3.3}Regression Diagnostics}{27}
-\contentsline {section}{\numberline {3.4}t-Statistics}{27}
-\contentsline {section}{\numberline {3.5}AIC and BIC}{27}
+\contentsline {section}{\numberline {2.1}Multi-Index Notation}{19}
+\contentsline {subsubsection}{\numberline {2.1.0.1}Multinomial Coefficients}{19}
+\contentsline {subsubsection}{\numberline {2.1.0.2}Taylor Expansion}{19}
+\contentsline {section}{\numberline {2.2}Singular Value Decomposition}{20}
+\contentsline {section}{\numberline {2.3}Cholesky Decomposition}{20}
+\contentsline {subsubsection}{\numberline {2.3.0.1}Creating Correlated Random Variables}{20}
+\contentsline {section}{\numberline {2.4}Non-Negative Matrix Factorization}{20}
+\contentsline {section}{\numberline {2.5}Generalized Eigenvectors}{20}
+\contentsline {section}{\numberline {2.6}Spectral Theorems, Diagonalization}{20}
+\contentsline {section}{\numberline {2.7}Types of Transformations}{20}
+\contentsline {subsection}{\numberline {2.7.1}Affine Transformations}{20}
+\contentsline {subsection}{\numberline {2.7.2}Multilinear Maps}{22}
+\contentsline {subsection}{\numberline {2.7.3}Multilinear Forms}{22}
+\contentsline {section}{\numberline {2.8}Types of Matrices}{22}
+\contentsline {subsection}{\numberline {2.8.1}$\mathbf {A}^{dagger} = \mathbf {A}$ Hermitian}{22}
+\contentsline {subsubsection}{\numberline {2.8.1.1}Properties}{22}
+\contentsline {subsection}{\numberline {2.8.2}Triangular}{22}
+\contentsline {subsection}{\numberline {2.8.3}$\mathbf {U}^{\dagger }\mathbf {U} = \mathbf {I}$ Unitary}{23}
+\contentsline {subsection}{\numberline {2.8.4}$\mathbf {A}^{T}\mathbf {A} = \mathbf {I}$ Orthogonal}{23}
+\contentsline {section}{\numberline {2.9}Properties of Norms}{23}
+\contentsline {section}{\numberline {2.10}$L^p$ Lebesgue Vector Norms}{23}
+\contentsline {subsection}{\numberline {2.10.1}$L^{1}$ Taxicab / Manhattan Norm}{23}
+\contentsline {subsection}{\numberline {2.10.2}$L^{2}$ Euclidian Norm}{23}
+\contentsline {subsection}{\numberline {2.10.3}$L^{\infty }$ Maximum Norm}{23}
+\contentsline {subsection}{\numberline {2.10.4}$L^{-\infty }$ Minimum Norm}{23}
+\contentsline {section}{\numberline {2.11}Operator and Matrix Norms}{23}
+\contentsline {subparagraph}{}{24}
+\contentsline {subsection}{\numberline {2.11.1}$||\mathbf {A}||_{(\alpha )}$ Operator Norm}{24}
+\contentsline {subsection}{\numberline {2.11.2}$||\mathbf {A}||_q$ $q$-Norms}{24}
+\contentsline {subsection}{\numberline {2.11.3}$||\mathbf {A}||_F$ Frobenius Norm}{24}
+\contentsline {subsection}{\numberline {2.11.4}$||\mathbf {A}||_{(1)}$ (1)-Norm}{25}
+\contentsline {subsection}{\numberline {2.11.5}$||\mathbf {A}||_{(\infty )}$ ($\infty $)-Norm}{25}
+\contentsline {subsection}{\numberline {2.11.6}$||\mathbf {A}||_{(2)}$ (2)-Norm}{25}
+\contentsline {section}{\numberline {2.12}Vector and Matrix Derivatives}{25}
+\contentsline {subsection}{\numberline {2.12.1}Jacobian}{25}
+\contentsline {subsection}{\numberline {2.12.2}Inverse Function Theorem}{26}
+\contentsline {subsection}{\numberline {2.12.3}Critical Points}{26}
+\contentsline {subsection}{\numberline {2.12.4}Differential Volume Element / Change of Variables}{26}
+\contentsline {subsection}{\numberline {2.12.5}Hessian}{27}
+\contentsline {chapter}{\numberline {3}Linear Regression}{29}
+\contentsline {section}{\numberline {3.1}Ordinary Linear Regression}{29}
+\contentsline {section}{\numberline {3.2}$R^2$ Value}{29}
+\contentsline {section}{\numberline {3.3}Regression Diagnostics}{29}
+\contentsline {section}{\numberline {3.4}t-Statistics}{29}
+\contentsline {section}{\numberline {3.5}AIC and BIC}{29}
 \contentsfinish 

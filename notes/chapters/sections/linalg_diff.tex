@@ -79,5 +79,15 @@ The Jacobian has to be nonsingular within the domain of integration. This implie
 
 \subsection{Hessian}
 
-The Hessian is the matrix of all second derivatives of a scalar valued function $f:\mathbb{R}^{n} \rightarrow \mathbb{R}$. 
+The Hessian is the second derivative of a scalar valued function $f:\mathbb{R}^{n} \rightarrow \mathbb{R}$ with respect to a vector, i.e. $\nabla\cdot\nabla f$. The elements are $\mathbf{H}(f)_{i,j} = \frac{\partial^2 f}{\partial x_i\partial x_j}$. 
 
+\begin{equation}
+\mathbf{H}(f) = \left[\begin{array}{cccc}
+\frac{\partial^2f}{\partial x_1^2}&\frac{\partial^2f}{\partial x_1\partial x_2} & \hdots & \frac{\partial^2f}{\partial x_1\partial x_n}\\
+\frac{\partial^2f}{\partial x_2\partial x_1}&\frac{\partial^2f}{\partial x_2^2} & \hdots & \frac{\partial^2f}{\partial x_1\partial x_n}\\
+\vdots & \vdots & \ddots & \vdots \\
+\frac{\partial^2f}{\partial x_n\partial x_1}&\frac{\partial^2f}{\partial x_n\partial x_2} & \hdots & \frac{\partial^2f}{\partial x_n^2}
+\end{array} \right]
+\end{equation}
+
+The Hessian of a vector valued function $f:\mathbb{R}^n \rightarrow \mathbb{R}^m$ is a third order tensor with elements  $\mathbf{H}(\mathbf{f})_{i,j,k} = \frac{\partial^2 f_k}{\partial x_i\partial x_j}$.
