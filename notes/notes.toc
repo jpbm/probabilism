@@ -1,142 +1,142 @@
-\contentsline {chapter}{\numberline {1}Combinatorics}{3}
-\contentsline {section}{\numberline {1.1}Useful Expressions}{3}
-\contentsline {subsection}{\numberline {1.1.1}Binomial Coefficients and Binomial Expansions}{3}
-\contentsline {subsubsection}{\numberline {1.1.1.1}Derivation of the Binomial Theorem for a Negative Exponent}{4}
-\contentsline {subsubsection}{\numberline {1.1.1.2}Derivation of the Binomial Theorem for a Fractional Exponent}{4}
-\contentsline {subsection}{\numberline {1.1.2}Multinomial Expansion}{5}
-\contentsline {subsection}{\numberline {1.1.3}Unnamed Polynomial Identity}{5}
-\contentsline {subsection}{\numberline {1.1.4}Factorial Expansion}{5}
-\contentsline {subsection}{\numberline {1.1.5}Stirling Numbers of the Second Kind}{5}
-\contentsline {section}{\numberline {1.2}Taxonomy of Distribution Problems: The Twentyfold Way}{6}
-\contentsline {subparagraph}{Favorite Teachers}{6}
-\contentsline {subparagraph}{Assembling a Team}{7}
-\contentsline {subsection}{\numberline {1.2.1}Distinct Objects}{7}
-\contentsline {subsubsection}{\numberline {1.2.1.1}Distinct Recipients}{7}
-\contentsline {subparagraph}{Pool Balls into Labeled Buckets}{7}
-\contentsline {subparagraph}{Functions}{7}
-\contentsline {subparagraph}{Binary Strings of Length $k$}{7}
-\contentsline {subparagraph}{Subsets of a $k$-Element Set}{7}
-\contentsline {subsubsection}{\numberline {1.2.1.2}Indistinct Recipients}{8}
-\contentsline {subparagraph}{Pool Balls into Unlabeled Bags}{8}
-\contentsline {subsection}{\numberline {1.2.2}Distinct Objects, Every Recipient Receives At Most One}{8}
-\contentsline {subsubsection}{\numberline {1.2.2.1}Distinct Recipients}{8}
-\contentsline {subparagraph}{At Most One Pool Ball into Labeled Buckets}{8}
-\contentsline {subparagraph}{One-to-One Functions}{8}
-\contentsline {subparagraph}{k-element Permutations of $n$ elements}{8}
-\contentsline {subparagraph}{Books on a Shelf}{8}
-\contentsline {subsubsection}{\numberline {1.2.2.2}Indistinct Recipients}{8}
-\contentsline {subparagraph}{At Most One Pool Ball into Unlabeled Bags}{9}
-\contentsline {subparagraph}{Distributing Candy}{9}
-\contentsline {subsection}{\numberline {1.2.3}Distinct Objects, Every Recipient Receives at Least One}{9}
-\contentsline {subsubsection}{\numberline {1.2.3.1}Distinct Recipients}{9}
-\contentsline {subparagraph}{At Least One Pool Ball into Labeled Buckets}{9}
-\contentsline {subparagraph}{Onto Functions}{9}
-\contentsline {subsubsection}{\numberline {1.2.3.2}Indistinct Recipients}{9}
-\contentsline {subparagraph}{At Least One Pool Ball into Unlabeled Bags}{9}
-\contentsline {subsection}{\numberline {1.2.4}Distinct Objects, Every Recipient Receives Exactly One}{9}
-\contentsline {subsubsection}{\numberline {1.2.4.1}Distinct Recipients}{9}
-\contentsline {subparagraph}{Exactly One Pool Ball into Each Labeled Buckets}{10}
-\contentsline {subparagraph}{Bijective Functions}{10}
-\contentsline {subparagraph}{Permutations}{10}
-\contentsline {subparagraph}{Unique Identifiers}{10}
-\contentsline {subsubsection}{\numberline {1.2.4.2}Indistinct Recipients}{10}
-\contentsline {subparagraph}{Exactly One Pool Ball into Each Unlabeled Bag}{10}
-\contentsline {subparagraph}{Distribute without Leftovers}{10}
-\contentsline {subsection}{\numberline {1.2.5}Distinct Objects, Distributed in Ordered Groups}{10}
-\contentsline {subsubsection}{\numberline {1.2.5.1}Distinct Recipients}{10}
-\contentsline {subparagraph}{Books on Labeled Bookshelves}{10}
-\contentsline {subparagraph}{Ordered Functions}{11}
-\contentsline {subsubsection}{\numberline {1.2.5.2}Indistinct Recipients}{11}
-\contentsline {subparagraph}{Books into Unlabeled Boxes}{11}
-\contentsline {subparagraph}{Broken Permutations $\leq n$ Parts}{11}
-\contentsline {subparagraph}{Books into Boxes}{11}
-\contentsline {subsection}{\numberline {1.2.6}Distinct Objects, Distributed in Ordered Groups of At Least One}{11}
-\contentsline {subsubsection}{\numberline {1.2.6.1}Distinct Recipients}{11}
-\contentsline {subparagraph}{Books on Labeled Bookshelves}{11}
-\contentsline {subparagraph}{Ordered Onto Functions}{12}
-\contentsline {subsubsection}{\numberline {1.2.6.2}Indistinct Recipients}{12}
-\contentsline {subparagraph}{Books into Unlabeled Boxes}{12}
-\contentsline {subparagraph}{Broken Permutations $n$ parts}{12}
-\contentsline {subparagraph}{Books into Boxes}{12}
-\contentsline {subsection}{\numberline {1.2.7}Identical Objects}{12}
-\contentsline {subsubsection}{\numberline {1.2.7.1}Distinct Recipients}{12}
-\contentsline {subparagraph}{Ping Pong Balls into Labeled Buckets}{12}
-\contentsline {subparagraph}{Multisets}{12}
-\contentsline {subparagraph}{Integer Sums}{12}
-\contentsline {subparagraph}{Bosons in Degenerate States}{12}
-\contentsline {subsubsection}{\numberline {1.2.7.2}Indistinct Recipients}{12}
-\contentsline {subparagraph}{Ping Pong Balls into Unlabeled Bags}{13}
-\contentsline {subparagraph}{Number Partitions}{13}
-\contentsline {subparagraph}{Unlabeled Multiplicities of Multisets}{13}
-\contentsline {subparagraph}{Boxes of Marbles}{13}
-\contentsline {subsection}{\numberline {1.2.8}Identical Objects, Each Receives At Most One}{13}
-\contentsline {subsubsection}{\numberline {1.2.8.1}Distinct Recipients}{13}
-\contentsline {subparagraph}{At Most One Ping Pong Balls into Labeled Buckets}{13}
-\contentsline {subparagraph}{Subsets}{13}
-\contentsline {subparagraph}{Set Binary Labels}{13}
-\contentsline {subsubsection}{\numberline {1.2.8.2}Indistinct Recipients}{13}
-\contentsline {subparagraph}{At Most One Ping Pong Ball into Unlabeled Bags}{13}
-\contentsline {subparagraph}{Boxes}{13}
-\contentsline {subsection}{\numberline {1.2.9}Identical Objects, Each Receives At Least One}{14}
-\contentsline {subsubsection}{\numberline {1.2.9.1}Distinct Recipients}{14}
-\contentsline {subparagraph}{At Least One Ping Pong Ball into Labeled Buckets}{14}
-\contentsline {subparagraph}{Compositions $n$ Parts}{14}
-\contentsline {subsubsection}{\numberline {1.2.9.2}Indistinct Recipients}{14}
-\contentsline {subparagraph}{At Least One Ping Pong Ball in Unlabeled Bags}{14}
-\contentsline {subparagraph}{Partitions in $n$ Parts}{14}
-\contentsline {subsection}{\numberline {1.2.10}Identical Objects, Each Receives Exactly One}{14}
-\contentsline {subsubsection}{\numberline {1.2.10.1}Distinct Recipients}{14}
-\contentsline {subparagraph}{One Ping Pong Ball into Each Labeled Bucket}{14}
-\contentsline {subsubsection}{\numberline {1.2.10.2}Indistinct Recipients}{14}
-\contentsline {subparagraph}{One Ping Pong Ball into Each Unlabeled Bag}{14}
-\contentsline {section}{\numberline {1.3}Generating Functions}{15}
-\contentsline {subsection}{\numberline {1.3.1}Example: Binomial Coefficients}{15}
-\contentsline {subsection}{\numberline {1.3.2}Basket of Goods}{15}
-\contentsline {subsection}{\numberline {1.3.3}Example: Dice}{16}
-\contentsline {chapter}{\numberline {2}Linear Algebra and Multivariable Calculus}{19}
-\contentsline {section}{\numberline {2.1}Multi-Index Notation}{19}
-\contentsline {subsubsection}{\numberline {2.1.0.1}Multinomial Coefficients}{19}
-\contentsline {subsubsection}{\numberline {2.1.0.2}Taylor Expansion}{19}
-\contentsline {section}{\numberline {2.2}Singular Value Decomposition}{20}
-\contentsline {section}{\numberline {2.3}Cholesky Decomposition}{20}
-\contentsline {subsubsection}{\numberline {2.3.0.1}Creating Correlated Random Variables}{20}
-\contentsline {section}{\numberline {2.4}Non-Negative Matrix Factorization}{20}
-\contentsline {section}{\numberline {2.5}Generalized Eigenvectors}{20}
-\contentsline {section}{\numberline {2.6}Spectral Theorems, Diagonalization}{20}
-\contentsline {section}{\numberline {2.7}Types of Transformations}{20}
-\contentsline {subsection}{\numberline {2.7.1}Affine Transformations}{20}
-\contentsline {subsection}{\numberline {2.7.2}Multilinear Maps}{22}
-\contentsline {subsection}{\numberline {2.7.3}Multilinear Forms}{22}
-\contentsline {section}{\numberline {2.8}Types of Matrices}{22}
-\contentsline {subsection}{\numberline {2.8.1}$\mathbf {A}^{dagger} = \mathbf {A}$ Hermitian}{22}
-\contentsline {subsubsection}{\numberline {2.8.1.1}Properties}{22}
-\contentsline {subsection}{\numberline {2.8.2}Triangular}{22}
-\contentsline {subsection}{\numberline {2.8.3}$\mathbf {U}^{\dagger }\mathbf {U} = \mathbf {I}$ Unitary}{23}
-\contentsline {subsection}{\numberline {2.8.4}$\mathbf {A}^{T}\mathbf {A} = \mathbf {I}$ Orthogonal}{23}
-\contentsline {section}{\numberline {2.9}Properties of Norms}{23}
-\contentsline {section}{\numberline {2.10}$L^p$ Lebesgue Vector Norms}{23}
-\contentsline {subsection}{\numberline {2.10.1}$L^{1}$ Taxicab / Manhattan Norm}{23}
-\contentsline {subsection}{\numberline {2.10.2}$L^{2}$ Euclidian Norm}{23}
-\contentsline {subsection}{\numberline {2.10.3}$L^{\infty }$ Maximum Norm}{23}
-\contentsline {subsection}{\numberline {2.10.4}$L^{-\infty }$ Minimum Norm}{23}
-\contentsline {section}{\numberline {2.11}Operator and Matrix Norms}{23}
-\contentsline {subparagraph}{}{24}
-\contentsline {subsection}{\numberline {2.11.1}$||\mathbf {A}||_{(\alpha )}$ Operator Norm}{24}
-\contentsline {subsection}{\numberline {2.11.2}$||\mathbf {A}||_q$ $q$-Norms}{24}
-\contentsline {subsection}{\numberline {2.11.3}$||\mathbf {A}||_F$ Frobenius Norm}{24}
-\contentsline {subsection}{\numberline {2.11.4}$||\mathbf {A}||_{(1)}$ (1)-Norm}{25}
-\contentsline {subsection}{\numberline {2.11.5}$||\mathbf {A}||_{(\infty )}$ ($\infty $)-Norm}{25}
-\contentsline {subsection}{\numberline {2.11.6}$||\mathbf {A}||_{(2)}$ (2)-Norm}{25}
-\contentsline {section}{\numberline {2.12}Vector and Matrix Derivatives}{25}
-\contentsline {subsection}{\numberline {2.12.1}Jacobian}{25}
-\contentsline {subsection}{\numberline {2.12.2}Inverse Function Theorem}{26}
-\contentsline {subsection}{\numberline {2.12.3}Critical Points}{26}
-\contentsline {subsection}{\numberline {2.12.4}Differential Volume Element / Change of Variables}{26}
-\contentsline {subsection}{\numberline {2.12.5}Hessian}{27}
-\contentsline {chapter}{\numberline {3}Linear Regression}{29}
-\contentsline {section}{\numberline {3.1}Ordinary Linear Regression}{29}
-\contentsline {section}{\numberline {3.2}$R^2$ Value}{29}
-\contentsline {section}{\numberline {3.3}Regression Diagnostics}{29}
-\contentsline {section}{\numberline {3.4}t-Statistics}{29}
-\contentsline {section}{\numberline {3.5}AIC and BIC}{29}
+\contentsline {chapter}{\numberline {1}Combinatorics}{5}
+\contentsline {section}{\numberline {1.1}Useful Expressions}{5}
+\contentsline {subsection}{\numberline {1.1.1}Binomial Coefficients and Binomial Expansions}{5}
+\contentsline {subsubsection}{\numberline {1.1.1.1}Derivation of the Binomial Theorem for a Negative Exponent}{6}
+\contentsline {subsubsection}{\numberline {1.1.1.2}Derivation of the Binomial Theorem for a Fractional Exponent}{6}
+\contentsline {subsection}{\numberline {1.1.2}Multinomial Expansion}{7}
+\contentsline {subsection}{\numberline {1.1.3}Unnamed Polynomial Identity}{7}
+\contentsline {subsection}{\numberline {1.1.4}Factorial Expansion}{7}
+\contentsline {subsection}{\numberline {1.1.5}Stirling Numbers of the Second Kind}{7}
+\contentsline {section}{\numberline {1.2}Taxonomy of Distribution Problems: The Twentyfold Way}{8}
+\contentsline {subparagraph}{Favorite Teachers}{8}
+\contentsline {subparagraph}{Assembling a Team}{9}
+\contentsline {subsection}{\numberline {1.2.1}Distinct Objects}{9}
+\contentsline {subsubsection}{\numberline {1.2.1.1}Distinct Recipients}{9}
+\contentsline {subparagraph}{Pool Balls into Labeled Buckets}{9}
+\contentsline {subparagraph}{Functions}{9}
+\contentsline {subparagraph}{Binary Strings of Length $k$}{9}
+\contentsline {subparagraph}{Subsets of a $k$-Element Set}{9}
+\contentsline {subsubsection}{\numberline {1.2.1.2}Indistinct Recipients}{10}
+\contentsline {subparagraph}{Pool Balls into Unlabeled Bags}{10}
+\contentsline {subsection}{\numberline {1.2.2}Distinct Objects, Every Recipient Receives At Most One}{10}
+\contentsline {subsubsection}{\numberline {1.2.2.1}Distinct Recipients}{10}
+\contentsline {subparagraph}{At Most One Pool Ball into Labeled Buckets}{10}
+\contentsline {subparagraph}{One-to-One Functions}{10}
+\contentsline {subparagraph}{k-element Permutations of $n$ elements}{10}
+\contentsline {subparagraph}{Books on a Shelf}{10}
+\contentsline {subsubsection}{\numberline {1.2.2.2}Indistinct Recipients}{10}
+\contentsline {subparagraph}{At Most One Pool Ball into Unlabeled Bags}{11}
+\contentsline {subparagraph}{Distributing Candy}{11}
+\contentsline {subsection}{\numberline {1.2.3}Distinct Objects, Every Recipient Receives at Least One}{11}
+\contentsline {subsubsection}{\numberline {1.2.3.1}Distinct Recipients}{11}
+\contentsline {subparagraph}{At Least One Pool Ball into Labeled Buckets}{11}
+\contentsline {subparagraph}{Onto Functions}{11}
+\contentsline {subsubsection}{\numberline {1.2.3.2}Indistinct Recipients}{11}
+\contentsline {subparagraph}{At Least One Pool Ball into Unlabeled Bags}{11}
+\contentsline {subsection}{\numberline {1.2.4}Distinct Objects, Every Recipient Receives Exactly One}{11}
+\contentsline {subsubsection}{\numberline {1.2.4.1}Distinct Recipients}{11}
+\contentsline {subparagraph}{Exactly One Pool Ball into Each Labeled Buckets}{12}
+\contentsline {subparagraph}{Bijective Functions}{12}
+\contentsline {subparagraph}{Permutations}{12}
+\contentsline {subparagraph}{Unique Identifiers}{12}
+\contentsline {subsubsection}{\numberline {1.2.4.2}Indistinct Recipients}{12}
+\contentsline {subparagraph}{Exactly One Pool Ball into Each Unlabeled Bag}{12}
+\contentsline {subparagraph}{Distribute without Leftovers}{12}
+\contentsline {subsection}{\numberline {1.2.5}Distinct Objects, Distributed in Ordered Groups}{12}
+\contentsline {subsubsection}{\numberline {1.2.5.1}Distinct Recipients}{12}
+\contentsline {subparagraph}{Books on Labeled Bookshelves}{12}
+\contentsline {subparagraph}{Ordered Functions}{13}
+\contentsline {subsubsection}{\numberline {1.2.5.2}Indistinct Recipients}{13}
+\contentsline {subparagraph}{Books into Unlabeled Boxes}{13}
+\contentsline {subparagraph}{Broken Permutations $\leq n$ Parts}{13}
+\contentsline {subparagraph}{Books into Boxes}{13}
+\contentsline {subsection}{\numberline {1.2.6}Distinct Objects, Distributed in Ordered Groups of At Least One}{13}
+\contentsline {subsubsection}{\numberline {1.2.6.1}Distinct Recipients}{13}
+\contentsline {subparagraph}{Books on Labeled Bookshelves}{13}
+\contentsline {subparagraph}{Ordered Onto Functions}{14}
+\contentsline {subsubsection}{\numberline {1.2.6.2}Indistinct Recipients}{14}
+\contentsline {subparagraph}{Books into Unlabeled Boxes}{14}
+\contentsline {subparagraph}{Broken Permutations $n$ parts}{14}
+\contentsline {subparagraph}{Books into Boxes}{14}
+\contentsline {subsection}{\numberline {1.2.7}Identical Objects}{14}
+\contentsline {subsubsection}{\numberline {1.2.7.1}Distinct Recipients}{14}
+\contentsline {subparagraph}{Ping Pong Balls into Labeled Buckets}{14}
+\contentsline {subparagraph}{Multisets}{14}
+\contentsline {subparagraph}{Integer Sums}{14}
+\contentsline {subparagraph}{Bosons in Degenerate States}{14}
+\contentsline {subsubsection}{\numberline {1.2.7.2}Indistinct Recipients}{14}
+\contentsline {subparagraph}{Ping Pong Balls into Unlabeled Bags}{15}
+\contentsline {subparagraph}{Number Partitions}{15}
+\contentsline {subparagraph}{Unlabeled Multiplicities of Multisets}{15}
+\contentsline {subparagraph}{Boxes of Marbles}{15}
+\contentsline {subsection}{\numberline {1.2.8}Identical Objects, Each Receives At Most One}{15}
+\contentsline {subsubsection}{\numberline {1.2.8.1}Distinct Recipients}{15}
+\contentsline {subparagraph}{At Most One Ping Pong Balls into Labeled Buckets}{15}
+\contentsline {subparagraph}{Subsets}{15}
+\contentsline {subparagraph}{Set Binary Labels}{15}
+\contentsline {subsubsection}{\numberline {1.2.8.2}Indistinct Recipients}{15}
+\contentsline {subparagraph}{At Most One Ping Pong Ball into Unlabeled Bags}{15}
+\contentsline {subparagraph}{Boxes}{15}
+\contentsline {subsection}{\numberline {1.2.9}Identical Objects, Each Receives At Least One}{16}
+\contentsline {subsubsection}{\numberline {1.2.9.1}Distinct Recipients}{16}
+\contentsline {subparagraph}{At Least One Ping Pong Ball into Labeled Buckets}{16}
+\contentsline {subparagraph}{Compositions $n$ Parts}{16}
+\contentsline {subsubsection}{\numberline {1.2.9.2}Indistinct Recipients}{16}
+\contentsline {subparagraph}{At Least One Ping Pong Ball in Unlabeled Bags}{16}
+\contentsline {subparagraph}{Partitions in $n$ Parts}{16}
+\contentsline {subsection}{\numberline {1.2.10}Identical Objects, Each Receives Exactly One}{16}
+\contentsline {subsubsection}{\numberline {1.2.10.1}Distinct Recipients}{16}
+\contentsline {subparagraph}{One Ping Pong Ball into Each Labeled Bucket}{16}
+\contentsline {subsubsection}{\numberline {1.2.10.2}Indistinct Recipients}{16}
+\contentsline {subparagraph}{One Ping Pong Ball into Each Unlabeled Bag}{16}
+\contentsline {section}{\numberline {1.3}Generating Functions}{17}
+\contentsline {subsection}{\numberline {1.3.1}Example: Binomial Coefficients}{17}
+\contentsline {subsection}{\numberline {1.3.2}Basket of Goods}{17}
+\contentsline {subsection}{\numberline {1.3.3}Example: Dice}{18}
+\contentsline {chapter}{\numberline {2}Linear Algebra and Multivariable Calculus}{21}
+\contentsline {section}{\numberline {2.1}Multi-Index Notation}{21}
+\contentsline {subsubsection}{\numberline {2.1.0.1}Multinomial Coefficients}{21}
+\contentsline {subsubsection}{\numberline {2.1.0.2}Taylor Expansion}{21}
+\contentsline {section}{\numberline {2.2}Singular Value Decomposition}{22}
+\contentsline {section}{\numberline {2.3}Cholesky Decomposition}{22}
+\contentsline {subsubsection}{\numberline {2.3.0.1}Creating Correlated Random Variables}{22}
+\contentsline {section}{\numberline {2.4}Non-Negative Matrix Factorization}{22}
+\contentsline {section}{\numberline {2.5}Generalized Eigenvectors}{22}
+\contentsline {section}{\numberline {2.6}Spectral Theorems, Diagonalization}{22}
+\contentsline {section}{\numberline {2.7}Types of Transformations}{22}
+\contentsline {subsection}{\numberline {2.7.1}Affine Transformations}{22}
+\contentsline {subsection}{\numberline {2.7.2}Multilinear Maps}{24}
+\contentsline {subsection}{\numberline {2.7.3}Multilinear Forms}{24}
+\contentsline {section}{\numberline {2.8}Types of Matrices}{24}
+\contentsline {subsection}{\numberline {2.8.1}Triangular}{24}
+\contentsline {subsection}{\numberline {2.8.2}$\mathbf {A}^{\dagger } = \mathbf {A}$ Hermitian, Symmetric}{24}
+\contentsline {subsubsection}{\numberline {2.8.2.1}Properties}{24}
+\contentsline {subsection}{\numberline {2.8.3}$\mathbf {A}^{\dagger } = -\mathbf {A}$ Skew Hermitian, Skew Symmetric}{25}
+\contentsline {subsection}{\numberline {2.8.4}$\mathbf {U}^{\dagger }\mathbf {U} = \mathbf {I}$ Unitary, Orthogonal}{25}
+\contentsline {section}{\numberline {2.9}Properties of Norms}{25}
+\contentsline {section}{\numberline {2.10}$L^p$ Lebesgue Vector Norms}{25}
+\contentsline {subsection}{\numberline {2.10.1}$L^{1}$ Taxicab / Manhattan Norm}{25}
+\contentsline {subsection}{\numberline {2.10.2}$L^{2}$ Euclidian Norm}{25}
+\contentsline {subsection}{\numberline {2.10.3}$L^{\infty }$ Maximum Norm}{25}
+\contentsline {subsection}{\numberline {2.10.4}$L^{-\infty }$ Minimum Norm}{25}
+\contentsline {section}{\numberline {2.11}Operator and Matrix Norms}{26}
+\contentsline {subparagraph}{}{26}
+\contentsline {subsection}{\numberline {2.11.1}$||\mathbf {A}||_{(\alpha )}$ Operator Norm}{26}
+\contentsline {subsection}{\numberline {2.11.2}$||\mathbf {A}||_q$ $q$-Norms}{26}
+\contentsline {subsection}{\numberline {2.11.3}$||\mathbf {A}||_F$ Frobenius Norm}{26}
+\contentsline {subsection}{\numberline {2.11.4}$||\mathbf {A}||_{(1)}$ (1)-Norm}{27}
+\contentsline {subsection}{\numberline {2.11.5}$||\mathbf {A}||_{(\infty )}$ ($\infty $)-Norm}{27}
+\contentsline {subsection}{\numberline {2.11.6}$||\mathbf {A}||_{(2)}$ (2)-Norm}{27}
+\contentsline {section}{\numberline {2.12}Vector and Matrix Derivatives}{27}
+\contentsline {subsection}{\numberline {2.12.1}Jacobian}{27}
+\contentsline {subsection}{\numberline {2.12.2}Inverse Function Theorem}{28}
+\contentsline {subsection}{\numberline {2.12.3}Critical Points}{28}
+\contentsline {subsection}{\numberline {2.12.4}Differential Volume Element, Change of Variables}{28}
+\contentsline {subsection}{\numberline {2.12.5}Hessian}{29}
+\contentsline {chapter}{\numberline {3}Linear Regression}{31}
+\contentsline {section}{\numberline {3.1}Ordinary Linear Regression}{31}
+\contentsline {section}{\numberline {3.2}$R^2$ Value}{31}
+\contentsline {section}{\numberline {3.3}Regression Diagnostics}{31}
+\contentsline {section}{\numberline {3.4}t-Statistics}{31}
+\contentsline {section}{\numberline {3.5}AIC and BIC}{31}
 \contentsfinish 

@@ -1,34 +1,5 @@
 \section{Types of Matrices}
 
-\subsection{$\mathbf{A}^{dagger} = \mathbf{A}$ Hermitian}
-Hermitian matrices are matrices that are equal to their complex transpose. That is:
-
-\begin{equation}
-{\mathbf{A}^{*}}^T = \mathbf{A}^\dagger = \mathbf{A} 
-\end{equation}
-
-
-Hermitian matrices are like a generalization of symmetric matrices to include complex numbers. 
-
-\subsubsection{Properties}
-There are many properties. 
-\begin{itemize}
-\item By definition: $\mathbf{A} = \mathbf{A}^\dagger$
-\item Diagonal Entries are all real, since $a_{i,i} = a_{i,i}^*$
-\item Inverse is also hermitian:  $\mathbf{A}^{-1} ={ \mathbf{A}^{-1}}^\dagger$
-\item Diagonalizable with real eigenvalues and orthogonal eigenvectors $\in \mathbb{C}^n$.
-\end{itemize}
-
-
-\subsection{$\mathbf{A}^{\datter} = -\mathbf{A}$ Skew Hermitian}
-Skew Hermitian matrices that are equal to the negative of their complex transpose. That is:
-
-\begin{equation}
-{\mathbf{A}^{*}}^T = \mathbf{A}^\dagger = -\mathbf{A} 
-\end{equation}
-
-
-
 \subsection{Triangular}
 A lower triangular matrix is a matrix that has all-zero entries above the diagonal.
 
@@ -39,10 +10,46 @@ A lower triangular matrix is a matrix that has all-zero entries above the diagon
 Upper triangular matrices are matrices that have all-zero entries below the diagonal.
 
 
-\subsection{$\mathbf{U}^{\dagger}\mathbf{U} = \mathbf{I}$ Unitary}
+% Hermitian / Symmetric
+\subsection{$\mathbf{A}^{\dagger} = \mathbf{A}$ Hermitian, Symmetric}
+Hermitian matrices are matrices that are equal to their complex transpose. That is:
+
+\begin{equation}
+{\mathbf{A}^{*}}^T = \mathbf{A}^\dagger = \mathbf{A} 
+\end{equation}
+
+\subsubsection{Properties}
+There are many properties of Hermitian matrices. 
+\begin{itemize}
+\item By definition: $\mathbf{A} = \mathbf{A}^\dagger$
+\item Diagonal Entries are all real, since $a_{i,i} = a_{i,i}^*$
+\item Inverse is also hermitian:  $\mathbf{A}^{-1} ={ \mathbf{A}^{-1}}^\dagger$
+\item Diagonalizable with real eigenvalues and orthogonal eigenvectors $\in \mathbb{C}^n$.
+\end{itemize}
+
+
+Hermitian matrices with only real entries are called symmetric matrices. In that case $\mathbf{A}^T = \mathbf{A}$.
+
+
+% Skew Hermitian / Skew Symmetric
+\subsection{$\mathbf{A}^{\dagger} = -\mathbf{A}$ Skew Hermitian, Skew Symmetric}
+Skew Hermitian matrices that are equal to the negative of their complex transpose. That is:
+
+\begin{equation}
+{\mathbf{A}^{*}}^T = \mathbf{A}^\dagger = -\mathbf{A} 
+\end{equation}
+
+Real matrices that are skew Hermitian are called skew symmetric. In that case:
+
+\begin{equation}
+\mathbf{A}^T = -\mathbf{A} 
+\end{equation}
+
+
+% Unitary / Orthogonal
+\subsection{$\mathbf{U}^{\dagger}\mathbf{U} = \mathbf{I}$ Unitary, Orthogonal}
 Unitary matrices satisfy $\mathbf{U}^{\dagger}\mathbf{U} = \mathbf{UU}^{\dagger}=\mathbf{I}$, and they have $det(\mathbf{U}) = 1$. They are diagonalizable and can be expressed as $e^{i\mathbf{H}}$ where $\mathbf{H}$ is a Hermitian matrix. Rotation matrices in complex space are Unitary. For real matrices, unitary matrices are the same as orthogonal matrices.
 
-\subsection{$\mathbf{A}^{T}\mathbf{A} = \mathbf{I}$ Orthogonal} 
-Orthogonal matrices satisfy $\mathbf{A}^{-1} = \mathbf{A}^T$. The rows (and columns) of $\mathbf{A}$ are an orthonormal basis.
+Unitary matrices that are real are called orthogonal.  Orthogonal matrices satisfy $\mathbf{A}^{-1} = \mathbf{A}^T$. The rows (and columns) of $\mathbf{A}$ are an orthonormal basis in $\mathrm{R}^n$.
 
 
