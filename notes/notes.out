@@ -35,52 +35,57 @@
 \BOOKMARK [1][-]{section.4.4}{A = VV-1 Spectral Theorems, Diagonalization}{chapter.4}% 35
 \BOOKMARK [2][-]{subsection.4.4.1}{A = VVT Eigendecomposition of Symmetric Matrices}{section.4.4}% 36
 \BOOKMARK [2][-]{subsection.4.4.2}{H = UUT Eigendecomposition of Hermitian Matrices}{section.4.4}% 37
-\BOOKMARK [1][-]{section.4.5}{A = UV Singular Value Decomposition}{chapter.4}% 38
-\BOOKMARK [1][-]{section.4.6}{Types of Transformations}{chapter.4}% 39
-\BOOKMARK [2][-]{subsection.4.6.1}{Affine Transformations}{section.4.6}% 40
-\BOOKMARK [2][-]{subsection.4.6.2}{Unitary Transformations}{section.4.6}% 41
-\BOOKMARK [2][-]{subsection.4.6.3}{Multilinear Maps}{section.4.6}% 42
-\BOOKMARK [2][-]{subsection.4.6.4}{Multilinear Forms}{section.4.6}% 43
-\BOOKMARK [1][-]{section.4.7}{Types Matrices}{chapter.4}% 44
-\BOOKMARK [2][-]{subsection.4.7.1}{sgn\(xHx\) Definiteness}{section.4.7}% 45
-\BOOKMARK [2][-]{subsection.4.7.2}{Triangular}{section.4.7}% 46
-\BOOKMARK [2][-]{subsection.4.7.3}{AB=BA Commuting}{section.4.7}% 47
-\BOOKMARK [2][-]{subsection.4.7.4}{A = A Hermitian, Symmetric}{section.4.7}% 48
-\BOOKMARK [2][-]{subsection.4.7.5}{A = -A Skew Hermitian, Skew Symmetric}{section.4.7}% 49
-\BOOKMARK [2][-]{subsection.4.7.6}{U = U-1 Unitary, Orthogonal}{section.4.7}% 50
-\BOOKMARK [1][-]{section.4.8}{Properties of Norms}{chapter.4}% 51
-\BOOKMARK [1][-]{section.4.9}{Lp Lebesgue Vector Norms}{chapter.4}% 52
-\BOOKMARK [2][-]{subsection.4.9.1}{L1 Taxicab / Manhattan Norm}{section.4.9}% 53
-\BOOKMARK [2][-]{subsection.4.9.2}{L2 Euclidian Norm}{section.4.9}% 54
-\BOOKMARK [2][-]{subsection.4.9.3}{L Maximum Norm}{section.4.9}% 55
-\BOOKMARK [2][-]{subsection.4.9.4}{L- Minimum Norm}{section.4.9}% 56
-\BOOKMARK [1][-]{section.4.10}{Operator and Matrix Norms}{chapter.4}% 57
-\BOOKMARK [2][-]{subsection.4.10.1}{||A||\(\) Operator Norm}{section.4.10}% 58
-\BOOKMARK [2][-]{subsection.4.10.2}{||A||q q-Norms}{section.4.10}% 59
-\BOOKMARK [2][-]{subsection.4.10.3}{||A||F Frobenius Norm}{section.4.10}% 60
-\BOOKMARK [2][-]{subsection.4.10.4}{||A||\(1\) \(1\)-Norm}{section.4.10}% 61
-\BOOKMARK [2][-]{subsection.4.10.5}{||A||\(\) \(\)-Norm}{section.4.10}% 62
-\BOOKMARK [2][-]{subsection.4.10.6}{||A||\(2\) \(2\)-Norm}{section.4.10}% 63
-\BOOKMARK [1][-]{section.4.11}{Vector and Matrix Derivatives}{chapter.4}% 64
-\BOOKMARK [2][-]{subsection.4.11.1}{Jacobian}{section.4.11}% 65
-\BOOKMARK [2][-]{subsection.4.11.2}{Inverse Function Theorem}{section.4.11}% 66
-\BOOKMARK [2][-]{subsection.4.11.3}{Critical Points}{section.4.11}% 67
-\BOOKMARK [2][-]{subsection.4.11.4}{Differential Volume Element, Change of Variables}{section.4.11}% 68
-\BOOKMARK [2][-]{subsection.4.11.5}{Hessian}{section.4.11}% 69
-\BOOKMARK [0][-]{chapter.5}{Information Theory}{}% 70
-\BOOKMARK [1][-]{section.5.1}{Entropy}{chapter.5}% 71
-\BOOKMARK [1][-]{section.5.2}{Mutual Information}{chapter.5}% 72
-\BOOKMARK [1][-]{section.5.3}{Kullback-Leibler Divergence}{chapter.5}% 73
-\BOOKMARK [0][-]{chapter.6}{Linear Regression}{}% 74
-\BOOKMARK [1][-]{section.6.1}{Ordinary Linear Regression}{chapter.6}% 75
-\BOOKMARK [1][-]{section.6.2}{R2 Value}{chapter.6}% 76
-\BOOKMARK [1][-]{section.6.3}{Regression Diagnostics}{chapter.6}% 77
-\BOOKMARK [1][-]{section.6.4}{t-Statistics}{chapter.6}% 78
-\BOOKMARK [1][-]{section.6.5}{AIC and BIC}{chapter.6}% 79
-\BOOKMARK [1][-]{section.6.6}{Factor Regression}{chapter.6}% 80
-\BOOKMARK [1][-]{section.6.7}{Factor Models}{chapter.6}% 81
-\BOOKMARK [0][-]{chapter.7}{Unsupervised Learning}{}% 82
-\BOOKMARK [1][-]{section.7.1}{Independent Component Analysis}{chapter.7}% 83
-\BOOKMARK [1][-]{section.7.2}{Principal Component Analysis \(PCA\)}{chapter.7}% 84
-\BOOKMARK [2][-]{subsection.7.2.1}{Relationship between PCA and SVD}{section.7.2}% 85
-\BOOKMARK [1][-]{section.7.3}{X=WH Non-Negative Matrix Factorization}{chapter.7}% 86
+\BOOKMARK [2][-]{subsection.4.4.3}{Eigenvalue Sensitivity and Accuracy}{section.4.4}% 38
+\BOOKMARK [1][-]{section.4.5}{A = UV Singular Value Decomposition}{chapter.4}% 39
+\BOOKMARK [2][-]{subsection.4.5.1}{Full and Economy SVDs}{section.4.5}% 40
+\BOOKMARK [2][-]{subsection.4.5.2}{Matrix Approximation}{section.4.5}% 41
+\BOOKMARK [1][-]{section.4.6}{Types of Transformations}{chapter.4}% 42
+\BOOKMARK [2][-]{subsection.4.6.1}{Similarity Transformations}{section.4.6}% 43
+\BOOKMARK [2][-]{subsection.4.6.2}{Affine Transformations}{section.4.6}% 44
+\BOOKMARK [2][-]{subsection.4.6.3}{Unitary Transformations}{section.4.6}% 45
+\BOOKMARK [2][-]{subsection.4.6.4}{Multilinear Maps}{section.4.6}% 46
+\BOOKMARK [2][-]{subsection.4.6.5}{Multilinear Forms}{section.4.6}% 47
+\BOOKMARK [1][-]{section.4.7}{Types Matrices}{chapter.4}% 48
+\BOOKMARK [2][-]{subsection.4.7.1}{sgn\(xHx\) Definiteness}{section.4.7}% 49
+\BOOKMARK [2][-]{subsection.4.7.2}{Triangular}{section.4.7}% 50
+\BOOKMARK [2][-]{subsection.4.7.3}{AB=BA Commuting}{section.4.7}% 51
+\BOOKMARK [2][-]{subsection.4.7.4}{A = A Hermitian, Symmetric}{section.4.7}% 52
+\BOOKMARK [2][-]{subsection.4.7.5}{A = -A Skew Hermitian, Skew Symmetric}{section.4.7}% 53
+\BOOKMARK [2][-]{subsection.4.7.6}{U = U-1 Unitary, Orthogonal}{section.4.7}% 54
+\BOOKMARK [2][-]{subsection.4.7.7}{A = TBT-1 Similarity}{section.4.7}% 55
+\BOOKMARK [1][-]{section.4.8}{Properties of Norms}{chapter.4}% 56
+\BOOKMARK [1][-]{section.4.9}{Lp Lebesgue Vector Norms}{chapter.4}% 57
+\BOOKMARK [2][-]{subsection.4.9.1}{L1 Taxicab / Manhattan Norm}{section.4.9}% 58
+\BOOKMARK [2][-]{subsection.4.9.2}{L2 Euclidian Norm}{section.4.9}% 59
+\BOOKMARK [2][-]{subsection.4.9.3}{L Maximum Norm}{section.4.9}% 60
+\BOOKMARK [2][-]{subsection.4.9.4}{L- Minimum Norm}{section.4.9}% 61
+\BOOKMARK [1][-]{section.4.10}{Operator and Matrix Norms}{chapter.4}% 62
+\BOOKMARK [2][-]{subsection.4.10.1}{||A||\(\) Operator Norm}{section.4.10}% 63
+\BOOKMARK [2][-]{subsection.4.10.2}{||A||q q-Norms}{section.4.10}% 64
+\BOOKMARK [2][-]{subsection.4.10.3}{||A||F Frobenius Norm}{section.4.10}% 65
+\BOOKMARK [2][-]{subsection.4.10.4}{||A||\(1\) \(1\)-Norm}{section.4.10}% 66
+\BOOKMARK [2][-]{subsection.4.10.5}{||A||\(\) \(\)-Norm}{section.4.10}% 67
+\BOOKMARK [2][-]{subsection.4.10.6}{||A||\(2\) \(2\)-Norm}{section.4.10}% 68
+\BOOKMARK [1][-]{section.4.11}{Vector and Matrix Derivatives}{chapter.4}% 69
+\BOOKMARK [2][-]{subsection.4.11.1}{Jacobian}{section.4.11}% 70
+\BOOKMARK [2][-]{subsection.4.11.2}{Inverse Function Theorem}{section.4.11}% 71
+\BOOKMARK [2][-]{subsection.4.11.3}{Critical Points}{section.4.11}% 72
+\BOOKMARK [2][-]{subsection.4.11.4}{Differential Volume Element, Change of Variables}{section.4.11}% 73
+\BOOKMARK [2][-]{subsection.4.11.5}{Hessian}{section.4.11}% 74
+\BOOKMARK [0][-]{chapter.5}{Information Theory}{}% 75
+\BOOKMARK [1][-]{section.5.1}{Entropy}{chapter.5}% 76
+\BOOKMARK [1][-]{section.5.2}{Mutual Information}{chapter.5}% 77
+\BOOKMARK [1][-]{section.5.3}{Kullback-Leibler Divergence}{chapter.5}% 78
+\BOOKMARK [0][-]{chapter.6}{Linear Regression}{}% 79
+\BOOKMARK [1][-]{section.6.1}{Ordinary Linear Regression}{chapter.6}% 80
+\BOOKMARK [1][-]{section.6.2}{R2 Value}{chapter.6}% 81
+\BOOKMARK [1][-]{section.6.3}{Regression Diagnostics}{chapter.6}% 82
+\BOOKMARK [1][-]{section.6.4}{t-Statistics}{chapter.6}% 83
+\BOOKMARK [1][-]{section.6.5}{AIC and BIC}{chapter.6}% 84
+\BOOKMARK [1][-]{section.6.6}{Factor Regression}{chapter.6}% 85
+\BOOKMARK [1][-]{section.6.7}{Factor Models}{chapter.6}% 86
+\BOOKMARK [0][-]{chapter.7}{Unsupervised Learning}{}% 87
+\BOOKMARK [1][-]{section.7.1}{Independent Component Analysis}{chapter.7}% 88
+\BOOKMARK [1][-]{section.7.2}{Principal Component Analysis \(PCA\)}{chapter.7}% 89
+\BOOKMARK [2][-]{subsection.7.2.1}{Relationship between PCA and SVD}{section.7.2}% 90
+\BOOKMARK [1][-]{section.7.3}{X=WH Non-Negative Matrix Factorization}{chapter.7}% 91

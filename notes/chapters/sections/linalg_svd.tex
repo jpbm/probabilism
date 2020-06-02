@@ -1,16 +1,31 @@
 \section{$\mathbf{A} = \mathbf{U\Sigma V}^{\dagger}$ Singular Value Decomposition}
 \label{sec:svd}
 
-The Singular Value Decomposition (SVD) exists for \underline{any} matrix $\mathbf{A}\in\mathbb{C}^{m\times n}$, and can be thought of as the generalization of the eigendecomposition (cf. section \ref{sec:diagonalization}) to non-square matrices. The decomposition comes up incessantly in the context of data analysis. In general, the decomposition has the form:
+The Singular Value Decomposition (SVD) exists for \underline{any} matrix $\mathbf{A}\in\mathbb{C}^{m\times n}$, and is a closely related alternative to the eigendecomposition (cf. section \ref{sec:diagonalization}) that works for non-square matrices. The decomposition comes up incessantly in the context of data analysis. In general, the decomposition has the form:
 
 \begin{equation}
 \mathbf{A} = \mathbf{U\Sigma V^{\dagger}}
 \end{equation}
 
-Where $\mathbf{U^{\dagger}}\mathbf{U} = \mathbf{I}$, $\mathbf{V}$ is unitary, and $\Sigma$ is a diagonal matrix with real and positive entries $\sigma_i^2$ along the diagonal, so that $\sigma_1 \geq \sigma^2_2 \geq ...\geq \sigma^2_n$. $\mathbf{U}$ is the matrix of left singular vectors, which are the eigenvectors of $\mathbf{A A^{\dagger}}$. $\mathbf{V}$ is the matrix of right singular vectors, which are the eigenvectors of $\mathbf{A^{\dagger} A}$. 
+Where $\mathbf{U^{\dagger}}\mathbf{U} = \mathbf{I}$, $\mathbf{V}$ is unitary, and $\Sigma$ is a diagonal matrix with real and positive entries $\sigma_i^2$ along the diagonal, so that $\sigma_1 \geq \sigma^2_2 \geq ...\geq \sigma^2_n$. $\mathbf{U}$ is the matrix of left singular vectors, which are the eigenvectors of $\mathbf{A A^{\dagger}}$. $\mathbf{V}$ is the matrix of right singular vectors, which are the eigenvectors of $\mathbf{A^{\dagger} A}$. The singular values are the square roots of the eigenvalues of $\mathbf{A^{\dagger}A}$ or, equivalently, $\mathbf{AA^{\dagger}}$. If the $\mathbf{A}$ is square and symmetric ($\mathbf{A}=\mathbf{A^T}$, cf. section \ref{sec:hermitian}), then the singular values are simply the absolute values of the eigenvalues of $\mathbf{A}$. 
 \\
 
-While these properties are always true, unfortunately people use a range of conventions when it comes to the size of $\mathbf{U}$, $\mathbf{\Sigma}$ and $\mathbf{V}$. \citeasnoun{friedman2001elements} uses the the convention where $\Sigma$ is square, i.e. $\mathbf{U}:\ m\times n$, $\mathbf{\Sigma}:\ n\times n$ and $\mathbf{V}:\ n\times n$. This means that $U$ does not contain the full set of $m$ left singular vectors. Note that, in this case, $\mathbf{U^{\dagger}}\mathbf{U} = \mathbf{I}$ but $\mathbf{U}\mathbf{U^{\dagger}} \neq \mathbf{I}$. \possessivecite{friedman2001elements} convention is of advantage in the context of data analysis, where the data matrix tends to be "tall and skinny" (i.e. $m>>n$), and only the first $n$ left singular vectors are relevant. Also, a letting $\Sigma$ be a square matrix significantly simplifies calculations.  
-\\
 
-The alternative is for $\mathbf{U}$ and $\mathbf{V}$ to be square, in which case they contain the full set of left and right singular vectors, and $\Sigma$ has dimension $m\times n$, with $0$ entries in rows $i>n$.
+\subsection{Full and Economy SVDs}
+While these properties are always true, unfortunately people use a range of conventions when it comes to the size of $\mathbf{U}$, $\mathbf{\Sigma}$ and $\mathbf{V}$. \\
+
+The first convention is for $\mathbf{U}$ and $\mathbf{V}$ to be square, in which case they contain the full set of left and right singular vectors, and $\Sigma$ has dimension $m\times n$, with $0$ entries in rows $i>n$. This is known as the \textit{full SVD}.\\
+
+\citeasnoun{friedman2001elements} uses the the convention where $\Sigma$ is square, i.e. $\mathbf{U}:\ m\times n$, $\mathbf{\Sigma}:\ n\times n$ and $\mathbf{V}:\ n\times n$. This means that $U$ does not contain the full set of $m$ left singular vectors. Note that, in this case, $\mathbf{U^{\dagger}}\mathbf{U} = \mathbf{I}$ but $\mathbf{U}\mathbf{U^{\dagger}} \neq \mathbf{I}$. \possessivecite{friedman2001elements} convention is of advantage in the context of data analysis, where the data matrix tends to be "tall and skinny" (i.e. $m>>n$), and only the first $n$ left singular vectors are relevant. Also, a letting $\Sigma$ be a square matrix significantly simplifies calculations. \possessivecite{friedman2001elements} is known as the \textit{economy SVD}.\\
+
+The two different layouts are illustrated in Figure \ref{fig:full_vs_economy_svd}, which I brazenly copied from \citeasnoun{mathworkseigs}.
+
+\begin{figure}
+\centering
+\includegraphics[scale=0.5]{full_vs_economy_svd.png}
+\caption{Dimensions for Full vs. Economy SVDs}
+\label{fig:full_vs_economy_svd}
+\end{figure}
+
+\subsection{Matrix Approximation}
+The SVD 

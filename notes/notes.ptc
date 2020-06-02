@@ -113,71 +113,76 @@
 \ttl@starttoc {default@5}
 \contentsline {section}{\numberline {4.1}Multi-Index Notation}{25}{section.4.1}
 \contentsline {subsubsection}{\numberline {4.1.0.1}Multinomial Coefficients}{25}{subsubsection.4.1.0.1}
-\contentsline {subsubsection}{\numberline {4.1.0.2}Taylor Expansion}{25}{subsubsection.4.1.0.2}
+\contentsline {subsubsection}{\numberline {4.1.0.2}Taylor Expansion}{26}{subsubsection.4.1.0.2}
 \contentsline {section}{\numberline {4.2}$\mathbf {A} = \mathbf {L}\mathbf {L}^{\dagger }$ Cholesky Decomposition}{26}{section.4.2}
 \contentsline {subsubsection}{\numberline {4.2.0.1}Creating Correlated Random Variables}{26}{subsubsection.4.2.0.1}
 \contentsline {section}{\numberline {4.3}Generalized Eigenvectors}{26}{section.4.3}
 \contentsline {section}{\numberline {4.4}$\mathbf {A} = \mathbf {V\Lambda V^{-1}}$ Spectral Theorems, Diagonalization}{26}{section.4.4}
 \contentsline {subsection}{\numberline {4.4.1}$\mathbf {A} = \mathbf {V\Lambda V}^T$ Eigendecomposition of Symmetric Matrices}{26}{subsection.4.4.1}
 \contentsline {subsection}{\numberline {4.4.2}$\mathbf {H} = \mathbf {U\Lambda U}^T$ Eigendecomposition of Hermitian Matrices}{26}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.3}Eigenvalue Sensitivity and Accuracy}{28}{subsection.4.4.3}
 \contentsline {section}{\numberline {4.5}$\mathbf {A} = \mathbf {U\Sigma V}^{\dagger }$ Singular Value Decomposition}{28}{section.4.5}
-\contentsline {section}{\numberline {4.6}Types of Transformations}{28}{section.4.6}
-\contentsline {subsection}{\numberline {4.6.1}Affine Transformations}{28}{subsection.4.6.1}
-\contentsline {subsection}{\numberline {4.6.2}Unitary Transformations}{28}{subsection.4.6.2}
-\contentsline {subsection}{\numberline {4.6.3}Multilinear Maps}{28}{subsection.4.6.3}
-\contentsline {subsection}{\numberline {4.6.4}Multilinear Forms}{29}{subsection.4.6.4}
-\contentsline {section}{\numberline {4.7}Types Matrices}{29}{section.4.7}
-\contentsline {subsection}{\numberline {4.7.1}$\mathrm {sgn}\left (\mathbf {x}^{\dagger }\mathbf {H}\mathbf {x}\right )$ Definiteness}{29}{subsection.4.7.1}
-\contentsline {subsection}{\numberline {4.7.2}Triangular}{29}{subsection.4.7.2}
-\contentsline {subsection}{\numberline {4.7.3}$\mathbf {AB}=\mathbf {BA}$ Commuting}{29}{subsection.4.7.3}
-\contentsline {subsection}{\numberline {4.7.4}$\mathbf {A}^{\dagger } = \mathbf {A}$ Hermitian, Symmetric}{30}{subsection.4.7.4}
-\contentsline {subsubsection}{\numberline {4.7.4.1}Properties}{30}{subsubsection.4.7.4.1}
-\contentsline {subsection}{\numberline {4.7.5}$\mathbf {A}^{\dagger } = -\mathbf {A}$ Skew Hermitian, Skew Symmetric}{30}{subsection.4.7.5}
-\contentsline {subsection}{\numberline {4.7.6}$\mathbf {U}^{\dagger } = \mathbf {U}^{-1}$ Unitary, Orthogonal}{30}{subsection.4.7.6}
-\contentsline {section}{\numberline {4.8}Properties of Norms}{30}{section.4.8}
-\contentsline {section}{\numberline {4.9}$L^p$ Lebesgue Vector Norms}{30}{section.4.9}
-\contentsline {subsection}{\numberline {4.9.1}$L^{1}$ Taxicab / Manhattan Norm}{31}{subsection.4.9.1}
-\contentsline {subsection}{\numberline {4.9.2}$L^{2}$ Euclidian Norm}{31}{subsection.4.9.2}
-\contentsline {subsection}{\numberline {4.9.3}$L^{\infty }$ Maximum Norm}{31}{subsection.4.9.3}
-\contentsline {subsection}{\numberline {4.9.4}$L^{-\infty }$ Minimum Norm}{31}{subsection.4.9.4}
-\contentsline {section}{\numberline {4.10}Operator and Matrix Norms}{31}{section.4.10}
-\contentsline {subparagraph}{}{31}{subparagraph*.53}
-\contentsline {subsection}{\numberline {4.10.1}$||\mathbf {A}||_{(\alpha )}$ Operator Norm}{31}{subsection.4.10.1}
-\contentsline {subsection}{\numberline {4.10.2}$||\mathbf {A}||_q$ $q$-Norms}{32}{subsection.4.10.2}
-\contentsline {subsection}{\numberline {4.10.3}$||\mathbf {A}||_F$ Frobenius Norm}{32}{subsection.4.10.3}
-\contentsline {subsection}{\numberline {4.10.4}$||\mathbf {A}||_{(1)}$ (1)-Norm}{32}{subsection.4.10.4}
-\contentsline {subsection}{\numberline {4.10.5}$||\mathbf {A}||_{(\infty )}$ ($\infty $)-Norm}{32}{subsection.4.10.5}
-\contentsline {subsection}{\numberline {4.10.6}$||\mathbf {A}||_{(2)}$ (2)-Norm}{32}{subsection.4.10.6}
-\contentsline {section}{\numberline {4.11}Vector and Matrix Derivatives}{33}{section.4.11}
-\contentsline {subsection}{\numberline {4.11.1}Jacobian}{33}{subsection.4.11.1}
-\contentsline {subsection}{\numberline {4.11.2}Inverse Function Theorem}{33}{subsection.4.11.2}
-\contentsline {subsection}{\numberline {4.11.3}Critical Points}{34}{subsection.4.11.3}
-\contentsline {subsection}{\numberline {4.11.4}Differential Volume Element, Change of Variables}{34}{subsection.4.11.4}
-\contentsline {subsection}{\numberline {4.11.5}Hessian}{34}{subsection.4.11.5}
-\contentsline {subsubsection}{\numberline {4.11.5.1}Testing Convexity}{34}{subsubsection.4.11.5.1}
-\contentsline {chapter}{\numberline {5}Information Theory}{35}{chapter.5}
+\contentsline {subsection}{\numberline {4.5.1}Full and Economy SVDs}{28}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.2}Matrix Approximation}{28}{subsection.4.5.2}
+\contentsline {section}{\numberline {4.6}Types of Transformations}{29}{section.4.6}
+\contentsline {subsection}{\numberline {4.6.1}Similarity Transformations}{29}{subsection.4.6.1}
+\contentsline {subsection}{\numberline {4.6.2}Affine Transformations}{29}{subsection.4.6.2}
+\contentsline {subsection}{\numberline {4.6.3}Unitary Transformations}{29}{subsection.4.6.3}
+\contentsline {subsection}{\numberline {4.6.4}Multilinear Maps}{30}{subsection.4.6.4}
+\contentsline {subsection}{\numberline {4.6.5}Multilinear Forms}{30}{subsection.4.6.5}
+\contentsline {section}{\numberline {4.7}Types Matrices}{30}{section.4.7}
+\contentsline {subsection}{\numberline {4.7.1}$\mathrm {sgn}\left (\mathbf {x}^{\dagger }\mathbf {H}\mathbf {x}\right )$ Definiteness}{30}{subsection.4.7.1}
+\contentsline {subsection}{\numberline {4.7.2}Triangular}{30}{subsection.4.7.2}
+\contentsline {subsection}{\numberline {4.7.3}$\mathbf {AB}=\mathbf {BA}$ Commuting}{30}{subsection.4.7.3}
+\contentsline {subsection}{\numberline {4.7.4}$\mathbf {A}^{\dagger } = \mathbf {A}$ Hermitian, Symmetric}{31}{subsection.4.7.4}
+\contentsline {subsubsection}{\numberline {4.7.4.1}Properties}{31}{subsubsection.4.7.4.1}
+\contentsline {subsection}{\numberline {4.7.5}$\mathbf {A}^{\dagger } = -\mathbf {A}$ Skew Hermitian, Skew Symmetric}{31}{subsection.4.7.5}
+\contentsline {subsection}{\numberline {4.7.6}$\mathbf {U}^{\dagger } = \mathbf {U}^{-1}$ Unitary, Orthogonal}{31}{subsection.4.7.6}
+\contentsline {subsection}{\numberline {4.7.7}$\mathbf {A} = \mathbf {TBT^{-1}}$ Similarity}{32}{subsection.4.7.7}
+\contentsline {section}{\numberline {4.8}Properties of Norms}{32}{section.4.8}
+\contentsline {section}{\numberline {4.9}$L^p$ Lebesgue Vector Norms}{32}{section.4.9}
+\contentsline {subsection}{\numberline {4.9.1}$L^{1}$ Taxicab / Manhattan Norm}{32}{subsection.4.9.1}
+\contentsline {subsection}{\numberline {4.9.2}$L^{2}$ Euclidian Norm}{32}{subsection.4.9.2}
+\contentsline {subsection}{\numberline {4.9.3}$L^{\infty }$ Maximum Norm}{32}{subsection.4.9.3}
+\contentsline {subsection}{\numberline {4.9.4}$L^{-\infty }$ Minimum Norm}{32}{subsection.4.9.4}
+\contentsline {section}{\numberline {4.10}Operator and Matrix Norms}{32}{section.4.10}
+\contentsline {subparagraph}{}{33}{subparagraph*.53}
+\contentsline {subsection}{\numberline {4.10.1}$||\mathbf {A}||_{(\alpha )}$ Operator Norm}{33}{subsection.4.10.1}
+\contentsline {subsection}{\numberline {4.10.2}$||\mathbf {A}||_q$ $q$-Norms}{33}{subsection.4.10.2}
+\contentsline {subsection}{\numberline {4.10.3}$||\mathbf {A}||_F$ Frobenius Norm}{33}{subsection.4.10.3}
+\contentsline {subsection}{\numberline {4.10.4}$||\mathbf {A}||_{(1)}$ (1)-Norm}{33}{subsection.4.10.4}
+\contentsline {subsection}{\numberline {4.10.5}$||\mathbf {A}||_{(\infty )}$ ($\infty $)-Norm}{34}{subsection.4.10.5}
+\contentsline {subsection}{\numberline {4.10.6}$||\mathbf {A}||_{(2)}$ (2)-Norm}{34}{subsection.4.10.6}
+\contentsline {section}{\numberline {4.11}Vector and Matrix Derivatives}{34}{section.4.11}
+\contentsline {subsection}{\numberline {4.11.1}Jacobian}{34}{subsection.4.11.1}
+\contentsline {subsection}{\numberline {4.11.2}Inverse Function Theorem}{35}{subsection.4.11.2}
+\contentsline {subsection}{\numberline {4.11.3}Critical Points}{35}{subsection.4.11.3}
+\contentsline {subsection}{\numberline {4.11.4}Differential Volume Element, Change of Variables}{35}{subsection.4.11.4}
+\contentsline {subsection}{\numberline {4.11.5}Hessian}{35}{subsection.4.11.5}
+\contentsline {subsubsection}{\numberline {4.11.5.1}Testing Convexity}{36}{subsubsection.4.11.5.1}
+\contentsline {chapter}{\numberline {5}Information Theory}{37}{chapter.5}
 \ttl@stoptoc {default@5}
 \ttl@starttoc {default@6}
-\contentsline {section}{\numberline {5.1}Entropy}{35}{section.5.1}
-\contentsline {section}{\numberline {5.2}Mutual Information}{35}{section.5.2}
-\contentsline {section}{\numberline {5.3}Kullback-Leibler Divergence}{35}{section.5.3}
-\contentsline {chapter}{\numberline {6}Linear Regression}{37}{chapter.6}
+\contentsline {section}{\numberline {5.1}Entropy}{37}{section.5.1}
+\contentsline {section}{\numberline {5.2}Mutual Information}{37}{section.5.2}
+\contentsline {section}{\numberline {5.3}Kullback-Leibler Divergence}{37}{section.5.3}
+\contentsline {chapter}{\numberline {6}Linear Regression}{39}{chapter.6}
 \ttl@stoptoc {default@6}
 \ttl@starttoc {default@7}
-\contentsline {section}{\numberline {6.1}Ordinary Linear Regression}{37}{section.6.1}
-\contentsline {section}{\numberline {6.2}$R^2$ Value}{37}{section.6.2}
-\contentsline {section}{\numberline {6.3}Regression Diagnostics}{37}{section.6.3}
-\contentsline {section}{\numberline {6.4}t-Statistics}{37}{section.6.4}
-\contentsline {section}{\numberline {6.5}AIC and BIC}{37}{section.6.5}
-\contentsline {section}{\numberline {6.6}Factor Regression}{37}{section.6.6}
-\contentsline {section}{\numberline {6.7}Factor Models}{37}{section.6.7}
-\contentsline {chapter}{\numberline {7}Unsupervised Learning}{39}{chapter.7}
+\contentsline {section}{\numberline {6.1}Ordinary Linear Regression}{39}{section.6.1}
+\contentsline {section}{\numberline {6.2}$R^2$ Value}{39}{section.6.2}
+\contentsline {section}{\numberline {6.3}Regression Diagnostics}{39}{section.6.3}
+\contentsline {section}{\numberline {6.4}t-Statistics}{39}{section.6.4}
+\contentsline {section}{\numberline {6.5}AIC and BIC}{39}{section.6.5}
+\contentsline {section}{\numberline {6.6}Factor Regression}{39}{section.6.6}
+\contentsline {section}{\numberline {6.7}Factor Models}{39}{section.6.7}
+\contentsline {chapter}{\numberline {7}Unsupervised Learning}{41}{chapter.7}
 \ttl@stoptoc {default@7}
 \ttl@starttoc {default@8}
-\contentsline {section}{\numberline {7.1}Independent Component Analysis}{39}{section.7.1}
-\contentsline {section}{\numberline {7.2}Principal Component Analysis (PCA)}{39}{section.7.2}
-\contentsline {subsection}{\numberline {7.2.1}Relationship between PCA and SVD}{40}{subsection.7.2.1}
-\contentsline {section}{\numberline {7.3}$\mathbf {X}=\mathbf {W}\mathbf {H}$ Non-Negative Matrix Factorization}{40}{section.7.3}
+\contentsline {section}{\numberline {7.1}Independent Component Analysis}{41}{section.7.1}
+\contentsline {section}{\numberline {7.2}Principal Component Analysis (PCA)}{41}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}Relationship between PCA and SVD}{42}{subsection.7.2.1}
+\contentsline {section}{\numberline {7.3}$\mathbf {X}=\mathbf {W}\mathbf {H}$ Non-Negative Matrix Factorization}{42}{section.7.3}
 \ttl@stoptoc {default@8}
 \ttl@starttoc {default@9}
 \contentsfinish 

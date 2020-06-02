@@ -41,4 +41,9 @@ Kronenburg, M.  \harvardyearleft 2011\harvardyearright , `The binomial
   coefficient for negative arguments', {\em arXiv preprint arXiv:1105.3689} .
 \newline\harvardurl{\url{https://arxiv.org/pdf/1105.3689.pdf}}
 
+\harvarditem{Mathworks}{n/a}{mathworkseigs}
+Mathworks  \harvardyearleft n/a\harvardyearright , `Eigenvalue and singular
+  value decompositions'.
+\newline\harvardurl{\url{https://www.mathworks.com/content/dam/mathworks/mathworks-dot-com/moler/eigs.pdf}}
+
 \end{thebibliography}

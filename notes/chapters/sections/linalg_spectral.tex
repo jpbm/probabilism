@@ -47,3 +47,24 @@ Where $\otimes$ is the outer product. Since the eigenvectors are an orthonormal 
 
 Similarly, a hermitian matrix $\mathbf{H} \in \mathbb{C}^{n\times n}$ (the complex equivalent to a symmetric matrix) has real eigenvalues and the matrix of eigenvectors is unitary, so that $\mathbf{H} = \mathbf{U\Lambda U}^T$.
 
+
+\subsection{Eigenvalue Sensitivity and Accuracy}
+
+In general, the values of the eigenvalues of a square matrix $\mathbf{A}$ may vary wildly under a slight cange of $\mathbf{A} \rightarrow \mathbf{A}+\delta\mathbf{A}$. The sensitivity of the eigenvalues to a change in $\mathbf{A}$ can be investigated using matrix norms \cite{mathworkseig}. Let $||\cdot||$ denote a submultiplicative matrix norm, then:
+
+\begin{equation}
+\begin{array}{rl}
+\Lambda + \delta\Lambda &= \mathbf{X^{-1}}\left( \mathbf{A} + \delta\mathbf{A} \right)\mathbf{X} \\
+\delta\Lambda &= \mathbf{X^{-1}} \delta \mathbf{A} \mathbf{X}\\
+||\delta\Lambda || &= ||\mathbf{X^{-1}} \delta \mathbf{A} \mathbf{X} || \leq  ||\mathbf{X^{-1}}|| ||\mathbf{X}|| ||\delta\mathbf{A}||
+\end{array}
+\end{equation}
+
+When $||\cdot||$ is chosen to be the operator norm with respect to $L^2$, $||\cdot||_{(2)}||$, then $||\mathbf{X^{-1}}|| = \sigma_1$ and $||\mathbf{X}|| = \frac{1}{\sigma_n}$ where $\sigma_1$ and $\sigma_2$ are the square roots of the largest and the smallest eigenvalue of $\mathbf{X^{\dagger}}\mathbf{X}$ respectively (cf. section \ref{sec:norms} on matrix norms). In that case, the sensitivity of the eigenvalues to a change in $\mathbf{A}$ is:
+
+\begin{equation}
+||\delta\mathbf{\Lambda}||_{(2)} \leq \frac{\sigma_1}{\sigma_n} ||\delta\mathbf{A}||_{(2)} = \kappa(\mathbf{X})||\delta\mathbf{A}||_{(2)}
+\end{equation}
+
+Where $\kappa(\mathbf{X})$ is the conditioning number of the matrix $\mathbf{X}$. 
+

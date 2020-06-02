@@ -1,7 +1,7 @@
 \section{Properties of Norms}
 
 \section{$L^p$ Lebesgue Vector Norms}
-\label{lpnorms}
+\label{sec:lpnorms}
 
 Let $p\geq1$ be a real number, then the $p$-norm or $L^p$ norm of a vector $\mathbf{x}\in\mathbb{C}^n$ is defined as:
 
@@ -41,6 +41,7 @@ Formally, I only came across values $0<p$, but it is my opinion that $-\infty$ p
 
 
 \section{Operator and Matrix Norms}
+\label{sec:norms}
 
 Matrix norms are functions $||\cdot||: K^{m\times n} \rightarrow \mathbb{R}$ where $K$ is a field of real or complex numbers. They satisfy:
 
@@ -57,20 +58,21 @@ A norm is submultiplicative if it satisfies $||AB||\leq||A||||B||$, which \citea
 The main risk of confusion is that norms for operators and vectors are different animals. Norms for operators normally measure some relationship between input and output. Norms for vectors are normally some kind of size, length or distance metric. In as far as matrices can be thought of as both operators and multidimensional vectors, norms of either type may be applied to them. People's notation and language is all over the place. Below I've used $||\cdot||_{(\alpha)}$ to denote norms in the operator sense and $||\cdot||_{\alpha}$ in the vector sense. 
 
 \subsection{$||\mathbf{A}||_{(\alpha)}$ Operator Norm}
+\label{sec:operatornorm}
 The operator norm describes the largest change in size that it may impart on any of its inputs. That means that the operator norm is defined with respect to a definition of size in both domain and codomain. I.e., for an operator $\mathbf{A}$ and a given way of measuring size $||\cdot||_{\alpha}$:
 
 \begin{equation}
 ||\mathbf{A}||_{(\alpha)} = \sup\left\{\frac{||\mathbf{A}\mathbf{v}||_{\alpha}}{||\mathbf{x}||_{\alpha}}: \mathbf{v} \in V\right\}
 \end{equation}
 
-When the operator is given by a matrix $\mathbf{A}$, and the length of the vector $\mathbf{x}$ is measured using the usual euclidian 2-norm ($||\cdot||_{2}$), then the operator norm is given by the square root of the largest eigenvalue of $\mathbf{A^T A}$. In that case, the operator norm is the same as the 2-norm (cf. section \ref{2norm}).
+When the operator is given by a matrix $\mathbf{A}$, and the length of the vector $\mathbf{x}$ is measured using the usual euclidian 2-norm ($||\cdot||_{2}$), then the operator norm is given by the square root of the largest eigenvalue of $\mathbf{A^T A}$. In that case, the operator norm is the same as the 2-norm (cf. section \ref{sec:2norm}).
 
 Note that $||A||_{(q)}$ and $||A||_q$ are two different things. The former measures the change in input size, where the size of the input is measured according to the latter. That is the reason for why the 1-Norm and 2-Norms are so different from the vector norms $L_1$ and $L_2$.
 
 
 % q-norm
 \subsection{$||\mathbf{A}||_q$ $q$-Norms}
-\label{qnorms}
+\label{sec:qnorms}
 
 The $q$ norms for a matrix $\mathbf{A} \in \mathbb{R}^{m\times n}$ with entries $a_{i,j}$ in row $i$ and column $j$ are defined:
 
@@ -78,7 +80,7 @@ The $q$ norms for a matrix $\mathbf{A} \in \mathbb{R}^{m\times n}$ with entries 
 ||\mathbf{A}||_q = \left(\sum_{i}\sum_{j} a^q_{i,j}\right)^{1/q}
 \end{equation}
 
-For $q=2$, this becomes the Frobenius norm (section \ref{sec:frobenius}). For vectors $\mathbf{v}\in\mathbb{R}^{n}$, the $q$-norm is more known as $p$-norm or $L^p$ norm (cf. section \ref{lpnorms}). 
+For $q=2$, this becomes the Frobenius norm (section \ref{sec:frobenius}). For vectors $\mathbf{v}\in\mathbb{R}^{n}$, the $q$-norm is more known as $p$-norm or $L^p$ norm (cf. section \ref{sec:lpnorms}). 
 
 % frobenius
 \subsection{$||\mathbf{A}||_F$ Frobenius Norm}
@@ -111,7 +113,7 @@ Let $\mathbf{A}$ be a matrix with entires $a_{i,j}$ in row $i$ and column $j$, t
 That is, it is the maximum of the sums of the absolute values of any of the rows of $\mathbf{A}$.
 
 \subsection{$||\mathbf{A}||_{(2)}$ (2)-Norm}
-\label{2norm}
+\label{sec:2norm}
 
 Let $\mathbf{A} \in \mathbb{R}^{m\times n}$ be a matrix with entires $a_{i,j}$ in row $i$ and column $j$, then:
 
