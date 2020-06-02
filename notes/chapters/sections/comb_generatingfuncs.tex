@@ -54,13 +54,15 @@ But actually it is easier to think through what the coefficients will be so that
 d_l = \sum_{\begin{array}{c}i,j,k\\i+j+k=l\end{array}} a_i b_j c_k
 \end{equation}
 
-If the coefficients are all '1', which is the case for these combinations, then:
+If $a_i = b_j = c_k = 1$, then:
 
 \begin{equation}
 d_l = \sum_{\begin{array}{c}i,j,k\\i+j+k=l\end{array}} 1 = {l + 3 - 1 \choose l}
 \end{equation}
 
-Which is the number of all multisets of size $l$ and 3 classes. In this case the coefficients are equal to 1 for i=20, j=25, and k=30, and zero otherwise, so that there are 4 ways of summing to 100. Hence, $d_{100} = 4$ for the basket of goods above.
+Which is the number of all multisets of size $l$ and 3 classes. 
+
+In this case, however, the coefficients are equal to 1 only for $i=a20$, $j=b25$, and $k=c30$ for $a,b,c \in \mathbb{N}_0$, and zero otherwise, so that there are 4 combinations of $a,b,c$ for which $20a+25b+30c=100$. Hence, $d_{100} = 4$ for the basket of goods above.
 
 The sum can also be rewritten:
 
@@ -70,7 +72,6 @@ d_l = \sum^l_{i=0}\sum^{l-i}_{j=0} a_i b_j c_{l-i-j}
 
 
 Of course, this is the discrete version of a convolution. So, it is no surprise that the addition of random variables winds up being a convolution.
-
 
 \subsection{Example: Dice}
 

@@ -112,32 +112,34 @@
 \contentsline {subsection}{\numberline {2.7.1}Affine Transformations}{22}
 \contentsline {subsection}{\numberline {2.7.2}Multilinear Maps}{24}
 \contentsline {subsection}{\numberline {2.7.3}Multilinear Forms}{24}
-\contentsline {section}{\numberline {2.8}Types of Matrices}{24}
-\contentsline {subsection}{\numberline {2.8.1}Triangular}{24}
-\contentsline {subsection}{\numberline {2.8.2}$\mathbf {A}^{\dagger } = \mathbf {A}$ Hermitian, Symmetric}{24}
-\contentsline {subsubsection}{\numberline {2.8.2.1}Properties}{24}
-\contentsline {subsection}{\numberline {2.8.3}$\mathbf {A}^{\dagger } = -\mathbf {A}$ Skew Hermitian, Skew Symmetric}{25}
-\contentsline {subsection}{\numberline {2.8.4}$\mathbf {U}^{\dagger }\mathbf {U} = \mathbf {I}$ Unitary, Orthogonal}{25}
+\contentsline {section}{\numberline {2.8}Types Matrices}{24}
+\contentsline {subsection}{\numberline {2.8.1}$\mathrm {sgn}\left (\mathbf {x}^{\dagger }\mathbf {H}\mathbf {x}\right )$ Definiteness}{24}
+\contentsline {subsection}{\numberline {2.8.2}Triangular}{24}
+\contentsline {subsection}{\numberline {2.8.3}$\mathbf {A}^{\dagger } = \mathbf {A}$ Hermitian, Symmetric}{25}
+\contentsline {subsubsection}{\numberline {2.8.3.1}Properties}{25}
+\contentsline {subsection}{\numberline {2.8.4}$\mathbf {A}^{\dagger } = -\mathbf {A}$ Skew Hermitian, Skew Symmetric}{25}
+\contentsline {subsection}{\numberline {2.8.5}$\mathbf {U}^{\dagger }\mathbf {U} = \mathbf {I}$ Unitary, Orthogonal}{25}
 \contentsline {section}{\numberline {2.9}Properties of Norms}{25}
 \contentsline {section}{\numberline {2.10}$L^p$ Lebesgue Vector Norms}{25}
-\contentsline {subsection}{\numberline {2.10.1}$L^{1}$ Taxicab / Manhattan Norm}{25}
-\contentsline {subsection}{\numberline {2.10.2}$L^{2}$ Euclidian Norm}{25}
-\contentsline {subsection}{\numberline {2.10.3}$L^{\infty }$ Maximum Norm}{25}
-\contentsline {subsection}{\numberline {2.10.4}$L^{-\infty }$ Minimum Norm}{25}
+\contentsline {subsection}{\numberline {2.10.1}$L^{1}$ Taxicab / Manhattan Norm}{26}
+\contentsline {subsection}{\numberline {2.10.2}$L^{2}$ Euclidian Norm}{26}
+\contentsline {subsection}{\numberline {2.10.3}$L^{\infty }$ Maximum Norm}{26}
+\contentsline {subsection}{\numberline {2.10.4}$L^{-\infty }$ Minimum Norm}{26}
 \contentsline {section}{\numberline {2.11}Operator and Matrix Norms}{26}
 \contentsline {subparagraph}{}{26}
 \contentsline {subsection}{\numberline {2.11.1}$||\mathbf {A}||_{(\alpha )}$ Operator Norm}{26}
-\contentsline {subsection}{\numberline {2.11.2}$||\mathbf {A}||_q$ $q$-Norms}{26}
-\contentsline {subsection}{\numberline {2.11.3}$||\mathbf {A}||_F$ Frobenius Norm}{26}
+\contentsline {subsection}{\numberline {2.11.2}$||\mathbf {A}||_q$ $q$-Norms}{27}
+\contentsline {subsection}{\numberline {2.11.3}$||\mathbf {A}||_F$ Frobenius Norm}{27}
 \contentsline {subsection}{\numberline {2.11.4}$||\mathbf {A}||_{(1)}$ (1)-Norm}{27}
 \contentsline {subsection}{\numberline {2.11.5}$||\mathbf {A}||_{(\infty )}$ ($\infty $)-Norm}{27}
 \contentsline {subsection}{\numberline {2.11.6}$||\mathbf {A}||_{(2)}$ (2)-Norm}{27}
 \contentsline {section}{\numberline {2.12}Vector and Matrix Derivatives}{27}
-\contentsline {subsection}{\numberline {2.12.1}Jacobian}{27}
+\contentsline {subsection}{\numberline {2.12.1}Jacobian}{28}
 \contentsline {subsection}{\numberline {2.12.2}Inverse Function Theorem}{28}
 \contentsline {subsection}{\numberline {2.12.3}Critical Points}{28}
-\contentsline {subsection}{\numberline {2.12.4}Differential Volume Element, Change of Variables}{28}
+\contentsline {subsection}{\numberline {2.12.4}Differential Volume Element, Change of Variables}{29}
 \contentsline {subsection}{\numberline {2.12.5}Hessian}{29}
+\contentsline {subsubsection}{\numberline {2.12.5.1}Testing Convexity}{29}
 \contentsline {chapter}{\numberline {3}Linear Regression}{31}
 \ttl@stoptoc {default@3}
 \ttl@starttoc {default@4}
@@ -146,6 +148,14 @@
 \contentsline {section}{\numberline {3.3}Regression Diagnostics}{31}
 \contentsline {section}{\numberline {3.4}t-Statistics}{31}
 \contentsline {section}{\numberline {3.5}AIC and BIC}{31}
+\contentsline {section}{\numberline {3.6}Factor Regression}{31}
+\contentsline {section}{\numberline {3.7}Factor Models}{31}
+\contentsline {chapter}{\numberline {4}Unsupervised Learning}{33}
 \ttl@stoptoc {default@4}
 \ttl@starttoc {default@5}
+\contentsline {section}{\numberline {4.1}Principal Component Analysis (PCA)}{33}
+\contentsline {subsection}{\numberline {4.1.1}Relationship between PCA and SVD}{33}
+\contentsline {section}{\numberline {4.2}Independent Component Analysis}{34}
+\ttl@stoptoc {default@5}
+\ttl@starttoc {default@6}
 \contentsfinish 

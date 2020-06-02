@@ -1,5 +1,10 @@
 \begin{thebibliography}{xx}
 
+\harvarditem{amoeba}{2015}{amoeba2015svdpca}
+amoeba  \harvardyearleft 2015\harvardyearright , `Relationship between svd and
+  pca.'.
+\newline\harvardurl{\url{https://stats.stackexchange.com/questions/134282/relationship-between-svd-and-pca-how-to-use-svd-to-perform-pca}}
+
 \harvarditem{Barnes}{n/a}{barnesmatrixdiff}
 Barnes, R.~J.  \harvardyearleft n/a\harvardyearright , `Matrix differentiation
   (and some other stuff)'.

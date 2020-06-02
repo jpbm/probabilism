@@ -1,0 +1,54 @@
+\chapter{Unsupervised Learning}
+
+\section{Principal Component Analysis (PCA)}
+
+Principal Component Analysis (PCA) is one of the most ubiquitous unsupervised learning techniques, and there are a number of ways of thinking about it. 
+
+ADD HASTIE 
+\begin{itemize}
+\item The principal components are the eigenvectors of the covariance matrix. When the data is expressed in a principal component basis, the covariance matrix is diagonal. The eigenvalues of the covariance matrix give the explained variance of the associated principal component. 
+\item The principal components are linearly uncorrelated directions in the data.
+\item If a multivariate Gaussian is fit to the data, then that assumes that the data is distributed as an ellipsoidal blob in feature space. The principal components are the principal axes of that ellipsoidal blob.
+\item PCA generates a lower-dimensional basis that maximizes the explained variance and minimizes the least-squares error.
+\item ...
+\end{itemize}
+
+Let the data matrix $\mathbf{X}$ be of size $n\times p$, where $n$ is the number of samples and $p$ is the number of features. 
+
+The $p\times p$ covariance matrix $\mathbf{C}$ is:
+
+\begin{equation}
+\mathbf{C} = \frac{\left(\mathbf{X}-\left<\mathbf{X}\right>\right)^T\left(\mathbf{X}-\left< \mathbf{X}\right>\right)}{n-1}
+\end{equation}
+
+The covariance matrix is a symmetric matrix that can be diagonalized with orthonormal eigenvectors $\mathbf{V}$:
+
+\begin{equation}
+\mathbf{C} = \mathbf{V}\mathbf{\Lambda}\mathbf{V}^T
+\end{equation}
+
+Where the eigenvectors in $V$ are ordered so that the eigenvectors along the diagonal of $\mathbf{\Lambda}$ have decreasing magnitude. The eigenvectors are the principal axes or principal directions of the data. The projection of data on these axes are the principal components.
+
+\subsection{Relationship between PCA and SVD}
+This is based on a great Stack Exchange answer (\cite{amoeba2015svdpca}).
+
+Let the singular value decomposition of the centered data matrix be:
+
+\begin{equation}
+\left(\mathbf{X}-\left<\mathbf{X}\right>\right) = \mathbf{U}\mathbf{S}\mathbf{V}^T
+\end{equation}
+
+Then:
+
+\begin{equation}
+\mathbf{C} = \frac{\mathbf{VSU}^T\mathbf{USV}^T}{n-1} = \mathbf{V}\frac{S^2}{n-1}\mathbf{V}^T
+\end{equation}
+
+That means that:
+
+\begin{itemize}
+\item The principal axes are the right-singular vectors $\mathbf{V}$ that are obtained during SVD.
+\item The singular values and the eigenvalues of the covariance matrix are related via $\lambda_i = \frac{s_i^2}{n-1}$.
+\end{itemize}
+
+\section{Independent Component Analysis}

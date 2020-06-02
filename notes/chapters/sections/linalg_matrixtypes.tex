@@ -1,4 +1,19 @@
-\section{Types of Matrices}
+\section{Types Matrices}
+
+\subsection{$\mathrm{sgn}\left(\mathbf{x}^{\dagger}\mathbf{H}\mathbf{x}\right)$ Definiteness}
+\label{sec:definiteness}
+
+A hermitian matrix $\mathbf{H}\in\mathbb{C}^n$ is positive definite, if for any non-zero column vector $\mathbf{x}\in\mathbb{C}^n$, the quadratic form $\mathbf{x}^{\dagger}\mathbf{H}\mathbf{x} > 0$, and negative definite if $\mathbf{x}^{\dagger}\mathbf{H}\mathbf{x} < 0$. The matrix is positive or negative \textit{semidefinite} if  $\mathbf{x}^{\dagger}\mathbf{H}\mathbf{x} \geq 0$ or $\mathbf{x}^{\dagger}\mathbf{H}\mathbf{x} \leq 0$, respectively. Definiteness plays a role in investigating the convexity of a function by looking at the Hessian (section \ref{sec:hessian}). Sometimes the following notation is used:
+
+\begin{tabular}{ll}
+$\mathbf{H} \succ 0$ & positive definite\\
+$\mathbf{H} \prec 0$ & negative definite\\
+$\mathbf{H} \succeq 0$ & positive semidefinite\\
+$\mathbf{H} \preceq 0$ & negative semidefinite
+\centering
+\end{tabular}
+
+The curly comparison symbols can mean other stuff though, for example in the context of partially ordered sets (order theory) or comparisons between multidimensional arrays.
 
 \subsection{Triangular}
 A lower triangular matrix is a matrix that has all-zero entries above the diagonal.
@@ -22,7 +37,7 @@ Hermitian matrices are matrices that are equal to their complex transpose. That 
 There are many properties of Hermitian matrices. 
 \begin{itemize}
 \item By definition: $\mathbf{A} = \mathbf{A}^\dagger$
-\item Diagonal Entries are all real, since $a_{i,i} = a_{i,i}^*$
+\item Diagonal Entries are all real, since $a_{i,i} = a_{i,i}^*$, but not necessarily positive (physics will mislead you there...)
 \item Inverse is also hermitian:  $\mathbf{A}^{-1} ={ \mathbf{A}^{-1}}^\dagger$
 \item Diagonalizable with real eigenvalues and orthogonal eigenvectors $\in \mathbb{C}^n$.
 \end{itemize}

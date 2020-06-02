@@ -78,6 +78,7 @@ Alternatively, if $\mathbf{y} = \mathbf{H}^{-1}(\mathbf{x})$:
 The Jacobian has to be nonsingular within the domain of integration. This implies that $\mathbf{x}$ and $\mathbf{y}$ have to have the same dimension. In the context of probability theory that sometimes requires artificially defining additional variables so that $\mathbf{H}$ is bijective because the quantity of interest has lower dimension (for example, if you calculate the mean of a random variable). 
 
 \subsection{Hessian}
+\label{sec:hessian}
 
 The Hessian is the second derivative of a scalar valued function $f:\mathbb{R}^{n} \rightarrow \mathbb{R}$ with respect to a vector, i.e. $\nabla\cdot\nabla f$. The elements are $\mathbf{H}(f)_{i,j} = \frac{\partial^2 f}{\partial x_i\partial x_j}$. 
 
@@ -91,3 +92,16 @@ The Hessian is the second derivative of a scalar valued function $f:\mathbb{R}^{
 \end{equation}
 
 The Hessian of a vector valued function $f:\mathbb{R}^n \rightarrow \mathbb{R}^m$ is a third order tensor with elements  $\mathbf{H}(\mathbf{f})_{i,j,k} = \frac{\partial^2 f_k}{\partial x_i\partial x_j}$.
+
+\subsubsection{Testing Convexity}
+The definiteness (cf. section \ref{sec:definiteness}) of the Hessian is used to test convexity.
+
+\begin{tabular}{ll}
+$\mathbf{H}\succeq 0$ & convex\\
+$\mathbf{H}\succ 0$ & strictly convex\\
+$\mathbf{H}\preceq 0$ & concave\\
+$\mathbf{H}\prec 0$ & strictly concave\\
+\end{tabular}
+
+If this holds at a point, the property is local (for example at a local maximum or minimum), and if it holds everywhere on the domain, then the property is global.
+
