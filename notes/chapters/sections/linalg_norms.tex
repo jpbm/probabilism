@@ -6,14 +6,22 @@
 Let $p\geq1$ be a real number, then the $p$-norm or $L^p$ norm of a vector $\mathbf{x}\in\mathbb{C}^n$ is defined as:
 
 \begin{equation}
-\mathbf{x} = \left[ \sum^n_i |x_i|^p \right]^{1/p}
+||\mathbf{x}||^p = \left[ \sum^n_i |x_i|^p \right]^{1/p}
 \end{equation}
 
 The expression can still be useful for $0<p<1$, but in that case the result is not a proper norm, because it is not subadditive (does not satisfy $f(x+y) \leq f(x) + f(y)$). $p$-norms are closely related to expressions for the generalized mean.
 
+
 \subsection{$L^{1}$ Taxicab / Manhattan Norm}
+\begin{equation}
+||\mathbf{x}||^1 = \sum_i |x_i|
+\end{equation}
+
 
 \subsection{$L^{2}$ Euclidian Norm}
+\begin{equation}
+||\mathbf{x}||^2 = \sum_i |x_i|^2
+\end{equation}
 
 \subsection{$L^{\infty}$ Maximum Norm} 
 
@@ -28,6 +36,7 @@ Formally, I only came across values $0<p$, but it is my opinion that $-\infty$ p
 \begin{equation}
 ||\mathbf{x}||^{-\infty} = \min(x_1,x_2,...,x_n)
 \end{equation}
+
 
 
 
@@ -69,11 +78,11 @@ The $q$ norms for a matrix $\mathbf{A} \in \mathbb{R}^{m\times n}$ with entries 
 ||\mathbf{A}||_q = \left(\sum_{i}\sum_{j} a^q_{i,j}\right)^{1/q}
 \end{equation}
 
-For $q=2$, this becomes the Frobenius norm (section \ref{frobenius}). For vectors $\mathbf{v}\in\mathbb{R}^{n}$, the $q$-norm is more known as $p$-norm or $L^p$ norm (cf. section \ref{lpnorms}). 
+For $q=2$, this becomes the Frobenius norm (section \ref{sec:frobenius}). For vectors $\mathbf{v}\in\mathbb{R}^{n}$, the $q$-norm is more known as $p$-norm or $L^p$ norm (cf. section \ref{lpnorms}). 
 
 % frobenius
 \subsection{$||\mathbf{A}||_F$ Frobenius Norm}
-\label{frobenius}
+\label{sec:frobenius}
 The Frobenius Norm is the sum of the squares of all entries of a matrix. Let $\mathbf{A} \in \mathbb{R}^{m\times n}$ be a matrix with entires $a_{i,j}$ in row $i$ and column $j$, then:
 
 \begin{equation}

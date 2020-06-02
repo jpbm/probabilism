@@ -1,0 +1,54 @@
+\section{Principal Component Analysis (PCA)}
+
+Principal Component Analysis (PCA) is a decomposition of data into linearly uncorrelated components. It turns out that these axes are the right-singular eigenvectors $\mathbf{V}$ that are found from SVD. SVD and PCA have close correspondence (cf. section \ref{sec:pcasvd}).
+\\
+
+More elaborately, for a data matrix $\mathbf{X}\in\mathbb{R}^{N\times p}$, PCA extracts the ordered, rank-$p$, orthonormal basis in which the $p\times p$ covariance matrix of $\mathbf{X}$ is diagonal. The basis vectors are called the principal axes or principal directions of the data, and their ordering is by the magnitude of the variance that they explain. 
+\\
+
+The property that the covariance matrix is diagonal in the principal component basis means that projecting the data onto any of the basis vectors extracts a linearly uncorrelated component of the data that has variance corresponding to the corresponding eigenvalue of the covariance matrix.
+\\
+
+Just like with SVD, the ordering of the principal component basis in terms of their explained variance allows for lower-rank approximations of the data matrix to be constructed (section \ref{sec:svd}). Just like SVD, the lower rank approximations $\mathbf{X}$ are the best possible approximations with respect to the Frobenius Norm (cf. section \ref{sec:frobenius}). 
+\\
+
+The $p\times p$ covariance matrix  $\mathbf{C}$ of $\mathbf{X}$ is:
+
+\begin{equation}
+\mathbf{C} = \frac{\left(\mathbf{X}-\left<\mathbf{X}\right>\right)^T\left(\mathbf{X}-\left< \mathbf{X}\right>\right)}{n-1}
+\end{equation}
+
+Where $\left(\mathbf{X}-\left<\mathbf{X}\right>\right)^T$ is often referred to as the \textit{centered} data matrix. The covariance matrix is a symmetric, positive-definite matrix that can be diagonalized with orthonormal eigenvectors $\mathbf{V}$ and positive (or vanishing) eigenvalues $\lambda_i$:
+
+\begin{equation}
+\mathbf{C} = \mathbf{V}\mathbf{\Lambda}\mathbf{V}^T
+\end{equation}
+
+Where the eigenvectors in $V$ are ordered so that the eigenvectors along the diagonal of $\mathbf{\Lambda}$ have decreasing magnitude. The eigenvectors are the principal axes or principal directions of the data.
+
+
+
+
+\subsection{Relationship between PCA and SVD}
+\label{sec:pcasvd}
+This is based on a great Stack Exchange answer \cite{amoeba2015svdpca}.
+
+Let the singular value decomposition of the centered data matrix be:
+
+\begin{equation}
+\left(\mathbf{X}-\left<\mathbf{X}\right>\right) = \mathbf{U}\mathbf{\Sigma}\mathbf{V}^T
+\end{equation}
+
+Then:
+
+\begin{equation}
+\mathbf{C} = \frac{\mathbf{V\Sigma U}^T\mathbf{U\Sigma V}^T}{n-1} = \mathbf{V}\frac{\Sigma^2}{n-1}\mathbf{V}^T
+\end{equation}
+
+That means that:
+
+\begin{itemize}
+\item The principal axes are the right-singular vectors $\mathbf{V}$ that are obtained during SVD.
+\item The singular values and the eigenvalues of the covariance matrix are related via $\lambda_i = \frac{\sigma_i^2}{n-1}$.
+\end{itemize}
+

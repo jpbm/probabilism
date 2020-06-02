@@ -4,24 +4,31 @@
 \usepackage[utf8]{inputenc}
 
 \usepackage{geometry}
+
 \usepackage{amsmath}
 \usepackage{amssymb}
 
-\usepackage{cite}
 \usepackage{graphicx}
 \graphicspath{ {../img/} }
 
-%\usepackage{hyperref}
- \usepackage{url}
- \usepackage{harvard}
- 
+
+\usepackage{xcolor}
+
+
+
+\usepackage{url}
+
+
+%\usepackage{cite}
+\usepackage[abbr]{harvard}
+
 
 %\hypersetup{
 %    colorlinks=false,
 %    linkcolor=blue,
 %    filecolor=magenta,      
 %    urlcolor=cyan,
-%}
+%}t
 
 %\urlstyle{same}
 
@@ -37,6 +44,7 @@
 \usepackage[osf,proportional,space]{erewhon}
 \usepackage[rigidchapters,pagestyles]{titlesec}
 \usepackage{titletoc,lipsum,multicol}
+
 	
 \makeatletter
 \newcommand\chap@author{}
@@ -70,6 +78,7 @@
     \startcontents
   ]
 
+
 \titleformat{\section}[hang]
   {\Large\bfseries\filright}
   {\thesection}
@@ -77,7 +86,7 @@
   {}
 
 %\titlespacing*{\chapter}{0pt}{0pt}{3cm}
-%\titlespacing*{\section}{0pt}{.75pc}{.5pc}
+%\titlespacing*{\section}{0pt}{.75pc}{.5pc}s
 
 \titlespacing*{\chapter}{0pt}{0pt}{3cm} % title positions
 \titlespacing*{\section}{0pt}{.75pc}{.5pc}
@@ -112,6 +121,44 @@
 \raggedbottom	
 
 
+% Hyperref. Hyperref needs to be important last.
+%\usepackage{hyperref}
+%\hypersetup{
+%    colorlinks = true,
+%    linkcolor=blue,
+%    linkbordercolor = {blue},
+%    citecolor={blue}
+%}
+
+\usepackage[
+pdfauthor={balthasar},
+pdftitle={How to do this},
+pdfstartview=XYZ,
+bookmarks=true,
+colorlinks=true,
+linkcolor=blue,
+urlcolor=blue,
+citecolor=blue,
+pdftex,
+bookmarks=true,
+linktocpage=true, % makes the page number as hyperlink in table of content
+hyperindex=true
+]{hyperref}
+\usepackage{hyperref}
+%\usepackage{harvard}
+\urlstyle{rm}
+\usepackage[all]{hypcap}
+\hypersetup{
+backref=true
+bookmarksnumbered,
+pdfstartview={FitH},
+citecolor={blue},
+linkcolor={blue},
+urlcolor={blue},
+pdfpagemode={UseOutlines}
+}
+
+
 \begin{document}
 Far from complete and far from correct. These notes exist because I learn better when I express things in my own words. In some cases I might be assembling material for teaching purposes. Might delete later.\\
 \\
@@ -119,9 +166,12 @@ Far from complete and far from correct. These notes exist because I learn better
 
 \tableofcontents
 \input{./chapters/combinatorics.tex}
+\input{./chapters/probability.tex}
+\input{./chapters/stochasticprocesses.tex}
 \input{./chapters/linearalgebra.tex}
+\input{./chapters/informationtheory.tex}
 \input{./chapters/linearregression.tex}
-\input{./chapters/unsupervised.tex}
+\input{./chapters/unsupervised}
 
 
 \Urlmuskip=0mu plus 2mu\relax

@@ -1,9 +1,20 @@
-\section{Spectral Theorems, Diagonalization}
+\section{$\mathbf{A} = \mathbf{V\Lambda V^{-1}}$ Spectral Theorems, Diagonalization}
+\label{sec:diagonalization}
 
-Spectral theorems deal with diagonalizable linear operators. A hermitian matrix $\mathbf{A} \in \mathbb{C}^{n\times n}$ can be expressed as:
+Spectral theorems deal with diagonalizable linear operators. 
+\\
+
+A diagonalization of a matrix matrix $\mathbf{A}$ is always possible when a matrix is square, and refers to a decomposition of the matrix into the matrix of eigenvectors $\mathbf{V}$ and eigenvalues $\mathbf{\Lambda}$ as 
 
 \begin{equation}
-\mathbf{A} = \left[\begin{array}{cccc}
+\mathbf{A} = \mathbf{V\Lambda V^{-1}} 
+\end{equation}
+
+\subsection{$\mathbf{A} = \mathbf{V\Lambda V}^T$ Eigendecomposition of Symmetric Matrices}
+A symmetric matrix $\mathbf{A}$ has orthogonal eigenvectors so that $\mathbf{V}^{-1} = \mathbf{V}^T$ and real eigenvalues. In that case, the diagonalization is:
+
+\begin{equation}
+\mathbf{A} = \mathbf{V\Lambda V}^T = \left[\begin{array}{cccc}
 \vrule&\vrule&\hdots&\vrule\\
 v_1&v_2&\ddots&v_n\\
 \vrule&\vrule&\hdots&\vrule
@@ -23,10 +34,16 @@ v_1&v_2&\ddots&v_n\\
 \right]
 \end{equation}
 
-Where $v_i$ are the eigenvectors and $\lambda_i$ are the eigenvalues of $\mathbf{A}$. Since $\mathbf{A}$ is Hermitian, the eigenvalues are real and positive and the eigenvectors are orthonormal. The diagonalization enables the expression of $\mathbf{A}$ in terms of projections on the eigenvectors:
+This means that  enables the expression of $\mathbf{A}$ in terms of projections on the eigenvectors:
 
 \begin{equation}
 \mathbf{A} = \sum_i \lambda_i (v_i \otimes v_i)
 \end{equation}
 
 Where $\otimes$ is the outer product. Since the eigenvectors are an orthonormal basis, $\sum_i v_i \otimes v_i = \mathbb{I}$.
+
+
+\subsection{$\mathbf{H} = \mathbf{U\Lambda U}^T$ Eigendecomposition of Hermitian Matrices}
+
+Similarly, a hermitian matrix $\mathbf{H} \in \mathbb{C}^{n\times n}$ (the complex equivalent to a symmetric matrix) has real eigenvalues and the matrix of eigenvectors is unitary, so that $\mathbf{H} = \mathbf{U\Lambda U}^T$.
+

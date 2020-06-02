@@ -10,7 +10,7 @@
 \section{Multi-Index Notation}
 Multi-index notation makes high-dimensional things faster and easier. A collection is indices is represented by a tuple $\alpha = \left(\alpha_1,\alpha_2,\alpha_3,... \right)$. The absolute value $|\alpha| = \sum_i \alpha$, partial derivatives $\partial^\alpha = \prod \partial^{\alpha_i}$, powers $\mathbf{x}^\alpha = \prod_i x_i^{\alpha_i}$.
 
-\subsubsection{Multinomial Coefficients}
+\subsubsection{Multinomial Coefficients}	
 
 Instead of:
 \begin{equation}
@@ -19,7 +19,7 @@ Instead of:
 
 Write:
 
-\begin{equation}
+\begin{equation}	
 \sum_{0\leq |\alpha|\leq n}{n \choose \alpha}
 \end{equation}
 
@@ -32,13 +32,11 @@ f(\mathbf{x}) = \sum_{|\alpha|\geq0} \frac{(\mathbf{x} - \mathbf{a})^\alpha}{\al
 \end{equation}
 
 
-\section{Singular Value Decomposition}
 
-
-
+w
 
 % Cholesky Decomposition
-\section{Cholesky Decomposition}
+\section{$\mathbf{A} = \mathbf{L}\mathbf{L}^{\dagger}$ Cholesky Decomposition}
 \label{sec:cholesky}
 
 The Cholesky Decomposition exists when a matrix is hermitian and positive-definite. It expresses the matrix $\mathbf{A}$ as:
@@ -59,18 +57,17 @@ Let $\mathbf{u}_t$ be a vector of uncorrelated samples with sandard deviation 1.
 \caption{Creating correlated random variables from uncorrelated random variables using the Cholesky decomposition of the covariance matrix. The 5 uncorrelated random variables are sampled from a standard normal distribution. It is difficult to see a difference between the correlated and uncorrelated random walks.}
 \end{figure}
 
-\section{Non-Negative Matrix Factorization}
-Non-Negative Matrix Factorization works for positive matrices and is interesting as a method for dimensionality reduction. It works by expressing a matrix $\mathbf{X}\in\mathbb{R}^{p\times n}_+$ in terms of two smaller positive matrices $\mathbf{W}\in\mathbb{R}_+^{p\times r}$ and $\mathbf{H}\in \mathbb{R}^{r\times n}_+$. An excellent introduction is in \possessivecite{morningpaper2019nnmf} blog post and in \citeasnoun{gillis2014and}. 
 
 
 \section{Generalized Eigenvectors}
 
-
 \input{./chapters/sections/linalg_spectral.tex}
+\input{./chapters/sections/linalg_svd.tex}
 \input{./chapters/sections/linalg_transformations.tex}
 \input{./chapters/sections/linalg_matrixtypes.tex}
 \input{./chapters/sections/linalg_norms.tex}
 \input{./chapters/sections/linalg_diff.tex}
+
 
 
 \chapauthor{}

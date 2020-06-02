@@ -20,6 +20,12 @@ Colyer, A.  \harvardyearleft 2019\harvardyearright , `The why and how of
   nonnegative matrix factorization'.
 \newline\harvardurl{\url{https://blog.acolyer.org/2019/02/18/the-why-and-how-of-nonnegative-matrix-factorization/}}
 
+\harvarditem[Friedman et~al.]{Friedman, Hastie \harvardand\
+  Tibshirani}{2001}{friedman2001elements}
+Friedman, J., Hastie, T. \harvardand\ Tibshirani, R.  \harvardyearleft
+  2001\harvardyearright , {\em The elements of statistical learning}, Vol.~1,
+  Springer series in statistics New York.
+
 \harvarditem{Gera}{2009}{rgeraNotes}
 Gera, R.  \harvardyearleft 2009\harvardyearright , `Numerical linear algebra
   lecture notes, chapter 7'.
