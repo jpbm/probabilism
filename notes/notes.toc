@@ -98,9 +98,10 @@
 \contentsline {section}{\numberline {2.2}Change of Variable}{23}{section.2.2}
 \contentsline {section}{\numberline {2.3}Copulas}{23}{section.2.3}
 \contentsline {section}{\numberline {2.4}Relationship Between Distributions}{23}{section.2.4}
-\contentsline {chapter}{\numberline {3}Stochastic Processes}{25}{chapter.3}
+\contentsline {chapter}{\numberline {3}Stochastic Processes and Time Series Analysis}{25}{chapter.3}
 \contentsline {section}{\numberline {3.1}Markov Chains}{25}{section.3.1}
 \contentsline {section}{\numberline {3.2}Martingales}{25}{section.3.2}
+\contentsline {section}{\numberline {3.3}Hidden Markov Models}{25}{section.3.3}
 \contentsline {chapter}{\numberline {4}Linear Algebra and Multivariable Calculus}{27}{chapter.4}
 \contentsline {section}{\numberline {4.1}Multi-Index Notation}{27}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Example: Multinomial Coefficients}{27}{subsection.4.1.1}
@@ -126,52 +127,54 @@
 \contentsline {section}{\numberline {4.7}Types of Matrices}{33}{section.4.7}
 \contentsline {subsection}{\numberline {4.7.1}$\mathrm {sgn}\left (\mathbf {x}^{\dagger }\mathbf {H}\mathbf {x}\right )$ Definiteness}{33}{subsection.4.7.1}
 \contentsline {subsection}{\numberline {4.7.2}Triangular}{33}{subsection.4.7.2}
-\contentsline {subsection}{\numberline {4.7.3}$\mathbf {AB}=\mathbf {BA}$ Commuting}{33}{subsection.4.7.3}
-\contentsline {subsection}{\numberline {4.7.4}$\mathbf {A}^{\dagger } = \mathbf {A}$ Hermitian, Symmetric}{33}{subsection.4.7.4}
-\contentsline {subsubsection}{\numberline {4.7.4.1}Properties}{33}{subsubsection.4.7.4.1}
-\contentsline {subsection}{\numberline {4.7.5}$\mathbf {A}^{\dagger } = -\mathbf {A}$ Skew Hermitian, Skew Symmetric}{34}{subsection.4.7.5}
-\contentsline {subsection}{\numberline {4.7.6}$\mathbf {U}^{\dagger } = \mathbf {U}^{-1}$ Unitary, Orthogonal}{34}{subsection.4.7.6}
-\contentsline {subsection}{\numberline {4.7.7}$\mathbf {A} = \mathbf {TBT^{-1}}$ Similarity}{34}{subsection.4.7.7}
-\contentsline {section}{\numberline {4.8}Properties of Norms}{34}{section.4.8}
-\contentsline {section}{\numberline {4.9}$L^p$ Lebesgue Vector Norms}{34}{section.4.9}
+\contentsline {subsection}{\numberline {4.7.3}$\mathbf {AB}-\mathbf {BA}=0$ Commuting}{33}{subsection.4.7.3}
+\contentsline {subsection}{\numberline {4.7.4}$\mathbf {AB}+\mathbf {BA}=0$ Anticommuting}{33}{subsection.4.7.4}
+\contentsline {subsection}{\numberline {4.7.5}$\mathbf {A}^{\dagger } = \mathbf {A}$ Hermitian, Symmetric}{33}{subsection.4.7.5}
+\contentsline {subsubsection}{\numberline {4.7.5.1}Properties}{34}{subsubsection.4.7.5.1}
+\contentsline {subsection}{\numberline {4.7.6}$\mathbf {A}^{\dagger } = -\mathbf {A}$ Skew Hermitian, Skew Symmetric}{34}{subsection.4.7.6}
+\contentsline {subsection}{\numberline {4.7.7}$\mathbf {U}^{\dagger } = \mathbf {U}^{-1}$ Unitary, Orthogonal}{34}{subsection.4.7.7}
+\contentsline {subsection}{\numberline {4.7.8}$\mathbf {A} = \mathbf {TBT^{-1}}$ Similarity}{34}{subsection.4.7.8}
+\contentsline {subsection}{\numberline {4.7.9}$\mathbf {A}\mathbf {A}=\mathbf {I}$ Involutory}{34}{subsection.4.7.9}
+\contentsline {section}{\numberline {4.8}Properties of Norms}{35}{section.4.8}
+\contentsline {section}{\numberline {4.9}$L^p$ Lebesgue Vector Norms}{35}{section.4.9}
 \contentsline {subsection}{\numberline {4.9.1}$L^{1}$ Taxicab / Manhattan Norm}{35}{subsection.4.9.1}
 \contentsline {subsection}{\numberline {4.9.2}$L^{2}$ Euclidian Norm}{35}{subsection.4.9.2}
 \contentsline {subsection}{\numberline {4.9.3}$L^{\infty }$ Maximum Norm}{35}{subsection.4.9.3}
 \contentsline {subsection}{\numberline {4.9.4}$L^{-\infty }$ Minimum Norm}{35}{subsection.4.9.4}
 \contentsline {section}{\numberline {4.10}Operator and Matrix Norms}{35}{section.4.10}
 \contentsline {subparagraph}{}{35}{subparagraph*.53}
-\contentsline {subsection}{\numberline {4.10.1}$||\mathbf {A}||_{(\alpha )}$ Operator Norm}{35}{subsection.4.10.1}
+\contentsline {subsection}{\numberline {4.10.1}$||\mathbf {A}||_{(\alpha )}$ Operator Norm}{36}{subsection.4.10.1}
 \contentsline {subsection}{\numberline {4.10.2}$||\mathbf {A}||_q$ $q$-Norms}{36}{subsection.4.10.2}
 \contentsline {subsection}{\numberline {4.10.3}$||\mathbf {A}||_F$ Frobenius Norm}{36}{subsection.4.10.3}
 \contentsline {subsection}{\numberline {4.10.4}$||\mathbf {A}||_{(1)}$ (1)-Norm}{36}{subsection.4.10.4}
 \contentsline {subsection}{\numberline {4.10.5}$||\mathbf {A}||_{(\infty )}$ ($\infty $)-Norm}{36}{subsection.4.10.5}
-\contentsline {subsection}{\numberline {4.10.6}$||\mathbf {A}||_{(2)}$ (2)-Norm}{36}{subsection.4.10.6}
+\contentsline {subsection}{\numberline {4.10.6}$||\mathbf {A}||_{(2)}$ (2)-Norm}{37}{subsection.4.10.6}
 \contentsline {section}{\numberline {4.11}Vector and Matrix Derivatives}{37}{section.4.11}
 \contentsline {subsection}{\numberline {4.11.1}Jacobian}{37}{subsection.4.11.1}
 \contentsline {subsection}{\numberline {4.11.2}Inverse Function Theorem}{37}{subsection.4.11.2}
 \contentsline {subsection}{\numberline {4.11.3}Critical Points}{38}{subsection.4.11.3}
 \contentsline {subsection}{\numberline {4.11.4}Differential Volume Element, Change of Variables}{38}{subsection.4.11.4}
 \contentsline {subsection}{\numberline {4.11.5}Hessian}{38}{subsection.4.11.5}
-\contentsline {subsubsection}{\numberline {4.11.5.1}Testing Convexity}{38}{subsubsection.4.11.5.1}
-\contentsline {chapter}{\numberline {5}Information Theory}{39}{chapter.5}
-\contentsline {section}{\numberline {5.1}Entropy}{39}{section.5.1}
-\contentsline {section}{\numberline {5.2}Mutual Information}{39}{section.5.2}
-\contentsline {section}{\numberline {5.3}Kullback-Leibler Divergence}{39}{section.5.3}
-\contentsline {chapter}{\numberline {6}Linear Regression}{41}{chapter.6}
-\contentsline {section}{\numberline {6.1}Ordinary Linear Regression}{41}{section.6.1}
-\contentsline {section}{\numberline {6.2}$R^2$ Value}{41}{section.6.2}
-\contentsline {section}{\numberline {6.3}Regression Diagnostics}{41}{section.6.3}
-\contentsline {section}{\numberline {6.4}t-Statistics}{41}{section.6.4}
-\contentsline {section}{\numberline {6.5}AIC and BIC}{41}{section.6.5}
-\contentsline {section}{\numberline {6.6}Factor Regression}{41}{section.6.6}
-\contentsline {section}{\numberline {6.7}Factor Models}{41}{section.6.7}
-\contentsline {chapter}{\numberline {7}Unsupervised Learning}{43}{chapter.7}
-\contentsline {section}{\numberline {7.1}Independent Component Analysis}{43}{section.7.1}
-\contentsline {section}{\numberline {7.2}Eigenanalysis, Singular Value Decomposition of Data Matrices}{43}{section.7.2}
-\contentsline {subsection}{\numberline {7.2.1}Example: Eigenfaces and Facial Recognition}{44}{subsection.7.2.1}
-\contentsline {subsection}{\numberline {7.2.2}Consistently Oriented Eigenbasis}{44}{subsection.7.2.2}
-\contentsline {section}{\numberline {7.3}Principal Component Analysis (PCA)}{45}{section.7.3}
-\contentsline {subsection}{\numberline {7.3.1}Relationship between PCA and SVD}{45}{subsection.7.3.1}
-\contentsline {subsection}{\numberline {7.3.2}Bayesian PCA}{46}{subsection.7.3.2}
-\contentsline {section}{\numberline {7.4}$\mathbf {X}=\mathbf {W}\mathbf {H}$ Non-Negative Matrix Factorization}{46}{section.7.4}
+\contentsline {subsubsection}{\numberline {4.11.5.1}Testing Convexity}{39}{subsubsection.4.11.5.1}
+\contentsline {chapter}{\numberline {5}Information Theory}{41}{chapter.5}
+\contentsline {section}{\numberline {5.1}Entropy}{41}{section.5.1}
+\contentsline {section}{\numberline {5.2}Mutual Information}{41}{section.5.2}
+\contentsline {section}{\numberline {5.3}Kullback-Leibler Divergence}{41}{section.5.3}
+\contentsline {chapter}{\numberline {6}Linear Regression}{43}{chapter.6}
+\contentsline {section}{\numberline {6.1}Ordinary Linear Regression}{43}{section.6.1}
+\contentsline {section}{\numberline {6.2}$R^2$ Value}{43}{section.6.2}
+\contentsline {section}{\numberline {6.3}Regression Diagnostics}{43}{section.6.3}
+\contentsline {section}{\numberline {6.4}t-Statistics}{43}{section.6.4}
+\contentsline {section}{\numberline {6.5}AIC and BIC}{43}{section.6.5}
+\contentsline {section}{\numberline {6.6}Factor Regression}{43}{section.6.6}
+\contentsline {section}{\numberline {6.7}Factor Models}{43}{section.6.7}
+\contentsline {chapter}{\numberline {7}Unsupervised Learning}{45}{chapter.7}
+\contentsline {section}{\numberline {7.1}Independent Component Analysis}{45}{section.7.1}
+\contentsline {section}{\numberline {7.2}Eigenanalysis, Singular Value Decomposition of Data Matrices}{45}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}Example: Eigenfaces and Facial Recognition}{46}{subsection.7.2.1}
+\contentsline {subsection}{\numberline {7.2.2}Consistently Oriented Eigenbasis}{46}{subsection.7.2.2}
+\contentsline {section}{\numberline {7.3}Principal Component Analysis (PCA)}{47}{section.7.3}
+\contentsline {subsection}{\numberline {7.3.1}Relationship between PCA and SVD}{47}{subsection.7.3.1}
+\contentsline {subsection}{\numberline {7.3.2}Bayesian PCA}{48}{subsection.7.3.2}
+\contentsline {section}{\numberline {7.4}$\mathbf {X}=\mathbf {W}\mathbf {H}$ Non-Negative Matrix Factorization}{48}{section.7.4}
 \contentsfinish 

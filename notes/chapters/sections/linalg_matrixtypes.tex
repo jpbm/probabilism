@@ -29,7 +29,7 @@ Upper triangular matrices are matrices that have all-zero entries below the diag
 
 
 % commuting 
-\subsection{$\mathbf{AB}=\mathbf{BA}$ Commuting}
+\subsection{$\mathbf{AB}-\mathbf{BA}=0$ Commuting}
 Two matrices commute if $\mathbf{AB}=\mathbf{BA}$, or, equivalently, their \textit{commutator} $[\mathbf{A,B}] = \mathbf{AB}-\mathbf{BA}$ is zero. This means that $\mathbf{A}$ and $\mathbf{B}$ both have to be square. Matrices commute when they have the same eigenspace, i.e. they have the same eigenvectors. This can be seen by considering the diagonal representations of $\mathbf{A}$ and $\mathbf{B}$.
 
 Let $\mathbf{A}$ and $\mathbf{B}$ be two square matrices with the same eigenvectors $\mathbf{V}$, then they can be diagonalized as:
@@ -45,6 +45,9 @@ They commute, because:
 \mathbf{AB} = \mathbf{V\Lambda_A V^{-1}V\Lambda_B V^{-1}} = \mathbf{V\Lambda_B \Lambda_A V^{-1}} = \mathbf{V\Lambda_B V^{-1}V\Lambda_A V^{-1}} = \mathbf{BA} 
 \end{equation}
 
+% anticommuting
+\subsection{$\mathbf{AB}+\mathbf{BA}=0$ Anticommuting}
+Two matrices anticommute if $\mathbf{AB}=-\mathbf{BA}$, or, equivalently, their \textit{anticommutator} $\{\mathbf{A,B}\} = \mathbf{AB}+\mathbf{BA}$ is zero.
 
 
 % Hermitian / Symmetric
@@ -102,3 +105,12 @@ Two matrices are said to be similar if they can be related through a similarity 
    
 
 
+% Involutory
+\subsection{$\mathbf{A}\mathbf{A}=\mathbf{I}$ Involutory}
+Involutory matrixes are matrices that are their own inverse, so that:
+
+\begin{equation}
+\mathbf{A}\mathbf{A}=\mathbf{I}
+\end{equation}
+
+Involutory matrices are all square roots of the identity matrix. A famous example are the $2\times 2$ Pauli matrices. 
