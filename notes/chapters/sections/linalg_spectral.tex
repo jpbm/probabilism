@@ -50,6 +50,8 @@ Similarly, a hermitian matrix $\mathbf{H} \in \mathbb{C}^{n\times n}$ (the compl
 
 \subsection{Eigenvalue Sensitivity and Accuracy}
 
+\subsubsection{General Case}
+
 In general, the values of the eigenvalues of a square matrix $\mathbf{A}$ may vary wildly under a slight cange of $\mathbf{A} \rightarrow \mathbf{A}+\delta\mathbf{A}$. The sensitivity of the eigenvalues to a change in $\mathbf{A}$ can be investigated using matrix norms \cite{mathworkseig}. Let $||\cdot||$ denote a submultiplicative matrix norm, then:
 
 \begin{equation}
@@ -66,5 +68,7 @@ When $||\cdot||$ is chosen to be the operator norm with respect to $L^2$, $||\cd
 ||\delta\mathbf{\Lambda}||_{(2)} \leq \frac{\sigma_1}{\sigma_n} ||\delta\mathbf{A}||_{(2)} = \kappa(\mathbf{X})||\delta\mathbf{A}||_{(2)}
 \end{equation}
 
-Where $\kappa(\mathbf{X})$ is the conditioning number of the matrix $\mathbf{X}$. 
+Where $\kappa(\mathbf{X})$ is the conditioning number of the matrix $\mathbf{X}$. Upper bounds on the error on individual eigenvalues can also be derived quite easily, which is shown in \ref{mathworkseig} pp 10-12.
 
+\subsubsection{Hermitian Matrices}
+For hermitian (or orthogonal) matrices, the conditioning number for the individual eigenvalues  $\kappa(\lambda_i,\mathbf{H}) = 1$, so that the error on an individual eigenvalue $||\lambda_i||_{(2)} \leq \kappa(\lambda_i,\mathbf{H}) ||\mathbf{H}||_{(2)} = 1\times ||\mathbf{H}||_{(2)}$. 

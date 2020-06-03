@@ -1,4 +1,4 @@
-\section{Types Matrices}
+\section{Types of Matrices}
 
 \subsection{$\mathrm{sgn}\left(\mathbf{x}^{\dagger}\mathbf{H}\mathbf{x}\right)$ Definiteness}
 \label{sec:definiteness}
@@ -19,8 +19,18 @@ The curly comparison symbols can mean other stuff though, for example in the con
 \subsection{Triangular}
 A lower triangular matrix is a matrix that has all-zero entries above the diagonal.
 
+
+\begin{equation}
+\mathbf{L} = \left[\begin{array}{cccccc} l_{1,1}&&&&&0\\l_{2,1}&l_{2,2}&&&&\\l_{3,1}&l_{3,2}&\ddots&&&\\  \vdots&\vdots&\ddots&\ddots&&\\ \vdots&\vdots&&\ddots&\ddots&\\  l_{n,1}&l_{n,2}&\hdots&\hdots&l_{n,n-1}&l_{n,n}\end{array}\right]
+\end{equation}
+
+Upper triangular matrices are matrices that have all-zero entries below the diagonal.
+
+
+
+% commuting 
 \subsection{$\mathbf{AB}=\mathbf{BA}$ Commuting}
-Two matrices commute if $\mathbf{AB}=\mathbf{BA}$, or, equivalently, their \textit{commutator} $[A,B] = \mathbf{AB}-\mathbf{BA}$ is zero. This means that $\mathbf{A}$ and $\mathbf{B}$ both have to be square. Matrices commute when they have the same eigenspace, i.e. they have the same eigenvectors. This can be seen by considering the diagonal representations of $\mathbf{A}$ and $\mathbf{B}$.
+Two matrices commute if $\mathbf{AB}=\mathbf{BA}$, or, equivalently, their \textit{commutator} $[\mathbf{A,B}] = \mathbf{AB}-\mathbf{BA}$ is zero. This means that $\mathbf{A}$ and $\mathbf{B}$ both have to be square. Matrices commute when they have the same eigenspace, i.e. they have the same eigenvectors. This can be seen by considering the diagonal representations of $\mathbf{A}$ and $\mathbf{B}$.
 
 Let $\mathbf{A}$ and $\mathbf{B}$ be two square matrices with the same eigenvectors $\mathbf{V}$, then they can be diagonalized as:
 
@@ -35,11 +45,6 @@ They commute, because:
 \mathbf{AB} = \mathbf{V\Lambda_A V^{-1}V\Lambda_B V^{-1}} = \mathbf{V\Lambda_B \Lambda_A V^{-1}} = \mathbf{V\Lambda_B V^{-1}V\Lambda_A V^{-1}} = \mathbf{BA} 
 \end{equation}
 
-\begin{equation}
-\mathbf{L} = \left[\begin{array}{cccccc} l_{1,1}&&&&&0\\l_{2,1}&l_{2,2}&&&&\\l_{3,1}&l_{3,2}&\ddots&&&\\  \vdots&\vdots&\ddots&\ddots&&\\ \vdots&\vdots&&\ddots&\ddots&\\  l_{n,1}&l_{n,2}&\hdots&\hdots&l_{n,n-1}&l_{n,n}\end{array}\right]
-\end{equation}
-
-Upper triangular matrices are matrices that have all-zero entries below the diagonal.
 
 
 % Hermitian / Symmetric
@@ -88,6 +93,8 @@ Unitary matrices that are real are called orthogonal.  Orthogonal matrices satis
 Unitary matrices are necessarily invertible, and have determinant $|U|=1$ or $|U|=-1$. They represent unitary transformations, which means that they preserve the inner product between two vectors.
 
 The set of $n \times n$ orthogonal matrices is known as the orthogonal group $O(n)$ and the subgroup of orthogonal matrices with determinant $1$ is known as the special orthogonal group $SO(n)$. The elements of $SO(n)$ are rotations, and the elements of $O(n)$ represent translations, reflections or rotations. Similarly, the group of $n \times n$ unitary matrices is the unitary group $U(n)$ and the subgroup of $U(n)$ that has determinant $1$ is the special unitary group $SU(n)$.
+
+
 
 % Similarity
 \subsection{$\mathbf{A} = \mathbf{TBT^{-1}}$ Similarity}

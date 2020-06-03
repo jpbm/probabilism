@@ -10,7 +10,7 @@
 \section{Multi-Index Notation}
 Multi-index notation makes high-dimensional things faster and easier. A collection is indices is represented by a tuple $\alpha = \left(\alpha_1,\alpha_2,\alpha_3,... \right)$. The absolute value $|\alpha| = \sum_i \alpha$, partial derivatives $\partial^\alpha = \prod \partial^{\alpha_i}$, powers $\mathbf{x}^\alpha = \prod_i x_i^{\alpha_i}$.
 
-\subsubsection{Multinomial Coefficients}	
+\subsection{Example: Multinomial Coefficients}	
 
 Instead of:
 \begin{equation}
@@ -23,7 +23,7 @@ Write:
 \sum_{0\leq |\alpha|\leq n}{n \choose \alpha}
 \end{equation}
 
-\subsubsection{Taylor Expansion}
+\subsection{Example: Taylor Expansion}
 
 For a vector valued function $\mathbf{f}: \mathbb{R}^n \rightarrow \mathbb{R}^m$ that is analytical in a neighborhood of the point $\mathbf{a}$:
 
@@ -45,7 +45,7 @@ The Cholesky Decomposition exists when a matrix is hermitian and positive-defini
 
 Where $\mathbf{L}$ is a lower-triangular matrix with positive, real diagonal entries. When $\mathbf{A}$ is real, then so is $\mathbf{L}$. The Cholesky decomposition enables fast solution of a linear system, but it can also be used to create correlated random variables in Monte Carlo simulations. 
 
-\subsubsection{Creating Correlated Random Variables}
+\subsection{Creating Correlated Random Variables}
 Let $\mathbf{u}_t$ be a vector of uncorrelated samples with mean 0 and 	standard deviation 1. If the covariance matrix of the system to be simulated is  $\mathbf{\Sigma}$ with Cholesky decomposition $\mathbf{\Sigma} = \mathbf{LL}^\dagger$, then the vector $\mathbf{v}_t = \mathbf{Lu}_t$ has the desired covariance.
 
 \begin{figure}

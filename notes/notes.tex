@@ -8,6 +8,9 @@
 \usepackage{amsmath}
 \usepackage{amssymb}
 
+\DeclareMathOperator*{\argmax}{arg\,max}
+\DeclareMathOperator*{\argmin}{arg\,min}
+
 \usepackage{graphicx}
 \graphicspath{ {../img/} }
 
@@ -62,7 +65,7 @@
     \ifx\chap@author\@empty\else
       \setlength{\unitlength}{1mm}%
       \begin{picture}(0,0)
-        \put(0,-17){\makebox(0,0)[l]{\Large\mdseries\itshape \chap@author}}
+        \put(0,-17){\makebox(0,0)[l]{\Large\mdseries\itshape \chap@author}}t
       \end{picture}%
     \fi
   }
@@ -89,7 +92,7 @@
 %\titlespacing*{\section}{0pt}{.75pc}{.5pc}s
 
 \titlespacing*{\chapter}{0pt}{0pt}{3cm} % title positions
-\titlespacing*{\section}{0pt}{.75pc}{.5pc}
+\titlespacing*{\section}{0pt}{2pc}{.5pc} %{0pt}{0.75pc}{.5pc} % distance from {left margin}{above}{below}
 \titlespacing*{\subsection}{0pt}{2pc}{0.5pc}
 
 \newpagestyle{main}{%
