@@ -134,11 +134,11 @@
 \contentsline {subsection}{\numberline {4.6.4}Multilinear Maps}{32}{subsection.4.6.4}
 \contentsline {subsection}{\numberline {4.6.5}Multilinear Forms}{32}{subsection.4.6.5}
 \contentsline {section}{\numberline {4.7}Types of Matrices}{33}{section.4.7}
-\contentsline {subsection}{\numberline {4.7.1}$\mathrm {sgn}\left (\mathbf {x}^{\dagger }\mathbf {H}\mathbf {x}\right )$ Definiteness}{33}{subsection.4.7.1}
+\contentsline {subsection}{\numberline {4.7.1}$\mathrm {sgn}\left (\mathbf {x}^{\dagger }\mathbf {H}\mathbf {x}\right )$ Definite}{33}{subsection.4.7.1}
 \contentsline {subsection}{\numberline {4.7.2}Triangular}{33}{subsection.4.7.2}
 \contentsline {subsection}{\numberline {4.7.3}$\mathbf {AB}-\mathbf {BA}=0$ Commuting}{33}{subsection.4.7.3}
 \contentsline {subsection}{\numberline {4.7.4}$\mathbf {AB}+\mathbf {BA}=0$ Anticommuting}{33}{subsection.4.7.4}
-\contentsline {subsection}{\numberline {4.7.5}$\mathbf {A}^{\dagger } = \mathbf {A}$ Hermitian, Symmetric}{33}{subsection.4.7.5}
+\contentsline {subsection}{\numberline {4.7.5}$\mathbf {A}^{\dagger } = \mathbf {A}$ Hermitian, Symmetric}{34}{subsection.4.7.5}
 \contentsline {subsubsection}{\numberline {4.7.5.1}Properties}{34}{subsubsection.4.7.5.1}
 \contentsline {subsection}{\numberline {4.7.6}$\mathbf {A}^{\dagger } = -\mathbf {A}$ Skew Hermitian, Skew Symmetric}{34}{subsection.4.7.6}
 \contentsline {subsection}{\numberline {4.7.7}$\mathbf {U}^{\dagger } = \mathbf {U}^{-1}$ Unitary, Orthogonal}{34}{subsection.4.7.7}
@@ -151,16 +151,16 @@
 \contentsline {subsection}{\numberline {4.9.3}$L^{\infty }$ Maximum Norm}{35}{subsection.4.9.3}
 \contentsline {subsection}{\numberline {4.9.4}$L^{-\infty }$ Minimum Norm}{35}{subsection.4.9.4}
 \contentsline {section}{\numberline {4.10}Operator and Matrix Norms}{35}{section.4.10}
-\contentsline {subparagraph}{}{35}{subparagraph*.53}
+\contentsline {subparagraph}{}{36}{subparagraph*.53}
 \contentsline {subsection}{\numberline {4.10.1}$||\mathbf {A}||_{(\alpha )}$ Operator Norm}{36}{subsection.4.10.1}
 \contentsline {subsection}{\numberline {4.10.2}$||\mathbf {A}||_q$ $q$-Norms}{36}{subsection.4.10.2}
 \contentsline {subsection}{\numberline {4.10.3}$||\mathbf {A}||_F$ Frobenius Norm}{36}{subsection.4.10.3}
 \contentsline {subsection}{\numberline {4.10.4}$||\mathbf {A}||_{(1)}$ (1)-Norm}{36}{subsection.4.10.4}
-\contentsline {subsection}{\numberline {4.10.5}$||\mathbf {A}||_{(\infty )}$ ($\infty $)-Norm}{36}{subsection.4.10.5}
+\contentsline {subsection}{\numberline {4.10.5}$||\mathbf {A}||_{(\infty )}$ ($\infty $)-Norm}{37}{subsection.4.10.5}
 \contentsline {subsection}{\numberline {4.10.6}$||\mathbf {A}||_{(2)}$ (2)-Norm}{37}{subsection.4.10.6}
 \contentsline {section}{\numberline {4.11}Vector and Matrix Derivatives}{37}{section.4.11}
 \contentsline {subsection}{\numberline {4.11.1}Jacobian}{37}{subsection.4.11.1}
-\contentsline {subsection}{\numberline {4.11.2}Inverse Function Theorem}{37}{subsection.4.11.2}
+\contentsline {subsection}{\numberline {4.11.2}Inverse Function Theorem}{38}{subsection.4.11.2}
 \contentsline {subsection}{\numberline {4.11.3}Critical Points}{38}{subsection.4.11.3}
 \contentsline {subsection}{\numberline {4.11.4}Differential Volume Element, Change of Variables}{38}{subsection.4.11.4}
 \contentsline {subsection}{\numberline {4.11.5}Hessian}{38}{subsection.4.11.5}
@@ -187,11 +187,18 @@
 \contentsline {section}{\numberline {7.1}Independent Component Analysis}{45}{section.7.1}
 \contentsline {section}{\numberline {7.2}Eigenanalysis, Singular Value Decomposition of Data Matrices}{45}{section.7.2}
 \contentsline {subsection}{\numberline {7.2.1}Example: Eigenfaces and Facial Recognition}{46}{subsection.7.2.1}
-\contentsline {subsection}{\numberline {7.2.2}Consistently Oriented Eigenbasis}{46}{subsection.7.2.2}
+\contentsline {subsection}{\numberline {7.2.2}Constructing A Consistently Oriented Eigenbasis}{46}{subsection.7.2.2}
 \contentsline {section}{\numberline {7.3}Principal Component Analysis (PCA)}{47}{section.7.3}
 \contentsline {subsection}{\numberline {7.3.1}Relationship between PCA and SVD}{47}{subsection.7.3.1}
 \contentsline {subsection}{\numberline {7.3.2}Bayesian PCA}{48}{subsection.7.3.2}
 \contentsline {section}{\numberline {7.4}$\mathbf {X}=\mathbf {W}\mathbf {H}$ Non-Negative Matrix Factorization}{48}{section.7.4}
+\contentsline {chapter}{\numberline {8}Statistics}{49}{chapter.8}
 \ttl@stoptoc {default@8}
 \ttl@starttoc {default@9}
+\contentsline {section}{\numberline {8.1}Directional Statistics}{49}{section.8.1}
+\contentsline {subsection}{\numberline {8.1.1}Mean Direction}{49}{subsection.8.1.1}
+\contentsline {subsection}{\numberline {8.1.2}Dispersion}{49}{subsection.8.1.2}
+\contentsline {subsection}{\numberline {8.1.3}Dispersion}{49}{subsection.8.1.3}
+\ttl@stoptoc {default@9}
+\ttl@starttoc {default@10}
 \contentsfinish 

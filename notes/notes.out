@@ -50,7 +50,7 @@
 \BOOKMARK [2][-]{subsection.4.6.4}{Multilinear Maps}{section.4.6}% 50
 \BOOKMARK [2][-]{subsection.4.6.5}{Multilinear Forms}{section.4.6}% 51
 \BOOKMARK [1][-]{section.4.7}{Types of Matrices}{chapter.4}% 52
-\BOOKMARK [2][-]{subsection.4.7.1}{sgn\(xHx\) Definiteness}{section.4.7}% 53
+\BOOKMARK [2][-]{subsection.4.7.1}{sgn\(xHx\) Definite}{section.4.7}% 53
 \BOOKMARK [2][-]{subsection.4.7.2}{Triangular}{section.4.7}% 54
 \BOOKMARK [2][-]{subsection.4.7.3}{AB-BA=0 Commuting}{section.4.7}% 55
 \BOOKMARK [2][-]{subsection.4.7.4}{AB+BA=0 Anticommuting}{section.4.7}% 56
@@ -94,8 +94,13 @@
 \BOOKMARK [1][-]{section.7.1}{Independent Component Analysis}{chapter.7}% 94
 \BOOKMARK [1][-]{section.7.2}{Eigenanalysis, Singular Value Decomposition of Data Matrices}{chapter.7}% 95
 \BOOKMARK [2][-]{subsection.7.2.1}{Example: Eigenfaces and Facial Recognition}{section.7.2}% 96
-\BOOKMARK [2][-]{subsection.7.2.2}{Consistently Oriented Eigenbasis}{section.7.2}% 97
+\BOOKMARK [2][-]{subsection.7.2.2}{Constructing A Consistently Oriented Eigenbasis}{section.7.2}% 97
 \BOOKMARK [1][-]{section.7.3}{Principal Component Analysis \(PCA\)}{chapter.7}% 98
 \BOOKMARK [2][-]{subsection.7.3.1}{Relationship between PCA and SVD}{section.7.3}% 99
 \BOOKMARK [2][-]{subsection.7.3.2}{Bayesian PCA}{section.7.3}% 100
 \BOOKMARK [1][-]{section.7.4}{X=WH Non-Negative Matrix Factorization}{chapter.7}% 101
+\BOOKMARK [0][-]{chapter.8}{Statistics}{}% 102
+\BOOKMARK [1][-]{section.8.1}{Directional Statistics}{chapter.8}% 103
+\BOOKMARK [2][-]{subsection.8.1.1}{Mean Direction}{section.8.1}% 104
+\BOOKMARK [2][-]{subsection.8.1.2}{Dispersion}{section.8.1}% 105
+\BOOKMARK [2][-]{subsection.8.1.3}{Dispersion}{section.8.1}% 106

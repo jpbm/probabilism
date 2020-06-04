@@ -38,9 +38,12 @@ Facial recognition may be performed by projecting a new face into the space of e
 
 
 % eigenbasis 
-\subsection{Consistently Oriented Eigenbasis}
+\subsection{Constructing A Consistently Oriented Eigenbasis}
 	
 As discussed in section \ref{sec:svd}, the sign of the basis vectors can be flipped without affecting the validity of the singular value decomposition. That means that if the SVD is performed repeatedly on a slowly evolving system, the derived eigenbasis of the system can abruptly change, from, for example, a left-handed to a right-handed coordinate system. Hence there is a need to find a way to consistently orient the basis of eigenvectors. 
 
-Heuristic techniques can work by taking the dot product between the singular vectors derived for two separate SVDs, and flipping them whenever the dot product is negative. A more fundamentally rigorous technique was derived by \citeasnoun{damask2019consistently}. \possessivecite{damask2019consistently} technique relies on constructing the sequence of reflection and rotation operations necessary to transform a constituent basis into the eigenbasis, starting with the singular . 
+Heuristic techniques can work by taking the dot product between the singular vectors derived for two separate SVDs, and flipping them whenever the dot product is negative. A more rigorous technique was derived by \citeasnoun{damask2019consistently}. \possessivecite{damask2019consistently} technique relies on constructing the sequence of reflection and rotation operations necessary to transform a constituent basis into the derived eigenbasis. The gradual transformation begins with the singular vector with the largest singular value, because it has the greatest numerical certainty. 
 
+Once consistently oriented, directional statistics (cf. section \ref{sec:directionalstats}) can be applied to analyze the evolution of the eigensystem over different measurements. 
+
+In general, singular vectors are only labeled by their corresponding singular value (assuming no degeneracy). Rank order changes require attaching an additional label to the eigenvectors.
