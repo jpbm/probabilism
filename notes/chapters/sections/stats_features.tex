@@ -1,0 +1,41 @@
+\section{Features}
+
+Features are sources of information that hopefully allow conclusions towards some kind of quantity of interest. Some people like to call them independent variables.
+
+\subsection{Dense Features, Sparse Features}
+Sparsity and density refer to the fraction of a matrix that is zeros. In the context of features, sparse features typically refer to feature vectors that have many zeros in them. I.e., $[1,2,5,2,6,3,0]$ would be a dense feature vector and $[2,0,0,0,0,3,0,0,1]$ would be a sparse feature vector. Typically, sparsity is touted as an advantage because it allows for lossless compressed representations of high-dimensional data, which has computational advantages. Another advantage, though, is that sparse representations can be more interpretable by containing information in an inherently more condensed fashion. They are also thought to prevent overfitting: many regularization techniques aim to minimize the number of parameters or features used in a predictive model, which amounts to biasing an algorithm towards learning sparse coefficients. An example is ridge regression. 
+
+\section{Multicollinearity}
+So far this section is based on \citeasnoun{ncssridgeregression}.
+
+Multicollinearity, or collinearity, occurs when features are linearly correlated with each other. The effects are horrible. They include inaccurate estimates of the regression coefficients, higher standard errors of the regression coefficients, lower partial t-tests for the regression coefficients, falsely insignificant p-values and decreased predictive power of the model. And other things.
+
+\subsubsection{Detection}
+
+\subparagraph{Scatter Plots}
+Scatterplots provide a visual test for collinearity by hopefully exposing relationships between independent variables. This is subjective and unreliable, but people love plots.
+
+\subparagraph{Variance Inflation Factors (VIF)}
+A VIF over 10 it said to indicate collinear variables.
+
+\subparagraph{Eigenvalues of the Correlation Matrix}
+Linear relationships between two or more variables cause the corresponding rows of the correlation matrix to be identical or very similar. Correspondingly, the matrix will be singular or near-singular, which will manifest itself through zero or near-zero eigenvalues. The conditioning number, given by the largest eigenvalue divided by the smallest eigenvalue, are a quick way to test for this. A large conditioning number indicates collinearity.
+
+\subparagraph{Regression Coefficients}
+Collinearity increases the standard error of the regression coefficients because it allows for the variation of the dependent variable to be explained in terms of a greater variety of different weights assigned to the collinear variables. Counterintuitive results for the regression coefficients may be the result of collinearity. 
+
+\subsection{Sources}
+
+\subparagraph{Data Collection}
+\subparagraph{Physical Constraints}
+\subparagraph{Over-defined Model}
+\subparagraph{Model Choice or Specification}
+\subparagraph{Outliers}
+
+\subsubsection{Remedies}
+
+\subparagraph{Dimensionality Reduction}
+SVD, PCA, NNMF and other dimensionality reduction techniques allow for the feature space to be shrunk in a way that aims to optimally preserve information. Any technique worth its salt will either collapse or filter collinear variables into a reduced-rank representation of the information in the dataset.
+
+\subparagraph{Regularization}
+Certain forms of regularization are similar in spirit to dimensionality reduction, except that, rather than addressing the dataset, they reduce the parameters used by a model to fit to the data. The canonical example is ridge regression. Ridge regression penalizes the use of a larger number of parameters and, if two variables are collinear, will tend to push the weight of one of them towards zero. It is important to standardize the variables before fitting the model, so that the regression weights for different variables are on the same scale. Ridge regression remains controversial \cite{ncssridgeregression}. 

@@ -1,0 +1,35 @@
+\section{Directional Statistics}
+
+\subsection{Mean Direction}
+The mean direction of a collection of $i$ vectors $\{\mathbf{x}\}_i$ is \cite{damask2019consistent}:
+
+\begin{equation}
+\left<\mathbf{x}\right> = \frac{\mathbf{x_s}}{||\mathbf{x_s}||_2}
+\end{equation}
+
+Where
+
+\begin{equation}
+\mathbf{x_s} = \sum_i \mathbf{x_i}
+\end{equation}
+
+The mean vector is not defined in case $||\mathbf{x_s}||_2 = 0$. The alternative way to calculate the mean direction might make use of angles but apparently that creates ambiguity with respect to the choice of a "zero" angle (cf. footnote in \citeasnoun{damask2019consistently}).
+
+
+
+\subsection{Dispersion}
+
+Dispersion is a measure of the variance on the direction of a set of vectors $\{\mathbf{x}\}_i$. For a system of vectors, for example an eigenbasis, both common and differential modes of estimation exist. One way of meausuring directional dispersion is to look at the \textit{mean resultant length}:
+
+\begin{equation}
+\mu_r = \frac{||\mathbf{x_s}||}{N}\ \ \ 0\leq \mu_r \leq 1
+\end{equation}
+
+\textit{Circular variance} may be defined as $\sigma_c = 1-\mu_r$, but apparently there is an issue with generalization to higher dimensions. (TO DO)
+
+An alternative is a model based approach, for example based on the von Mises - Fisher Distribution.
+
+In the case of a basis, \citeasnoun{damask2019consistently} states that, in order to understand the drivers for variation, dispersion parameters should be calculated for each descending subspace of the basis, first including all of the eigenvectors, then excluding the first eigenvector, etc.
+
+
+
