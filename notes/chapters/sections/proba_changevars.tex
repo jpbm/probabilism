@@ -1,0 +1,99 @@
+\section{Functions of Random Variables, Derived Distributions}
+
+(This section needs revision)
+
+I find changes of variables to be the easiest to understand by writing down a joint probability distribution using a delta function to express the conditional probability for the new variables based on the old variables. The next step is to perform a change of variables in the delta function, and integrate. The delta function means that the relationship between the old and the new variables is deterministic. If the relationship is non-deterministic you can use whatever expression for the conditional probability is appropriate.
+
+Let's say that you want to know the probability distribution of the function $\vec{u} = \mathbf{H}(\vec{x})$ of some random variable $\vec{x}$ for which the probability distribution is known.
+
+I personally find it least confusing to approach this problem by thinking about the joint probability distribution, and then obtaining $p(\vec{u})$ through marginalization:
+
+\begin{equation}
+p(\vec{u}) = \int dx^n p(\vec{x},\vec{u}) = \int dx^n p_x(\vec{x}) p_u(\vec{u}|\vec{x})
+\end{equation}
+
+Since $\vec{u}$ is a deterministic function of $\vec{x}$, the conditional probabiltiy $p_u(\vec{u}|\vec{x}) = \delta(\vec{u} - \mathbf{H}(\vec{x}))$. Explicitly:
+
+\begin{equation}
+p(\vec{u}) = \int dx^n p_x(\vec{x}) \delta(\vec{u} - \mathbf{H}(\vec{x}))
+\end{equation}
+
+What this does, is to integrate over all the points $p_x(\vec{x})$ where the argument of the delta function is zero. The important thing is that care needs to be taken when the argument of the delta function is itself a function. In that case, a change of variables has to be performed, so that this is no longer the case. On wikipedia, this is done by defining the new variable $du = |\frac{d}{dx}g(x)|dx$, from which follows:
+
+\begin{equation}
+\delta(g(x)) = \sum_{x_0} \frac{\delta(x-x_0)}{|g'(x_0)|}
+\end{equation}
+
+Where it is necessary to sum over each point $x_0$ for which $g(x_0) = 0$.
+
+Which makes sense. Except, if you rewrite in terms of the new variable, you get an expression that does not strike me as necessarily the same:
+
+\begin{equation}
+\int f(x) \delta(g(x))dx = \sum_{n}\int f(g_n^{-1}(u)) \delta(u) \left|\frac{d}{du}g^{-1}(u)\right|du
+\end{equation}
+
+Where the sum $n$ is over all functions $g_n^{-1}$ that satisfy $g(g_n^{-1}(u)) = u$. For example, if $u = g(x) = sin(x)$ then $g_n^{-1} = asin(u) + n2\pi$, for any integer $n$. I feel more comfortable with the second path. The answer to my confusion is most likely the inverse function theorem (cf. section \ref{sec:inverse_function_theorem}). In other words: this section needs revision! But hey, I flagged it.
+
+Note that a delta function with a vector argument can be written as a product of the delta functions along each dimension.
+
+Define a new set of variables $\vec{a} = \vec{u} - \mathbf{H}(\vec{x})$. It follows that $\vec{x} = \mathbf{H_n^{-1}}(\vec{u}-\vec{a})$ and the volume element $dx^n = \left| \frac{d}{d\vec{a}}\mathbf{H}_n^{-1}(\vec{u}-\vec{a})\right|da^n$. Here, $H^{-1}_n$ are all the functions that satisfy $\mathbf{H}(\mathbf{H}_n^{-1}(\vec{u})) = \vec{u}$. The integral becomes:
+
+\begin{equation}
+p(\vec{u}) = \int da^n p_x(\mathbf{H}^{-1}_n(\vec{u}-\vec{a}))\left| \frac{d}{d\vec{a}}\mathbf{H}_n^{-1}(\vec{u}-\vec{a})\right| \delta(\vec{a})
+\end{equation}
+
+At this point it is safe to evaluate the delta function integral. The result is:
+
+\begin{equation}
+p(\vec{u}) = p_x(\mathbf{H}^{-1}_n(\vec{u})\left| \frac{d}{d\vec{a}}\mathbf{H}_n^{-1}(\vec{u}-\vec{a})\right|_{(\vec{a}=0)}
+\end{equation}
+
+\subsection{Example: Sum of Random Variables}
+If the map $\mathbf{H}$ is not bijective, for example because $\vec{u}$ has lower dimensionality than $\vec{x}$, then a bijective map can be artifically constructed by introducing additional variables that are then also marginalized out. For example, if the goal is to calculate the probability of measuring some sum of random variables $s$, then you can define:
+
+\begin{equation}
+u_0 = s - \sum(x_i)\\
+u_1 = x_1\\
+u_2 = x_2\\
+\vdots\\
+u_{(n-1)} = x_{n-1}
+\end{equation}
+
+The inverse is:
+
+\begin{equation}
+x_1 = u_1\\
+x_2 = u_2\\
+\vdots\\
+x_n = s - u_0 - \sum_{i<n} x_i
+\end{equation}
+
+The argument in the delta function is transformed $\delta(s - \sum(x_i)) \rightarrow \delta(u_0)$. The determinant of the Jacobian $|J| = |\frac{d}{d\vec{u}} H^{-1}(\vec{u})|$ is given by $[\frac{d}{du_1} \mathbf{H^{-1}},\frac{d}{du_2} \mathbf{H^{-1}},...,\frac{d}{du_{n-1}} \mathbf{H^{-1}}]$. That's an $nxn$ matrix where the first row is all $-1$, the lower left is an $(n-1)x(n-1)$ identity matrix, and the lower right is a $(n-1)x1$ vector of 0s. The determinant is one. Consequently the probability distribution of measuring a sum $s$ is given by:
+
+\begin{equation}
+p(s)= \int dx^{n-1} p_x(x_1,x_2,x_3,...,s-\sum_{x<n}x_i)
+\end{equation}
+
+Which turns out to be the convolution when the variables are independent.
+
+\subsection{Example: Lower Dimensional Random Variable}
+
+This was already the case for the sum of several random variables, in which case the dimensionality of the problem was reduced from many to one. 
+
+Consider the case many to fewer. Again, you just need to perform a change of variables. The new set of variables needs to have the same dimensionality as the old set of variables. The rest should follow pretty obviously. 
+
+Linear example: $\vec{y} = \mathbf{M}\vec{x}$ where $y$ has 2 dimensions and $x$ has 3. 
+
+Transform:
+
+\begin{equation}
+u_1 = y_1 - \vec{M_1}\cdot\vec{x}\\
+u_2 = y_2 - \vec{M_2}\cdot\vec{x}\\
+u_3 = x_3
+\end{equation}
+
+You can write this in terms of some invertible matrix $\mathbf{W} = [\mathbf{M},[0,0,1]]$ as $\vec{u} = \mathbf{W}\vec{x}$, so that $dx^n = |\mathbf{W}^{-1}|du^n|$. The integral is then:
+
+\begin{equation}
+p(y) = \int du^n p_x(\mathbf{W}^{-1}(\vec{y}-\vec{u}))\delta(u_1)\delta(u_2)|\mathbf{W}^{-1}|
+\end{equation}

@@ -34,19 +34,26 @@ Below are the first eigenfaces extracted from the "Labeled Faces in the Wild" da
     \label{fig:svd_eigenfaces}
 \end{figure}
 
-Facial recognition may be performed by projecting a new face into the space of eigenfaces and some form of matching to the coefficients of a known subject. This could be simply the euclidean distance, or it could be a classifier. In case of a classifier, the dimensionality reduction that is enabled by approximating images with a smaller set of eigenvectors may be critical to making the problem tractable by overcoming the curse of dimensionality.
+Facial recognition may be performed by projecting a new face into the space of eigenfaces and matching to the coefficients of a known subject. This could be done using the euclidean distance, or it could be a classifier. In case of classificiation, the dimensionality reduction that is enabled by approximating images with a smaller set of eigenvectors may be critical to making the problem tractable by overcoming the curse of dimensionality.
 
 
 % eigenbasis 
-\subsection{Constructing A Consistently Oriented Eigenbasis}
+\subsection{Tracking an Eigensystem over Time}
+\label{sec:svd_tracking}
 	
-As discussed in section \ref{sec:svd}, the sign of the basis vectors can be flipped without affecting the validity of the singular value decomposition. That means that if the SVD is performed repeatedly on a slowly evolving system, the derived eigenbasis of the system can abruptly change, from, for example, a left-handed to a right-handed coordinate system. Hence there is a need to find a way to consistently orient the basis of eigenvectors. 
+As discussed in section \ref{sec:svd}, the sign of the basis vectors can be flipped without affecting the validity of the singular value decomposition. That means that if the SVD is performed on some system may equally well return, say, a left-handed or a right-handed coordinate system. This becomes a problem when the results of repeated SVDs are supposed to be compared, for example to study the evolution of a system over time. Figure \ref{fig:svd_consistently_oriented} shows the eigenbasis of a bivariate Gaussian with principal axes slowly rotating over a 180-degree angle. The top shows how the eigenbases that is found flips back and forth, so that there is a double-trajectory corresponding to results with positive and negative sign on an eigenvector. The trajectory is not described by an injective function, which complicates analysis. 
 
-Heuristic techniques can work by taking the dot product between the singular vectors derived for two separate SVDs, and flipping them whenever the dot product is negative. A more rigorous technique was derived by \citeasnoun{damask2019consistently}. \possessivecite{damask2019consistently} technique relies on constructing the sequence of reflection and rotation operations necessary to transform a constituent basis into the derived eigenbasis. The gradual transformation begins with the singular vector with the largest singular value, because it has the greatest numerical certainty. 
 
-Once consistently oriented, directional statistics (cf. section \ref{sec:directionalstats}) can be applied to analyze the evolution of the eigensystem over different measurements. 
+\subsubsection{Heuristic Method}
+Say an SVD is performed on a slowly-evolving system at time $t=0$ and at time $t=1$. To compensate the sign flips, a heuristic method is to first match the basis vectors at $t=0$ to the basis vectors at $t=1$ using a distance metric that is immune to the sign of the vectors, for example the absolute value of the dot product. (This assumes that the vectors are similar enough at time $t=0$ and $t=1$ that the matching an be done unambiguously. For the higher-order singular vectors this might be a problem, because they have lower numerical certainty.) Once the vectors are matched, the sign of the inner product between the vectors at $t=0$ and $t=1$ may be compared, and the sign flipped accordingly. 
 
-In general, singular vectors are only labeled by their corresponding singular value (assuming no degeneracy). Rank order changes require attaching an additional label to the eigenvectors.
+This method works, but the problem is that the sign of the vectors is somewhat arbitrarily pinned relative to the result at $t=0$. That is, if, for example, the coordinate system found at $t=0$ was left-handed, then the time series of eigenbases will be adjusted to be left-handed. If the point of comparison had instead been the SVD performed at some other time $t=t'$, then one might have wound up with a right-handed coordinate system instead. It is desirable to find a consistent orientation.   
+
+
+\subsubsection{Consistent Method}
+
+\citeasnoun{damask2019consistently} recently developed a method that can be used to find a consistently oriented basis. The method relies on reconstructing the rotations and reflections necessary to transform the eigenbasis in question to the natural basis $\mathbf{I}$ as reference. While rotations preserve the orientation of a basis, but reflections do not. When the reflections of an eigenbasis with respect to the natural basis are known, then they can be undone by flipping them back in place. 
+
 
 \begin{figure}
 \centering
@@ -54,3 +61,15 @@ In general, singular vectors are only labeled by their corresponding singular va
     \caption{Right singular vectors extracted using SVD, showing sign flips (top) and with a consistently oriented basis (bottom). The underlying data is a bivariate gaussian with principal axes undergoing a 180 degree rotation. With the consistently oriented basis, the singular vectors trace out a one-to-one trajectory that can be analyzed.}
     \label{fig:svd_consistently_oriented}
 \end{figure}
+
+
+\subsubsection{Rank Order Changes}
+
+The singular vectors or eigenvectors of a system are labeled only in terms of their associated singular values or eigenvalues. In order to track a singular vector throughout rank order changes, it is necessary to figure out a way to attach a separate label, for example by looking at the "content" of a particular singular vector. How well that works has to be figured out in context, I am not currently aware of a generally valid solution. 
+
+
+% Bayesian SVD
+\subsection{Bayesian SVD}
+To do! Cf. https://ieeexplore.ieee.org/document/7336426
+
+It's awful to be tied to the assumption of normality and it's awful to not know the uncertainty of my singular vectors!

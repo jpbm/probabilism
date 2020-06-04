@@ -1,6 +1,7 @@
+% Principal Component Analysis
 \section{Principal Component Analysis (PCA)}
 
-Principal Component Analysis (PCA) is a decomposition of data into linearly uncorrelated components. It turns out that these axes are the right-singular eigenvectors $\mathbf{V}$ that are found from SVD. SVD and PCA have close correspondence (cf. section \ref{sec:pcasvd}).
+Principal Component Analysis (PCA) is a decomposition of data into linearly uncorrelated components, ordered by their explained variance. It turns out that these axes are the right-singular eigenvectors $\mathbf{V}$ that are found from SVD. SVD and PCA have correspondence (cf. section \ref{sec:pcasvd}). My guess is that the advantage of PCA is that its results are interpretable in terms of commonly used summary statistics of the distribution (namely the variances or Pearson correlations of the data).
 \\
 
 More elaborately, for a data matrix $\mathbf{X}\in\mathbb{R}^{N\times p}$, PCA extracts the ordered, rank-$p$, orthonormal basis in which the $p\times p$ covariance matrix of $\mathbf{X}$ is diagonal. The basis vectors are called the principal axes or principal directions of the data, and their ordering is by the magnitude of the variance that they explain. 
@@ -27,8 +28,7 @@ Where $\left(\mathbf{X}-\left<\mathbf{X}\right>\right)^T$ is often referred to a
 Where the eigenvectors in $V$ are ordered so that the eigenvectors along the diagonal of $\mathbf{\Lambda}$ have decreasing magnitude. The eigenvectors are the principal axes or principal directions of the data.
 
 
-
-
+% Relationship between PCA and SVD
 \subsection{Relationship between PCA and SVD}
 \label{sec:pcasvd}
 This is based on a great Stack Exchange answer \cite{amoeba2015svdpca}.
@@ -52,4 +52,7 @@ That means that:
 \item The singular values and the eigenvalues of the covariance matrix are related via $\lambda_i = \frac{\sigma_i^2}{n-1}$.
 \end{itemize}
 
-\subsection{Bayesian PCA}
+
+
+\subsection{Tracking Principal Components over Time}
+Given the direct parallel between PCA and SVD, the identical issue with sign flips emerges with the principal component basis, and the remedy is the same. See section \ref{sec:svd_tracking}.
