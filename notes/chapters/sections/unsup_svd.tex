@@ -47,3 +47,10 @@ Heuristic techniques can work by taking the dot product between the singular vec
 Once consistently oriented, directional statistics (cf. section \ref{sec:directionalstats}) can be applied to analyze the evolution of the eigensystem over different measurements. 
 
 In general, singular vectors are only labeled by their corresponding singular value (assuming no degeneracy). Rank order changes require attaching an additional label to the eigenvectors.
+
+\begin{figure}
+\centering
+    \includegraphics[width=\textwidth]{svd_consistently_oriented.png}
+    \caption{Right singular vectors extracted using SVD, showing sign flips (top) and with a consistently oriented basis (bottom). The underlying data is a bivariate gaussian with principal axes undergoing a 180 degree rotation. With the consistently oriented basis, the singular vectors trace out a one-to-one trajectory that can be analyzed.}
+    \label{fig:svd_consistently_oriented}
+\end{figure}
