@@ -1,6 +1,6 @@
 \section{$\mathbf{X}=\mathbf{W}\mathbf{H}$ Non-Negative Matrix Factorization}
 
-Non-Negative Matrix Factorization (NNMF) is a linear dimensionality reduction and blind source detection technique for positive data. It has a reputation of generating decompositions that are "sparse and meaningful". 
+Non-Negative Matrix Factorization (NNMF) is an approximate decomposition technique for positive data. It can be used, for example, for dimensionality reduction, blind source detection or topic extraction. The reputation is that it can often generate decompositions that are "sparse and meaningful". 
 
 Following the convention in \citeasnoun{gillis2014nonnegative}, it works by expressing a positive data matrix $\mathbf{X}\in\mathbb{R}^{p\times n}_+$ in terms of two smaller positive matrices $\mathbf{W}\in\mathbb{R}_+^{p\times r}$ and $\mathbf{H}\in \mathbb{R}^{r\times n}_+$. Here the $n$ columns of the data matrix are data points and the rows are the $p$ features. An excellent introduction to NNMF is found in \possessivecite{morningpaper2019nnmf} blog post and in \citeasnoun{gillis2014nonnegative}. Dimensionality reduction derives from the ability to adjust the rank of the decomposition via the dimension $r$. The decomposition is simply:
 
@@ -18,6 +18,6 @@ The drawback is that NNMF is computationally more difficult (possibly NP hard), 
 \begin{figure}
 \centering
     \includegraphics[width=\textwidth]{nnmf_eigenfaces.png}
-    \caption{Left: The first 34 basis faces stored in the $\mathbf{W}$ matrix extracted using NNMF under Frobenius norm from the "Labeled Faces in the Wild" Dataset. The basis images are normalized and shown on a log scale because they have very different contrast and brightness. The normalized images are then all shown on the same color scale. Right: Five sample portraits from the dataset approximated using different numbers of basis faces. The NNMF was done for a value of $r=300$. The original portraits had $2914$ pixels.}
+    \caption{Left: The first 34 basis faces stored in the $\mathbf{W}$ matrix extracted using NNMF under Frobenius norm from the "Labeled Faces in the Wild" Dataset. The basis images are normalized and shown on a log scale because they have very different contrast and brightness. The normalized images are then all shown on the same color scale. Right: Five sample portraits from the dataset approximated using different numbers of basis faces. The NNMF was done for a value of $r=300$. The original portraits had $2914$ pixels. In contrast to SVD, the basis vectors obtained through NNMF do not necessarily have an internal ordering in terms of how much of the variance in the dataset they explain.}
     \label{fig:nnmf_eigenfaces}
 \end{figure}
