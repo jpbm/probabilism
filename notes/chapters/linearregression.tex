@@ -1,18 +1,122 @@
 % \chapauthor{J. P. Balthasar Mueller}
 \chapter{Linear Regression}
+\label{chap:linearregression}
 
 \begin{multicols}{2}[\subsubsection*{Contents of this chapter}]
    \printcontents{}{1}{\setcounter{tocdepth}{2}}
 \end{multicols}
 
-There is no escaping from linear regression but hardly anyone seems to agree on how to do it properly.
+There is no escaping from linear regression but hardly anyone seems to agree on how to do it properly. Even worse, people seem to expect you to know things like the normal equations, which you'll never, ever need outside of a job interview. 
 
 
 \section{Ordinary Least Squares}
 
+\subsection{The Normal Equations, Analytical Least Squares Estimator}
+Section \ref{sec:linearequations} discussed the case of the linear system of equations:
+
+\begin{equation}
+\mathbf{A}\mathbf{x} = \mathbf{b}
+\end{equation}
+
+
+When $\mathbf{A}^{m\times n}$ with $m>n$, so that the system is overdetermined. This is, of course, the starting point for least squares regression, only that the convention is to use different letters:
+
+\begin{equation}
+\mathbf{X}\mathbf{\beta} = \mathbf{y}
+\end{equation}
+
+And that, seeing that the system is overdetermined, one looks for an approximate solution $\mathbf{\hat{\beta}}$, so that 
+
+\begin{equation}
+\mathbf{X}\mathbf{\beta} + \mathbf{\epsilon} = \mathbf{y}
+\end{equation}
+
+
+A natural approach for picking an approximate solution $\mathbf{\hat{\beta}}$ is to look for the projection of $\mathbf{y}$ in the column space of $\mathbf{X}$. That is, since the column rank $\leq n$ of $\mathbf{X}$ is insufficient to express $m$-dimensional $\mathbf{y}$ exactly in terms of only $m$ coefficients $\mathbf{\beta}$, we look for the $n$-dimensional shadow $\mathbf{\hat{\beta}}$ of some hypothetical higher dimensional exact solution. 
+
+The projection has the property that it maximizes the dot product $(\mathbf{X}\mathbf{\hat{\beta}})\cdot \mathbf{y}$, and hence minimizes the length of the difference vector $\epsilon$. In turn, the length of the difference vector $\epsilon$ is $\sqrt{\epsilon\cdot\epsilon}$, which is monotonic to $\epsilon\cdot\epsilon = \sum^m_i \epsilon_i^2$. That means that finding the projection of $\mathbf{y}$ in the column space of $\mathbf{X}$ minimizes the  $L_2$ norm of $\epsilon$, also known as \textit{least squares error}.
+
+There are two ways to go about finding $\mathbf{\hat{\beta}}$.
+
+\subsection{The Quick Way to $\mathbf{\hat{\beta}}$}
+
+By construction, the vector $\epsilon$ is orthogonal to the column space of $\mathbf{X}$. Which means:
+
+\begin{equation}
+\begin{array}{rl}
+\mathbf{X}^T\epsilon &= 0\\
+\mathbf{X}^T\left(\mathbf{X}\mathbf{\hat{\beta}}-\mathbf{y}\right) &= 0\\
+\mathbf{X}^T\mathbf{X}\mathbf{\hat{\beta}} &= \mathbf{X}^T\mathbf{y}\\
+\mathbf{\hat{\beta}} &= \left(\mathbf{X}^T\mathbf{X}\right)^{-1}\mathbf{X}^T\mathbf{y}
+\end{array}
+\end{equation}
+
+Making use of the fact that $\mathbf{X}^T\mathbf{X}$ is square and therefore hopefully invertible.
+
+\subsection{The Long Way to $\mathbf{\hat{\beta}}$}
+
+Loss functions play a central role in computational statistics (for example when regularization is introduced), and therefore it is of interest to approach finding $\mathbf{\hat{\beta}}$ by instead minimizing the least square error. This requires:
+
+\begin{equation}
+\frac{d}{d\mathbf{\hat{\beta}}}L_2(\epsilon) = 0
+\end{equation}
+
+where
+
+\begin{equation}
+\begin{array}{rl}
+L_2(\epsilon) &= \left(\mathbf{X}\mathbf{\hat{\beta}}-\mathbf{y}\right)^T\left(\mathbf{X}\mathbf{\hat{\beta}}-\mathbf{y}\right)\\
+&= \mathbf{\hat{\beta}}^T\mathbf{X}^T\mathbf{X}\mathbf{\hat{\beta}} - \mathbf{\hat{\beta}}^T\mathbf{X}^T\mathbf{y} - \mathbf{y}^T\mathbf{X}\mathbf{\hat{\beta}} + \mathbf{y}^T\mathbf{y}
+\end{array}
+\end{equation}
+
+Taking derivatives with respect to a vector is covered in section \ref{sec:derivatives}.
+
+It follows:
+
+\begin{equation}
+\begin{array}{l}
+\frac{d}{d\mathbf{\hat{\beta}}}\left(x^T\mathbf{X}^T\underbrace{\mathbf{X}\mathbf{\hat{\beta}}}_{u(\mathbf{\hat{\beta}})}\right) = \frac{d}{du}\left(u^Tu\right)\frac{d}{d\mathbf{\hat{\beta}}}u = 2u^T\frac{d}{d\mathbf{\hat{\beta}}}u = 2\mathbf{\hat{\beta}}^T\mathbf{X}^T\mathbf{X}\\
+\\
+\frac{d}{d\mathbf{\hat{\beta}}}\mathbf{\hat{\beta}}^T\mathbf{X}^T\mathbf{y} = \mathbf{y}^T\mathbf{X}\\
+\\
+\frac{d}{d\mathbf{\hat{\beta}}}\mathbf{y}^T\mathbf{X}\mathbf{\hat{\beta}} = \mathbf{y}^T\mathbf{X}\\
+\\
+\frac{d}{d\mathbf{\hat{\beta}}}\mathbf{y}^T\mathbf{y} = 0
+\end{array}
+\end{equation}
+
+So that
+
+\begin{equation}
+\begin{array}{rl}
+\frac{d}{dx}L_2(\epsilon) = 0 &= 2\mathbf{\hat{\beta}}^T\mathbf{X}^T\mathbf{X} - 2\mathbf{y}^T\mathbf{X}\\
+\mathbf{\hat{\beta}}^T\mathbf{X}^T\mathbf{X} &= \mathbf{y}^T\mathbf{X}\\
+\mathbf{X}^T\mathbf{X}\mathbf{\hat{\beta}} &= \mathbf{X}^T\mathbf{y}\\
+\mathbf{\hat{\beta}} &= \left(\mathbf{X}^T\mathbf{X}\right)^{-1}\mathbf{X}^T\mathbf{y}
+\end{array}
+\end{equation}
+
+
+
+\subsection{Projection Matrix}
+
+If $\mathbf{\hat{y}}=\mathbf{X}\mathbf{\hat{\beta}}$ is the projection of $\mathbf{y}$ in the column space of $\mathbf{X}$, then, based on the result for $\hat{\beta}$, the projection matrix is $\mathbf{P} = \mathbf{X}\left(\mathbf{X}^T\mathbf{X}\right)^{-1}\mathbf{X}^T$. In a fully determined system, $\mathbf{P}=\mathbf{I}$. Projection matrices have eigenvalues that are either $1$ or $0$, corresponding to dimensions that are kept or discarded during the projection operation.
+
+
+\subsection{Bayesian Perspective on Least Squares Regression}
+
+
+
+
+\subsection{Q-plots}
+\subsection{Variance Inflation Factor}
+
+
+
 \section{Ridge Regression}
-
-
+\subsection{Analytical Ridge Estimator}
+\subsection{Bayesian Perspective on Ridge Regression}
 
 
 \chapauthor{}

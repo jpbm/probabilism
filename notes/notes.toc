@@ -95,58 +95,62 @@
 \contentsline {subsection}{\numberline {1.3.3}Example: Dice}{20}{subsection.1.3.3}
 \contentsline {chapter}{\numberline {2}Linear Algebra and Multivariable Calculus}{23}{chapter.2}
 \contentsline {section}{\numberline {2.1}Multi-Index Notation}{23}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}Example: Multinomial Coefficients}{23}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.1}Example: Multinomial Coefficients}{24}{subsection.2.1.1}
 \contentsline {subsection}{\numberline {2.1.2}Example: Taylor Expansion}{24}{subsection.2.1.2}
-\contentsline {section}{\numberline {2.2}$\mathbf {A} = \mathbf {L}\mathbf {L}^{\dagger }$ Cholesky Decomposition}{24}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Creating Correlated Random Variables}{24}{subsection.2.2.1}
-\contentsline {section}{\numberline {2.3}Generalized Eigenvectors}{24}{section.2.3}
-\contentsline {section}{\numberline {2.4}$\mathbf {A} = \mathbf {V\Lambda V^{-1}}$ Spectral Theorems, Diagonalization}{24}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}$\mathbf {A} = \mathbf {V\Lambda V}^T$ Eigendecomposition of Symmetric Matrices}{24}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}$\mathbf {H} = \mathbf {U\Lambda U}^T$ Eigendecomposition of Hermitian Matrices}{26}{subsection.2.4.2}
-\contentsline {subsection}{\numberline {2.4.3}Eigenvalue Sensitivity and Accuracy}{26}{subsection.2.4.3}
-\contentsline {subsubsection}{\numberline {2.4.3.1}General Case}{26}{subsubsection.2.4.3.1}
-\contentsline {subsubsection}{\numberline {2.4.3.2}Hermitian Matrices}{26}{subsubsection.2.4.3.2}
-\contentsline {section}{\numberline {2.5}$\mathbf {A} = \mathbf {U\Sigma V}^{\dagger }$ Singular Value Decomposition}{26}{section.2.5}
-\contentsline {subsection}{\numberline {2.5.1}Full and Economy SVDs}{27}{subsection.2.5.1}
-\contentsline {subsection}{\numberline {2.5.2}Matrix Approximation}{27}{subsection.2.5.2}
-\contentsline {section}{\numberline {2.6}Types of Transformations}{28}{section.2.6}
-\contentsline {subsection}{\numberline {2.6.1}Similarity Transformations}{28}{subsection.2.6.1}
-\contentsline {subsection}{\numberline {2.6.2}Affine Transformations}{28}{subsection.2.6.2}
-\contentsline {subsection}{\numberline {2.6.3}Unitary Transformations}{28}{subsection.2.6.3}
-\contentsline {subsection}{\numberline {2.6.4}Multilinear Maps}{28}{subsection.2.6.4}
-\contentsline {subsection}{\numberline {2.6.5}Multilinear Forms}{29}{subsection.2.6.5}
-\contentsline {section}{\numberline {2.7}Types of Matrices}{29}{section.2.7}
-\contentsline {subsection}{\numberline {2.7.1}$\mathrm {sgn}\left (\mathbf {x}^{\dagger }\mathbf {H}\mathbf {x}\right )$ Definite}{29}{subsection.2.7.1}
-\contentsline {subsection}{\numberline {2.7.2}Triangular}{29}{subsection.2.7.2}
-\contentsline {subsection}{\numberline {2.7.3}$\mathbf {AB}-\mathbf {BA}=0$ Commuting}{29}{subsection.2.7.3}
-\contentsline {subsection}{\numberline {2.7.4}$\mathbf {AB}+\mathbf {BA}=0$ Anticommuting}{30}{subsection.2.7.4}
-\contentsline {subsection}{\numberline {2.7.5}$\mathbf {A}^{\dagger } = \mathbf {A}$ Hermitian, Symmetric}{30}{subsection.2.7.5}
-\contentsline {subsubsection}{\numberline {2.7.5.1}Properties}{30}{subsubsection.2.7.5.1}
-\contentsline {subsection}{\numberline {2.7.6}$\mathbf {A}^{\dagger } = -\mathbf {A}$ Skew Hermitian, Skew Symmetric}{30}{subsection.2.7.6}
-\contentsline {subsection}{\numberline {2.7.7}$\mathbf {U}^{\dagger } = \mathbf {U}^{-1}$ Unitary, Orthogonal}{30}{subsection.2.7.7}
-\contentsline {subsection}{\numberline {2.7.8}$\mathbf {A} = \mathbf {TBT^{-1}}$ Similarity}{30}{subsection.2.7.8}
-\contentsline {subsection}{\numberline {2.7.9}$\mathbf {A}\mathbf {A}=\mathbf {I}$ Involutory}{31}{subsection.2.7.9}
-\contentsline {section}{\numberline {2.8}Properties of Norms}{31}{section.2.8}
-\contentsline {section}{\numberline {2.9}$L^p$ Lebesgue Vector Norms}{31}{section.2.9}
-\contentsline {subsection}{\numberline {2.9.1}$L^{1}$ Taxicab / Manhattan Norm}{31}{subsection.2.9.1}
-\contentsline {subsection}{\numberline {2.9.2}$L^{2}$ Euclidian Norm}{31}{subsection.2.9.2}
-\contentsline {subsection}{\numberline {2.9.3}$L^{\infty }$ Maximum Norm}{31}{subsection.2.9.3}
-\contentsline {subsection}{\numberline {2.9.4}$L^{-\infty }$ Minimum Norm}{31}{subsection.2.9.4}
-\contentsline {section}{\numberline {2.10}Operator and Matrix Norms}{31}{section.2.10}
-\contentsline {subparagraph}{}{32}{subparagraph*.53}
-\contentsline {subsection}{\numberline {2.10.1}$||\mathbf {A}||_{(\alpha )}$ Operator Norm}{32}{subsection.2.10.1}
-\contentsline {subsection}{\numberline {2.10.2}$||\mathbf {A}||_q$ $q$-Norms}{32}{subsection.2.10.2}
-\contentsline {subsection}{\numberline {2.10.3}$||\mathbf {A}||_F$ Frobenius Norm}{32}{subsection.2.10.3}
-\contentsline {subsection}{\numberline {2.10.4}$||\mathbf {A}||_{(1)}$ (1)-Norm}{32}{subsection.2.10.4}
-\contentsline {subsection}{\numberline {2.10.5}$||\mathbf {A}||_{(\infty )}$ ($\infty $)-Norm}{33}{subsection.2.10.5}
-\contentsline {subsection}{\numberline {2.10.6}$||\mathbf {A}||_{(2)}$ (2)-Norm}{33}{subsection.2.10.6}
-\contentsline {section}{\numberline {2.11}Vector and Matrix Derivatives}{33}{section.2.11}
-\contentsline {subsection}{\numberline {2.11.1}Jacobian}{33}{subsection.2.11.1}
-\contentsline {subsection}{\numberline {2.11.2}Inverse Function Theorem}{34}{subsection.2.11.2}
-\contentsline {subsection}{\numberline {2.11.3}Critical Points}{34}{subsection.2.11.3}
-\contentsline {subsection}{\numberline {2.11.4}Differential Volume Element, Change of Variables}{34}{subsection.2.11.4}
-\contentsline {subsection}{\numberline {2.11.5}Hessian}{35}{subsection.2.11.5}
-\contentsline {subsubsection}{\numberline {2.11.5.1}Testing Convexity}{35}{subsubsection.2.11.5.1}
+\contentsline {section}{\numberline {2.2}Linear Systems of Equations}{24}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}$A\in \mathbb {R}^{n\times n}$ Square Matrices}{24}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}$A\in \mathbb {R}^{m\times n}$ Rectangular Matrices, Overdetermined Case}{24}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}$A\in \mathbb {R}^{n\times m}$ Rectangular Matrices, Underdetermined Case}{25}{subsection.2.2.3}
+\contentsline {section}{\numberline {2.3}$\mathbf {A} = \mathbf {L}\mathbf {L}^{\dagger }$ Cholesky Decomposition}{25}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Creating Correlated Random Variables}{25}{subsection.2.3.1}
+\contentsline {section}{\numberline {2.4}Generalized Eigenvectors}{25}{section.2.4}
+\contentsline {section}{\numberline {2.5}$\mathbf {A} = \mathbf {V\Lambda V^{-1}}$ Spectral Theorems, Diagonalization}{25}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}$\mathbf {A} = \mathbf {V\Lambda V}^T$ Eigendecomposition of Symmetric Matrices}{25}{subsection.2.5.1}
+\contentsline {subsection}{\numberline {2.5.2}$\mathbf {H} = \mathbf {U\Lambda U}^T$ Eigendecomposition of Hermitian Matrices}{27}{subsection.2.5.2}
+\contentsline {subsection}{\numberline {2.5.3}Eigenvalue Sensitivity and Accuracy}{27}{subsection.2.5.3}
+\contentsline {subsubsection}{\numberline {2.5.3.1}General Case}{27}{subsubsection.2.5.3.1}
+\contentsline {subsubsection}{\numberline {2.5.3.2}Hermitian Matrices}{27}{subsubsection.2.5.3.2}
+\contentsline {section}{\numberline {2.6}$\mathbf {A} = \mathbf {U\Sigma V}^{\dagger }$ Singular Value Decomposition}{27}{section.2.6}
+\contentsline {subsection}{\numberline {2.6.1}Full and Economy SVDs}{28}{subsection.2.6.1}
+\contentsline {subsection}{\numberline {2.6.2}Matrix Approximation}{28}{subsection.2.6.2}
+\contentsline {section}{\numberline {2.7}Types of Transformations}{29}{section.2.7}
+\contentsline {subsection}{\numberline {2.7.1}Similarity Transformations}{29}{subsection.2.7.1}
+\contentsline {subsection}{\numberline {2.7.2}Affine Transformations}{29}{subsection.2.7.2}
+\contentsline {subsection}{\numberline {2.7.3}Unitary Transformations}{29}{subsection.2.7.3}
+\contentsline {subsection}{\numberline {2.7.4}Multilinear Maps}{30}{subsection.2.7.4}
+\contentsline {subsection}{\numberline {2.7.5}Multilinear Forms}{30}{subsection.2.7.5}
+\contentsline {section}{\numberline {2.8}Types of Matrices}{30}{section.2.8}
+\contentsline {subsection}{\numberline {2.8.1}$\mathrm {sgn}\left (\mathbf {x}^{\dagger }\mathbf {H}\mathbf {x}\right )$ Definite}{30}{subsection.2.8.1}
+\contentsline {subsection}{\numberline {2.8.2}Triangular}{30}{subsection.2.8.2}
+\contentsline {subsection}{\numberline {2.8.3}$\mathbf {AB}-\mathbf {BA}=0$ Commuting}{30}{subsection.2.8.3}
+\contentsline {subsection}{\numberline {2.8.4}$\mathbf {AB}+\mathbf {BA}=0$ Anticommuting}{31}{subsection.2.8.4}
+\contentsline {subsection}{\numberline {2.8.5}$\mathbf {A}^{\dagger } = \mathbf {A}$ Hermitian, Symmetric}{31}{subsection.2.8.5}
+\contentsline {subsubsection}{\numberline {2.8.5.1}Properties}{31}{subsubsection.2.8.5.1}
+\contentsline {subsection}{\numberline {2.8.6}$\mathbf {A}^{\dagger } = -\mathbf {A}$ Skew Hermitian, Skew Symmetric}{31}{subsection.2.8.6}
+\contentsline {subsection}{\numberline {2.8.7}$\mathbf {U}^{\dagger } = \mathbf {U}^{-1}$ Unitary, Orthogonal}{31}{subsection.2.8.7}
+\contentsline {subsection}{\numberline {2.8.8}$\mathbf {A} = \mathbf {TBT^{-1}}$ Similarity}{32}{subsection.2.8.8}
+\contentsline {subsection}{\numberline {2.8.9}$\mathbf {A}\mathbf {A}=\mathbf {I}$ Involutory}{32}{subsection.2.8.9}
+\contentsline {section}{\numberline {2.9}Properties of Norms}{32}{section.2.9}
+\contentsline {section}{\numberline {2.10}$L^p$ Lebesgue Vector Norms}{32}{section.2.10}
+\contentsline {subsection}{\numberline {2.10.1}$L^{1}$ Taxicab / Manhattan Norm}{32}{subsection.2.10.1}
+\contentsline {subsection}{\numberline {2.10.2}$L^{2}$ Euclidian Norm}{32}{subsection.2.10.2}
+\contentsline {subsection}{\numberline {2.10.3}$L^{\infty }$ Maximum Norm}{32}{subsection.2.10.3}
+\contentsline {subsection}{\numberline {2.10.4}$L^{-\infty }$ Minimum Norm}{32}{subsection.2.10.4}
+\contentsline {section}{\numberline {2.11}Operator and Matrix Norms}{33}{section.2.11}
+\contentsline {subparagraph}{}{33}{subparagraph*.53}
+\contentsline {subsection}{\numberline {2.11.1}$||\mathbf {A}||_{(\alpha )}$ Operator Norm}{33}{subsection.2.11.1}
+\contentsline {subsection}{\numberline {2.11.2}$||\mathbf {A}||_q$ $q$-Norms}{33}{subsection.2.11.2}
+\contentsline {subsection}{\numberline {2.11.3}$||\mathbf {A}||_F$ Frobenius Norm}{34}{subsection.2.11.3}
+\contentsline {subsection}{\numberline {2.11.4}$||\mathbf {A}||_{(1)}$ (1)-Norm}{34}{subsection.2.11.4}
+\contentsline {subsection}{\numberline {2.11.5}$||\mathbf {A}||_{(\infty )}$ ($\infty $)-Norm}{34}{subsection.2.11.5}
+\contentsline {subsection}{\numberline {2.11.6}$||\mathbf {A}||_{(2)}$ (2)-Norm}{34}{subsection.2.11.6}
+\contentsline {section}{\numberline {2.12}Vector and Matrix Derivatives}{34}{section.2.12}
+\contentsline {subsection}{\numberline {2.12.1}Jacobian}{34}{subsection.2.12.1}
+\contentsline {subsection}{\numberline {2.12.2}Inverse Function Theorem}{35}{subsection.2.12.2}
+\contentsline {subsection}{\numberline {2.12.3}Critical Points}{35}{subsection.2.12.3}
+\contentsline {subsection}{\numberline {2.12.4}Differential Volume Element, Change of Variables}{35}{subsection.2.12.4}
+\contentsline {subsection}{\numberline {2.12.5}Hessian}{36}{subsection.2.12.5}
+\contentsline {subsubsection}{\numberline {2.12.5.1}Testing Convexity}{36}{subsubsection.2.12.5.1}
 \contentsline {chapter}{\numberline {3}Probability}{37}{chapter.3}
 \contentsline {section}{\numberline {3.1}Measure Theory}{37}{section.3.1}
 \contentsline {section}{\numberline {3.2}Functions of Random Variables, Derived Distributions}{37}{section.3.2}
@@ -162,6 +166,7 @@
 \contentsline {section}{\numberline {5.1}Markov Chains}{43}{section.5.1}
 \contentsline {section}{\numberline {5.2}Martingales}{43}{section.5.2}
 \contentsline {section}{\numberline {5.3}Hidden Markov Models}{43}{section.5.3}
+\contentsline {section}{\numberline {5.4}Ito Calculus}{43}{section.5.4}
 \contentsline {chapter}{\numberline {6}Statistics}{45}{chapter.6}
 \contentsline {section}{\numberline {6.1}Directional Statistics}{45}{section.6.1}
 \contentsline {subsection}{\numberline {6.1.1}Mean Direction}{45}{subsection.6.1.1}
@@ -191,19 +196,28 @@
 \contentsline {section}{\numberline {6.9}Factor Models}{47}{section.6.9}
 \contentsline {chapter}{\numberline {7}Linear Regression}{49}{chapter.7}
 \contentsline {section}{\numberline {7.1}Ordinary Least Squares}{49}{section.7.1}
-\contentsline {section}{\numberline {7.2}Ridge Regression}{49}{section.7.2}
-\contentsline {chapter}{\numberline {8}Unsupervised Learning}{51}{chapter.8}
-\contentsline {section}{\numberline {8.1}Blind Source Separation}{51}{section.8.1}
-\contentsline {section}{\numberline {8.2}Independent Component Analysis}{51}{section.8.2}
-\contentsline {section}{\numberline {8.3}Eigenanalysis, Singular Value Decomposition of Data Matrices}{51}{section.8.3}
-\contentsline {subsection}{\numberline {8.3.1}Example: Eigenfaces and Facial Recognition}{52}{subsection.8.3.1}
-\contentsline {subsection}{\numberline {8.3.2}Tracking an Eigensystem over Time}{52}{subsection.8.3.2}
-\contentsline {subsubsection}{\numberline {8.3.2.1}Heuristic Method}{53}{subsubsection.8.3.2.1}
-\contentsline {subsubsection}{\numberline {8.3.2.2}Consistent Method}{53}{subsubsection.8.3.2.2}
-\contentsline {subsubsection}{\numberline {8.3.2.3}Rank Order Changes}{53}{subsubsection.8.3.2.3}
-\contentsline {subsection}{\numberline {8.3.3}Bayesian SVD}{53}{subsection.8.3.3}
-\contentsline {section}{\numberline {8.4}Principal Component Analysis (PCA)}{53}{section.8.4}
-\contentsline {subsection}{\numberline {8.4.1}Relationship between PCA and SVD}{55}{subsection.8.4.1}
-\contentsline {subsection}{\numberline {8.4.2}Tracking Principal Components over Time}{55}{subsection.8.4.2}
-\contentsline {section}{\numberline {8.5}$\mathbf {X}=\mathbf {W}\mathbf {H}$ Non-Negative Matrix Factorization}{55}{section.8.5}
+\contentsline {subsection}{\numberline {7.1.1}The Normal Equations, Analytical Least Squares Estimator}{49}{subsection.7.1.1}
+\contentsline {subsection}{\numberline {7.1.2}The Quick Way to $\mathbf {\mathaccentV {hat}05E{\beta }}$}{49}{subsection.7.1.2}
+\contentsline {subsection}{\numberline {7.1.3}The Long Way to $\mathbf {\mathaccentV {hat}05E{\beta }}$}{50}{subsection.7.1.3}
+\contentsline {subsection}{\numberline {7.1.4}Projection Matrix}{50}{subsection.7.1.4}
+\contentsline {subsection}{\numberline {7.1.5}Bayesian Perspective on Least Squares Regression}{51}{subsection.7.1.5}
+\contentsline {subsection}{\numberline {7.1.6}Q-plots}{51}{subsection.7.1.6}
+\contentsline {subsection}{\numberline {7.1.7}Variance Inflation Factor}{51}{subsection.7.1.7}
+\contentsline {section}{\numberline {7.2}Ridge Regression}{51}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}Analytical Ridge Estimator}{51}{subsection.7.2.1}
+\contentsline {subsection}{\numberline {7.2.2}Bayesian Perspective on Ridge Regression}{51}{subsection.7.2.2}
+\contentsline {chapter}{\numberline {8}Unsupervised Learning}{53}{chapter.8}
+\contentsline {section}{\numberline {8.1}Blind Source Separation}{53}{section.8.1}
+\contentsline {section}{\numberline {8.2}Independent Component Analysis}{53}{section.8.2}
+\contentsline {section}{\numberline {8.3}Eigenanalysis, Singular Value Decomposition of Data Matrices}{53}{section.8.3}
+\contentsline {subsection}{\numberline {8.3.1}Example: Eigenfaces and Facial Recognition}{54}{subsection.8.3.1}
+\contentsline {subsection}{\numberline {8.3.2}Tracking an Eigensystem over Time}{55}{subsection.8.3.2}
+\contentsline {subsubsection}{\numberline {8.3.2.1}Heuristic Method}{55}{subsubsection.8.3.2.1}
+\contentsline {subsubsection}{\numberline {8.3.2.2}Consistent Method}{55}{subsubsection.8.3.2.2}
+\contentsline {subsubsection}{\numberline {8.3.2.3}Rank Order Changes}{55}{subsubsection.8.3.2.3}
+\contentsline {subsection}{\numberline {8.3.3}Bayesian SVD}{55}{subsection.8.3.3}
+\contentsline {section}{\numberline {8.4}Principal Component Analysis (PCA)}{55}{section.8.4}
+\contentsline {subsection}{\numberline {8.4.1}Relationship between PCA and SVD}{57}{subsection.8.4.1}
+\contentsline {subsection}{\numberline {8.4.2}Tracking Principal Components over Time}{57}{subsection.8.4.2}
+\contentsline {section}{\numberline {8.5}$\mathbf {X}=\mathbf {W}\mathbf {H}$ Non-Negative Matrix Factorization}{58}{section.8.5}
 \contentsfinish 

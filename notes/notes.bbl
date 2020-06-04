@@ -36,10 +36,10 @@ Gera, R.  \harvardyearleft 2009\harvardyearright , `Numerical linear algebra
   lecture notes, chapter 7'.
 \newline\harvardurl{\url{http://faculty.nps.edu/rgera/MA3042/2009/ch7.4.pdf}}
 
-\harvarditem{Gillis}{2014}{gillis2014and}
+\harvarditem{Gillis}{2014}{gillis2014nonnegative}
 Gillis, N.  \harvardyearleft 2014\harvardyearright , `The why and how of
-  nonnegative matrix factorization', {\em Regularization, optimization,
-  kernels, and support vector machines} {\bf 12}(257),~257--291.
+  nonnegative matrix factorization'.
+\newline\harvardurl{\url{https://arxiv.org/abs/1401.5226}}
 
 \harvarditem{Kronenburg}{2011}{kronenburg2011binomial}
 Kronenburg, M.  \harvardyearleft 2011\harvardyearright , `The binomial
@@ -50,5 +50,9 @@ Kronenburg, M.  \harvardyearleft 2011\harvardyearright , `The binomial
 Mathworks  \harvardyearleft n/a\harvardyearright , `Eigenvalue and singular
   value decompositions'.
 \newline\harvardurl{\url{https://www.mathworks.com/content/dam/mathworks/mathworks-dot-com/moler/eigs.pdf}}
+
+\harvarditem{Software}{n/a}{ncssridgeregression}
+Software, N.~S.  \harvardyearleft n/a\harvardyearright , `Ridge regression'.
+\newline\harvardurl{\url{https://ncss-wpengine.netdna-ssl.com/wp-content/themes/ncss/pdf/Procedures/NCSS/Ridge_Regression.pdf}}
 
 \end{thebibliography}

@@ -1,0 +1,28 @@
+\section{Linear Systems of Equations}
+\label{sec:linearequations}
+
+(Real numbers only this time.)
+
+Linear equations are of the form $Ax = b$ where $A$ is a matrix and $x$ and $b$ are vectors. The rows of $A$ and $b$ form a system of equations that must be simultaneously satisfied by the entries of $x$. If $x,b\in\mathbb{R}^n$, then the solutions to the equation of a single row corresponds to an $n-1$-dimensional hyperplane. If the rows of $A$ are linearly independent, then solutions that that simultaneously satisfy the equations in $k$-rows correspond to the $n-k$-dimensional intersection of $k$ $n$-dimensional hyperplanes. The solution of $x$ that satisfies all $n$ equations is a $n-n = 0$-dimensional point, and so $x$ is uniquely determined. If any two rows of $A$ are not linearly independent, then the hyperplanes that correspond to values of $x$ that satisfy them overlap exactly, and their intersection is $n$ dimensional, rather than $n-1$ dimensional. In this case, the value of $x$ that satisfies all rows of $A$ is not narrowed down to a single point. The system of equations is said to be *underdetermined*:. This is equivalently the case when $A$ has $m<n$ rows.  
+
+\subsection{$A\in\mathbb{R}^{n\times n}$ Square Matrices}
+If $A\in\mathbb{R}^{nxn}$, then the solution to the system is formally $x = A^{-1}b$, where $A^{-1}$ is the matrix inverse, satisfying $A^{-1}A=I$, where $I$ is the identity matrix. 
+
+Since $Ax=b$ is the same as expressing $b$ in terms of a linear combination of the columns of $A$, the entries of $x$ can be interpreted as the coefficients resulting from the projection of $b$ into the column space of $A$. Therefore, for an orthonormal matrix, the $A^-1$ is simply $A^T$ 
+
+\subsection{$A\in\mathbb{R}^{m\times n}$ Rectangular Matrices, Overdetermined Case}
+If $A\in\mathbb{R}^{mxn}$ with $m>n$ rows, then there need not be any point $x\in\mathbb{R}^n$ in which the $m$ hyperplanes all intersect. In that case, the system does not have a solution $x\in\mathbb{R}^n$, and the system is considered *overdetermined*. (The intersection of $m$ distinct hyperplanes in $n$ dimensional space would have negative dimension $(n-m)<0$ if $m>n$, which my feeble brain can't make sense of.)
+\\
+
+In the overdetermined case $A^{mxn}$ with $m>n$, the columns of $A$ do not span $\mathbb{R}^m$ and therefore $b\in\mathbb{R}^m$ may have some component $\epsilon$ that lies outside of the column space of $A$. In that case, no linear combination $x$ of the columns of $A$ can express $b$ perfectly, but we might look for approximate solutions $\hat{x}$ so that:
+
+\begin{equation}
+A\hat{x} + \epsilon = b
+\end{equation}
+
+So that the error $||\epsilon||_{\alpha}$ is minimized. This is the starting point for linear regression from the linear algebra perspective. In practice, the approximation is usually approximated by applying an iterative gradient descent algorithm to minimize the \textit{loss function} $||\epsilon||_{\alpha}$. The choice of metric $||\cdot||_{\alpha}$ is essentially a design choice. For $\alpha=2$, the metric is the $L^2$ norm (cf. section \ref{sec:l2norm}) and an analytic solution exists, named the \textit{normal equations}. The solution minimizes the least squares error and corresponds to the projection of $\mathbf{b}$ into the column space of $a$. The procedure is better known as ordinary least squares regression and therefore I will move a more elaborate discussion to chapter \ref{chap:linearregression}.
+
+
+
+\subsection{$A\in\mathbb{R}^{n\times m}$ Rectangular Matrices, Underdetermined Case}
+For an underdetermined system with $m<n$, there is either no solution (if the $m$ hyperplanes don't intersect), or there are infinitely many possible solutions that lie on an $n-m$ dimensional hyperplane. One idea is to pick the solution that minimizes $||\hat{x}||_2$ based on the idea that it might generalize better. The least norm solution is $\hat{x} = A^T\left(AAT\right)^{-1}b$, which is the projection of $\vec{0}$ on the solution set.
