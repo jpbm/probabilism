@@ -21,3 +21,11 @@ The drawback is that NNMF is computationally more difficult (possibly NP hard), 
     \caption{Left: The first 34 basis faces stored in the $\mathbf{W}$ matrix extracted using NNMF under Frobenius norm from the "Labeled Faces in the Wild" Dataset. The basis images are normalized and shown on a log scale because they have very different contrast and brightness. The normalized images are then all shown on the same color scale. Right: Five sample portraits from the dataset approximated using different numbers of basis faces. The NNMF was done for a value of $r=300$. The original portraits had $2914$ pixels. In contrast to SVD, the basis vectors obtained through NNMF do not necessarily have an internal ordering in terms of how much of the variance in the dataset they explain.}
     \label{fig:nnmf_eigenfaces}
 \end{figure}
+
+
+\begin{figure}
+\centering
+    \includegraphics[width=\textwidth]{nnmf_eigenfaces2.png}
+    \caption{Left: The first 6 basis faces stored in the $\mathbf{W}$ matrix extracted using NNMF under Frobenius norm from the "Labeled Faces in the Wild" Dataset. Right: Sample images expressed in the reduced basis.}
+    \label{fig:nnmf_eigenfaces2}
+\end{figure}

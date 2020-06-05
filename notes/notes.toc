@@ -161,81 +161,89 @@
 \contentsline {subsection}{\numberline {2.12.5}Hessian}{36}{subsection.2.12.5}
 \contentsline {subsubsection}{\numberline {2.12.5.1}Testing Convexity}{36}{subsubsection.2.12.5.1}
 \contentsline {chapter}{\numberline {3}Probability}{37}{chapter.3}
-\contentsline {section}{\numberline {3.1}Measure Theory}{37}{section.3.1}
-\contentsline {section}{\numberline {3.2}Functions of Random Variables, Derived Distributions}{37}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Example: Sum of Random Variables}{38}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Example: Lower Dimensional Random Variable}{38}{subsection.3.2.2}
-\contentsline {section}{\numberline {3.3}Indicator Variables}{39}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Example: The Party Problem}{39}{subsection.3.3.1}
-\contentsline {subsubsection}{\numberline {3.3.1.1}Lame Interview Question 1: Every one finds their coat}{39}{subsubsection.3.3.1.1}
-\contentsline {subsubsection}{\numberline {3.3.1.2}Lame Interview Question 2: At least r people find their coat}{39}{subsubsection.3.3.1.2}
-\contentsline {subsubsection}{\numberline {3.3.1.3}Not lame: Exactly r people find their coat}{40}{subsubsection.3.3.1.3}
-\contentsline {section}{\numberline {3.4}Copulas}{42}{section.3.4}
-\contentsline {section}{\numberline {3.5}Relationships Between Distributions}{42}{section.3.5}
-\contentsline {section}{\numberline {3.6}Large Deviation Theory}{42}{section.3.6}
-\contentsline {subsection}{\numberline {3.6.1}Gaertner-Ellis Theorem}{42}{subsection.3.6.1}
-\contentsline {subsection}{\numberline {3.6.2}Example: Sum of Uniform Random Variables}{42}{subsection.3.6.2}
-\contentsline {chapter}{\numberline {4}Information Theory}{43}{chapter.4}
-\contentsline {section}{\numberline {4.1}Entropy}{43}{section.4.1}
-\contentsline {section}{\numberline {4.2}Mutual Information}{43}{section.4.2}
-\contentsline {section}{\numberline {4.3}Kullback-Leibler Divergence}{43}{section.4.3}
-\contentsline {chapter}{\numberline {5}Stochastic Processes and Time Series Analysis}{45}{chapter.5}
-\contentsline {section}{\numberline {5.1}Markov Chains}{45}{section.5.1}
-\contentsline {section}{\numberline {5.2}Martingales}{45}{section.5.2}
-\contentsline {section}{\numberline {5.3}Hidden Markov Models}{45}{section.5.3}
-\contentsline {section}{\numberline {5.4}Ito Calculus}{45}{section.5.4}
-\contentsline {chapter}{\numberline {6}Statistics}{47}{chapter.6}
-\contentsline {section}{\numberline {6.1}Directional Statistics}{47}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}Mean Direction}{47}{subsection.6.1.1}
-\contentsline {subsection}{\numberline {6.1.2}Dispersion}{47}{subsection.6.1.2}
-\contentsline {section}{\numberline {6.2}Features}{48}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Dense Features, Sparse Features}{48}{subsection.6.2.1}
-\contentsline {section}{\numberline {6.3}Multicollinearity}{48}{section.6.3}
-\contentsline {subsubsection}{\numberline {6.3.0.1}Detection}{48}{subsubsection.6.3.0.1}
-\contentsline {subparagraph}{Scatter Plots}{48}{subparagraph*.56}
-\contentsline {subparagraph}{Variance Inflation Factors (VIF)}{48}{subparagraph*.57}
-\contentsline {subparagraph}{Eigenvalues of the Correlation Matrix}{48}{subparagraph*.58}
-\contentsline {subparagraph}{Regression Coefficients}{48}{subparagraph*.59}
-\contentsline {subsection}{\numberline {6.3.1}Sources}{48}{subsection.6.3.1}
-\contentsline {subparagraph}{Data Collection}{48}{subparagraph*.60}
-\contentsline {subparagraph}{Physical Constraints}{48}{subparagraph*.61}
-\contentsline {subparagraph}{Over-defined Model}{48}{subparagraph*.62}
-\contentsline {subparagraph}{Model Choice or Specification}{48}{subparagraph*.63}
-\contentsline {subparagraph}{Outliers}{49}{subparagraph*.64}
-\contentsline {subsubsection}{\numberline {6.3.1.1}Remedies}{49}{subsubsection.6.3.1.1}
-\contentsline {subparagraph}{Dimensionality Reduction}{49}{subparagraph*.65}
-\contentsline {subparagraph}{Regularization}{49}{subparagraph*.66}
-\contentsline {section}{\numberline {6.4}$R^2$ Value}{49}{section.6.4}
-\contentsline {section}{\numberline {6.5}Regression Diagnostics}{49}{section.6.5}
-\contentsline {section}{\numberline {6.6}t-Statistics}{49}{section.6.6}
-\contentsline {section}{\numberline {6.7}AIC and BIC}{49}{section.6.7}
-\contentsline {section}{\numberline {6.8}Factor Regression}{49}{section.6.8}
-\contentsline {section}{\numberline {6.9}Factor Models}{49}{section.6.9}
-\contentsline {chapter}{\numberline {7}Linear Regression}{51}{chapter.7}
-\contentsline {section}{\numberline {7.1}Ordinary Least Squares Regression}{51}{section.7.1}
-\contentsline {subsection}{\numberline {7.1.1}The Normal Equations, Analytical Least Squares Estimator}{51}{subsection.7.1.1}
-\contentsline {subsection}{\numberline {7.1.2}The Quick Way to $\mathbf {\mathaccentV {hat}05E{\beta }}$}{52}{subsection.7.1.2}
-\contentsline {subsection}{\numberline {7.1.3}The Long Way to $\mathbf {\mathaccentV {hat}05E{\beta }}$}{52}{subsection.7.1.3}
-\contentsline {subsection}{\numberline {7.1.4}Projection Matrix}{52}{subsection.7.1.4}
-\contentsline {subsection}{\numberline {7.1.5}Bayesian Perspective on Least Squares Regression}{53}{subsection.7.1.5}
-\contentsline {subsection}{\numberline {7.1.6}Q-plots}{53}{subsection.7.1.6}
-\contentsline {subsection}{\numberline {7.1.7}Variance Inflation Factor}{53}{subsection.7.1.7}
-\contentsline {section}{\numberline {7.2}Ridge Regression}{53}{section.7.2}
-\contentsline {subsection}{\numberline {7.2.1}Analytical Ridge Estimator}{53}{subsection.7.2.1}
-\contentsline {subsection}{\numberline {7.2.2}Bayesian Perspective on Ridge Regression}{53}{subsection.7.2.2}
-\contentsline {chapter}{\numberline {8}Bayesian Data Analysis}{55}{chapter.8}
-\contentsline {chapter}{\numberline {9}Unsupervised Learning}{57}{chapter.9}
-\contentsline {section}{\numberline {9.1}Blind Source Separation}{57}{section.9.1}
-\contentsline {section}{\numberline {9.2}Independent Component Analysis}{57}{section.9.2}
-\contentsline {section}{\numberline {9.3}Eigenanalysis, Singular Value Decomposition of Data Matrices}{57}{section.9.3}
-\contentsline {subsection}{\numberline {9.3.1}Example: Eigenfaces and Facial Recognition}{58}{subsection.9.3.1}
-\contentsline {subsection}{\numberline {9.3.2}Tracking an Eigensystem over Time}{59}{subsection.9.3.2}
-\contentsline {subsubsection}{\numberline {9.3.2.1}Heuristic Method}{59}{subsubsection.9.3.2.1}
-\contentsline {subsubsection}{\numberline {9.3.2.2}Consistent Method}{59}{subsubsection.9.3.2.2}
-\contentsline {subsubsection}{\numberline {9.3.2.3}Rank Order Changes}{59}{subsubsection.9.3.2.3}
-\contentsline {subsection}{\numberline {9.3.3}Bayesian SVD}{59}{subsection.9.3.3}
-\contentsline {section}{\numberline {9.4}Principal Component Analysis (PCA)}{59}{section.9.4}
-\contentsline {subsection}{\numberline {9.4.1}Relationship between PCA and SVD}{61}{subsection.9.4.1}
-\contentsline {subsection}{\numberline {9.4.2}Tracking Principal Components over Time}{61}{subsection.9.4.2}
-\contentsline {section}{\numberline {9.5}$\mathbf {X}=\mathbf {W}\mathbf {H}$ Non-Negative Matrix Factorization}{62}{section.9.5}
+\contentsline {section}{\numberline {3.1}Interpretations and Definitions of Probability}{37}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Naive and Non-Naive Definitions of Probability}{37}{subsection.3.1.1}
+\contentsline {subsubsection}{\numberline {3.1.1.1}Naive Probability}{37}{subsubsection.3.1.1.1}
+\contentsline {subsubsection}{\numberline {3.1.1.2}Non-Naive Definition of Probability}{37}{subsubsection.3.1.1.2}
+\contentsline {subsection}{\numberline {3.1.2}Frequentist Probability}{38}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}Bayesian Probability}{38}{subsection.3.1.3}
+\contentsline {subsection}{\numberline {3.1.4}Measure Theoretic Probability}{38}{subsection.3.1.4}
+\contentsline {section}{\numberline {3.2}Measure Theory}{38}{section.3.2}
+\contentsline {section}{\numberline {3.3}Functions of Random Variables, Derived Distributions}{38}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Example: Sum of Random Variables}{39}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Example: Lower Dimensional Random Variable}{40}{subsection.3.3.2}
+\contentsline {section}{\numberline {3.4}Indicator Variables}{40}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Example: The Party Problem}{41}{subsection.3.4.1}
+\contentsline {subsubsection}{\numberline {3.4.1.1}Lame Interview Question 1: Every one finds their coat}{41}{subsubsection.3.4.1.1}
+\contentsline {subsubsection}{\numberline {3.4.1.2}Lame Interview Question 2: At least r people find their coat}{41}{subsubsection.3.4.1.2}
+\contentsline {subsubsection}{\numberline {3.4.1.3}Not lame: Exactly r people find their coat}{41}{subsubsection.3.4.1.3}
+\contentsline {section}{\numberline {3.5}Copulas}{44}{section.3.5}
+\contentsline {section}{\numberline {3.6}Relationships Between Distributions}{44}{section.3.6}
+\contentsline {section}{\numberline {3.7}Large Deviation Theory}{44}{section.3.7}
+\contentsline {subsection}{\numberline {3.7.1}Gaertner-Ellis Theorem}{44}{subsection.3.7.1}
+\contentsline {subsection}{\numberline {3.7.2}Example: Sum of Uniform Random Variables}{44}{subsection.3.7.2}
+\contentsline {chapter}{\numberline {4}Information Theory}{45}{chapter.4}
+\contentsline {section}{\numberline {4.1}Entropy}{45}{section.4.1}
+\contentsline {section}{\numberline {4.2}Mutual Information}{45}{section.4.2}
+\contentsline {section}{\numberline {4.3}Kullback-Leibler Divergence}{45}{section.4.3}
+\contentsline {chapter}{\numberline {5}Stochastic Processes and Time Series Analysis}{47}{chapter.5}
+\contentsline {section}{\numberline {5.1}Markov Chains}{47}{section.5.1}
+\contentsline {section}{\numberline {5.2}Martingales}{47}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Martingale Convergence Theorem}{47}{subsection.5.2.1}
+\contentsline {section}{\numberline {5.3}Hidden Markov Models}{47}{section.5.3}
+\contentsline {section}{\numberline {5.4}Ito Calculus}{47}{section.5.4}
+\contentsline {chapter}{\numberline {6}Statistics}{49}{chapter.6}
+\contentsline {section}{\numberline {6.1}Directional Statistics}{49}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Mean Direction}{49}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Dispersion}{49}{subsection.6.1.2}
+\contentsline {section}{\numberline {6.2}Features}{50}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Dense Features, Sparse Features}{50}{subsection.6.2.1}
+\contentsline {section}{\numberline {6.3}Multicollinearity}{50}{section.6.3}
+\contentsline {subsubsection}{\numberline {6.3.0.1}Detection}{50}{subsubsection.6.3.0.1}
+\contentsline {subparagraph}{Scatter Plots}{50}{subparagraph*.56}
+\contentsline {subparagraph}{Variance Inflation Factors (VIF)}{50}{subparagraph*.57}
+\contentsline {subparagraph}{Eigenvalues of the Correlation Matrix}{50}{subparagraph*.58}
+\contentsline {subparagraph}{Regression Coefficients}{50}{subparagraph*.59}
+\contentsline {subsection}{\numberline {6.3.1}Sources}{50}{subsection.6.3.1}
+\contentsline {subparagraph}{Data Collection}{50}{subparagraph*.60}
+\contentsline {subparagraph}{Physical Constraints}{50}{subparagraph*.61}
+\contentsline {subparagraph}{Over-defined Model}{50}{subparagraph*.62}
+\contentsline {subparagraph}{Model Choice or Specification}{50}{subparagraph*.63}
+\contentsline {subparagraph}{Outliers}{51}{subparagraph*.64}
+\contentsline {subsubsection}{\numberline {6.3.1.1}Remedies}{51}{subsubsection.6.3.1.1}
+\contentsline {subparagraph}{Dimensionality Reduction}{51}{subparagraph*.65}
+\contentsline {subparagraph}{Regularization}{51}{subparagraph*.66}
+\contentsline {section}{\numberline {6.4}$R^2$ Value}{51}{section.6.4}
+\contentsline {section}{\numberline {6.5}Regression Diagnostics}{51}{section.6.5}
+\contentsline {section}{\numberline {6.6}t-Statistics}{51}{section.6.6}
+\contentsline {section}{\numberline {6.7}AIC and BIC}{51}{section.6.7}
+\contentsline {section}{\numberline {6.8}Factor Regression}{51}{section.6.8}
+\contentsline {section}{\numberline {6.9}Factor Models}{51}{section.6.9}
+\contentsline {chapter}{\numberline {7}Linear Regression}{53}{chapter.7}
+\contentsline {section}{\numberline {7.1}Ordinary Least Squares Regression}{53}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}The Normal Equations, Analytical Least Squares Estimator}{53}{subsection.7.1.1}
+\contentsline {subsection}{\numberline {7.1.2}The Quick Way to $\mathbf {\mathaccentV {hat}05E{\beta }}$}{54}{subsection.7.1.2}
+\contentsline {subsection}{\numberline {7.1.3}The Long Way to $\mathbf {\mathaccentV {hat}05E{\beta }}$}{54}{subsection.7.1.3}
+\contentsline {subsection}{\numberline {7.1.4}Projection Matrix}{54}{subsection.7.1.4}
+\contentsline {subsection}{\numberline {7.1.5}Bayesian Perspective on Least Squares Regression}{55}{subsection.7.1.5}
+\contentsline {subsection}{\numberline {7.1.6}Q-plots}{55}{subsection.7.1.6}
+\contentsline {subsection}{\numberline {7.1.7}Variance Inflation Factor}{55}{subsection.7.1.7}
+\contentsline {section}{\numberline {7.2}Ridge Regression}{55}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}Analytical Ridge Estimator}{55}{subsection.7.2.1}
+\contentsline {subsection}{\numberline {7.2.2}Bayesian Perspective on Ridge Regression}{55}{subsection.7.2.2}
+\contentsline {chapter}{\numberline {8}Bayesian Data Analysis}{57}{chapter.8}
+\contentsline {chapter}{\numberline {9}Unsupervised Learning}{59}{chapter.9}
+\contentsline {section}{\numberline {9.1}Blind Source Separation}{59}{section.9.1}
+\contentsline {section}{\numberline {9.2}Independent Component Analysis}{59}{section.9.2}
+\contentsline {section}{\numberline {9.3}Eigenanalysis, Singular Value Decomposition of Data Matrices}{59}{section.9.3}
+\contentsline {subsection}{\numberline {9.3.1}Example: Eigenfaces and Facial Recognition}{60}{subsection.9.3.1}
+\contentsline {subsection}{\numberline {9.3.2}Tracking an Eigensystem over Time}{61}{subsection.9.3.2}
+\contentsline {subsubsection}{\numberline {9.3.2.1}Heuristic Method}{61}{subsubsection.9.3.2.1}
+\contentsline {subsubsection}{\numberline {9.3.2.2}Consistent Method}{61}{subsubsection.9.3.2.2}
+\contentsline {subsubsection}{\numberline {9.3.2.3}Rank Order Changes}{61}{subsubsection.9.3.2.3}
+\contentsline {subsection}{\numberline {9.3.3}Bayesian SVD}{61}{subsection.9.3.3}
+\contentsline {section}{\numberline {9.4}Principal Component Analysis (PCA)}{61}{section.9.4}
+\contentsline {subsection}{\numberline {9.4.1}Relationship between PCA and SVD}{63}{subsection.9.4.1}
+\contentsline {subsection}{\numberline {9.4.2}Tracking Principal Components over Time}{63}{subsection.9.4.2}
+\contentsline {section}{\numberline {9.5}$\mathbf {X}=\mathbf {W}\mathbf {H}$ Non-Negative Matrix Factorization}{64}{section.9.5}
 \contentsfinish 
