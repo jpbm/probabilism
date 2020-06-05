@@ -7,33 +7,7 @@
 
 
 
-\section{Multi-Index Notation}
-Multi-index notation makes high-dimensional things faster and easier. A collection is indices is represented by a tuple $\alpha = \left(\alpha_1,\alpha_2,\alpha_3,... \right)$. The absolute value $|\alpha| = \sum_i \alpha$, partial derivatives $\partial^\alpha = \prod \partial^{\alpha_i}$, powers $\mathbf{x}^\alpha = \prod_i x_i^{\alpha_i}$.
-
-\subsection{Example: Multinomial Coefficients}	
-
-Instead of:
-\begin{equation}
-\sum_{0\leq i_1,i_2,i_3,...,i_k \leq n} {n \choose i_1,i_2,i_3,...,i_k} 
-\end{equation}
-
-Write:
-
-\begin{equation}	
-\sum_{0\leq |\alpha|\leq n}{n \choose \alpha}
-\end{equation}
-
-\subsection{Example: Taylor Expansion}
-
-For a vector valued function $\mathbf{f}: \mathbb{R}^n \rightarrow \mathbb{R}^m$ that is analytical in a neighborhood of the point $\mathbf{a}$:
-
-\begin{equation}
-f(\mathbf{x}) = \sum_{|\alpha|\geq0} \frac{(\mathbf{x} - \mathbf{a})^\alpha}{\alpha!}(\partial^\alpha)f
-\end{equation}
-
-
-
-
+\input{./chapters/sections/linalg_multiindex.tex}
 \input{./chapters/sections/linalg_linearequations.tex}
 \input{./chapters/sections/linalg_cholesky.tex}
 

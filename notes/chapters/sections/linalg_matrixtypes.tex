@@ -78,6 +78,9 @@ There are many properties of Hermitian matrices.
 
 Hermitian matrices with only real entries are called symmetric matrices. In that case $\mathbf{A}^T = \mathbf{A}$.
 
+Hermitian matrices can only have real elements along their diagonal. 
+
+
 
 % Skew Hermitian / Skew Symmetric
 \subsection{$\mathbf{A}^{\dagger} = -\mathbf{A}$ Skew Hermitian, Skew Symmetric}
@@ -92,6 +95,24 @@ Real matrices that are skew Hermitian are called skew symmetric. In that case:
 \begin{equation}
 \mathbf{A}^T = -\mathbf{A} 
 \end{equation}
+
+
+Skew Hermitian matrices can only have complex values on their diagonal, and skew symmetric matrices can only have zeros as diagonal elements.
+
+
+
+
+% Involutory
+\subsection{$\mathbf{A}\mathbf{A}=\mathbf{I}$ Involutory}
+Involutory matrixes are matrices that are their own inverse, so that:
+
+\begin{equation}
+\mathbf{A}\mathbf{A}=\mathbf{I}
+\end{equation}
+
+Involutory matrices are all square roots of the identity matrix. A famous example are the $2\times 2$ Pauli matrices. 
+
+
 
 
 % Unitary / Orthogonal
@@ -111,13 +132,3 @@ The set of $n \times n$ orthogonal matrices is known as the orthogonal group $O(
 Two matrices are said to be similar if they can be related through a similarity transformation  $\mathbf{A} = \mathbf{TBT^{-1}}$ where $\mathbf{T}$ is some nonsingular matrix (cf. section \ref{sec:similaritytrans}). An important example is that square matrices are similar to diagonal matrices, see section \ref{sec:diagonalization}. 
    
 
-
-% Involutory
-\subsection{$\mathbf{A}\mathbf{A}=\mathbf{I}$ Involutory}
-Involutory matrixes are matrices that are their own inverse, so that:
-
-\begin{equation}
-\mathbf{A}\mathbf{A}=\mathbf{I}
-\end{equation}
-
-Involutory matrices are all square roots of the identity matrix. A famous example are the $2\times 2$ Pauli matrices. 
