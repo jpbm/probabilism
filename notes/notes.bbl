@@ -15,6 +15,11 @@ Bogart, K.~P.  \harvardyearleft 2004\harvardyearright , {\em Combinatorics
   through guided discovery}, Kenneth P. Bogart.
 \newline\harvardurl{\url{https://bogart.openmathbooks.org/}}
 
+\harvarditem{Bradley}{n/a}{stanfordsetnotation}
+Bradley, A.~R.  \harvardyearleft n/a\harvardyearright , `Notes on sets and
+  multisets'.
+\newline\harvardurl{\url{http://theory.stanford.edu/~arbrad/pivc/sets.pdf}}
+
 \harvarditem{Colyer}{2019}{morningpaper2019nnmf}
 Colyer, A.  \harvardyearleft 2019\harvardyearright , `The why and how of
   nonnegative matrix factorization'.
@@ -54,5 +59,10 @@ Mathworks  \harvardyearleft n/a\harvardyearright , `Eigenvalue and singular
 \harvarditem{Software}{n/a}{ncssridgeregression}
 Software, N.~S.  \harvardyearleft n/a\harvardyearright , `Ridge regression'.
 \newline\harvardurl{\url{https://ncss-wpengine.netdna-ssl.com/wp-content/themes/ncss/pdf/Procedures/NCSS/Ridge_Regression.pdf}}
+
+\harvarditem{Wilf}{2013}{wilf2013generating}
+Wilf, H.~S.  \harvardyearleft 2013\harvardyearright , {\em Generating
+  functionology}, Elsevier.
+\newline\harvardurl{\url{https://www.math.upenn.edu/~wilf/gfology2.pdf}}
 
 \end{thebibliography}

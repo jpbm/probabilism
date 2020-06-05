@@ -1,249 +1,268 @@
-\contentsline {chapter}{\numberline {1}Combinatorics}{7}{chapter.1}
-\contentsline {section}{\numberline {1.1}Sets}{7}{section.1.1}
-\contentsline {subsection}{\numberline {1.1.1}Set Operations}{7}{subsection.1.1.1}
-\contentsline {subsection}{\numberline {1.1.2}Common Sets}{7}{subsection.1.1.2}
-\contentsline {subsection}{\numberline {1.1.3}DeMorgan's Rules}{7}{subsection.1.1.3}
-\contentsline {subsection}{\numberline {1.1.4}Inclusion - Exclusion Principle}{8}{subsection.1.1.4}
-\contentsline {subsubsection}{\numberline {1.1.4.1}Example: n=2 Sets and n=3 Sets}{8}{subsubsection.1.1.4.1}
-\contentsline {subparagraph}{n=2}{8}{subparagraph*.2}
-\contentsline {subparagraph}{n=3}{8}{subparagraph*.3}
-\contentsline {subsubsection}{\numberline {1.1.4.2}Example: Counting Integers}{8}{subsubsection.1.1.4.2}
-\contentsline {section}{\numberline {1.2}Combinatorial Identities and Expansions}{8}{section.1.2}
-\contentsline {subsection}{\numberline {1.2.1}Binomial Coefficients and Binomial Expansions}{8}{subsection.1.2.1}
-\contentsline {subsubsection}{\numberline {1.2.1.1}Derivation of the Binomial Theorem for a Negative Exponent}{9}{subsubsection.1.2.1.1}
-\contentsline {subsubsection}{\numberline {1.2.1.2}Derivation of the Binomial Theorem for a Fractional Exponent}{9}{subsubsection.1.2.1.2}
-\contentsline {subsection}{\numberline {1.2.2}Multinomial Expansion}{10}{subsection.1.2.2}
-\contentsline {subsection}{\numberline {1.2.3}Unnamed Polynomial Identity}{10}{subsection.1.2.3}
-\contentsline {subsection}{\numberline {1.2.4}Factorial Expansion}{10}{subsection.1.2.4}
-\contentsline {subsection}{\numberline {1.2.5}Stirling Numbers of the Second Kind}{11}{subsection.1.2.5}
-\contentsline {section}{\numberline {1.3}Distributions: The Twentyfold Way}{11}{section.1.3}
-\contentsline {subparagraph}{Favorite Teachers}{12}{subparagraph*.4}
-\contentsline {subparagraph}{Assembling a Team}{12}{subparagraph*.5}
-\contentsline {subsection}{\numberline {1.3.1}Distinct Objects}{13}{subsection.1.3.1}
-\contentsline {subsubsection}{\numberline {1.3.1.1}Distinct Recipients}{13}{subsubsection.1.3.1.1}
-\contentsline {subparagraph}{Pool Balls into Labeled Buckets}{13}{subparagraph*.6}
-\contentsline {subparagraph}{Functions}{13}{subparagraph*.7}
-\contentsline {subparagraph}{Binary Strings of Length $k$}{13}{subparagraph*.8}
-\contentsline {subparagraph}{Subsets of a $k$-Element Set}{13}{subparagraph*.9}
-\contentsline {subsubsection}{\numberline {1.3.1.2}Indistinct Recipients}{13}{subsubsection.1.3.1.2}
-\contentsline {subparagraph}{Pool Balls into Unlabeled Bags}{13}{subparagraph*.10}
-\contentsline {subsection}{\numberline {1.3.2}Distinct Objects, Every Recipient Receives At Most One}{13}{subsection.1.3.2}
-\contentsline {subsubsection}{\numberline {1.3.2.1}Distinct Recipients}{13}{subsubsection.1.3.2.1}
-\contentsline {subparagraph}{At Most One Pool Ball into Labeled Buckets}{14}{subparagraph*.11}
-\contentsline {subparagraph}{One-to-One Functions}{14}{subparagraph*.12}
-\contentsline {subparagraph}{k-element Permutations of $n$ elements}{14}{subparagraph*.13}
-\contentsline {subparagraph}{Books on a Shelf}{14}{subparagraph*.14}
-\contentsline {subsubsection}{\numberline {1.3.2.2}Indistinct Recipients}{14}{subsubsection.1.3.2.2}
-\contentsline {subparagraph}{At Most One Pool Ball into Unlabeled Bags}{14}{subparagraph*.15}
-\contentsline {subparagraph}{Distributing Candy}{14}{subparagraph*.16}
-\contentsline {subsection}{\numberline {1.3.3}Distinct Objects, Every Recipient Receives at Least One}{14}{subsection.1.3.3}
-\contentsline {subsubsection}{\numberline {1.3.3.1}Distinct Recipients}{14}{subsubsection.1.3.3.1}
-\contentsline {subparagraph}{At Least One Pool Ball into Labeled Buckets}{14}{subparagraph*.17}
-\contentsline {subparagraph}{Onto Functions}{14}{subparagraph*.18}
-\contentsline {subsubsection}{\numberline {1.3.3.2}Indistinct Recipients}{15}{subsubsection.1.3.3.2}
-\contentsline {subparagraph}{At Least One Pool Ball into Unlabeled Bags}{15}{subparagraph*.19}
-\contentsline {subsection}{\numberline {1.3.4}Distinct Objects, Every Recipient Receives Exactly One}{15}{subsection.1.3.4}
-\contentsline {subsubsection}{\numberline {1.3.4.1}Distinct Recipients}{15}{subsubsection.1.3.4.1}
-\contentsline {subparagraph}{Exactly One Pool Ball into Each Labeled Buckets}{15}{subparagraph*.20}
-\contentsline {subparagraph}{Bijective Functions}{15}{subparagraph*.21}
-\contentsline {subparagraph}{Permutations}{15}{subparagraph*.22}
-\contentsline {subparagraph}{Unique Identifiers}{15}{subparagraph*.23}
-\contentsline {subsubsection}{\numberline {1.3.4.2}Indistinct Recipients}{15}{subsubsection.1.3.4.2}
-\contentsline {subparagraph}{Exactly One Pool Ball into Each Unlabeled Bag}{15}{subparagraph*.24}
-\contentsline {subparagraph}{Distribute without Leftovers}{15}{subparagraph*.25}
-\contentsline {subsection}{\numberline {1.3.5}Distinct Objects, Distributed in Ordered Groups}{16}{subsection.1.3.5}
-\contentsline {subsubsection}{\numberline {1.3.5.1}Distinct Recipients}{16}{subsubsection.1.3.5.1}
-\contentsline {subparagraph}{Books on Labeled Bookshelves}{16}{subparagraph*.26}
-\contentsline {subparagraph}{Ordered Functions}{16}{subparagraph*.27}
-\contentsline {subsubsection}{\numberline {1.3.5.2}Indistinct Recipients}{16}{subsubsection.1.3.5.2}
-\contentsline {subparagraph}{Books into Unlabeled Boxes}{16}{subparagraph*.28}
-\contentsline {subparagraph}{Broken Permutations $\leq n$ Parts}{16}{subparagraph*.29}
-\contentsline {subparagraph}{Books into Boxes}{17}{subparagraph*.30}
-\contentsline {subsection}{\numberline {1.3.6}Distinct Objects, Distributed in Ordered Groups of At Least One}{17}{subsection.1.3.6}
-\contentsline {subsubsection}{\numberline {1.3.6.1}Distinct Recipients}{17}{subsubsection.1.3.6.1}
-\contentsline {subparagraph}{Books on Labeled Bookshelves}{17}{subparagraph*.31}
-\contentsline {subparagraph}{Ordered Onto Functions}{17}{subparagraph*.32}
-\contentsline {subsubsection}{\numberline {1.3.6.2}Indistinct Recipients}{17}{subsubsection.1.3.6.2}
-\contentsline {subparagraph}{Books into Unlabeled Boxes}{17}{subparagraph*.33}
-\contentsline {subparagraph}{Broken Permutations $n$ parts}{17}{subparagraph*.34}
-\contentsline {subparagraph}{Books into Boxes}{17}{subparagraph*.35}
-\contentsline {subsection}{\numberline {1.3.7}Identical Objects}{17}{subsection.1.3.7}
-\contentsline {subsubsection}{\numberline {1.3.7.1}Distinct Recipients}{17}{subsubsection.1.3.7.1}
-\contentsline {subparagraph}{Ping Pong Balls into Labeled Buckets}{18}{subparagraph*.36}
-\contentsline {subparagraph}{Multisets}{18}{subparagraph*.37}
-\contentsline {subparagraph}{Integer Sums}{18}{subparagraph*.38}
-\contentsline {subparagraph}{Bosons in Degenerate States}{18}{subparagraph*.39}
-\contentsline {subsubsection}{\numberline {1.3.7.2}Indistinct Recipients}{18}{subsubsection.1.3.7.2}
-\contentsline {subparagraph}{Ping Pong Balls into Unlabeled Bags}{18}{subparagraph*.40}
-\contentsline {subparagraph}{Number Partitions}{18}{subparagraph*.41}
-\contentsline {subparagraph}{Unlabeled Multiplicities of Multisets}{18}{subparagraph*.42}
-\contentsline {subparagraph}{Boxes of Marbles}{18}{subparagraph*.43}
-\contentsline {subsection}{\numberline {1.3.8}Identical Objects, Each Receives At Most One}{18}{subsection.1.3.8}
-\contentsline {subsubsection}{\numberline {1.3.8.1}Distinct Recipients}{18}{subsubsection.1.3.8.1}
-\contentsline {subparagraph}{At Most One Ping Pong Balls into Labeled Buckets}{18}{subparagraph*.44}
-\contentsline {subparagraph}{Subsets}{18}{subparagraph*.45}
-\contentsline {subparagraph}{Set Binary Labels}{18}{subparagraph*.46}
-\contentsline {subsubsection}{\numberline {1.3.8.2}Indistinct Recipients}{19}{subsubsection.1.3.8.2}
-\contentsline {subparagraph}{At Most One Ping Pong Ball into Unlabeled Bags}{19}{subparagraph*.47}
-\contentsline {subparagraph}{Boxes}{19}{subparagraph*.48}
-\contentsline {subsection}{\numberline {1.3.9}Identical Objects, Each Receives At Least One}{19}{subsection.1.3.9}
-\contentsline {subsubsection}{\numberline {1.3.9.1}Distinct Recipients}{19}{subsubsection.1.3.9.1}
-\contentsline {subparagraph}{At Least One Ping Pong Ball into Labeled Buckets}{19}{subparagraph*.49}
-\contentsline {subparagraph}{Compositions $n$ Parts}{19}{subparagraph*.50}
-\contentsline {subsubsection}{\numberline {1.3.9.2}Indistinct Recipients}{19}{subsubsection.1.3.9.2}
-\contentsline {subparagraph}{At Least One Ping Pong Ball in Unlabeled Bags}{19}{subparagraph*.51}
-\contentsline {subparagraph}{Partitions in $n$ Parts}{19}{subparagraph*.52}
-\contentsline {subsection}{\numberline {1.3.10}Identical Objects, Each Receives Exactly One}{19}{subsection.1.3.10}
-\contentsline {subsubsection}{\numberline {1.3.10.1}Distinct Recipients}{19}{subsubsection.1.3.10.1}
-\contentsline {subparagraph}{One Ping Pong Ball into Each Labeled Bucket}{19}{subparagraph*.53}
-\contentsline {subsubsection}{\numberline {1.3.10.2}Indistinct Recipients}{20}{subsubsection.1.3.10.2}
-\contentsline {subparagraph}{One Ping Pong Ball into Each Unlabeled Bag}{20}{subparagraph*.54}
-\contentsline {section}{\numberline {1.4}Generating Functions}{20}{section.1.4}
-\contentsline {subsection}{\numberline {1.4.1}Example: Binomial Coefficients}{20}{subsection.1.4.1}
-\contentsline {subsection}{\numberline {1.4.2}Example: Basket of Goods}{20}{subsection.1.4.2}
-\contentsline {subsection}{\numberline {1.4.3}Example: Dice}{21}{subsection.1.4.3}
-\contentsline {chapter}{\numberline {2}Linear Algebra and Multivariable Calculus}{23}{chapter.2}
-\contentsline {section}{\numberline {2.1}Multi-Index Notation}{23}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}Example: Multinomial Coefficients}{24}{subsection.2.1.1}
-\contentsline {subsection}{\numberline {2.1.2}Example: Taylor Expansion}{24}{subsection.2.1.2}
-\contentsline {section}{\numberline {2.2}Linear Systems of Equations}{24}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}$A\in \mathbb {R}^{n\times n}$ Square Matrices}{24}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}$A\in \mathbb {R}^{m\times n}$ Rectangular Matrices, Overdetermined Case}{24}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {2.2.3}$A\in \mathbb {R}^{n\times m}$ Rectangular Matrices, Underdetermined Case}{25}{subsection.2.2.3}
-\contentsline {section}{\numberline {2.3}$\mathbf {A} = \mathbf {L}\mathbf {L}^{\dagger }$ Cholesky Decomposition}{25}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Creating Correlated Random Variables}{25}{subsection.2.3.1}
-\contentsline {section}{\numberline {2.4}Generalized Eigenvectors}{25}{section.2.4}
-\contentsline {section}{\numberline {2.5}$\mathbf {A} = \mathbf {V\Lambda V^{-1}}$ Spectral Theorems, Diagonalization}{25}{section.2.5}
-\contentsline {subsection}{\numberline {2.5.1}$\mathbf {A} = \mathbf {V\Lambda V}^T$ Eigendecomposition of Symmetric Matrices}{25}{subsection.2.5.1}
-\contentsline {subsection}{\numberline {2.5.2}$\mathbf {H} = \mathbf {U\Lambda U}^T$ Eigendecomposition of Hermitian Matrices}{27}{subsection.2.5.2}
-\contentsline {subsection}{\numberline {2.5.3}Eigenvalue Sensitivity and Accuracy}{27}{subsection.2.5.3}
-\contentsline {subsubsection}{\numberline {2.5.3.1}General Case}{27}{subsubsection.2.5.3.1}
-\contentsline {subsubsection}{\numberline {2.5.3.2}Hermitian Matrices}{27}{subsubsection.2.5.3.2}
-\contentsline {section}{\numberline {2.6}$\mathbf {A} = \mathbf {U\Sigma V}^{\dagger }$ Singular Value Decomposition}{27}{section.2.6}
-\contentsline {subsection}{\numberline {2.6.1}Full and Economy SVDs}{28}{subsection.2.6.1}
-\contentsline {subsection}{\numberline {2.6.2}Matrix Approximation}{28}{subsection.2.6.2}
-\contentsline {section}{\numberline {2.7}Types of Transformations}{29}{section.2.7}
-\contentsline {subsection}{\numberline {2.7.1}Similarity Transformations}{29}{subsection.2.7.1}
-\contentsline {subsection}{\numberline {2.7.2}Affine Transformations}{29}{subsection.2.7.2}
-\contentsline {subsection}{\numberline {2.7.3}Unitary Transformations}{29}{subsection.2.7.3}
-\contentsline {subsection}{\numberline {2.7.4}Multilinear Maps}{30}{subsection.2.7.4}
-\contentsline {subsection}{\numberline {2.7.5}Multilinear Forms}{30}{subsection.2.7.5}
-\contentsline {section}{\numberline {2.8}Types of Matrices}{30}{section.2.8}
-\contentsline {subsection}{\numberline {2.8.1}$\mathrm {sgn}\left (\mathbf {x}^{\dagger }\mathbf {H}\mathbf {x}\right )$ Definite}{30}{subsection.2.8.1}
-\contentsline {subsection}{\numberline {2.8.2}Triangular}{30}{subsection.2.8.2}
-\contentsline {subsection}{\numberline {2.8.3}$\mathbf {AB}-\mathbf {BA}=0$ Commuting}{30}{subsection.2.8.3}
-\contentsline {subsection}{\numberline {2.8.4}$\mathbf {AB}+\mathbf {BA}=0$ Anticommuting}{31}{subsection.2.8.4}
-\contentsline {subsection}{\numberline {2.8.5}$\mathbf {A}^{\dagger } = \mathbf {A}$ Hermitian, Symmetric}{31}{subsection.2.8.5}
-\contentsline {subsubsection}{\numberline {2.8.5.1}Properties}{31}{subsubsection.2.8.5.1}
-\contentsline {subsection}{\numberline {2.8.6}$\mathbf {A}^{\dagger } = -\mathbf {A}$ Skew Hermitian, Skew Symmetric}{31}{subsection.2.8.6}
-\contentsline {subsection}{\numberline {2.8.7}$\mathbf {A}\mathbf {A}=\mathbf {I}$ Involutory}{31}{subsection.2.8.7}
-\contentsline {subsection}{\numberline {2.8.8}$\mathbf {U}^{\dagger } = \mathbf {U}^{-1}$ Unitary, Orthogonal}{32}{subsection.2.8.8}
-\contentsline {subsection}{\numberline {2.8.9}$\mathbf {A} = \mathbf {TBT^{-1}}$ Similarity}{32}{subsection.2.8.9}
-\contentsline {section}{\numberline {2.9}Properties of Norms}{32}{section.2.9}
-\contentsline {section}{\numberline {2.10}$L^p$ Lebesgue Vector Norms}{32}{section.2.10}
-\contentsline {subsection}{\numberline {2.10.1}$L^{1}$ Taxicab / Manhattan Norm}{32}{subsection.2.10.1}
-\contentsline {subsection}{\numberline {2.10.2}$L^{2}$ Euclidian Norm}{32}{subsection.2.10.2}
-\contentsline {subsection}{\numberline {2.10.3}$L^{\infty }$ Maximum Norm}{32}{subsection.2.10.3}
-\contentsline {subsection}{\numberline {2.10.4}$L^{-\infty }$ Minimum Norm}{32}{subsection.2.10.4}
-\contentsline {section}{\numberline {2.11}Operator and Matrix Norms}{33}{section.2.11}
-\contentsline {subparagraph}{}{33}{subparagraph*.55}
-\contentsline {subsection}{\numberline {2.11.1}$||\mathbf {A}||_{(\alpha )}$ Operator Norm}{33}{subsection.2.11.1}
-\contentsline {subsection}{\numberline {2.11.2}$||\mathbf {A}||_q$ $q$-Norms}{33}{subsection.2.11.2}
-\contentsline {subsection}{\numberline {2.11.3}$||\mathbf {A}||_F$ Frobenius Norm}{34}{subsection.2.11.3}
-\contentsline {subsection}{\numberline {2.11.4}$||\mathbf {A}||_{(1)}$ (1)-Norm}{34}{subsection.2.11.4}
-\contentsline {subsection}{\numberline {2.11.5}$||\mathbf {A}||_{(\infty )}$ ($\infty $)-Norm}{34}{subsection.2.11.5}
-\contentsline {subsection}{\numberline {2.11.6}$||\mathbf {A}||_{(2)}$ (2)-Norm}{34}{subsection.2.11.6}
-\contentsline {section}{\numberline {2.12}Vector and Matrix Derivatives}{34}{section.2.12}
-\contentsline {subsection}{\numberline {2.12.1}Jacobian}{34}{subsection.2.12.1}
-\contentsline {subsection}{\numberline {2.12.2}Inverse Function Theorem}{35}{subsection.2.12.2}
-\contentsline {subsection}{\numberline {2.12.3}Critical Points}{35}{subsection.2.12.3}
-\contentsline {subsection}{\numberline {2.12.4}Differential Volume Element, Change of Variables}{35}{subsection.2.12.4}
-\contentsline {subsection}{\numberline {2.12.5}Hessian}{36}{subsection.2.12.5}
-\contentsline {subsubsection}{\numberline {2.12.5.1}Testing Convexity}{36}{subsubsection.2.12.5.1}
-\contentsline {chapter}{\numberline {3}Probability}{37}{chapter.3}
-\contentsline {section}{\numberline {3.1}Interpretations and Definitions of Probability}{37}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Naive and Non-Naive Definitions of Probability}{37}{subsection.3.1.1}
-\contentsline {subsubsection}{\numberline {3.1.1.1}Naive Probability}{37}{subsubsection.3.1.1.1}
-\contentsline {subsubsection}{\numberline {3.1.1.2}Non-Naive Definition of Probability}{37}{subsubsection.3.1.1.2}
-\contentsline {subsection}{\numberline {3.1.2}Frequentist Probability}{38}{subsection.3.1.2}
-\contentsline {subsection}{\numberline {3.1.3}Bayesian Probability}{38}{subsection.3.1.3}
-\contentsline {subsection}{\numberline {3.1.4}Measure Theoretic Probability}{38}{subsection.3.1.4}
-\contentsline {section}{\numberline {3.2}Measure Theory}{38}{section.3.2}
-\contentsline {section}{\numberline {3.3}Functions of Random Variables, Derived Distributions}{38}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Example: Sum of Random Variables}{39}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Example: Lower Dimensional Random Variable}{40}{subsection.3.3.2}
-\contentsline {section}{\numberline {3.4}Indicator Variables}{40}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Example: The Party Problem}{41}{subsection.3.4.1}
-\contentsline {subsubsection}{\numberline {3.4.1.1}Lame Interview Question 1: Every one finds their coat}{41}{subsubsection.3.4.1.1}
-\contentsline {subsubsection}{\numberline {3.4.1.2}Lame Interview Question 2: At least r people find their coat}{41}{subsubsection.3.4.1.2}
-\contentsline {subsubsection}{\numberline {3.4.1.3}Not lame: Exactly r people find their coat}{41}{subsubsection.3.4.1.3}
-\contentsline {section}{\numberline {3.5}Copulas}{44}{section.3.5}
-\contentsline {section}{\numberline {3.6}Relationships Between Distributions}{44}{section.3.6}
-\contentsline {section}{\numberline {3.7}Large Deviation Theory}{44}{section.3.7}
-\contentsline {subsection}{\numberline {3.7.1}Gaertner-Ellis Theorem}{44}{subsection.3.7.1}
-\contentsline {subsection}{\numberline {3.7.2}Example: Sum of Uniform Random Variables}{44}{subsection.3.7.2}
-\contentsline {chapter}{\numberline {4}Information Theory}{45}{chapter.4}
-\contentsline {section}{\numberline {4.1}Entropy}{45}{section.4.1}
-\contentsline {section}{\numberline {4.2}Mutual Information}{45}{section.4.2}
-\contentsline {section}{\numberline {4.3}Kullback-Leibler Divergence}{45}{section.4.3}
-\contentsline {chapter}{\numberline {5}Stochastic Processes and Time Series Analysis}{47}{chapter.5}
-\contentsline {section}{\numberline {5.1}Markov Chains}{47}{section.5.1}
-\contentsline {section}{\numberline {5.2}Martingales}{47}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Martingale Convergence Theorem}{47}{subsection.5.2.1}
-\contentsline {section}{\numberline {5.3}Hidden Markov Models}{47}{section.5.3}
-\contentsline {section}{\numberline {5.4}Ito Calculus}{47}{section.5.4}
-\contentsline {chapter}{\numberline {6}Statistics}{49}{chapter.6}
-\contentsline {section}{\numberline {6.1}Directional Statistics}{49}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}Mean Direction}{49}{subsection.6.1.1}
-\contentsline {subsection}{\numberline {6.1.2}Dispersion}{49}{subsection.6.1.2}
-\contentsline {section}{\numberline {6.2}Features}{50}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Dense Features, Sparse Features}{50}{subsection.6.2.1}
-\contentsline {section}{\numberline {6.3}Multicollinearity}{50}{section.6.3}
-\contentsline {subsubsection}{\numberline {6.3.0.1}Detection}{50}{subsubsection.6.3.0.1}
-\contentsline {subparagraph}{Scatter Plots}{50}{subparagraph*.56}
-\contentsline {subparagraph}{Variance Inflation Factors (VIF)}{50}{subparagraph*.57}
-\contentsline {subparagraph}{Eigenvalues of the Correlation Matrix}{50}{subparagraph*.58}
-\contentsline {subparagraph}{Regression Coefficients}{50}{subparagraph*.59}
-\contentsline {subsection}{\numberline {6.3.1}Sources}{50}{subsection.6.3.1}
-\contentsline {subparagraph}{Data Collection}{50}{subparagraph*.60}
-\contentsline {subparagraph}{Physical Constraints}{50}{subparagraph*.61}
-\contentsline {subparagraph}{Over-defined Model}{50}{subparagraph*.62}
-\contentsline {subparagraph}{Model Choice or Specification}{50}{subparagraph*.63}
-\contentsline {subparagraph}{Outliers}{51}{subparagraph*.64}
-\contentsline {subsubsection}{\numberline {6.3.1.1}Remedies}{51}{subsubsection.6.3.1.1}
-\contentsline {subparagraph}{Dimensionality Reduction}{51}{subparagraph*.65}
-\contentsline {subparagraph}{Regularization}{51}{subparagraph*.66}
-\contentsline {section}{\numberline {6.4}$R^2$ Value}{51}{section.6.4}
-\contentsline {section}{\numberline {6.5}Regression Diagnostics}{51}{section.6.5}
-\contentsline {section}{\numberline {6.6}t-Statistics}{51}{section.6.6}
-\contentsline {section}{\numberline {6.7}AIC and BIC}{51}{section.6.7}
-\contentsline {section}{\numberline {6.8}Factor Regression}{51}{section.6.8}
-\contentsline {section}{\numberline {6.9}Factor Models}{51}{section.6.9}
-\contentsline {chapter}{\numberline {7}Linear Regression}{53}{chapter.7}
-\contentsline {section}{\numberline {7.1}Ordinary Least Squares Regression}{53}{section.7.1}
-\contentsline {subsection}{\numberline {7.1.1}The Normal Equations, Analytical Least Squares Estimator}{53}{subsection.7.1.1}
-\contentsline {subsection}{\numberline {7.1.2}The Quick Way to $\mathbf {\mathaccentV {hat}05E{\beta }}$}{54}{subsection.7.1.2}
-\contentsline {subsection}{\numberline {7.1.3}The Long Way to $\mathbf {\mathaccentV {hat}05E{\beta }}$}{54}{subsection.7.1.3}
-\contentsline {subsection}{\numberline {7.1.4}Projection Matrix}{54}{subsection.7.1.4}
-\contentsline {subsection}{\numberline {7.1.5}Bayesian Perspective on Least Squares Regression}{55}{subsection.7.1.5}
-\contentsline {subsection}{\numberline {7.1.6}Q-plots}{55}{subsection.7.1.6}
-\contentsline {subsection}{\numberline {7.1.7}Variance Inflation Factor}{55}{subsection.7.1.7}
-\contentsline {section}{\numberline {7.2}Ridge Regression}{55}{section.7.2}
-\contentsline {subsection}{\numberline {7.2.1}Analytical Ridge Estimator}{55}{subsection.7.2.1}
-\contentsline {subsection}{\numberline {7.2.2}Bayesian Perspective on Ridge Regression}{55}{subsection.7.2.2}
-\contentsline {chapter}{\numberline {8}Bayesian Data Analysis}{57}{chapter.8}
-\contentsline {chapter}{\numberline {9}Unsupervised Learning}{59}{chapter.9}
-\contentsline {section}{\numberline {9.1}Blind Source Separation}{59}{section.9.1}
-\contentsline {section}{\numberline {9.2}Independent Component Analysis}{59}{section.9.2}
-\contentsline {section}{\numberline {9.3}Eigenanalysis, Singular Value Decomposition of Data Matrices}{59}{section.9.3}
-\contentsline {subsection}{\numberline {9.3.1}Example: Eigenfaces and Facial Recognition}{60}{subsection.9.3.1}
-\contentsline {subsection}{\numberline {9.3.2}Tracking an Eigensystem over Time}{61}{subsection.9.3.2}
-\contentsline {subsubsection}{\numberline {9.3.2.1}Heuristic Method}{61}{subsubsection.9.3.2.1}
-\contentsline {subsubsection}{\numberline {9.3.2.2}Consistent Method}{61}{subsubsection.9.3.2.2}
-\contentsline {subsubsection}{\numberline {9.3.2.3}Rank Order Changes}{61}{subsubsection.9.3.2.3}
-\contentsline {subsection}{\numberline {9.3.3}Bayesian SVD}{61}{subsection.9.3.3}
-\contentsline {section}{\numberline {9.4}Principal Component Analysis (PCA)}{61}{section.9.4}
-\contentsline {subsection}{\numberline {9.4.1}Relationship between PCA and SVD}{63}{subsection.9.4.1}
-\contentsline {subsection}{\numberline {9.4.2}Tracking Principal Components over Time}{63}{subsection.9.4.2}
-\contentsline {section}{\numberline {9.5}$\mathbf {X}=\mathbf {W}\mathbf {H}$ Non-Negative Matrix Factorization}{64}{section.9.5}
+\contentsline {chapter}{\numberline {1}Sets}{7}{chapter.1}
+\contentsline {section}{\numberline {1.1}Representation}{7}{section.1.1}
+\contentsline {section}{\numberline {1.2}Set Properties and Types of Sets}{7}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}Cardinality}{7}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}$\emptyset $ Empy Set, Null Set}{7}{subsection.1.2.2}
+\contentsline {subsection}{\numberline {1.2.3}Singleton Set}{7}{subsection.1.2.3}
+\contentsline {subsection}{\numberline {1.2.4}Infinite Sets}{8}{subsection.1.2.4}
+\contentsline {subsection}{\numberline {1.2.5}Multisets}{8}{subsection.1.2.5}
+\contentsline {subsubsection}{\numberline {1.2.5.1}Support}{8}{subsubsection.1.2.5.1}
+\contentsline {subsubsection}{\numberline {1.2.5.2}Cardinality}{8}{subsubsection.1.2.5.2}
+\contentsline {subsubsection}{\numberline {1.2.5.3}$\subseteq $ Inclusion}{8}{subsubsection.1.2.5.3}
+\contentsline {subsubsection}{\numberline {1.2.5.4}$\DOTSB \bigcap@ \slimits@ $ Intersection}{8}{subsubsection.1.2.5.4}
+\contentsline {subsubsection}{\numberline {1.2.5.5}$\DOTSB \bigcup@ \slimits@ $ Union}{8}{subsubsection.1.2.5.5}
+\contentsline {subsubsection}{\numberline {1.2.5.6}$\uplus $ Multiset Addition}{8}{subsubsection.1.2.5.6}
+\contentsline {subsubsection}{\numberline {1.2.5.7}Multiset Subtraction}{9}{subsubsection.1.2.5.7}
+\contentsline {subsection}{\numberline {1.2.6}Universal Set}{9}{subsection.1.2.6}
+\contentsline {section}{\numberline {1.3}Set Operations}{9}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}$A^c$ Complement}{9}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.3.2}$\DOTSB \bigcup@ \slimits@ $ Union}{9}{subsection.1.3.2}
+\contentsline {subsection}{\numberline {1.3.3}$\DOTSB \bigcap@ \slimits@ $ Intersection}{9}{subsection.1.3.3}
+\contentsline {subsection}{\numberline {1.3.4}$\DOTSB \bigsqcup@ \slimits@ $ Disjoint Union, Discriminated Union}{9}{subsection.1.3.4}
+\contentsline {section}{\numberline {1.4}Bijection Principle}{9}{section.1.4}
+\contentsline {section}{\numberline {1.5}DeMorgan's Rules}{10}{section.1.5}
+\contentsline {section}{\numberline {1.6}Inclusion - Exclusion Principle}{10}{section.1.6}
+\contentsline {subsection}{\numberline {1.6.1}Example: n=2 Sets and n=3 Sets}{10}{subsection.1.6.1}
+\contentsline {subparagraph}{n=2}{10}{subparagraph*.2}
+\contentsline {subparagraph}{n=3}{10}{subparagraph*.3}
+\contentsline {subsubsection}{\numberline {1.6.1.1}Example: Counting Integers}{10}{subsubsection.1.6.1.1}
+\contentsline {chapter}{\numberline {2}Combinatorics}{13}{chapter.2}
+\contentsline {section}{\numberline {2.1}Combinatorial Identities and Expansions}{13}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Binomial Coefficients and Binomial Expansions}{13}{subsection.2.1.1}
+\contentsline {subsubsection}{\numberline {2.1.1.1}Derivation of the Binomial Theorem for a Negative Exponent}{14}{subsubsection.2.1.1.1}
+\contentsline {subsubsection}{\numberline {2.1.1.2}Derivation of the Binomial Theorem for a Fractional Exponent}{14}{subsubsection.2.1.1.2}
+\contentsline {subsection}{\numberline {2.1.2}Multinomial Expansion}{15}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}Unnamed Polynomial Identity}{15}{subsection.2.1.3}
+\contentsline {subsection}{\numberline {2.1.4}Factorial Expansion}{15}{subsection.2.1.4}
+\contentsline {subsection}{\numberline {2.1.5}Stirling Numbers of the Second Kind}{15}{subsection.2.1.5}
+\contentsline {section}{\numberline {2.2}Distributions: The Twentyfold Way}{16}{section.2.2}
+\contentsline {subparagraph}{Favorite Teachers}{17}{subparagraph*.4}
+\contentsline {subparagraph}{Assembling a Team}{17}{subparagraph*.5}
+\contentsline {subsection}{\numberline {2.2.1}Distinct Objects}{17}{subsection.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.1.1}Distinct Recipients}{17}{subsubsection.2.2.1.1}
+\contentsline {subparagraph}{Pool Balls into Labeled Buckets}{17}{subparagraph*.6}
+\contentsline {subparagraph}{Functions}{17}{subparagraph*.7}
+\contentsline {subparagraph}{Binary Strings of Length $k$}{18}{subparagraph*.8}
+\contentsline {subparagraph}{Subsets of a $k$-Element Set}{18}{subparagraph*.9}
+\contentsline {subsubsection}{\numberline {2.2.1.2}Indistinct Recipients}{18}{subsubsection.2.2.1.2}
+\contentsline {subparagraph}{Pool Balls into Unlabeled Bags}{18}{subparagraph*.10}
+\contentsline {subsection}{\numberline {2.2.2}Distinct Objects, Every Recipient Receives At Most One}{18}{subsection.2.2.2}
+\contentsline {subsubsection}{\numberline {2.2.2.1}Distinct Recipients}{18}{subsubsection.2.2.2.1}
+\contentsline {subparagraph}{At Most One Pool Ball into Labeled Buckets}{18}{subparagraph*.11}
+\contentsline {subparagraph}{One-to-One Functions}{18}{subparagraph*.12}
+\contentsline {subparagraph}{k-element Permutations of $n$ elements}{18}{subparagraph*.13}
+\contentsline {subparagraph}{Books on a Shelf}{18}{subparagraph*.14}
+\contentsline {subsubsection}{\numberline {2.2.2.2}Indistinct Recipients}{19}{subsubsection.2.2.2.2}
+\contentsline {subparagraph}{At Most One Pool Ball into Unlabeled Bags}{19}{subparagraph*.15}
+\contentsline {subparagraph}{Distributing Candy}{19}{subparagraph*.16}
+\contentsline {subsection}{\numberline {2.2.3}Distinct Objects, Every Recipient Receives at Least One}{19}{subsection.2.2.3}
+\contentsline {subsubsection}{\numberline {2.2.3.1}Distinct Recipients}{19}{subsubsection.2.2.3.1}
+\contentsline {subparagraph}{At Least One Pool Ball into Labeled Buckets}{19}{subparagraph*.17}
+\contentsline {subparagraph}{Onto Functions}{19}{subparagraph*.18}
+\contentsline {subsubsection}{\numberline {2.2.3.2}Indistinct Recipients}{19}{subsubsection.2.2.3.2}
+\contentsline {subparagraph}{At Least One Pool Ball into Unlabeled Bags}{19}{subparagraph*.19}
+\contentsline {subsection}{\numberline {2.2.4}Distinct Objects, Every Recipient Receives Exactly One}{20}{subsection.2.2.4}
+\contentsline {subsubsection}{\numberline {2.2.4.1}Distinct Recipients}{20}{subsubsection.2.2.4.1}
+\contentsline {subparagraph}{Exactly One Pool Ball into Each Labeled Buckets}{20}{subparagraph*.20}
+\contentsline {subparagraph}{Bijective Functions}{20}{subparagraph*.21}
+\contentsline {subparagraph}{Permutations}{20}{subparagraph*.22}
+\contentsline {subparagraph}{Unique Identifiers}{20}{subparagraph*.23}
+\contentsline {subsubsection}{\numberline {2.2.4.2}Indistinct Recipients}{20}{subsubsection.2.2.4.2}
+\contentsline {subparagraph}{Exactly One Pool Ball into Each Unlabeled Bag}{20}{subparagraph*.24}
+\contentsline {subparagraph}{Distribute without Leftovers}{20}{subparagraph*.25}
+\contentsline {subsection}{\numberline {2.2.5}Distinct Objects, Distributed in Ordered Groups}{20}{subsection.2.2.5}
+\contentsline {subsubsection}{\numberline {2.2.5.1}Distinct Recipients}{20}{subsubsection.2.2.5.1}
+\contentsline {subparagraph}{Books on Labeled Bookshelves}{21}{subparagraph*.26}
+\contentsline {subparagraph}{Ordered Functions}{21}{subparagraph*.27}
+\contentsline {subsubsection}{\numberline {2.2.5.2}Indistinct Recipients}{21}{subsubsection.2.2.5.2}
+\contentsline {subparagraph}{Books into Unlabeled Boxes}{21}{subparagraph*.28}
+\contentsline {subparagraph}{Broken Permutations $\leq n$ Parts}{21}{subparagraph*.29}
+\contentsline {subparagraph}{Books into Boxes}{21}{subparagraph*.30}
+\contentsline {subsection}{\numberline {2.2.6}Distinct Objects, Distributed in Ordered Groups of At Least One}{21}{subsection.2.2.6}
+\contentsline {subsubsection}{\numberline {2.2.6.1}Distinct Recipients}{21}{subsubsection.2.2.6.1}
+\contentsline {subparagraph}{Books on Labeled Bookshelves}{22}{subparagraph*.31}
+\contentsline {subparagraph}{Ordered Onto Functions}{22}{subparagraph*.32}
+\contentsline {subsubsection}{\numberline {2.2.6.2}Indistinct Recipients}{22}{subsubsection.2.2.6.2}
+\contentsline {subparagraph}{Books into Unlabeled Boxes}{22}{subparagraph*.33}
+\contentsline {subparagraph}{Broken Permutations $n$ parts}{22}{subparagraph*.34}
+\contentsline {subparagraph}{Books into Boxes}{22}{subparagraph*.35}
+\contentsline {subsection}{\numberline {2.2.7}Identical Objects}{22}{subsection.2.2.7}
+\contentsline {subsubsection}{\numberline {2.2.7.1}Distinct Recipients}{22}{subsubsection.2.2.7.1}
+\contentsline {subparagraph}{Ping Pong Balls into Labeled Buckets}{22}{subparagraph*.36}
+\contentsline {subparagraph}{Multisets}{22}{subparagraph*.37}
+\contentsline {subparagraph}{Integer Sums}{22}{subparagraph*.38}
+\contentsline {subparagraph}{Bosons in Degenerate States}{23}{subparagraph*.39}
+\contentsline {subsubsection}{\numberline {2.2.7.2}Indistinct Recipients}{23}{subsubsection.2.2.7.2}
+\contentsline {subparagraph}{Ping Pong Balls into Unlabeled Bags}{23}{subparagraph*.40}
+\contentsline {subparagraph}{Number Partitions}{23}{subparagraph*.41}
+\contentsline {subparagraph}{Unlabeled Multiplicities of Multisets}{23}{subparagraph*.42}
+\contentsline {subparagraph}{Boxes of Marbles}{23}{subparagraph*.43}
+\contentsline {subsection}{\numberline {2.2.8}Identical Objects, Each Receives At Most One}{23}{subsection.2.2.8}
+\contentsline {subsubsection}{\numberline {2.2.8.1}Distinct Recipients}{23}{subsubsection.2.2.8.1}
+\contentsline {subparagraph}{At Most One Ping Pong Balls into Labeled Buckets}{23}{subparagraph*.44}
+\contentsline {subparagraph}{Subsets}{23}{subparagraph*.45}
+\contentsline {subparagraph}{Set Binary Labels}{23}{subparagraph*.46}
+\contentsline {subsubsection}{\numberline {2.2.8.2}Indistinct Recipients}{23}{subsubsection.2.2.8.2}
+\contentsline {subparagraph}{At Most One Ping Pong Ball into Unlabeled Bags}{23}{subparagraph*.47}
+\contentsline {subparagraph}{Boxes}{24}{subparagraph*.48}
+\contentsline {subsection}{\numberline {2.2.9}Identical Objects, Each Receives At Least One}{24}{subsection.2.2.9}
+\contentsline {subsubsection}{\numberline {2.2.9.1}Distinct Recipients}{24}{subsubsection.2.2.9.1}
+\contentsline {subparagraph}{At Least One Ping Pong Ball into Labeled Buckets}{24}{subparagraph*.49}
+\contentsline {subparagraph}{Compositions $n$ Parts}{24}{subparagraph*.50}
+\contentsline {subsubsection}{\numberline {2.2.9.2}Indistinct Recipients}{24}{subsubsection.2.2.9.2}
+\contentsline {subparagraph}{At Least One Ping Pong Ball in Unlabeled Bags}{24}{subparagraph*.51}
+\contentsline {subparagraph}{Partitions in $n$ Parts}{24}{subparagraph*.52}
+\contentsline {subsection}{\numberline {2.2.10}Identical Objects, Each Receives Exactly One}{24}{subsection.2.2.10}
+\contentsline {subsubsection}{\numberline {2.2.10.1}Distinct Recipients}{24}{subsubsection.2.2.10.1}
+\contentsline {subparagraph}{One Ping Pong Ball into Each Labeled Bucket}{24}{subparagraph*.53}
+\contentsline {subsubsection}{\numberline {2.2.10.2}Indistinct Recipients}{24}{subsubsection.2.2.10.2}
+\contentsline {subparagraph}{One Ping Pong Ball into Each Unlabeled Bag}{24}{subparagraph*.54}
+\contentsline {section}{\numberline {2.3}Generating Functions}{25}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Example: Binomial Coefficients}{25}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Example: Basket of Goods}{25}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Example: Dice}{26}{subsection.2.3.3}
+\contentsline {chapter}{\numberline {3}Linear Algebra and Multivariable Calculus}{29}{chapter.3}
+\contentsline {section}{\numberline {3.1}Multi-Index Notation}{29}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Example: Multinomial Coefficients}{30}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Example: Taylor Expansion}{30}{subsection.3.1.2}
+\contentsline {section}{\numberline {3.2}Linear Systems of Equations}{30}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}$A\in \mathbb {R}^{n\times n}$ Square Matrices}{30}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}$A\in \mathbb {R}^{m\times n}$ Rectangular Matrices, Overdetermined Case}{30}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}$A\in \mathbb {R}^{n\times m}$ Rectangular Matrices, Underdetermined Case}{31}{subsection.3.2.3}
+\contentsline {section}{\numberline {3.3}$\mathbf {A} = \mathbf {L}\mathbf {L}^{\dagger }$ Cholesky Decomposition}{31}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Creating Correlated Random Variables}{31}{subsection.3.3.1}
+\contentsline {section}{\numberline {3.4}Generalized Eigenvectors}{31}{section.3.4}
+\contentsline {section}{\numberline {3.5}$\mathbf {A} = \mathbf {V\Lambda V^{-1}}$ Spectral Theorems, Diagonalization}{31}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}$\mathbf {A} = \mathbf {V\Lambda V}^T$ Eigendecomposition of Symmetric Matrices}{31}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}$\mathbf {H} = \mathbf {U\Lambda U}^T$ Eigendecomposition of Hermitian Matrices}{33}{subsection.3.5.2}
+\contentsline {subsection}{\numberline {3.5.3}Eigenvalue Sensitivity and Accuracy}{33}{subsection.3.5.3}
+\contentsline {subsubsection}{\numberline {3.5.3.1}General Case}{33}{subsubsection.3.5.3.1}
+\contentsline {subsubsection}{\numberline {3.5.3.2}Hermitian Matrices}{33}{subsubsection.3.5.3.2}
+\contentsline {section}{\numberline {3.6}$\mathbf {A} = \mathbf {U\Sigma V}^{\dagger }$ Singular Value Decomposition}{33}{section.3.6}
+\contentsline {subsection}{\numberline {3.6.1}Full and Economy SVDs}{34}{subsection.3.6.1}
+\contentsline {subsection}{\numberline {3.6.2}Matrix Approximation}{34}{subsection.3.6.2}
+\contentsline {section}{\numberline {3.7}Types of Transformations}{35}{section.3.7}
+\contentsline {subsection}{\numberline {3.7.1}Similarity Transformations}{35}{subsection.3.7.1}
+\contentsline {subsection}{\numberline {3.7.2}Affine Transformations}{35}{subsection.3.7.2}
+\contentsline {subsection}{\numberline {3.7.3}Unitary Transformations}{35}{subsection.3.7.3}
+\contentsline {subsection}{\numberline {3.7.4}Multilinear Maps}{36}{subsection.3.7.4}
+\contentsline {subsection}{\numberline {3.7.5}Multilinear Forms}{36}{subsection.3.7.5}
+\contentsline {section}{\numberline {3.8}Types of Matrices}{36}{section.3.8}
+\contentsline {subsection}{\numberline {3.8.1}$\mathrm {sgn}\left (\mathbf {x}^{\dagger }\mathbf {H}\mathbf {x}\right )$ Definite}{36}{subsection.3.8.1}
+\contentsline {subsection}{\numberline {3.8.2}Triangular}{36}{subsection.3.8.2}
+\contentsline {subsection}{\numberline {3.8.3}$\mathbf {AB}-\mathbf {BA}=0$ Commuting}{36}{subsection.3.8.3}
+\contentsline {subsection}{\numberline {3.8.4}$\mathbf {AB}+\mathbf {BA}=0$ Anticommuting}{37}{subsection.3.8.4}
+\contentsline {subsection}{\numberline {3.8.5}$\mathbf {A}^{\dagger } = \mathbf {A}$ Hermitian, Symmetric}{37}{subsection.3.8.5}
+\contentsline {subsubsection}{\numberline {3.8.5.1}Properties}{37}{subsubsection.3.8.5.1}
+\contentsline {subsection}{\numberline {3.8.6}$\mathbf {A}^{\dagger } = -\mathbf {A}$ Skew Hermitian, Skew Symmetric}{37}{subsection.3.8.6}
+\contentsline {subsection}{\numberline {3.8.7}$\mathbf {A}\mathbf {A}=\mathbf {I}$ Involutory}{37}{subsection.3.8.7}
+\contentsline {subsection}{\numberline {3.8.8}$\mathbf {U}^{\dagger } = \mathbf {U}^{-1}$ Unitary, Orthogonal}{38}{subsection.3.8.8}
+\contentsline {subsection}{\numberline {3.8.9}$\mathbf {A} = \mathbf {TBT^{-1}}$ Similarity}{38}{subsection.3.8.9}
+\contentsline {section}{\numberline {3.9}Properties of Norms}{38}{section.3.9}
+\contentsline {section}{\numberline {3.10}$L^p$ Lebesgue Vector Norms}{38}{section.3.10}
+\contentsline {subsection}{\numberline {3.10.1}$L^{1}$ Taxicab / Manhattan Norm}{38}{subsection.3.10.1}
+\contentsline {subsection}{\numberline {3.10.2}$L^{2}$ Euclidian Norm}{38}{subsection.3.10.2}
+\contentsline {subsection}{\numberline {3.10.3}$L^{\infty }$ Maximum Norm}{38}{subsection.3.10.3}
+\contentsline {subsection}{\numberline {3.10.4}$L^{-\infty }$ Minimum Norm}{38}{subsection.3.10.4}
+\contentsline {section}{\numberline {3.11}Operator and Matrix Norms}{39}{section.3.11}
+\contentsline {subparagraph}{}{39}{subparagraph*.55}
+\contentsline {subsection}{\numberline {3.11.1}$||\mathbf {A}||_{(\alpha )}$ Operator Norm}{39}{subsection.3.11.1}
+\contentsline {subsection}{\numberline {3.11.2}$||\mathbf {A}||_q$ $q$-Norms}{39}{subsection.3.11.2}
+\contentsline {subsection}{\numberline {3.11.3}$||\mathbf {A}||_F$ Frobenius Norm}{40}{subsection.3.11.3}
+\contentsline {subsection}{\numberline {3.11.4}$||\mathbf {A}||_{(1)}$ (1)-Norm}{40}{subsection.3.11.4}
+\contentsline {subsection}{\numberline {3.11.5}$||\mathbf {A}||_{(\infty )}$ ($\infty $)-Norm}{40}{subsection.3.11.5}
+\contentsline {subsection}{\numberline {3.11.6}$||\mathbf {A}||_{(2)}$ (2)-Norm}{40}{subsection.3.11.6}
+\contentsline {section}{\numberline {3.12}Vector and Matrix Derivatives}{40}{section.3.12}
+\contentsline {subsection}{\numberline {3.12.1}Jacobian}{40}{subsection.3.12.1}
+\contentsline {subsection}{\numberline {3.12.2}Inverse Function Theorem}{41}{subsection.3.12.2}
+\contentsline {subsection}{\numberline {3.12.3}Critical Points}{41}{subsection.3.12.3}
+\contentsline {subsection}{\numberline {3.12.4}Differential Volume Element, Change of Variables}{41}{subsection.3.12.4}
+\contentsline {subsection}{\numberline {3.12.5}Hessian}{42}{subsection.3.12.5}
+\contentsline {subsubsection}{\numberline {3.12.5.1}Testing Convexity}{42}{subsubsection.3.12.5.1}
+\contentsline {chapter}{\numberline {4}Probability}{43}{chapter.4}
+\contentsline {section}{\numberline {4.1}Interpretations and Definitions of Probability}{43}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Naive and Non-Naive Definitions of Probability}{43}{subsection.4.1.1}
+\contentsline {subsubsection}{\numberline {4.1.1.1}Naive Probability}{43}{subsubsection.4.1.1.1}
+\contentsline {subsubsection}{\numberline {4.1.1.2}Non-Naive Definition of Probability}{43}{subsubsection.4.1.1.2}
+\contentsline {subsection}{\numberline {4.1.2}Frequentist Probability}{44}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}Bayesian Probability}{44}{subsection.4.1.3}
+\contentsline {subsection}{\numberline {4.1.4}Measure Theoretic Probability}{44}{subsection.4.1.4}
+\contentsline {section}{\numberline {4.2}Measure Theory}{44}{section.4.2}
+\contentsline {section}{\numberline {4.3}Functions of Random Variables, Derived Distributions}{44}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Example: Sum of Random Variables}{45}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Example: Lower Dimensional Random Variable}{46}{subsection.4.3.2}
+\contentsline {section}{\numberline {4.4}Indicator Variables}{46}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Example: The Party Problem}{47}{subsection.4.4.1}
+\contentsline {subsubsection}{\numberline {4.4.1.1}Lame Interview Question 1: Every one finds their coat}{47}{subsubsection.4.4.1.1}
+\contentsline {subsubsection}{\numberline {4.4.1.2}Lame Interview Question 2: At least r people find their coat}{47}{subsubsection.4.4.1.2}
+\contentsline {subsubsection}{\numberline {4.4.1.3}Not lame: Exactly r people find their coat}{47}{subsubsection.4.4.1.3}
+\contentsline {section}{\numberline {4.5}Copulas}{50}{section.4.5}
+\contentsline {section}{\numberline {4.6}Relationships Between Distributions}{50}{section.4.6}
+\contentsline {section}{\numberline {4.7}Large Deviation Theory}{50}{section.4.7}
+\contentsline {subsection}{\numberline {4.7.1}Gaertner-Ellis Theorem}{50}{subsection.4.7.1}
+\contentsline {subsection}{\numberline {4.7.2}Example: Sum of Uniform Random Variables}{50}{subsection.4.7.2}
+\contentsline {chapter}{\numberline {5}Information Theory}{51}{chapter.5}
+\contentsline {section}{\numberline {5.1}Entropy}{51}{section.5.1}
+\contentsline {section}{\numberline {5.2}Mutual Information}{51}{section.5.2}
+\contentsline {section}{\numberline {5.3}Kullback-Leibler Divergence}{51}{section.5.3}
+\contentsline {chapter}{\numberline {6}Stochastic Processes and Time Series Analysis}{53}{chapter.6}
+\contentsline {section}{\numberline {6.1}Markov Chains}{53}{section.6.1}
+\contentsline {section}{\numberline {6.2}Martingales}{53}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Martingale Convergence Theorem}{53}{subsection.6.2.1}
+\contentsline {section}{\numberline {6.3}Hidden Markov Models}{53}{section.6.3}
+\contentsline {section}{\numberline {6.4}Ito Calculus}{53}{section.6.4}
+\contentsline {chapter}{\numberline {7}Statistics}{55}{chapter.7}
+\contentsline {section}{\numberline {7.1}Directional Statistics}{55}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}Mean Direction}{55}{subsection.7.1.1}
+\contentsline {subsection}{\numberline {7.1.2}Dispersion}{55}{subsection.7.1.2}
+\contentsline {section}{\numberline {7.2}Features}{56}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}Dense Features, Sparse Features}{56}{subsection.7.2.1}
+\contentsline {section}{\numberline {7.3}Multicollinearity}{56}{section.7.3}
+\contentsline {subsubsection}{\numberline {7.3.0.1}Detection}{56}{subsubsection.7.3.0.1}
+\contentsline {subparagraph}{Scatter Plots}{56}{subparagraph*.56}
+\contentsline {subparagraph}{Variance Inflation Factors (VIF)}{56}{subparagraph*.57}
+\contentsline {subparagraph}{Eigenvalues of the Correlation Matrix}{56}{subparagraph*.58}
+\contentsline {subparagraph}{Regression Coefficients}{56}{subparagraph*.59}
+\contentsline {subsection}{\numberline {7.3.1}Sources}{56}{subsection.7.3.1}
+\contentsline {subparagraph}{Data Collection}{56}{subparagraph*.60}
+\contentsline {subparagraph}{Physical Constraints}{56}{subparagraph*.61}
+\contentsline {subparagraph}{Over-defined Model}{56}{subparagraph*.62}
+\contentsline {subparagraph}{Model Choice or Specification}{56}{subparagraph*.63}
+\contentsline {subparagraph}{Outliers}{57}{subparagraph*.64}
+\contentsline {subsubsection}{\numberline {7.3.1.1}Remedies}{57}{subsubsection.7.3.1.1}
+\contentsline {subparagraph}{Dimensionality Reduction}{57}{subparagraph*.65}
+\contentsline {subparagraph}{Regularization}{57}{subparagraph*.66}
+\contentsline {section}{\numberline {7.4}$R^2$ Value}{57}{section.7.4}
+\contentsline {section}{\numberline {7.5}Regression Diagnostics}{57}{section.7.5}
+\contentsline {section}{\numberline {7.6}t-Statistics}{57}{section.7.6}
+\contentsline {section}{\numberline {7.7}AIC and BIC}{57}{section.7.7}
+\contentsline {section}{\numberline {7.8}Factor Regression}{57}{section.7.8}
+\contentsline {section}{\numberline {7.9}Factor Models}{57}{section.7.9}
+\contentsline {chapter}{\numberline {8}Linear Regression}{59}{chapter.8}
+\contentsline {section}{\numberline {8.1}Ordinary Least Squares Regression}{59}{section.8.1}
+\contentsline {subsection}{\numberline {8.1.1}The Normal Equations, Analytical Least Squares Estimator}{59}{subsection.8.1.1}
+\contentsline {subsection}{\numberline {8.1.2}The Quick Way to $\mathbf {\mathaccentV {hat}05E{\beta }}$}{60}{subsection.8.1.2}
+\contentsline {subsection}{\numberline {8.1.3}The Long Way to $\mathbf {\mathaccentV {hat}05E{\beta }}$}{60}{subsection.8.1.3}
+\contentsline {subsection}{\numberline {8.1.4}Projection Matrix}{60}{subsection.8.1.4}
+\contentsline {subsection}{\numberline {8.1.5}Bayesian Perspective on Least Squares Regression}{61}{subsection.8.1.5}
+\contentsline {subsection}{\numberline {8.1.6}Q-plots}{61}{subsection.8.1.6}
+\contentsline {subsection}{\numberline {8.1.7}Variance Inflation Factor}{61}{subsection.8.1.7}
+\contentsline {section}{\numberline {8.2}Ridge Regression}{61}{section.8.2}
+\contentsline {subsection}{\numberline {8.2.1}Analytical Ridge Estimator}{61}{subsection.8.2.1}
+\contentsline {subsection}{\numberline {8.2.2}Bayesian Perspective on Ridge Regression}{61}{subsection.8.2.2}
+\contentsline {chapter}{\numberline {9}Bayesian Data Analysis}{63}{chapter.9}
+\contentsline {chapter}{\numberline {10}Unsupervised Learning}{65}{chapter.10}
+\contentsline {section}{\numberline {10.1}Blind Source Separation}{65}{section.10.1}
+\contentsline {section}{\numberline {10.2}Independent Component Analysis}{65}{section.10.2}
+\contentsline {section}{\numberline {10.3}Eigenanalysis, Singular Value Decomposition of Data Matrices}{65}{section.10.3}
+\contentsline {subsection}{\numberline {10.3.1}Example: Eigenfaces and Facial Recognition}{66}{subsection.10.3.1}
+\contentsline {subsection}{\numberline {10.3.2}Tracking an Eigensystem over Time}{67}{subsection.10.3.2}
+\contentsline {subsubsection}{\numberline {10.3.2.1}Heuristic Method}{67}{subsubsection.10.3.2.1}
+\contentsline {subsubsection}{\numberline {10.3.2.2}Consistent Method}{67}{subsubsection.10.3.2.2}
+\contentsline {subsubsection}{\numberline {10.3.2.3}Rank Order Changes}{67}{subsubsection.10.3.2.3}
+\contentsline {subsection}{\numberline {10.3.3}Bayesian SVD}{67}{subsection.10.3.3}
+\contentsline {section}{\numberline {10.4}Principal Component Analysis (PCA)}{67}{section.10.4}
+\contentsline {subsection}{\numberline {10.4.1}Relationship between PCA and SVD}{69}{subsection.10.4.1}
+\contentsline {subsection}{\numberline {10.4.2}Tracking Principal Components over Time}{69}{subsection.10.4.2}
+\contentsline {section}{\numberline {10.5}$\mathbf {X}=\mathbf {W}\mathbf {H}$ Non-Negative Matrix Factorization}{70}{section.10.5}
 \contentsfinish 

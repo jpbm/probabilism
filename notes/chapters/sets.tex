@@ -1,0 +1,227 @@
+\chapter{Sets}
+
+\begin{multicols}{2}[\subsubsection*{Contents of this chapter}]
+   \printcontents{}{1}{\setcounter{tocdepth}{2}}
+\end{multicols}
+
+
+
+Sets are a term to describe collections of things. The things could be countable objects, such as the integers between $1$ and $10$, or contain a continuum, for example all the real numbers between $1$ and $10$. Unless otherwise specified, the elements of a set are assumed to be distinct and as not having an internal order. That is, the set of letters in "Mississippi" is $\{M,i,s,p \} = \{i,p,M,s \} = ... $ and so on. A concise resource for notation is \citeasnoun{stanfordsetnotation}. 
+
+
+% representation
+\section{Representation}
+
+\begin{tabular}{ll}
+Statement Form & $\{\mathrm{integers\ between\ 1\ and\ 5}\}$\\
+Roster Form & $\{1,2,3,4,5\}$ \\
+Setbuilder Form & $\{x|x\in\mathbb{N}, 1\leq x \leq 5 \} $
+\end{tabular}
+
+
+% Set Properties, Types of Sets
+\section{Set Properties and Types of Sets}
+
+\subsection{Cardinality}
+The cardinality of a set is a measure of the size of a set. For finite sets, the cardinality is simply the number of elements. For example, the set  $A = \{a,b,c,d\}$ has size $|A|=4$.
+
+For infinite sets, this intuition breaks down, though it is still possible to make meaningful comparisons. 
+
+\subsection{$\emptyset$ Empy Set, Null Set}
+The empty set is the set with no elements. It is denoted $\{\}$ or $\emptyset$. 
+
+\subsection{Singleton Set}
+A singleton set is a set with one element. It has cardinality 1.
+
+\subsection{Infinite Sets}
+
+\subsection{Multisets}
+A multiset is a set that may contain an element more than once. I.e. it makes sense to write $A=\{a,a,a,b,b\}$. The number of times an element is included is the \textit{multiplicity}. The multiset $A$ may be defined in terms of a \textit{multiplicity function} $m_A(x)$, which describes the multiplicity of a type of element $x\in U$ where $U$ may be referred to as the \textit{universe} (en lieu of saying "univseral"!). The multiplicity function allows the extension of set characteristics and operations to multisets.
+
+\subsubsection{Support}
+The support of a multiset is:
+
+\begin{equation}
+Supp(A) = \{ x\in U | 	m_A(x)>0\}
+\end{equation} 
+
+Which is basically the set of distinct elements in $A$.
+
+\subsubsection{Cardinality}
+
+The cardinality is given by:
+
+\begin{equation}
+|A| = \sum_{x\in U} m_A(x)
+\end{equation}
+
+\subsubsection{$\subseteq$ Inclusion}
+The concept of subsets can be extended to multisets as:
+
+\begin{equation}
+A \subseteq B
+\end{equation}
+
+if 
+
+\begin{equation}
+\forall x\in U, \ \ m_A(x) \leq m_B(x)
+\end{equation}
+
+
+\subsubsection{$\bigcap$ Intersection}
+The intersection of multisets is sometimes called the \textit{infimum} or \textit{greatest common divisor}. If $A\cap B = C$, then $C$ has multiplicity function:
+
+\begin{equation}
+m_C(x) = min\left(m_A(x),m_B(x)\right)
+\end{equation}
+
+That is, it is like an elementwise minimum.
+
+\subsubsection{$\bigcup$ Union}
+In the context of multisets, the term \textit{union} sometimes refers to multiset addition. Otherwise, it should refer to the overlap of two multisets, i.e.:
+ 
+\begin{equation}
+m_C(x) = max\left(m_A(x),m_B(x)\right)
+\end{equation}
+
+That is, it is like an elementwise maximum.
+
+\subsubsection{$\uplus$ Multiset Addition} 
+In contrast to sets in which distinct elements are only contained once, multiset addition makes sense and uses a special symbol "$\uplus$". If $A\uplus B = C$, then $C$ has multiplicity function:
+
+\begin{equation}
+m_C(x) = m_A(x) + m_B(x)
+\end{equation} 
+
+\subsubsection{Multiset Subtraction}
+Multisets can be subtracted, with the condition that the multiplicity can not be less than zero. If $A- B = C$, then $C$ has multiplicity function:
+
+\begin{equation}
+m_C(x) = max\left(m_A(x) - m_B(x), 0\right)
+\end{equation}
+
+
+
+
+\subsection{Universal Set}
+The \textit{universal set} is understood to refer to something that is not allowed in the context of Russell's Paradox. It is nevertheless useful to define a set $S$ so that $S^c = \emptyset$ and I've seen this type of set referred to as \textit{universal set} a couple of times. In the context of probability theory, $S$ may be the whole event space.
+
+
+% Set operations
+\section{Set Operations}
+
+\subsection{$A^c$ Complement}
+The complement of a set $A^c$refers to everything that is not contained in $A$. 
+
+
+\subsection{$\bigcup$ Union}
+The union of sets is the set that contains all of their elements, counting all elements only once. The cardinality of the union is calculated using the important inclusion exclusion principle (\ref{sec:inclusionexclusion}). In terms of logic, think $A\cup B$ is "A or B (or both)".
+
+\subsection{$\bigcap$ Intersection}
+The intersection of sets is the elements shared by all sets. $A\cap B$ is "A and B".
+
+% Disjoint Union
+\subsection{$\bigsqcup$ Disjoint Union, Discriminated Union}
+The disjoint union, or discriminated union, of sets is the union formed in a way in which the information about which subset an element belonged to is preserved. One way to write this is to include a subset index with each element, i.e.:
+
+\begin{equation}
+\bigsqcup_{i\in\{i\}}A_i = \bigcup_{i\in\{i\}} \{(x,i): x\in A_i\}
+\end{equation}
+
+For example, for the two sets $A=\{1,2,3,4\}$ and $B=\{1,2,3\}$, the disjoint union is:
+
+\begin{equation}
+A\sqcup B = \{(1,A),(2,A),(3,A),(4,A),(1,B),(2,B),(3,B)\}
+\end{equation}
+
+The cardinality of the disjoint union is simply the sum:
+
+\begin{equation}
+\left|\bigsqcup_{i\in\{i\}}A_i\right| = \sum_{i\in\{i\}}|A_i
+\end{equation}
+
+
+
+% Bijection Principle
+\section{Bijection Principle}
+The bijection principle states that when a bijection exists between the elements of two sets, then those sets have the same size. This principle is very useful in combinatorics, and it allows meaningful comparisons of infinite sets.
+
+
+% DeMorgan
+\section{DeMorgan's Rules}
+\label{sec:demorgan}
+DeMorgan's Rules relate the complement of the union to the intersection of the complements, and the complement of the intersection to the union of the complements.
+
+\label{sec:demorgan}
+
+\begin{equation}
+\left(\bigcup_{i\in\{i\}}A_i\right)^c = \bigcap_{i\in\{i\}}A^c_i
+\end{equation}
+
+\begin{equation}
+\left(\bigcap_{i\in\{i\}}A_i\right)^c = \bigcup_{i\in\{i\}}A^c_i
+\end{equation}
+
+
+%Inclusion Exclusion
+\section{Inclusion - Exclusion Principle}
+\label{sec:inclusionexclusion}
+
+The inclusion-exclusion principle is used to calculate the size of the union of sets. This requires counting each region of some complicated overlapping Venn diagram exactly once, which, in turn requires accounting for overcounting wherever sets overlap. Let $\{A_i | i\in \{i\}_n \}$ be a collection of $n$ overlapping sets indexed by $i\in \{i\}_n$, then the inclusion-exclusion principle is given by:
+
+\begin{equation}
+\left|\bigcup_{i\in\{i\}_n} A_i\right| = \sum^n_{k=1} (-1)^{k-1} \sum_{\{j\}_k \subseteq \{i\}_n} \left|\bigcap_{j\in\{j\}_k} A_j\right|
+\end{equation}
+
+
+Where the sum over $\{j\}_k \subseteq \{i\}_n$ is over all $k$-element subsets of $\{i\}_n$.
+
+\subsection{Example: n=2 Sets and n=3 Sets}
+
+\subparagraph{n=2}
+\begin{equation}
+\begin{array}{rl}
+\left|\bigcup_{i\in\{1,2\}}A_i\right| =&  \sum^2_{k=1} (-1)^{k-1} \sum_{\{j\}_k \subseteq \{1,2\}} \left|\bigcap_{j\in\{j\}_k} A_j\right|\\
+=&(-1)^{0}\left(|A_1| + |A_2|\right) \\
+&+ (-1)^{1}\left(|A_1 \cap A_2| \right)
+\end{array}
+\end{equation}
+
+
+\subparagraph{n=3}
+\begin{equation}
+\begin{array}{rl}
+\left|\bigcup_{i\in\{1,2,3\}}A_i\right| =&  \sum^3_{k=1} (-1)^{k-1} \sum_{\{j\}_k \subseteq \{1,2,3\}} \left|\bigcap_{j\in\{j\}_k} A_j\right|\\
+=&(-1)^{0}\left(|A_1| + |A_2| + |A_3|\right) \\
+&+ (-1)^{1}\left(|A_1 \cap A_2|  + |A_1 \cap A_3| + |A_2 \cap A_3|  \right) \\ 
+&+ (-1)^{2}\left(|A_1 \cap A_2 \cap A_3|   \right)
+\end{array}
+\end{equation}
+
+\subsubsection{Example: Counting Integers}
+
+How many integers are there between 1 and 100 that are neither divisible by 3,5 nor 7?
+
+Let $S$ be the set of all integers between 1 and 100. The size of the set is $|S| = 100$. The subset of $S$ that is numbers divisible by 3 is $A_3 \subseteq S$ with $|A_3| = 33$ because $100/3 = 33.\overline{333}$. Similarly, $|A_5| = 20$ and $|A_7| = 14$.  The set of integers that is not divisible by 3, 5 or 7 is:
+
+\begin{equation}
+S \setminus \bigcup_{i\in\{3,5,7\}} A_i
+\end{equation}
+
+So that the sought after quantity is :
+
+\begin{equation}
+\begin{array}{rl}
+\left|S \setminus \bigcup_{i\in\{3,5,7\}} A_i\right| =& |S| - \left[ |A_3| + |A_5| + |A_7| \right.\\
+& \left. - |A_3 \cap A_5| - |A_3 \cap A_7| - |A_5\cap A_7| + |A_3\cap A_5\cap A_7|\right]
+\end{array}
+\end{equation}
+
+The size of the intersection $|A_3\cap A_5| = 6$ because 100 is 6 times divisible by $3\times 5 = 15$. Similarly, $|A_3 \cap A_7| =  4$, $|A_5 \cap A_7| =  2$ and $|A_3\cap A_5 \cap A_7| =  0|$. Hence:
+
+\begin{equation}
+\left|S \setminus \bigcup_{i\in\{3,5,7\}} A_i\right| = 100 - 33 - 20 - 14 + 6 + 4 + 2 - 0 = 45
+\end{equation}
+
+There are 45 integers between 1 and 100 that are not divisible by 3, 5 or 7.
