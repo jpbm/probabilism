@@ -4,12 +4,44 @@
    \printcontents{}{1}{\setcounter{tocdepth}{2}}
 \end{multicols}
 
+In the discrete case, time series $X$ is a set of random variables $X = \{X_1, X_2, X_3,...\}$, or alternatively $X = \{X_t: t\in T\}$ where $T$ is the index set. 
+
+\section{Branching Processes}
 
 \section{Markov Chains}
+Markov Chains are time series in which the probability of a state depends only on the state preceding it. That is:
+
+\begin{equation}
+p(X_{t+1}|X_t, X{t-1},...,X_{1},X_0) = p(X_{t+1}|X_t)
+\end{equation}
+
+
 
 \section{Martingales}
+Martingales are time series in which the expected value of a state is identical to the expected value of the state preceding it. That is:
+
+\begin{equation}
+\mathbb{E}X_{t+1} = \mathbb{E}X_{t}
+\end{equation}
+
+
 \subsection{Martingale Convergence Theorem}
 
 \section{Hidden Markov Models}
 
 \section{Ito Calculus}
+
+\section{Chaos Analysis}
+
+\section{Noise}
+
+\subsection{White Noise}
+White noise contains all frequencies with the same intensity. That is, it has constant power spectral density. Infinite bandwidth white noise is a purely theoretical concept, but if noise has a flat power spectrum across the frequencies of interest, it is referred to as white noise. 
+
+In discrete time, white noise is a series of uncorrelated random variables with zero mean and finite variance. When the variables all have normal distribution, the noise is referred to as Gaussian white noise. 
+
+\subsection{Gaussian Noise}
+Gaussian noise is typically understood to be white noise in which the shocks have a normal distribution.
+
+\subsection{Brownian Noise}
+Brownian noise is noise corresponding to random motion (i.e. Brownian motion). The power spectrum is proportional to $\frac{1}{f^2}$.

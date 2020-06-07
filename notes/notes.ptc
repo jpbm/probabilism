@@ -219,11 +219,17 @@
 \contentsline {chapter}{\numberline {6}Stochastic Processes and Time Series Analysis}{53}{chapter.6}
 \ttl@stoptoc {default@6}
 \ttl@starttoc {default@7}
-\contentsline {section}{\numberline {6.1}Markov Chains}{53}{section.6.1}
-\contentsline {section}{\numberline {6.2}Martingales}{53}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Martingale Convergence Theorem}{53}{subsection.6.2.1}
-\contentsline {section}{\numberline {6.3}Hidden Markov Models}{53}{section.6.3}
-\contentsline {section}{\numberline {6.4}Ito Calculus}{53}{section.6.4}
+\contentsline {section}{\numberline {6.1}Branching Processes}{53}{section.6.1}
+\contentsline {section}{\numberline {6.2}Markov Chains}{53}{section.6.2}
+\contentsline {section}{\numberline {6.3}Martingales}{53}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Martingale Convergence Theorem}{53}{subsection.6.3.1}
+\contentsline {section}{\numberline {6.4}Hidden Markov Models}{53}{section.6.4}
+\contentsline {section}{\numberline {6.5}Ito Calculus}{53}{section.6.5}
+\contentsline {section}{\numberline {6.6}Chaos Analysis}{53}{section.6.6}
+\contentsline {section}{\numberline {6.7}Noise}{53}{section.6.7}
+\contentsline {subsection}{\numberline {6.7.1}White Noise}{53}{subsection.6.7.1}
+\contentsline {subsection}{\numberline {6.7.2}Gaussian Noise}{54}{subsection.6.7.2}
+\contentsline {subsection}{\numberline {6.7.3}Brownian Noise}{54}{subsection.6.7.3}
 \contentsline {chapter}{\numberline {7}Statistics}{55}{chapter.7}
 \ttl@stoptoc {default@7}
 \ttl@starttoc {default@8}
