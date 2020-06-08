@@ -155,6 +155,7 @@ The cardinality of the disjoint union is simply the sum:
 \left|\bigsqcup_{i\in\{i\}}A_i\right| = \sum_{i\in\{i\}}|A_i
 \end{equation}
 
+I have also seen the disjoint union be used in the context of forming the union of disjoint sets, perhaps to stress that the sets are disjoint and the cardinality can be calculated through simple summation as above. For example, in dividing up the interval: $[0,2]=[0,1)\sqcup[1,2]$.
 
 
 % Bijection Principle
@@ -239,8 +240,20 @@ The size of the intersection $|A_3\cap A_5| = 6$ because 100 is 6 times divisibl
 There are 45 integers between 1 and 100 that are not divisible by 3, 5 or 7.
 
 
-%% open sets, closed sets
+\section{Axiom of Choice}
+The axiom of choice simply states that, given a collection of nonempty, mutually disjoint sets, it is possible to assemble a \textit{transversal} or \textit{choice} set that consists of exactly one element from each of the sets in the collection. For example, consider the students in 1st, 2nd, 3rd.. etc grades at a school to be a collection of nonempty, mutually disjoint sets. Then the axiom of choice says that it is possible to assemble a subset of students with exactly one student from each grade. 
 
+
+In terms of functions, one might think of defining a \textit{choice function} on the family of mutually disjoint sets, which selects members from the collection of sets and adds them to the \textit{choice} set. According to the axiom of choice, a choice function can be defined for any collection of nonempty, mutually disjoint subsets. This implies that all surjective functions have a right inverse. That is, for any surjective function $f:X\rightarrow Y$, there exists a function $g:Y\rightarrow X$ so that $f(g(y)) = y$.   
+
+The axiom of choice turns out to be associated with famous names and deep consequences \cite{stanfordaxiomofchoice}.
+
+\subsection{Example: Pairs of Real Numbers, Right Inverse}
+The collection of rank-2 sets of pairs of real numbers $A= \{ A_x = \{x,-x\} : x\in \mathbb{R}^{+}\}$ are a collection of mutually disjoint subsets. A transversal set $B$ may be assembled by choosing the largest element of the tuple: $B = \{y : y max(A_x), A_x \in A \}$. An equivalent surjection $f:A\rightarrow B$ is $f(A_x) = x$. There is a right-inverse $g:B\rightarrow A$ which is $g(x) = (x,-x)$ so that $f(g(x)) = x$.
+
+
+
+%% open sets, closed sets
 \section{Open Sets, Closed Sets}
 Open sets and closed sets are generalizations of open and closed intervals on the real line. Open sets a mentioned plenty in the context of measure theory. A set is open if and only if its complement is closed, and a set is closed if and only if its complement is open. Counterintuitively, a set can be both open and closed at the same time, or it can be neither open nor closed at the same time.
 

@@ -1,0 +1,53 @@
+This is BibTeX, Version 0.99d (TeX Live 2017)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: notes.aux
+The style file: agsm.bst
+Database file #1: references.bib
+Warning--entry type for "mathworkseigs" isn't style-file defined
+--line 81 of file references.bib
+Warning--I didn't find a database entry for "mathworkseig"
+Warning--I didn't find a database entry for "blitzstein2019introduction"
+Warning--I didn't find a database entry for "damask2019consistent"
+Warning--can't use both volume and number fields in friedman2001elements
+You've used 14 entries,
+            2909 wiz_defined-function locations,
+            712 strings with 6820 characters,
+and the built_in function-call counts, 29456 in all, are:
+= -- 4534
+> -- 382
+< -- 1
++ -- 2022
+- -- 112
+* -- 2270
+:= -- 6480
+add.period$ -- 14
+call.type$ -- 14
+change.case$ -- 193
+chr.to.int$ -- 14
+cite$ -- 15
+duplicate$ -- 193
+empty$ -- 374
+format.name$ -- 141
+if$ -- 5155
+int.to.chr$ -- 5
+int.to.str$ -- 0
+missing$ -- 12
+newline$ -- 58
+num.names$ -- 141
+pop$ -- 107
+preamble$ -- 1
+purify$ -- 210
+quote$ -- 0
+skip$ -- 150
+stack$ -- 0
+substring$ -- 6121
+swap$ -- 18
+text.length$ -- 197
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 50
+warning$ -- 1
+while$ -- 294
+width$ -- 0
+write$ -- 177
+(There were 5 warnings)
