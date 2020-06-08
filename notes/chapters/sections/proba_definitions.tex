@@ -10,11 +10,11 @@ The event space $S$ consists of a collection of equally likely outcomes. The act
 P_{naive}(A) = \frac{|A|}{|S|} = \frac{\mathrm{number of outcomes favorable to A}}{\mathrm{total number of outcomes in S}}
 \end{equation}
 
-This approach runs into trouble when the outcomes in $|A|$ are not equally likely, or if the sample space is infinite, i.e. $|S|=\infty$.
+This approach runs into trouble when the outcomes in $|A|$ are not equally likely, or if the sample space is infinite, i.e. $|S|=\infty$. I would call this "combinatorial probability".
 
 
 \subsubsection{Non-Naive Definition of Probability}
-A probability space consists of a sample space $S$ in addition to a \textit{probability function}. The job of the probability function is to take an event $A\subseteq S$ and map it to a number between $0$ and $1$. I.e.  $P: S \rightarrow [0,1]$.
+This definition is from \cite{blitzstein2019introduction} and is congruent with measure theoretic probability. A probability space consists of a sample space $S$ in addition to a \textit{probability function}. The job of the probability function is to take an event $A\subseteq S$ and map it to a number between $0$ and $1$. I.e.  $P: S \rightarrow [0,1]$.
 
 The function $P$ must satisfy:
 
@@ -38,13 +38,19 @@ In practice, it seems that frequentist approaches tend to be structured around p
 I suspect that an additional source of bias is that frequentist methods tend to be computationally lighter and that many standard accepted recipes exist for common problems. In contrast, Bayesian approaches are usually derived ad-hoc in the context of a particular problem.
 
 \subsection{Measure Theoretic Probability}
-The modern approach to probability is rooted in measure theory. In that context:
+The modern approach to probability is rooted in measure theory. 
+
+Define: 
 
 \begin{itemize}
-\item The \textit{sample space} is a measurable set
-\item An \textit{event} is a measurable set; a subset of the sample space.
-\item A \textit{random variable} is a measurable function on the sample space.
-\item The \textit{expectation} of a random variable is its integral with respect to the probability measure.
+\item $\Omega$ is the \textit{state space}, the set of all possible outcomes. 
+\item $\omega \in \Omega$ an element $\omega$ of $\Omega$ is an outcome.
+\item $A \subseteq \Omega$, a subset $A$ of $\Omega$ is an event.
 \end{itemize}
 
+Further, define a function $P$ that assigns subsets of the state space $\Omega$ to a number on the interval $[0,1]$. 
+
+\begin{equation}
+P: 2^{\Omega} \rightarrow [0,1]
+\end{equation}
 

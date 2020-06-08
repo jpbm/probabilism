@@ -6,159 +6,174 @@
 \BOOKMARK [2][-]{subsection.1.2.3}{Singleton Set}{section.1.2}% 6
 \BOOKMARK [2][-]{subsection.1.2.4}{Infinite Sets}{section.1.2}% 7
 \BOOKMARK [2][-]{subsection.1.2.5}{Multisets}{section.1.2}% 8
-\BOOKMARK [2][-]{subsection.1.2.6}{Universal Set}{section.1.2}% 9
-\BOOKMARK [1][-]{section.1.3}{Set Operations}{chapter.1}% 10
-\BOOKMARK [2][-]{subsection.1.3.1}{Ac Complement}{section.1.3}% 11
-\BOOKMARK [2][-]{subsection.1.3.2}{ Union}{section.1.3}% 12
-\BOOKMARK [2][-]{subsection.1.3.3}{ Intersection}{section.1.3}% 13
-\BOOKMARK [2][-]{subsection.1.3.4}{ Disjoint Union, Discriminated Union}{section.1.3}% 14
-\BOOKMARK [1][-]{section.1.4}{Bijection Principle}{chapter.1}% 15
-\BOOKMARK [1][-]{section.1.5}{DeMorgan's Rules}{chapter.1}% 16
-\BOOKMARK [1][-]{section.1.6}{Inclusion - Exclusion Principle}{chapter.1}% 17
-\BOOKMARK [2][-]{subsection.1.6.1}{Example: n=2 Sets and n=3 Sets}{section.1.6}% 18
-\BOOKMARK [0][-]{chapter.2}{Combinatorics}{}% 19
-\BOOKMARK [1][-]{section.2.1}{Combinatorial Identities and Expansions}{chapter.2}% 20
-\BOOKMARK [2][-]{subsection.2.1.1}{Binomial Coefficients and Binomial Expansions}{section.2.1}% 21
-\BOOKMARK [2][-]{subsection.2.1.2}{Multinomial Expansion}{section.2.1}% 22
-\BOOKMARK [2][-]{subsection.2.1.3}{Unnamed Polynomial Identity}{section.2.1}% 23
-\BOOKMARK [2][-]{subsection.2.1.4}{Factorial Expansion}{section.2.1}% 24
-\BOOKMARK [2][-]{subsection.2.1.5}{Stirling Numbers of the Second Kind}{section.2.1}% 25
-\BOOKMARK [1][-]{section.2.2}{Distributions: The Twentyfold Way}{chapter.2}% 26
-\BOOKMARK [2][-]{subsection.2.2.1}{Distinct Objects}{section.2.2}% 27
-\BOOKMARK [2][-]{subsection.2.2.2}{Distinct Objects, Every Recipient Receives At Most One}{section.2.2}% 28
-\BOOKMARK [2][-]{subsection.2.2.3}{Distinct Objects, Every Recipient Receives at Least One}{section.2.2}% 29
-\BOOKMARK [2][-]{subsection.2.2.4}{Distinct Objects, Every Recipient Receives Exactly One}{section.2.2}% 30
-\BOOKMARK [2][-]{subsection.2.2.5}{Distinct Objects, Distributed in Ordered Groups}{section.2.2}% 31
-\BOOKMARK [2][-]{subsection.2.2.6}{Distinct Objects, Distributed in Ordered Groups of At Least One}{section.2.2}% 32
-\BOOKMARK [2][-]{subsection.2.2.7}{Identical Objects}{section.2.2}% 33
-\BOOKMARK [2][-]{subsection.2.2.8}{Identical Objects, Each Receives At Most One}{section.2.2}% 34
-\BOOKMARK [2][-]{subsection.2.2.9}{Identical Objects, Each Receives At Least One}{section.2.2}% 35
-\BOOKMARK [2][-]{subsection.2.2.10}{Identical Objects, Each Receives Exactly One}{section.2.2}% 36
-\BOOKMARK [1][-]{section.2.3}{Generating Functions}{chapter.2}% 37
-\BOOKMARK [2][-]{subsection.2.3.1}{Example: Binomial Coefficients}{section.2.3}% 38
-\BOOKMARK [2][-]{subsection.2.3.2}{Example: Basket of Goods}{section.2.3}% 39
-\BOOKMARK [2][-]{subsection.2.3.3}{Example: Dice}{section.2.3}% 40
-\BOOKMARK [0][-]{chapter.3}{Linear Algebra and Multivariable Calculus}{}% 41
-\BOOKMARK [1][-]{section.3.1}{Multi-Index Notation}{chapter.3}% 42
-\BOOKMARK [2][-]{subsection.3.1.1}{Example: Multinomial Coefficients}{section.3.1}% 43
-\BOOKMARK [2][-]{subsection.3.1.2}{Example: Taylor Expansion}{section.3.1}% 44
-\BOOKMARK [1][-]{section.3.2}{Linear Systems of Equations}{chapter.3}% 45
-\BOOKMARK [2][-]{subsection.3.2.1}{ARnn Square Matrices}{section.3.2}% 46
-\BOOKMARK [2][-]{subsection.3.2.2}{ARmn Rectangular Matrices, Overdetermined Case}{section.3.2}% 47
-\BOOKMARK [2][-]{subsection.3.2.3}{ARnm Rectangular Matrices, Underdetermined Case}{section.3.2}% 48
-\BOOKMARK [1][-]{section.3.3}{A = LL Cholesky Decomposition}{chapter.3}% 49
-\BOOKMARK [2][-]{subsection.3.3.1}{Creating Correlated Random Variables}{section.3.3}% 50
-\BOOKMARK [1][-]{section.3.4}{Generalized Eigenvectors}{chapter.3}% 51
-\BOOKMARK [1][-]{section.3.5}{A = VV-1 Spectral Theorems, Diagonalization}{chapter.3}% 52
-\BOOKMARK [2][-]{subsection.3.5.1}{A = VVT Eigendecomposition of Symmetric Matrices}{section.3.5}% 53
-\BOOKMARK [2][-]{subsection.3.5.2}{H = UUT Eigendecomposition of Hermitian Matrices}{section.3.5}% 54
-\BOOKMARK [2][-]{subsection.3.5.3}{Eigenvalue Sensitivity and Accuracy}{section.3.5}% 55
-\BOOKMARK [1][-]{section.3.6}{A = UV Singular Value Decomposition}{chapter.3}% 56
-\BOOKMARK [2][-]{subsection.3.6.1}{Full and Economy SVDs}{section.3.6}% 57
-\BOOKMARK [2][-]{subsection.3.6.2}{Matrix Approximation}{section.3.6}% 58
-\BOOKMARK [1][-]{section.3.7}{Types of Transformations}{chapter.3}% 59
-\BOOKMARK [2][-]{subsection.3.7.1}{Similarity Transformations}{section.3.7}% 60
-\BOOKMARK [2][-]{subsection.3.7.2}{Affine Transformations}{section.3.7}% 61
-\BOOKMARK [2][-]{subsection.3.7.3}{Unitary Transformations}{section.3.7}% 62
-\BOOKMARK [2][-]{subsection.3.7.4}{Multilinear Maps}{section.3.7}% 63
-\BOOKMARK [2][-]{subsection.3.7.5}{Multilinear Forms}{section.3.7}% 64
-\BOOKMARK [1][-]{section.3.8}{Types of Matrices}{chapter.3}% 65
-\BOOKMARK [2][-]{subsection.3.8.1}{sgn\(xHx\) Definite}{section.3.8}% 66
-\BOOKMARK [2][-]{subsection.3.8.2}{Triangular}{section.3.8}% 67
-\BOOKMARK [2][-]{subsection.3.8.3}{AB-BA=0 Commuting}{section.3.8}% 68
-\BOOKMARK [2][-]{subsection.3.8.4}{AB+BA=0 Anticommuting}{section.3.8}% 69
-\BOOKMARK [2][-]{subsection.3.8.5}{A = A Hermitian, Symmetric}{section.3.8}% 70
-\BOOKMARK [2][-]{subsection.3.8.6}{A = -A Skew Hermitian, Skew Symmetric}{section.3.8}% 71
-\BOOKMARK [2][-]{subsection.3.8.7}{AA=I Involutory}{section.3.8}% 72
-\BOOKMARK [2][-]{subsection.3.8.8}{U = U-1 Unitary, Orthogonal}{section.3.8}% 73
-\BOOKMARK [2][-]{subsection.3.8.9}{A = TBT-1 Similarity}{section.3.8}% 74
-\BOOKMARK [1][-]{section.3.9}{Properties of Norms}{chapter.3}% 75
-\BOOKMARK [1][-]{section.3.10}{Lp Lebesgue Vector Norms}{chapter.3}% 76
-\BOOKMARK [2][-]{subsection.3.10.1}{L1 Taxicab / Manhattan Norm}{section.3.10}% 77
-\BOOKMARK [2][-]{subsection.3.10.2}{L2 Euclidian Norm}{section.3.10}% 78
-\BOOKMARK [2][-]{subsection.3.10.3}{L Maximum Norm}{section.3.10}% 79
-\BOOKMARK [2][-]{subsection.3.10.4}{L- Minimum Norm}{section.3.10}% 80
-\BOOKMARK [1][-]{section.3.11}{Operator and Matrix Norms}{chapter.3}% 81
-\BOOKMARK [2][-]{subsection.3.11.1}{||A||\(\) Operator Norm}{section.3.11}% 82
-\BOOKMARK [2][-]{subsection.3.11.2}{||A||q q-Norms}{section.3.11}% 83
-\BOOKMARK [2][-]{subsection.3.11.3}{||A||F Frobenius Norm}{section.3.11}% 84
-\BOOKMARK [2][-]{subsection.3.11.4}{||A||\(1\) \(1\)-Norm}{section.3.11}% 85
-\BOOKMARK [2][-]{subsection.3.11.5}{||A||\(\) \(\)-Norm}{section.3.11}% 86
-\BOOKMARK [2][-]{subsection.3.11.6}{||A||\(2\) \(2\)-Norm}{section.3.11}% 87
-\BOOKMARK [1][-]{section.3.12}{Vector and Matrix Derivatives}{chapter.3}% 88
-\BOOKMARK [2][-]{subsection.3.12.1}{Jacobian}{section.3.12}% 89
-\BOOKMARK [2][-]{subsection.3.12.2}{Inverse Function Theorem}{section.3.12}% 90
-\BOOKMARK [2][-]{subsection.3.12.3}{Critical Points}{section.3.12}% 91
-\BOOKMARK [2][-]{subsection.3.12.4}{Differential Volume Element, Change of Variables}{section.3.12}% 92
-\BOOKMARK [2][-]{subsection.3.12.5}{Hessian}{section.3.12}% 93
-\BOOKMARK [0][-]{chapter.4}{Probability}{}% 94
-\BOOKMARK [1][-]{section.4.1}{Interpretations and Definitions of Probability}{chapter.4}% 95
-\BOOKMARK [2][-]{subsection.4.1.1}{Naive and Non-Naive Definitions of Probability}{section.4.1}% 96
-\BOOKMARK [2][-]{subsection.4.1.2}{Frequentist Probability}{section.4.1}% 97
-\BOOKMARK [2][-]{subsection.4.1.3}{Bayesian Probability}{section.4.1}% 98
-\BOOKMARK [2][-]{subsection.4.1.4}{Measure Theoretic Probability}{section.4.1}% 99
-\BOOKMARK [1][-]{section.4.2}{Measure Theory}{chapter.4}% 100
-\BOOKMARK [1][-]{section.4.3}{Functions of Random Variables, Derived Distributions}{chapter.4}% 101
-\BOOKMARK [2][-]{subsection.4.3.1}{Example: Sum of Random Variables}{section.4.3}% 102
-\BOOKMARK [2][-]{subsection.4.3.2}{Example: Lower Dimensional Random Variable}{section.4.3}% 103
-\BOOKMARK [1][-]{section.4.4}{Indicator Variables}{chapter.4}% 104
-\BOOKMARK [2][-]{subsection.4.4.1}{Example: The Party Problem}{section.4.4}% 105
-\BOOKMARK [1][-]{section.4.5}{Copulas}{chapter.4}% 106
-\BOOKMARK [1][-]{section.4.6}{Relationships Between Distributions}{chapter.4}% 107
-\BOOKMARK [1][-]{section.4.7}{Large Deviation Theory}{chapter.4}% 108
-\BOOKMARK [2][-]{subsection.4.7.1}{Gaertner-Ellis Theorem}{section.4.7}% 109
-\BOOKMARK [2][-]{subsection.4.7.2}{Example: Sum of Uniform Random Variables}{section.4.7}% 110
-\BOOKMARK [0][-]{chapter.5}{Information Theory}{}% 111
-\BOOKMARK [1][-]{section.5.1}{Entropy}{chapter.5}% 112
-\BOOKMARK [1][-]{section.5.2}{Mutual Information}{chapter.5}% 113
-\BOOKMARK [1][-]{section.5.3}{Kullback-Leibler Divergence}{chapter.5}% 114
-\BOOKMARK [0][-]{chapter.6}{Stochastic Processes and Time Series Analysis}{}% 115
-\BOOKMARK [1][-]{section.6.1}{Branching Processes}{chapter.6}% 116
-\BOOKMARK [1][-]{section.6.2}{Markov Chains}{chapter.6}% 117
-\BOOKMARK [1][-]{section.6.3}{Martingales}{chapter.6}% 118
-\BOOKMARK [2][-]{subsection.6.3.1}{Martingale Convergence Theorem}{section.6.3}% 119
-\BOOKMARK [1][-]{section.6.4}{Hidden Markov Models}{chapter.6}% 120
-\BOOKMARK [1][-]{section.6.5}{Ito Calculus}{chapter.6}% 121
-\BOOKMARK [1][-]{section.6.6}{Chaos Analysis}{chapter.6}% 122
-\BOOKMARK [1][-]{section.6.7}{Noise}{chapter.6}% 123
-\BOOKMARK [2][-]{subsection.6.7.1}{White Noise}{section.6.7}% 124
-\BOOKMARK [2][-]{subsection.6.7.2}{Gaussian Noise}{section.6.7}% 125
-\BOOKMARK [2][-]{subsection.6.7.3}{Brownian Noise}{section.6.7}% 126
-\BOOKMARK [0][-]{chapter.7}{Statistics}{}% 127
-\BOOKMARK [1][-]{section.7.1}{Directional Statistics}{chapter.7}% 128
-\BOOKMARK [2][-]{subsection.7.1.1}{Mean Direction}{section.7.1}% 129
-\BOOKMARK [2][-]{subsection.7.1.2}{Dispersion}{section.7.1}% 130
-\BOOKMARK [1][-]{section.7.2}{Features}{chapter.7}% 131
-\BOOKMARK [2][-]{subsection.7.2.1}{Dense Features, Sparse Features}{section.7.2}% 132
-\BOOKMARK [1][-]{section.7.3}{Multicollinearity}{chapter.7}% 133
-\BOOKMARK [2][-]{subsection.7.3.1}{Sources}{section.7.3}% 134
-\BOOKMARK [1][-]{section.7.4}{R2 Value}{chapter.7}% 135
-\BOOKMARK [1][-]{section.7.5}{Regression Diagnostics}{chapter.7}% 136
-\BOOKMARK [1][-]{section.7.6}{t-Statistics}{chapter.7}% 137
-\BOOKMARK [1][-]{section.7.7}{AIC and BIC}{chapter.7}% 138
-\BOOKMARK [1][-]{section.7.8}{Factor Regression}{chapter.7}% 139
-\BOOKMARK [1][-]{section.7.9}{Factor Models}{chapter.7}% 140
-\BOOKMARK [0][-]{chapter.8}{Linear Regression}{}% 141
-\BOOKMARK [1][-]{section.8.1}{Ordinary Least Squares Regression}{chapter.8}% 142
-\BOOKMARK [2][-]{subsection.8.1.1}{The Normal Equations, Analytical Least Squares Estimator}{section.8.1}% 143
-\BOOKMARK [2][-]{subsection.8.1.2}{The Quick Way to }{section.8.1}% 144
-\BOOKMARK [2][-]{subsection.8.1.3}{The Long Way to }{section.8.1}% 145
-\BOOKMARK [2][-]{subsection.8.1.4}{Projection Matrix}{section.8.1}% 146
-\BOOKMARK [2][-]{subsection.8.1.5}{Bayesian Perspective on Least Squares Regression}{section.8.1}% 147
-\BOOKMARK [2][-]{subsection.8.1.6}{Q-plots}{section.8.1}% 148
-\BOOKMARK [2][-]{subsection.8.1.7}{Variance Inflation Factor}{section.8.1}% 149
-\BOOKMARK [1][-]{section.8.2}{Ridge Regression}{chapter.8}% 150
-\BOOKMARK [2][-]{subsection.8.2.1}{Analytical Ridge Estimator}{section.8.2}% 151
-\BOOKMARK [2][-]{subsection.8.2.2}{Bayesian Perspective on Ridge Regression}{section.8.2}% 152
-\BOOKMARK [0][-]{chapter.9}{Bayesian Data Analysis}{}% 153
-\BOOKMARK [0][-]{chapter.10}{Unsupervised Learning}{}% 154
-\BOOKMARK [1][-]{section.10.1}{Blind Source Separation}{chapter.10}% 155
-\BOOKMARK [1][-]{section.10.2}{Independent Component Analysis}{chapter.10}% 156
-\BOOKMARK [1][-]{section.10.3}{Eigenanalysis, Singular Value Decomposition of Data Matrices}{chapter.10}% 157
-\BOOKMARK [2][-]{subsection.10.3.1}{Example: Eigenfaces and Facial Recognition}{section.10.3}% 158
-\BOOKMARK [2][-]{subsection.10.3.2}{Tracking an Eigensystem over Time}{section.10.3}% 159
-\BOOKMARK [2][-]{subsection.10.3.3}{Bayesian SVD}{section.10.3}% 160
-\BOOKMARK [1][-]{section.10.4}{Principal Component Analysis \(PCA\)}{chapter.10}% 161
-\BOOKMARK [2][-]{subsection.10.4.1}{Relationship between PCA and SVD}{section.10.4}% 162
-\BOOKMARK [2][-]{subsection.10.4.2}{Tracking Principal Components over Time}{section.10.4}% 163
-\BOOKMARK [1][-]{section.10.5}{X=WH Non-Negative Matrix Factorization}{chapter.10}% 164
+\BOOKMARK [2][-]{subsection.1.2.6}{Powersets}{section.1.2}% 9
+\BOOKMARK [2][-]{subsection.1.2.7}{Measurable Sets}{section.1.2}% 10
+\BOOKMARK [2][-]{subsection.1.2.8}{Universal Set}{section.1.2}% 11
+\BOOKMARK [1][-]{section.1.3}{Set Operations}{chapter.1}% 12
+\BOOKMARK [2][-]{subsection.1.3.1}{Ac Complement}{section.1.3}% 13
+\BOOKMARK [2][-]{subsection.1.3.2}{ Union}{section.1.3}% 14
+\BOOKMARK [2][-]{subsection.1.3.3}{ Intersection}{section.1.3}% 15
+\BOOKMARK [2][-]{subsection.1.3.4}{ Disjoint Union, Discriminated Union}{section.1.3}% 16
+\BOOKMARK [1][-]{section.1.4}{Bijection Principle}{chapter.1}% 17
+\BOOKMARK [1][-]{section.1.5}{DeMorgan's Rules}{chapter.1}% 18
+\BOOKMARK [1][-]{section.1.6}{Inclusion - Exclusion Principle}{chapter.1}% 19
+\BOOKMARK [2][-]{subsection.1.6.1}{Example: n=2 Sets and n=3 Sets}{section.1.6}% 20
+\BOOKMARK [1][-]{section.1.7}{Open Sets, Closed Sets}{chapter.1}% 21
+\BOOKMARK [2][-]{subsection.1.7.1}{Interior Points}{section.1.7}% 22
+\BOOKMARK [2][-]{subsection.1.7.2}{Accumulation Points}{section.1.7}% 23
+\BOOKMARK [2][-]{subsection.1.7.3}{Open Sets}{section.1.7}% 24
+\BOOKMARK [2][-]{subsection.1.7.4}{Closed Sets}{section.1.7}% 25
+\BOOKMARK [2][-]{subsection.1.7.5}{Both Open and Closed, Neither Open Nor Closed}{section.1.7}% 26
+\BOOKMARK [1][-]{section.1.8}{-Algebras}{chapter.1}% 27
+\BOOKMARK [2][-]{subsection.1.8.1}{Definition}{section.1.8}% 28
+\BOOKMARK [2][-]{subsection.1.8.2}{Intersection Property}{section.1.8}% 29
+\BOOKMARK [2][-]{subsection.1.8.3}{Generated -Algebras}{section.1.8}% 30
+\BOOKMARK [2][-]{subsection.1.8.4}{Borel -Algebras}{section.1.8}% 31
+\BOOKMARK [2][-]{subsection.1.8.5}{Measures}{section.1.8}% 32
+\BOOKMARK [2][-]{subsection.1.8.6}{Example: Normal Volume Measure}{section.1.8}% 33
+\BOOKMARK [0][-]{chapter.2}{Combinatorics}{}% 34
+\BOOKMARK [1][-]{section.2.1}{Combinatorial Identities and Expansions}{chapter.2}% 35
+\BOOKMARK [2][-]{subsection.2.1.1}{Binomial Coefficients and Binomial Expansions}{section.2.1}% 36
+\BOOKMARK [2][-]{subsection.2.1.2}{Multinomial Expansion}{section.2.1}% 37
+\BOOKMARK [2][-]{subsection.2.1.3}{Unnamed Polynomial Identity}{section.2.1}% 38
+\BOOKMARK [2][-]{subsection.2.1.4}{Factorial Expansion}{section.2.1}% 39
+\BOOKMARK [2][-]{subsection.2.1.5}{Stirling Numbers of the Second Kind}{section.2.1}% 40
+\BOOKMARK [1][-]{section.2.2}{Distributions: The Twentyfold Way}{chapter.2}% 41
+\BOOKMARK [2][-]{subsection.2.2.1}{Distinct Objects}{section.2.2}% 42
+\BOOKMARK [2][-]{subsection.2.2.2}{Distinct Objects, Every Recipient Receives At Most One}{section.2.2}% 43
+\BOOKMARK [2][-]{subsection.2.2.3}{Distinct Objects, Every Recipient Receives at Least One}{section.2.2}% 44
+\BOOKMARK [2][-]{subsection.2.2.4}{Distinct Objects, Every Recipient Receives Exactly One}{section.2.2}% 45
+\BOOKMARK [2][-]{subsection.2.2.5}{Distinct Objects, Distributed in Ordered Groups}{section.2.2}% 46
+\BOOKMARK [2][-]{subsection.2.2.6}{Distinct Objects, Distributed in Ordered Groups of At Least One}{section.2.2}% 47
+\BOOKMARK [2][-]{subsection.2.2.7}{Identical Objects}{section.2.2}% 48
+\BOOKMARK [2][-]{subsection.2.2.8}{Identical Objects, Each Receives At Most One}{section.2.2}% 49
+\BOOKMARK [2][-]{subsection.2.2.9}{Identical Objects, Each Receives At Least One}{section.2.2}% 50
+\BOOKMARK [2][-]{subsection.2.2.10}{Identical Objects, Each Receives Exactly One}{section.2.2}% 51
+\BOOKMARK [1][-]{section.2.3}{Generating Functions}{chapter.2}% 52
+\BOOKMARK [2][-]{subsection.2.3.1}{Example: Binomial Coefficients}{section.2.3}% 53
+\BOOKMARK [2][-]{subsection.2.3.2}{Example: Basket of Goods}{section.2.3}% 54
+\BOOKMARK [2][-]{subsection.2.3.3}{Example: Dice}{section.2.3}% 55
+\BOOKMARK [0][-]{chapter.3}{Linear Algebra and Multivariable Calculus}{}% 56
+\BOOKMARK [1][-]{section.3.1}{Multi-Index Notation}{chapter.3}% 57
+\BOOKMARK [2][-]{subsection.3.1.1}{Example: Multinomial Coefficients}{section.3.1}% 58
+\BOOKMARK [2][-]{subsection.3.1.2}{Example: Taylor Expansion}{section.3.1}% 59
+\BOOKMARK [1][-]{section.3.2}{Linear Systems of Equations}{chapter.3}% 60
+\BOOKMARK [2][-]{subsection.3.2.1}{ARnn Square Matrices}{section.3.2}% 61
+\BOOKMARK [2][-]{subsection.3.2.2}{ARmn Rectangular Matrices, Overdetermined Case}{section.3.2}% 62
+\BOOKMARK [2][-]{subsection.3.2.3}{ARnm Rectangular Matrices, Underdetermined Case}{section.3.2}% 63
+\BOOKMARK [1][-]{section.3.3}{A = LL Cholesky Decomposition}{chapter.3}% 64
+\BOOKMARK [2][-]{subsection.3.3.1}{Creating Correlated Random Variables}{section.3.3}% 65
+\BOOKMARK [1][-]{section.3.4}{Generalized Eigenvectors}{chapter.3}% 66
+\BOOKMARK [1][-]{section.3.5}{A = VV-1 Spectral Theorems, Diagonalization}{chapter.3}% 67
+\BOOKMARK [2][-]{subsection.3.5.1}{A = VVT Eigendecomposition of Symmetric Matrices}{section.3.5}% 68
+\BOOKMARK [2][-]{subsection.3.5.2}{H = UUT Eigendecomposition of Hermitian Matrices}{section.3.5}% 69
+\BOOKMARK [2][-]{subsection.3.5.3}{Eigenvalue Sensitivity and Accuracy}{section.3.5}% 70
+\BOOKMARK [1][-]{section.3.6}{A = UV Singular Value Decomposition}{chapter.3}% 71
+\BOOKMARK [2][-]{subsection.3.6.1}{Full and Economy SVDs}{section.3.6}% 72
+\BOOKMARK [2][-]{subsection.3.6.2}{Matrix Approximation}{section.3.6}% 73
+\BOOKMARK [1][-]{section.3.7}{Types of Transformations}{chapter.3}% 74
+\BOOKMARK [2][-]{subsection.3.7.1}{Similarity Transformations}{section.3.7}% 75
+\BOOKMARK [2][-]{subsection.3.7.2}{Affine Transformations}{section.3.7}% 76
+\BOOKMARK [2][-]{subsection.3.7.3}{Unitary Transformations}{section.3.7}% 77
+\BOOKMARK [2][-]{subsection.3.7.4}{Multilinear Maps}{section.3.7}% 78
+\BOOKMARK [2][-]{subsection.3.7.5}{Multilinear Forms}{section.3.7}% 79
+\BOOKMARK [1][-]{section.3.8}{Types of Matrices}{chapter.3}% 80
+\BOOKMARK [2][-]{subsection.3.8.1}{sgn\(xHx\) Definite}{section.3.8}% 81
+\BOOKMARK [2][-]{subsection.3.8.2}{Triangular}{section.3.8}% 82
+\BOOKMARK [2][-]{subsection.3.8.3}{AB-BA=0 Commuting}{section.3.8}% 83
+\BOOKMARK [2][-]{subsection.3.8.4}{AB+BA=0 Anticommuting}{section.3.8}% 84
+\BOOKMARK [2][-]{subsection.3.8.5}{A = A Hermitian, Symmetric}{section.3.8}% 85
+\BOOKMARK [2][-]{subsection.3.8.6}{A = -A Skew Hermitian, Skew Symmetric}{section.3.8}% 86
+\BOOKMARK [2][-]{subsection.3.8.7}{AA=I Involutory}{section.3.8}% 87
+\BOOKMARK [2][-]{subsection.3.8.8}{U = U-1 Unitary, Orthogonal}{section.3.8}% 88
+\BOOKMARK [2][-]{subsection.3.8.9}{A = TBT-1 Similarity}{section.3.8}% 89
+\BOOKMARK [1][-]{section.3.9}{Properties of Norms}{chapter.3}% 90
+\BOOKMARK [1][-]{section.3.10}{Lp Lebesgue Vector Norms}{chapter.3}% 91
+\BOOKMARK [2][-]{subsection.3.10.1}{L1 Taxicab / Manhattan Norm}{section.3.10}% 92
+\BOOKMARK [2][-]{subsection.3.10.2}{L2 Euclidian Norm}{section.3.10}% 93
+\BOOKMARK [2][-]{subsection.3.10.3}{L Maximum Norm}{section.3.10}% 94
+\BOOKMARK [2][-]{subsection.3.10.4}{L- Minimum Norm}{section.3.10}% 95
+\BOOKMARK [1][-]{section.3.11}{Operator and Matrix Norms}{chapter.3}% 96
+\BOOKMARK [2][-]{subsection.3.11.1}{||A||\(\) Operator Norm}{section.3.11}% 97
+\BOOKMARK [2][-]{subsection.3.11.2}{||A||q q-Norms}{section.3.11}% 98
+\BOOKMARK [2][-]{subsection.3.11.3}{||A||F Frobenius Norm}{section.3.11}% 99
+\BOOKMARK [2][-]{subsection.3.11.4}{||A||\(1\) \(1\)-Norm}{section.3.11}% 100
+\BOOKMARK [2][-]{subsection.3.11.5}{||A||\(\) \(\)-Norm}{section.3.11}% 101
+\BOOKMARK [2][-]{subsection.3.11.6}{||A||\(2\) \(2\)-Norm}{section.3.11}% 102
+\BOOKMARK [1][-]{section.3.12}{Vector and Matrix Derivatives}{chapter.3}% 103
+\BOOKMARK [2][-]{subsection.3.12.1}{Jacobian}{section.3.12}% 104
+\BOOKMARK [2][-]{subsection.3.12.2}{Inverse Function Theorem}{section.3.12}% 105
+\BOOKMARK [2][-]{subsection.3.12.3}{Critical Points}{section.3.12}% 106
+\BOOKMARK [2][-]{subsection.3.12.4}{Differential Volume Element, Change of Variables}{section.3.12}% 107
+\BOOKMARK [2][-]{subsection.3.12.5}{Hessian}{section.3.12}% 108
+\BOOKMARK [0][-]{chapter.4}{Probability}{}% 109
+\BOOKMARK [1][-]{section.4.1}{Interpretations and Definitions of Probability}{chapter.4}% 110
+\BOOKMARK [2][-]{subsection.4.1.1}{Naive and Non-Naive Definitions of Probability}{section.4.1}% 111
+\BOOKMARK [2][-]{subsection.4.1.2}{Frequentist Probability}{section.4.1}% 112
+\BOOKMARK [2][-]{subsection.4.1.3}{Bayesian Probability}{section.4.1}% 113
+\BOOKMARK [2][-]{subsection.4.1.4}{Measure Theoretic Probability}{section.4.1}% 114
+\BOOKMARK [1][-]{section.4.2}{Measure Theory}{chapter.4}% 115
+\BOOKMARK [1][-]{section.4.3}{Functions of Random Variables, Derived Distributions}{chapter.4}% 116
+\BOOKMARK [2][-]{subsection.4.3.1}{Example: Sum of Random Variables}{section.4.3}% 117
+\BOOKMARK [2][-]{subsection.4.3.2}{Example: Lower Dimensional Random Variable}{section.4.3}% 118
+\BOOKMARK [1][-]{section.4.4}{Indicator Variables}{chapter.4}% 119
+\BOOKMARK [2][-]{subsection.4.4.1}{Example: The Party Problem}{section.4.4}% 120
+\BOOKMARK [1][-]{section.4.5}{Copulas}{chapter.4}% 121
+\BOOKMARK [1][-]{section.4.6}{Relationships Between Distributions}{chapter.4}% 122
+\BOOKMARK [1][-]{section.4.7}{Large Deviation Theory}{chapter.4}% 123
+\BOOKMARK [2][-]{subsection.4.7.1}{Gaertner-Ellis Theorem}{section.4.7}% 124
+\BOOKMARK [2][-]{subsection.4.7.2}{Example: Sum of Uniform Random Variables}{section.4.7}% 125
+\BOOKMARK [0][-]{chapter.5}{Information Theory}{}% 126
+\BOOKMARK [1][-]{section.5.1}{Entropy}{chapter.5}% 127
+\BOOKMARK [1][-]{section.5.2}{Mutual Information}{chapter.5}% 128
+\BOOKMARK [1][-]{section.5.3}{Kullback-Leibler Divergence}{chapter.5}% 129
+\BOOKMARK [0][-]{chapter.6}{Stochastic Processes and Time Series Analysis}{}% 130
+\BOOKMARK [1][-]{section.6.1}{Branching Processes}{chapter.6}% 131
+\BOOKMARK [1][-]{section.6.2}{Markov Chains}{chapter.6}% 132
+\BOOKMARK [1][-]{section.6.3}{Martingales}{chapter.6}% 133
+\BOOKMARK [2][-]{subsection.6.3.1}{Martingale Convergence Theorem}{section.6.3}% 134
+\BOOKMARK [1][-]{section.6.4}{Hidden Markov Models}{chapter.6}% 135
+\BOOKMARK [1][-]{section.6.5}{Ito Calculus}{chapter.6}% 136
+\BOOKMARK [1][-]{section.6.6}{Chaos Analysis}{chapter.6}% 137
+\BOOKMARK [1][-]{section.6.7}{Noise}{chapter.6}% 138
+\BOOKMARK [2][-]{subsection.6.7.1}{White Noise}{section.6.7}% 139
+\BOOKMARK [2][-]{subsection.6.7.2}{Gaussian Noise}{section.6.7}% 140
+\BOOKMARK [2][-]{subsection.6.7.3}{Brownian Noise}{section.6.7}% 141
+\BOOKMARK [0][-]{chapter.7}{Statistics}{}% 142
+\BOOKMARK [1][-]{section.7.1}{Directional Statistics}{chapter.7}% 143
+\BOOKMARK [2][-]{subsection.7.1.1}{Mean Direction}{section.7.1}% 144
+\BOOKMARK [2][-]{subsection.7.1.2}{Dispersion}{section.7.1}% 145
+\BOOKMARK [1][-]{section.7.2}{Features}{chapter.7}% 146
+\BOOKMARK [2][-]{subsection.7.2.1}{Dense Features, Sparse Features}{section.7.2}% 147
+\BOOKMARK [1][-]{section.7.3}{Multicollinearity}{chapter.7}% 148
+\BOOKMARK [2][-]{subsection.7.3.1}{Sources}{section.7.3}% 149
+\BOOKMARK [1][-]{section.7.4}{R2 Value}{chapter.7}% 150
+\BOOKMARK [1][-]{section.7.5}{Regression Diagnostics}{chapter.7}% 151
+\BOOKMARK [1][-]{section.7.6}{t-Statistics}{chapter.7}% 152
+\BOOKMARK [1][-]{section.7.7}{AIC and BIC}{chapter.7}% 153
+\BOOKMARK [1][-]{section.7.8}{Factor Regression}{chapter.7}% 154
+\BOOKMARK [1][-]{section.7.9}{Factor Models}{chapter.7}% 155
+\BOOKMARK [0][-]{chapter.8}{Linear Regression}{}% 156
+\BOOKMARK [1][-]{section.8.1}{Ordinary Least Squares Regression}{chapter.8}% 157
+\BOOKMARK [2][-]{subsection.8.1.1}{The Normal Equations, Analytical Least Squares Estimator}{section.8.1}% 158
+\BOOKMARK [2][-]{subsection.8.1.2}{The Quick Way to }{section.8.1}% 159
+\BOOKMARK [2][-]{subsection.8.1.3}{The Long Way to }{section.8.1}% 160
+\BOOKMARK [2][-]{subsection.8.1.4}{Projection Matrix}{section.8.1}% 161
+\BOOKMARK [2][-]{subsection.8.1.5}{Bayesian Perspective on Least Squares Regression}{section.8.1}% 162
+\BOOKMARK [2][-]{subsection.8.1.6}{Q-plots}{section.8.1}% 163
+\BOOKMARK [2][-]{subsection.8.1.7}{Variance Inflation Factor}{section.8.1}% 164
+\BOOKMARK [1][-]{section.8.2}{Ridge Regression}{chapter.8}% 165
+\BOOKMARK [2][-]{subsection.8.2.1}{Analytical Ridge Estimator}{section.8.2}% 166
+\BOOKMARK [2][-]{subsection.8.2.2}{Bayesian Perspective on Ridge Regression}{section.8.2}% 167
+\BOOKMARK [0][-]{chapter.9}{Bayesian Data Analysis}{}% 168
+\BOOKMARK [0][-]{chapter.10}{Unsupervised Learning}{}% 169
+\BOOKMARK [1][-]{section.10.1}{Blind Source Separation}{chapter.10}% 170
+\BOOKMARK [1][-]{section.10.2}{Independent Component Analysis}{chapter.10}% 171
+\BOOKMARK [1][-]{section.10.3}{Eigenanalysis, Singular Value Decomposition of Data Matrices}{chapter.10}% 172
+\BOOKMARK [2][-]{subsection.10.3.1}{Example: Eigenfaces and Facial Recognition}{section.10.3}% 173
+\BOOKMARK [2][-]{subsection.10.3.2}{Tracking an Eigensystem over Time}{section.10.3}% 174
+\BOOKMARK [2][-]{subsection.10.3.3}{Bayesian SVD}{section.10.3}% 175
+\BOOKMARK [1][-]{section.10.4}{Principal Component Analysis \(PCA\)}{chapter.10}% 176
+\BOOKMARK [2][-]{subsection.10.4.1}{Relationship between PCA and SVD}{section.10.4}% 177
+\BOOKMARK [2][-]{subsection.10.4.2}{Tracking Principal Components over Time}{section.10.4}% 178
+\BOOKMARK [1][-]{section.10.5}{X=WH Non-Negative Matrix Factorization}{chapter.10}% 179

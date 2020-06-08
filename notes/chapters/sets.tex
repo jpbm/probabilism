@@ -31,7 +31,7 @@ For infinite sets, this intuition breaks down, though it is still possible to ma
 The empty set is the set with no elements. It is denoted $\{\}$ or $\emptyset$. 
 
 \subsection{Singleton Set}
-A singleton set is a set with one element. It has cardinality 1.
+A singleton set is a set with one element. I.e., $\{a\}, \{b\}$ are singleton subsets of $\{a,b\}$. A singleton has cardinality 1.
 
 \subsection{Infinite Sets}
 
@@ -45,7 +45,7 @@ The support of a multiset is:
 Supp(A) = \{ x\in U | 	m_A(x)>0\}
 \end{equation} 
 
-Which is basically the set of distinct elements in $A$.
+Which is the set of distinct elements in $A$. I.e., if $A = \{a,a,a,b,b,c\}$ then $Supp(A) = \{a,b,c\}$.
 
 \subsubsection{Cardinality}
 
@@ -101,9 +101,23 @@ Multisets can be subtracted, with the condition that the multiplicity can not be
 m_C(x) = max\left(m_A(x) - m_B(x), 0\right)
 \end{equation}
 
+% Powerset
+\subsection{Powersets}
+The powerset $P(S)$ of a set $S$ is the set of all subsets of $S$, including the empty set and the set itself. That is:
+
+\begin{equation}
+P(S) = \{ A : A\subseteq S\}
+\end{equation}
+
+My guess is it's called powerset because the number of subsets of S, $|P(S)| = 2^{|S|}$. I have also seen the notation $2^S$ to refer to the space of subsets of $S$.
 
 
 
+% Measurable Sets
+\subsection{Measurable Sets}
+Measurable sets have a way of measuring volume on them. They are the elements of a $\sigma$-algebra. 
+
+% universal set
 \subsection{Universal Set}
 The \textit{universal set} is understood to refer to something that is not allowed in the context of Russell's Paradox. It is nevertheless useful to define a set $S$ so that $S^c = \emptyset$ and I've seen this type of set referred to as \textit{universal set} a couple of times. In the context of probability theory, $S$ may be the whole event space.
 
@@ -112,7 +126,7 @@ The \textit{universal set} is understood to refer to something that is not allow
 \section{Set Operations}
 
 \subsection{$A^c$ Complement}
-The complement of a set $A^c$refers to everything that is not contained in $A$. 
+Given a subset $A \subseteq X$, the complement of the subset $A^c$ refers to everything that is not contained in $A$, i.e. $A^c = X\setminus A$. 
 
 
 \subsection{$\bigcup$ Union}
@@ -145,15 +159,13 @@ The cardinality of the disjoint union is simply the sum:
 
 % Bijection Principle
 \section{Bijection Principle}
-The bijection principle states that when a bijection exists between the elements of two sets, then those sets have the same size. This principle is very useful in combinatorics, and it allows meaningful comparisons of infinite sets.
+The bijection principle states that when a bijection exists between the elements of two sets, then those sets have the same size. This principle is very useful in combinatorics, and it allows for meaningful comparisons of infinite sets.
 
 
 % DeMorgan
 \section{DeMorgan's Rules}
 \label{sec:demorgan}
 DeMorgan's Rules relate the complement of the union to the intersection of the complements, and the complement of the intersection to the union of the complements.
-
-\label{sec:demorgan}
 
 \begin{equation}
 \left(\bigcup_{i\in\{i\}}A_i\right)^c = \bigcap_{i\in\{i\}}A^c_i
@@ -225,3 +237,34 @@ The size of the intersection $|A_3\cap A_5| = 6$ because 100 is 6 times divisibl
 \end{equation}
 
 There are 45 integers between 1 and 100 that are not divisible by 3, 5 or 7.
+
+
+%% open sets, closed sets
+
+\section{Open Sets, Closed Sets}
+Open sets and closed sets are generalizations of open and closed intervals on the real line. Open sets a mentioned plenty in the context of measure theory. A set is open if and only if its complement is closed, and a set is closed if and only if its complement is open. Counterintuitively, a set can be both open and closed at the same time, or it can be neither open nor closed at the same time.
+
+\subsection{Interior Points}
+An interior point of a set $A$ is any point $X$ so that for some $\epsilon > 0$, the open interval $X-\epsilon,X+\epsilon \subseteq A$ is contained within $A$. One might imagine an interior point as a point that has a neighborhood (a "ball") that is included in $A$. 
+
+\subsection{Accumulation Points} 
+In contrast, accumulation points do not have a neighborhood contained in $A$. Formally, for some $\epsilon>0$, $(X-\epsilon,X+\epsilon)\cap (A\setminus \{X\}) \neq \emptyset$, which is only possible for a point that is on the very boundary of $A$.
+
+\subsection{Open Sets}
+Unsurprisingly, an open set is a set that only has interior points, i.e. $\{X: X\in A, \exists \epsilon > 0 \mathrm{\ s.\ th.\ } X-\epsilon,X+\epsilon \subseteq A  \}$.
+
+\subsection{Closed Sets}
+Closed sets contain all of their accumulation points. That is, the boundary is included. Points might also be standing alone, for example:
+
+\begin{equation}
+[2,4]\cup\{1\}
+\end{equation}
+
+Is a closed set.
+
+\subsection{Both Open and Closed, Neither Open Nor Closed}
+The set of real numbers $\mathbb{R}$ is both open and closed. Any point on the real line has a neighborhood in $\mathbb{R}$, so it is open. On the other hand, the accumulation points of $\mathbb{R}$ are $\mathbb{R}$, so it is closed. An interval that has some but not all accumulation points is neither open nor closed. For example $[1,2)$.	
+
+
+
+\input{./chapters/sections/sets_sigma.tex}
