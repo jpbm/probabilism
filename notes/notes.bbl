@@ -24,6 +24,11 @@ Bradley, A.~R.  \harvardyearleft n/a\harvardyearright , `Notes on sets and
   multisets'.
 \newline\harvardurl{\url{http://theory.stanford.edu/~arbrad/pivc/sets.pdf}}
 
+\harvarditem{Brunton}{n.d.}{stevebrunton}
+Brunton, S.  \harvardyearleft n.d.\harvardyearright , `Steve brunton's youtube
+  channel'.
+\newline\harvardurl{\url{https://www.youtube.com/channel/UCm5mt-A4w61lknZ9lCsZtBw}}
+
 \harvarditem{Colyer}{2019}{morningpaper2019nnmf}
 Colyer, A.  \harvardyearleft 2019\harvardyearright , `The why and how of
   nonnegative matrix factorization'.
@@ -39,6 +44,10 @@ Damask, J.  \harvardyearleft 2019\harvardyearright , `A consistently oriented
 Friedman, J., Hastie, T. \harvardand\ Tibshirani, R.  \harvardyearleft
   2001\harvardyearright , {\em The elements of statistical learning}, Vol.~1,
   Springer series in statistics New York.
+
+\harvarditem{Gavish \harvardand\ Donoho}{2013}{gavish2013optimal}
+Gavish, M. \harvardand\ Donoho, D.~L.  \harvardyearleft 2013\harvardyearright ,
+  `The optimal hard threshold for singular values is 4/sqrt(3)'.
 
 \harvarditem{Gera}{2009}{rgeraNotes}
 Gera, R.  \harvardyearleft 2009\harvardyearright , `Numerical linear algebra

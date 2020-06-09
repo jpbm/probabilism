@@ -4,17 +4,17 @@
 Spectral theorems deal with diagonalizable linear operators. 
 \\
 
-A diagonalization of a matrix matrix $\mathbf{A}$ is always possible when a matrix is square, and refers to a decomposition of the matrix into the matrix of eigenvectors $\mathbf{V}$ and eigenvalues $\mathbf{\Lambda}$ as 
+A diagonalization of a matrix $\mathbf{A}$ is always possible when a matrix is square, and refers to a decomposition of the matrix into the matrix of eigenvectors $\mathbf{V}$ and eigenvalues $\mathbf{\Lambda}$ as 
 
 \begin{equation}
 \mathbf{A} = \mathbf{V\Lambda V^{-1}} 
 \end{equation}
 
 \subsection{$\mathbf{A} = \mathbf{V\Lambda V}^T$ Eigendecomposition of Symmetric Matrices}
-A symmetric matrix $\mathbf{A}$ has orthogonal eigenvectors so that $\mathbf{V}^{-1} = \mathbf{V}^T$ and real eigenvalues. In that case, the diagonalization is:
+A hermitian matrix $\mathbf{A}$ has orthogonal eigenvectors, which means that $\mathbf{V}$ is unitary, meaning that $\mathbf{V}^{-1} = \mathbf{V}^{\dagger}$. In that case, the diagonalization is:
 
 \begin{equation}
-\mathbf{A} = \mathbf{V\Lambda V}^T = \left[\begin{array}{cccc}
+\mathbf{A} = \mathbf{V\Lambda V}^{\dagger} = \left[\begin{array}{cccc}
 \vrule&\vrule&\hdots&\vrule\\
 v_1&v_2&\ddots&v_n\\
 \vrule&\vrule&\hdots&\vrule
@@ -26,21 +26,21 @@ v_1&v_2&\ddots&v_n\\
 \end{array}\right]
 \left[
 \begin{array}{ccc}
-\rule[.5ex]{3.5em}{0.4pt}&v_1&\rule[.5ex]{3.5em}{0.4pt}\\
-\rule[.5ex]{3.5em}{0.4pt}&v_2&\rule[.5ex]{3.5em}{0.4pt}\\
+\rule[.5ex]{3.5em}{0.4pt}&v_1^{\dagger}&\rule[.5ex]{3.5em}{0.4pt}\\
+\rule[.5ex]{3.5em}{0.4pt}&v_2^{\dagger}&\rule[.5ex]{3.5em}{0.4pt}\\
 \vdots&\ddots&\vdots\\
-\rule[.5ex]{3.5em}{0.4pt}&v_n&\rule[.5ex]{3.5em}{0.4pt}\\
+\rule[.5ex]{3.5em}{0.4pt}&v_n^{\dagger}&\rule[.5ex]{3.5em}{0.4pt}\\
 \end{array}
 \right]
 \end{equation}
 
-This means that  enables the expression of $\mathbf{A}$ in terms of projections on the eigenvectors:
+Which is the same as saying that all hermitian matrices are \textit{similar} to a diagonal matrix (cf. section \ref{sec:similiarity}, two matrices $\mathbf{A}$ and $\mathbf{B}$ are similar if they are transmutable using unitary transformations as $\mathbf{A} = \mathbf{UBU^{\dagger}}$). The diagonal representation also shows that in order for $\mathbf{A}$ to satisfy the hermitian property $\mathbf{A}^{\dagger}=\mathbf{A}$ its eigenvalues $\lambda_i$ must be real. Further, it means that if $\mathbf{A}$ is hermitian, $\mathbf{A}$ can be written in terms of projections on the eigenvectors:
 
 \begin{equation}
 \mathbf{A} = \sum_i \lambda_i (v_i \otimes v_i)
 \end{equation}
 
-Where $\otimes$ is the outer product. Since the eigenvectors are an orthonormal basis, $\sum_i v_i \otimes v_i = \mathbb{I}$.
+Where $\otimes$ is the (complex) outer product $v_i\otimes v_i = v_i v_i^{\dagger}$. I have seen the existence of this representation of a hermitian matrix be described as synonmous with \textit{spectral theorem}. Since the eigenvectors $\mathbf{V}$ are an orthonormal basis, $\sum_i v_i \otimes v_i = \mathbb{I}$.
 
 
 \subsection{$\mathbf{H} = \mathbf{U\Lambda U}^T$ Eigendecomposition of Hermitian Matrices}

@@ -5,49 +5,54 @@ The style file: agsm.bst
 Database file #1: references.bib
 Warning--entry type for "mathworkseigs" isn't style-file defined
 --line 81 of file references.bib
+I was expecting a `,' or a `}'---line 150 of file references.bib
+ :     
+ :     year={n/a}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "mathworkseig"
 Warning--I didn't find a database entry for "blitzstein2019introduction"
 Warning--I didn't find a database entry for "damask2019consistent"
 Warning--can't use both volume and number fields in friedman2001elements
-You've used 14 entries,
+You've used 16 entries,
             2909 wiz_defined-function locations,
-            712 strings with 6820 characters,
-and the built_in function-call counts, 29456 in all, are:
-= -- 4534
-> -- 382
+            719 strings with 7046 characters,
+and the built_in function-call counts, 34821 in all, are:
+= -- 5389
+> -- 453
 < -- 1
-+ -- 2022
-- -- 112
-* -- 2270
-:= -- 6480
-add.period$ -- 14
-call.type$ -- 14
-change.case$ -- 193
-chr.to.int$ -- 14
-cite$ -- 15
-duplicate$ -- 193
-empty$ -- 374
-format.name$ -- 141
-if$ -- 5155
++ -- 2416
+- -- 133
+* -- 2702
+:= -- 7613
+add.period$ -- 16
+call.type$ -- 16
+change.case$ -- 221
+chr.to.int$ -- 16
+cite$ -- 17
+duplicate$ -- 215
+empty$ -- 426
+format.name$ -- 170
+if$ -- 6108
 int.to.chr$ -- 5
 int.to.str$ -- 0
 missing$ -- 12
-newline$ -- 58
-num.names$ -- 141
-pop$ -- 107
+newline$ -- 65
+num.names$ -- 161
+pop$ -- 124
 preamble$ -- 1
-purify$ -- 210
+purify$ -- 240
 quote$ -- 0
-skip$ -- 150
+skip$ -- 172
 stack$ -- 0
-substring$ -- 6121
-swap$ -- 18
-text.length$ -- 197
+substring$ -- 7289
+swap$ -- 20
+text.length$ -- 225
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 50
+type$ -- 58
 warning$ -- 1
-while$ -- 294
+while$ -- 336
 width$ -- 0
-write$ -- 177
-(There were 5 warnings)
+write$ -- 200
+(There was 1 error message)
