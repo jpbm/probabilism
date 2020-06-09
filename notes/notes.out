@@ -172,14 +172,20 @@
 \BOOKMARK [0][-]{chapter.9}{Bayesian Data Analysis}{}% 172
 \BOOKMARK [0][-]{chapter.10}{Unsupervised Learning}{}% 173
 \BOOKMARK [1][-]{section.10.1}{Blind Source Separation}{chapter.10}% 174
-\BOOKMARK [1][-]{section.10.2}{Independent Component Analysis}{chapter.10}% 175
-\BOOKMARK [1][-]{section.10.3}{Eigenanalysis, Singular Value Decomposition of Data Matrices}{chapter.10}% 176
-\BOOKMARK [2][-]{subsection.10.3.1}{Example: Eigenfaces and Facial Recognition}{section.10.3}% 177
-\BOOKMARK [2][-]{subsection.10.3.2}{Tracking an Eigensystem over Time}{section.10.3}% 178
-\BOOKMARK [2][-]{subsection.10.3.3}{Bayesian SVD}{section.10.3}% 179
-\BOOKMARK [2][-]{subsection.10.3.4}{Matrix Approximation, Optimal Truncation}{section.10.3}% 180
-\BOOKMARK [1][-]{section.10.4}{Principal Component Analysis \(PCA\)}{chapter.10}% 181
-\BOOKMARK [2][-]{subsection.10.4.1}{Relationship between PCA and SVD}{section.10.4}% 182
-\BOOKMARK [2][-]{subsection.10.4.2}{Tracking Principal Components over Time}{section.10.4}% 183
-\BOOKMARK [2][-]{subsection.10.4.3}{Robust Principal Component Analysis}{section.10.4}% 184
-\BOOKMARK [1][-]{section.10.5}{X=WH Non-Negative Matrix Factorization}{chapter.10}% 185
+\BOOKMARK [1][-]{section.10.2}{Clustering}{chapter.10}% 175
+\BOOKMARK [2][-]{subsection.10.2.1}{K-Means}{section.10.2}% 176
+\BOOKMARK [2][-]{subsection.10.2.2}{Affinity Propagation}{section.10.2}% 177
+\BOOKMARK [1][-]{section.10.3}{Independent Component Analysis \(ICA\)}{chapter.10}% 178
+\BOOKMARK [1][-]{section.10.4}{X = UVT Eigenanalysis, Singular Value Decomposition \(SVD\)}{chapter.10}% 179
+\BOOKMARK [2][-]{subsection.10.4.1}{Example: Eigenfaces and Facial Recognition}{section.10.4}% 180
+\BOOKMARK [2][-]{subsection.10.4.2}{Tracking an Eigensystem over Time}{section.10.4}% 181
+\BOOKMARK [2][-]{subsection.10.4.3}{Bayesian SVD}{section.10.4}% 182
+\BOOKMARK [2][-]{subsection.10.4.4}{Random SVD}{section.10.4}% 183
+\BOOKMARK [1][-]{section.10.5}{Principal Component Analysis \(PCA\)}{chapter.10}% 184
+\BOOKMARK [2][-]{subsection.10.5.1}{Relationship between PCA and SVD}{section.10.5}% 185
+\BOOKMARK [2][-]{subsection.10.5.2}{Tracking Principal Components over Time}{section.10.5}% 186
+\BOOKMARK [2][-]{subsection.10.5.3}{Robust Principal Component Analysis}{section.10.5}% 187
+\BOOKMARK [1][-]{section.10.6}{X=WH Non-Negative Matrix Factorization}{chapter.10}% 188
+\BOOKMARK [1][-]{section.10.7}{Optimal Truncation}{chapter.10}% 189
+\BOOKMARK [2][-]{subsection.10.7.1}{Scree Plots, Heuristic Methods}{section.10.7}% 190
+\BOOKMARK [2][-]{subsection.10.7.2}{Gavish \046 Donoho's Optimal Threshold for SVD}{section.10.7}% 191

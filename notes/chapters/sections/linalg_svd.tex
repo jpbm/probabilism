@@ -39,7 +39,17 @@ The SVD enables the decomposition of the matrix into a sum:
 \mathbf{A} = \sum_{i=1}^n \sigma_i (\mathbf{u}_i \otimes \mathbf{v}_i)
 \end{equation}
 
-Where $\mathbf{u}_i$ is the $i$th left singular vector and $\mathbf{v}_i$ is the $i$th right singular vector. Following the Eckart-Young-Mirsky Theorem, taking the first $r \leq n$ terms of this series is the best rank-$r$ approximation to $\mathbf{A}$ under the Frobenius norm of the error, i.e.  $\underset{\mathrm{rank}(\mathbf{A}^{(r)})=r\leq n}{\argmin} ||\mathbf{A^r}-\mathbf{A}||_F$. (The Frobenius norm essentially measures the elementwise least-squares error, cf. section \ref{sec:frobenius}). In the context of data analysis, the reduced rank representation of a data matrix $\mathbf{A}$ acts as a filter in which the components that explain less of the variance in the dataset are removed (the hope is that these correspond to noise). By the same measure, a lower rank approximation is a (very effective) compression method. For a more elaborate discussion of SVD in data analysis, see section \ref{sec:datasvd}. In a practical context, the question of selecting the appropriate rank of the approximation emerges. Section \ref{sec:svd_truncation} covers a few approaches to this.
+Which may be truncated at some rank $r$, resulting in a rank-$r$ approximation to $\mathbf{A}$. This is known as the \textit{truncated singular value estimator} (TSVD):
+
+\begin{equation}
+\mathbf{\hat{A}} = \sum_{i=1}^r \sigma_i (\mathbf{u}_i \otimes \mathbf{v}_i)
+\end{equation}
+
+Where $\mathbf{u}_i$ is the $i$th left singular vector and $\mathbf{v}_i$ is the $i$th right singular vector. Following the Eckart-Young-Mirsky Theorem, taking the first $r \leq n$ terms of this series is the best rank-$r$ approximation to $\mathbf{A}$ under the Frobenius norm of the error, i.e.  $\underset{\mathrm{rank}(\mathbf{A}^{(r)})=r\leq n}{\argmin} ||\mathbf{A^r}-\mathbf{A}||_F$. The Frobenius norm essentially measures the elementwise mean squares error (MSE), cf. section \ref{sec:frobenius}).\\
+
+In the context of data analysis, the reduced rank representation of a data matrix $\mathbf{A}$ acts as a filter in which the components that explain less of the variance in the dataset are removed, with the hope being that these correspond to noise. The intuition is that noise probably originates from a random process, so that components that correspond to noise have weak correlation with the entries of the dataset and therefore small singular values. On the other hand, the signal probably systematic, so that the components that correspond to the signal have larger singular value. Since TSVD minimizes the average mean squares error (AMSE) amounts to the rank-$r$ maximum likelihood estimator of the signal under the assumption of normally distributed noise with mean zero. 
+
+By virtue of being expressible in terms of fewer base vectors, a lower rank approximation is also a very effective compression method. For a more elaborate discussion of SVD in data analysis, see section \ref{sec:datasvd}. In a practical context, the question of selecting the appropriate rank of the approximation emerges. Section \ref{sec:svd_truncation} covers a few approaches to this.
 
 
 % Geometric interpretation

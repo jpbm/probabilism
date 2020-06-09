@@ -1,10 +1,10 @@
-\section{Eigenanalysis, Singular Value Decomposition of Data Matrices}
+\section{$\mathbf{X} = \mathbf{U\Sigma V^T}$ Eigenanalysis, Singular Value Decomposition (SVD)}
 \label{sec:datasvd}
 
 Singular Value Decomposition (SVD) is a matrix decomposition of the form $\mathbf{A}=\mathbf{U}\Sigma\mathbf{V}^T$, where $\mathbf{U}$ and $\mathbf{V}$ are both unitary (cf. section \ref{sec:svd}). The decomposition always exists for a general complex matrix $\mathbf{A}\in\mathbb{C}^{m\times n}$. 
 \\
 
-If $\mathbf{X}\in\mathbb{R}^{N\times p}$ is a data matrix with $N$ samples in the rows and $p$ features in the columns, then SVD allows for the decomposition of the data into $p$ linearly independent components, ranked by their explained variance (i.e. their strength in the dataset). The basis of the decomposition turns out the same as for PCA (cf. section \ref{sec:pca}) except that it is arrived at slightly differently, because PCA involves diagonalizing the covariance matrix. The decomposition of the dataset can be understood as follows. In the SVD of the data matrix: 
+If $\mathbf{X}\in\mathbb{R}^{N\times p}$ is a data matrix with $N$ samples in the rows and $p$ features in the columns, then SVD allows for the decomposition of the data into $p$ linearly independent components, ranked by their explained variance (i.e. their strength in the dataset). The basis of the decomposition turns out to be the same as for PCA (cf. section \ref{sec:pca}) except that it is arrived at slightly differently, because PCA involves diagonalizing the covariance matrix., nor are the singular values the same as the explained variances of the dataset. The decomposition of the dataset can be understood as follows. In the SVD of the data matrix: 
 
 \begin{equation}
 \mathbf{X} = \mathbf{U}\mathbf{\Sigma}\mathbf{V}^T
@@ -18,7 +18,15 @@ The individual rows of $\mathbf{X}$, i.e. the individual data points, are expres
 
 Where $\mathbf{x}_i$ is the $i$th data point. Hence the right singular vectors $\mathbf{v}_i$ are the normalized basis vectors, and the columns of $\mathbf{U}$ give the coefficients the basis expansion, together with the singular values $\sigma_i$, which give a measure of the global strength of the corresponding basis vector. 
 
-SVD is scalable to very large datasets and finds many applications in the wild, including page rank, facial recognition, recommendation algorithms etc. 
+Truncating the expansion after the $r$th term results in a rank $r$ approximation of $\mathbf{X}$ known as the \textit{truncated singular value decomposition} (TSVD) estimator. According to the Eckart-Young Mirsky-Theorem, the estimator is the best rank-$r$ approximation under the Frobenius norm of the error (cf. \ref{sec:frobenius}), which is the average mean square error across $\mathbf{X}$. 
+
+\begin{equation}
+\mathbf{\hat{X}} = \sum_{i=1}^r \sigma_i (\mathbf{u}_i \otimes \mathbf{v}_i)
+\end{equation}
+
+Since it minimizes the average mean square error, $\mathbf{\hat{X}}$ is the rank $r$ maximum likelihood approximation to $\mathbf{X}$ under the assumption of normally distributed noise. Optimal truncation is discussed in section \ref{sec:truncation}.
+
+SVD is scalable to very large datasets and finds many applications in the wild, including page rank, facial recognition, recommendation algorithms, and others. Randomized SVD (cf. section \ref{sec:rsvd}) is an approximate method that gives an even faster speedup.
 
 
 % eigenfaces
@@ -34,7 +42,7 @@ Below are the first eigenfaces extracted from the "Labeled Faces in the Wild" da
     \label{fig:svd_eigenfaces}
 \end{figure}
 
-Facial recognition may be performed by projecting a new face into the space of eigenfaces and matching to the coefficients of a known subject. This could be done using the euclidean distance, or it could be a classifier. In case of classificiation, the dimensionality reduction that is enabled by approximating images with a smaller set of eigenvectors may be critical to making the problem tractable by overcoming the curse of dimensionality.
+Facial recognition may be performed by projecting a new face into the space of eigenfaces and matching to the coefficients of a known subject. This could be done using the euclidean distance, or it could be done using a classifier. In case of classificiation, the dimensionality reduction that is enabled by approximating images with a smaller set of eigenvectors may be critical to making the problem tractable by overcoming the curse of dimensionality. When the data matrix is not centered (that is, the mean is not subtracted from it before performing the SVD), then the first right singular vector is vector close to the average row in the matrix.
 
 
 % eigenbasis 
@@ -52,7 +60,7 @@ This method works, but the problem is that the sign of the vectors is somewhat a
 
 \subsubsection{Consistent Method}
 
-\citeasnoun{damask2019consistently} recently developed a method that can be used to find a consistently oriented basis. The method relies on reconstructing the rotations and reflections necessary to transform the eigenbasis in question to the natural basis $\mathbf{I}$ as reference. While rotations preserve the orientation of a basis, but reflections do not. When the reflections of an eigenbasis with respect to the natural basis are known, then they can be undone by flipping them back in place. 
+\citeasnoun{damask2019consistently} recently developed a method that can be used to find a consistently oriented basis. Consistent orientation in this case means, roughly, that the eigenbasis is always flipped to obey the convention of being right-handed. The method relies on reconstructing the rotations and reflections necessary to transform the eigenbasis in question to the natural basis $\mathbf{I}$ as reference. While rotations preserve the orientation of a basis, but reflections do not. When the reflections of an eigenbasis with respect to the natural basis are known, then they can be undone by flipping them back in place. 
 
 
 \begin{figure}
@@ -75,9 +83,10 @@ To do! Cf. https://ieeexplore.ieee.org/document/7336426
 It's awful to be tied to the assumption of normality and it's awful to not know the uncertainty of my singular vectors!
 
 
-% Optimal truncation
-\subsection{Matrix Approximation, Optimal Truncation}
-\label{sec:svd_truncation}
+% Random SVD
+\subsection{Random SVD}
+\label{sec:rsvd}
 
-This is all based on \cite{gavish2013optimal} and Steve Brunton's youtube channel \cite{stevebrunton}.
+
+
 

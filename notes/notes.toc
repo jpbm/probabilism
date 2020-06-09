@@ -164,44 +164,44 @@
 \contentsline {subsection}{\numberline {3.6.1}Full and Economy SVDs}{36}{subsection.3.6.1}
 \contentsline {subsection}{\numberline {3.6.2}Matrix Approximation}{36}{subsection.3.6.2}
 \contentsline {subsection}{\numberline {3.6.3}Geometric Interpretation of SVD}{37}{subsection.3.6.3}
-\contentsline {section}{\numberline {3.7}Schur Decomposition}{37}{section.3.7}
+\contentsline {section}{\numberline {3.7}Schur Decomposition}{38}{section.3.7}
 \contentsline {section}{\numberline {3.8}Types of Transformations}{38}{section.3.8}
 \contentsline {subsection}{\numberline {3.8.1}Similarity Transformations}{38}{subsection.3.8.1}
 \contentsline {subsection}{\numberline {3.8.2}Affine Transformations}{38}{subsection.3.8.2}
 \contentsline {subsection}{\numberline {3.8.3}Unitary Transformations}{38}{subsection.3.8.3}
-\contentsline {subsection}{\numberline {3.8.4}Multilinear Maps}{38}{subsection.3.8.4}
-\contentsline {subsection}{\numberline {3.8.5}Multilinear Forms}{38}{subsection.3.8.5}
+\contentsline {subsection}{\numberline {3.8.4}Multilinear Maps}{39}{subsection.3.8.4}
+\contentsline {subsection}{\numberline {3.8.5}Multilinear Forms}{39}{subsection.3.8.5}
 \contentsline {section}{\numberline {3.9}Types of Matrices}{39}{section.3.9}
 \contentsline {subsection}{\numberline {3.9.1}$\mathrm {sgn}\left (\mathbf {x}^{\dagger }\mathbf {H}\mathbf {x}\right )$ Definite}{39}{subsection.3.9.1}
 \contentsline {subsection}{\numberline {3.9.2}Triangular}{39}{subsection.3.9.2}
 \contentsline {subsection}{\numberline {3.9.3}$\mathbf {AB}-\mathbf {BA}=0$ Commuting}{39}{subsection.3.9.3}
-\contentsline {subsection}{\numberline {3.9.4}$\mathbf {AB}+\mathbf {BA}=0$ Anticommuting}{39}{subsection.3.9.4}
-\contentsline {subsection}{\numberline {3.9.5}$\mathbf {A}^{\dagger } = \mathbf {A}$ Hermitian, Symmetric}{39}{subsection.3.9.5}
+\contentsline {subsection}{\numberline {3.9.4}$\mathbf {AB}+\mathbf {BA}=0$ Anticommuting}{40}{subsection.3.9.4}
+\contentsline {subsection}{\numberline {3.9.5}$\mathbf {A}^{\dagger } = \mathbf {A}$ Hermitian, Symmetric}{40}{subsection.3.9.5}
 \contentsline {subsubsection}{\numberline {3.9.5.1}Properties}{40}{subsubsection.3.9.5.1}
 \contentsline {subsection}{\numberline {3.9.6}$\mathbf {A}^{\dagger } = -\mathbf {A}$ Skew Hermitian, Skew Symmetric}{40}{subsection.3.9.6}
 \contentsline {subsection}{\numberline {3.9.7}$\mathbf {A}\mathbf {A}=\mathbf {I}$ Involutory}{40}{subsection.3.9.7}
-\contentsline {subsection}{\numberline {3.9.8}$\mathbf {U}^{\dagger } = \mathbf {U}^{-1}$ Unitary, Orthogonal}{40}{subsection.3.9.8}
-\contentsline {subsection}{\numberline {3.9.9}$\mathbf {A} = \mathbf {TBT^{-1}}$ Similarity}{40}{subsection.3.9.9}
+\contentsline {subsection}{\numberline {3.9.8}$\mathbf {U}^{\dagger } = \mathbf {U}^{-1}$ Unitary, Orthogonal}{41}{subsection.3.9.8}
+\contentsline {subsection}{\numberline {3.9.9}$\mathbf {A} = \mathbf {TBT^{-1}}$ Similarity}{41}{subsection.3.9.9}
 \contentsline {section}{\numberline {3.10}Properties of Norms}{41}{section.3.10}
 \contentsline {section}{\numberline {3.11}$L^p$ Lebesgue Vector Norms}{41}{section.3.11}
 \contentsline {subsection}{\numberline {3.11.1}$L^{1}$ Taxicab / Manhattan Norm}{41}{subsection.3.11.1}
 \contentsline {subsection}{\numberline {3.11.2}$L^{2}$ Euclidian Norm}{41}{subsection.3.11.2}
 \contentsline {subsection}{\numberline {3.11.3}$L^{\infty }$ Maximum Norm}{41}{subsection.3.11.3}
 \contentsline {subsection}{\numberline {3.11.4}$L^{-\infty }$ Minimum Norm}{41}{subsection.3.11.4}
-\contentsline {section}{\numberline {3.12}Operator and Matrix Norms}{41}{section.3.12}
-\contentsline {subparagraph}{}{41}{subparagraph*.55}
+\contentsline {section}{\numberline {3.12}Operator and Matrix Norms}{42}{section.3.12}
+\contentsline {subparagraph}{}{42}{subparagraph*.55}
 \contentsline {subsection}{\numberline {3.12.1}$||\mathbf {A}||_{(\alpha )}$ Operator Norm}{42}{subsection.3.12.1}
 \contentsline {subsection}{\numberline {3.12.2}$||\mathbf {A}||_q$ $q$-Norms}{42}{subsection.3.12.2}
-\contentsline {subsection}{\numberline {3.12.3}$||\mathbf {A}||_F$ Frobenius Norm}{42}{subsection.3.12.3}
-\contentsline {subsection}{\numberline {3.12.4}$||\mathbf {A}||_{(1)}$ (1)-Norm}{42}{subsection.3.12.4}
-\contentsline {subsection}{\numberline {3.12.5}$||\mathbf {A}||_{(\infty )}$ ($\infty $)-Norm}{42}{subsection.3.12.5}
+\contentsline {subsection}{\numberline {3.12.3}$||\mathbf {A}||_F$ Frobenius Norm}{43}{subsection.3.12.3}
+\contentsline {subsection}{\numberline {3.12.4}$||\mathbf {A}||_{(1)}$ (1)-Norm}{43}{subsection.3.12.4}
+\contentsline {subsection}{\numberline {3.12.5}$||\mathbf {A}||_{(\infty )}$ ($\infty $)-Norm}{43}{subsection.3.12.5}
 \contentsline {subsection}{\numberline {3.12.6}$||\mathbf {A}||_{(2)}$ (2)-Norm}{43}{subsection.3.12.6}
 \contentsline {section}{\numberline {3.13}Vector and Matrix Derivatives}{43}{section.3.13}
 \contentsline {subsection}{\numberline {3.13.1}Jacobian}{43}{subsection.3.13.1}
-\contentsline {subsection}{\numberline {3.13.2}Inverse Function Theorem}{43}{subsection.3.13.2}
+\contentsline {subsection}{\numberline {3.13.2}Inverse Function Theorem}{44}{subsection.3.13.2}
 \contentsline {subsection}{\numberline {3.13.3}Critical Points}{44}{subsection.3.13.3}
 \contentsline {subsection}{\numberline {3.13.4}Differential Volume Element, Change of Variables}{44}{subsection.3.13.4}
-\contentsline {subsection}{\numberline {3.13.5}Hessian}{44}{subsection.3.13.5}
+\contentsline {subsection}{\numberline {3.13.5}Hessian}{45}{subsection.3.13.5}
 \contentsline {subsubsection}{\numberline {3.13.5.1}Testing Convexity}{45}{subsubsection.3.13.5.1}
 \contentsline {chapter}{\numberline {4}Probability}{47}{chapter.4}
 \contentsline {section}{\numberline {4.1}Interpretations and Definitions of Probability}{47}{section.4.1}
@@ -283,19 +283,25 @@
 \contentsline {chapter}{\numberline {9}Bayesian Data Analysis}{67}{chapter.9}
 \contentsline {chapter}{\numberline {10}Unsupervised Learning}{69}{chapter.10}
 \contentsline {section}{\numberline {10.1}Blind Source Separation}{69}{section.10.1}
-\contentsline {section}{\numberline {10.2}Independent Component Analysis}{69}{section.10.2}
-\contentsline {section}{\numberline {10.3}Eigenanalysis, Singular Value Decomposition of Data Matrices}{69}{section.10.3}
-\contentsline {subsection}{\numberline {10.3.1}Example: Eigenfaces and Facial Recognition}{70}{subsection.10.3.1}
-\contentsline {subsection}{\numberline {10.3.2}Tracking an Eigensystem over Time}{71}{subsection.10.3.2}
-\contentsline {subsubsection}{\numberline {10.3.2.1}Heuristic Method}{71}{subsubsection.10.3.2.1}
-\contentsline {subsubsection}{\numberline {10.3.2.2}Consistent Method}{71}{subsubsection.10.3.2.2}
-\contentsline {subsubsection}{\numberline {10.3.2.3}Rank Order Changes}{71}{subsubsection.10.3.2.3}
-\contentsline {subsection}{\numberline {10.3.3}Bayesian SVD}{71}{subsection.10.3.3}
-\contentsline {subsection}{\numberline {10.3.4}Matrix Approximation, Optimal Truncation}{71}{subsection.10.3.4}
-\contentsline {section}{\numberline {10.4}Principal Component Analysis (PCA)}{73}{section.10.4}
-\contentsline {subsection}{\numberline {10.4.1}Relationship between PCA and SVD}{73}{subsection.10.4.1}
-\contentsline {subsection}{\numberline {10.4.2}Tracking Principal Components over Time}{73}{subsection.10.4.2}
-\contentsline {subsection}{\numberline {10.4.3}Robust Principal Component Analysis}{74}{subsection.10.4.3}
-\contentsline {subsubsection}{\numberline {10.4.3.1}Example: Netflix Prize, Matrix Completion}{74}{subsubsection.10.4.3.1}
-\contentsline {section}{\numberline {10.5}$\mathbf {X}=\mathbf {W}\mathbf {H}$ Non-Negative Matrix Factorization}{74}{section.10.5}
+\contentsline {section}{\numberline {10.2}Clustering}{69}{section.10.2}
+\contentsline {subsection}{\numberline {10.2.1}K-Means}{69}{subsection.10.2.1}
+\contentsline {subsection}{\numberline {10.2.2}Affinity Propagation}{69}{subsection.10.2.2}
+\contentsline {section}{\numberline {10.3}Independent Component Analysis (ICA)}{69}{section.10.3}
+\contentsline {section}{\numberline {10.4}$\mathbf {X} = \mathbf {U\Sigma V^T}$ Eigenanalysis, Singular Value Decomposition (SVD)}{69}{section.10.4}
+\contentsline {subsection}{\numberline {10.4.1}Example: Eigenfaces and Facial Recognition}{70}{subsection.10.4.1}
+\contentsline {subsection}{\numberline {10.4.2}Tracking an Eigensystem over Time}{70}{subsection.10.4.2}
+\contentsline {subsubsection}{\numberline {10.4.2.1}Heuristic Method}{72}{subsubsection.10.4.2.1}
+\contentsline {subsubsection}{\numberline {10.4.2.2}Consistent Method}{72}{subsubsection.10.4.2.2}
+\contentsline {subsubsection}{\numberline {10.4.2.3}Rank Order Changes}{72}{subsubsection.10.4.2.3}
+\contentsline {subsection}{\numberline {10.4.3}Bayesian SVD}{72}{subsection.10.4.3}
+\contentsline {subsection}{\numberline {10.4.4}Random SVD}{72}{subsection.10.4.4}
+\contentsline {section}{\numberline {10.5}Principal Component Analysis (PCA)}{72}{section.10.5}
+\contentsline {subsection}{\numberline {10.5.1}Relationship between PCA and SVD}{74}{subsection.10.5.1}
+\contentsline {subsection}{\numberline {10.5.2}Tracking Principal Components over Time}{74}{subsection.10.5.2}
+\contentsline {subsection}{\numberline {10.5.3}Robust Principal Component Analysis}{74}{subsection.10.5.3}
+\contentsline {subsubsection}{\numberline {10.5.3.1}Example: Netflix Prize, Matrix Completion}{74}{subsubsection.10.5.3.1}
+\contentsline {section}{\numberline {10.6}$\mathbf {X}=\mathbf {W}\mathbf {H}$ Non-Negative Matrix Factorization}{74}{section.10.6}
+\contentsline {section}{\numberline {10.7}Optimal Truncation}{77}{section.10.7}
+\contentsline {subsection}{\numberline {10.7.1}Scree Plots, Heuristic Methods}{77}{subsection.10.7.1}
+\contentsline {subsection}{\numberline {10.7.2}Gavish \& Donoho's Optimal Threshold for SVD}{77}{subsection.10.7.2}
 \contentsfinish 
