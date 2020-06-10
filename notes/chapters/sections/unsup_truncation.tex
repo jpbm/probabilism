@@ -73,3 +73,11 @@ Which has error bounded by $\leq0.02$ on the interval $0.001\leq\beta \leq 1$.
     \caption{Left: Princess and Prince zu Sayn-Wittgenstein with different amounts of Gaussian noise added. Center: The same image estimated using TSVD with Gavish \& Donoho's approximate rank threshold. Right: Singular value spectrum of original, noise and truncated images. TSVD reduces the average mean square error (AMSE) with respect to the original image by over 50\%. Visually, the difference is not too perceptible.}
     \label{fig:truncated_svd}
 \end{figure}
+
+
+\begin{figure}
+\centering
+    \includegraphics[width=\textwidth]{truncated_svd2.png}
+    \caption{Average means square error relative to the original image for the photo with added noise (blue) and after TSVD denoising (organge). The percentage of components retained via Gavish \& Donoho's approximate rank threshold shown in green. $\sigma_{\epsilon}$ is the standard deviation of the added (Gaussian) noise and $\sigma_0$ is the standard deviation of the pixel values of the original image. When $\sigma_{\epsilon}$ is small, G \& D automatically truncates the TSVD at about 40\% of the singular values, which is why, at first, the "denoised" image has greater error than the noisy issues.}
+    \label{fig:truncated_svd}	
+\end{figure}

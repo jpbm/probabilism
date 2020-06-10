@@ -299,11 +299,11 @@
 \contentsline {subsubsection}{\numberline {10.4.4.2}Step 2: Compute SVD on Projected $\mathbf {Y = Q^T X}$}{74}{subsubsection.10.4.4.2}
 \contentsline {section}{\numberline {10.5}Principal Component Analysis (PCA)}{74}{section.10.5}
 \contentsline {subsection}{\numberline {10.5.1}Relationship between PCA and SVD}{75}{subsection.10.5.1}
-\contentsline {subsection}{\numberline {10.5.2}Tracking Principal Components over Time}{75}{subsection.10.5.2}
-\contentsline {subsection}{\numberline {10.5.3}Robust Principal Component Analysis}{75}{subsection.10.5.3}
-\contentsline {subsubsection}{\numberline {10.5.3.1}Example: Netflix Prize, Matrix Completion}{75}{subsubsection.10.5.3.1}
-\contentsline {section}{\numberline {10.6}$\mathbf {X}=\mathbf {W}\mathbf {H}$ Non-Negative Matrix Factorization}{75}{section.10.6}
-\contentsline {section}{\numberline {10.7}Optimal Truncation}{76}{section.10.7}
-\contentsline {subsection}{\numberline {10.7.1}Scree Plots, Heuristic Methods}{76}{subsection.10.7.1}
-\contentsline {subsection}{\numberline {10.7.2}Gavish \& Donoho's Optimal Threshold for SVD}{77}{subsection.10.7.2}
+\contentsline {subsection}{\numberline {10.5.2}Tracking Principal Components over Time}{76}{subsection.10.5.2}
+\contentsline {subsection}{\numberline {10.5.3}Robust Principal Component Analysis}{76}{subsection.10.5.3}
+\contentsline {subsubsection}{\numberline {10.5.3.1}Example: Netflix Prize, Matrix Completion}{76}{subsubsection.10.5.3.1}
+\contentsline {section}{\numberline {10.6}$\mathbf {X}=\mathbf {W}\mathbf {H}$ Non-Negative Matrix Factorization}{76}{section.10.6}
+\contentsline {section}{\numberline {10.7}Optimal Truncation}{77}{section.10.7}
+\contentsline {subsection}{\numberline {10.7.1}Scree Plots, Heuristic Methods}{77}{subsection.10.7.1}
+\contentsline {subsection}{\numberline {10.7.2}Gavish \& Donoho's Optimal Threshold for SVD}{79}{subsection.10.7.2}
 \contentsfinish 

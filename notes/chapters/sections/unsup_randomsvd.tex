@@ -59,3 +59,13 @@ def rSVD(X,r,q,p):
 
     return U, S, VT
 \end{python}
+
+Empirically, randomized SVD outperforms SVD significantly the lower the rank of the TSVD.
+
+
+\begin{figure}
+\centering
+    \includegraphics[width=\textwidth]{randomized_svd.png}
+    \caption{Left: Time taken to perform conventional SVD (black line) and randomized SVD (colored lines) on the photo of the two young aristocrats which had a data matrix with rank $r=1277$. The different colors correspond to different numbers of power iterations performed ($q$). Right: Average mean square error (AMSE) of truncated SVD using matrices derived with randomized SVD compared with conventional SVD. Especially for small $r$, rSVD is significantly faster even after a few power iterations. For small $r$, power iterations easily reduce the error introduced by the randomized method by several orders of magnitude.}
+    \label{fig:svd_scree}
+\end{figure}
