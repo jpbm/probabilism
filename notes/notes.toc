@@ -171,7 +171,7 @@
 \contentsline {subsection}{\numberline {3.8.3}Unitary Transformations}{38}{subsection.3.8.3}
 \contentsline {subsection}{\numberline {3.8.4}Multilinear Maps}{39}{subsection.3.8.4}
 \contentsline {subsection}{\numberline {3.8.5}Multilinear Forms}{39}{subsection.3.8.5}
-\contentsline {section}{\numberline {3.9}Types of Matrices}{39}{section.3.9}
+\contentsline {section}{\numberline {3.9}Types of Matrices, Matrix Properties}{39}{section.3.9}
 \contentsline {subsection}{\numberline {3.9.1}$\mathrm {sgn}\left (\mathbf {x}^{\dagger }\mathbf {H}\mathbf {x}\right )$ Definite}{39}{subsection.3.9.1}
 \contentsline {subsection}{\numberline {3.9.2}Triangular}{39}{subsection.3.9.2}
 \contentsline {subsection}{\numberline {3.9.3}$\mathbf {AB}-\mathbf {BA}=0$ Commuting}{39}{subsection.3.9.3}
@@ -294,14 +294,16 @@
 \contentsline {subsubsection}{\numberline {10.4.2.2}Consistent Method}{72}{subsubsection.10.4.2.2}
 \contentsline {subsubsection}{\numberline {10.4.2.3}Rank Order Changes}{72}{subsubsection.10.4.2.3}
 \contentsline {subsection}{\numberline {10.4.3}Bayesian SVD}{72}{subsection.10.4.3}
-\contentsline {subsection}{\numberline {10.4.4}Random SVD}{72}{subsection.10.4.4}
-\contentsline {section}{\numberline {10.5}Principal Component Analysis (PCA)}{72}{section.10.5}
-\contentsline {subsection}{\numberline {10.5.1}Relationship between PCA and SVD}{74}{subsection.10.5.1}
-\contentsline {subsection}{\numberline {10.5.2}Tracking Principal Components over Time}{74}{subsection.10.5.2}
-\contentsline {subsection}{\numberline {10.5.3}Robust Principal Component Analysis}{74}{subsection.10.5.3}
-\contentsline {subsubsection}{\numberline {10.5.3.1}Example: Netflix Prize, Matrix Completion}{74}{subsubsection.10.5.3.1}
-\contentsline {section}{\numberline {10.6}$\mathbf {X}=\mathbf {W}\mathbf {H}$ Non-Negative Matrix Factorization}{74}{section.10.6}
-\contentsline {section}{\numberline {10.7}Optimal Truncation}{77}{section.10.7}
-\contentsline {subsection}{\numberline {10.7.1}Scree Plots, Heuristic Methods}{77}{subsection.10.7.1}
+\contentsline {subsection}{\numberline {10.4.4}Randomized SVD}{72}{subsection.10.4.4}
+\contentsline {subsubsection}{\numberline {10.4.4.1}Step 1: Sample Column Space of $\mathbf {X}$ with $\mathbf {P}$}{72}{subsubsection.10.4.4.1}
+\contentsline {subsubsection}{\numberline {10.4.4.2}Step 2: Compute SVD on Projected $\mathbf {Y = Q^T X}$}{74}{subsubsection.10.4.4.2}
+\contentsline {section}{\numberline {10.5}Principal Component Analysis (PCA)}{74}{section.10.5}
+\contentsline {subsection}{\numberline {10.5.1}Relationship between PCA and SVD}{75}{subsection.10.5.1}
+\contentsline {subsection}{\numberline {10.5.2}Tracking Principal Components over Time}{75}{subsection.10.5.2}
+\contentsline {subsection}{\numberline {10.5.3}Robust Principal Component Analysis}{75}{subsection.10.5.3}
+\contentsline {subsubsection}{\numberline {10.5.3.1}Example: Netflix Prize, Matrix Completion}{75}{subsubsection.10.5.3.1}
+\contentsline {section}{\numberline {10.6}$\mathbf {X}=\mathbf {W}\mathbf {H}$ Non-Negative Matrix Factorization}{75}{section.10.6}
+\contentsline {section}{\numberline {10.7}Optimal Truncation}{76}{section.10.7}
+\contentsline {subsection}{\numberline {10.7.1}Scree Plots, Heuristic Methods}{76}{subsection.10.7.1}
 \contentsline {subsection}{\numberline {10.7.2}Gavish \& Donoho's Optimal Threshold for SVD}{77}{subsection.10.7.2}
 \contentsfinish 

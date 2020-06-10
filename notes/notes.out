@@ -81,7 +81,7 @@
 \BOOKMARK [2][-]{subsection.3.8.3}{Unitary Transformations}{section.3.8}% 81
 \BOOKMARK [2][-]{subsection.3.8.4}{Multilinear Maps}{section.3.8}% 82
 \BOOKMARK [2][-]{subsection.3.8.5}{Multilinear Forms}{section.3.8}% 83
-\BOOKMARK [1][-]{section.3.9}{Types of Matrices}{chapter.3}% 84
+\BOOKMARK [1][-]{section.3.9}{Types of Matrices, Matrix Properties}{chapter.3}% 84
 \BOOKMARK [2][-]{subsection.3.9.1}{sgn\(xHx\) Definite}{section.3.9}% 85
 \BOOKMARK [2][-]{subsection.3.9.2}{Triangular}{section.3.9}% 86
 \BOOKMARK [2][-]{subsection.3.9.3}{AB-BA=0 Commuting}{section.3.9}% 87
@@ -180,7 +180,7 @@
 \BOOKMARK [2][-]{subsection.10.4.1}{Example: Eigenfaces and Facial Recognition}{section.10.4}% 180
 \BOOKMARK [2][-]{subsection.10.4.2}{Tracking an Eigensystem over Time}{section.10.4}% 181
 \BOOKMARK [2][-]{subsection.10.4.3}{Bayesian SVD}{section.10.4}% 182
-\BOOKMARK [2][-]{subsection.10.4.4}{Random SVD}{section.10.4}% 183
+\BOOKMARK [2][-]{subsection.10.4.4}{Randomized SVD}{section.10.4}% 183
 \BOOKMARK [1][-]{section.10.5}{Principal Component Analysis \(PCA\)}{chapter.10}% 184
 \BOOKMARK [2][-]{subsection.10.5.1}{Relationship between PCA and SVD}{section.10.5}% 185
 \BOOKMARK [2][-]{subsection.10.5.2}{Tracking Principal Components over Time}{section.10.5}% 186
