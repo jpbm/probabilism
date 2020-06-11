@@ -334,7 +334,9 @@
 \contentsline {chapter}{\numberline {11}Dynamical Systems}{83}{chapter.11}
 \ttl@stoptoc {default@11}
 \ttl@starttoc {default@12}
-\contentsline {section}{\numberline {11.1}Dynamic Mode Decomposition}{83}{section.11.1}
+\contentsline {section}{\numberline {11.1}Modal Decomposition}{83}{section.11.1}
+\contentsline {section}{\numberline {11.2}Koopman and Frobenius-Perron Operators}{84}{section.11.2}
+\contentsline {section}{\numberline {11.3}Dynamic Mode Decomposition}{84}{section.11.3}
 \ttl@stoptoc {default@12}
 \ttl@starttoc {default@13}
 \contentsfinish 

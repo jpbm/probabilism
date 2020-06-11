@@ -1,7 +1,11 @@
 \chapter{Dynamical Systems}
 \label{chp:dynamicalsystems}
 
-A dynamical system is some system:
+\begin{multicols}{2}[\subsubsection*{Contents of this chapter}]
+   \printcontents{}{1}{\setcounter{tocdepth}{2}}
+\end{multicols}
+
+This is dangerously familiar ground for physicists. A dynamical system is some system:
 
 \begin{equation}
 \partial_t\mathbf{x} = \mathbf{f}(\mathbf{x},t,\mathbf{u};\mathbf{\beta})
@@ -21,9 +25,49 @@ Conventionally, the dynamics $\mathbf{f}$ are derived from first principles. Inc
 \item Uncertainty (in parameters etc.)
 \end{itemize}
 
+\section{Modal Decomposition}
+Modal decompositions express the evolving state of a system in terms of a superposition of basis vectors that are the eigenfunctions of a time-translation operator. In general, the rank of the basis space is the same as the state space dimension, but in practice only a few of those modes have "energy". That means that the description of a system in terms of a modal decomposition often requires orders of magnitude fewer parameters than the description of the state space. Extracting the dominant modes also amounts to extracting the dominant dynamics of the system, with the assumption possibly being that the discarded low-energy modes are noise. In so far, modal decomposition runs closely parallel to decomposition-based dimensionality reduction techniques such as SVD, PCA and ICA, though explicitly introducing the notion of a trajectory through time.
 
+The modes are properties of the time translation operator and the state space. Therefore, the description in terms of modes is compatible with an arbitrary, unpredictable forcing function acting on the system, so long as it does not affect the time translation operator or the state space. For example, the description of the oscillation of a guitar string in terms of modes remains valid regardless of the song that is being played. However, changing the length of the string increases the size of the state space, and increasing the tension in the string accelerates its reversion from being struck away from its equilibrium, and therefore it's time translation operator. In those cases the modes of the system are changed.   
+
+
+\section{Koopman and Frobenius-Perron Operators}
+The Koopman Operator, or composition operator, is the classical analogue of the time translation operator $e^{i\mathbf{\hat{H}}t/\hbar}$ in quantum mechanics. It describes dynamics in terms of the \textit{Heisenberg Picture}, in which operators, rather than states, have time-dependence.
+
+Consider a dynamical system evolving on a manifold $\mathscr{M}$, so that, in discrete time:
+
+\begin{equation}
+\mathbf{x}_{k+1} = \mathbf{f}(\mathbf{x}_{k})
+\end{equation}
+
+Given a scalar valued function on the state space $g:\mathscr{M} \rightarrow \mathbb{R}$, the Koopman Operator $\mathbf{\hat{K}}$ acts as:
+
+\begin{equation}
+\mathbf{\hat{K}}g(\mathbf{x}) = g(\mathbf{f}(\mathbf{x}))
+\end{equation} 
+
+Which acts as time translation by one step.
+
+The Koopman Operator is infinite dimensional and linear, even though the dynamical system might be nonlinear with a finite state space. The Frobenius-Perron Operator (sometimes also Ruelle Operator, Ruelle-Frobenius-Perron Operator, or Transfer Operator) is the right adjoint of the Koopman operator, so that an approximation of one provides an approximation of the other. Rather than a function in state space, it translates the state space density in time. Let $\mathbf{\hat{P}}$ be the Frobenius-Perron Operator. Let the state space density be $\rho(\mathbf{x}$, and define some operator $\mathbf{\hat{A}}$, so that $\mathbf{\hat{A}}\rho(\mathbf{x}) = g(\mathbf{x})$. Then, in terms of either the Koopman or the Frobenius-Perron approach, the average value of the quantity $\left< f(\mathbf{x}(t))\right>$ at time $t$ in the Koopman picture or in the Frobenius-Perron picture is:
+
+\begin{equation}
+\begin{array}{rl}
+\left< f(\mathbf{x}(t))\right> =& \int_\mathscr{M} \mathrm{d}x \mathbf{\hat{K}}(t)\mathbf{\hat{A}}\rho(\mathbf{x}) \\
+& \int_\mathscr{M} \mathrm{d}x \mathbf{\hat{A}}\mathbf{\hat{P}}(t)\rho(\mathbf{x})
+\end{array}
+\end{equation}
+
+Which implies that $\mathbf{\hat{K}}(t)\mathbf{\hat{A}} \left[\mathbf{\hat{P}}(t)\right]^{-1} = \left[\mathbf{\hat{K}}(t) \right]^{-1} \mathbf{\hat{A}} \mathbf{\hat{P}}(t) = \mathbf{\hat{A}}$.
+
+
+The 
+
+
+% DMD
 \section{Dynamic Mode Decomposition}
-Dynamic Mode Decomposition (DMD) is a technique to obtain linear reduced-order models from high dimensional data that also allows for useful introspection. It is basically an VAR(1) model, except that it can handle a very high dimensional state vector by extracting the leading eigendecomposition of the coefficient matrix without having to calculate it. An example of a system with a very high dimensional state vector would be video data, where the state space may be millions of pixels. 
+Dynamic Mode Decomposition (DMD) is a technique to obtain linear reduced-order models from high dimensional data that also allows for useful introspection. It originated in the fluid dynamics community, where very high-dimensional state spaces are common in the form of snapshot images that must resolve dynamics across many length scales.
+
+It is basically an VAR(1) model, except that it can handle a very high dimensional state vector by extracting the leading eigendecomposition of the coefficient matrix without having to calculate it. An example of a system with a very high dimensional state vector would be video data, where the state space may be millions of pixels. 
 
 Let $\mathbf{X}_{1,m-1} = \left[\mathbf{x}_1,\mathbf{x}_2,...,\mathbf{x}_{t-1},\mathbf{x}_{m-1}\right]$ be the matrix of state vectors from $t\in[1,m-1]$ and $\mathbf{X}_{2,m}$ be the matrix of state vectors from $t\in[2,m]$. Then dynamic mode decomposition essentially looks for linear dynamics using linear regression:
 

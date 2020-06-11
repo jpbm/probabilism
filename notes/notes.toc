@@ -311,5 +311,7 @@
 \contentsline {subsection}{\numberline {10.7.1}Scree Plots, Heuristic Methods}{77}{subsection.10.7.1}
 \contentsline {subsection}{\numberline {10.7.2}Gavish \& Donoho's Optimal Threshold for SVD}{79}{subsection.10.7.2}
 \contentsline {chapter}{\numberline {11}Dynamical Systems}{83}{chapter.11}
-\contentsline {section}{\numberline {11.1}Dynamic Mode Decomposition}{83}{section.11.1}
+\contentsline {section}{\numberline {11.1}Modal Decomposition}{83}{section.11.1}
+\contentsline {section}{\numberline {11.2}Koopman and Frobenius-Perron Operators}{84}{section.11.2}
+\contentsline {section}{\numberline {11.3}Dynamic Mode Decomposition}{84}{section.11.3}
 \contentsfinish 
