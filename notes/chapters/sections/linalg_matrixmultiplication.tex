@@ -1,0 +1,143 @@
+\section{Matrix Multiplication}
+
+Given two matrices $\mathbf{A}\in\mathbb{R}^{m \times p }$ and $\mathbf{B}\in\mathbb{R}^{p \times n}$ with entries $a_{i,j}$ and $b_{i,j}$ in their $i$th row and $j$th column, the product $\mathbf{C} \in \mathbf{AB}\in\mathbb{R}^{m \times n}$ and with elements $c_{i,j} = \sum_{k = 1}^{p} a_{i,k}b_{k,j}$.
+
+There are two ways to interpret how the rows or columns of $\mathbf{C}$ come about through this operation. The first is that a row or column vector in $\mathbf{C}$ is formed by one of the matrices acting on an individual vector from the other matrix. The second is that a row of a column vector in $\mathbf{C}$ is formed as the linear superposition of the vectors within one of the matrices, where the coefficients of the superposition are given by a row or a column within the other matrix.
+
+Let: 
+
+\begin{equation}
+\mathbf{A} = \left[
+\begin{array}{ccc}
+\vert & \vert & \vert \\
+a^{(c)}_1 & a^{(c)}_2 & a^{(c)}_3\\
+\vert & \vert & \vert \\
+\end{array}
+\right] =
+\left[
+\begin{array}{ccc}
+- & a^{(r)}_1 & - \\
+- & a^{(r)}_2 & - \\
+- & a^{(r)}_3 & - \\
+\end{array}
+\right] 
+\end{equation}
+
+\begin{equation}
+\mathbf{B} = \left[
+\begin{array}{ccc}
+\vert & \vert & \vert \\
+b^{(c)}_1 & b^{(c)}_2 & b^{(c)}_3\\
+\vert & \vert & \vert \\
+\end{array}
+\right] =
+\left[
+\begin{array}{ccc}
+- & b^{(r)}_1 & - \\
+- & b^{(r)}_2 & - \\
+- & b^{(r)}_3 & - \\
+\end{array}
+\right] 
+\end{equation}
+
+\begin{equation}
+\mathbf{C} = \left[
+\begin{array}{ccc}
+\vert & \vert & \vert \\
+c^{(c)}_1 & c^{(c)}_2 & c^{(c)}_3\\
+\vert & \vert & \vert \\
+\end{array}
+\right] =\left[
+\begin{array}{ccc}
+- & c^{(r)}_1 & - \\
+- & c^{(r)}_2 & - \\
+- & c^{(r)}_3 & - \\
+\end{array}
+\right] 
+\end{equation}
+
+be the notation in terms of row and column vectors.
+
+\subsubsection{Elementwise}
+$[\mathbf{C}]_{i,j}$ is the dot product of the $i$th row vector of $\mathbf{A}$ and the $j$ column vector of $\mathbf{B}$.
+
+\begin{equation}
+c_{i,j} = \left[\begin{array}{c} \vert \\ a_i^{(r)}\\ \vert \end{array}\right] \cdot \left[\begin{array}{ccc} - &b_j^{(c)}& - \end{array}\right]
+\end{equation}
+
+\subsubsection{Columns of $\mathbf{C}$}
+
+The $j$th column of $\mathbf{C}$ involves all of $\mathbf{A}$ and only the $j$th column of $\mathbf{B}$.
+
+The $j$th column of $\mathbf{C}$ is the matrix product of $\mathbf{A}$ with the first column of $\mathbf{B}$.
+
+\begin{equation}
+\left[
+\begin{array}{c}
+\vert\\
+c^{(c)}_j\\
+\vert
+\end{array}
+\right]=
+\left[
+\begin{array}{ccc}
+- & a^{(r)}_1 & - \\
+- & a^{(r)}_2 & - \\
+- & a^{(r)}_3 & - \\
+\end{array}
+\right] 
+\left[ \begin{array}{c} \vert \\ b^{(c)}_j  \\ \vert \end{array}\right]
+\end{equation}
+
+
+The $j$th column of the product $\mathbf{C}$ is a linear superposition of the columns of $\mathbf{A}$, with the coefficients given by the $j$th column of $\mathbf{B}$.
+
+
+\begin{equation}
+\left[
+\begin{array}{c}	
+\vert\\
+c^{(c)}_j\\
+\vert
+\end{array}
+\right]=
+\begin{array}{ccc}
+\left[\begin{array}{c} \vert\\ a^{(c)}_1 \\ \vert \end{array}\right]b^{(c)}_{1,j} 
++ \left[\begin{array}{c} \vert\\ a^{(c)}_2 \\ \vert \end{array}\right]b^{(c)}_{2,j} 
++ \left[\begin{array}{c} \vert\\ a^{(c)}_3 \\ \vert \end{array}\right]b^{(c)}_{3,j} 
+\end{array}
+\end{equation}
+
+
+
+\subsubsection{Rows of $\mathbf{C}$}
+The $i$th row of $\mathbf{C}$ involves all of $\mathbf{B}$ and only the $i$th row of $\mathbf{A}$.
+
+The $i$th row of $\mathbf{C}$ is the matrix product of $\mathbf{B}$ acting backwards on the $i$th row of $\mathbf{A}$.
+
+
+\begin{equation}
+\left[\begin{array}{ccc} - & c^{(r)}_i & - \end{array}\right] = 
+\left[\begin{array}{ccc} - & a^{(r)}_i & - \end{array}\right] 
+\left[
+\begin{array}{ccc}
+\vert & \vert & \vert \\
+b^{(c)}_1 & b^{(c)}_2 & b^{(c)}_3\\
+\vert & \vert & \vert \\
+\end{array}
+\right]
+\end{equation}
+
+The $i$th row of $\mathbf{C}$ is a linear superposition of the rows of $\mathbf{B}$, with the coefficients given by the $i$th row of $\mathbf{A}$.
+
+\begin{equation}
+\begin{array}{rl}
+\left[\begin{array}{ccc} - & c^{(r)}_i & - \end{array}\right] = & a^{(r)}_{i,1} \left[\begin{array}{ccc} - & b^{(r)}_1 & - \end{array}\right]\\
+&+ a^{(r)}_{i,2} \left[\begin{array}{ccc} - & b^{(r)}_2 & - \end{array}\right]\\
+&+ a^{(r)}_{i,3} \left[\begin{array}{ccc} - & b^{(r)}_3 & - \end{array}\right]
+\end{array}
+\end{equation}
+
+
+
+

@@ -8,7 +8,7 @@ Linear equations are of the form $Ax = b$ where $A$ is a matrix and $x$ and $b$ 
 \subsection{$A\in\mathbb{R}^{n\times n}$ Square Matrices}
 If $A\in\mathbb{R}^{nxn}$, then the solution to the system is formally $x = A^{-1}b$, where $A^{-1}$ is the matrix inverse, satisfying $A^{-1}A=I$, where $I$ is the identity matrix. 
 
-Since $Ax=b$ is the same as expressing $b$ in terms of a linear combination of the columns of $A$, the entries of $x$ can be interpreted as the coefficients resulting from the projection of $b$ into the column space of $A$. Therefore, for an orthonormal matrix, the $A^-1$ is simply $A^T$ 
+Since $Ax=b$ is the same as expressing $b$ in terms of a linear combination of the columns of $A$, the entries of $x$ can be interpreted as the coefficients resulting from the projection of $b$ into the column space of $A$. Therefore, for an orthonormal matrix, the $A^{-1}$ is simply $A^T$ 
 
 \subsection{$A\in\mathbb{R}^{m\times n}$ Rectangular Matrices, Overdetermined Case}
 If $A\in\mathbb{R}^{mxn}$ with $m>n$ rows, then there need not be any point $x\in\mathbb{R}^n$ in which the $m$ hyperplanes all intersect. In that case, the system does not have a solution $x\in\mathbb{R}^n$, and the system is considered *overdetermined*. (The intersection of $m$ distinct hyperplanes in $n$ dimensional space would have negative dimension $(n-m)<0$ if $m>n$, which my feeble brain can't make sense of.)
