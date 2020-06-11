@@ -425,8 +425,8 @@
 \@writefile{toc}{\contentsline {section}{\numberline {10.5}Principal Component Analysis (PCA)}{74}{section.10.5}}
 \newlabel{sec:pca}{{10.5}{74}{Principal Component Analysis (PCA)}{section.10.5}{}}
 \citation{amoeba2015svdpca}
-\@writefile{lof}{\contentsline {figure}{\numberline {10.3}{\ignorespaces Left: Time taken to perform conventional SVD (black line) and randomized SVD (colored lines) on the photo of the two young aristocrats which had a data matrix with rank $r=1277$. The different colors correspond to different numbers of power iterations performed ($q$). Right: Average mean square error (AMSE) of truncated SVD using matrices derived with randomized SVD compared with conventional SVD. Especially for small $r$, rSVD is significantly faster even after a few power iterations. For small $r$, power iterations easily reduce the error introduced by the randomized method by several orders of magnitude.}}{75}{figure.10.3}}
-\newlabel{fig:svd_scree}{{10.3}{75}{Left: Time taken to perform conventional SVD (black line) and randomized SVD (colored lines) on the photo of the two young aristocrats which had a data matrix with rank $r=1277$. The different colors correspond to different numbers of power iterations performed ($q$). Right: Average mean square error (AMSE) of truncated SVD using matrices derived with randomized SVD compared with conventional SVD. Especially for small $r$, rSVD is significantly faster even after a few power iterations. For small $r$, power iterations easily reduce the error introduced by the randomized method by several orders of magnitude}{figure.10.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10.3}{\ignorespaces Left: Time taken to perform conventional SVD (black line) and randomized SVD (colored lines) on the photo of the two young aristocrats which had a data matrix with rank $r=1277$. The different colors correspond to different numbers of power iterations performed ($q$). Right: Average mean square error (AMSE) of truncated SVD using matrices derived with randomized SVD compared with conventional SVD. Especially for small $r$, rSVD is significantly faster even after a few power iterations. For very small $r$, power iterations easily reduce the error introduced by the randomized method by several orders of magnitude, but at some point the method seems to increase the error. Perhaps this is due to numerical stability. I'm not sure. To somewhat account for random fluctuations, the curves shown are averaged over 20 trials.}}{75}{figure.10.3}}
+\newlabel{fig:svd_scree}{{10.3}{75}{Left: Time taken to perform conventional SVD (black line) and randomized SVD (colored lines) on the photo of the two young aristocrats which had a data matrix with rank $r=1277$. The different colors correspond to different numbers of power iterations performed ($q$). Right: Average mean square error (AMSE) of truncated SVD using matrices derived with randomized SVD compared with conventional SVD. Especially for small $r$, rSVD is significantly faster even after a few power iterations. For very small $r$, power iterations easily reduce the error introduced by the randomized method by several orders of magnitude, but at some point the method seems to increase the error. Perhaps this is due to numerical stability. I'm not sure. To somewhat account for random fluctuations, the curves shown are averaged over 20 trials}{figure.10.3}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {10.5.1}Relationship between PCA and SVD}{75}{subsection.10.5.1}}
 \newlabel{sec:pcasvd}{{10.5.1}{75}{Relationship between PCA and SVD}{subsection.10.5.1}{}}
 \citation{gillis2014nonnegative}
@@ -458,6 +458,13 @@
 \newlabel{fig:truncated_svd}{{10.8}{81}{Average means square error relative to the original image for the photo with added noise (blue) and after TSVD denoising (organge). The percentage of components retained via Gavish \& Donoho's approximate rank threshold shown in green. $\sigma _{\epsilon }$ is the standard deviation of the added (Gaussian) noise and $\sigma _0$ is the standard deviation of the pixel values of the original image. When $\sigma _{\epsilon }$ is small, G \& D automatically truncates the TSVD at about 40\% of the singular values, which is why, at first, the "denoised" image has greater error than the noisy issues}{figure.10.8}{}}
 \bibstyle{agsm}
 \bibdata{references}
+\@writefile{toc}{\contentsline {chapter}{\numberline {11}Dynamical Systems}{83}{chapter.11}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\ttl@writefile{ptc}{\ttl@stoptoc{default@11}}
+\ttl@writefile{ptc}{\ttl@starttoc{default@12}}
+\newlabel{chp:dynamicalsystems}{{11}{83}{Dynamical Systems}{chapter.11}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {11.1}Dynamic Mode Decomposition}{83}{section.11.1}}
 \harvardcite{amoeba2015svdpca}{amoeba}{amoeba}{2015}
 \harvardcite{barnesmatrixdiff}{Barnes}{Barnes}{n/a}
 \harvardcite{stanfordaxiomofchoice}{Bell}{Bell}{2015}
@@ -474,6 +481,6 @@
 \harvardcite{mathworkseigs}{Mathworks}{Mathworks}{n/a}
 \harvardcite{ncssridgeregression}{Software}{Software}{n/a}
 \harvardcite{wilf2013generating}{Wilf}{Wilf}{2013}
-\ttl@writefile{ptc}{\ttl@stoptoc{default@11}}
-\ttl@writefile{ptc}{\ttl@starttoc{default@12}}
+\ttl@writefile{ptc}{\ttl@stoptoc{default@12}}
+\ttl@writefile{ptc}{\ttl@starttoc{default@13}}
 \ttl@finishall

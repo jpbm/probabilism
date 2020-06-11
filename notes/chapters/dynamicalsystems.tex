@@ -1,0 +1,42 @@
+\chapter{Dynamical Systems}
+\label{chp:dynamicalsystems}
+
+A dynamical system is some system:
+
+\begin{equation}
+\partial_t\mathbf{x} = \mathbf{f}(\mathbf{x},t,\mathbf{u};\mathbf{\beta})
+\end{equation}
+
+Where $\mathbf{x}$ are the state space coordinates of the system at some time $t$, and $\mathbf{f}$ is the \textit{dynamics} of the system. $\mathbf{u}$ is some control input and $\mathbf{\beta}$ are parameters. A system where $\mathbf{f}$ depends on time is called \textit{non-autonomous} and a system that has an $\mathbf{f}$ that does not depend on time is called \textit{autonomous}.  
+
+Conventionally, the dynamics $\mathbf{f}$ are derived from first principles. Increasingly, it is possible to infer them from data. Challenges arise from:
+
+\begin{itemize}
+\item Nonlinear $\mathbf{f}$, that is, the system cannot be described in the form $\partial_t\mathbf{x}=\mathbf{Ax}$
+\item Unknown $\mathbf{f}$
+\item High dimensional state vector $\mathbf{x}$
+\item Chaos, Transients
+\item Noise, Stochastic forcing functions
+\item Multiscale dynamics
+\item Uncertainty (in parameters etc.)
+\end{itemize}
+
+
+\section{Dynamic Mode Decomposition}
+Dynamic Mode Decomposition (DMD) is a technique to obtain linear reduced-order models from high dimensional data that also allows for useful introspection. It is basically an VAR(1) model, except that it can handle a very high dimensional state vector by extracting the leading eigendecomposition of the coefficient matrix without having to calculate it. An example of a system with a very high dimensional state vector would be video data, where the state space may be millions of pixels. 
+
+Let $\mathbf{X}_{1,m-1} = \left[\mathbf{x}_1,\mathbf{x}_2,...,\mathbf{x}_{t-1},\mathbf{x}_{m-1}\right]$ be the matrix of state vectors from $t\in[1,m-1]$ and $\mathbf{X}_{2,m}$ be the matrix of state vectors from $t\in[2,m]$. Then dynamic mode decomposition essentially looks for linear dynamics using linear regression:
+
+\begin{equation}
+\mathbf{X}_{2,m} = \mathbf{A}\mathbf{X}_{1,m-1}
+\end{equation}
+
+Where $\mathbf{A}$ is square and therefore diagonalizable.
+
+Let $a_{i,j}$ be the entry in the $i$th row and $j$th column of $\mathbf{A}$. Elementwise, the equation for the $i$th state variable at time $t$, $x_{i,t} = [\mathbf{x}_t]_i$ is written:
+
+\begin{equation}
+x_{i,t} = \sum_j a_{i,j} x_{i,t-1}
+\end{equation}
+
+The eigenvectors of $\mathbf{A}$  correspond to normal modes of the system. The corresponding eigenvectors, which may be real or complex, predict the evolution of the mode over time.

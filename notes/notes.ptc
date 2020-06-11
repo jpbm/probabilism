@@ -327,6 +327,10 @@
 \contentsline {section}{\numberline {10.7}Optimal Truncation}{77}{section.10.7}
 \contentsline {subsection}{\numberline {10.7.1}Scree Plots, Heuristic Methods}{77}{subsection.10.7.1}
 \contentsline {subsection}{\numberline {10.7.2}Gavish \& Donoho's Optimal Threshold for SVD}{79}{subsection.10.7.2}
+\contentsline {chapter}{\numberline {11}Dynamical Systems}{83}{chapter.11}
 \ttl@stoptoc {default@11}
 \ttl@starttoc {default@12}
+\contentsline {section}{\numberline {11.1}Dynamic Mode Decomposition}{83}{section.11.1}
+\ttl@stoptoc {default@12}
+\ttl@starttoc {default@13}
 \contentsfinish 
