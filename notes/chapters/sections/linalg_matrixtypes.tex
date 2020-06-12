@@ -115,16 +115,34 @@ Involutory matrices are all square roots of the identity matrix. A famous exampl
 
 
 
+% Isometric
+\subsection($||\mathbf{A}\mathbf{x}||_{\alpha} = ||\mathbf{x}||_{\alpha}$ Isometric)
+\section{sec:isometric}
+An isometric transformation with respect to some norm $||\cdot||_{\alpha}$ preserves that norm (it's in the name: iso-metric). The linear case is represented by isometric matrices, which satisfy:
+
+\begin{equation}
+||\mathbf{A}\mathbf{x}||_{\alpha} = ||\mathbf{x}||_{\alpha} 
+\end{equation}
+
+For some vector $\mathbf{x}$. Isometries are also known as distance-preserving maps. To see this, define the distance between two points $\mathbf{a}$ and $\mathbf{b}$ as $||\mathbf{a} - \mathbf{b}||_{\alpha} = ||\mathbf{x}||_{\alpha}$. Isometries are usually understood be bijective. 
+
+In terms of operator norms, isometries satisfy $||\mathbf{A}||_{(\alpha)} = 1$ where $||\cdot||_{(\alpha)}$ denotes the operator norm (cf. section \ref{sec:operatornorm}).
+
+
+
+
 % Unitary / Orthogonal
 \subsection{$\mathbf{U}^{\dagger} = \mathbf{U}^{-1}$ Unitary, Orthogonal}
+\label{sec:unitary}
 Unitary matrices satisfy $\mathbf{U}^{\dagger}\mathbf{U} = \mathbf{UU}^{\dagger}=\mathbf{I}$, and they have $det(\mathbf{U}) = 1$. They are diagonalizable and can be expressed as $e^{i\mathbf{H}}$ where $\mathbf{H}$ is a Hermitian matrix.
 
 Unitary matrices that are real are called orthogonal.  Orthogonal matrices satisfy $\mathbf{A}^{-1} = \mathbf{A}^T$. The rows (and columns) of $\mathbf{A}$ are an orthonormal basis in $\mathrm{R}^n$.
 
-Unitary matrices are necessarily invertible, and have determinant $|U|=1$ or $|U|=-1$. They represent unitary transformations, which means that they preserve the inner product between two vectors.
+Unitary matrices are necessarily invertible, and have determinant $|U|=1$ or $|U|=-1$. They represent \textit{unitary transformations}, which means that they preserve the inner product between two vectors.
 
 The set of $n \times n$ orthogonal matrices is known as the orthogonal group $O(n)$ and the subgroup of orthogonal matrices with determinant $1$ is known as the special orthogonal group $SO(n)$. The elements of $SO(n)$ are rotations, and the elements of $O(n)$ represent translations, reflections or rotations. Similarly, the group of $n \times n$ unitary matrices is the unitary group $U(n)$ and the subgroup of $U(n)$ that has determinant $1$ is the special unitary group $SU(n)$.
 
+Unitary transformations preserve the $L^2$ norm of vectors.
 
 
 % Similarity

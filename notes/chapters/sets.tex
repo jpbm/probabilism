@@ -115,11 +115,61 @@ My guess is it's called powerset because the number of subsets of S, $|P(S)| = 2
 
 % Measurable Sets
 \subsection{Measurable Sets}
-Measurable sets have a way of measuring volume on them. They are the elements of a $\sigma$-algebra. 
+Measurable sets have a way of measuring volume on them in a non-trivial way. That is, for some subset of a measurable set $A_i \subseteq A$, it is possible to define a metric $\mu$ so that $\mu(A_i) \neq0)$. Measurable sets are the elements of a $\sigma$-algebra. 
 
 % universal set
 \subsection{Universal Set}
 The \textit{universal set} is understood to refer to something that is not allowed in the context of Russell's Paradox. It is nevertheless useful to define a set $S$ so that $S^c = \emptyset$ and I've seen this type of set referred to as \textit{universal set} a couple of times. In the context of probability theory, $S$ may be the whole event space.
+
+
+
+
+%% open sets, closed sets
+\subsection{Open Sets, Closed Sets}
+Open sets and closed sets are generalizations of open and closed intervals on the real line. Open sets a mentioned plenty in the context of measure theory. A set is open if and only if its complement is closed, and a set is closed if and only if its complement is open. Counterintuitively, a set can be both open and closed at the same time, or it can be neither open nor closed at the same time.
+
+\subsubsection{Interior Points}
+An interior point of a set $A$ is any point $X$ so that for some $\epsilon > 0$, the open interval $X-\epsilon,X+\epsilon \subseteq A$ is contained within $A$. One might imagine an interior point as a point that has a neighborhood (a "ball") that is included in $A$. 
+
+\subsubsection{Accumulation Points} 
+In contrast, accumulation points do not have a neighborhood contained in $A$. Formally, for some $\epsilon>0$, $(X-\epsilon,X+\epsilon)\cap (A\setminus \{X\}) \neq \emptyset$, which is only possible for a point that is on the very boundary of $A$.
+
+\subsubsection{Open Sets}
+Unsurprisingly, an open set is a set that only has interior points, i.e. $\{X: X\in A, \exists \epsilon > 0 \mathrm{\ s.\ th.\ } X-\epsilon,X+\epsilon \subseteq A  \}$.
+
+\subsubsection{Closed Sets}
+Closed sets contain all of their accumulation points. That is, the boundary is included. Points might also be standing alone, for example:
+
+\begin{equation}
+[2,4]\cup\{1\}
+\end{equation}
+
+Is a closed set.
+
+\subsubsection{Both Open and Closed, Neither Open Nor Closed}
+The set of real numbers $\mathbb{R}$ is both open and closed. Any point on the real line has a neighborhood in $\mathbb{R}$, so it is open. On the other hand, the accumulation points of $\mathbb{R}$ are $\mathbb{R}$, so it is closed. An interval that has some but not all accumulation points is neither open nor closed. For example $[1,2)$.	
+
+
+
+
+%% Convex Sets
+\subsection{Convex Sets}
+Convex sets are subsets of vector spaces in which any point along the line connecting to points within the set is contained within the set. A disk in $\mathbb{R}^2$ is a convex set. A crescent in $\mathbb{R}^2$ is not a convex set. The boundary of a convex set is a convex function. For example, a parabola $f(x) = x^2$ with $x\in\mathbb{R}$ is a convex function, and the area above the parabola, called the epigraph, is a convex subset of $\mathbb{R}$. Convex optimization deals with the optimization of convex functions over convex sets. The intersection of convex sets is always convex, but the union of convex sets is only convex under certain conditions. 
+
+More generally, if $S$ is a convex set, then affine combinations of the elements $\mathbf{x}_i  \in S$ of the form:
+
+\begin{equation}
+\sum_i \mathbf{x}_i \lambda_i 
+\label{eq:convexsets}
+\end{equation}  
+
+With $\sum_i \lambda_i = 1$ and $\lambda_i\geq 0$ are also contained in $S$. Rather than just the points along the line between two points, these are the essentially the weighted averages of multiple points in the set.  
+
+\subsubsection{Example: Discrete Probability Distributions}
+The set of discrete probability distributions $P = \{ \mathbf{p}=(p_1,p_2,...): ||\mathbf{p}||_1 = 1, p_i \geq 0\}$ is a convex set. Property \ref{eq:convexsets} means that a weighted average over members of $P$ is also a member of $P$, so long as the weights satisfy $\sum_i \lambda_i = 1$. In general, this guarantees that marginalization results in a probability. I.e. if $p(X|Y) = \mathbf{p}(X|Y) \in P$ and $p(Y) = \mathbf{p}(Y) \in P$, then $\mathbf{p}(X) = \sum_i p_i(X|Y) p_i(Y) \in P$. 
+
+
+
 
 
 % Set operations
@@ -253,30 +303,7 @@ The collection of rank-2 sets of pairs of real numbers $A= \{ A_x = \{x,-x\} : x
 
 
 
-%% open sets, closed sets
-\section{Open Sets, Closed Sets}
-Open sets and closed sets are generalizations of open and closed intervals on the real line. Open sets a mentioned plenty in the context of measure theory. A set is open if and only if its complement is closed, and a set is closed if and only if its complement is open. Counterintuitively, a set can be both open and closed at the same time, or it can be neither open nor closed at the same time.
 
-\subsection{Interior Points}
-An interior point of a set $A$ is any point $X$ so that for some $\epsilon > 0$, the open interval $X-\epsilon,X+\epsilon \subseteq A$ is contained within $A$. One might imagine an interior point as a point that has a neighborhood (a "ball") that is included in $A$. 
-
-\subsection{Accumulation Points} 
-In contrast, accumulation points do not have a neighborhood contained in $A$. Formally, for some $\epsilon>0$, $(X-\epsilon,X+\epsilon)\cap (A\setminus \{X\}) \neq \emptyset$, which is only possible for a point that is on the very boundary of $A$.
-
-\subsection{Open Sets}
-Unsurprisingly, an open set is a set that only has interior points, i.e. $\{X: X\in A, \exists \epsilon > 0 \mathrm{\ s.\ th.\ } X-\epsilon,X+\epsilon \subseteq A  \}$.
-
-\subsection{Closed Sets}
-Closed sets contain all of their accumulation points. That is, the boundary is included. Points might also be standing alone, for example:
-
-\begin{equation}
-[2,4]\cup\{1\}
-\end{equation}
-
-Is a closed set.
-
-\subsection{Both Open and Closed, Neither Open Nor Closed}
-The set of real numbers $\mathbb{R}$ is both open and closed. Any point on the real line has a neighborhood in $\mathbb{R}$, so it is open. On the other hand, the accumulation points of $\mathbb{R}$ are $\mathbb{R}$, so it is closed. An interval that has some but not all accumulation points is neither open nor closed. For example $[1,2)$.	
 
 
 

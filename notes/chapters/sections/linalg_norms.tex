@@ -17,11 +17,16 @@ The expression can still be useful for $0<p<1$, but in that case the result is n
 ||\mathbf{x}||^1 = \sum_i |x_i|
 \end{equation}
 
+In the context of regression, $L^1$ loss gives the maximum likelihood estimator under the assumption of Laplacian distributed errors. 
+
 
 \subsection{$L^{2}$ Euclidian Norm}
 \begin{equation}
 ||\mathbf{x}||^2 = \sum_i |x_i|^2
 \end{equation}
+
+
+In the context of regression, $L^2$ loss gives the maximum likelihood estimator under the assumption of normally distributed errors.
 
 \subsection{$L^{\infty}$ Maximum Norm} 
 
@@ -67,8 +72,9 @@ The operator norm describes the largest change in size that it may impart on any
 
 When the operator is given by a matrix $\mathbf{A}$, and the length of the vector $\mathbf{x}$ is measured using the usual euclidian 2-norm ($||\cdot||_{2}$), then the operator norm is given by the square root of the largest eigenvalue of $\mathbf{A^T A}$. In that case, the operator norm is the same as the 2-norm (cf. section \ref{sec:2norm}).
 
-Note that $||A||_{(q)}$ and $||A||_q$ are two different things. The former measures the change in input size, where the size of the input is measured according to the latter. That is the reason for why the 1-Norm and 2-Norms are so different from the vector norms $L_1$ and $L_2$.
+To re-emphasize, $||A||_{(q)}$ and $||A||_q$ are two different things. The former measures the change in input size, where the size of the input is measured according to the latter. That is the reason for why the 1-Norm and 2-Norms are so different from the vector norms $L_1$ and $L_2$.
 
+Operators that preserve the length of a vector with respect to some norm $||\cdot||_{\alpha}$ satisfy $||\mathbf{A}||_{(\alpha)} = 1$ and are called isometries (cf. section \ref{sec:isometric}). 
 
 % q-norm
 \subsection{$||\mathbf{A}||_q$ $q$-Norms}

@@ -32,7 +32,7 @@ The modes are properties of the time translation operator and the state space. T
 
 
 \section{Koopman and Frobenius-Perron Operators}
-The Koopman Operator, or composition operator, is the classical analogue of the time translation operator $e^{i\mathbf{\hat{H}}t/\hbar}$ in quantum mechanics. It describes dynamics in terms of the \textit{Heisenberg Picture}, in which operators, rather than states, have time-dependence.
+The Koopman Operator, or composition operator, is the classical analogue of the time translation operator $e^{-i\mathbf{\hat{H}}t/\hbar}$ in quantum mechanics. It describes dynamics in terms of the \textit{Heisenberg Picture}, in which operators, rather than states, have time-dependence. It describes autonomous systems (in quantum mechanics, that would be a system where the Hamiltonian $\mathbf{\hat{H}}$ nor the size of the state space depend on time).
 
 Consider a dynamical system evolving on a manifold $\mathscr{M}$, so that, in discrete time:
 
@@ -40,7 +40,7 @@ Consider a dynamical system evolving on a manifold $\mathscr{M}$, so that, in di
 \mathbf{x}_{k+1} = \mathbf{f}(\mathbf{x}_{k})
 \end{equation}
 
-Given a scalar valued function on the state space $g:\mathscr{M} \rightarrow \mathbb{R}$, the Koopman Operator $\mathbf{\hat{K}}$ acts as:
+Where $\mathbf{x}\in\mathscr{M}$ are the state space coordinates of the system at a given time. Given a scalar valued function on the state space $g:\mathscr{M} \rightarrow \mathbb{R}$, the Koopman Operator $\mathbf{\hat{K}}$ acts as:
 
 \begin{equation}
 \mathbf{\hat{K}}g(\mathbf{x}) = g(\mathbf{f}(\mathbf{x}))
@@ -48,11 +48,11 @@ Given a scalar valued function on the state space $g:\mathscr{M} \rightarrow \ma
 
 Which acts as time translation by one step.
 
-The Koopman Operator is infinite dimensional and linear, even though the dynamical system might be nonlinear with a finite state space. The Frobenius-Perron Operator (sometimes also Ruelle Operator, Ruelle-Frobenius-Perron Operator, or Transfer Operator) is the right adjoint of the Koopman operator, so that an approximation of one provides an approximation of the other. Rather than a function in state space, it translates the state space density in time. Let $\mathbf{\hat{P}}$ be the Frobenius-Perron Operator. Let the state space density be $\rho(\mathbf{x}$, and define some operator $\mathbf{\hat{A}}$, so that $\mathbf{\hat{A}}\rho(\mathbf{x}) = g(\mathbf{x})$. Then, in terms of either the Koopman or the Frobenius-Perron approach, the average value of the quantity $\left< f(\mathbf{x}(t))\right>$ at time $t$ in the Koopman picture or in the Frobenius-Perron picture is:
+The Koopman Operator is infinite dimensional and linear, even though the dynamical system might be nonlinear with a finite state space. The Frobenius-Perron Operator (sometimes also Ruelle Operator, Ruelle-Frobenius-Perron Operator, or Transfer Operator) is the right adjoint of the Koopman operator, so that an approximation of one provides an approximation of the other. Rather than a function in state space, it translates the state space density in time. Let $\mathbf{\hat{P}}$ be the Frobenius-Perron Operator. Let the state space density be $\rho(\mathbf{x}$, and define some operator $\mathbf{\hat{A}}$, so that $\mathbf{\hat{A}}\rho(\mathbf{x}) = g(\mathbf{x})$. Then, in terms of either the Koopman or the Frobenius-Perron approach, the average value of the quantity $\left< g(\mathbf{x}(t))\right>$ at time $t$ in the Koopman picture or in the Frobenius-Perron picture is \cite{cvitanovic2016chaos,salova2019koopman}:
 
 \begin{equation}
 \begin{array}{rl}
-\left< f(\mathbf{x}(t))\right> =& \int_\mathscr{M} \mathrm{d}x \mathbf{\hat{K}}(t)\mathbf{\hat{A}}\rho(\mathbf{x}) \\
+\left< g(\mathbf{x}(t))\right> =& \int_\mathscr{M} \mathrm{d}x \mathbf{\hat{K}}(t)\mathbf{\hat{A}}\rho(\mathbf{x}) \\
 & \int_\mathscr{M} \mathrm{d}x \mathbf{\hat{A}}\mathbf{\hat{P}}(t)\rho(\mathbf{x})
 \end{array}
 \end{equation}
@@ -60,22 +60,36 @@ The Koopman Operator is infinite dimensional and linear, even though the dynamic
 Which implies that $\mathbf{\hat{K}}(t)\mathbf{\hat{A}} \left[\mathbf{\hat{P}}(t)\right]^{-1} = \left[\mathbf{\hat{K}}(t) \right]^{-1} \mathbf{\hat{A}} \mathbf{\hat{P}}(t) = \mathbf{\hat{A}}$.
 
 
-The 
+The function $g(\mathbf{x}(t))$ is an \textit{observable} of the system, which might be a pixel value, the value of a stock portfolio, the energy of a particle, or something like that. The state space coordinates $\mathbf{x}(t)$ may or may not correspond to quantities that are actually observable. Their role is to uniquely parametrize the possible states of the system. The Koopman Operator acts on observables, which is probably why it seems to come up more often in data-driven work. 
 
+
+% POD 
+
+\section{Proper Orthogonal Decomposition (POD)}
+Proper Orthogonal Decomposition (POD) seeks a lower-rank representation of a dynamical system that, as far as I can see, is entirely analogous to SVD or PCA \cite{megretski2004pod}. Given a system $\mathbf{x}(t) \in \mathbb{R}^n$, one looks for a low-rank projection $\Pi_r$ that minimizes the expected value of the error:
+
+\begin{equation}
+\argmin \mathbb{E}_t||\mathbf{x}(t) - \mathbf{\Pi}\mathbf{x}(t)||_{2}
+\end{equation} 
+
+This is the same loss function as for PCA, and so the projection matrix $\mathbf{\Pi}_r = \sum_{i=1}^{r} \mathbf{v}_i\mathbf{v}^T_i$ where $\mathbf{v}_i$ is the $i$th principal component vector. 
+
+The POD does not have anything to say about the dynamics of a system, indeed, the time-ordering of the snapshots has no effect on the result. As such, performing POD on a system across different time windows should yield different decompositions unless the system is completely at rest, even when the dynamics of the system are steady. The first orthogonal component is simply the point in state space that the system is most correlated with across the observed time-frame.  
 
 % DMD
-\section{Dynamic Mode Decomposition}
-Dynamic Mode Decomposition (DMD) is a technique to obtain linear reduced-order models from high dimensional data that also allows for useful introspection. It originated in the fluid dynamics community, where very high-dimensional state spaces are common in the form of snapshot images that must resolve dynamics across many length scales.
+\section{Dynamic Mode Decomposition (DMD)}
+\label{sec:dmd}
+Dynamic Mode Decomposition (DMD) fits a reduced-rank, linear dynamical system to multi-dimensional time-series data. The rank-reduction is useful when the state space is very high-dimensional, for example when each time step is an image with many pixels. Canonically, fitting and rank reduction relies on SVD, so that the method is based on $L^2$ loss. It originated in the fluid dynamics community, where very high-dimensional state spaces are common because dynamics must be resolved across many length scales.
 
-It is basically an VAR(1) model, except that it can handle a very high dimensional state vector by extracting the leading eigendecomposition of the coefficient matrix without having to calculate it. An example of a system with a very high dimensional state vector would be video data, where the state space may be millions of pixels. 
+In case of plain-vanilla DMD, the dataset consists of pairs of snapshots of the system, which show the system at two subsequent time steps, i.e. $\{(\mathbf{x}_t,\mathbf{y}_t): \mathbf{y}_t = \mathbf{x}_{t+\delta t} \}$. Often, the different pairs show the system on different state space trajectories. That is, they may originate with many different "incarnations" of the system. To me it looks basically like an VAR(1) model, except that it can handle a very high dimensional state vector by extracting the leading eigendecomposition of the coefficient matrix without having to calculate it. It also looks a lot like fitting the transition matrix of a Markov Chain.
 
-Let $\mathbf{X}_{1,m-1} = \left[\mathbf{x}_1,\mathbf{x}_2,...,\mathbf{x}_{t-1},\mathbf{x}_{m-1}\right]$ be the matrix of state vectors from $t\in[1,m-1]$ and $\mathbf{X}_{2,m}$ be the matrix of state vectors from $t\in[2,m]$. Then dynamic mode decomposition essentially looks for linear dynamics using linear regression:
+Given a set of $m$ snapshots of the system $\{\mathbf{x}_t:\ t\in[1,m], \mathbf{x}_t \in \mathbb{R}^{n}\}$, let $\mathbf{X}_{1,m-1} = \left[\mathbf{x}_1,\mathbf{x}_2,...,\mathbf{x}_{t-1},\mathbf{x}_{m-1}\right]$ be the matrix of state vectors from $t\in[1,m-1]$ and $\mathbf{X}_{2,m}$ be the matrix of state vectors advanced by one time step from $t\in[2,m]$. Then dynamic mode decomposition essentially looks for linear dynamics using linear regression:
 
 \begin{equation}
 \mathbf{X}_{2,m} = \mathbf{A}\mathbf{X}_{1,m-1}
 \end{equation}
 
-Where $\mathbf{A}$ is square and therefore diagonalizable.
+Where $\mathbf{A} \in \mathbb{R}^{n\times n}$ is square and therefore diagonalizable, but may be very large.
 
 Let $a_{i,j}$ be the entry in the $i$th row and $j$th column of $\mathbf{A}$. Elementwise, the equation for the $i$th state variable at time $t$, $x_{i,t} = [\mathbf{x}_t]_i$ is written:
 
@@ -84,3 +98,9 @@ x_{i,t} = \sum_j a_{i,j} x_{i,t-1}
 \end{equation}
 
 The eigenvectors of $\mathbf{A}$  correspond to normal modes of the system. The corresponding eigenvectors, which may be real or complex, predict the evolution of the mode over time.
+
+Given the size possibly enormous size of $\mathbf{A}\in\mathbb{n\times n}$, it is desirable to instead deal with a lower rank approximation to $\mathbf{A}$, which works as long as the "energy" of the system is distributed over a few dominant modes. Canonically this is done using the singular value decomposition, which finds the maximum likelihood estimate to some lower rank substructure $\mathbf{A}_r$ under the assumption of normally distributed noise. Though I haven't seen it in the literature thus far, it is probably possible to implement other loss functions 
+
+\section{Extended Dynamical Mode Decomposition (EDMD}
+\label{sec:edmd}
+

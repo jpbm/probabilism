@@ -14,6 +14,10 @@ Barnes, R.~J.  \harvardyearleft n/a\harvardyearright , `Matrix differentiation
 Bell, J.  \harvardyearleft 2015\harvardyearright , `The axiom of choice'.
 \newline\harvardurl{\url{https://plato.stanford.edu/entries/axiom-choice/}}
 
+\harvarditem{Blitzstein \harvardand\ Hwang}{2019}{blitzstein2019introduction}
+Blitzstein, J.~K. \harvardand\ Hwang, J.  \harvardyearleft
+  2019\harvardyearright , {\em Introduction to probability}, Crc Press.
+
 \harvarditem{Bogart}{2004}{bogart2004combinatorics}
 Bogart, K.~P.  \harvardyearleft 2004\harvardyearright , {\em Combinatorics
   through guided discovery}, Kenneth P. Bogart.
@@ -24,8 +28,8 @@ Bradley, A.~R.  \harvardyearleft n/a\harvardyearright , `Notes on sets and
   multisets'.
 \newline\harvardurl{\url{http://theory.stanford.edu/~arbrad/pivc/sets.pdf}}
 
-\harvarditem{Brunton}{n.d.}{stevebrunton}
-Brunton, S.  \harvardyearleft n.d.\harvardyearright , `Steve brunton's youtube
+\harvarditem{Brunton}{n/a}{stevebrunton}
+Brunton, S.  \harvardyearleft n/a\harvardyearright , `Steve brunton's youtube
   channel'.
 \newline\harvardurl{\url{https://www.youtube.com/channel/UCm5mt-A4w61lknZ9lCsZtBw}}
 
@@ -33,6 +37,12 @@ Brunton, S.  \harvardyearleft n.d.\harvardyearright , `Steve brunton's youtube
 Colyer, A.  \harvardyearleft 2019\harvardyearright , `The why and how of
   nonnegative matrix factorization'.
 \newline\harvardurl{\url{https://blog.acolyer.org/2019/02/18/the-why-and-how-of-nonnegative-matrix-factorization/}}
+
+\harvarditem[Cvitanovic et~al.]{Cvitanovic, Artuso, Mainieri, Tanner
+  \harvardand\ Vattay}{2016}{cvitanovic2016chaos}
+Cvitanovic, P., Artuso, R., Mainieri, R., Tanner, G. \harvardand\ Vattay, G.
+  \harvardyearleft 2016\harvardyearright , `Chaos: classical and quantum,
+  chaosbook. org', {\em Niels Bohr Institute, Copenhagen, Denmark} .
 
 \harvarditem{Damask}{2019}{damask2019consistently}
 Damask, J.  \harvardyearleft 2019\harvardyearright , `A consistently oriented
@@ -64,10 +74,22 @@ Kronenburg, M.  \harvardyearleft 2011\harvardyearright , `The binomial
   coefficient for negative arguments', {\em arXiv preprint arXiv:1105.3689} .
 \newline\harvardurl{\url{https://arxiv.org/pdf/1105.3689.pdf}}
 
-\harvarditem{Mathworks}{n/a}{mathworkseigs}
+\harvarditem{Mathworks}{n/a}{mathworkseig}
 Mathworks  \harvardyearleft n/a\harvardyearright , `Eigenvalue and singular
   value decompositions'.
 \newline\harvardurl{\url{https://www.mathworks.com/content/dam/mathworks/mathworks-dot-com/moler/eigs.pdf}}
+
+\harvarditem{Megretski}{2004}{megretski2004pod}
+Megretski, A.  \harvardyearleft 2004\harvardyearright , `Proper orthogonal
+  decompostion'.
+\newline\harvardurl{\url{http://web.mit.edu/6.242/www/images/lec6_6242_2004.pdf}}
+
+\harvarditem[Salova et~al.]{Salova, Emenheiser, Rupe, Crutchfield \harvardand\
+  D’Souza}{2019}{salova2019koopman}
+Salova, A., Emenheiser, J., Rupe, A., Crutchfield, J.~P. \harvardand\
+  D’Souza, R.~M.  \harvardyearleft 2019\harvardyearright , `Koopman operator
+  and its approximations for systems with symmetries', {\em Chaos: An
+  Interdisciplinary Journal of Nonlinear Science} {\bf 29}(9),~093128.
 
 \harvarditem{Software}{n/a}{ncssridgeregression}
 Software, N.~S.  \harvardyearleft n/a\harvardyearright , `Ridge regression'.
