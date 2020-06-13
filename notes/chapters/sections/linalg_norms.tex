@@ -12,27 +12,42 @@ Let $p\geq1$ be a real number, then the $p$-norm or $L^p$ norm of a vector $\mat
 The expression can still be useful for $0<p<1$, but in that case the result is not a proper norm, because it is not subadditive (does not satisfy $f(x+y) \leq f(x) + f(y)$). $p$-norms are closely related to expressions for the generalized mean.
 
 
+\begin{figure}
+\centering
+    \includegraphics[width=\textwidth]{unitsets.png}
+    \caption{Unit Circles: Level sets $\{\mathbf{x}: ||\mathbf{x}||_q = 1\}$ for different $L^q$ norms.}
+    \label{fig:svd_eigenfaces}
+\end{figure}
+
+
 \subsection{$L^{1}$ Taxicab / Manhattan Norm}
+\label{sec:l1norm}
 \begin{equation}
 ||\mathbf{x}||^1 = \sum_i |x_i|
 \end{equation}
 
-In the context of regression, $L^1$ loss gives the maximum likelihood estimator under the assumption of Laplacian distributed errors. 
+In the context of regression, $L^1$ loss gives the maximum likelihood estimator under the assumption of Laplacian (double exponential) distributed errors. For a dataset $\mathbf{x}\in S$, minimizing $\argmin_{\mathbf{s}} \sum_{\mathbf{x}\in S}||\mathbf{x}-\mathbf{s}||_{1}$ gives the median.
 
 
 \subsection{$L^{2}$ Euclidian Norm}
+\label{sec:l2norm}
 \begin{equation}
 ||\mathbf{x}||^2 = \sum_i |x_i|^2
 \end{equation}
 
 
-In the context of regression, $L^2$ loss gives the maximum likelihood estimator under the assumption of normally distributed errors.
+In the context of regression, $L^2$ loss gives the maximum likelihood estimator under the assumption of normally distributed errors. For a dataset $\mathbf{x}\in S$, minimizing $\argmin_{\mathbf{s}} \sum_{\mathbf{x}\in S}||\mathbf{x}-\mathbf{s}||_{2}$ gives the mean.
+
+I believe that $L^2$ norm should be the only norm that preserves the distance between two points under rotations of the coordinate system.	
 
 \subsection{$L^{\infty}$ Maximum Norm} 
 
 \begin{equation}
 ||\mathbf{x}||^{\infty} = \max(x_1,x_2,...,x_n)
 \end{equation}
+
+For a dataset $\mathbf{x}\in S$, minimizing $\argmin_{\mathbf{s}} \sum_{\mathbf{x}\in S}||\mathbf{x}-\mathbf{s}||_{\infty}$ gives the average of the maximum and the minimum value of the dataset.
+
 
 \subsection{$L^{-\infty}$ Minimum Norm} 
 
@@ -41,6 +56,7 @@ Formally, I only came across values $0<p$, but it is my opinion that $-\infty$ p
 \begin{equation}
 ||\mathbf{x}||^{-\infty} = \min(x_1,x_2,...,x_n)
 \end{equation}
+
 
 
 
@@ -88,6 +104,7 @@ The $q$ norms for a matrix $\mathbf{A} \in \mathbb{R}^{m\times n}$ with entries 
 
 For $q=2$, this becomes the Frobenius norm (section \ref{sec:frobenius}). For vectors $\mathbf{v}\in\mathbb{R}^{n}$, the $q$-norm is more known as $p$-norm or $L^p$ norm (cf. section \ref{sec:lpnorms}). 
 
+
 % frobenius
 \subsection{$||\mathbf{A}||_F$ Frobenius Norm}
 \label{sec:frobenius}
@@ -127,7 +144,7 @@ Let $\mathbf{A} \in \mathbb{R}^{m\times n}$ be a matrix with entires $a_{i,j}$ i
 ||A||_{(2)} = \max_{\mathbf{x}\neq 0} \frac{||\mathbf{Ax}||_2}{||\mathbf{x}||_2}
 \end{equation}
 
-Which is the square root of the largest eigenvalue of $A^T A$. Or, equivalently, $||A||_{(2)} = \sigma_1$, where $\sigma_1$ is the largest singular value of the SVD of $\mathbf{A} = \mathbf{U\Sigma V}^T$. That means that $||A^{-1}|| = \frac{1}{\sigma_n}$, where $\sigma_n$ is the smallest singular value of the SVD of $\mathbf{A}$.
+Which is the square root of the largest eigenvalue of $A^T A$. Or, equivalently, $||A||_{(2)} = \sigma_1$, where $\sigma_1$ is the largest singular value of the SVD of $\mathbf{A} = \mathbf{U\Sigma V}^T$. That means that $||A^{-1}|| = \frac{1}{\sigma_n}$, where $\sigma_n$ is the smallest singular value of the SVD of $\mathbf{A}$. 
 
 
 

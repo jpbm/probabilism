@@ -186,31 +186,33 @@
 \contentsline {subsubsection}{\numberline {3.10.5.1}Properties}{41}{subsubsection.3.10.5.1}
 \contentsline {subsection}{\numberline {3.10.6}$\mathbf {A}^{\dagger } = -\mathbf {A}$ Skew Hermitian, Skew Symmetric}{41}{subsection.3.10.6}
 \contentsline {subsection}{\numberline {3.10.7}$\mathbf {A}\mathbf {A}=\mathbf {I}$ Involutory}{41}{subsection.3.10.7}
-\contentsline {subsection}{\numberline {3.10.8}(}{42}{subsection.3.10.8}
-\contentsline {section}{\numberline {3.11}sec:isometric}{42}{section.3.11}
-\contentsline {subsection}{\numberline {3.11.1}$\mathbf {U}^{\dagger } = \mathbf {U}^{-1}$ Unitary, Orthogonal}{42}{subsection.3.11.1}
-\contentsline {subsection}{\numberline {3.11.2}$\mathbf {A} = \mathbf {TBT^{-1}}$ Similarity}{42}{subsection.3.11.2}
-\contentsline {section}{\numberline {3.12}Properties of Norms}{42}{section.3.12}
-\contentsline {section}{\numberline {3.13}$L^p$ Lebesgue Vector Norms}{42}{section.3.13}
-\contentsline {subsection}{\numberline {3.13.1}$L^{1}$ Taxicab / Manhattan Norm}{43}{subsection.3.13.1}
-\contentsline {subsection}{\numberline {3.13.2}$L^{2}$ Euclidian Norm}{43}{subsection.3.13.2}
-\contentsline {subsection}{\numberline {3.13.3}$L^{\infty }$ Maximum Norm}{43}{subsection.3.13.3}
-\contentsline {subsection}{\numberline {3.13.4}$L^{-\infty }$ Minimum Norm}{43}{subsection.3.13.4}
-\contentsline {section}{\numberline {3.14}Operator and Matrix Norms}{43}{section.3.14}
-\contentsline {subparagraph}{}{43}{subparagraph*.55}
-\contentsline {subsection}{\numberline {3.14.1}$||\mathbf {A}||_{(\alpha )}$ Operator Norm}{43}{subsection.3.14.1}
-\contentsline {subsection}{\numberline {3.14.2}$||\mathbf {A}||_q$ $q$-Norms}{44}{subsection.3.14.2}
-\contentsline {subsection}{\numberline {3.14.3}$||\mathbf {A}||_F$ Frobenius Norm}{44}{subsection.3.14.3}
-\contentsline {subsection}{\numberline {3.14.4}$||\mathbf {A}||_{(1)}$ (1)-Norm}{44}{subsection.3.14.4}
-\contentsline {subsection}{\numberline {3.14.5}$||\mathbf {A}||_{(\infty )}$ ($\infty $)-Norm}{44}{subsection.3.14.5}
-\contentsline {subsection}{\numberline {3.14.6}$||\mathbf {A}||_{(2)}$ (2)-Norm}{44}{subsection.3.14.6}
-\contentsline {section}{\numberline {3.15}Vector and Matrix Derivatives}{45}{section.3.15}
-\contentsline {subsection}{\numberline {3.15.1}Jacobian}{45}{subsection.3.15.1}
-\contentsline {subsection}{\numberline {3.15.2}Inverse Function Theorem}{45}{subsection.3.15.2}
-\contentsline {subsection}{\numberline {3.15.3}Critical Points}{46}{subsection.3.15.3}
-\contentsline {subsection}{\numberline {3.15.4}Differential Volume Element, Change of Variables}{46}{subsection.3.15.4}
-\contentsline {subsection}{\numberline {3.15.5}Hessian}{46}{subsection.3.15.5}
-\contentsline {subsubsection}{\numberline {3.15.5.1}Testing Convexity}{46}{subsubsection.3.15.5.1}
+\contentsline {subsection}{\numberline {3.10.8}$||\mathbf {A}\mathbf {x}||_{\alpha } = ||\mathbf {x}||_{\alpha }$ Isometric}{42}{subsection.3.10.8}
+\contentsline {subsubsection}{\numberline {3.10.8.1}Isometries with Respect to $L^2$}{42}{subsubsection.3.10.8.1}
+\contentsline {subsubsection}{\numberline {3.10.8.2}Isometries with Respect to $L^1$ and general $L^q\not =L^2$}{42}{subsubsection.3.10.8.2}
+\contentsline {subsection}{\numberline {3.10.9}Stochastic}{42}{subsection.3.10.9}
+\contentsline {subsection}{\numberline {3.10.10}$\mathbf {U}^{\dagger } = \mathbf {U}^{-1}$ Unitary, Orthogonal}{43}{subsection.3.10.10}
+\contentsline {subsection}{\numberline {3.10.11}$\mathbf {A} = \mathbf {TBT^{-1}}$ Similarity}{43}{subsection.3.10.11}
+\contentsline {section}{\numberline {3.11}Properties of Norms}{43}{section.3.11}
+\contentsline {section}{\numberline {3.12}$L^p$ Lebesgue Vector Norms}{43}{section.3.12}
+\contentsline {subsection}{\numberline {3.12.1}$L^{1}$ Taxicab / Manhattan Norm}{43}{subsection.3.12.1}
+\contentsline {subsection}{\numberline {3.12.2}$L^{2}$ Euclidian Norm}{43}{subsection.3.12.2}
+\contentsline {subsection}{\numberline {3.12.3}$L^{\infty }$ Maximum Norm}{45}{subsection.3.12.3}
+\contentsline {subsection}{\numberline {3.12.4}$L^{-\infty }$ Minimum Norm}{45}{subsection.3.12.4}
+\contentsline {section}{\numberline {3.13}Operator and Matrix Norms}{45}{section.3.13}
+\contentsline {subparagraph}{}{45}{subparagraph*.55}
+\contentsline {subsection}{\numberline {3.13.1}$||\mathbf {A}||_{(\alpha )}$ Operator Norm}{45}{subsection.3.13.1}
+\contentsline {subsection}{\numberline {3.13.2}$||\mathbf {A}||_q$ $q$-Norms}{46}{subsection.3.13.2}
+\contentsline {subsection}{\numberline {3.13.3}$||\mathbf {A}||_F$ Frobenius Norm}{46}{subsection.3.13.3}
+\contentsline {subsection}{\numberline {3.13.4}$||\mathbf {A}||_{(1)}$ (1)-Norm}{46}{subsection.3.13.4}
+\contentsline {subsection}{\numberline {3.13.5}$||\mathbf {A}||_{(\infty )}$ ($\infty $)-Norm}{46}{subsection.3.13.5}
+\contentsline {subsection}{\numberline {3.13.6}$||\mathbf {A}||_{(2)}$ (2)-Norm}{46}{subsection.3.13.6}
+\contentsline {section}{\numberline {3.14}Vector and Matrix Derivatives}{47}{section.3.14}
+\contentsline {subsection}{\numberline {3.14.1}Jacobian}{47}{subsection.3.14.1}
+\contentsline {subsection}{\numberline {3.14.2}Inverse Function Theorem}{47}{subsection.3.14.2}
+\contentsline {subsection}{\numberline {3.14.3}Critical Points}{48}{subsection.3.14.3}
+\contentsline {subsection}{\numberline {3.14.4}Differential Volume Element, Change of Variables}{48}{subsection.3.14.4}
+\contentsline {subsection}{\numberline {3.14.5}Hessian}{48}{subsection.3.14.5}
+\contentsline {subsubsection}{\numberline {3.14.5.1}Testing Convexity}{48}{subsubsection.3.14.5.1}
 \contentsline {chapter}{\numberline {4}Probability}{49}{chapter.4}
 \contentsline {section}{\numberline {4.1}Interpretations and Definitions of Probability}{49}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Naive and Non-Naive Definitions of Probability}{49}{subsection.4.1.1}
@@ -277,7 +279,7 @@
 \contentsline {section}{\numberline {7.8}Factor Regression}{63}{section.7.8}
 \contentsline {section}{\numberline {7.9}Factor Models}{63}{section.7.9}
 \contentsline {chapter}{\numberline {8}Linear Regression}{65}{chapter.8}
-\contentsline {section}{\numberline {8.1}Least Squares Regression ($L^2$ Condition)}{65}{section.8.1}
+\contentsline {section}{\numberline {8.1}Least Squares Regression ($L^2$)}{65}{section.8.1}
 \contentsline {subsection}{\numberline {8.1.1}The Normal Equations, Analytical Least Squares Estimator}{65}{subsection.8.1.1}
 \contentsline {subsection}{\numberline {8.1.2}The Quick Way to $\mathbf {\mathaccentV {hat}05E{\beta }}$}{66}{subsection.8.1.2}
 \contentsline {subsection}{\numberline {8.1.3}The Long Way to $\mathbf {\mathaccentV {hat}05E{\beta }}$}{66}{subsection.8.1.3}
@@ -286,11 +288,12 @@
 \contentsline {subsection}{\numberline {8.1.6}Q-plots}{67}{subsection.8.1.6}
 \contentsline {subsection}{\numberline {8.1.7}Variance Inflation Factor}{67}{subsection.8.1.7}
 \contentsline {section}{\numberline {8.2}Total Least Squares}{67}{section.8.2}
-\contentsline {section}{\numberline {8.3}Ridge Regression}{67}{section.8.3}
+\contentsline {section}{\numberline {8.3}Ridge Regression (Tikhonov Regularization, $\lambda ||\mathbf {\beta }||^2$)}{67}{section.8.3}
 \contentsline {subsection}{\numberline {8.3.1}Analytical Ridge Estimator}{67}{subsection.8.3.1}
 \contentsline {subsection}{\numberline {8.3.2}Bayesian Perspective on Ridge Regression}{67}{subsection.8.3.2}
-\contentsline {section}{\numberline {8.4}LASSO Regression}{67}{section.8.4}
-\contentsline {section}{\numberline {8.5}Least Absolute Deviation Regression (LAD, $L^1$ Condition}{67}{section.8.5}
+\contentsline {section}{\numberline {8.4}Least Absolute Shrinkage and Selection Operator Regression (LASSO)}{67}{section.8.4}
+\contentsline {section}{\numberline {8.5}Least Absolute Deviation Regression (LAD, $L^1$)}{67}{section.8.5}
+\contentsline {section}{\numberline {8.6}Generalized Linear Models}{67}{section.8.6}
 \contentsline {chapter}{\numberline {9}Bayesian Data Analysis}{69}{chapter.9}
 \contentsline {chapter}{\numberline {10}Unsupervised Learning}{71}{chapter.10}
 \contentsline {section}{\numberline {10.1}Blind Source Separation}{71}{section.10.1}
@@ -311,12 +314,12 @@
 \contentsline {section}{\numberline {10.5}Principal Component Analysis (PCA)}{76}{section.10.5}
 \contentsline {subsection}{\numberline {10.5.1}Relationship between PCA and SVD}{77}{subsection.10.5.1}
 \contentsline {subsection}{\numberline {10.5.2}Tracking Principal Components over Time}{78}{subsection.10.5.2}
-\contentsline {subsection}{\numberline {10.5.3}$L^1$-Norm Principal Component Analysis}{78}{subsection.10.5.3}
-\contentsline {subsubsection}{\numberline {10.5.3.1}Example: Netflix Prize, Matrix Completion}{78}{subsubsection.10.5.3.1}
-\contentsline {section}{\numberline {10.6}$\mathbf {X}=\mathbf {W}\mathbf {H}$ Non-Negative Matrix Factorization}{78}{section.10.6}
+\contentsline {subsection}{\numberline {10.5.3}$L^1$-Norm Principal Component Analysis ($L^1$ PCA)}{78}{subsection.10.5.3}
+\contentsline {subsubsection}{\numberline {10.5.3.1}Example: Netflix Prize, Matrix Completion}{79}{subsubsection.10.5.3.1}
+\contentsline {section}{\numberline {10.6}$\mathbf {X}=\mathbf {W}\mathbf {H}$ Non-Negative Matrix Factorization}{79}{section.10.6}
 \contentsline {section}{\numberline {10.7}Optimal Truncation}{79}{section.10.7}
 \contentsline {subsection}{\numberline {10.7.1}Scree Plots, Heuristic Methods}{79}{subsection.10.7.1}
-\contentsline {subsection}{\numberline {10.7.2}Gavish \& Donoho's Optimal Threshold for SVD}{81}{subsection.10.7.2}
+\contentsline {subsection}{\numberline {10.7.2}Gavish \& Donoho's Optimal Threshold for SVD}{80}{subsection.10.7.2}
 \contentsline {chapter}{\numberline {11}Dynamical Systems}{85}{chapter.11}
 \contentsline {section}{\numberline {11.1}Modal Decomposition}{85}{section.11.1}
 \contentsline {section}{\numberline {11.2}Koopman and Frobenius-Perron Operators}{86}{section.11.2}

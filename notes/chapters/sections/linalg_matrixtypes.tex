@@ -67,7 +67,7 @@ Hermitian matrices are matrices that are equal to their complex transpose. That 
 \end{equation}
 
 \subsubsection{Properties}
-There are many properties of Hermitian matrices. 
+(There are more)
 \begin{itemize}
 \item By definition: $\mathbf{A} = \mathbf{A}^\dagger$
 \item Diagonal Entries are all real, since $a_{i,i} = a_{i,i}^*$, but not necessarily positive (physics will mislead you there...)
@@ -116,8 +116,8 @@ Involutory matrices are all square roots of the identity matrix. A famous exampl
 
 
 % Isometric
-\subsection($||\mathbf{A}\mathbf{x}||_{\alpha} = ||\mathbf{x}||_{\alpha}$ Isometric)
-\section{sec:isometric}
+\subsection{$||\mathbf{A}\mathbf{x}||_{\alpha} = ||\mathbf{x}||_{\alpha}$ Isometric}
+\label{sec:isometric}
 An isometric transformation with respect to some norm $||\cdot||_{\alpha}$ preserves that norm (it's in the name: iso-metric). The linear case is represented by isometric matrices, which satisfy:
 
 \begin{equation}
@@ -126,8 +126,34 @@ An isometric transformation with respect to some norm $||\cdot||_{\alpha}$ prese
 
 For some vector $\mathbf{x}$. Isometries are also known as distance-preserving maps. To see this, define the distance between two points $\mathbf{a}$ and $\mathbf{b}$ as $||\mathbf{a} - \mathbf{b}||_{\alpha} = ||\mathbf{x}||_{\alpha}$. Isometries are usually understood be bijective. 
 
-In terms of operator norms, isometries satisfy $||\mathbf{A}||_{(\alpha)} = 1$ where $||\cdot||_{(\alpha)}$ denotes the operator norm (cf. section \ref{sec:operatornorm}).
+In terms of operator norms, isometries must satisfy $||\mathbf{A}||_{(\alpha)} = 1$ where $||\cdot||_{(\alpha)}$ denotes the operator norm (cf. section \ref{sec:operatornorm}). However, operator norms give the upper bound on the distortion of the input, so a unit operator norm is necessary but not sufficient. 
 
+
+\subsubsection{Isometries with Respect to $L^2$}
+The $L^2$ norm is unique in that the points $\{\mathbf{x}: ||\mathbf{x}||_{2} = 1\}$ lie on a perfect circle, which remains a circle regardless of the orientation of the underlying coordinate system. (A sphere looks the same regardless of angle.) This symmetry is broken for all other norms. Unitary matrices are isometries with respect to $L^2$, though unitarity is not a necessary condition for an isometry.
+
+\subsubsection{Isometries with Respect to $L^1$ and general $L^q\neq L^2$}
+Isometries with respect to $L^1$ are relevant because they are permissible transformations of (classical) probability distributions. For example, the transition matrix that describes the flow of probability between the time steps of a Markov Chain has to ensure that the entries of the state space probability still sum to $1$. 
+
+For norms $L^q$ with $q\neq2$, the unit "circle" $\{\mathbf{x}: ||\mathbf{x}||_{q\neq2} = 1\}$ is not perfectly round. Instead the symmetry is broken along the coordinate axes. That means that a rotation of the coordinate axes gives a different unit distance, and so two points $\mathbf{a}$ and $\mathbf{b}$ that are $||\mathbf{a}-\mathbf{b}||_{q\neq2} = 1$ apart in one coordinate system may have a different separation in some other coordinate system. 
+
+In particular, for the $L^1$, or \textit{Manhattan} norm (cf. section \ref{sec:l1norm}), the points $\{\mathbf{x}: ||\mathbf{x}||_{1} = 1\}$ lie on a diamond with axes aligned to the axes of the coordinate system. In Manhattan, reaching a point that is $1$ mile away "as the crow flies", depends on the position of that point with respect to the grid of streets and avenues. When that grid is rotated, the point may be quicker or take longer to reach. 
+
+Since this rules out rotations, the internet tells me that the only linear maps that are isometries for $L^q$ with $q\neq 2$ are signed permutation matrices. That is, matrices that assign $\hat{x}\rightarrow \hat{y}$ or $\hat{z} \rightarrow -\hat{x}$ and so on. 
+
+However, in general, any transformation that maps a point on the $L^q$ unit circle to another point on the $L^q$ unit circle is an isometry with respect to $L^q$, and this class of transformation is more general than signed permutations. The stochastic matrices are an example with respect to $L^1$.
+
+\subsection{Stochastic}
+
+Stochastic matrices are used to describe transitions between states of a Markov chain. The matrices are square and each entry is non-negative and represents a conditional probability of moving from one state to another. The entries along either the row or the column, or both, must sum to 1 according to the requirement of marginalization.
+
+\begin{itemize}
+\item Right stochastic has rows that sum to 1, so that $\mathbf{P}\mathbf{1}=\mathbf{1}$. It is applied $\mathbf{\pi}\mathbf{P}$. Column index gives "from", row index gives "to". 
+\item Left stochastic has columns that sum to 1, so that $\mathbf{1}\mathbf{P}=\mathbf{1}$. It is applied $\mathbf{P}\mathbf{\pi}$. Row index gives "from", column index gives "to".
+\item doubly stochastic has rows and columns that sum to 1. 
+\end{itemize}
+
+Products of stochastic matrices are also stochastic matrices. The spectral radius (largest eigenvalue) of a stochastic matrix is always $1$. Since $\mathbf{1}$ is an eigenvector and the left and right eigenvalues of a square matrix are the same, there is at least one stationary state $\mathbf{\pi}\mathbf{P}=\mathbf{\pi}$ (that is, in this case of a right stochastic matrix, a left eigenvector) with eigenvalue $1$. 
 
 
 

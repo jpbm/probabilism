@@ -59,11 +59,17 @@ That means that:
 Given the direct parallel between PCA and SVD, the identical issue with sign flips emerges with the principal component basis, and the remedy is the same. See section \ref{sec:svd_tracking}.
 
 
-\subsection{$L^1$-Norm Principal Component Analysis}
+\subsection{$L^1$-Norm Principal Component Analysis ($L^1$ PCA)}
 \label{sec:l1pca}
 
-L1-Norm Principal Component Analysis is an alternative to conventional PCA that provides better robustness to outliers. Exact solutions exist in polynomial time, as well as more efficient approximate methods. 
+L1-Norm Principal Component Analysis is an alternative to conventional PCA that provides better robustness to outliers. Exact solutions exist in polynomial time, as well as more efficient approximate methods. \citeasnoun{brooks2014pure} establishes that the PCA under $L^1$ norm is found by successive fitting of hyperplanes under $L^1$ error in progressively smaller subspaces. Much like the $L^2$ distance of a point to a hyperplane is given by the radius of a circle around that point, the $L^1$ distance of a point to a hyperplane is given by its intersection of a rhombus. This has the (kind of quirky) consequence that the distance of all points to a hyperplane is always measured directly along one of the coordinate axes (and it is the same coordinate axes for each of the points). This, in turn, implies, that in some subspace $\mathbb{R}^m$, the $L^1$ best-fit hyperplane can be found by performing an $L^1$ regression with each of the $m$ dimensions serving as the explanatory variable, and then selecting the regression result that had the smallest residual.
 
+\begin{figure}
+\centering
+    \includegraphics[width=0.4\textwidth]{l1pca.png}
+    \caption{Distance of a point to a hyperplane in $L^1$ and $L^2$. The $L^1$ distance in this case is just the distance along the $x$ axis. If the hyperplane was cutting a shallower angle, then the distance would be measured along the $y$ axis. The best fit hyperplane to many points in $\mathbb{R}^2$ would be found by regressing the data points once with $y = \beta x + \epsilon$ and once with $x = \beta y + \epsilon$ and selecting the result with the smaller $||\epsilon||_1$. (The figure is from J. P. Brooks (2014).}
+    \label{fig:l1pca}
+\end{figure}
 
 
 \subsubsection{Example: Netflix Prize, Matrix Completion}
