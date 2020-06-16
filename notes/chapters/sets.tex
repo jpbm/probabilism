@@ -1,4 +1,4 @@
-\chapter{Sets}
+\chapter{Sets and Measure Theory	}
 
 \begin{multicols}{2}[\subsubsection*{Contents of this chapter}]
    \printcontents{}{1}{\setcounter{tocdepth}{2}}
@@ -6,7 +6,7 @@
 
 
 
-Sets are a term to describe collections of things. The things could be countable objects, such as the integers between $1$ and $10$, or contain a continuum, for example all the real numbers between $1$ and $10$. Unless otherwise specified, the elements of a set are assumed to be distinct and as not having an internal order. That is, the set of letters in "Mississippi" is $\{M,i,s,p \} = \{i,p,M,s \} = ... $ and so on. A concise resource for notation is \citeasnoun{stanfordsetnotation}. 
+Sets are a term to describe collections of things. The things could be countable objects, such as the integers between $1$ and $10$, or contain a continuum, for example all the real numbers between $1$ and $10$. Unless otherwise specified, the elements of a set are assumed to be distinct and as not having an internal order. That is, the set of letters in "Mississippi" is $\{M,i,s,p \} = \{i,p,M,s 	\} = ... $ and so on. A concise resource for notation is \citeasnoun{stanfordsetnotation}. 
 
 
 % representation
@@ -149,7 +149,15 @@ Is a closed set.
 \subsubsection{Both Open and Closed, Neither Open Nor Closed}
 The set of real numbers $\mathbb{R}$ is both open and closed. Any point on the real line has a neighborhood in $\mathbb{R}$, so it is open. On the other hand, the accumulation points of $\mathbb{R}$ are $\mathbb{R}$, so it is closed. An interval that has some but not all accumulation points is neither open nor closed. For example $[1,2)$.	
 
+%% Image
+\subsection{Image}
+\label{sec:image}
+The image are the elements of the codomain that a given subset of the domain is mapped to. For example, given a function $f:\mathbb{R} \rightarrow \mathbb{R}: f(x) = x^2$, the image of $\{-3,-2,2,3\}$ in the domain are the elements $\{4,9\}$ of the codomain.
 
+%% Preimage 
+\subsection{Preimage, Inverse Image}
+\label{sec:preimage}
+The preimage are elements of the domain that are mapped to a given subset of the codomain. For example, given a function $f:\mathbb{R} \rightarrow \mathbb{R}: f(x) = x^2$, the preimage of the elements $\{4,9\}$ of the codomain are the elements $\{-3,-2,2,3\}$ of the domain..
 
 
 %% Convex Sets
@@ -168,8 +176,25 @@ With $\sum_i \lambda_i = 1$ and $\lambda_i\geq 0$ are also contained in $S$. Rat
 \subsubsection{Example: Discrete Probability Distributions}
 The set of discrete probability distributions $P = \{ \mathbf{p}=(p_1,p_2,...): ||\mathbf{p}||_1 = 1, p_i \geq 0\}$ is a convex set. Property \ref{eq:convexsets} means that a weighted average over members of $P$ is also a member of $P$, so long as the weights satisfy $\sum_i \lambda_i = 1$. In general, this guarantees that marginalization results in a probability. I.e. if $p(X|Y) = \mathbf{p}(X|Y) \in P$ and $p(Y) = \mathbf{p}(Y) \in P$, then $\mathbf{p}(X) = \sum_i p_i(X|Y) p_i(Y) \in P$. 
 
+%% Choice sets, Transverse Sets, Cross-sections
+\subsection{Choice Sets, Transversal Sets, Cross-Sections}
+\label{sec:choicesets}
+Choice sets, transversal sets or cross-sections are sets that are assembled by picking exactly one element from each member of a family of disjoint sets. The axiom of choice (cf. section \ref{sec:axiomofchoice}) states that such a set can always be formed.
 
+\subsubsection{Example: Integers}
+Consider the partition of the integers between $1$ and $40$ into a family of disjoint sets that each contain $10$ elements: 
 
+\begin{equation}
+S = \{ \{1,...,10\}, \{11,...,20\}, \{21,...,30\},\{31,...,40\} \}
+\end{equation}
+
+Then a transversal set $A$ could for example be formed by picking the smallest number in each of the subsets. 
+
+\begin{equation}
+A = \{1,11,21,31\}
+\end{equation}
+
+Though we might have picked any other choice function.  
 
 
 % Set operations
@@ -291,6 +316,7 @@ There are 45 integers between 1 and 100 that are not divisible by 3, 5 or 7.
 
 
 \section{Axiom of Choice}
+\label{sec:axiomofchoice}
 The axiom of choice simply states that, given a collection of nonempty, mutually disjoint sets, it is possible to assemble a \textit{transversal} or \textit{choice} set that consists of exactly one element from each of the sets in the collection. For example, consider the students in 1st, 2nd, 3rd.. etc grades at a school to be a collection of nonempty, mutually disjoint sets. Then the axiom of choice says that it is possible to assemble a subset of students with exactly one student from each grade. 
 
 
