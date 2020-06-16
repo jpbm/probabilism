@@ -16,7 +16,7 @@ The expression can still be useful for $0<p<1$, but in that case the result is n
 \centering
     \includegraphics[width=\textwidth]{unitsets.png}
     \caption{Unit Circles: Level sets $\{\mathbf{x}: ||\mathbf{x}||_q = 1\}$ for different $L^q$ norms.}
-    \label{fig:svd_eigenfaces}
+    \label{fig:unitsets}
 \end{figure}
 
 
@@ -147,5 +147,12 @@ Let $\mathbf{A} \in \mathbb{R}^{m\times n}$ be a matrix with entires $a_{i,j}$ i
 Which is the square root of the largest eigenvalue of $A^T A$. Or, equivalently, $||A||_{(2)} = \sigma_1$, where $\sigma_1$ is the largest singular value of the SVD of $\mathbf{A} = \mathbf{U\Sigma V}^T$. That means that $||A^{-1}|| = \frac{1}{\sigma_n}$, where $\sigma_n$ is the smallest singular value of the SVD of $\mathbf{A}$. 
 
 
+% nuclear norm
+\subsection{$||\mathbf{A}||_{*}$ Nuclear Norm}
+\label{sec:nuclearnorm}
+The nuclear norm of a matrix is the sum of its singular values. This is equivalent to the Schatten-1 Norm. Optimization problems that involve rank restriction tend to be non-convex. The nuclear norm is a convex alternative that can make such problems tractable.
 
+\begin{equation}
+||\mathbf{A}||_{*} = \sum_i \sigma_i 
+\end{equation}
 

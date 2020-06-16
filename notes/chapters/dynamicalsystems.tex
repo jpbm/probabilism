@@ -25,7 +25,7 @@ Conventionally, the dynamics $\mathbf{f}$ are derived from first principles. Inc
 \item Uncertainty (in parameters etc.)
 \end{itemize}
 
-\section{Modal Decomposition}
+\section{Mode Decompositions}
 Modal decompositions express the evolving state of a system in terms of a superposition of basis vectors that are the eigenfunctions of a time-translation operator. In general, the rank of the basis space is the same as the state space dimension, but in practice only a few of those modes have "energy". That means that the description of a system in terms of a modal decomposition often requires orders of magnitude fewer parameters than the description of the state space. Extracting the dominant modes also amounts to extracting the dominant dynamics of the system, with the assumption possibly being that the discarded low-energy modes are noise. In so far, modal decomposition runs closely parallel to decomposition-based dimensionality reduction techniques such as SVD, PCA and ICA, though explicitly introducing the notion of a trajectory through time.
 
 The modes are properties of the time translation operator and the state space. Therefore, the description in terms of modes is compatible with an arbitrary, unpredictable forcing function acting on the system, so long as it does not affect the time translation operator or the state space. For example, the description of the oscillation of a guitar string in terms of modes remains valid regardless of the song that is being played. However, changing the length of the string increases the size of the state space, and increasing the tension in the string accelerates its reversion from being struck away from its equilibrium, and therefore it's time translation operator. In those cases the modes of the system are changed.   
@@ -99,8 +99,22 @@ x_{i,t} = \sum_j a_{i,j} x_{i,t-1}
 
 The eigenvectors of $\mathbf{A}$  correspond to normal modes of the system. The corresponding eigenvectors, which may be real or complex, predict the evolution of the mode over time.
 
-Given the size possibly enormous size of $\mathbf{A}\in\mathbb{n\times n}$, it is desirable to instead deal with a lower rank approximation to $\mathbf{A}$, which works as long as the "energy" of the system is distributed over a few dominant modes. Canonically this is done using the singular value decomposition, which finds the maximum likelihood estimate to some lower rank substructure $\mathbf{A}_r$ under the assumption of normally distributed noise. Though I haven't seen it in the literature thus far, it is probably possible to implement other loss functions 
+The size of $\mathbf{A}\in\mathbb{R}^{n\times n}$ may be so large that extracting its eigenvectors and eigenvalues may be computationally intractable. DMD instead derives a smaller matrix $\mathbf{A'}$ that has the same eigenvalues as $\mathbf{A}$ and uses those to also finds the eigenvectors.
 
-\section{Extended Dynamical Mode Decomposition (EDMD}
+\begin{equation}
+\begin{array}{ll}
+1. & \mathbf{X}_{1,m-1} = \mathbf{U}\mathbf{\Sigma}\mathbf{V}^T,\ \ \ \ \mathbf{X}_{2,m} = \mathbf{AU\Sigma V}^T\\
+2. & \mathbf{U}^T\mathbf{X}_{2,m}\mathbf{V\Sigma}^{-1} = \mathbf{U}^{T}\mathbf{AU} = \mathbf{A'}\\
+3. & \mathbf{A'}\mathbf{W} = \mathbf{W}\mathbf{\Lambda} \\
+4. & \mathbf{\Phi} = \mathbf{X}^T\mathbf{V\Sigma}^{-1}\mathbf{W}
+\end{array}
+\end{equation}
+ 
+If the system has low dimensional structure, the matrix $\mathbf{A'}$ can be further reduced by only keeping the first $r$ vectors in $\mathbf{U}$. The final transformation$\mathbf{\Phi}$ gives high-dimensional eigenvectors of the full matrix $\mathbf{A}$. 
+
+\citeasnoun{stevebrunton} suggests that DMD is, in spirit, a combination of principal component analysis and the Fourier transform in time. The fact that DMD exists in a regression framework there are a huge number of extensions that can be leveraged. In particular, \citeasnoun{stevebrunton} delves into combining DMD with compressed sensing. What is surprising is that the dynamics that are modeled by DMD are not necessarily linear. The matrix $\mathbf{A}$ is large enough to approximate nonlinear dynamics.
+
+
+\section{Extended Dynamical Mode Decomposition (EDMD)}
 \label{sec:edmd}
 

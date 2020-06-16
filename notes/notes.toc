@@ -1,55 +1,56 @@
-\contentsline {chapter}{\numberline {1}Sets}{7}{chapter.1}
-\contentsline {section}{\numberline {1.1}Representation}{7}{section.1.1}
-\contentsline {section}{\numberline {1.2}Set Properties and Types of Sets}{7}{section.1.2}
-\contentsline {subsection}{\numberline {1.2.1}Cardinality}{7}{subsection.1.2.1}
-\contentsline {subsection}{\numberline {1.2.2}$\emptyset $ Empy Set, Null Set}{7}{subsection.1.2.2}
-\contentsline {subsection}{\numberline {1.2.3}Singleton Set}{8}{subsection.1.2.3}
-\contentsline {subsection}{\numberline {1.2.4}Infinite Sets}{8}{subsection.1.2.4}
-\contentsline {subsection}{\numberline {1.2.5}Multisets}{8}{subsection.1.2.5}
-\contentsline {subsubsection}{\numberline {1.2.5.1}Support}{8}{subsubsection.1.2.5.1}
-\contentsline {subsubsection}{\numberline {1.2.5.2}Cardinality}{8}{subsubsection.1.2.5.2}
-\contentsline {subsubsection}{\numberline {1.2.5.3}$\subseteq $ Inclusion}{8}{subsubsection.1.2.5.3}
-\contentsline {subsubsection}{\numberline {1.2.5.4}$\DOTSB \bigcap@ \slimits@ $ Intersection}{8}{subsubsection.1.2.5.4}
-\contentsline {subsubsection}{\numberline {1.2.5.5}$\DOTSB \bigcup@ \slimits@ $ Union}{8}{subsubsection.1.2.5.5}
-\contentsline {subsubsection}{\numberline {1.2.5.6}$\uplus $ Multiset Addition}{9}{subsubsection.1.2.5.6}
-\contentsline {subsubsection}{\numberline {1.2.5.7}Multiset Subtraction}{9}{subsubsection.1.2.5.7}
-\contentsline {subsection}{\numberline {1.2.6}Powersets}{9}{subsection.1.2.6}
-\contentsline {subsection}{\numberline {1.2.7}Measurable Sets}{9}{subsection.1.2.7}
-\contentsline {subsection}{\numberline {1.2.8}Universal Set}{9}{subsection.1.2.8}
-\contentsline {subsection}{\numberline {1.2.9}Open Sets, Closed Sets}{9}{subsection.1.2.9}
-\contentsline {subsubsection}{\numberline {1.2.9.1}Interior Points}{9}{subsubsection.1.2.9.1}
-\contentsline {subsubsection}{\numberline {1.2.9.2}Accumulation Points}{9}{subsubsection.1.2.9.2}
-\contentsline {subsubsection}{\numberline {1.2.9.3}Open Sets}{10}{subsubsection.1.2.9.3}
-\contentsline {subsubsection}{\numberline {1.2.9.4}Closed Sets}{10}{subsubsection.1.2.9.4}
-\contentsline {subsubsection}{\numberline {1.2.9.5}Both Open and Closed, Neither Open Nor Closed}{10}{subsubsection.1.2.9.5}
-\contentsline {subsection}{\numberline {1.2.10}Convex Sets}{10}{subsection.1.2.10}
-\contentsline {subsubsection}{\numberline {1.2.10.1}Example: Discrete Probability Distributions}{10}{subsubsection.1.2.10.1}
-\contentsline {section}{\numberline {1.3}Set Operations}{10}{section.1.3}
-\contentsline {subsection}{\numberline {1.3.1}$A^c$ Complement}{10}{subsection.1.3.1}
-\contentsline {subsection}{\numberline {1.3.2}$\DOTSB \bigcup@ \slimits@ $ Union}{10}{subsection.1.3.2}
-\contentsline {subsection}{\numberline {1.3.3}$\DOTSB \bigcap@ \slimits@ $ Intersection}{11}{subsection.1.3.3}
-\contentsline {subsection}{\numberline {1.3.4}$\DOTSB \bigsqcup@ \slimits@ $ Disjoint Union, Discriminated Union}{11}{subsection.1.3.4}
-\contentsline {section}{\numberline {1.4}Bijection Principle}{11}{section.1.4}
-\contentsline {section}{\numberline {1.5}DeMorgan's Rules}{11}{section.1.5}
-\contentsline {section}{\numberline {1.6}Inclusion - Exclusion Principle}{11}{section.1.6}
-\contentsline {subsection}{\numberline {1.6.1}Example: n=2 Sets and n=3 Sets}{12}{subsection.1.6.1}
-\contentsline {subparagraph}{n=2}{12}{subparagraph*.2}
-\contentsline {subparagraph}{n=3}{12}{subparagraph*.3}
-\contentsline {subsubsection}{\numberline {1.6.1.1}Example: Counting Integers}{12}{subsubsection.1.6.1.1}
-\contentsline {section}{\numberline {1.7}Axiom of Choice}{12}{section.1.7}
-\contentsline {subsection}{\numberline {1.7.1}Example: Pairs of Real Numbers, Right Inverse}{13}{subsection.1.7.1}
-\contentsline {section}{\numberline {1.8}$\sigma $-Algebras}{13}{section.1.8}
-\contentsline {subsection}{\numberline {1.8.1}Definition}{13}{subsection.1.8.1}
-\contentsline {subsubsection}{\numberline {1.8.1.1}Example: The Smallest Possible $\sigma $-Algebra}{13}{subsubsection.1.8.1.1}
-\contentsline {subsubsection}{\numberline {1.8.1.2}Example: The Largest Possible $\sigma $-Algebra}{13}{subsubsection.1.8.1.2}
-\contentsline {subsection}{\numberline {1.8.2}Intersection Property}{13}{subsection.1.8.2}
-\contentsline {subsection}{\numberline {1.8.3}Generated $\sigma $-Algebras}{13}{subsection.1.8.3}
-\contentsline {subsubsection}{\numberline {1.8.3.1}Example: Generated $\sigma $-Algebra}{14}{subsubsection.1.8.3.1}
-\contentsline {subsection}{\numberline {1.8.4}Borel $\sigma $-Algebras}{14}{subsection.1.8.4}
-\contentsline {subsection}{\numberline {1.8.5}Measures, Measure Spaces}{14}{subsection.1.8.5}
-\contentsline {subsubsection}{\numberline {1.8.5.1}Example: Counting Measure}{14}{subsubsection.1.8.5.1}
-\contentsline {subsubsection}{\numberline {1.8.5.2}Example: Dirac Measure}{14}{subsubsection.1.8.5.2}
-\contentsline {subsection}{\numberline {1.8.6}Normal Volume Measure}{14}{subsection.1.8.6}
+\contentsline {chapter}{\numberline {1}Sets}{5}{chapter.1}
+\contentsline {section}{\numberline {1.1}Representation}{5}{section.1.1}
+\contentsline {section}{\numberline {1.2}Set Properties and Types of Sets}{5}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}Cardinality}{5}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}$\emptyset $ Empy Set, Null Set}{6}{subsection.1.2.2}
+\contentsline {subsection}{\numberline {1.2.3}Singleton Set}{6}{subsection.1.2.3}
+\contentsline {subsection}{\numberline {1.2.4}Infinite Sets}{6}{subsection.1.2.4}
+\contentsline {subsection}{\numberline {1.2.5}Multisets}{6}{subsection.1.2.5}
+\contentsline {subsubsection}{\numberline {1.2.5.1}Support}{6}{subsubsection.1.2.5.1}
+\contentsline {subsubsection}{\numberline {1.2.5.2}Cardinality}{6}{subsubsection.1.2.5.2}
+\contentsline {subsubsection}{\numberline {1.2.5.3}$\subseteq $ Inclusion}{6}{subsubsection.1.2.5.3}
+\contentsline {subsubsection}{\numberline {1.2.5.4}$\DOTSB \bigcap@ \slimits@ $ Intersection}{6}{subsubsection.1.2.5.4}
+\contentsline {subsubsection}{\numberline {1.2.5.5}$\DOTSB \bigcup@ \slimits@ $ Union}{7}{subsubsection.1.2.5.5}
+\contentsline {subsubsection}{\numberline {1.2.5.6}$\uplus $ Multiset Addition}{7}{subsubsection.1.2.5.6}
+\contentsline {subsubsection}{\numberline {1.2.5.7}Multiset Subtraction}{7}{subsubsection.1.2.5.7}
+\contentsline {subsection}{\numberline {1.2.6}Powersets}{7}{subsection.1.2.6}
+\contentsline {subsection}{\numberline {1.2.7}Measurable Sets}{7}{subsection.1.2.7}
+\contentsline {subsection}{\numberline {1.2.8}Universal Set}{7}{subsection.1.2.8}
+\contentsline {subsection}{\numberline {1.2.9}Open Sets, Closed Sets}{7}{subsection.1.2.9}
+\contentsline {subsubsection}{\numberline {1.2.9.1}Interior Points}{8}{subsubsection.1.2.9.1}
+\contentsline {subsubsection}{\numberline {1.2.9.2}Accumulation Points}{8}{subsubsection.1.2.9.2}
+\contentsline {subsubsection}{\numberline {1.2.9.3}Open Sets}{8}{subsubsection.1.2.9.3}
+\contentsline {subsubsection}{\numberline {1.2.9.4}Closed Sets}{8}{subsubsection.1.2.9.4}
+\contentsline {subsubsection}{\numberline {1.2.9.5}Both Open and Closed, Neither Open Nor Closed}{8}{subsubsection.1.2.9.5}
+\contentsline {subsection}{\numberline {1.2.10}Convex Sets}{8}{subsection.1.2.10}
+\contentsline {subsubsection}{\numberline {1.2.10.1}Example: Discrete Probability Distributions}{8}{subsubsection.1.2.10.1}
+\contentsline {section}{\numberline {1.3}Set Operations}{9}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}$A^c$ Complement}{9}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.3.2}$\DOTSB \bigcup@ \slimits@ $ Union}{9}{subsection.1.3.2}
+\contentsline {subsection}{\numberline {1.3.3}$\DOTSB \bigcap@ \slimits@ $ Intersection}{9}{subsection.1.3.3}
+\contentsline {subsection}{\numberline {1.3.4}$\DOTSB \bigsqcup@ \slimits@ $ Disjoint Union, Discriminated Union}{9}{subsection.1.3.4}
+\contentsline {section}{\numberline {1.4}Bijection Principle}{9}{section.1.4}
+\contentsline {section}{\numberline {1.5}DeMorgan's Rules}{9}{section.1.5}
+\contentsline {section}{\numberline {1.6}Inclusion - Exclusion Principle}{10}{section.1.6}
+\contentsline {subsection}{\numberline {1.6.1}Example: n=2 Sets and n=3 Sets}{10}{subsection.1.6.1}
+\contentsline {subparagraph}{n=2}{10}{subparagraph*.2}
+\contentsline {subparagraph}{n=3}{10}{subparagraph*.3}
+\contentsline {subsubsection}{\numberline {1.6.1.1}Example: Counting Integers}{10}{subsubsection.1.6.1.1}
+\contentsline {section}{\numberline {1.7}Axiom of Choice}{11}{section.1.7}
+\contentsline {subsection}{\numberline {1.7.1}Example: Pairs of Real Numbers, Right Inverse}{11}{subsection.1.7.1}
+\contentsline {section}{\numberline {1.8}$\sigma $-Algebras}{11}{section.1.8}
+\contentsline {subsection}{\numberline {1.8.1}Definition}{11}{subsection.1.8.1}
+\contentsline {subsubsection}{\numberline {1.8.1.1}Example: The Smallest Possible $\sigma $-Algebra}{11}{subsubsection.1.8.1.1}
+\contentsline {subsubsection}{\numberline {1.8.1.2}Example: The Largest Possible $\sigma $-Algebra}{11}{subsubsection.1.8.1.2}
+\contentsline {subsection}{\numberline {1.8.2}Intersection Property}{11}{subsection.1.8.2}
+\contentsline {subsection}{\numberline {1.8.3}Generated $\sigma $-Algebras}{12}{subsection.1.8.3}
+\contentsline {subsubsection}{\numberline {1.8.3.1}Example: Generated $\sigma $-Algebra}{12}{subsubsection.1.8.3.1}
+\contentsline {subsection}{\numberline {1.8.4}Borel $\sigma $-Algebras}{12}{subsection.1.8.4}
+\contentsline {subsection}{\numberline {1.8.5}Measures, Measure Spaces}{12}{subsection.1.8.5}
+\contentsline {subsubsection}{\numberline {1.8.5.1}Example: Counting Measure}{12}{subsubsection.1.8.5.1}
+\contentsline {subsubsection}{\numberline {1.8.5.2}Example: Dirac Measure}{12}{subsubsection.1.8.5.2}
+\contentsline {subsection}{\numberline {1.8.6}Normal Volume Measure}{13}{subsection.1.8.6}
+\contentsline {subsection}{\numberline {1.8.7}Length Measure on the Real Line}{13}{subsection.1.8.7}
 \contentsline {chapter}{\numberline {2}Combinatorics}{15}{chapter.2}
 \contentsline {section}{\numberline {2.1}Combinatorial Identities and Expansions}{15}{section.2.1}
 \contentsline {subsection}{\numberline {2.1.1}Binomial Coefficients and Binomial Expansions}{15}{subsection.2.1.1}
@@ -206,124 +207,128 @@
 \contentsline {subsection}{\numberline {3.13.4}$||\mathbf {A}||_{(1)}$ (1)-Norm}{46}{subsection.3.13.4}
 \contentsline {subsection}{\numberline {3.13.5}$||\mathbf {A}||_{(\infty )}$ ($\infty $)-Norm}{46}{subsection.3.13.5}
 \contentsline {subsection}{\numberline {3.13.6}$||\mathbf {A}||_{(2)}$ (2)-Norm}{46}{subsection.3.13.6}
+\contentsline {subsection}{\numberline {3.13.7}$||\mathbf {A}||_{*}$ Nuclear Norm}{47}{subsection.3.13.7}
 \contentsline {section}{\numberline {3.14}Vector and Matrix Derivatives}{47}{section.3.14}
 \contentsline {subsection}{\numberline {3.14.1}Jacobian}{47}{subsection.3.14.1}
 \contentsline {subsection}{\numberline {3.14.2}Inverse Function Theorem}{47}{subsection.3.14.2}
 \contentsline {subsection}{\numberline {3.14.3}Critical Points}{48}{subsection.3.14.3}
 \contentsline {subsection}{\numberline {3.14.4}Differential Volume Element, Change of Variables}{48}{subsection.3.14.4}
 \contentsline {subsection}{\numberline {3.14.5}Hessian}{48}{subsection.3.14.5}
-\contentsline {subsubsection}{\numberline {3.14.5.1}Testing Convexity}{48}{subsubsection.3.14.5.1}
-\contentsline {chapter}{\numberline {4}Probability}{49}{chapter.4}
-\contentsline {section}{\numberline {4.1}Interpretations and Definitions of Probability}{49}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Naive and Non-Naive Definitions of Probability}{49}{subsection.4.1.1}
-\contentsline {subsubsection}{\numberline {4.1.1.1}Naive Probability}{49}{subsubsection.4.1.1.1}
-\contentsline {subsubsection}{\numberline {4.1.1.2}Non-Naive Definition of Probability}{49}{subsubsection.4.1.1.2}
-\contentsline {subsection}{\numberline {4.1.2}Frequentist Probability}{50}{subsection.4.1.2}
-\contentsline {subsection}{\numberline {4.1.3}Bayesian Probability}{50}{subsection.4.1.3}
-\contentsline {subsection}{\numberline {4.1.4}Measure Theoretic Probability}{50}{subsection.4.1.4}
-\contentsline {section}{\numberline {4.2}Measure Theory}{50}{section.4.2}
-\contentsline {section}{\numberline {4.3}Functions of Random Variables, Derived Distributions}{50}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Example: Sum of Random Variables}{51}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Example: Lower Dimensional Random Variable}{52}{subsection.4.3.2}
-\contentsline {section}{\numberline {4.4}Indicator Variables}{52}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Example: The Party Problem}{53}{subsection.4.4.1}
-\contentsline {subsubsection}{\numberline {4.4.1.1}Lame Interview Question 1: Every one finds their coat}{53}{subsubsection.4.4.1.1}
-\contentsline {subsubsection}{\numberline {4.4.1.2}Lame Interview Question 2: At least r people find their coat}{53}{subsubsection.4.4.1.2}
-\contentsline {subsubsection}{\numberline {4.4.1.3}Not lame: Exactly r people find their coat}{53}{subsubsection.4.4.1.3}
-\contentsline {section}{\numberline {4.5}Copulas}{56}{section.4.5}
-\contentsline {section}{\numberline {4.6}Relationships Between Distributions}{56}{section.4.6}
-\contentsline {section}{\numberline {4.7}Large Deviation Theory}{56}{section.4.7}
-\contentsline {subsection}{\numberline {4.7.1}Gaertner-Ellis Theorem}{56}{subsection.4.7.1}
-\contentsline {subsection}{\numberline {4.7.2}Example: Sum of Uniform Random Variables}{56}{subsection.4.7.2}
-\contentsline {chapter}{\numberline {5}Information Theory}{57}{chapter.5}
-\contentsline {section}{\numberline {5.1}Entropy}{57}{section.5.1}
-\contentsline {section}{\numberline {5.2}Mutual Information}{57}{section.5.2}
-\contentsline {section}{\numberline {5.3}Kullback-Leibler Divergence}{57}{section.5.3}
-\contentsline {chapter}{\numberline {6}Stochastic Processes and Time Series Analysis}{59}{chapter.6}
-\contentsline {section}{\numberline {6.1}Branching Processes}{59}{section.6.1}
-\contentsline {section}{\numberline {6.2}Markov Chains}{59}{section.6.2}
-\contentsline {section}{\numberline {6.3}Martingales}{59}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Martingale Convergence Theorem}{59}{subsection.6.3.1}
-\contentsline {section}{\numberline {6.4}Hidden Markov Models}{59}{section.6.4}
-\contentsline {section}{\numberline {6.5}Ito Calculus}{59}{section.6.5}
-\contentsline {section}{\numberline {6.6}Chaos Analysis}{59}{section.6.6}
-\contentsline {section}{\numberline {6.7}Noise}{59}{section.6.7}
-\contentsline {subsection}{\numberline {6.7.1}White Noise}{59}{subsection.6.7.1}
-\contentsline {subsection}{\numberline {6.7.2}Gaussian Noise}{60}{subsection.6.7.2}
-\contentsline {subsection}{\numberline {6.7.3}Brownian Noise}{60}{subsection.6.7.3}
-\contentsline {chapter}{\numberline {7}Statistics}{61}{chapter.7}
-\contentsline {section}{\numberline {7.1}Directional Statistics}{61}{section.7.1}
-\contentsline {subsection}{\numberline {7.1.1}Mean Direction}{61}{subsection.7.1.1}
-\contentsline {subsection}{\numberline {7.1.2}Dispersion}{61}{subsection.7.1.2}
-\contentsline {section}{\numberline {7.2}Features}{62}{section.7.2}
-\contentsline {subsection}{\numberline {7.2.1}Dense Features, Sparse Features}{62}{subsection.7.2.1}
-\contentsline {section}{\numberline {7.3}Multicollinearity}{62}{section.7.3}
-\contentsline {subsubsection}{\numberline {7.3.0.1}Detection}{62}{subsubsection.7.3.0.1}
-\contentsline {subparagraph}{Scatter Plots}{62}{subparagraph*.56}
-\contentsline {subparagraph}{Variance Inflation Factors (VIF)}{62}{subparagraph*.57}
-\contentsline {subparagraph}{Eigenvalues of the Correlation Matrix}{62}{subparagraph*.58}
-\contentsline {subparagraph}{Regression Coefficients}{62}{subparagraph*.59}
-\contentsline {subsection}{\numberline {7.3.1}Sources}{62}{subsection.7.3.1}
-\contentsline {subparagraph}{Data Collection}{62}{subparagraph*.60}
-\contentsline {subparagraph}{Physical Constraints}{62}{subparagraph*.61}
-\contentsline {subparagraph}{Over-defined Model}{62}{subparagraph*.62}
-\contentsline {subparagraph}{Model Choice or Specification}{62}{subparagraph*.63}
-\contentsline {subparagraph}{Outliers}{63}{subparagraph*.64}
-\contentsline {subsubsection}{\numberline {7.3.1.1}Remedies}{63}{subsubsection.7.3.1.1}
-\contentsline {subparagraph}{Dimensionality Reduction}{63}{subparagraph*.65}
-\contentsline {subparagraph}{Regularization}{63}{subparagraph*.66}
-\contentsline {section}{\numberline {7.4}$R^2$ Value}{63}{section.7.4}
-\contentsline {section}{\numberline {7.5}Regression Diagnostics}{63}{section.7.5}
-\contentsline {section}{\numberline {7.6}t-Statistics}{63}{section.7.6}
-\contentsline {section}{\numberline {7.7}AIC and BIC}{63}{section.7.7}
-\contentsline {section}{\numberline {7.8}Factor Regression}{63}{section.7.8}
-\contentsline {section}{\numberline {7.9}Factor Models}{63}{section.7.9}
-\contentsline {chapter}{\numberline {8}Linear Regression}{65}{chapter.8}
-\contentsline {section}{\numberline {8.1}Least Squares Regression ($L^2$)}{65}{section.8.1}
-\contentsline {subsection}{\numberline {8.1.1}The Normal Equations, Analytical Least Squares Estimator}{65}{subsection.8.1.1}
-\contentsline {subsection}{\numberline {8.1.2}The Quick Way to $\mathbf {\mathaccentV {hat}05E{\beta }}$}{66}{subsection.8.1.2}
-\contentsline {subsection}{\numberline {8.1.3}The Long Way to $\mathbf {\mathaccentV {hat}05E{\beta }}$}{66}{subsection.8.1.3}
-\contentsline {subsection}{\numberline {8.1.4}Projection Matrix}{66}{subsection.8.1.4}
-\contentsline {subsection}{\numberline {8.1.5}Bayesian Perspective on Least Squares Regression}{67}{subsection.8.1.5}
-\contentsline {subsection}{\numberline {8.1.6}Q-plots}{67}{subsection.8.1.6}
-\contentsline {subsection}{\numberline {8.1.7}Variance Inflation Factor}{67}{subsection.8.1.7}
-\contentsline {section}{\numberline {8.2}Total Least Squares}{67}{section.8.2}
-\contentsline {section}{\numberline {8.3}Ridge Regression (Tikhonov Regularization, $\lambda ||\mathbf {\beta }||^2$)}{67}{section.8.3}
-\contentsline {subsection}{\numberline {8.3.1}Analytical Ridge Estimator}{67}{subsection.8.3.1}
-\contentsline {subsection}{\numberline {8.3.2}Bayesian Perspective on Ridge Regression}{67}{subsection.8.3.2}
-\contentsline {section}{\numberline {8.4}Least Absolute Shrinkage and Selection Operator Regression (LASSO)}{67}{section.8.4}
-\contentsline {section}{\numberline {8.5}Least Absolute Deviation Regression (LAD, $L^1$)}{67}{section.8.5}
-\contentsline {section}{\numberline {8.6}Generalized Linear Models}{67}{section.8.6}
-\contentsline {chapter}{\numberline {9}Bayesian Data Analysis}{69}{chapter.9}
-\contentsline {chapter}{\numberline {10}Unsupervised Learning}{71}{chapter.10}
-\contentsline {section}{\numberline {10.1}Blind Source Separation}{71}{section.10.1}
-\contentsline {section}{\numberline {10.2}Clustering}{71}{section.10.2}
-\contentsline {subsection}{\numberline {10.2.1}K-Means}{71}{subsection.10.2.1}
-\contentsline {subsection}{\numberline {10.2.2}Affinity Propagation}{71}{subsection.10.2.2}
-\contentsline {section}{\numberline {10.3}Independent Component Analysis (ICA)}{71}{section.10.3}
-\contentsline {section}{\numberline {10.4}$\mathbf {X} = \mathbf {U\Sigma V^T}$ Eigenanalysis, Singular Value Decomposition (SVD)}{71}{section.10.4}
-\contentsline {subsection}{\numberline {10.4.1}Example: Eigenfaces and Facial Recognition}{72}{subsection.10.4.1}
-\contentsline {subsection}{\numberline {10.4.2}Tracking an Eigensystem over Time}{72}{subsection.10.4.2}
-\contentsline {subsubsection}{\numberline {10.4.2.1}Heuristic Method}{74}{subsubsection.10.4.2.1}
-\contentsline {subsubsection}{\numberline {10.4.2.2}Consistent Method}{74}{subsubsection.10.4.2.2}
-\contentsline {subsubsection}{\numberline {10.4.2.3}Rank Order Changes}{74}{subsubsection.10.4.2.3}
-\contentsline {subsection}{\numberline {10.4.3}Bayesian SVD}{74}{subsection.10.4.3}
-\contentsline {subsection}{\numberline {10.4.4}Randomized SVD}{74}{subsection.10.4.4}
-\contentsline {subsubsection}{\numberline {10.4.4.1}Step 1: Sample Column Space of $\mathbf {X}$ with $\mathbf {P}$}{74}{subsubsection.10.4.4.1}
-\contentsline {subsubsection}{\numberline {10.4.4.2}Step 2: Compute SVD on Projected $\mathbf {Y = Q^T X}$}{76}{subsubsection.10.4.4.2}
-\contentsline {section}{\numberline {10.5}Principal Component Analysis (PCA)}{76}{section.10.5}
-\contentsline {subsection}{\numberline {10.5.1}Relationship between PCA and SVD}{77}{subsection.10.5.1}
-\contentsline {subsection}{\numberline {10.5.2}Tracking Principal Components over Time}{78}{subsection.10.5.2}
-\contentsline {subsection}{\numberline {10.5.3}$L^1$-Norm Principal Component Analysis ($L^1$ PCA)}{78}{subsection.10.5.3}
-\contentsline {subsubsection}{\numberline {10.5.3.1}Example: Netflix Prize, Matrix Completion}{79}{subsubsection.10.5.3.1}
-\contentsline {section}{\numberline {10.6}$\mathbf {X}=\mathbf {W}\mathbf {H}$ Non-Negative Matrix Factorization}{79}{section.10.6}
-\contentsline {section}{\numberline {10.7}Optimal Truncation}{79}{section.10.7}
-\contentsline {subsection}{\numberline {10.7.1}Scree Plots, Heuristic Methods}{79}{subsection.10.7.1}
-\contentsline {subsection}{\numberline {10.7.2}Gavish \& Donoho's Optimal Threshold for SVD}{80}{subsection.10.7.2}
-\contentsline {chapter}{\numberline {11}Dynamical Systems}{85}{chapter.11}
-\contentsline {section}{\numberline {11.1}Modal Decomposition}{85}{section.11.1}
-\contentsline {section}{\numberline {11.2}Koopman and Frobenius-Perron Operators}{86}{section.11.2}
-\contentsline {section}{\numberline {11.3}Proper Orthogonal Decomposition (POD)}{86}{section.11.3}
-\contentsline {section}{\numberline {11.4}Dynamic Mode Decomposition (DMD)}{87}{section.11.4}
-\contentsline {section}{\numberline {11.5}Extended Dynamical Mode Decomposition (EDMD}{87}{section.11.5}
+\contentsline {subsubsection}{\numberline {3.14.5.1}Testing Convexity}{49}{subsubsection.3.14.5.1}
+\contentsline {chapter}{\numberline {4}Probability}{51}{chapter.4}
+\contentsline {section}{\numberline {4.1}Interpretations and Definitions of Probability}{51}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Naive and Non-Naive Definitions of Probability}{51}{subsection.4.1.1}
+\contentsline {subsubsection}{\numberline {4.1.1.1}Naive Probability}{51}{subsubsection.4.1.1.1}
+\contentsline {subsubsection}{\numberline {4.1.1.2}Non-Naive Definition of Probability}{51}{subsubsection.4.1.1.2}
+\contentsline {subsection}{\numberline {4.1.2}Frequentist Probability}{52}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}Bayesian Probability}{52}{subsection.4.1.3}
+\contentsline {subsection}{\numberline {4.1.4}Measure Theoretic Probability}{52}{subsection.4.1.4}
+\contentsline {section}{\numberline {4.2}Measure Theory}{52}{section.4.2}
+\contentsline {section}{\numberline {4.3}Functions of Random Variables, Derived Distributions}{52}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Example: Sum of Random Variables}{53}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Example: Lower Dimensional Random Variable}{54}{subsection.4.3.2}
+\contentsline {section}{\numberline {4.4}Indicator Variables}{54}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Example: The Party Problem}{55}{subsection.4.4.1}
+\contentsline {subsubsection}{\numberline {4.4.1.1}Lame Interview Question 1: Every one finds their coat}{55}{subsubsection.4.4.1.1}
+\contentsline {subsubsection}{\numberline {4.4.1.2}Lame Interview Question 2: At least r people find their coat}{55}{subsubsection.4.4.1.2}
+\contentsline {subsubsection}{\numberline {4.4.1.3}Not lame: Exactly r people find their coat}{55}{subsubsection.4.4.1.3}
+\contentsline {section}{\numberline {4.5}Copulas}{58}{section.4.5}
+\contentsline {section}{\numberline {4.6}Relationships Between Distributions}{58}{section.4.6}
+\contentsline {section}{\numberline {4.7}Large Deviation Theory}{58}{section.4.7}
+\contentsline {subsection}{\numberline {4.7.1}Gaertner-Ellis Theorem}{58}{subsection.4.7.1}
+\contentsline {subsection}{\numberline {4.7.2}Example: Sum of Uniform Random Variables}{58}{subsection.4.7.2}
+\contentsline {chapter}{\numberline {5}Information Theory}{59}{chapter.5}
+\contentsline {section}{\numberline {5.1}Entropy}{59}{section.5.1}
+\contentsline {section}{\numberline {5.2}Mutual Information}{59}{section.5.2}
+\contentsline {section}{\numberline {5.3}Kullback-Leibler Divergence}{59}{section.5.3}
+\contentsline {chapter}{\numberline {6}Stochastic Processes and Time Series Analysis}{61}{chapter.6}
+\contentsline {section}{\numberline {6.1}Branching Processes}{61}{section.6.1}
+\contentsline {section}{\numberline {6.2}Markov Chains}{61}{section.6.2}
+\contentsline {section}{\numberline {6.3}Martingales}{61}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Martingale Convergence Theorem}{61}{subsection.6.3.1}
+\contentsline {section}{\numberline {6.4}Hidden Markov Models}{61}{section.6.4}
+\contentsline {section}{\numberline {6.5}Ito Calculus}{61}{section.6.5}
+\contentsline {section}{\numberline {6.6}Chaos Analysis}{61}{section.6.6}
+\contentsline {section}{\numberline {6.7}Noise}{61}{section.6.7}
+\contentsline {subsection}{\numberline {6.7.1}White Noise}{61}{subsection.6.7.1}
+\contentsline {subsection}{\numberline {6.7.2}Gaussian Noise}{62}{subsection.6.7.2}
+\contentsline {subsection}{\numberline {6.7.3}Brownian Noise}{62}{subsection.6.7.3}
+\contentsline {chapter}{\numberline {7}Statistics}{63}{chapter.7}
+\contentsline {section}{\numberline {7.1}Directional Statistics}{63}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}Mean Direction}{63}{subsection.7.1.1}
+\contentsline {subsection}{\numberline {7.1.2}Dispersion}{63}{subsection.7.1.2}
+\contentsline {section}{\numberline {7.2}Features}{64}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}Dense Features, Sparse Features}{64}{subsection.7.2.1}
+\contentsline {section}{\numberline {7.3}Multicollinearity}{64}{section.7.3}
+\contentsline {subsubsection}{\numberline {7.3.0.1}Detection}{64}{subsubsection.7.3.0.1}
+\contentsline {subparagraph}{Scatter Plots}{64}{subparagraph*.56}
+\contentsline {subparagraph}{Variance Inflation Factors (VIF)}{64}{subparagraph*.57}
+\contentsline {subparagraph}{Eigenvalues of the Correlation Matrix}{64}{subparagraph*.58}
+\contentsline {subparagraph}{Regression Coefficients}{64}{subparagraph*.59}
+\contentsline {subsection}{\numberline {7.3.1}Sources}{64}{subsection.7.3.1}
+\contentsline {subparagraph}{Data Collection}{64}{subparagraph*.60}
+\contentsline {subparagraph}{Physical Constraints}{64}{subparagraph*.61}
+\contentsline {subparagraph}{Over-defined Model}{64}{subparagraph*.62}
+\contentsline {subparagraph}{Model Choice or Specification}{64}{subparagraph*.63}
+\contentsline {subparagraph}{Outliers}{65}{subparagraph*.64}
+\contentsline {subsubsection}{\numberline {7.3.1.1}Remedies}{65}{subsubsection.7.3.1.1}
+\contentsline {subparagraph}{Dimensionality Reduction}{65}{subparagraph*.65}
+\contentsline {subparagraph}{Regularization}{65}{subparagraph*.66}
+\contentsline {section}{\numberline {7.4}$R^2$ Value}{65}{section.7.4}
+\contentsline {section}{\numberline {7.5}Regression Diagnostics}{65}{section.7.5}
+\contentsline {section}{\numberline {7.6}t-Statistics}{65}{section.7.6}
+\contentsline {section}{\numberline {7.7}AIC and BIC}{65}{section.7.7}
+\contentsline {section}{\numberline {7.8}Factor Regression}{65}{section.7.8}
+\contentsline {section}{\numberline {7.9}Factor Models}{65}{section.7.9}
+\contentsline {chapter}{\numberline {8}Linear Regression}{67}{chapter.8}
+\contentsline {section}{\numberline {8.1}Least Squares Regression ($L^2$)}{67}{section.8.1}
+\contentsline {subsection}{\numberline {8.1.1}The Normal Equations, Analytical Least Squares Estimator}{67}{subsection.8.1.1}
+\contentsline {subsection}{\numberline {8.1.2}The Quick Way to $\mathbf {\mathaccentV {hat}05E{\beta }}$}{68}{subsection.8.1.2}
+\contentsline {subsection}{\numberline {8.1.3}The Long Way to $\mathbf {\mathaccentV {hat}05E{\beta }}$}{68}{subsection.8.1.3}
+\contentsline {subsection}{\numberline {8.1.4}Projection Matrix}{68}{subsection.8.1.4}
+\contentsline {subsection}{\numberline {8.1.5}Bayesian Perspective on Least Squares Regression}{69}{subsection.8.1.5}
+\contentsline {subsection}{\numberline {8.1.6}Q-plots}{69}{subsection.8.1.6}
+\contentsline {subsection}{\numberline {8.1.7}Variance Inflation Factor}{69}{subsection.8.1.7}
+\contentsline {section}{\numberline {8.2}Total Least Squares}{69}{section.8.2}
+\contentsline {section}{\numberline {8.3}Ridge Regression (Tikhonov Regularization, $\lambda ||\mathbf {\beta }||^2$)}{69}{section.8.3}
+\contentsline {subsection}{\numberline {8.3.1}Analytical Ridge Estimator}{69}{subsection.8.3.1}
+\contentsline {subsection}{\numberline {8.3.2}Bayesian Perspective on Ridge Regression}{69}{subsection.8.3.2}
+\contentsline {section}{\numberline {8.4}Least Absolute Shrinkage and Selection Operator Regression (LASSO)}{69}{section.8.4}
+\contentsline {section}{\numberline {8.5}Least Absolute Deviation Regression (LAD, $L^1$)}{69}{section.8.5}
+\contentsline {section}{\numberline {8.6}Generalized Linear Models}{69}{section.8.6}
+\contentsline {chapter}{\numberline {9}Bayesian Data Analysis}{71}{chapter.9}
+\contentsline {section}{\numberline {9.1}Markov Chain Monte Carlo Methods}{71}{section.9.1}
+\contentsline {chapter}{\numberline {10}Unsupervised Learning}{73}{chapter.10}
+\contentsline {section}{\numberline {10.1}Blind Source Separation}{73}{section.10.1}
+\contentsline {section}{\numberline {10.2}Clustering}{73}{section.10.2}
+\contentsline {subsection}{\numberline {10.2.1}K-Means}{73}{subsection.10.2.1}
+\contentsline {subsection}{\numberline {10.2.2}Affinity Propagation}{73}{subsection.10.2.2}
+\contentsline {section}{\numberline {10.3}Independent Component Analysis (ICA)}{73}{section.10.3}
+\contentsline {section}{\numberline {10.4}Compressed Sensing}{73}{section.10.4}
+\contentsline {section}{\numberline {10.5}$\mathbf {X} = \mathbf {U\Sigma V^T}$ Eigenanalysis, Singular Value Decomposition (SVD)}{73}{section.10.5}
+\contentsline {subsection}{\numberline {10.5.1}Example: Eigenfaces and Facial Recognition}{74}{subsection.10.5.1}
+\contentsline {subsection}{\numberline {10.5.2}Tracking an Eigensystem over Time}{74}{subsection.10.5.2}
+\contentsline {subsubsection}{\numberline {10.5.2.1}Heuristic Method}{76}{subsubsection.10.5.2.1}
+\contentsline {subsubsection}{\numberline {10.5.2.2}Consistent Method}{76}{subsubsection.10.5.2.2}
+\contentsline {subsubsection}{\numberline {10.5.2.3}Rank Order Changes}{76}{subsubsection.10.5.2.3}
+\contentsline {subsection}{\numberline {10.5.3}Bayesian SVD}{76}{subsection.10.5.3}
+\contentsline {subsection}{\numberline {10.5.4}Randomized SVD}{76}{subsection.10.5.4}
+\contentsline {subsubsection}{\numberline {10.5.4.1}Step 1: Sample Column Space of $\mathbf {X}$ with $\mathbf {P}$}{76}{subsubsection.10.5.4.1}
+\contentsline {subsubsection}{\numberline {10.5.4.2}Step 2: Compute SVD on Projected $\mathbf {Y = Q^T X}$}{78}{subsubsection.10.5.4.2}
+\contentsline {section}{\numberline {10.6}Principal Component Analysis (PCA)}{78}{section.10.6}
+\contentsline {subsection}{\numberline {10.6.1}Relationship between PCA and SVD}{80}{subsection.10.6.1}
+\contentsline {subsection}{\numberline {10.6.2}Tracking Principal Components over Time}{80}{subsection.10.6.2}
+\contentsline {subsection}{\numberline {10.6.3}$L^1$-Norm Principal Component Analysis ($L^1$ PCA)}{80}{subsection.10.6.3}
+\contentsline {section}{\numberline {10.7}$\mathbf {X}=\mathbf {W}\mathbf {H}$ Non-Negative Matrix Factorization}{80}{section.10.7}
+\contentsline {section}{\numberline {10.8}Optimal Truncation}{82}{section.10.8}
+\contentsline {subsection}{\numberline {10.8.1}Scree Plots, Heuristic Methods}{82}{subsection.10.8.1}
+\contentsline {subsection}{\numberline {10.8.2}Gavish \& Donoho's Optimal Threshold for SVD}{84}{subsection.10.8.2}
+\contentsline {section}{\numberline {10.9}Matrix Completion, Imputation}{84}{section.10.9}
+\contentsline {subsection}{\numberline {10.9.1}Nuclear Norm Regularization}{84}{subsection.10.9.1}
+\contentsline {chapter}{\numberline {11}Dynamical Systems}{89}{chapter.11}
+\contentsline {section}{\numberline {11.1}Mode Decompositions}{89}{section.11.1}
+\contentsline {section}{\numberline {11.2}Koopman and Frobenius-Perron Operators}{90}{section.11.2}
+\contentsline {section}{\numberline {11.3}Proper Orthogonal Decomposition (POD)}{90}{section.11.3}
+\contentsline {section}{\numberline {11.4}Dynamic Mode Decomposition (DMD)}{91}{section.11.4}
+\contentsline {section}{\numberline {11.5}Extended Dynamical Mode Decomposition (EDMD)}{91}{section.11.5}
 \contentsfinish 

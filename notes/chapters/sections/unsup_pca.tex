@@ -27,6 +27,8 @@ Where $\left(\mathbf{X}-\left<\mathbf{X}\right>\right)^T$ is often referred to a
 \end{equation}
 
 Where the eigenvectors in $V$ are ordered so that the eigenvectors along the diagonal of $\mathbf{\Lambda}$ have decreasing magnitude. The eigenvectors are the principal axes or principal directions of the data.
+\\
+That PCA corresponds to the diagonalization of the covariance matrix implies a description of the underlying data in terms of a multivariate Gaussian distribution. In other words, it assumes normally distributed noise, and the components describe best-fit linear subspaces in the data under the $L^2$ norm. Whenever the Gaussian assumption is unjustified, it makes sense to look for best-fit linear subspaces under different norms. For example, $L^1$-PCA is more robust to outliers (cf. section \ref{sec:l1pca}). 
 
 
 % Relationship between PCA and SVD
@@ -62,7 +64,11 @@ Given the direct parallel between PCA and SVD, the identical issue with sign fli
 \subsection{$L^1$-Norm Principal Component Analysis ($L^1$ PCA)}
 \label{sec:l1pca}
 
-L1-Norm Principal Component Analysis is an alternative to conventional PCA that provides better robustness to outliers. Exact solutions exist in polynomial time, as well as more efficient approximate methods. \citeasnoun{brooks2014pure} establishes that the PCA under $L^1$ norm is found by successive fitting of hyperplanes under $L^1$ error in progressively smaller subspaces. Much like the $L^2$ distance of a point to a hyperplane is given by the radius of a circle around that point, the $L^1$ distance of a point to a hyperplane is given by its intersection of a rhombus. This has the (kind of quirky) consequence that the distance of all points to a hyperplane is always measured directly along one of the coordinate axes (and it is the same coordinate axes for each of the points). This, in turn, implies, that in some subspace $\mathbb{R}^m$, the $L^1$ best-fit hyperplane can be found by performing an $L^1$ regression with each of the $m$ dimensions serving as the explanatory variable, and then selecting the regression result that had the smallest residual.
+$L1$-Norm Principal Component Analysis is an alternative to conventional PCA that aims to provide better robustness to outliers. While L2-PCA is uniquely defined, a cursory search reveals a zoo of approaches to what $L^1$ PCA is supposed to be \cite{brooks2012pcal1}. $L^1$-PCA may also be a natural choice in situations in which the $L^1$ norm is the proper way of measuring distances in a space, for example in cellular automata models or perhaps even in case of categorical data. 
+
+\citeasnoun{brooks2014pure} establishes that the PCA under $L^1$ norm is found by successive fitting of hyperplanes under $L^1$ error in progressively smaller subspaces. Much like the $L^2$ distance of a point to a hyperplane is given by the radius of a circle around that point, the $L^1$ distance of a point to a hyperplane is given by its intersection of a rhombus. This has the (kind of quirky) consequence that the distance of all points to a hyperplane is always measured directly along one of the coordinate axes (and it is the same coordinate axes for each of the points). This, in turn, implies, that in some subspace $\mathbb{R}^m$, the $L^1$ best-fit hyperplane can be found by performing an $L^1$ regression with each of the $m$ dimensions serving as the explanatory variable, and then selecting the regression result that had the smallest residual. 
+
+It is worth noting that this approach is within the spirit of minimizing the taxicab-like distances of a point to some sub-space, which assigns great significance to the coordinate grid. This goes against the spirit of PCA, in that it typically aims to extract some kind of natural coordinate system from the data, irrespective of the coordinate system in which the raw data was expressed. \possessivecite{brooks2014pure} method is within keeping of the definition of the $L^1$ norm, but its different from simply avoiding assigning quadratic importance to far-away points to achieve greater robustness.
 
 \begin{figure}
 \centering
@@ -70,6 +76,3 @@ L1-Norm Principal Component Analysis is an alternative to conventional PCA that 
     \caption{Distance of a point to a hyperplane in $L^1$ and $L^2$. The $L^1$ distance in this case is just the distance along the $x$ axis. If the hyperplane was cutting a shallower angle, then the distance would be measured along the $y$ axis. The best fit hyperplane to many points in $\mathbb{R}^2$ would be found by regressing the data points once with $y = \beta x + \epsilon$ and once with $x = \beta y + \epsilon$ and selecting the result with the smaller $||\epsilon||_1$. (The figure is from J. P. Brooks (2014).}
     \label{fig:l1pca}
 \end{figure}
-
-
-\subsubsection{Example: Netflix Prize, Matrix Completion}

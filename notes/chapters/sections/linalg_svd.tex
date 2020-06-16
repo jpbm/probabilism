@@ -49,7 +49,7 @@ Where $\mathbf{u}_i$ is the $i$th left singular vector and $\mathbf{v}_i$ is the
 
 In the context of data analysis, the reduced rank representation of a data matrix $\mathbf{A}$ acts as a filter in which the components that explain less of the variance in the dataset are removed, with the hope being that these correspond to noise. The intuition is that noise probably originates from a random process, so that components that correspond to noise have weak correlation with the entries of the dataset and therefore small singular values. On the other hand, the signal probably systematic, so that the components that correspond to the signal have larger singular value. Since TSVD minimizes the average mean squares error (AMSE) amounts to the rank-$r$ maximum likelihood estimator of the signal under the assumption of normally distributed noise with mean zero. 
 
-By virtue of being expressible in terms of fewer base vectors, a lower rank approximation is also a very effective compression method. For a more elaborate discussion of SVD in data analysis, see section \ref{sec:datasvd}. In a practical context, the question of selecting the appropriate rank of the approximation emerges. Section \ref{sec:svd_truncation} covers a few approaches to this.
+By virtue of being expressible in terms of fewer base vectors, a lower rank approximation is also a very effective compression method. For a more elaborate discussion of SVD in data analysis, see section \ref{sec:datasvd}. In a practical context, the question of selecting the appropriate rank of the approximation emerges. Section \ref{sec:truncation} covers a few approaches to this.
 
 
 % Geometric interpretation

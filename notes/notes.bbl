@@ -69,6 +69,13 @@ Gillis, N.  \harvardyearleft 2014\harvardyearright , `The why and how of
   nonnegative matrix factorization'.
 \newline\harvardurl{\url{https://arxiv.org/abs/1401.5226}}
 
+\harvarditem[Hastie et~al.]{Hastie, Mazumder, Lee \harvardand\
+  Zadeh}{2015}{hastie2015matrix}
+Hastie, T., Mazumder, R., Lee, J.~D. \harvardand\ Zadeh, R.  \harvardyearleft
+  2015\harvardyearright , `Matrix completion and low-rank svd via fast
+  alternating least squares', {\em The Journal of Machine Learning Research}
+  {\bf 16}(1),~3367--3402.
+
 \harvarditem{Kronenburg}{2011}{kronenburg2011binomial}
 Kronenburg, M.  \harvardyearleft 2011\harvardyearright , `The binomial
   coefficient for negative arguments', {\em arXiv preprint arXiv:1105.3689} .

@@ -3,3 +3,21 @@
 \begin{multicols}{2}[\subsubsection*{Contents of this chapter}]
    \printcontents{}{1}{\setcounter{tocdepth}{2}}
 \end{multicols}
+
+
+\section{Markov Chain Monte Carlo Methods}
+Markov Chain Monte Carlo (MCMC) methods allow for the approximate solution of Bayesian inference problems by drawing samples from the posterior distribution.
+
+Plain vanilla MCMC works as follows:
+
+\begin{enumerate}
+\item Make an initial guess $\theta_0$ for the value of the latent variables. This is the starting point for the Markov Chain, which could be picked randomly or, for example, the maximum a posteriori estimate.
+\item Calculate the probability of observing the data based on these parameters ($p(\{\mathrm{data}\}|\theta_0)$).
+\item Suggest values $\theta$ where the Markov Chain might jump next. (The way guesses are generated is where optimized sampling might comes in.)
+\item Calculate $p(\{\mathrm{data}\}|\theta)$.
+\item Calculate a probability of jumping to the new values, $p_{\mathrm{jump}} = \min\left(\frac{p(\{\mathrm{data}\}|\theta)}{p(\{\mathrm{data}\}|\theta_0)}, 1\right)$.
+\item With probability $p_\mathrm{jump}$, let the Markov Chain jump $\theta_0 \rightarrow \theta$.
+\item Repeat steps 3-6
+\end{enumerate}
+
+It can be shown that upon convergence, the probability of the Markov Chain reaching particular values of the latent variables is given by the posterior distribution. In other words, MCMC is a trick to use likelihood (and priors) to sample the posterior distribution. Certain pathological posteriors can make it difficult or impossible for the Markov Chain to sample the full posterior, and there is also no completely certain way to say that convergence has been achieved. I personally sample using multiple independent chains, and assume convergence when the posteriors sampled by all chains looks identical. I also test how robust the results are to changes in the priors.
