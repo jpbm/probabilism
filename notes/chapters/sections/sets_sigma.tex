@@ -1,4 +1,4 @@
-\section{$\sigma$-Algebras}
+\section{$\sigma$-Algebras, $\sigma$-Fields}
 
 \subsection{Definition}
 Given a set $X$, a $\sigma$-Algebra $\mathscr{A}$ is a collection of subsets of a given set $X$, which has to satisfy the conditions:
@@ -7,10 +7,12 @@ Given a set $X$, a $\sigma$-Algebra $\mathscr{A}$ is a collection of subsets of 
 \begin{itemize}
 \item $\emptyset, X \in \mathscr{A}$
 \item If $A\in\mathscr{A}$, then $A^c := X\setminus A \in \mathscr{A}$
-\item $\mathscr{A}$ has (possibly infinitely many) countable subsets $A_i \in \mathscr{A},\ i \in \mathbb{N}$. Then $\bigcup_{i=1}^{\infty}A_i \in \mathscr{A}$. That is, the $\sigma$-algebra is closed under countable unions of its subsets. 
+\item $\mathscr{A}$ has (possibly infinitely many) countable subsets $A_i \in \mathscr{A},\ i \in \mathbb{N}$. Then $\bigcup_{i=1}^{\infty}A_i \in \mathscr{A}$. That is, the $\sigma$-algebra is closed under \textit{countable unions} of its subsets. 
 \end{itemize}
 
 An element of the $\sigma$-Algebra are $\mathscr{A}$-measurable sets, or measurable with respect to the $\sigma$-Algebra $\mathscr{A}$. A $\sigma$-algebra is a subset of the power set of $S$, i.e. $\mathscr{A} \subseteq P(X)$. 
+
+The difference to between an algebra and a $\sigma$-algebra is that an algebra is closed under \textit{finite} unions of subsets, i.e. $A,B\in \mathscr{A}$ then $A\cup B \in \mathscr{A}$, while a $\sigma$-algebra is closed under \textit{countable} unions, i.e. for $\{A_n: A_n \in \mathscr{A}, n\in \mathbb{N}\}$, $\bigcup_{n=1}^{\infty} A_n \in \mathscr{A}$. Sometimes the terms \textit{field} and \textit{$\sigma$-field} are used instead of \textit{algebra} or \textit{$\sigma$-algebra}. Sometimes measure and integration theory are developed from $\sigma$-rings instead o f $\sigma$-algebras, which are slightly different animals.
 
 \subsubsection{Example: The Smallest Possible $\sigma$-Algebra}
 
@@ -100,7 +102,7 @@ For $X=\mathbb{R}^n$, the conventional volume measure satisfies the properties o
 
 
 
-\section{Length Measure on the Real Line}
+\section{Measure Problem on $\mathbb{R}$}
 
 This is an important example of where it is not possible to define a measure on the whole powerset. This is why measure theory is founded on $\sigma$-algebras.\\
 
@@ -270,11 +272,14 @@ $f$ is called $\mu$-integrable if $\int_X f d\mu < \infty$.
 The only thing that was needed to define the integral was a measure space $(X,\mathscr{A},\mu)$
 
 
-\subsection{Monotone Convergence Theorem}
+
+\section{Monotone Convergence Theorem}
+
+A convergence theorem should show circumstances under which a limit can be pulled into the integral, and monotone implies that the theorem will deal with a monotonically changing series.
 
 \paragraph{Preliminaries}
 
-Take the measurable positive function $f: X\rightarrow [0,\infty)$ which has lebesgue integral $\int_X f d\mu \in [0,\infty]$. 
+Take the measurable positive function $f: X\rightarrow [0,\infty)$ which has Lebesgue integral $\int_X f d\mu \in [0,\infty]$. 
 
 
 \subparagraph{Equality}
@@ -332,14 +337,114 @@ $f=0$, $\mu$ almost everywhere, then $\int_X d\mu = 0$. (Note that only positive
 
 
 
-\paragraph{Monotone Convergence Theorem}
+\paragraph{Definition: Monotone Convergence Theorem}
 
-Take a measure space $(X,\mathscr{A},\mu)$ and non-negative measurable functions $f_n: X \rightarrow [0,\infty), f: X \rightarrow [0,\infty)$, with $f_1 \leq f_2 \leq f_3 \leq ... $ with $\mu-a.e.$ (almost everywhere) and $\lim_{n\rightarrow \infty} f_n(x) = f(x). \mu-a.e. (x\in X)$.
+Take a measure space $(X,\mathscr{A},\mu)$ and non-negative measurable functions $f_n: X \rightarrow [0,\infty), f: X \rightarrow [0,\infty)$, with $f_1 \leq f_2 \leq f_3 \leq ... $ with $\mu-a.e.$ (almost everywhere) and $\lim_{n\rightarrow \infty} f_n(x) = f(x). \mu-a.e. (x\in X)$, where the limit is taken in a point-wise sense. That is, it applies for a fixed point $x\in X$.
 
 The monotone convergence theorem states that, given a monotonic series of functions, the limit can be pulled into the integral:
 
 \begin{equation}
-\lim_{n\rightarrow \infty} \int_X f_n d\mu = \int_X f d\mu
+\lim_{n\rightarrow \infty} \int_X f_n d\mu = \int_X \lim_{n\rightarrow \infty} f_n d\mu = \int_X f d\mu
+\end{equation}
+
+ 
+\subsection{Application: Series}
+
+Take a series of measurable non-negative functions $(g_n)_{n\in \mathbb{N}}$, $g_n: X \rightarrow [0,\infty]$ measurable for all $n$, which does not necessarily have monotonic behavior. Then:
+
+\begin{equation}
+\sum_{n=1}^{\infty} g_n : X \rightarrow [0,\infty] \mathrm{\ is\ measurable}
+\end{equation}
+
+Now, while the series $(g_n)_{n\in \mathbb{N}}$ was not necessarily monotonically increasing, the sum is. therefore:
+
+\begin{equation}
+\int_X \sum_{n=1}^{\infty} g_n d\mu = \sum_{n=1}^{\infty} \int_X g_n d\mu
 \end{equation}
 
 
+\section{Fatou's Lemma}
+The starting point is, again, a measure space $(X,\mathscr{A},\mu)$ and a series of non-negative functions $f_n : X\rightarrow [0,\infty]$ that are measurable for all $n\in \mathbb{N}$. Then:
+
+\begin{equation}
+\int_X \liminf_{n\rightarrow \infty} f_n d \mu \leq \liminf_{n\rightarrow\infty}\int_X f_n d\mu
+\end{equation}
+
+Where the limit inferior $\liminf_{n\rightarrow \infty} f_n(x)$ of a sequence of numbers $f_n(x)$ is $\lim_{n\rightarrow\infty} (\inf_{k\geq n} f_k (x))$. That is, that is, $\liminf_{n\rightarrow \infty} f_n$ is actually a function $(\liminf_{n\rightarrow \infty} f_n)(x)$, that, for a series of functions $f_n$, picks out the lower limit of the series of functions evaluated at the point $x$ as $n\rightarrow \infty$. Fatou's Lemma shows that the integral over the infimum of a series of functions $f_n$ as $n\rightarrow \infty$ is smaller than the infimum of the series of integrals of those functions as $n\rightarrow \infty$. That seems intuitively correct -- the integral over the minimum value of a collection of positive functions should be smaller or equal than the minimum of the integrals.  Fatou's Lemma follows from the monotone convergence theorem by recognizing the infimum of a series of functions $\inf_{k\geq n}f_k$ as a function $g_n = (\inf_{k\geq n}f_k)(x)$ and recognizing that $g_n$ forms a monotonically increasing series $g_1 \leq g_2 \leq ...$, because as $n$ get's larger, the infimum $\inf_{k\geq n} f_k$ must get either larger or stay the same.
+
+
+\section{Lebesgue's Dominated Convergence Theorem}
+
+Take a measure space $(X,\mathscr{A},\mu)$, define a set of Lebesgue integrable functions $\mathscr{L}(X,\mathscr{A},\mu)$, which is simply written $\mathscr{L}(\mu)$ because the measurable space is assumed fixed from the context. The set is given by: $\mathscr{L}(\mu) := \{f: X\rightarrow \mathbb{R}, \mathrm{\ measurable}: \int_X |f| d\mu \}$, where the exponent matters. So, the set of "L1-integrable functions", $\mathscr{L}^1(\mu) := \{f: X\rightarrow \mathbb{R}, \mathrm{\ measurable}: \int_X |f|^1 d\mu \}$. Since the Lebesgue integral was so far defined only for positive functions $f$, for $f\in\mathscr{L^1}(\mu)$ we can write $f=f^+ - f^-$ where $f^+$ and $f^-$ are both positive. $f$ can then be integrated by subtracting the integrals of $f^+$ and $f^-$.
+
+\paragraph{Theorem} 
+Given a sequence of complex valued functions $f_n: X \rightarrow \mathbb{R}$ that are measurable for all $n\in\mathbb{N}$, which pointwise approaches the limit function $\lim_{n\rightarrow \infty} f_n(x) = f(x)$ for $x\in X$ almost everywhere with respect to $\mu$ (almost everywhere meaning that the limit expression holds for the $f_n$ evaluated at points $x$ everywhere except possibly some set of of points with measure zero). 
+
+If, pointwise, it is true $|f_n| \leq g$ with $g\in \mathscr{L}^{1}(\mu)$ for all $n\in \mathbb{N}$, then $g$ is an \textit{integrable majorant}. The implication is: $f_1, f_2, f_3, ... \in \mathscr{L}^{1}(\mu), f\in\mathscr{L}^1(\mu)$. 
+
+Further, convergence gives:
+\begin{equation}
+\lim_{n\rightarrow \infty}\int_X f_n d \mu = \int_X f d\mu
+\end{equation}   
+
+Which looks exactly like the monotone convergence theorem, except that the requirement on the sequence $f_n$ is only that there is an integrable majorant $g_n$ in $\mathscr{L}^1(\mu)$. The theorem gives a sufficient condition under which the almost everywhere convergence of a sequence of functions guarantees convergence in the $\mathscr{L}^1(\mu)$ norm. The theorem can be proved, in particular, via Fatou's Lemma, which guarantees an upper bound on the integral of the limit of the infimum of a sequence of positive functions. The integrable majorant $g\geq |f|$ allows for the construction of a series of non-negative functions $h_n := 2g - |f_n - f| \geq 0$, recognizing that $|f_n - f| \leq |f_n| + |f| \leq 2g$. 
+
+\subsection{Triangle Inequalities}
+\begin{equation}
+|f+g| \leq |f| + |g|
+\end{equation}
+
+\begin{equation}
+|\int_X f | \leq \int_X |f| 
+\end{equation}
+
+\section{Carath\'eodory's Extension Theorem}
+Carath\'eodory's extension theorem states that, given a set $X$, for a semiring of sets $\mathscr{A}\subseteq P(X)$, with a pre-measure $\mu: \mathscr{A} \rightarrow [0,\infty]$, there exists a unique extension to the semiring and the pre-measure that is the unique $\sigma$-algebra $\sigma(\mathscr{A})$ generated by the semiring and a measure $\tilde{\mu}: \sigma(\mathscr{A})\rightarrow [0,\infty]$. The theorem is of particular importance because it guarantees the existence and uniqueness of the Lebesgue measure.
+
+\subsection{Semirings of Sets}
+For a set $X$, semirings of sets are a collection of sets $\mathscr{A}\subseteq P(X)$ that weaker criteria than $\sigma$-algebras.
+
+The criteria are:
+
+\begin{itemize}
+\item $\empty \in \mathscr{A}$
+\item For $A,B \in \mathscr{A}$, $A\cap B \in \mathscr{A}$
+\item For $A,B \in \mathscr{A}$, there is a difference operation $A\setminus B$. It is not required that $A\setminus B$ is an element of $\mathscr{A}$, but it is required that there is a union of sets $\bigcup_i A_i = A\setminus B$ with $A_i \in \mathscr{A}$.
+\end{itemize} 
+
+\subsubsection{Example: Intervals on $\mathbb{R}$}
+$\mathscr{A} := \{ [a,b) : a,b \in \mathbb{R}, a\leq b \}$ is not a $\sigma$-algebra because $\mathbb{R} \notin \mathscr{A}$. However, the generated $\sigma$-algebra $\sigma(\mathbb{\mathscr{A}}) = \mathscr{B}(\mathbb{R})$ is unique and is the Borel $\sigma$-algebra. $\mathscr{A}$ fulfills the criteria of a semiring. 
+
+
+\subsection{Pre-measure}
+A pre-measure $\mu : \mathscr{A} \rightarrow [0,\infty]$ in a semiring of sets $\mathscr{A}$ fulfills:
+
+\begin{enumerate}
+\item $\mu(\empty) = 0$
+\item $\mu(\bigcup_{j=1}^{\infty} = \sum_{j=1}^{\infty} \mu(A_j)$ for $A_j \in \mathscr{A}$ if $A_i \cap A_j = \empty$ if $i\neq j$ and also $\bigcup_{j=1}^{\infty} A_j \in \mathscr{A}$, where this condition is not necessarily satisfied for semirings, because, in contrast to $\sigma$-algebras, the union of elements of semirings is not necessarily also in the semiring.
+\end{enumerate} 
+
+\subsection{Lebesgue Measure}
+Take the semiring $\mathscr{A} := \{ [a,b) : a,b \in \mathbb{R}, a\leq b \}$ and the premeasure $\mu : \mathscr{A} \rightarrow [0,\infty]$, $\mu([a,b)) = b-a$, then Carath\'eodory's theorem guarantees that there is a unique extension, which is $\mathscr{B}(\mathbb{R})$ and the Lebesgue measure. 
+
+
+\section{Lebesgue-Stieltjes Measures}
+Lebesgue-Stieltjes measures are measures that are constructed for monotonically increasing (non-decreasing) functions $F$. Take non-decreasing functions $F:\mathbb{R} \rightarrow \mathbb{R}$. Such functions could be discontinuous or constant, as long as they do not decrease. Then, on the semiring $\mathscr{A} := \{ [a,b) : a,b \in \mathbb{R}, a\leq b \}$, a pre-measure $\mu_F : \mathscr{A} \rightarrow [0,\infty]$ so that $\mu_F([a,b)) = F(b^-) - F(a^-)$ where the superscript $(-)$ clarifies which side of a discontinuity has to be included, should $F$ be discontinuous at $a$ or $b$. This is consistent with the boundaries of the interval $[a,b)$. (It is equally well possible to approach this using intervals $(a,b]$.)
+
+Now, Carath\'eodory's Theorem ensures that this can be extended to one unique measure and $\sigma$-algebra, $\mu_F : \mathscr{B}(\mathbb{R}) \rightarrow [0,\infty]$, which is called the Lebesgue-Stieltjes measure for the function $F$. 
+
+\subsection{Example: Lebesgue Measure}
+An easy example is $F(x) = x$. Then $\mu_F([a,b)) = b-a$ which is the Lebesgue measure.
+
+\subsection{Example: Zero Measure}
+Take $F(x) = 1$, then $\mu_F([a,b)) = 0$, which is the zero measure.
+
+\subsection{Example: Dirac Measure}
+Take the discontinuous step function $F(x) = \left\{\begin{array}{l} 0, x < 0\\ 1 x\geq 0 \end{array}\right.$. Then $\mu_F([-\epsilon,\epsilon)) = 1$ for arbitrarily small $\epsilon$. That is, the Dirac Measure $\delta_0$ is the Lebesgue-Stieltjes Measure with respect to a step function on $\mathscr{\mathbb{R}}$.
+
+\subsection{Example: Density Functions}
+Take a function $F:\mathbb{R} \rightarrow \mathbb{R}$ that is monotonically increasing and continuously differentiable, i.e. $F':\mathbb{R} \rightarrow [0,\infty)$. Then the measure is simply the interval $\mu_I([a,b)) = F(b) - F(a) = \int_a^b F'(x) dx$. That means that the Lebesgue-Stieltjes measure $\mu_F: \mathscr{A} \rightarrow \int_{\mathscr{A}}F'(x) dx$ with respect to the monotonically increasing function $F$ is a measure from a Borel set to an integral of the derivative of $F'(x)$. In this context, $F'(x)$ is a \textit{density function}.
+
+
+
+ 
