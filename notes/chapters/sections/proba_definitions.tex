@@ -43,6 +43,10 @@ In practice, it seems that frequentist approaches tend to be structured around p
 
 I suspect that an additional source of bias is that frequentist methods tend to be computationally lighter and that many standard accepted recipes exist for common problems like hypothesis testing. In contrast, Bayesian approaches are usually derived ad-hoc in the context of a particular problem. They tend to involve more explicit assumptions about the data generating process.
 
+\subsection{Kolmogorov's Axioms}
+\subsection{Cox' Theorems}
+
+% Measure theoretic probability
 \section{Measure Theoretic Probability}
 The modern approach to probability is rooted in measure theory, and use the following notation and definitions. Kolmogorov's three probability axioms overlap with them. Cox' theorems, an alternative approach to formalizing probability that is rooted in propositional logic, imply them. Conveniently, the other famous child of measure theory happens to be Lebesgue Integration, which allows for rigorous treatment of infinite sample spaces, distribution functions, and so on, all based within the same framework. 
 
@@ -83,6 +87,46 @@ Random variables are \textit{measurable functions} defined on a probability spac
 \begin{equation}
 \mathbb{P}(0\leq X \leq a) = \mathbb{P}(A_{0\leq X\leq a}) = \mathbb{P}(\{\omega : 0\leq X(\omega) \leq a\})
 \end{equation} 
+
+
+\subsection{Cumulative Distribution Function (CDF)}
+The cumulative distribution function (CDF) of a random variable $X(\omega), \omega \in \Omega$ is given by $F_X(x) = \mathbb{P}(X\leq x)$. It measures the subset $\{\omega : \omega\in\Omega, X(\omega)\leq x \}$. A CDF uniquely determines its underlying random variable. It satisfies the condition:
+
+\begin{itemize}
+\item $F_X$ is normalized: $0\leq F_X(x) \leq 1$, $\lim_{x\rightarrow -\infty} F_X(x) = 0$,  $\lim_{x\rightarrow \infty} F_X(x) = 1$
+\item $F_X$ is non-decreasing. That is, $F(x_1) \leq F(x_2)$ if $x_1 \leq x_2$. 
+\item Right-continuous: $F(x) = F(x^+)$
+\end{itemize}
+
+With respect to the probability of $X(\omega)$ assuming particular values, it follows:
+
+\begin{itemize}
+\item $\mathbb{P}(X = x) = F_X(x) - F_X(x^-)$ where $F_X(x^{-}) = \lim_{y\uparrow x}F_X(y)$
+\item $F_X(b) - F_X(a) = \mathbb{P}(a < x \leq b)$
+\item $\mathbb{P}(X > x) = 1-F_X(x)$ 
+\end{itemize}
+
+If $X$ is continuous, then: 
+
+\begin{itemize}
+\item $F_X(b) - F_X(a) = \mathbb{P}(a<X<b) = \mathbb{P}(a\leq X\leq b) = \mathbb{P}(a\leq X<b) = \mathbb{P}(a<X \leq b)$
+\end{itemize}
+
+\subsection{Probability Mass Function (PMF)}
+If a random variable $X$ takes on discrete values, then it has a probability mass function (PMF) $f_X(x) = \mathbb{P}(X = x)$. The probability mass function measures the preimage of $x$, which is the subset $\{\omega: \omega \in \Omega, \omega=X^{-1}(x) \}$. The relationship to the CDF is $F_X(x) = \sum_{x_i \leq x} f_X(x_i)$.
+
+\subsection{Probability Density Function (PDF)}
+If a random variable $X$ takes on continuous values, then it has a probability density function (PDF) $\mathbb{P}(a\leq X \leq b) = \int_a^b f_X(x) \mathrm{d}x$. It measures the size of the subset $\{\omega: \omega\in\Omega, a\leq X(\omega) \leq b\}$. The relationship to the CDF is $F_X(x) = \int_{-\infty^x f_X(x) \mathrm{d}x}$, or $\frac{\mathrm{d}}{\mathrm{d}x}F(x) = f_X(x)$. 
+
+
+\subsection{Quantile Function (Inverse CDF)}
+The quantile function, or inverse CDF, is given by $F_X^{-1}(q) = \inf \{ x: F_X(x) > q \}$. It gives the value of $X(\omega)$ at which the CDF assumes the value $q$.
+
+\begin{itemize}
+\item First quartile: $q=1/4$
+\item Second quartile / Median: $q =1/2$
+\item Third quartile: $q=3/4$
+\end{itemize}
 
 
 
