@@ -28,6 +28,11 @@ Bradley, A.~R.  \harvardyearleft n/a\harvardyearright , `Notes on sets and
   multisets'.
 \newline\harvardurl{\url{http://theory.stanford.edu/~arbrad/pivc/sets.pdf}}
 
+\harvarditem{Brooks \harvardand\ Jot}{n.d.}{brooks2012pcal1}
+Brooks, J. \harvardand\ Jot, S.  \harvardyearleft n.d.\harvardyearright ,
+  `pcal1: An implementation in r of three methods for l1-norm principal
+  component analysis'.
+
 \harvarditem{Brunton}{n/a}{stevebrunton}
 Brunton, S.  \harvardyearleft n/a\harvardyearright , `Steve brunton's youtube
   channel'.
@@ -81,10 +86,21 @@ Kronenburg, M.  \harvardyearleft 2011\harvardyearright , `The binomial
   coefficient for negative arguments', {\em arXiv preprint arXiv:1105.3689} .
 \newline\harvardurl{\url{https://arxiv.org/pdf/1105.3689.pdf}}
 
+\harvarditem{Lindgren}{2006}{lindgren2006lectures}
+Lindgren, G.  \harvardyearleft 2006\harvardyearright , `Lectures on stationary
+  stochastic processes', {\em PhD course of Lund’s University} .
+
 \harvarditem{Mathworks}{n/a}{mathworkseig}
 Mathworks  \harvardyearleft n/a\harvardyearright , `Eigenvalue and singular
   value decompositions'.
 \newline\harvardurl{\url{https://www.mathworks.com/content/dam/mathworks/mathworks-dot-com/moler/eigs.pdf}}
+
+\harvarditem[Mazumder et~al.]{Mazumder, Hastie \harvardand\
+  Tibshirani}{2010}{mazumder2010spectral}
+Mazumder, R., Hastie, T. \harvardand\ Tibshirani, R.  \harvardyearleft
+  2010\harvardyearright , `Spectral regularization algorithms for learning
+  large incomplete matrices', {\em Journal of machine learning research} {\bf
+  11}(Aug),~2287--2322.
 
 \harvarditem{Megretski}{2004}{megretski2004pod}
 Megretski, A.  \harvardyearleft 2004\harvardyearright , `Proper orthogonal
@@ -101,6 +117,16 @@ Salova, A., Emenheiser, J., Rupe, A., Crutchfield, J.~P. \harvardand\
 \harvarditem{Software}{n/a}{ncssridgeregression}
 Software, N.~S.  \harvardyearleft n/a\harvardyearright , `Ridge regression'.
 \newline\harvardurl{\url{https://ncss-wpengine.netdna-ssl.com/wp-content/themes/ncss/pdf/Procedures/NCSS/Ridge_Regression.pdf}}
+
+\harvarditem{The Bright Side~of Mathematics}{2019}{brightsideofmathematics}
+The Bright Side~of Mathematics, n.  \harvardyearleft 2019\harvardyearright ,
+  `Lecture series on measure theory'.
+\newline\harvardurl{\url{https://www.youtube.com/watch?v=12kFDeN6xuI&list=PLBh2i93oe2qvMVqAzsX1Kuv6-4fjazZ8j&index=14}}
+
+\harvarditem{Wasserman}{2013}{wasserman2013all}
+Wasserman, L.  \harvardyearleft 2013\harvardyearright , {\em All of statistics:
+  a concise course in statistical inference}, Springer Science \& Business
+  Media.
 
 \harvarditem{Wilf}{2013}{wilf2013generating}
 Wilf, H.~S.  \harvardyearleft 2013\harvardyearright , {\em Generating

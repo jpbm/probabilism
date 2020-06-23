@@ -1,56 +1,93 @@
 \section{Interpretations and Definitions of Probability}
 
-\subsection{Naive and Non-Naive Definitions of Probability}
-Probability courses typically start with what \citeasnoun{blitzstein2019introduction} calls the \textit{naive} definition of probability, which is to look at the fraction of the event space that corresponds to a particular event. This works well for combinatorial type of probability problems, such as the likely outcome of dice throws. The dichotomy below is from \citeasnoun{blitzstein2019introduction}.
+Weirdly enough, every book I open has a different approach to introducing probability. I found \citeasnoun{wasserman2013all} the best resource so far in terms of being clear and applied at the same time. Wasserman's language and notation is congruent with probability theory founded in measure theory. \citeasnoun{lindgren2006lectures} is the best resource so far in introducing mathematical probability in the context of stochastic processes. \citeasnoun{brightsideofmathematics} has an accessible lecture series on measure theory and a very calming German accent.
 
-\subsubsection{Naive Probability}
+
+\subsection{Blitzstein's Naive and Non-Naive Definitions of Probability}
+Like most probability texts, \citeasnoun{blitzstein2019introduction} starts with what he calls the \textit{naive} definition of probability, which is to look at the fraction of the event space that corresponds to a particular event. He then introduces a \textit{non-naive} definition of probability, which is congruent with measure theoretic probability.
+
+\subsubsection{Naive Probability, Uniform Probability}
 The event space $S$ consists of a collection of equally likely outcomes. The actual outcome $s_{actual} \in S$. The probability of an outcome in a subset $A\subseteq S$, $P(s_{actual}\in A)$ corresponds to the fraction of events in $A$ out of $S$.
 
 \begin{equation}
 P_{naive}(A) = \frac{|A|}{|S|} = \frac{\mathrm{number\ of\ outcomes\ favorable\ to\ A}}{\mathrm{total\ number\ of\ outcomes\ in\ S}}
 \end{equation}
 
-This approach runs into trouble when the outcomes in $|A|$ are not equally likely, or if the sample space is infinite, i.e. $|S|=\infty$. I would call this "combinatorial probability".
+I've seen this called combinatorial probability or counting probability, presumably because this is how you calculate the probability in situations where events correspond to a finite number of equally likely combinations. I call it \textit{job interview probability}. More helpfully, \citeasnoun{wasserman2013all} calls it the \textit{uniform probability distribution}.
 
+The method of counting the possible outcomes $s_{actual}$ within $S$ and $A$ is not appropriate when the outcomes are not equally likely (because counting them weighs them all equally). Also, the definition is, by itself, unclear on how to deal with infinite probability spaces (for example: $s_outcome \in \mathbb{R}$).
 
-\subsubsection{Non-Naive Definition of Probability}
+\subsubsection{Blitzstein's Non-Naive Definition of Probability}
 This definition is from \cite{blitzstein2019introduction} and is congruent with measure theoretic probability. A probability space consists of a sample space $S$ in addition to a \textit{probability function}. The job of the probability function is to take an event $A\subseteq S$ and map it to a number between $0$ and $1$. I.e.  $P: S \rightarrow [0,1]$.
 
 The function $P$ must satisfy:
 
 \begin{itemize}
-\item P(\empty) = 0, P(S) = 1
+\item $P(\emptyset) = 0, P(S) = 1$
 \item If $A_1, A_2,...$ are \textit{disjoint} events, then: \begin{equation}P\left(\bigcup^{\infty}_{j=1}A_j \right) = \sum_{j=1}^{\infty}P(A_j)\end{equation}
 \end{itemize}
 
-In other words, all you need to work with probability is a set of possible outcomes $S$ and some function to apply to parts of that set.
+In other words, all you need to work with probability is a set of possible outcomes $S$ and some function to apply to parts of that set. 
+
 
 \subsection{Frequentist Probability}
-The \textit{frequentist} interpretation of probability is that it represents the frequency of an outcome of a particular experiment upon running the experiment many times. On one hand, this view on probability is arguably empirically grounded. On the other hand it relies on the impractical notion of identically repeating something a large number of times. 
+The \textit{frequentist} interpretation of probability is that it represents the frequency of an outcome of a particular experiment upon running the experiment many times. On one hand, this view on probability is arguably empirically grounded. On the other hand it relies on the impractical notion of identically repeating something a large number of times. \citeasnoun{wasserman2013all} describes \textit{frequentist inference} as inference with guaranteed frequency behavior. 
 
 \subsection{Bayesian Probability}
-The \textit{Bayesian} view on probability is that it represents a degree of belief in a particular outcome. On one hand, this implies a degree of subjectivity. On the other hand, this notion of probability is much more broadly applicable, because it does not require repeatable experiments. It also permits the introduction of subjective biases through priors.
+The \textit{Bayesian} view on probability is that it represents a degree of belief in a particular outcome. On one hand, this implies a degree of subjectivity. On the other hand, this notion of probability is much more broadly applicable, because it does not require repeatable experiments. It also permits the introduction of subjective biases through priors. \citeasnoun{wasserman2013all} describes \textit{Bayesian inference} as statistical methods that use data to update belief. 
 
-I'm not sure whether the supposed "battle" between frequentists and Bayesians has ever been of any consequence for me. Also, the frequentist perspective strikes me as inherently contradictory, because supposed empirical proof can strictly speaking never be practically delivered.
+
+\paragraph{} I'm not sure whether the supposed "battle" between frequentists and Bayesians has ever been of any consequence for me. Also, the frequentist perspective strikes me as inherently contradictory, because supposed empirical proof can strictly speaking never be practically delivered.
 
 In practice, it seems that frequentist approaches tend to be structured around parametrization of solutions in terms of summary statistics, while Bayesians have a tendency to approach problems in terms of full probability distributions. Social scientists seem to be leaning towards frequentist methods, while physicists and engineers seem to be more interested in Bayesian data analysis. 
 
-I suspect that an additional source of bias is that frequentist methods tend to be computationally lighter and that many standard accepted recipes exist for common problems. In contrast, Bayesian approaches are usually derived ad-hoc in the context of a particular problem.
+I suspect that an additional source of bias is that frequentist methods tend to be computationally lighter and that many standard accepted recipes exist for common problems like hypothesis testing. In contrast, Bayesian approaches are usually derived ad-hoc in the context of a particular problem. They tend to involve more explicit assumptions about the data generating process.
 
-\subsection{Measure Theoretic Probability}
-The modern approach to probability is rooted in measure theory. 
+\section{Measure Theoretic Probability}
+The modern approach to probability is rooted in measure theory, and use the following notation and definitions. Kolmogorov's three probability axioms overlap with them. Cox' theorems, an alternative approach to formalizing probability that is rooted in propositional logic, imply them. Conveniently, the other famous child of measure theory happens to be Lebesgue Integration, which allows for rigorous treatment of infinite sample spaces, distribution functions, and so on, all based within the same framework. 
 
-Define: 
+\subsection{Sample Space, Outcomes, Events}
 
 \begin{itemize}
-\item $\Omega$ is the \textit{state space}, the set of all possible outcomes. 
-\item $\omega \in \Omega$ an element $\omega$ of $\Omega$ is an outcome.
-\item $A \subseteq \Omega$, a subset $A$ of $\Omega$ is an event.
+\item $\Omega$ is the \textit{state space}, the set of all possible outcomes, and maybe some impossible ones too. It doesn't matter, as long as all the possible outcomes are included. Sometimes also called \textit{event space} or \textit{sample space}. 
+\item A point or element $\omega \in \Omega$ is an \textit{outcome}. Sometimes also called \textit{element}, \textit{sample outcome} or \textit{realization}. 
+\item A subset $A \subseteq \Omega$ is an \textit{event}. 
 \end{itemize}
 
-Further, define a function $P$ that assigns subsets of the state space $\Omega$ to a number on the interval $[0,1]$. 
+$\Omega$, $A$ and $\omega$ are sets and elements of sets, and the correct operations on them are set operations like forming unions and intersections. This is different from random variables, which might be numbers that can be added, subtracted, multiplied etc.
+
+\subsection{Probability Distributions}
+Probability is a \textit{measure} that assigns a real number between $0$ and $1$ to events within the state space. It turns out that it is not always possible to define a meaningful measure to arbitrary collections subsets of the state space $\Omega$, so that the probability measure is instead assigned to a $\sigma$-algebra $\mathscr{A}$, which is a collection of subsets of $\Omega$ that fulfills criteria that guarantee the existence of a measure. $\sigma$-algebras are also called $\sigma$-fields. The combination $(\Omega, \mathscr{A})$ is called a measurable space. 
+
+Given a measurable space $(\Omega, \mathscr{A})$, a \textit{probability distribution} or \textit{probability measure} $\mathbb{P}$ is a measure $\mathbb{P}:\mathscr{A} \rightarrow \mathbb{R}$. The following criteria follow from the definition of a measure: 
+
+\begin{itemize}
+\item Null-Event: $\mathbb{P}(\emptyset) = 0$. The empty subset $\emptyset \in \mathscr{A}$ is also called the \textit{null event}.
+\item Additivity: $\mathbb{P}(\bigcup_i A_i) = \sum_i \mathbb{P}(A_i)$ if $A_i \cap A_j = \emptyset$  when $i \neq j$. The probability of the union of a finite collection of disjoint subsets $A_i \in \mathscr{A}$ is additive. 
+\item $\sigma$-additivity: $\mathbb{P}(\bigcup^{\infty}_i A_i) = \sum^{\infty}_i \mathbb{P}(A_i)$ if $A_i \cap A_j = \emptyset$  when $i \neq j$. The probability of the union of a countable, possibly infinite collection of disjoint subsets $A_i \in \mathscr{A}$ is also additive. (This derives from a feature of $\sigma$-algebras, which have to be closed under taking the countable union of subsets.) This is Kolmogorov's third axiom.
+\end{itemize} 
+
+In addition, a probability measure satisfies:
+
+\begin{itemize}
+\item Positivity: $\mathbb{P}(A) \geq 0$ for all subsets $A\in\mathscr{A}$. Though positivity is also sometimes included in the definition of a measure in general. Positivity is part of Kolmogorov's first probability axiom, which requires probability to be a positive, real number.
+\item Unitarity, Unit Measure: $\mathbb{P}(\Omega) = 1$. This represents certainty that something within the sample space must happen. Additivity ensures that probability is never greater than $1$. This is Kolmogorov's second axiom. 
+\end{itemize}
+
+The combination of a sample space, a $\sigma$-algebra and a probability measure $(\Omega,\mathscr{A},\mathbb{P})$ is a \textit{probability space}. The important case of the $\sigma$-algebra generated by the real numbers $\sigma(\mathbb{R})$ is called the Borel $\sigma$-algebra, $\mathscr{B}(\mathbb{R})$. 
+
+
+\subsection{Random Variables}
+Random variables are \textit{measurable functions} defined on a probability space that assigns a real number to each outcome. That is, given $(\Omega,\mathscr{A},\mathbb{P})$, a random variable is some function $x(\omega), \omega \in \Omega$, $X:\Omega \rightarrow \mathbb{R}$. The fact that $X(\omega)$ is a \textit{measurable function} (also called \textit{measurable map}) is that both the domain and the range are measurable spaces, and that for each element of the range, the preimage is contained contained within a $\sigma$-algebra, and hence measurable. This allows one to talk about the \textit{distribution} of a random variable by applying the probability measure to subsets of its preimage. For example, one was interested in the probability that $X(\omega)$ will fall on the interval $[0,a]$ for some $a\in \mathbb{R}$, one feeds the subset of outcomes $A_{0\leq X\leq a} = \{\omega : \omega=X^{-1}(x), x \in [0,a]\}$ to the probability measure:
 
 \begin{equation}
-P: 2^{\Omega} \rightarrow [0,1]
-\end{equation}
+\mathbb{P}(0\leq X \leq a) = \mathbb{P}(A_{0\leq X\leq a}) = \mathbb{P}(\{\omega : 0\leq X(\omega) \leq a\})
+\end{equation} 
+
+
+
+
+
+
+
 

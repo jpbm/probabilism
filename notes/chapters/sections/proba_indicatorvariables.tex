@@ -74,12 +74,12 @@ The first two versions here are what I've come across in interview prep-type mat
 
 / rant
 
-My approach here follows the extraordinary lecture notes https://mast.queensu.ca/~stat455/ by Glen Takahara at the University of Queensland.
+My approach here follows the extraordinary lecture notes https://mast.queensu.ca/~stat455/ by Glen Takahara at the University of Queensland. The difficulty of the problem is that events of a coat being picked up are interrelated: whether one person picks up their correct coat alters the probability of another person also picking up their correct coat. The beauty of this solution is that, rather than messing about with conditional probabilities, it looks at subsets of the event space, and then uses indicator variables to translate set expressions into algebraic expressions.
 
-As so often, indicator variables help:
+It uses the properties:
 
 \begin{equation}
-I_A = \begin{array}{l} 1 \mathrm{\ if\ outcome\ in\ A}\\0 \mathrm{\ if\ outcome\ in\ A^c} \end{array}
+I_A = \left\{\begin{array}{l} 1 \mathrm{\ if\ outcome\ in\ A}\\0 \mathrm{\ if\ outcome\ in\ A^c} \end{array}\right.
 \end{equation}
 
 Which means that:
