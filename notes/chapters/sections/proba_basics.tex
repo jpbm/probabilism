@@ -1,0 +1,57 @@
+
+
+
+% mutually exclusive
+\section{Mutually Exclusive Events, Disjoint Sets}
+Two events $A$ and $B$ are mutually exclusive if $A\cap B= \emptyset$. That is, $A$ and $B$ are disjoint sets.
+
+% independent 
+\section{Independent Events}
+Interestingly, independence can, with the exception of specific symmetric cases, generally not be read off from a Venn diagram \cite{wasserman2013all}. A set of events $A_i$ is \textit{independent} if:
+
+\begin{equation}
+\mathbb{P}\left(\bigcap_i A_i \right) = \prod_i \mathbb{P}(A_i)
+\end{equation}
+
+\citeasnoun{wasserman2013all} writes independence using the coproduct symbol $A\coprod B$. Independence can be either assumed or it can be proven by verifying $\mathbb{P}(A\cap B) = \mathbb{P}(A)\mathbb{P}(B)$.
+
+
+% conditional probability
+\section{Conditional Probability}
+Conditional probability $\mathbb{P}(A|B)$ "probability of $A$ given $B$" is the ratio of the probability measure applied to the subsets $A\cap B$ and $B$:
+
+For $\mathbb{P}(B) > 0$:
+\begin{equation}
+\mathbb{P}(A|B) = \frac{\mathbb{P}(A\cap B)}{\mathbb{P}(B)}
+\end{equation}
+
+For dependent events, this can be interpreted as the fraction of $B$ that overlaps with $A$. For independent events, $\mathbb{P}(A|B) = \mathbb{P}(A)$. 
+
+
+
+% law of total expectation / tower rule
+\section{Law of Total Probability}
+
+Let $A_1,...,A_n$ be a partition of $\Sigma$ so that $\mathbb{P}(\bigcup_i A_i) = \mathbb{P}(\Omega) = 1$. Then:
+
+\begin{equation}
+\mathbb{P}(B) = \sum_i \mathbb{P}(B|A_i)\mathbb{P}(A_i) 
+\end{equation} 
+
+% Bayes Theorem
+\section{Bayes' Theorem}
+Let $A_1,...,A_n$ be a partition of $\Sigma$ so that $\mathbb{P}(\bigcup_i A_i) = \mathbb{P}(\Omega) = 1$ and $\mathbb{P}(A_i)>0$ for each $A_i$. Then:
+
+\begin{equation}
+\mathbb{P}(A_i|B) = \frac{\mathbb{P}(B|A_i)\mathbb{P}(A_i) }{\sum_j \mathbb{P}(B|A_j)\mathbb{P}(A_j) } = \frac{\mathbb{P}(B|A_i)\mathbb{P}(A_i) }{\mathbb{P}(B)}
+\end{equation}
+
+The theorem is so important that the different terms have names:
+
+\begin{itemize}
+\item $\mathbb{P}(A_i|B)$ is the posterior
+\item $\mathbb{P}(B|A_i)$ is the likelihood 
+\item $\mathbb{P}(A_j)$ is the prior
+\item $\mathbb{P}(B)$ is the evidence
+\end{itemize}
+
