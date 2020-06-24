@@ -1,15 +1,15 @@
-\section{Point Mass Distribution, Kronecker Delta, Dirac Delta $\delta_{\alpha}$}
+\section{Point Mass Distributions}
 
 If the entire probability is concentrated at a single point $\alpha$, then that can be expressed in terms of the Kronecker Delta in the discrete case and the Dirac Delta function in the continuous case.
 
-\subsection{Kronecker Delta}
+\subsection{Kronecker Delta $\delta_{\alpha}$}
 In the discrete case:
 
 \begin{equation}
 \delta_{\alpha} = \left\{\begin{array}{l} 1\mathrm{\ if\ }x = \alpha \\ 0\mathrm{\ else}\end{array} \right.
 \end{equation}
 
-\subsection{Dirac Delta Function}
+\subsection{Dirac Delta Function $\delta(x-\alpha)$}
 In the continuous case:
 
 \begin{equation}
@@ -18,13 +18,18 @@ In the continuous case:
 
 The Dirac Delta function is actually a distribution with extremely useful properties that I ought to write up. 
 
-\section{Discrete Uniform Distribution $\mathrm{Uniform(1,k)}$}
+\section{Uniform Distributions}
 
+\subsection{Discrete Uniform Distribution $\mathrm{Uniform(1,k)}$}
 With $k>0$ be some integer.
 
 \begin{equation}
 f(x) = \left\{\begin{array}{l} 1/k \mathrm{\ if\ }x \in \{1,...,k\} \\ 0\mathrm{\ else}\end{array} \right.
 \end{equation}
+
+\subsection{Continuous Uniform Distribution $\mathrm{Uniform(a,b)}$}
+
+
 
 
 \section{Bernoulli Process Distributions}
@@ -36,3 +41,11 @@ A Bernoulli process is a sequence of independent binary outcomes, like coinflips
 \section{Poisson Process Distributions}
 
 A Poisson process counts the number of events within a certain time interval. 
+
+\section{Normal Distribution $\mathscr{N}$}
+
+By convention, $Z$ is the random variable that has standard normal distribution. If $X \sim \mathscr{\mu,\sigma^2}$, then $Z = \frac{X-\mu}{\sigma} \sim \mathscr{N}(0,1)$. This standardizing transformation allows for calculations using lookup tables. 
+
+\begin{itemize}
+\item $\mathbb{P}(a<X<b)  = \mathbb{P}(\frac{a-\mu}{\sigma} < Z < \frac{b-\mu}{\sigma})$
+\end{itemize} 
