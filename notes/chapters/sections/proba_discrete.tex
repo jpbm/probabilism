@@ -21,31 +21,246 @@ The Dirac Delta function is actually a distribution with extremely useful proper
 \section{Uniform Distributions}
 
 \subsection{Discrete Uniform Distribution $\mathrm{Uniform(1,k)}$}
-With $k>0$ be some integer.
+With $k>0$ be some integer, the PMF is:
 
 \begin{equation}
 f(x) = \left\{\begin{array}{l} 1/k \mathrm{\ if\ }x \in \{1,...,k\} \\ 0\mathrm{\ else}\end{array} \right.
 \end{equation}
 
+The CDF is:
+
+\begin{equation}
+F(x)= \left\{\begin{array}{cl} 
+0& x < 1\\
+\frac{x}{k}& 1\leq x \leq k\\
+1& x>k
+\end{array} \right.
+\end{equation}
+
+% continuous uniform
 \subsection{Continuous Uniform Distribution $\mathrm{Uniform(a,b)}$}
 
+With $a,b\in\mathbb{R}$ and $b>a$, the PDF is:
+
+\begin{equation}
+f(x) = \left\{\begin{array}{l} 1/(b-a) \mathrm{\ if\ }x \in [a,b] \\ 0\mathrm{\ else}\end{array} \right.
+\end{equation}
+
+The CDF is:
+
+\begin{equation}
+F(x)= \left\{\begin{array}{cl} 
+0& x < a\\
+\frac{x-a}{b-a}& a\leq x \leq b\\
+1& x>b
+\end{array} \right.
+\end{equation}
+
+
+% bernoulli 
+\section{Bernoulli Processes}
+A Bernoulli process is a number of discrete trials with binary outcome, for example a series of coinflips. This is typically framed in terms of success $X=1$ with probability $p$ and failure $X=0$ with probability $1-p$. The trials are independent from each other. Thinking of the process as a sequence in time, this means that the process is memoryless: the number of successes or time since the last success have no bearing on the future. Thinking about the process as a sequence in space, the successes are independently scattered over a grid like randomly flipped bits in a string of bits. That is, the events are uniformly distributed.
+
+
+\subsection{Bernoulli Distribution $\mathrm{Bernoulli(p)}$}
+The PMF of a single binary outcome $X=1$ with probability $p$ and $X=0$ with probability $1-p$. The PMF is:
+
+\begin{equation}
+f(x) = p^x (1-p)^{1-x} =  \left\{\begin{array}{cl} 
+p& x = 1\\
+(1-p)& x=0
+\end{array} \right.
+\end{equation}
+
+For $x\in\{0,1\}$ and $p\in[0,1]$.
+
+
+% binomial
+\subsection{Binomial Distribution $\mathrm{Binomial}(n,p)$}
+The binomial distribution is the PMF for the number of successes with probability $p$ among $n$ trials. That is, if $X_i \sim \mathrm{Bernoulli}(p)$, then $X = \sum_i^n X_i$ has distribution:
+
+\begin{equation}
+f(x) = {n \choose x} p^x (1-p)^{n-x}
+\end{equation}
+
+It follows that if $X_1 \sim \mathrm{Binomial}(n_1,p)$ and $X_2 \sim \mathrm{Binomial}(n_2,p)$, then $X_1 + X_2 \sim \mathrm{Binomial}(n_1+n_2,p)$. The binomial distribution can be interpreted of the probability that there will be $x$ successes among $n$ draws with replacement.
+
+
+% geometric distribution
+\subsection{Geometric Distribution $\mathrm{Geom}(p)$}
+The PMF for the number of Bernoulli trials with parameter $p\in(0,1)$ is given by: 
+
+\begin{equation}
+f(x) = p(1-p)^{x-1}
+\end{equation}
+
+In the time picture, it models the number of intervals $x$ until the first success occurs, or, equivalently, the number of trials between two successes. In the space picture, it models the distance between successes that are independently scattered on a grid.
 
 
 
-\section{Bernoulli Process Distributions}
+% negative binomial distribution
+\subsection{Pascal Distribution, Negative Binomial Distribution $\mathrm{NB}(r,p)$}
+The negative binomial distribution with parameters $r$ and $p$ gives the sum of $r$ geometric random variables with parameter $p$. In the time picture, if $X \sim \mathrm{NB}(r,p)$, $X$ gives the probability for the number of failures in a sequence of Bernoulli trials until there are $r$ successes. In the space picture, it the probability for the width of the interval of a grid between $r$ successes (not counting the spots taken up by the successes). Its PMF is given by:
 
-A Bernoulli process is a sequence of independent binary outcomes, like coinflips.
+\begin{equation}
+f(x) = {x+r-1\choose x} p^r (1-p)^x
+\end{equation} 
+
+For $r=1$, the distribution is the same as the geometric distribution with parameter $p\rightarrow 1-p$. The negative binomial distribution gives the probability that, when drawing with replacement, it will take $x$ failures until there have been $r$ successes, where each success has probability $p$.
+
+
+% hypergeometric distribution
+\subsection{Hypergeometric Distribution $\mathrm{Hypergeom(N,K,n)}$}
+The hypergeometric distribution gives the probability for the number of successes when drawing $n$ times from a population of $N$, of which $K$ correspond to successes.
+
+\begin{equation}
+f(k) = \frac{{K \choose k}{ N-K \choose n-k}}{{N \choose k}}
+\end{equation} 
+
+It is the analogue to the binomial distribution for sampling without replacement.
+
+% negative hypergeometric distribution
+\subsection{Negative Hypergeometric Distribution $\mathrm{NH(N,K,n)}$}
+The negative hypergeometric distribution gives the probability that, when sampling without replacement, it will take $r$ failures until there have been $k$ successes, if the total population is $N$ and the number of elements corresponding to a success is $K$.
+
+\begin{equation}
+f(k) = \frac{{k+r-1\choose k}{N-r-k \choose K-k}}{{N\choose K}}
+\end{equation}
+
+The negative hypergeometric distribution is the analogue to the negative binomial distribution for sampling without replacement. 
+
+
+% poisson processes
+\section{Poisson Point Processes}
+Poisson point processes are the continuous analogue to Bernoulli processes. Rather than looking at the outcome of a number of binary trials, they look at the number or spacing of independent point events over a continuous interval. In one dimension, Poisson Processes very often model rare events happening over a given time interval. In higher dimensions, the Poisson process can be thought of as independently scattered points in some volume. The process is typically characterized by the parameter $\Lambda$, called the \textit{rate} or \textit{intensity} of the process. It can be written $\Lambda = \nu \lambda$ where $\nu$ is a Lebesgue measure (assigning a length or volume to a set) and $\lambda$ is a constant. For a temporal process, $\nu$ would be the time interval. For a spatial process, $\nu$ would be a volume. The events have uniform distribution over the measure. This is also called a homogenous Poisson process. 
+
+% poisson distribution
+\subsection{Poisson Distribution $\mathrm{Poisson}(\Lambda)$}
+The poisson distribution is the continuous analogue to the Binomial distribution. It measures the number of events for a process with intensity $\Lambda$.
+
+\begin{equation}
+f(x) = e^{-\Lambda}\frac{\Lambda^x}{x!}\ \ \mathrm{x\geq0}
+\end{equation}
+
+Just like for the Binomial distribution, if $X_1 \sim \mathrm{Poisson}(\Lambda_1)$ and $X_2 \sim \mathrm{Poisson}(\Lambda_2)$, then $X_1 + X_2 \sim \mathrm{Poisson}(\Lambda_1 + \Lambda_2)$. 
+
+
+% exponential distribution
+\subsection{Exponential Distribution $\mathrm{Exp}(\lambda)$}
+The exponential distribution is the continuous analogue to the Geometric distribution. In one dimension, if $X \sim \mathrm{Exp}(\Lambda)$, then $X$ can be interpreted as the distance between two independently scattered points on the real line. In the time picture, that would be the time that elapses between two events, or, equivalently, the time until the next event, where $\lambda$ is the rate or intensity.
+
+\begin{equation}
+f(x) = \lambda e^{-\lambda}
+\end{equation}
+
+
+% gamma distribution
+\subsection{Gamma Distribution $\mathrm{Gamma(\alpha,\beta)}$}
+The Gamma Distribution is the continuous analogue to the negative binomial distribution. For integer $\alpha$, it gives the probability of the value of the sum of $\alpha$ exponentially distributed random variables with parameter $\beta=\frac{1}{\lambda}$. That is, if $X_i \sim Exp(\frac{1}{\beta})$ then $X = \sum_i^\alpha X_i \sim \mathrm{Gamma}(\alpha,\beta)$. The PDF is given by:
+
+\begin{equation}
+f_x = \frac{1}{\beta^\alpha \Gamma(\alpha)}x^{\alpha-1}e^{-x/\beta}
+\end{equation}
+
+With $\alpha,\beta > 0$.
+
+As one would expect, if $X_1 \sim \Gamma(\alpha_1,\beta)$ and $X_2 \sim \Gamma(\alpha_2,\beta)$ then $X_1 + X_2 \sim \Gamma(\alpha_1+\alpha_2,\beta)$. 
 
 
 
-\section{Poisson Process Distributions}
+% t distribution
+\section{$t$ Distribution $\mathrm{t_\nu\ }$}
 
-A Poisson process counts the number of events within a certain time interval. 
+\subsection{Cauchy Distribution $t_1$}
 
-\section{Normal Distribution $\mathscr{N}$}
 
-By convention, $Z$ is the random variable that has standard normal distribution. If $X \sim \mathscr{\mu,\sigma^2}$, then $Z = \frac{X-\mu}{\sigma} \sim \mathscr{N}(0,1)$. This standardizing transformation allows for calculations using lookup tables. 
 
-\begin{itemize}
-\item $\mathbb{P}(a<X<b)  = \mathbb{P}(\frac{a-\mu}{\sigma} < Z < \frac{b-\mu}{\sigma})$
-\end{itemize} 
+\section{$\chi^2$ Distribution $\chi^2_p$}
+The $\chi^2$ distribution is the probability distribution of the sum of squares of standard normally distributed random variables. If $Z_i$ has standard normal distribution, then $X = \sum_i^p Z_i \sim \chi^2_p$.
+
+
+
+\section{Normal Distribution $\mathscr{N}(\mu,\sigma^2)$}
+
+
+\subsection{Standard Normal Distribution $\mathscr{N}(0,1)$ }
+
+The normal distribution is so ubiquitous that there is notation specifically for the \textit{standard normal distribution}, which is the normal distribution with parameters $\mu = 0$ and $\sigma = 1$. It is always possible to transform a random variable $X$ to have standard normal distribution by performing a coordinate transform. The PDF of the standard normal distribution is written $\phi(x)$ and the CDF $\Phi(x)$. The PDF is given by: 
+
+\begin{equation}
+\phi(x) = \frac{1}{\sqrt{2\pi}}\exp{-x^2}
+\end{equation}
+
+The CDF has no closed form expression. 
+
+By convention, $Z$ is the random variable that has standard normal distribution. If $X \sim \mathscr{N}(\mu,\sigma^2)$, then $Z = \frac{X-\mu}{\sigma} \sim \mathscr{N}(0,1)$. This standardizing transformation allows for calculations using lookup tables. 
+
+\subsubsection{Example: Interval $\mathbb{P}(a<X<b)$}
+
+\begin{equation}
+\mathbb{P}(a<X<b) =  \mathbb{P}(a' < Z < b') = \Phi(b') - \Phi(a')
+\end{equation}
+
+with $a' = \frac{a-\mu}{\sigma}$ and $b' = \frac{b-\mu}{\sigma}$.
+
+\subsubsection{Example: Quantile $x = F^{-1}(q)$}
+
+\begin{equation}
+z = \Phi^{-1}(q)
+\end{equation}
+
+with $z = \frac{x-\mu}{\sigma}$, so that $x = \sigma \Phi^{-1}(q)+\mu$. The interquartile range is calculated by transforming $(z_{1}=\Phi^{-1}(0.25),z_{3}=\Phi^{-1}(0.75))$, and so on.
+
+
+% Multinoulli Processes
+\section{Categorial Processes, Multinoulli Processes}
+A Multnoulli process is a number of discrete trials that may assume a number of different categorical outcomes, for example a series of dice throws or a random sequence of letters. It is the generalization of the Bernoulli process to processes with more than two possible outcomes. The trials are independent from each other. Thinking of the process as a sequence in time, this means that the process is memoryless: the sequence of future outcomes is independent of past outcomes. Thinking about the process as a sequence in space, it is a uniformly random assignment of one of a set number of outcomes to grid points.
+
+% Multinoulli
+\subsection{Categorical Distribution, Multinoulli Distribution $\mathrm{Categorical(\mathbf{p})}$}
+The categorial or Multinoulli distribution is the generalization of the Bernoulli distribution to more than two possible outcomes. The PMF is given by:
+
+\begin{equation}
+f(x) = \prod_i^k p_i^k
+\end{equation}
+
+With $p_i \in \mathbf{p}$ a discrete probability distribution.
+
+% Multinomial
+\subsection{Multinomial Distribution $\mathrm{Multinomial()n,\mathbf{p}}$}
+The multinomial distribution is the multivariate generalization of the binomial process. Rather than a binary outcome, there are $k$ possible outcomes. If $\mathbf{X}=(X_1,X_2,...,X_k)$ has multinomial distribution with parameter vector $\mathbf{p} = (p_1,p_2,...,p_k)$, then it gives the probability that out of $n$ trials, $x_j$ will be of type $j$, where the probabilities of the different classes is given by the discrete probability distribution $\mathbf{p}$.
+
+\begin{equation}
+f(\mathbf{x}) = {n \choose x_1,x_2,...,x_k} p_1^{x_1}p_2^{x_2}...p_k^{x_k} = {|\mathbf{x}|\choose \mathbf{x}}\mathbf{p}^{\mathbf{x}}
+\end{equation}
+
+Where the final expression uses multi-index notation. The binomial process corresponds to $k=2$ classes (success and failure).
+
+
+
+% beta distribution
+\section{Beta Distribution $\mathrm{Beta}(\alpha,\beta)$}
+
+The PDF for the beta distribution is:
+
+\begin{equation}
+f(x) = \frac{\Gamma(\alpha + \beta)}{\Gamma(\alpha)\Gamma(\beta)}x^{\alpha-1}(1-x)^{\beta-1}\ \ 0 < x < 1
+\end{equation}
+
+With $\alpha, \beta > 0$.
+
+
+\section{Multivariate Normal Distirbution $\mathscr{N}(\mathbf{\mu},\mathbf{\Sigma})$}
+The multivariate normal distribution is the multivariate generalization of the normal distribution. The PDF is given by:
+
+\begin{equation}
+f{\mathbf{x}} = \frac{1}{(2\pi)^{\frac{k}{2}}|\Sigma|^{\frac{1}{2}}}\exp\{-\frac{1}{2}(\mathbf{x}-\mathbf{\mu})^T \mathbf{\Sigma}^{-1}(\mathbf{x}-\mathbf{\mu})\}
+\end{equation}
+
+\subsection{Marginal Distribution}
+
+\subsection{Conditional Distribution}
+
+
+
+\subsection{Multivariate Standard Normal Distribution $\mathscr{N}(\mathbf{0},\mathbf{|})$}
