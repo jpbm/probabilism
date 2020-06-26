@@ -20,7 +20,7 @@ The Dirac Delta function is actually a distribution with extremely useful proper
 
 \section{Uniform Distributions}
 
-\subsection{Discrete Uniform Distribution $\mathrm{Uniform(1,k)}$}
+\subsection{Discrete Uniform $\mathrm{Uniform(1,k)}$}
 With $k>0$ be some integer, the PMF is:
 
 \begin{equation}
@@ -38,7 +38,7 @@ F(x)= \left\{\begin{array}{cl}
 \end{equation}
 
 % continuous uniform
-\subsection{Continuous Uniform Distribution $\mathrm{Uniform(a,b)}$}
+\subsection{Continuous Uniform $\mathrm{Uniform(a,b)}$}
 
 With $a,b\in\mathbb{R}$ and $b>a$, the PDF is:
 
@@ -62,7 +62,7 @@ F(x)= \left\{\begin{array}{cl}
 A Bernoulli process is a number of discrete trials with binary outcome, for example a series of coinflips. This is typically framed in terms of success $X=1$ with probability $p$ and failure $X=0$ with probability $1-p$. The trials are independent from each other. Thinking of the process as a sequence in time, this means that the process is memoryless: the number of successes or time since the last success have no bearing on the future. Thinking about the process as a sequence in space, the successes are independently scattered over a grid like randomly flipped bits in a string of bits. That is, the events are uniformly distributed.
 
 
-\subsection{Bernoulli Distribution $\mathrm{Bernoulli(p)}$}
+\subsection{Bernoulli $\mathrm{Bernoulli(p)}$}
 The PMF of a single binary outcome $X=1$ with probability $p$ and $X=0$ with probability $1-p$. The PMF is:
 
 \begin{equation}
@@ -76,7 +76,7 @@ For $x\in\{0,1\}$ and $p\in[0,1]$.
 
 
 % binomial
-\subsection{Binomial Distribution $\mathrm{Binomial}(n,p)$}
+\subsection{Binomial $\mathrm{Binomial}(n,p)$}
 The binomial distribution is the PMF for the number of successes with probability $p$ among $n$ trials. That is, if $X_i \sim \mathrm{Bernoulli}(p)$, then $X = \sum_i^n X_i$ has distribution:
 
 \begin{equation}
@@ -87,7 +87,7 @@ It follows that if $X_1 \sim \mathrm{Binomial}(n_1,p)$ and $X_2 \sim \mathrm{Bin
 
 
 % geometric distribution
-\subsection{Geometric Distribution $\mathrm{Geom}(p)$}
+\subsection{Geometric $\mathrm{Geom}(p)$}
 The PMF for the number of Bernoulli trials with parameter $p\in(0,1)$ is given by: 
 
 \begin{equation}
@@ -99,7 +99,7 @@ In the time picture, it models the number of intervals $x$ until the first succe
 
 
 % negative binomial distribution
-\subsection{Pascal Distribution, Negative Binomial Distribution $\mathrm{NB}(r,p)$}
+\subsection{Pascal, Negative Binomial $\mathrm{NB}(r,p)$}
 The negative binomial distribution with parameters $r$ and $p$ gives the sum of $r$ geometric random variables with parameter $p$. In the time picture, if $X \sim \mathrm{NB}(r,p)$, $X$ gives the probability for the number of failures in a sequence of Bernoulli trials until there are $r$ successes. In the space picture, it the probability for the width of the interval of a grid between $r$ successes (not counting the spots taken up by the successes). Its PMF is given by:
 
 \begin{equation}
@@ -108,9 +108,12 @@ f(x) = {x+r-1\choose x} p^r (1-p)^x
 
 For $r=1$, the distribution is the same as the geometric distribution with parameter $p\rightarrow 1-p$. The negative binomial distribution gives the probability that, when drawing with replacement, it will take $x$ failures until there have been $r$ successes, where each success has probability $p$.
 
+% bernoulli without replacement
+\section{Bernoulli Processes 	Without Replacement}
+Bernoulli Processes were a sequence of independent trials, which can be thought of as a sequence of samples with replacement. The "hyper"- distributions treat the analogous case where samples are not replacemed.  
 
 % hypergeometric distribution
-\subsection{Hypergeometric Distribution $\mathrm{Hypergeom(N,K,n)}$}
+\subsection{Hypergeometric $\mathrm{Hypergeom(N,K,n)}$}
 The hypergeometric distribution gives the probability for the number of successes when drawing $n$ times from a population of $N$, of which $K$ correspond to successes.
 
 \begin{equation}
@@ -120,7 +123,7 @@ f(k) = \frac{{K \choose k}{ N-K \choose n-k}}{{N \choose k}}
 It is the analogue to the binomial distribution for sampling without replacement.
 
 % negative hypergeometric distribution
-\subsection{Negative Hypergeometric Distribution $\mathrm{NH(N,K,n)}$}
+\subsection{Negative Hypergeometric $\mathrm{NH(N,K,n)}$}
 The negative hypergeometric distribution gives the probability that, when sampling without replacement, it will take $r$ failures until there have been $k$ successes, if the total population is $N$ and the number of elements corresponding to a success is $K$.
 
 \begin{equation}
@@ -135,7 +138,7 @@ The negative hypergeometric distribution is the analogue to the negative binomia
 Poisson point processes are the continuous analogue to Bernoulli processes. Rather than looking at the outcome of a number of binary trials, they look at the number or spacing of independent point events over a continuous interval. In one dimension, Poisson Processes very often model rare events happening over a given time interval. In higher dimensions, the Poisson process can be thought of as independently scattered points in some volume. The process is typically characterized by the parameter $\Lambda$, called the \textit{rate} or \textit{intensity} of the process. It can be written $\Lambda = \nu \lambda$ where $\nu$ is a Lebesgue measure (assigning a length or volume to a set) and $\lambda$ is a constant. For a temporal process, $\nu$ would be the time interval. For a spatial process, $\nu$ would be a volume. The events have uniform distribution over the measure. This is also called a homogenous Poisson process. 
 
 % poisson distribution
-\subsection{Poisson Distribution $\mathrm{Poisson}(\Lambda)$}
+\subsection{Poisson $\mathrm{Poisson}(\Lambda)$}
 The poisson distribution is the continuous analogue to the Binomial distribution. It measures the number of events for a process with intensity $\Lambda$.
 
 \begin{equation}
@@ -146,7 +149,7 @@ Just like for the Binomial distribution, if $X_1 \sim \mathrm{Poisson}(\Lambda_1
 
 
 % exponential distribution
-\subsection{Exponential Distribution $\mathrm{Exp}(\lambda)$}
+\subsection{Exponential $\mathrm{Exp}(\lambda)$}
 The exponential distribution is the continuous analogue to the Geometric distribution. In one dimension, if $X \sim \mathrm{Exp}(\Lambda)$, then $X$ can be interpreted as the distance between two independently scattered points on the real line. In the time picture, that would be the time that elapses between two events, or, equivalently, the time until the next event, where $\lambda$ is the rate or intensity.
 
 \begin{equation}
@@ -155,7 +158,7 @@ f(x) = \lambda e^{-\lambda}
 
 
 % gamma distribution
-\subsection{Gamma Distribution $\mathrm{Gamma(\alpha,\beta)}$}
+\subsection{Gamma $\mathrm{Gamma(\alpha,\beta)}$}
 The Gamma Distribution is the continuous analogue to the negative binomial distribution. For integer $\alpha$, it gives the probability of the value of the sum of $\alpha$ exponentially distributed random variables with parameter $\beta=\frac{1}{\lambda}$. That is, if $X_i \sim Exp(\frac{1}{\beta})$ then $X = \sum_i^\alpha X_i \sim \mathrm{Gamma}(\alpha,\beta)$. The PDF is given by:
 
 \begin{equation}
@@ -169,18 +172,18 @@ As one would expect, if $X_1 \sim \Gamma(\alpha_1,\beta)$ and $X_2 \sim \Gamma(\
 
 
 % t distribution
-\section{$t$ Distribution $\mathrm{t_\nu\ }$}
+\section{$t$-Distribution $\mathrm{t_\nu\ }$}
 
 \subsection{Cauchy Distribution $t_1$}
 
 
 
-\section{$\chi^2$ Distribution $\chi^2_p$}
+\section{Chi$^2$-Distribution $\chi^2_p$}
 The $\chi^2$ distribution is the probability distribution of the sum of squares of standard normally distributed random variables. If $Z_i$ has standard normal distribution, then $X = \sum_i^p Z_i \sim \chi^2_p$.
 
 
 
-\section{Normal Distribution $\mathscr{N}(\mu,\sigma^2)$}
+\section{Normal $\mathscr{N}(\mu,\sigma^2)$}
 
 
 \subsection{Standard Normal Distribution $\mathscr{N}(0,1)$ }
@@ -217,29 +220,28 @@ with $z = \frac{x-\mu}{\sigma}$, so that $x = \sigma \Phi^{-1}(q)+\mu$. The inte
 A Multnoulli process is a number of discrete trials that may assume a number of different categorical outcomes, for example a series of dice throws or a random sequence of letters. It is the generalization of the Bernoulli process to processes with more than two possible outcomes. The trials are independent from each other. Thinking of the process as a sequence in time, this means that the process is memoryless: the sequence of future outcomes is independent of past outcomes. Thinking about the process as a sequence in space, it is a uniformly random assignment of one of a set number of outcomes to grid points.
 
 % Multinoulli
-\subsection{Categorical Distribution, Multinoulli Distribution $\mathrm{Categorical(\mathbf{p})}$}
+\subsection{Categorical, Multinoulli $\mathrm{Categorical(\mathbf{p})}$}
 The categorial or Multinoulli distribution is the generalization of the Bernoulli distribution to more than two possible outcomes. The PMF is given by:
 
 \begin{equation}
-f(x) = \prod_i^k p_i^k
+f(\mathbf{x}) = \prod_i^k p_i^{[x=k]}
 \end{equation}
 
-With $p_i \in \mathbf{p}$ a discrete probability distribution.
+With $p_i \in \mathbf{p}$ a discrete probability distribution and $[x=k]$ is the Iverson bracket.
 
 % Multinomial
-\subsection{Multinomial Distribution $\mathrm{Multinomial()n,\mathbf{p}}$}
+\subsection{Multinomial $\mathrm{Multinomial(n,\mathbf{p})}$}
 The multinomial distribution is the multivariate generalization of the binomial process. Rather than a binary outcome, there are $k$ possible outcomes. If $\mathbf{X}=(X_1,X_2,...,X_k)$ has multinomial distribution with parameter vector $\mathbf{p} = (p_1,p_2,...,p_k)$, then it gives the probability that out of $n$ trials, $x_j$ will be of type $j$, where the probabilities of the different classes is given by the discrete probability distribution $\mathbf{p}$.
 
 \begin{equation}
 f(\mathbf{x}) = {n \choose x_1,x_2,...,x_k} p_1^{x_1}p_2^{x_2}...p_k^{x_k} = {|\mathbf{x}|\choose \mathbf{x}}\mathbf{p}^{\mathbf{x}}
 \end{equation}
 
-Where the final expression uses multi-index notation. The binomial process corresponds to $k=2$ classes (success and failure).
-
+Where the final expression uses multi-index notation. The binomial process corresponds to $k=2$ classes (success and failure). The marginal distribution of $X_j$ is $Binomial(n,p_j)$.
 
 
 % beta distribution
-\section{Beta Distribution $\mathrm{Beta}(\alpha,\beta)$}
+\section{Beta $\mathrm{Beta}(\alpha,\beta)$}
 
 The PDF for the beta distribution is:
 
@@ -249,18 +251,76 @@ f(x) = \frac{\Gamma(\alpha + \beta)}{\Gamma(\alpha)\Gamma(\beta)}x^{\alpha-1}(1-
 
 With $\alpha, \beta > 0$.
 
+The Beta distribution is the conjugate prior to the Bernoulli and Binomial distributions.
 
-\section{Multivariate Normal Distirbution $\mathscr{N}(\mathbf{\mu},\mathbf{\Sigma})$}
+% dirichlet distribution
+\section{Dirichlet $\mathrm{Dirichlet}(\mathbf{\alpha})$}
+The Dirichlet Distribution is the multivariate generalization of the Beta Distribution. Given $\mathbf{X} = (X_1,...,X_K)$ and the parameter vector $\mathbf{\alpha} = (\alpha_1,...,\alpha_K),\ \alpha_j > 0$, the PDF is:
+
+\begin{equation}
+f(\mathbf{x},\mathbf{\alpha}) = \frac{1}{B(\mathbf{\alpha})} \prod^K_{i=1} x_i^{\alpha_i -1}
+\end{equation}
+
+Where $B(\mathbf{\alpha})$ is the multivariate Beta function:
+
+\begin{equation}
+B(\mathbf{\alpha}) = \frac{\prod^K_{i=1}\Gamma(\alpha_i)}{\Gamma(\sum_{i=1}^K\alpha_i)}
+\end{equation}
+
+The Dirichlet distribution is the conjugate prior to the Multinoulli/Categorical and Multinomial distributions. The marginal distributions are Beta distributions, i.e. $X_i \sim \mathbf{Beta}(\alpha_i,\alpha_0-\alpha_1)$ where $\alpha_0 = \sum_j \alpha_j$.
+
+
+
+% multivariate normal distribution
+\section{Multivariate Normal $\mathscr{N}(\mathbf{\mu},\mathbf{\Sigma})$}
 The multivariate normal distribution is the multivariate generalization of the normal distribution. The PDF is given by:
 
 \begin{equation}
 f{\mathbf{x}} = \frac{1}{(2\pi)^{\frac{k}{2}}|\Sigma|^{\frac{1}{2}}}\exp\{-\frac{1}{2}(\mathbf{x}-\mathbf{\mu})^T \mathbf{\Sigma}^{-1}(\mathbf{x}-\mathbf{\mu})\}
 \end{equation}
 
+
+
+\subsection{Covariance Matrix $\mathbf{\Sigma}$}
+The covariance matrix $\mathbf{\Sigma}$ is symmetric and positive definite. Therefore, $\mathbf{\Sigma}^{\frac{1}{2}}$ exists and is real, symmetric, and
+
+\begin{itemize}
+\item $\mathbf{\Sigma}^{\frac{1}{2}}\mathbf{\Sigma}^{\frac{1}{2}} = \mathbf{\Sigma}$
+\item $\mathbf{\Sigma}^{\frac{1}{2}}\mathbf{\Sigma}^{-\frac{1}{2}}=\mathbf{\Sigma}^{-\frac{1}{2}}\mathbf{\Sigma}^{\frac{1}{2}}\mathbf{I}$
+\end{itemize}
+
+
 \subsection{Marginal Distribution}
+If $\mathbf{X} \sim \mathscr{N}(\mathbf{0},\mathbf{\Sigma})$, then the marginal distribution of $X_a$ is:
+
+\begin{equation}
+X_a \sim \mathscr{\mu_a,\Sigma_{aa}}
+\end{equation}
 
 \subsection{Conditional Distribution}
+If $\mathbf{X} \sim \mathscr{N}(\mathbf{0},\mathbf{\Sigma})$, then the conditional distribution of $X_b$ given $X_a = x_a$ is:
 
+\begin{equation}
+X_b|X_a = x_a \sim \mathscr{N}(\mu_b + \Sigma_{ba}\Sigma_{aa}^{-1}(x_a - \mu_a), \Sigma_{bb}-\Sigma_{ba}\Sigma_{aa}^{-1}\Sigma_{ab}) 
+\end{equation}
 
+\subsection{Vector Multiplication}
+If $\mathbf{a}$ is a vector, then:
 
-\subsection{Multivariate Standard Normal Distribution $\mathscr{N}(\mathbf{0},\mathbf{|})$}
+\begin{equation}
+\mathbf{a}^T \mathbf{X} \sim \mathscr{N}(\mathbf{a}^T \mathbf{\mu}, \mathbf{a}^T\mathbf{\Sigma}\mathbf{a})
+\end{equation}
+
+\subsection{Relationship to Chi$^2$}
+\begin{equation}
+V = \mathbf{Z}^T\mathbf{Z} = (\mathbf{X}-\mathbf{\mu})^T\mathbf{\Sigma}^{-1}(\mathbf{X}-\mathbf{\mu}) \sim \chi^2_k
+\end{equation}
+
+\subsection{Multivariate Standard Normal Distribution $\mathscr{N}(\mathbf{0},\mathbf{\Sigma})$}
+The standard multivariate normal distribution for $\mathbf{Z} = (Z_1,...,Z_k)$ with $\mathbf{Z} \sim \mathscr{N}(\mathbf{0},\mathbf{I})$ is:
+
+\begin{equation}
+f(z) = \prod^k_{i=1} f(z_i) = \frac{1}{(2\pi)^{\frac{k}{2}}}\exp \{ \frac{1}{2} \sum^{k}_{j=1} z_j\} = \frac{1}{(2\pi)^{\frac{k}{2}}}\exp \{ \frac{1}{2} \mathbf{z^T z}\}
+\end{equation}
+
+The transformation to a general multivariate normal random variable $\mathbf{X}$ is that if $\mathbf{Z} \sim \mathscr{0,\mathbf{I}}$, then $\mathbf{X} = \mathbf{\mu} + \mathbf{\Sigma}^{\frac{1}{2}}\mathbf{Z}$. Conversely, if $\mathbf{X}\sim \mathscr{\mathbf{\mu},\mathbf{\Sigma}}$ then $\mathbf{\Sigma}^{\frac{1}{2}}(\mathbf{X}-\mathbf{\mu}) \sim \mathscr{N}(0,\mathbf{I})$.
