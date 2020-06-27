@@ -10,8 +10,10 @@ The chain of implication is:
 \mathrm{quadratic\ mean} \rightarrow \mathrm{probability} \rightarrow \mathrm{distribution}
 \end{equation}
 
-For point mass distributions only, convergence in distribution implies convergence in probability. Similarlty, implication rules exist for functions of random variables when convergence for the underlying random variables is given. See Theorems 5.4 and 5.5 in \citeasnoun{wasserman2013all} (page 73-74). 
+For point mass distributions only, convergence in distribution implies convergence in probability. Similarlty, implication rules exist for functions of random variables when convergence for the underlying random variables is given. See Theorems 5.4, 5.5 and 5.17 in \citeasnoun{wasserman2013all} (pages 73-74, 81). 
 
+
+%convergence in probability
 \subsection{Convergence in Probability}
 
 \begin{equation}
@@ -20,6 +22,8 @@ For point mass distributions only, convergence in distribution implies convergen
 
 as $n\rightarrow \infty$. Convergence in Probability means that the distribution of $X_n$ becomes sharper and sharper around $X$ as $n\rightarrow \infty$. At $n=\infty$, it has point mass distribution concentrated at $X$.
 
+
+% convergence in distribution
 \subsection{Convergence in Distribution}
 Where $F$ is the CDF of $X_n$,
 
@@ -29,13 +33,35 @@ Where $F$ is the CDF of $X_n$,
 
 For all $t$ for which $F$ is continuous. That means, convergence is satisfied even when the equality is violated at points of discontinuity.
 
-\subsection{Convergence in Quadratic Mean, Concergence in $L_2$}
+
+% convergence in quadratic mean
+\subsection{Convergence in Quadratic Mean, Convergence in $L_2$}
 
 \begin{equation}
 \mathbb{E}(X_n - X)^2 \rightarrow 0
 \end{equation}
 
 as $n\rightarrow \infty$.
+
+
+% almost sure convergence 
+\subsection{Almost Sure Convergence}
+
+$X_n$ converges \textit{almost surely} to $X$ if:
+
+\begin{equation}
+\mathbb{P}(\{\omega: X_n(\omega) \rightarrow X(\omega) \}) = 1
+\end{equation}
+
+Which I would read as the value of the measurable map $X_n$ converging to the value of the measurable map $X$ everywhere on the probability space except possibly on a set of probability measure $0$.
+
+
+% l1 convergence
+\subsection{$L_1$ Convergence}
+
+$L_1$ convergence requires $\mathbb{E}|X_n - X| \rightarrow 0$ as $n\rightarrow 0$.
+
+
 
 % WLLN
 \subsection{Weak Law of Large Numbers}
@@ -48,6 +74,14 @@ The sample mean of i.i.d. variables  $\overline{X}_n$ converges in probability t
 
 In words, the probability that the sample mean deviates from the population mean by more than $\epsilon$ has an upper bound that decreases inversely proportional to $n\epsilon^2$. The probability becomes more and more centered around the mean $\mu$.
 
+% SLLN
+\subsection{Strong Law of Large Numbers}
+The strong law of large number gives almost surely convergence of the sample mean to the population mean.
+
+If $\mathbb{E}|X_1| < \infty$, then $\overline{X_n}\xrightarrow{as}\mu$.
+
+
+
 % CLT
 \subsection{Central Limit Theorem}
 The distribution of the sample mean converges in distribution to a normal distribution with variance $\sigma^2/n$ and mean $\mu$.
@@ -57,6 +91,7 @@ If $Z_n = \frac{\overline{X}_n - \mu}{\sqrt{\mathbb{V}(\overline{X}_n)}}$ then $
 It turns out that when $Z_n$ is obtained by normalizing not by the (most likely unknown) population variance $\sigma$ but by the sample variance $S_n^2$, the CLT still holds. The accuracy of this is given by the Berry-Ess\'een Inequality.
 
 
+% multivariate CLT
 \subsection{Multivariate Central Limit Theorem}
 Given $\mathbf{X_1, ... ,X_n}$ i.i.d random vectors where each vector:
 
@@ -79,9 +114,17 @@ The variance is given by the matrix $\Sigma$ as before. The sample mean:
 Then $\sigma^{-\frac{1}{2}} (\overline{X}-\mu)$ converges in distribution ot $\mathscr{N}(0,1)$.
 
 
+% proof
+\subsection{Proof of the Central Limit Theorem}
+\citeasnoun{wasserman2013all}, page 81.
+
+
+
+
+% Delta Method
 \subsection{Delta Method}
 
-The delta method allows inference upon the limiting behavior of functions of random variables if that random variable converges in distribution to a normal distribution.
+The delta method allows statements regarding the convergence of functions of random variables, whenever the input random variable converges in distribution to a normal distribution. 
 
 If $Y_n$ has a limiting normal distribution, and $g(Y_n )$ is a smooth function so that $g'(\mu) \neq 0$, then if:
 
