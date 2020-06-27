@@ -175,7 +175,7 @@ As one would expect, if $X_1 \sim \Gamma(\alpha_1,\beta)$ and $X_2 \sim \Gamma(\
 \section{$t$-Distribution $\mathrm{t_\nu\ }$}
 
 \subsection{Cauchy Distribution $t_1$}
-
+The Cauchy Distribution does not have a mean. It is infinite.
 
 
 \section{Chi$^2$-Distribution $\chi^2_p$}
@@ -281,15 +281,17 @@ f{\mathbf{x}} = \frac{1}{(2\pi)^{\frac{k}{2}}|\Sigma|^{\frac{1}{2}}}\exp\{-\frac
 
 
 
+% covariance matrix
 \subsection{Covariance Matrix $\mathbf{\Sigma}$}
 The covariance matrix $\mathbf{\Sigma}$ is symmetric and positive definite. Therefore, $\mathbf{\Sigma}^{\frac{1}{2}}$ exists and is real, symmetric, and
 
 \begin{itemize}
 \item $\mathbf{\Sigma}^{\frac{1}{2}}\mathbf{\Sigma}^{\frac{1}{2}} = \mathbf{\Sigma}$
-\item $\mathbf{\Sigma}^{\frac{1}{2}}\mathbf{\Sigma}^{-\frac{1}{2}}=\mathbf{\Sigma}^{-\frac{1}{2}}\mathbf{\Sigma}^{\frac{1}{2}}\mathbf{I}$
+\item $\mathbf{\Sigma}^{\frac{1}{2}}\mathbf{\Sigma}^{-\frac{1}{2}}=\mathbf{\Sigma}^{-\frac{1}{2}}\mathbf{\Sigma}^{\frac{1}{2}}=\mathbf{I}$
 \end{itemize}
 
 
+% marginal distribution 
 \subsection{Marginal Distribution}
 If $\mathbf{X} \sim \mathscr{N}(\mathbf{0},\mathbf{\Sigma})$, then the marginal distribution of $X_a$ is:
 
@@ -297,6 +299,8 @@ If $\mathbf{X} \sim \mathscr{N}(\mathbf{0},\mathbf{\Sigma})$, then the marginal 
 X_a \sim \mathscr{\mu_a,\Sigma_{aa}}
 \end{equation}
 
+
+% conditional distribution
 \subsection{Conditional Distribution}
 If $\mathbf{X} \sim \mathscr{N}(\mathbf{0},\mathbf{\Sigma})$, then the conditional distribution of $X_b$ given $X_a = x_a$ is:
 
@@ -304,6 +308,8 @@ If $\mathbf{X} \sim \mathscr{N}(\mathbf{0},\mathbf{\Sigma})$, then the condition
 X_b|X_a = x_a \sim \mathscr{N}(\mu_b + \Sigma_{ba}\Sigma_{aa}^{-1}(x_a - \mu_a), \Sigma_{bb}-\Sigma_{ba}\Sigma_{aa}^{-1}\Sigma_{ab}) 
 \end{equation}
 
+
+% vector multiplication 
 \subsection{Vector Multiplication}
 If $\mathbf{a}$ is a vector, then:
 
@@ -311,6 +317,8 @@ If $\mathbf{a}$ is a vector, then:
 \mathbf{a}^T \mathbf{X} \sim \mathscr{N}(\mathbf{a}^T \mathbf{\mu}, \mathbf{a}^T\mathbf{\Sigma}\mathbf{a})
 \end{equation}
 
+
+% relationship to chi2
 \subsection{Relationship to Chi$^2$}
 \begin{equation}
 V = \mathbf{Z}^T\mathbf{Z} = (\mathbf{X}-\mathbf{\mu})^T\mathbf{\Sigma}^{-1}(\mathbf{X}-\mathbf{\mu}) \sim \chi^2_k
@@ -323,4 +331,4 @@ The standard multivariate normal distribution for $\mathbf{Z} = (Z_1,...,Z_k)$ w
 f(z) = \prod^k_{i=1} f(z_i) = \frac{1}{(2\pi)^{\frac{k}{2}}}\exp \{ \frac{1}{2} \sum^{k}_{j=1} z_j\} = \frac{1}{(2\pi)^{\frac{k}{2}}}\exp \{ \frac{1}{2} \mathbf{z^T z}\}
 \end{equation}
 
-The transformation to a general multivariate normal random variable $\mathbf{X}$ is that if $\mathbf{Z} \sim \mathscr{0,\mathbf{I}}$, then $\mathbf{X} = \mathbf{\mu} + \mathbf{\Sigma}^{\frac{1}{2}}\mathbf{Z}$. Conversely, if $\mathbf{X}\sim \mathscr{\mathbf{\mu},\mathbf{\Sigma}}$ then $\mathbf{\Sigma}^{\frac{1}{2}}(\mathbf{X}-\mathbf{\mu}) \sim \mathscr{N}(0,\mathbf{I})$.
+The transformation to a general multivariate normal random variable $\mathbf{X}$ is that if $\mathbf{Z} \sim \mathscr{0,\mathbf{I}}$, then $\mathbf{X} = \mathbf{\mu} + \mathbf{\Sigma}^{\frac{1}{2}}\mathbf{Z}$. Conversely, if $\mathbf{X}\sim \mathscr{\mathbf{\mu},\mathbf{\Sigma}}$ then $\mathbf{\Sigma}^{-\frac{1}{2}}(\mathbf{X}-\mathbf{\mu}) \sim \mathscr{N}(0,\mathbf{I})$.

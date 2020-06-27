@@ -1,0 +1,74 @@
+\section{Inequalities for Probabilities}
+
+\subsection{Markov's Inequality}
+
+For any $t>0$: 
+\begin{equation}
+\mathbb{P}(X > t) \leq \frac{\mathbb{E}(X)}{t}
+\end{equation}
+
+This is a general result, independent of the distribution of $X$.
+
+\subsection{Chebyshev's Inequality}
+
+\begin{equation}
+\mathbb{P}(|X-\mu| \geq t) \leq \frac{\sigma^2}{t^2}
+\end{equation}
+
+and
+
+\begin{equation}
+\mathbb{P}(|Z| \geq k) \leq \frac{1}{k^2}
+\end{equation}
+
+where $Z = (X-\mu)/\sigma$. This is a general result that can be proven using Markov's inequality.
+
+\subsection{Hoeffding's Inequality}
+Let $Y_1,...,Y_n$ be independent observations so that $\mathbb{E}Y_i = 0$ and $a_i \leq Y_i \leq b_i$. Then, for any $t>0$,
+
+\begin{equation}
+\mathbb{P}\left( \sum_{i=1}^n Y_i \geq \epsilon \right) \leq e^{-t\epsilon}\prod_{i=1}^n e^{t^2 (b_i - a_i)^2/8}
+\end{equation}
+
+Hoeffding's inequality provides a sharper bound than Markov's inequality and relies on bounds of the random variables rather than their variance.
+
+\subsubsection{Example: Bernoulli Random Variables}
+Let $X_1,...,X_n \sim \mathrm{Bernoulli}(p)$. Assume that the goal is to measure the parameter $p$, which is estimated by the sample mean. This could for example be the error rate of a binary classifier. For the Bernoulli Random variable, $0\leq X_1 \leq 1$, so that the probability that the estimate of the error rate is off by more than $\epsilon$ is given by:
+
+\begin{equation}
+\mathbb{P}(|\overline(X)_n - p| > \epsilon) \leq 2e^{-2n\epsilon^2}
+\end{equation}
+
+\subsection{Mill's Inequality}
+Mill's inequality is useful for normal random variables. Let $Z \sim \mathscr{N}(0,1)$, then the probability that $|Z|$ will be greater than some value $t$ is bounded by: 
+
+\begin{equation}
+\mathbb{P}(|Z|>t) \leq \frac{2}{\pi}\frac{e^{-t^2/2}}{t}
+\end{equation}
+
+
+\section{Inequalities for Expectations}
+
+\subsection{Cauchy-Schwarz Inequality}
+
+\begin{equation}
+\mathbb{E}|XY|\leq \sqrt{\mathbb{E}X^2 \mathbb{E}Y^2}
+\end{equation}
+
+
+
+\subsection{Jensen's Inequality}
+
+Jensen's inequality provides bounds for expectations for non-linear functions of a random variable. Given a random variable $X$ and a function $g(X)$, if $g(X)$ is convex:
+
+\begin{equation}
+\mathbb{E}g(X) \geq g(\mathbb{E}X)
+\end{equation}
+
+If $g(X)$ is concave:
+
+\begin{equation}
+\mathbb{E}g(X) \leq g(\mathbb{E}X)
+\end{equation}
+
+

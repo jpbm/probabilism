@@ -1,0 +1,31 @@
+\section{Moment Generating Functions, Laplace Transforms}
+
+The moment generating function (MGF) of a random variable $X$ is:
+
+\begin{equation}
+\psi_X(t) = \mathbb{E}(e^{tX}) = \int e^{tx}dF(x)
+\end{equation}
+
+The MGF allows for interchanging the operations of differentiation and "taking expectation".
+
+\section{Cumulant Generating Functions}
+The cumulants provide an alternative to the moments of the distribution.
+
+\begin{equation}
+K_X(t) = \log\mathbb{E}(e^{tX}) = \log\int e^{tx}dF(x)
+\end{equation}
+
+Then the $n$th cumulant $\kappa_n = K_X^{(n)}(0)$ is the $n$th derivative of the cumulant generating function.
+
+The first cumulant is the mean, the second cumulant is the variance. 
+
+\section{Characteristic Function}
+
+\begin{equation}
+C_X(t) = \mathbb{E}(e^{itX}) = \int e^{itx}dF(x)
+\end{equation}
+
+The characteristic function has the advantage that it is well-defined for all real values of $t$ even when $\mathbb{E}e^{tX}$ is not well defined.
+
+
+

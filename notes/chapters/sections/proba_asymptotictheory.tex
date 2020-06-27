@@ -1,0 +1,104 @@
+\section{Asymptotic Theory}
+
+Asymptotic theory, large sample theory, or limit theory, deals with the question of the limiting behavior of sequences of random variables. 
+
+The notion of convergence for random variables is more involved than is usual for, for example, a sequence of numbers or functions in calculus. There are different types of convergence, and they do not necessarilty imply one another.
+
+The chain of implication is:
+
+\begin{equation}
+\mathrm{quadratic\ mean} \rightarrow \mathrm{probability} \rightarrow \mathrm{distribution}
+\end{equation}
+
+For point mass distributions only, convergence in distribution implies convergence in probability. Similarlty, implication rules exist for functions of random variables when convergence for the underlying random variables is given. See Theorems 5.4 and 5.5 in \citeasnoun{wasserman2013all} (page 73-74). 
+
+\subsection{Convergence in Probability}
+
+\begin{equation}
+\mathbb{P}(|X_n - X| > \epsilon) \rightarrow 0
+\end{equation}
+
+as $n\rightarrow \infty$. Convergence in Probability means that the distribution of $X_n$ becomes sharper and sharper around $X$ as $n\rightarrow \infty$. At $n=\infty$, it has point mass distribution concentrated at $X$.
+
+\subsection{Convergence in Distribution}
+Where $F$ is the CDF of $X_n$,
+
+\begin{equation}
+\lim_{n\rightarrow \infty} F_n(t) = F(t)
+\end{equation}
+
+For all $t$ for which $F$ is continuous. That means, convergence is satisfied even when the equality is violated at points of discontinuity.
+
+\subsection{Convergence in Quadratic Mean, Concergence in $L_2$}
+
+\begin{equation}
+\mathbb{E}(X_n - X)^2 \rightarrow 0
+\end{equation}
+
+as $n\rightarrow \infty$.
+
+% WLLN
+\subsection{Weak Law of Large Numbers}
+
+The sample mean of i.i.d. variables  $\overline{X}_n$ converges in probability to the mean of the distribution $\mu$i. It can be proven with Chebyshev's inequality that:
+
+\begin{equation}
+\mathbb{P}(|\overline{X}_n-\mu|>\epsilon) \leq \frac{\mathbb{V}(\overline{X}_n)}{\epsilon^2}=\frac{\sigma^2}{n \epsilon^2}
+\end{equation}
+
+In words, the probability that the sample mean deviates from the population mean by more than $\epsilon$ has an upper bound that decreases inversely proportional to $n\epsilon^2$. The probability becomes more and more centered around the mean $\mu$.
+
+% CLT
+\subsection{Central Limit Theorem}
+The distribution of the sample mean converges in distribution to a normal distribution with variance $\sigma^2/n$ and mean $\mu$.
+
+If $Z_n = \frac{\overline{X}_n - \mu}{\sqrt{\mathbb{V}(\overline{X}_n)}}$ then $\lim_{n\rightarrow \infty} \mathbb{P}(Z_n \leq z) = \Phi(z)$, where $\Phi(z)$ is the CDF of a standard normal distribution. 
+
+It turns out that when $Z_n$ is obtained by normalizing not by the (most likely unknown) population variance $\sigma$ but by the sample variance $S_n^2$, the CLT still holds. The accuracy of this is given by the Berry-Ess\'een Inequality.
+
+
+\subsection{Multivariate Central Limit Theorem}
+Given $\mathbf{X_1, ... ,X_n}$ i.i.d random vectors where each vector:
+
+\begin{equation}
+\mathbf{X_i} = \left(\begin{array}{c}X_{1i}\\ X_{2i} \\ \vdots \\ X_{ki} \end{array}\right)
+\end{equation}
+
+Then the population mean:
+
+\begin{equation}
+\mathbf{\mu} = \left(\begin{array}{c} \mu_1 \\ \mu_2 \\ \vdots \\ \mu_k \end{array} \right) =  \left(\begin{array}{c} \mathbb{E}(X_{i1}) \\ \mathbb{E}(X_{i2}) \\ \vdots \\ \mathbb{E}(X_{ik}) \end{array} \right)
+\end{equation}
+
+The variance is given by the matrix $\Sigma$ as before. The sample mean:
+
+\begin{equation}
+\overline{\mathbf{X}} = \left(\begin{array}{c}\overline{X_{1}}\\ \overline{X_{2}} \\ \vdots \\ \overline{X_{k}} \end{array}\right)
+\end{equation}
+
+Then $\sigma^{-\frac{1}{2}} (\overline{X}-\mu)$ converges in distribution ot $\mathscr{N}(0,1)$.
+
+
+\subsection{Delta Method}
+
+The delta method allows inference upon the limiting behavior of functions of random variables if that random variable converges in distribution to a normal distribution.
+
+If $Y_n$ has a limiting normal distribution, and $g(Y_n )$ is a smooth function so that $g'(\mu) \neq 0$, then if:
+
+\begin{equation}
+\frac{\sqrt{n}(Y_n - \mu)}{\sigma} \xrightarrow{dist} \mathscr{N}(0,1)
+\end{equation}
+
+Then:
+
+\begin{equation}
+\frac{\sqrt{n}(g(Y_n)-g(\mu))}{|g'(\mu)|\sigma}\xrightarrow{dist}\mathscr{N}(0,1)
+\end{equation}
+
+Rewriting, if $Y_n \xrightarrow{dist}\mathscr{N}(\mu,\frac{\sigma^2}{n})$ then $g(Y_n)\xrightarrow{dist}\mathscr{N}(g(\mu),(g'(\mu))^2\frac{\sigma^2}{n})$.
+
+\subsubsection{Multivariate Delta Method}
+
+If $\mathbf{Y_n} \xrightarrow{dist}\mathscr{\mathbf{\mu},\mathbf{\Sigma}}$ then the scalar-valued function $g(\mathbf{Y_n}) \xrightarrow{dist}\mathscr{N}(g(\mathbf{\mu}),\frac{1}{n} (\nabla g(\mu))^T \mathbf{\Sigma} (\nabla g(\mu)) )$.
+
+Use case would be functions of several sample means, where the underlying samples have covariance (cf. \cite{wasserman2013all}, p. 80).

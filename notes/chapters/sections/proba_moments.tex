@@ -1,0 +1,94 @@
+% Expectations
+\section{Expectations}
+
+\subsection{Law of the Unconscious Statistician}
+Given a random variable $X$ with distribution $f(x)$ and some function $r(x)$, the expected value $\mathbb{E}(r)$ is given by:
+
+\begin{equation}
+\mathbb{E}(r) = \int r(x) \mathrm{d}F_X(x)
+\end{equation}
+
+\subsection{Linearity of Expeced Value}
+\begin{equation}
+\mathbb{E}\left(\sum_i a_i X_i \right) = \sum_i a_i \mathbb{E}(X_i)
+\end{equation}
+
+% Moments
+\section{Moments, Central Moments}
+
+The $k$th moment is $\mathbb{E}X^k$. The $k$th central moment is $\mathbb{E}(X-\mu)^k$.
+
+
+% Variance
+\section{Variance}
+
+In one dimension:
+\begin{equation}
+\sigma^2 =\mathbb{V}(X) = \mathbb{E}(X-\mu)^2 = \int (x-\mu)^2 \mathrm{d}F(x)
+\end{equation}
+
+The standard deviation is $\mathrm{sd}(X) = \sqrt{\mathbb{V}(X)}$. 
+
+\begin{itemize}
+\item $\mathbb{V}(X) = \mathbb{E}(X^2) - \mu^2$.
+\item If $a$ and $b$ are constants, $\mathbb{V}(aX+b) = a^2 \mathbb{V}(X)$.
+\item If $X_1,...,X_n$ are independent and $a_1,...,a_n$ are constants, then $\mathbb{V}\left(\sum^n_{i=1}a_i X_i\right) = \sum_{i=1}^n a_i^2 \mathbb{V}(X_i)$
+\end{itemize}
+
+
+% Higher Dimensions
+\section{Mean and Variance of Vector Valued Random Variables}
+The mean is simply $\mathbb{E}(\mathbf{X}) = (...,\mathbb{E}(X_i),...,) $. In higher dimensions, the variance is a matrix with entries $\Sigma_{i,j}= \mathrm{Cov}(X_i,X_j)$. 
+
+\begin{itemize}
+\item $\mathbb{E}(\mathbf{a}^T \mathbf{X}) = \mathbf{a}^T\mathbf{\mu}$
+\item $\mathbb{E}(\mathbf{A}\mathbf{X}) = \mathbf{A\mu}$
+\item $\mathbb{V}(\mathbf{a}^T \mathbf{X}) = \mathbf{a}^T\mathbf{\Sigma}\mathbf{a}$
+\item $\mathbb{V}(\mathbf{AX}) = \mathbf{A\Sigma A}^T$
+\end{itemize}
+
+% Covariance
+\section{Covariance, Correlation}
+\begin{equation}
+\mathrm{Cov}(X,Y) = \mathbb{E}(XY) - \mathbb{E}X\mathbb{E}Y
+\end{equation}
+
+
+
+% Sample Mean, Sample Variance
+\section{Sample Mean and Sample Variance}
+If $X_1,...,X_n$ are random variables, the \textit{sample mean} is:
+
+\begin{equation}
+\overline{X}_n = \frac{1}{n}\sigma_i X_i
+\end{equation}
+
+The \textit{sample variance} is:
+
+\begin{equation}
+S^2_n = \frac{1}{n-1} \sum^n_{i=1} (X_i - \overline{X}_n)^2
+\end{equation}
+
+The sample mean and sample variance are random variables. The mean and variance are fixed properties of the underlying distribution.
+
+\begin{equation}
+\begin{array}{l}
+\mathbb{E}(\overline{X}_n) = \mu\\
+\mathbb{V}(\overline{X}_n) = \frac{\sigma^2}{n}\\
+\mathbb{E}(S_n^2) = \sigma^2\\
+\end{array}
+\end{equation}
+
+
+\section{Law of Iterated Expectation}
+
+Given two random variables $X$ and $Y$, the law of iterated expectation states:
+
+\begin{equation}
+\mathbb{E}(X) = \mathbb{E}\mathbb{E}(X|Y)
+\end{equation}
+
+\subsection{Applied to Variance}
+\begin{equation}
+\mathbb{V}(Y) = \mathbb{EV}(Y|X) + \mathbb{VE}(Y|X)
+\end{equation}
