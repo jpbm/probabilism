@@ -1,0 +1,10 @@
+\section{The Bootstrap}
+
+Bootstrap allows for investigating the variance of a statistic by calculating the statistic many times on samples drawn from the empirical CDF. This amounts to sampling from the dataset with replacement (i.e. datapoints may be included in a sample several times).
+
+There are two approximations in play: first, the true CDF is approximated using the empirical CDF. Second, the variance of the statistic is estimated based on a sample.
+
+Uncertainty in terms of bootstrap estimates may be calculated in terms of normal, pivotal or percentile intervals. The normal interval is valid when the statistic is approximately normally distributed.
+
+\section{Jackknife}
+The Jackknife method is less computationally expensive, but less general than the bootstrap. For a dataset of $n$ elements, the Jackknife method calculates the statistic $n$ times, each time removing one of the estimates from the calculation. The jackknife does not produce consistent estimators of the standard error of sample quantiles. 
