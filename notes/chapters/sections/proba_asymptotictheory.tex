@@ -121,9 +121,10 @@ Then $\sigma^{-\frac{1}{2}} (\overline{X}-\mu)$ converges in distribution ot $\m
 Given i.i.d random variables $X_i$, the transformation $Y_i = \frac{X_i-\mu}{\sigma}$ gives i.i.d. random variables with zero mean and unit variance. Let $\psi(t)$ be the MGF of $Y_i$. Since $Y_i$ are i.i.d., the sum $\sum_{i=1}^n Y_i$ has MGF $\psi(t)^n$. The normalized sample mean $Z_n = \frac{1}{\sqrt{n}}\sum_{i=1}^n Y_i$ has MGF $\Xi_n(t)=\psi(t/\sqrt{n})^n$. Two random variables that have the same MGF in an open interval about the point $t=0$ have the same distribution, probably because the Laplace transform is injective. Therefore, if $\psi_n(t)\rightarrow \psi(t)$ in some open interval around $t=0$, then their underlying random variables $Z_n \xrightarrow{dist}Z_n$ converge in distribution. Taking the Taylor expansion of $\epsilon_n(t)$:
 
 \begin{equation}
-x
+\epsilon_n(t) = \left(1+0+\frac{t^2}{2! n} + ... \right)^n \rightarrow e^{t^2/2}
 \end{equation}
 
+Which is the MGF of $\mathscr{N}(0,1)$
 
 % Delta Method
 \subsection{Delta Method}

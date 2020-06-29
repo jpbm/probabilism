@@ -1,0 +1,109 @@
+\section{Parametric and Nonparametric Models}
+
+A statistical model $\mathfrak{F}$ is a family of functions. \textit{Parametric models} can be parametrized by a finite number of parameters. For example, the Gaussian Normal distribution $\mathscr{\mu,\sigma^2}$ has the two parameters $\mu$ and $\sigma^2$. The general form is:
+
+\begin{equation}
+\mathfrak{F} = \{f(x;\theta): \theta \in \Theta \}
+\end{equation}
+
+Where $\theta$ is a vector of parameters and $\Theta$ is the parameter space. Elements of $\theta$ that are not of interest are called \textit{nuisance parameters}. \textit{Nonparametric models} cannot be described by a finite number of parameters. An example is an interpolating spline.
+
+
+% fundamental concepts
+\section{Fundamental Concepts in Inference}
+
+
+% point estimations
+\subsection{Point Estimation}
+Point estimation refers to providing a single best guess of some quantity of interest. The point estimator is denoted with a had, i.e. $\hat{\theta}$. The point estimator for some quantity based on $n$ datapoints:
+
+\begin{equation}
+\hat{\theta}_n = g(X_1,X_2,...,X_n)
+\end{equation}
+
+
+% bias
+\subsection{Bias}
+A point estimator $\hat{\theta}$ has bias:
+
+\begin{equation}
+\mathrm{bias}(\hat{\theta}_n) = \mathbb{E}_\theta (\hat{\theta}) - \theta
+\end{equation}
+
+Where $\theta$ is the "true" value $\theta_n \rightarrow \theta$ as $n \rightarrow \infty$. $\mathbb{E}_{\theta}(r(X)) = \int r(x) f(x;\theta) \mathrm{d}x$. 
+
+% consistency
+\subsection{Consistency}
+
+A point estimator $\hat{\theta}_n$ is consistent if $\hat{\theta}_n \xrightarrow{P}\theta$. That is, it converges in probability to $\theta$. $\hat{\theta}_n$ is consistent with both bias and standard error approach $0$ as $n\rightarrow \infty$.
+
+
+\subsection{Sampling Distribution, Standard Error}
+
+The distribution of $\hat{\theta}_n$ is the \textit{sampling distribution}. The standard deviation of the distribution of $\hat{\theta}_n$ is the \textit{standard error}, denoted $\mathrm{se}$. 
+
+\begin{equation}
+\mathrm{se}(\hat{\theta}_n) = \sqrt{\mathbb{V}(\hat{\theta}_n)}
+\end{equation} 
+
+The standard error might depend on the unknown population CDF, in which case it is estimated. The point estimator for the standard error is then $\hat{\mathrm{se}}$. 
+
+
+
+\subsubsection{Example: Bernoulli Distribution}
+
+Let $X_1,X_2,X_3 \sim \mathrm{Bernoulli}(p)$. The point estimator for $p$ based on $n$ datapoints is $\hat{p}_n = \frac{1}{n}\sum_{i=1}^n X_i$. Then the expected value of the point estimator $\mathbb{E}(\hat{p}_n) = \frac{1}{n}\sum_{i=1}^n \mathbb{E}(X_i) = p$, so that $\hat{p}_n$ is unbiased. The standard error is $\mathrm{se} = \sqrt{\mathbb{V}(\hat{p}_n)} = \sqrt{\frac{p(1-p)}{n}}$. The estimated standard error is $\hat{\mathrm{se}} = \sqrt{\frac{\hat{p}(1-\hat{p})}{n}}$.
+
+
+% MSE
+\subsection{Mean Squared Error}
+The quality of a point estimator is often measured using the \textit{mean squared error}:
+
+\begin{equation}
+\mathrm{MSE} = \mathbb{E}_{\theta}(\hat{\theta}_n - \theta)^2 = \mathrm{bias}^2(\hat{\theta}_n) + \mathbb{V}_{\theta}(\hat{\theta}_n)
+\end{equation}
+
+
+% Asymptotically Normal
+\subsection{Asymptotically Normal Estimators}
+An asymptotically normal estimator satisfies:
+
+\begin{equation}
+\frac{\hat{\theta}_n - \theta}{\mathrm{se}} \xrightarrow{dist} \mathscr{N}(0,1)
+\end{equation}
+
+
+% confidence sets
+\subsection{Confidence Sets}
+
+A confidence set $C_n$ is the subset of parameters $\theta$ that has a greater than $1-\alpha$ probability of containing the true value of $\theta$.
+
+\begin{equation}
+\mathbb{P}_{\theta}(\theta \in C_n)\geq 1-\alpha\ \mathrm{\ for\ all\ }\theta\in\Theta
+\end{equation}
+
+\subsubsection{Normal-Based Confidence Intervals}
+
+If $\hat{\theta}_n \approx \mathscr{N}(\theta,\hat{\mathrm{se}}^2)$ and $z_{\frac{\alpha}{2}} = \Phi^{-1}(1-\frac{\alpha}{2})$ the value of the standard normally distributed random variable $Z$ at which $\mathbb{P}(-\frac{\alpha}{2} < Z < \frac{\alpha}{2}) = 1-\alpha$, then, transforming backwards, $\mathbb{P}(\hat{\theta}_n - z_{\frac{\alpha}{2}}\hat{\mathrm{se}} < \theta < \hat{\theta}_n + z_{\frac{\alpha}{2}}\hat{\mathrm{se}} ) = 1-\alpha$. Hence, the confidence interval for a normally distributed point estimator $\hat{\theta}_n$ is: 
+
+\begin{equation}
+C_n = (\hat{\theta}_n - z_{\frac{\alpha}{2}}\hat{\mathrm{se}},\hat{\theta}_n + z_{\frac{\alpha}{2}}\hat{\mathrm{se}})
+\end{equation}
+
+For a 95\% confidence interval $\alpha=0.05$ and $z_{\frac{\alpha}{2}} = 1.96 \approx 2$, so that the confidence interval is approximately $\hat{\theta}_n \pm 2 \hat{\mathrm{se}}$. 
+
+
+\subsubsection{Pointwise and Uniform Asymptotic Confidence Intervals}
+
+A \textit{pointwise asymptotic} confidence interval requires:
+
+\begin{equation}
+\liminf_{n\rightarrow \infty} \mathbb{P}_{\theta}(\theta \in C_n) \geq 1-\alpha,	\ \ \forall \theta \in \Theta
+\end{equation}   
+
+A \textit{uniform asymptotic} confidence interval requires:
+
+\begin{equation}
+\lim_{n\rightarrow \infty}\inf_{\theta \in \Theta} \mathbb{P}_{\theta}(\theta \in C_n) \geq 1-\alpha
+\end{equation}
+

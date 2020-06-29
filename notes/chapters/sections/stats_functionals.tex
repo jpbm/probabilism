@@ -1,0 +1,71 @@
+\section{Empirical Distribution Function}
+It may be necessary to perform non-parametric estimation of the CDF $F$ of a set of random variables $X_1, X_2, ... , X_n \sim F$. 
+
+The empirical distribution function $\hat{F}_n$ is the CDF that puts mass $1/n$ at each point $X_i$.
+
+\begin{equation}
+\hat{F}_n(x) = \frac{\sum_{i=1}^n I(X_i \leq x)}{n}
+\end{equation}
+
+Where $I(X_i \leq x) = \left\{\begin{array}{c} 1\ \mathrm{if\ } X_i \leq x\\ 0\ \mathrm{if\ } X_i > x \end{array} \right.$. 
+
+The empirical CDF is discrete, even when the random variable it is based on may be continuous. 
+
+At a given point $x$, $\hat{F}_n(x)$ is an unbiased estimator of $F(x)$. 
+
+\begin{itemize}
+\item $\mathbb{E}\hat{F}_n(x) = F(x)$
+\item $\mathbb{V}\hat{F}_n(x) = 0+\mathrm{MSE} = \frac{F(x)(1-F(x))}{n}$
+\item $\hat{F}_n(x) \xrightarrow{P} F(x)$
+\end{itemize}
+
+The Glivenko-Cantelli Theorem guarantees that, if $X_1,X_2,...,X_n \sim F$, then:
+
+\begin{equation}
+\sup_x |\hat{F}_n(x) - F(x)|\xrightarrow{P} 0
+\end{equation}
+
+\subsection{Confidence Measures for the Empirical CDF}
+A confidence interval for the empirical CDF is given through the Dvoretzky-Kiefer-Wolfowitz (DKW) Inequality:
+
+\begin{equation}
+\mathbb{P}\left(\sup_x|F(x) - \hat{F}_n(x)|>\epsilon \right)\leq 2 e^{-2n\epsilon^2}
+\end{equation}
+
+A nonparametric $1-\alpha$ confidence band is then:
+
+\begin{equation}
+\begin{array}{c}
+L(x) = \max\{\hat{F}_n -\epsilon_n, 0 \}\\
+\\
+U(x) = \min\{\hat{F}_n + \epsilon_n, 1\}
+\end{array}
+\end{equation}
+
+with $\epsilon_n = \sqrt{\frac{1}{2n}\log\left(\frac{2}{\alpha}\right)}$.
+
+\begin{equation}
+\mathbb{P}\left(L(x) \leq F(x) \leq U(x) \right) \geq 1-\alpha
+\end{equation}
+
+
+
+\section{Statistical Functionals}
+A functional is, roughly speaking, a function of a function. The fourier transform of a function is a functional. A \textit{statistical functional} is any function of the CDF, $F$. Examples are the mean, the variance, or the median. 
+
+\subsection{Plug-in Estimator}
+The plug-in estimator of $\theta = T(F)$ is given by $\hat{\theta} = T(\hat{F}_n)$. In other words, the estimate of the CDF is used instead of the true $F$, resulting in an estimator.
+
+\subsection{Linear Functionals}
+Functionals of the form $T(F) = \int r(x) dF(x)$ are linear functionals.  
+
+\subsection{Plug-in Estimator for Linear Functionals}
+\begin{equation}
+T(\hat{F}_n) = \int r(x) d\hat{F}_n(x) = \frac{1}{n}\sum^{n}_{i=1}r(X_i)
+\end{equation}
+
+\subsection{Examples: Mean, Variance, Sample Variance, Sample Correlation}
+\citeasnoun{wasserman2013all} pp. 100
+
+\section{Empirical Processes}
+
