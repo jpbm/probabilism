@@ -275,64 +275,69 @@
 \BOOKMARK [2][-]{subsection.7.4.4}{Examples: Mean, Variance, Sample Variance, Sample Correlation}{section.7.4}% 275
 \BOOKMARK [1][-]{section.7.5}{The Bootstrap}{chapter.7}% 276
 \BOOKMARK [1][-]{section.7.6}{Jackknife}{chapter.7}% 277
-\BOOKMARK [1][-]{section.7.7}{Directional Statistics}{chapter.7}% 278
-\BOOKMARK [2][-]{subsection.7.7.1}{Mean Direction}{section.7.7}% 279
-\BOOKMARK [2][-]{subsection.7.7.2}{Dispersion}{section.7.7}% 280
-\BOOKMARK [1][-]{section.7.8}{Features}{chapter.7}% 281
-\BOOKMARK [2][-]{subsection.7.8.1}{Dense Features, Sparse Features}{section.7.8}% 282
-\BOOKMARK [1][-]{section.7.9}{Multicollinearity}{chapter.7}% 283
-\BOOKMARK [2][-]{subsection.7.9.1}{Sources}{section.7.9}% 284
-\BOOKMARK [1][-]{section.7.10}{R2 Value}{chapter.7}% 285
-\BOOKMARK [1][-]{section.7.11}{Regression Diagnostics}{chapter.7}% 286
-\BOOKMARK [1][-]{section.7.12}{t-Statistics}{chapter.7}% 287
-\BOOKMARK [1][-]{section.7.13}{AIC and BIC}{chapter.7}% 288
-\BOOKMARK [1][-]{section.7.14}{Factor Regression}{chapter.7}% 289
-\BOOKMARK [1][-]{section.7.15}{Factor Models}{chapter.7}% 290
-\BOOKMARK [0][-]{chapter.8}{Linear Regression}{}% 291
-\BOOKMARK [1][-]{section.8.1}{Least Squares Regression \(L2\)}{chapter.8}% 292
-\BOOKMARK [2][-]{subsection.8.1.1}{The Normal Equations, Analytical Least Squares Estimator}{section.8.1}% 293
-\BOOKMARK [2][-]{subsection.8.1.2}{The Quick Way to }{section.8.1}% 294
-\BOOKMARK [2][-]{subsection.8.1.3}{The Long Way to }{section.8.1}% 295
-\BOOKMARK [2][-]{subsection.8.1.4}{Projection Matrix}{section.8.1}% 296
-\BOOKMARK [2][-]{subsection.8.1.5}{Bayesian Perspective on Least Squares Regression}{section.8.1}% 297
-\BOOKMARK [2][-]{subsection.8.1.6}{Q-plots}{section.8.1}% 298
-\BOOKMARK [2][-]{subsection.8.1.7}{Variance Inflation Factor}{section.8.1}% 299
-\BOOKMARK [1][-]{section.8.2}{Total Least Squares}{chapter.8}% 300
-\BOOKMARK [1][-]{section.8.3}{Ridge Regression \(Tikhonov Regularization, ||||2\)}{chapter.8}% 301
-\BOOKMARK [2][-]{subsection.8.3.1}{Analytical Ridge Estimator}{section.8.3}% 302
-\BOOKMARK [2][-]{subsection.8.3.2}{Bayesian Perspective on Ridge Regression}{section.8.3}% 303
-\BOOKMARK [1][-]{section.8.4}{Least Absolute Shrinkage and Selection Operator Regression \(LASSO\)}{chapter.8}% 304
-\BOOKMARK [1][-]{section.8.5}{Least Absolute Deviation Regression \(LAD, L1\)}{chapter.8}% 305
-\BOOKMARK [1][-]{section.8.6}{Generalized Linear Models}{chapter.8}% 306
-\BOOKMARK [0][-]{chapter.9}{Bayesian Data Analysis}{}% 307
-\BOOKMARK [1][-]{section.9.1}{Markov Chain Monte Carlo Methods}{chapter.9}% 308
-\BOOKMARK [0][-]{chapter.10}{Unsupervised Learning}{}% 309
-\BOOKMARK [1][-]{section.10.1}{Blind Source Separation}{chapter.10}% 310
-\BOOKMARK [1][-]{section.10.2}{Clustering}{chapter.10}% 311
-\BOOKMARK [2][-]{subsection.10.2.1}{K-Means}{section.10.2}% 312
-\BOOKMARK [2][-]{subsection.10.2.2}{Affinity Propagation}{section.10.2}% 313
-\BOOKMARK [1][-]{section.10.3}{Independent Component Analysis \(ICA\)}{chapter.10}% 314
-\BOOKMARK [1][-]{section.10.4}{Compressed Sensing}{chapter.10}% 315
-\BOOKMARK [1][-]{section.10.5}{X = UVT Eigenanalysis, Singular Value Decomposition \(SVD\)}{chapter.10}% 316
-\BOOKMARK [2][-]{subsection.10.5.1}{Example: Eigenfaces and Facial Recognition}{section.10.5}% 317
-\BOOKMARK [2][-]{subsection.10.5.2}{Tracking an Eigensystem over Time}{section.10.5}% 318
-\BOOKMARK [2][-]{subsection.10.5.3}{Bayesian SVD}{section.10.5}% 319
-\BOOKMARK [2][-]{subsection.10.5.4}{Randomized SVD}{section.10.5}% 320
-\BOOKMARK [1][-]{section.10.6}{Principal Component Analysis \(PCA\)}{chapter.10}% 321
-\BOOKMARK [2][-]{subsection.10.6.1}{Relationship between PCA and SVD}{section.10.6}% 322
-\BOOKMARK [2][-]{subsection.10.6.2}{Tracking Principal Components over Time}{section.10.6}% 323
-\BOOKMARK [2][-]{subsection.10.6.3}{L1-Norm Principal Component Analysis \(L1 PCA\)}{section.10.6}% 324
-\BOOKMARK [1][-]{section.10.7}{X=WH Non-Negative Matrix Factorization}{chapter.10}% 325
-\BOOKMARK [1][-]{section.10.8}{Optimal Truncation}{chapter.10}% 326
-\BOOKMARK [2][-]{subsection.10.8.1}{Scree Plots, Heuristic Methods}{section.10.8}% 327
-\BOOKMARK [2][-]{subsection.10.8.2}{Gavish \046 Donoho's Optimal Threshold for SVD}{section.10.8}% 328
-\BOOKMARK [1][-]{section.10.9}{Matrix Completion, Imputation}{chapter.10}% 329
-\BOOKMARK [2][-]{subsection.10.9.1}{Nuclear Norm Regularization}{section.10.9}% 330
-\BOOKMARK [0][-]{chapter.11}{Dynamical Systems}{}% 331
-\BOOKMARK [1][-]{section.11.1}{Mode Decompositions}{chapter.11}% 332
-\BOOKMARK [1][-]{section.11.2}{Koopman and Frobenius-Perron Operators}{chapter.11}% 333
-\BOOKMARK [1][-]{section.11.3}{Proper Orthogonal Decomposition \(POD\)}{chapter.11}% 334
-\BOOKMARK [1][-]{section.11.4}{Dynamic Mode Decomposition \(DMD\)}{chapter.11}% 335
-\BOOKMARK [1][-]{section.11.5}{Extended Dynamical Mode Decomposition \(EDMD\)}{chapter.11}% 336
-\BOOKMARK [1][-]{section.11.6}{Sparse Identification of Nonlinear Dynamics \(SINDy\)}{chapter.11}% 337
-\BOOKMARK [1][-]{section.11.7}{DMD with Irregularly Sampled Timesteps}{chapter.11}% 338
+\BOOKMARK [1][-]{section.7.7}{Parametric Inference}{chapter.7}% 278
+\BOOKMARK [2][-]{subsection.7.7.1}{Method of Moments}{section.7.7}% 279
+\BOOKMARK [2][-]{subsection.7.7.2}{Maximum Likelihood Estimation}{section.7.7}% 280
+\BOOKMARK [2][-]{subsection.7.7.3}{Parametric Confidence Intervals}{section.7.7}% 281
+\BOOKMARK [1][-]{section.7.8}{Score Function, Fisher Information}{chapter.7}% 282
+\BOOKMARK [1][-]{section.7.9}{Directional Statistics}{chapter.7}% 283
+\BOOKMARK [2][-]{subsection.7.9.1}{Mean Direction}{section.7.9}% 284
+\BOOKMARK [2][-]{subsection.7.9.2}{Dispersion}{section.7.9}% 285
+\BOOKMARK [1][-]{section.7.10}{Features}{chapter.7}% 286
+\BOOKMARK [2][-]{subsection.7.10.1}{Dense Features, Sparse Features}{section.7.10}% 287
+\BOOKMARK [1][-]{section.7.11}{Multicollinearity}{chapter.7}% 288
+\BOOKMARK [2][-]{subsection.7.11.1}{Sources}{section.7.11}% 289
+\BOOKMARK [1][-]{section.7.12}{R2 Value}{chapter.7}% 290
+\BOOKMARK [1][-]{section.7.13}{Regression Diagnostics}{chapter.7}% 291
+\BOOKMARK [1][-]{section.7.14}{t-Statistics}{chapter.7}% 292
+\BOOKMARK [1][-]{section.7.15}{AIC and BIC}{chapter.7}% 293
+\BOOKMARK [1][-]{section.7.16}{Factor Regression}{chapter.7}% 294
+\BOOKMARK [1][-]{section.7.17}{Factor Models}{chapter.7}% 295
+\BOOKMARK [0][-]{chapter.8}{Linear Regression}{}% 296
+\BOOKMARK [1][-]{section.8.1}{Least Squares Regression \(L2\)}{chapter.8}% 297
+\BOOKMARK [2][-]{subsection.8.1.1}{The Normal Equations, Analytical Least Squares Estimator}{section.8.1}% 298
+\BOOKMARK [2][-]{subsection.8.1.2}{The Quick Way to }{section.8.1}% 299
+\BOOKMARK [2][-]{subsection.8.1.3}{The Long Way to }{section.8.1}% 300
+\BOOKMARK [2][-]{subsection.8.1.4}{Projection Matrix}{section.8.1}% 301
+\BOOKMARK [2][-]{subsection.8.1.5}{Bayesian Perspective on Least Squares Regression}{section.8.1}% 302
+\BOOKMARK [2][-]{subsection.8.1.6}{Q-plots}{section.8.1}% 303
+\BOOKMARK [2][-]{subsection.8.1.7}{Variance Inflation Factor}{section.8.1}% 304
+\BOOKMARK [1][-]{section.8.2}{Total Least Squares}{chapter.8}% 305
+\BOOKMARK [1][-]{section.8.3}{Ridge Regression \(Tikhonov Regularization, ||||2\)}{chapter.8}% 306
+\BOOKMARK [2][-]{subsection.8.3.1}{Analytical Ridge Estimator}{section.8.3}% 307
+\BOOKMARK [2][-]{subsection.8.3.2}{Bayesian Perspective on Ridge Regression}{section.8.3}% 308
+\BOOKMARK [1][-]{section.8.4}{Least Absolute Shrinkage and Selection Operator Regression \(LASSO\)}{chapter.8}% 309
+\BOOKMARK [1][-]{section.8.5}{Least Absolute Deviation Regression \(LAD, L1\)}{chapter.8}% 310
+\BOOKMARK [1][-]{section.8.6}{Generalized Linear Models}{chapter.8}% 311
+\BOOKMARK [0][-]{chapter.9}{Bayesian Data Analysis}{}% 312
+\BOOKMARK [1][-]{section.9.1}{Markov Chain Monte Carlo Methods}{chapter.9}% 313
+\BOOKMARK [0][-]{chapter.10}{Unsupervised Learning}{}% 314
+\BOOKMARK [1][-]{section.10.1}{Blind Source Separation}{chapter.10}% 315
+\BOOKMARK [1][-]{section.10.2}{Clustering}{chapter.10}% 316
+\BOOKMARK [2][-]{subsection.10.2.1}{K-Means}{section.10.2}% 317
+\BOOKMARK [2][-]{subsection.10.2.2}{Affinity Propagation}{section.10.2}% 318
+\BOOKMARK [1][-]{section.10.3}{Independent Component Analysis \(ICA\)}{chapter.10}% 319
+\BOOKMARK [1][-]{section.10.4}{Compressed Sensing}{chapter.10}% 320
+\BOOKMARK [1][-]{section.10.5}{X = UVT Eigenanalysis, Singular Value Decomposition \(SVD\)}{chapter.10}% 321
+\BOOKMARK [2][-]{subsection.10.5.1}{Example: Eigenfaces and Facial Recognition}{section.10.5}% 322
+\BOOKMARK [2][-]{subsection.10.5.2}{Tracking an Eigensystem over Time}{section.10.5}% 323
+\BOOKMARK [2][-]{subsection.10.5.3}{Bayesian SVD}{section.10.5}% 324
+\BOOKMARK [2][-]{subsection.10.5.4}{Randomized SVD}{section.10.5}% 325
+\BOOKMARK [1][-]{section.10.6}{Principal Component Analysis \(PCA\)}{chapter.10}% 326
+\BOOKMARK [2][-]{subsection.10.6.1}{Relationship between PCA and SVD}{section.10.6}% 327
+\BOOKMARK [2][-]{subsection.10.6.2}{Tracking Principal Components over Time}{section.10.6}% 328
+\BOOKMARK [2][-]{subsection.10.6.3}{L1-Norm Principal Component Analysis \(L1 PCA\)}{section.10.6}% 329
+\BOOKMARK [1][-]{section.10.7}{X=WH Non-Negative Matrix Factorization}{chapter.10}% 330
+\BOOKMARK [1][-]{section.10.8}{Optimal Truncation}{chapter.10}% 331
+\BOOKMARK [2][-]{subsection.10.8.1}{Scree Plots, Heuristic Methods}{section.10.8}% 332
+\BOOKMARK [2][-]{subsection.10.8.2}{Gavish \046 Donoho's Optimal Threshold for SVD}{section.10.8}% 333
+\BOOKMARK [1][-]{section.10.9}{Matrix Completion, Imputation}{chapter.10}% 334
+\BOOKMARK [2][-]{subsection.10.9.1}{Nuclear Norm Regularization}{section.10.9}% 335
+\BOOKMARK [0][-]{chapter.11}{Dynamical Systems}{}% 336
+\BOOKMARK [1][-]{section.11.1}{Mode Decompositions}{chapter.11}% 337
+\BOOKMARK [1][-]{section.11.2}{Koopman and Frobenius-Perron Operators}{chapter.11}% 338
+\BOOKMARK [1][-]{section.11.3}{Proper Orthogonal Decomposition \(POD\)}{chapter.11}% 339
+\BOOKMARK [1][-]{section.11.4}{Dynamic Mode Decomposition \(DMD\)}{chapter.11}% 340
+\BOOKMARK [1][-]{section.11.5}{Extended Dynamical Mode Decomposition \(EDMD\)}{chapter.11}% 341
+\BOOKMARK [1][-]{section.11.6}{Sparse Identification of Nonlinear Dynamics \(SINDy\)}{chapter.11}% 342
+\BOOKMARK [1][-]{section.11.7}{DMD with Irregularly Sampled Timesteps}{chapter.11}% 343

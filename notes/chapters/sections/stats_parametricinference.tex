@@ -1,0 +1,81 @@
+\section{Parametric Inference}
+
+In parametric inference, the quantity of interest might be some function $T(\theta)$. The sought-after parameters are \textit{parameters of interest} and additional parameters that emerge as part of the model are \textit{nuisance parameters}. Parametric inference deals with creating parametric estimators.
+
+\subsection{Method of Moments}
+The method of moments relies on a system of linear equations to link estimators of moment to sample moments. The $j$th moment is given by:
+
+\begin{equation}
+\alpha_j = \int x^j dF_{\theta}(x)
+\end{equation}
+
+The $j$th sample moment is given by:
+
+\begin{equation}
+\hat{\alpha}_j = \frac{1}{n} \sum_{i=1}^ n X_i^j
+\end{equation}
+
+
+The method of moments estimator $\hat{\theta}_n$ is defined to be the value of $\theta$ so that:
+
+\begin{equation}
+\begin{array}{l}
+\alpha_1(\hat{\theta}_n) = \hat{\alpha}_1\\
+\alpha_2(\hat{\theta}_n) = \hat{\alpha}_2\\
+\alpha_3(\hat{\theta}_n) = \hat{\alpha}_3\\
+\alpha_4(\hat{\theta}_n) = \hat{\alpha}_4\\
+\vdots
+\end{array}
+\end{equation}
+
+The method of moments estimator satisfies:
+
+\begin{enumerate}
+\item The estimate $\hat{\theta}_n$ exists with probability tending to 1.
+\item The estimate is consistent: $\hat{\theta}_n \xrightarrow{P}\theta$ (it converges in probability)
+\item The estimate is asymptotically normal (cf. \cite{wasserman2003all}, pp.122)
+\end{enumerate}
+
+
+\subsection{Maximum Likelihood Estimation}
+
+The maximum likelihood estimator is the value $\hat{\theta}$ that maximizes the joint probability density of the data, called the likelihood function. 
+
+For i.i.d. random variables with pdf $f(x;\theta)$, the likelihood function is:
+
+\begin{equation}
+\mathscr{L}_n(\theta) = \prod_{i=1}^n f(X_i;\theta)
+\end{equation}
+
+And the log likelihood functin is $l_n(\theta) = \log \mathscr{L}_n(\theta)$. Since $\log$ is a monotonic function, maximizing the log-likelihood yields the same estimator as maximizing the likelihood directly. Log-likelihood is often easier to deal with, and alleviates numerical issues associated with the often sharply spiked likelihood function. 
+
+MLE estimators have a flurry of desirable properties under certain smoothness conditions on the density function. 
+
+\begin{itemize}
+\item Consistency: convergence in probability upon the true value
+\item Equivariance: if $\hat{\theta}_n$ is the MLE of $\theta$ then $g(\hat{theta}_n)$ is the MLE of $g(\theta)$
+\item Asymptotically Normal
+\item Asymptotically Optimal / Efficient: smallest variance, at least for large samples.
+\item Approximately the Bayes estimator.
+\end{itemize}
+
+
+\subsection{Parametric Confidence Intervals}
+
+Confidence intervals for infered parameters in the parametric setting can be derived, for example, using the delta method (assuming that the estimators are asymptotically normal) or using parametric bootstrap. In the nonparametric case, bootstrap sampled from the empirical CDF. In the parametric case, bootstrap sample from the density $f(X;\hat{\theta})$ where $\hat{\theta}$ is the estimator.
+
+
+\section{Score Function, Fisher Information}
+Given some pdf $f(X;\theta)$, the score function is given by: 
+
+\begin{equation}
+s(X;\theta) \frac{\partial \log f(X;\theta)}{\partial \theta}
+\end{equation}
+
+The Fisher information is the variance of the score function at each datapoint:
+
+\begin{equation}
+I_n(\theta) = \mathbb{V}_{\theta} \left(\sum_{i=1}^n s(X_i ; \theta) \right)
+\end{equation}
+
+
