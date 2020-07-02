@@ -14,7 +14,7 @@ Where $\theta$ is a vector of parameters and $\Theta$ is the parameter space. El
 
 
 % point estimations
-\subsection{Point Estimation}
+\subsection{Point Estimators}
 Point estimation refers to providing a single best guess of some quantity of interest. The point estimator is denoted with a had, i.e. $\hat{\theta}$. The point estimator for some quantity based on $n$ datapoints:
 
 \begin{equation}
@@ -106,4 +106,8 @@ A \textit{uniform asymptotic} confidence interval requires:
 \begin{equation}
 \lim_{n\rightarrow \infty}\inf_{\theta \in \Theta} \mathbb{P}_{\theta}(\theta \in C_n) \geq 1-\alpha
 \end{equation}
+
+
+\subsection{Pivots, Pivotal Quantities}
+Pivotal quantities are functions of the sample that are independent of the distribution parameters of the sample. For example, if $X=(X_1,X_2,...,X_n)$ is a random sample from a distribution with parameters $\theta$, then the random variable $g(X,\theta)$ is a pivot if it has the same distribution regardless of the choice of $\theta$. An example is the $z$-score $z = \frac{x-\mu}{\sigma}$. The $z$-score may require population parameters to be known (in this case $\mu$,$\sigma$) but it's distribution is independent of them. 
 

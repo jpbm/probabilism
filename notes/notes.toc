@@ -391,59 +391,61 @@
 \contentsline {subsection}{\numberline {6.7.3}Brownian Noise}{90}{subsection.6.7.3}
 \contentsline {section}{\numberline {6.8}Empirical Processes}{90}{section.6.8}
 \contentsline {section}{\numberline {6.9}Mean Field Theory, Fluid Approximation, Deterministic Approximation}{90}{section.6.9}
-\contentsline {chapter}{\numberline {7}Statistics}{91}{chapter.7}
+\contentsline {chapter}{\numberline {7}Statistical Inference}{91}{chapter.7}
 \contentsline {section}{\numberline {7.1}Parametric and Nonparametric Models}{91}{section.7.1}
-\contentsline {section}{\numberline {7.2}Fundamental Concepts in Inference}{91}{section.7.2}
-\contentsline {subsection}{\numberline {7.2.1}Point Estimation}{91}{subsection.7.2.1}
+\contentsline {section}{\numberline {7.2}Fundamental Concepts in Inference}{92}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}Point Estimators}{92}{subsection.7.2.1}
 \contentsline {subsection}{\numberline {7.2.2}Bias}{92}{subsection.7.2.2}
 \contentsline {subsection}{\numberline {7.2.3}Consistency}{92}{subsection.7.2.3}
 \contentsline {subsection}{\numberline {7.2.4}Sampling Distribution, Standard Error}{92}{subsection.7.2.4}
 \contentsline {subsubsection}{\numberline {7.2.4.1}Example: Bernoulli Distribution}{92}{subsubsection.7.2.4.1}
 \contentsline {subsection}{\numberline {7.2.5}Mean Squared Error}{92}{subsection.7.2.5}
 \contentsline {subsection}{\numberline {7.2.6}Asymptotically Normal Estimators}{92}{subsection.7.2.6}
-\contentsline {subsection}{\numberline {7.2.7}Confidence Sets}{92}{subsection.7.2.7}
+\contentsline {subsection}{\numberline {7.2.7}Confidence Sets}{93}{subsection.7.2.7}
 \contentsline {subsubsection}{\numberline {7.2.7.1}Normal-Based Confidence Intervals}{93}{subsubsection.7.2.7.1}
 \contentsline {subsubsection}{\numberline {7.2.7.2}Pointwise and Uniform Asymptotic Confidence Intervals}{93}{subsubsection.7.2.7.2}
-\contentsline {section}{\numberline {7.3}Empirical Distribution Function}{93}{section.7.3}
-\contentsline {subsection}{\numberline {7.3.1}Confidence Measures for the Empirical CDF}{93}{subsection.7.3.1}
-\contentsline {section}{\numberline {7.4}Statistical Functionals}{94}{section.7.4}
-\contentsline {subsection}{\numberline {7.4.1}Plug-in Estimator}{94}{subsection.7.4.1}
-\contentsline {subsection}{\numberline {7.4.2}Linear Functionals}{94}{subsection.7.4.2}
-\contentsline {subsection}{\numberline {7.4.3}Plug-in Estimator for Linear Functionals}{94}{subsection.7.4.3}
-\contentsline {subsection}{\numberline {7.4.4}Examples: Mean, Variance, Sample Variance, Sample Correlation}{94}{subsection.7.4.4}
-\contentsline {section}{\numberline {7.5}The Bootstrap}{94}{section.7.5}
-\contentsline {section}{\numberline {7.6}Jackknife}{94}{section.7.6}
-\contentsline {section}{\numberline {7.7}Parametric Inference}{95}{section.7.7}
-\contentsline {subsection}{\numberline {7.7.1}Method of Moments}{95}{subsection.7.7.1}
-\contentsline {subsection}{\numberline {7.7.2}Maximum Likelihood Estimation}{95}{subsection.7.7.2}
-\contentsline {subsection}{\numberline {7.7.3}Parametric Confidence Intervals}{96}{subsection.7.7.3}
-\contentsline {section}{\numberline {7.8}Score Function, Fisher Information}{96}{section.7.8}
-\contentsline {section}{\numberline {7.9}Directional Statistics}{96}{section.7.9}
-\contentsline {subsection}{\numberline {7.9.1}Mean Direction}{96}{subsection.7.9.1}
-\contentsline {subsection}{\numberline {7.9.2}Dispersion}{96}{subsection.7.9.2}
-\contentsline {section}{\numberline {7.10}Features}{97}{section.7.10}
-\contentsline {subsection}{\numberline {7.10.1}Dense Features, Sparse Features}{97}{subsection.7.10.1}
-\contentsline {section}{\numberline {7.11}Multicollinearity}{97}{section.7.11}
-\contentsline {subsubsection}{\numberline {7.11.0.1}Detection}{97}{subsubsection.7.11.0.1}
+\contentsline {subsection}{\numberline {7.2.8}Pivots, Pivotal Quantities}{93}{subsection.7.2.8}
+\contentsline {section}{\numberline {7.3}Non-Parametric Estimation of the CDF and Statistical Functionals}{93}{section.7.3}
+\contentsline {subsection}{\numberline {7.3.1}Empirical Distribution Function}{93}{subsection.7.3.1}
+\contentsline {subsection}{\numberline {7.3.2}Confidence Measures for the Empirical CDF}{94}{subsection.7.3.2}
+\contentsline {subsection}{\numberline {7.3.3}Statistical Functionals}{94}{subsection.7.3.3}
+\contentsline {subsection}{\numberline {7.3.4}Plug-in Estimator}{94}{subsection.7.3.4}
+\contentsline {subsection}{\numberline {7.3.5}Linear Functionals}{94}{subsection.7.3.5}
+\contentsline {subsection}{\numberline {7.3.6}Plug-in Estimator for Linear Functionals}{94}{subsection.7.3.6}
+\contentsline {subsection}{\numberline {7.3.7}Examples: Mean, Variance, Sample Variance, Sample Correlation}{94}{subsection.7.3.7}
+\contentsline {section}{\numberline {7.4}The Bootstrap}{95}{section.7.4}
+\contentsline {section}{\numberline {7.5}Jackknife}{95}{section.7.5}
+\contentsline {section}{\numberline {7.6}Parametric Inference}{95}{section.7.6}
+\contentsline {subsection}{\numberline {7.6.1}Method of Moments}{95}{subsection.7.6.1}
+\contentsline {subsection}{\numberline {7.6.2}Maximum Likelihood Estimation}{96}{subsection.7.6.2}
+\contentsline {subsection}{\numberline {7.6.3}Parametric Confidence Intervals}{96}{subsection.7.6.3}
+\contentsline {section}{\numberline {7.7}Score Function, Fisher Information}{96}{section.7.7}
+\contentsline {section}{\numberline {7.8}Directional Statistics}{96}{section.7.8}
+\contentsline {subsection}{\numberline {7.8.1}Mean Direction}{96}{subsection.7.8.1}
+\contentsline {subsection}{\numberline {7.8.2}Dispersion}{97}{subsection.7.8.2}
+\contentsline {section}{\numberline {7.9}Features}{97}{section.7.9}
+\contentsline {subsection}{\numberline {7.9.1}Dense Features, Sparse Features}{97}{subsection.7.9.1}
+\contentsline {section}{\numberline {7.10}Multicollinearity}{97}{section.7.10}
+\contentsline {subsubsection}{\numberline {7.10.0.1}Detection}{97}{subsubsection.7.10.0.1}
 \contentsline {subparagraph}{Scatter Plots}{97}{subparagraph*.78}
-\contentsline {subparagraph}{Variance Inflation Factors (VIF)}{97}{subparagraph*.79}
-\contentsline {subparagraph}{Eigenvalues of the Correlation Matrix}{97}{subparagraph*.80}
-\contentsline {subparagraph}{Regression Coefficients}{97}{subparagraph*.81}
-\contentsline {subsection}{\numberline {7.11.1}Sources}{97}{subsection.7.11.1}
-\contentsline {subparagraph}{Data Collection}{97}{subparagraph*.82}
+\contentsline {subparagraph}{Variance Inflation Factors (VIF)}{98}{subparagraph*.79}
+\contentsline {subparagraph}{Eigenvalues of the Correlation Matrix}{98}{subparagraph*.80}
+\contentsline {subparagraph}{Regression Coefficients}{98}{subparagraph*.81}
+\contentsline {subsection}{\numberline {7.10.1}Sources}{98}{subsection.7.10.1}
+\contentsline {subparagraph}{Data Collection}{98}{subparagraph*.82}
 \contentsline {subparagraph}{Physical Constraints}{98}{subparagraph*.83}
 \contentsline {subparagraph}{Over-defined Model}{98}{subparagraph*.84}
 \contentsline {subparagraph}{Model Choice or Specification}{98}{subparagraph*.85}
 \contentsline {subparagraph}{Outliers}{98}{subparagraph*.86}
-\contentsline {subsubsection}{\numberline {7.11.1.1}Remedies}{98}{subsubsection.7.11.1.1}
+\contentsline {subsubsection}{\numberline {7.10.1.1}Remedies}{98}{subsubsection.7.10.1.1}
 \contentsline {subparagraph}{Dimensionality Reduction}{98}{subparagraph*.87}
 \contentsline {subparagraph}{Regularization}{98}{subparagraph*.88}
-\contentsline {section}{\numberline {7.12}$R^2$ Value}{98}{section.7.12}
-\contentsline {section}{\numberline {7.13}Regression Diagnostics}{98}{section.7.13}
-\contentsline {section}{\numberline {7.14}t-Statistics}{98}{section.7.14}
-\contentsline {section}{\numberline {7.15}AIC and BIC}{98}{section.7.15}
-\contentsline {section}{\numberline {7.16}Factor Regression}{98}{section.7.16}
-\contentsline {section}{\numberline {7.17}Factor Models}{98}{section.7.17}
+\contentsline {section}{\numberline {7.11}$R^2$ Value}{98}{section.7.11}
+\contentsline {section}{\numberline {7.12}Regression Diagnostics}{98}{section.7.12}
+\contentsline {section}{\numberline {7.13}t-Statistics}{98}{section.7.13}
+\contentsline {section}{\numberline {7.14}AIC and BIC}{98}{section.7.14}
+\contentsline {section}{\numberline {7.15}Factor Regression}{98}{section.7.15}
+\contentsline {section}{\numberline {7.16}Factor Models}{98}{section.7.16}
 \contentsline {chapter}{\numberline {8}Linear Regression}{99}{chapter.8}
 \contentsline {section}{\numberline {8.1}Least Squares Regression ($L^2$)}{99}{section.8.1}
 \contentsline {subsection}{\numberline {8.1.1}The Normal Equations, Analytical Least Squares Estimator}{99}{subsection.8.1.1}
