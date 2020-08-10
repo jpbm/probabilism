@@ -502,4 +502,12 @@
 \contentsline {section}{\numberline {11.5}Extended Dynamical Mode Decomposition (EDMD)}{126}{section.11.5}
 \contentsline {section}{\numberline {11.6}Sparse Identification of Nonlinear Dynamics (SINDy)}{126}{section.11.6}
 \contentsline {section}{\numberline {11.7}DMD with Irregularly Sampled Timesteps}{126}{section.11.7}
+\contentsline {chapter}{\numberline {12}Exploratory Data Analysis}{127}{chapter.12}
+\contentsline {section}{\numberline {12.1}Basic Steps}{127}{section.12.1}
+\contentsline {subsection}{\numberline {12.1.1}Import, Clean, Data Census}{127}{subsection.12.1.1}
+\contentsline {subsection}{\numberline {12.1.2}Single Variable Explorations}{127}{subsection.12.1.2}
+\contentsline {subsection}{\numberline {12.1.3}Pair-wise Explorations}{127}{subsection.12.1.3}
+\contentsline {subsection}{\numberline {12.1.4}Multivariate Analysis}{127}{subsection.12.1.4}
+\contentsline {subsection}{\numberline {12.1.5}Estimation and Hypothesis Testing}{127}{subsection.12.1.5}
+\contentsline {subsection}{\numberline {12.1.6}Visualization}{127}{subsection.12.1.6}
 \contentsfinish 

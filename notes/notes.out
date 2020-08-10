@@ -346,3 +346,11 @@
 \BOOKMARK [1][-]{section.11.5}{Extended Dynamical Mode Decomposition \(EDMD\)}{chapter.11}% 346
 \BOOKMARK [1][-]{section.11.6}{Sparse Identification of Nonlinear Dynamics \(SINDy\)}{chapter.11}% 347
 \BOOKMARK [1][-]{section.11.7}{DMD with Irregularly Sampled Timesteps}{chapter.11}% 348
+\BOOKMARK [0][-]{chapter.12}{Exploratory Data Analysis}{}% 349
+\BOOKMARK [1][-]{section.12.1}{Basic Steps}{chapter.12}% 350
+\BOOKMARK [2][-]{subsection.12.1.1}{Import, Clean, Data Census}{section.12.1}% 351
+\BOOKMARK [2][-]{subsection.12.1.2}{Single Variable Explorations}{section.12.1}% 352
+\BOOKMARK [2][-]{subsection.12.1.3}{Pair-wise Explorations}{section.12.1}% 353
+\BOOKMARK [2][-]{subsection.12.1.4}{Multivariate Analysis}{section.12.1}% 354
+\BOOKMARK [2][-]{subsection.12.1.5}{Estimation and Hypothesis Testing}{section.12.1}% 355
+\BOOKMARK [2][-]{subsection.12.1.6}{Visualization}{section.12.1}% 356
