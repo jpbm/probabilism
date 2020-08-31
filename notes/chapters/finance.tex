@@ -1,0 +1,248 @@
+\chapter{Risk}
+
+\begin{multicols}{2}[\subsubsection*{Contents of this chapter}]
+   \printcontents{}{1}{\setcounter{tocdepth}{2}}
+\end{multicols}
+
+
+\section{Checklist}
+
+Ten sequential steps to model, assess and improve a portfolio.
+
+\begin{itemize}
+\item Data Processing: Steps 1-5
+\item Risk Management: Steps 6-8
+\item Portfolio Management: Steps 9-10
+\end{itemize}
+
+The model comes first, and the data comes after. There are two core components in modern quantitative finance. The first is the checklist, and the second is linear factor models. Linear factor models are the core for anything you need to know in econometrics, machine learning, estimation risk, etc.. 
+
+The temptation might be to take the data and train some deep neural network on it, but you will not get anything out of that. You have to extract a repetitive behavior from the past that will repeat in the future. For equities, this turns out to be true for the log values. The changes in the log values are more or less i.i.d.. 
+
+
+\subsection{Step 1: Risk Drivers Identification}
+
+The identification of risk drivers is more of an art than a science. 
+
+Risk drivers are random processes that (1) behave homogenously as time evolves, similar to a random walk, and (2) completely determine the P\&L of the financial instruments at hand. Log-values for equity (i.e. stock prices), yield curve in fixed income, implied volatility surfaces for derivatives, number of defaults for credit, activity time for high frequency and cumulative P\&L for strategies. 
+
+Translate from a product specific to a product agnostic time series. 
+
+The risk driver will be multivariate stochastic process that should behave homogeneously as time as time evolves. It should also be solely responsible for the P\&L of the financial instrument. I.e., knowing the risk driver at all times would mean knowing the value of the financial instrument at all times.
+
+\subparagraph{Example: Equities} The data available for two stocks is simply their stocks value over several business days. The values themselves do not evolve homogenously, but the log of the stock values do. Hence the log-value is a risk driver. This example is probably too simple to really be helpful.
+
+\subsubsection{Equities}
+log Values
+
+\subsubsection{Fixed Income}
+Zero coupon bond is a (imaginary) bond that does not give coupons. The value of a bond is the discounted values of the coupons until maturity plus the zero coupon bond.
+	
+
+Log rolling price of a zero coupon bond, i.e. at each time look at the price of a product that expires (for example) one year ahead. 
+
+You can normalize by dividing by time to maturity. I.e. 2 year forwards less volatile than 10 year forwards.
+
+Yield to maturity: rolling value Vzcb(t+tau) ==> log Vzcb ==> rescale by diving by tau ==> opposite sign 
+
+Standardization process, previously and art, now standard.
+
+Annualized compounded return of the zero-coupon bond from generic time t to $t_{end} = t+\tau$. 
+
+Yt = 1/tau ln(vzcb/Vzcb)
+
+Swap / yield curve -- times to maturitiy and rate. Infinite dimensional parameters. Lower dimensional representation possible by fitting the curve.
+
+Fixed-income parsimonious representations: Nelson-Siegel parametrization. Fit a parametric shape through the yield curve. Level, slope (steepness) curvature, decay. Four parameters. Therefore, 4 risk drivers. Parametrization extremely close to empirical yield.
+
+Meucci: feeling that Nelson-Siegel perfectly good, though not necessarily arbitrage-free. Provides alternative (Vasicek).
+
+Covers fixed income modeling through zero coupon bond. 
+
+\subsubsection{Derivatives}
+
+Focus on European style derivatives, call options. Payoff is hockeystick. Different profiles (as long as european) vcan be expressed through call options. 
+
+Moneyness:
+
+\begin{equation}
+m = \frac{1}{\tau}ln (S_t / k^{strk})
+\end{equation}
+
+If price is above strike price then options are in the money, if price is below strike price then it is out of the money.
+
+Rolling value is decent risk driver, avoiding implied volatility surface.
+
+Implied volatility via Black-Scholes-Merton function, gives the price of a call option. Five inputs, four of which are observed. Remaining one is sigma, volatility, the implied volatility.
+
+Long horizons you assume changes proportional of the level. Short horizons you assume changes identical to the level (i.e. geometric vs arithmetic brownian motion).
+
+
+Heston arbitrage-free implied volatility surface is derivative counterpart to Vasicek in fixed income. 
+
+There is so much uncertainty in forecasting the future that it's better to just stick to the simple stuff, because the uncertainty will swamp out any benifit from being finniky.  
+
+
+\subsubsection{Credit}
+Credit risk has to do with not being able to trust the counterparty. 
+
+Important concepts: 
+
+Time of default 
+
+Default indicator
+
+Exposure at default 
+
+Loss given default 
+
+Credit ratings give categorical distribution, rather than binary default/not default. Loss given default often in terms of Beta distribution.
+
+Risk drivers, when they are too many then you perform dimensionality reduction.
+
+Key metric is cumulative number of transitions between credit ratings. 
+
+
+\subsection{Step 2: Quest for Invariance}
+The invariants are shocks that, together with information available at the previous time step, fully determine the current risk drivers. They are i.i.d. across time ("white noise"). The unpredictable element. Once identified, they can be extracted from the past time series. The invariants introduce the stochastic element, which allows prediction of the future via estimation.
+
+What is the white noise behind the risk drivers? The quest for invariance is the quest for i.i.d. components in the time series data.
+
+\subparagraph{Example: Equities} Assuming the daily compounded returns are i.i.d., the risk driver can be written as:
+
+\begin{equation}
+X_{n,t} = X_{n,t-1} + \ln\frac{V_{n,t}}{V_{n,t-1}}
+\end{equation}
+
+So the invariant is $\epsilon_{n,t} = \ln\frac{V_{n,t}}{V_{n,t-1}}$.
+
+Risk drivers display empirical features that deviate from the random walk. Efficiency, mean reversion, long memory, and volatility clustering.
+
+
+\subsubsection{Efficiency}
+
+Random walk as model for efficiency. Kolmogorov Smirnoff test can test for i.i.d.ness. Also, ellipsoid invariance test. 
+
+
+\subsubsection{Mean-reversion}
+
+AR(1) processes, for example. Exponentially decaying autocorrelation. Markov Chains
+
+
+
+\subsubsection{Volatility Clustering}
+
+Modeled with GARCH. Stochastic mean and stochastic volatility. 
+
+GARCH models as random walk, except innovations have variance that undergoes an autocorrelated random walk. 
+
+GARCH has been used for stocks, yield, etc., model the increment and it applies across all asset classes. 
+
+Estimate via maximum likelihood. 
+
+Extensions of GARCH: generalize dispersion, or change market to which it's applied.
+
+GARCH, EGARCH, ACD, 
+
+
+
+
+
+\subsection{Step 3: Estimation}
+
+Estimating the joint distribution of the invariants from their past realizations. This can be done because of the i.i.d. property of the invariants. Often this involves assigning different weights to different observations. For example, emphasizing more recent observations or emphasizing observations is more similar market environments.
+
+Estimating the i.i.d. components in the risk drivers.
+
+
+
+
+
+
+
+
+\subsection{Step 4: Projection}
+
+Based on the distribution of the invariants, project the distribution of the process of the risk drivers for a set of future times. For example, write down the distribution of the risk driver at the horizon, conditioned on information available now, based on square-root rule (assuming normally distributed innovations). 
+
+\subsection{Step 5: Pricing at the horizon}
+
+The previous step had to do with projecting the risk driver. This step projects the actual value. If in step 4, the probability distribution of the risk driver at some point in the future was calculated, in this step there is a transformation of the random variable to obtain the probability distribution of the value at some point in the future. 
+
+\subsection{Step 6: Aggregation}
+Steps 1-5 treated markets. In this step, the portfolio and the allocation policy are introduced. The goal is the ex-ante market performance of a portfolio stemming from an allocation policy. 
+
+This includes portfolio value, ex-ante performance and stress test. Stress test is a projection conditioned on extreme events, so for example: what would the returns be if the market went down 10\%.
+
+\subsection{Step 7: Ex-ante Evaluation}
+A risk or satisfaction measure is assigned to the ex-ante performance of the allocation policy, as calculated by step 6. Satisfaction measures are mainly of three types:
+
+\begin{itemize}
+\item expected utility / certainty-equivalent, including mean-variance trade-off
+\item spectral / distortion measures, which include VaR, cVaR and actuarial measures
+\item Sharpe and other non-dimensional ratios
+\end{itemize}
+
+One very simple example for a satisfaction measure is negative standard deviation. Analogous to the loss function in machine learning, there is a measure assigned to the quality of the distribution.
+
+\subsection{Step 8: Ex-ante Attribution}
+
+Attribution is attribution of the risk to different risk factors.
+
+Express the ex-ante performance $\mathbf{Y}$ as a linear combination of relevant risk factors $\mathbf{Z} = (Z_1,...,Z_{\overline{k}}$ with exposures $\mathbf{\beta}$ plus a shift term $\alpha$ and a zero-center residual $U$. 
+
+\begin{equation}
+\mathbf{Y} = \mathbf{\alpha} + \mathbf{\beta Z} + \mathbf{U}
+\end{equation}
+
+Attribution models can be constructed bottom-up, by starting from exposures of each financial instrument to pre-defined factors, or top-down, extracting surprise factors from the attribution model.
+
+An example for a risk factor may be the return over the same future interval of some stock market index (i.e. SP500). The ex-ante performance metric may simply be the normally distributed ex-ante return $\mathbf{Y}_{h(\cdot)} = \mathbf{R}_{\mathbf{w},t_{now}\rightarrow t_{hor}}$. The attribution model reads:
+
+\begin{equation}
+\mathbf{R} = \mathbf{\alpha} + \mathbf{\beta Z} + \mathbf{U}
+\end{equation}
+
+
+
+\subsection{Step 9: Construction}
+
+Optimal portfolio, optimal policy.
+
+\subsection{Step 10: Execution}
+
+
+
+
+
+
+\section{Distributions}
+
+\subsection{Univariate distributions}
+CDF, pdf, and characteristic function. Characteristic function is the expected value of $e^{i\omega X}}$, which is the fourier transform of the pdf. Similarly, there is the moment generating function, but the moment generating function may not be defined (for example for the student-t distribution). The Quantile function is the inverse of the CDF, basically, giving the value of $X$ that is bigger than $c$ of the data. There's also the sub-quantile function, which is the integral of the quantile function, which is the cvar, the conditional value at risk. There's also the Lorenz curve. Are all representations of the univariate variable. 
+
+\subsection{Multivariate Distributions}
+CDF, pdf, characteristic function and moment generating function genrealize as expected to multivariate random variables. Quantile function doesn't really exist. 
+ 
+
+
+\subsection{Elliptical Distributions}
+
+A market that is jointly elliptical has portfolios that are also jointly elliptical. Any elliptical distribution can be represented in terms of $X = \mu + R \sigma Y$. 
+
+The important property is affine equivariance. Elliptical distributions are very significant for analytical approaches. Elliptical distributions can be factored,via transformation, to a uniform distribution on the unit sphere and a radial distrubtion.
+
+\subsection{Scenario Probability Distributions}
+
+
+\subsection{Exponential Family Distributions}
+
+
+
+\section{Expectation and Variance}
+
+
+\subsection{Affine Equivariance}
+
+\subsection{Variational Principle}
+
