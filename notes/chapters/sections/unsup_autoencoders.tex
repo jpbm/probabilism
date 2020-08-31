@@ -23,3 +23,5 @@ Variational Autoencoders address this by pretending that the data are manifestat
 
 \label{Concept Vectors}
 Concept Vectors are directions in representation spaces that encode meaningful variations in the data. For example, in images of faces, there might be a "smile" vector, so that if $z$ is the latent-space coordinate of a face then $z+s$ migth be the latent-space coordinate of the same face smiling. 
+
+The loss function for training VAEs has two parts: \textit{reconstruction loss} forces the output to be clsoe to the input, and \textit{regularization loss} forces structure upon the latent space (which also helps overfitting). In practice, \textit{regularization loss} might be the KL-divergence of the code distribution with respect to a standard Normal. 
