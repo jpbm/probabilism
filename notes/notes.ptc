@@ -281,12 +281,12 @@
 \contentsline {subsection}{\numberline {4.1.2}Frequentist Probability}{65}{subsection.4.1.2}
 \contentsline {subsection}{\numberline {4.1.3}Bayesian Probability}{65}{subsection.4.1.3}
 \contentsline {paragraph}{}{65}{paragraph*.77}
-\contentsline {subsection}{\numberline {4.1.4}Kolmogorov's Axioms}{65}{subsection.4.1.4}
-\contentsline {subsection}{\numberline {4.1.5}Cox' Theorems}{65}{subsection.4.1.5}
-\contentsline {section}{\numberline {4.2}Measure Theoretic Probability}{65}{section.4.2}
+\contentsline {subsection}{\numberline {4.1.4}Kolmogorov's Axioms}{66}{subsection.4.1.4}
+\contentsline {subsection}{\numberline {4.1.5}Cox' Theorems}{66}{subsection.4.1.5}
+\contentsline {section}{\numberline {4.2}Measure Theoretic Probability}{66}{section.4.2}
 \contentsline {subsection}{\numberline {4.2.1}Sample Space, Outcomes, Events}{66}{subsection.4.2.1}
 \contentsline {subsection}{\numberline {4.2.2}Probability Distributions}{66}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}Random Variables}{66}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.3}Random Variables}{67}{subsection.4.2.3}
 \contentsline {subsection}{\numberline {4.2.4}Cumulative Distribution Function (CDF)}{67}{subsection.4.2.4}
 \contentsline {subsection}{\numberline {4.2.5}Probability Mass Function (PMF)}{67}{subsection.4.2.5}
 \contentsline {subsection}{\numberline {4.2.6}Probability Density Function (PDF)}{67}{subsection.4.2.6}
@@ -335,53 +335,60 @@
 \contentsline {subsection}{\numberline {4.20.1}Standard Normal Distribution $\mathscr {N}(0,1)$ }{78}{subsection.4.20.1}
 \contentsline {subsubsection}{\numberline {4.20.1.1}Example: Interval $\mathbb {P}(a<X<b)$}{78}{subsubsection.4.20.1.1}
 \contentsline {subsubsection}{\numberline {4.20.1.2}Example: Quantile $x = F^{-1}(q)$}{78}{subsubsection.4.20.1.2}
-\contentsline {section}{\numberline {4.21}Categorial Processes, Multinoulli Processes}{78}{section.4.21}
-\contentsline {subsection}{\numberline {4.21.1}Categorical, Multinoulli $\mathrm {Categorical(\mathbf {p})}$}{78}{subsection.4.21.1}
-\contentsline {subsection}{\numberline {4.21.2}Multinomial $\mathrm {Multinomial(n,\mathbf {p})}$}{79}{subsection.4.21.2}
-\contentsline {section}{\numberline {4.22}Beta $\mathrm {Beta}(\alpha ,\beta )$}{79}{section.4.22}
-\contentsline {section}{\numberline {4.23}Dirichlet $\mathrm {Dirichlet}(\mathbf {\alpha })$}{79}{section.4.23}
-\contentsline {section}{\numberline {4.24}Multivariate Normal $\mathscr {N}(\mathbf {\mu },\mathbf {\Sigma })$}{79}{section.4.24}
-\contentsline {subsection}{\numberline {4.24.1}Covariance Matrix $\mathbf {\Sigma }$}{79}{subsection.4.24.1}
-\contentsline {subsection}{\numberline {4.24.2}Marginal Distribution}{80}{subsection.4.24.2}
-\contentsline {subsection}{\numberline {4.24.3}Conditional Distribution}{80}{subsection.4.24.3}
-\contentsline {subsection}{\numberline {4.24.4}Vector Multiplication}{80}{subsection.4.24.4}
-\contentsline {subsection}{\numberline {4.24.5}Relationship to Chi$^2$}{80}{subsection.4.24.5}
-\contentsline {subsection}{\numberline {4.24.6}Multivariate Standard Normal Distribution $\mathscr {N}(\mathbf {0},\mathbf {\Sigma })$}{80}{subsection.4.24.6}
-\contentsline {section}{\numberline {4.25}Expectations}{80}{section.4.25}
-\contentsline {subsection}{\numberline {4.25.1}Law of the Unconscious Statistician}{80}{subsection.4.25.1}
-\contentsline {subsection}{\numberline {4.25.2}Linearity of Expeced Value}{80}{subsection.4.25.2}
-\contentsline {section}{\numberline {4.26}Moments, Central Moments}{80}{section.4.26}
-\contentsline {section}{\numberline {4.27}Variance}{81}{section.4.27}
-\contentsline {section}{\numberline {4.28}Mean and Variance of Vector Valued Random Variables}{81}{section.4.28}
-\contentsline {section}{\numberline {4.29}Covariance, Correlation}{81}{section.4.29}
-\contentsline {section}{\numberline {4.30}Sample Mean and Sample Variance}{81}{section.4.30}
-\contentsline {section}{\numberline {4.31}Law of Iterated Expectation}{81}{section.4.31}
-\contentsline {subsection}{\numberline {4.31.1}Applied to Variance}{82}{subsection.4.31.1}
-\contentsline {section}{\numberline {4.32}Moment Generating Functions, Laplace Transforms}{82}{section.4.32}
-\contentsline {section}{\numberline {4.33}Cumulant Generating Functions}{82}{section.4.33}
-\contentsline {section}{\numberline {4.34}Characteristic Function}{82}{section.4.34}
-\contentsline {section}{\numberline {4.35}Inequalities for Probabilities}{82}{section.4.35}
-\contentsline {subsection}{\numberline {4.35.1}Markov's Inequality}{82}{subsection.4.35.1}
-\contentsline {subsection}{\numberline {4.35.2}Chebyshev's Inequality}{82}{subsection.4.35.2}
-\contentsline {subsection}{\numberline {4.35.3}Hoeffding's Inequality}{83}{subsection.4.35.3}
-\contentsline {subsubsection}{\numberline {4.35.3.1}Example: Bernoulli Random Variables}{83}{subsubsection.4.35.3.1}
-\contentsline {subsection}{\numberline {4.35.4}Mill's Inequality}{83}{subsection.4.35.4}
-\contentsline {section}{\numberline {4.36}Inequalities for Expectations}{83}{section.4.36}
-\contentsline {subsection}{\numberline {4.36.1}Cauchy-Schwarz Inequality}{83}{subsection.4.36.1}
-\contentsline {subsection}{\numberline {4.36.2}Jensen's Inequality}{83}{subsection.4.36.2}
-\contentsline {section}{\numberline {4.37}Asymptotic Theory}{83}{section.4.37}
-\contentsline {subsection}{\numberline {4.37.1}Convergence in Probability}{84}{subsection.4.37.1}
-\contentsline {subsection}{\numberline {4.37.2}Convergence in Distribution}{84}{subsection.4.37.2}
-\contentsline {subsection}{\numberline {4.37.3}Convergence in Quadratic Mean, Convergence in $L_2$}{84}{subsection.4.37.3}
-\contentsline {subsection}{\numberline {4.37.4}Almost Sure Convergence}{84}{subsection.4.37.4}
-\contentsline {subsection}{\numberline {4.37.5}$L_1$ Convergence}{84}{subsection.4.37.5}
-\contentsline {subsection}{\numberline {4.37.6}Weak Law of Large Numbers}{84}{subsection.4.37.6}
-\contentsline {subsection}{\numberline {4.37.7}Strong Law of Large Numbers}{85}{subsection.4.37.7}
-\contentsline {subsection}{\numberline {4.37.8}Central Limit Theorem}{85}{subsection.4.37.8}
-\contentsline {subsection}{\numberline {4.37.9}Multivariate Central Limit Theorem}{85}{subsection.4.37.9}
-\contentsline {subsection}{\numberline {4.37.10}Proof of the Central Limit Theorem}{85}{subsection.4.37.10}
-\contentsline {subsection}{\numberline {4.37.11}Delta Method}{86}{subsection.4.37.11}
-\contentsline {subsubsection}{\numberline {4.37.11.1}Multivariate Delta Method}{86}{subsubsection.4.37.11.1}
+\contentsline {section}{\numberline {4.21}Log Normal Distribution}{78}{section.4.21}
+\contentsline {section}{\numberline {4.22}Categorial Processes, Multinoulli Processes}{78}{section.4.22}
+\contentsline {subsection}{\numberline {4.22.1}Categorical, Multinoulli $\mathrm {Categorical(\mathbf {p})}$}{78}{subsection.4.22.1}
+\contentsline {subsection}{\numberline {4.22.2}Multinomial $\mathrm {Multinomial(n,\mathbf {p})}$}{79}{subsection.4.22.2}
+\contentsline {section}{\numberline {4.23}Beta $\mathrm {Beta}(\alpha ,\beta )$}{79}{section.4.23}
+\contentsline {section}{\numberline {4.24}Dirichlet $\mathrm {Dirichlet}(\mathbf {\alpha })$}{79}{section.4.24}
+\contentsline {section}{\numberline {4.25}Multivariate Normal $\mathscr {N}(\mathbf {\mu },\mathbf {\Sigma })$}{79}{section.4.25}
+\contentsline {subsection}{\numberline {4.25.1}Covariance Matrix $\mathbf {\Sigma }$}{80}{subsection.4.25.1}
+\contentsline {subsection}{\numberline {4.25.2}Marginal Distribution}{80}{subsection.4.25.2}
+\contentsline {subsection}{\numberline {4.25.3}Conditional Distribution}{80}{subsection.4.25.3}
+\contentsline {subsection}{\numberline {4.25.4}Vector Multiplication}{80}{subsection.4.25.4}
+\contentsline {subsection}{\numberline {4.25.5}Relationship to Chi$^2$}{80}{subsection.4.25.5}
+\contentsline {subsection}{\numberline {4.25.6}Multivariate Standard Normal Distribution $\mathscr {N}(\mathbf {0},\mathbf {\Sigma })$}{80}{subsection.4.25.6}
+\contentsline {section}{\numberline {4.26}Expectations}{80}{section.4.26}
+\contentsline {subsection}{\numberline {4.26.1}Law of the Unconscious Statistician}{80}{subsection.4.26.1}
+\contentsline {subsection}{\numberline {4.26.2}Linearity of Expeced Value}{81}{subsection.4.26.2}
+\contentsline {section}{\numberline {4.27}Moments, Central Moments}{81}{section.4.27}
+\contentsline {section}{\numberline {4.28}Variance}{81}{section.4.28}
+\contentsline {section}{\numberline {4.29}Mean and Variance of Vector Valued Random Variables}{81}{section.4.29}
+\contentsline {section}{\numberline {4.30}Covariance, Correlation}{81}{section.4.30}
+\contentsline {section}{\numberline {4.31}Sample Mean and Sample Variance}{81}{section.4.31}
+\contentsline {section}{\numberline {4.32}Law of Iterated Expectation}{82}{section.4.32}
+\contentsline {subsection}{\numberline {4.32.1}Applied to Variance}{82}{subsection.4.32.1}
+\contentsline {section}{\numberline {4.33}Moment Generating Functions, Laplace Transforms}{82}{section.4.33}
+\contentsline {section}{\numberline {4.34}Cumulant Generating Functions}{82}{section.4.34}
+\contentsline {section}{\numberline {4.35}Characteristic Function}{82}{section.4.35}
+\contentsline {section}{\numberline {4.36}Inequalities for Probabilities}{82}{section.4.36}
+\contentsline {subsection}{\numberline {4.36.1}Markov's Inequality}{82}{subsection.4.36.1}
+\contentsline {subsection}{\numberline {4.36.2}Chebyshev's Inequality}{83}{subsection.4.36.2}
+\contentsline {subsection}{\numberline {4.36.3}Hoeffding's Inequality}{83}{subsection.4.36.3}
+\contentsline {subsubsection}{\numberline {4.36.3.1}Example: Bernoulli Random Variables}{83}{subsubsection.4.36.3.1}
+\contentsline {subsection}{\numberline {4.36.4}Mill's Inequality}{83}{subsection.4.36.4}
+\contentsline {section}{\numberline {4.37}Inequalities for Expectations}{83}{section.4.37}
+\contentsline {subsection}{\numberline {4.37.1}Cauchy-Schwarz Inequality}{83}{subsection.4.37.1}
+\contentsline {subsection}{\numberline {4.37.2}Jensen's Inequality}{83}{subsection.4.37.2}
+\contentsline {section}{\numberline {4.38}Asymptotic Theory}{84}{section.4.38}
+\contentsline {subsection}{\numberline {4.38.1}Preasymptotics}{84}{subsection.4.38.1}
+\contentsline {subsection}{\numberline {4.38.2}Convergence in Probability}{84}{subsection.4.38.2}
+\contentsline {subsection}{\numberline {4.38.3}Convergence in Distribution}{84}{subsection.4.38.3}
+\contentsline {subsection}{\numberline {4.38.4}Convergence in Quadratic Mean, Convergence in $L_2$}{84}{subsection.4.38.4}
+\contentsline {subsection}{\numberline {4.38.5}Almost Sure Convergence}{84}{subsection.4.38.5}
+\contentsline {subsection}{\numberline {4.38.6}$L_1$ Convergence}{85}{subsection.4.38.6}
+\contentsline {subsection}{\numberline {4.38.7}Weak Law of Large Numbers}{85}{subsection.4.38.7}
+\contentsline {subsection}{\numberline {4.38.8}Strong Law of Large Numbers}{85}{subsection.4.38.8}
+\contentsline {subsection}{\numberline {4.38.9}Central Limit Theorem}{85}{subsection.4.38.9}
+\contentsline {subsection}{\numberline {4.38.10}Multivariate Central Limit Theorem}{85}{subsection.4.38.10}
+\contentsline {subsection}{\numberline {4.38.11}Proof of the Central Limit Theorem}{86}{subsection.4.38.11}
+\contentsline {subsection}{\numberline {4.38.12}Delta Method}{86}{subsection.4.38.12}
+\contentsline {subsubsection}{\numberline {4.38.12.1}Multivariate Delta Method}{86}{subsubsection.4.38.12.1}
+\contentsline {section}{\numberline {4.39}Classes of Distributions}{86}{section.4.39}
+\contentsline {subsection}{\numberline {4.39.1}Stable Distributions}{86}{subsection.4.39.1}
+\contentsline {subsection}{\numberline {4.39.2}Sub-exponential}{86}{subsection.4.39.2}
+\contentsline {subsection}{\numberline {4.39.3}Exponential}{86}{subsection.4.39.3}
+\contentsline {subsection}{\numberline {4.39.4}Elliptical}{86}{subsection.4.39.4}
 \contentsline {chapter}{\numberline {5}Information Theory}{87}{chapter.5}
 \ttl@stoptoc {default@5}
 \ttl@starttoc {default@6}
@@ -456,88 +463,108 @@
 \contentsline {subsubsection}{\numberline {7.10.1.1}Remedies}{98}{subsubsection.7.10.1.1}
 \contentsline {subparagraph}{Dimensionality Reduction}{98}{subparagraph*.87}
 \contentsline {subparagraph}{Regularization}{98}{subparagraph*.88}
-\contentsline {section}{\numberline {7.11}$R^2$ Value}{99}{section.7.11}
-\contentsline {section}{\numberline {7.12}Regression Diagnostics}{99}{section.7.12}
-\contentsline {section}{\numberline {7.13}t-Statistics}{99}{section.7.13}
-\contentsline {section}{\numberline {7.14}AIC and BIC}{99}{section.7.14}
-\contentsline {section}{\numberline {7.15}Factor Regression}{99}{section.7.15}
-\contentsline {section}{\numberline {7.16}Factor Models}{99}{section.7.16}
-\contentsline {section}{\numberline {7.17}How to Combine Estimates with Different Uncertainties}{99}{section.7.17}
-\contentsline {section}{\numberline {7.18}How to Tackle Very High Dimensional Feature Spaces}{99}{section.7.18}
-\contentsline {chapter}{\numberline {8}Linear Regression}{101}{chapter.8}
+\contentsline {section}{\numberline {7.11}Fat Tails}{98}{section.7.11}
+\contentsline {subparagraph}{Thin Tails}{98}{subparagraph*.89}
+\contentsline {subparagraph}{Fat Tails}{99}{subparagraph*.90}
+\contentsline {subsection}{\numberline {7.11.1}Consequences of Fat Tails}{99}{subsection.7.11.1}
+\contentsline {subparagraph}{The Law of Large Numbers works too Slowly}{99}{subparagraph*.91}
+\contentsline {subparagraph}{The Sample Mean will rarely correspond to the Distribution Mean}{99}{subparagraph*.92}
+\contentsline {subparagraph}{Metrics such as Sample Mean and Sample Variance will be Unusable}{99}{subparagraph*.93}
+\contentsline {subparagraph}{In finance, metrics like Sharp etc. are unusable}{99}{subparagraph*.94}
+\contentsline {subparagraph}{Gauss-Markov Theorem fails}{99}{subparagraph*.95}
+\contentsline {subparagraph}{Maximum Likelihood Methods can still work}{99}{subparagraph*.96}
+\contentsline {subparagraph}{Absence of Evidence $\not =$ Evidence of Absence}{99}{subparagraph*.97}
+\contentsline {subparagraph}{PCA is going to cause spurious factors and loads}{99}{subparagraph*.98}
+\contentsline {subparagraph}{Method of Moments does not work}{99}{subparagraph*.99}
+\contentsline {subparagraph}{There is no ``typical" large deviation}{99}{subparagraph*.100}
+\contentsline {subsection}{\numberline {7.11.2}Maximum to Sum}{99}{subsection.7.11.2}
+\contentsline {subsection}{\numberline {7.11.3}Maximum Domain of Attraction}{99}{subsection.7.11.3}
+\contentsline {subsection}{\numberline {7.11.4}Hidden Tail, Problems in Estimating Moments}{101}{subsection.7.11.4}
+\contentsline {section}{\numberline {7.12}$R^2$ Value}{101}{section.7.12}
+\contentsline {section}{\numberline {7.13}Regression Diagnostics}{101}{section.7.13}
+\contentsline {section}{\numberline {7.14}t-Statistics}{101}{section.7.14}
+\contentsline {section}{\numberline {7.15}AIC and BIC}{101}{section.7.15}
+\contentsline {section}{\numberline {7.16}Factor Regression}{101}{section.7.16}
+\contentsline {section}{\numberline {7.17}Factor Models}{101}{section.7.17}
+\contentsline {section}{\numberline {7.18}How to Combine Estimates with Different Uncertainties}{101}{section.7.18}
+\contentsline {section}{\numberline {7.19}How to Tackle Very High Dimensional Feature Spaces}{101}{section.7.19}
+\contentsline {chapter}{\numberline {8}Linear Regression}{103}{chapter.8}
 \ttl@stoptoc {default@8}
 \ttl@starttoc {default@9}
-\contentsline {section}{\numberline {8.1}Least Squares Regression ($L^2$)}{101}{section.8.1}
-\contentsline {subsection}{\numberline {8.1.1}The Normal Equations, Analytical Least Squares Estimator}{101}{subsection.8.1.1}
-\contentsline {subsection}{\numberline {8.1.2}The Quick Way to $\mathbf {\mathaccentV {hat}05E{\beta }}$}{102}{subsection.8.1.2}
-\contentsline {subsection}{\numberline {8.1.3}The Long Way to $\mathbf {\mathaccentV {hat}05E{\beta }}$}{102}{subsection.8.1.3}
-\contentsline {subsection}{\numberline {8.1.4}Projection Matrix}{102}{subsection.8.1.4}
-\contentsline {subsection}{\numberline {8.1.5}Bayesian Perspective on Least Squares Regression}{103}{subsection.8.1.5}
-\contentsline {subsection}{\numberline {8.1.6}Q-plots}{103}{subsection.8.1.6}
-\contentsline {subsection}{\numberline {8.1.7}Variance Inflation Factor}{103}{subsection.8.1.7}
-\contentsline {section}{\numberline {8.2}Total Least Squares}{103}{section.8.2}
-\contentsline {section}{\numberline {8.3}Ridge Regression (Tikhonov Regularization, $\lambda ||\mathbf {\beta }||^2$)}{103}{section.8.3}
-\contentsline {subsection}{\numberline {8.3.1}Analytical Ridge Estimator}{103}{subsection.8.3.1}
-\contentsline {subsection}{\numberline {8.3.2}Bayesian Perspective on Ridge Regression}{103}{subsection.8.3.2}
-\contentsline {section}{\numberline {8.4}Least Absolute Shrinkage and Selection Operator Regression (LASSO)}{103}{section.8.4}
-\contentsline {section}{\numberline {8.5}Least Absolute Deviation Regression (LAD, $L^1$)}{103}{section.8.5}
-\contentsline {section}{\numberline {8.6}Generalized Linear Models}{103}{section.8.6}
-\contentsline {chapter}{\numberline {9}Bayesian Data Analysis}{105}{chapter.9}
+\contentsline {section}{\numberline {8.1}Least Squares Regression ($L^2$)}{103}{section.8.1}
+\contentsline {subsection}{\numberline {8.1.1}The Normal Equations, Analytical Least Squares Estimator}{103}{subsection.8.1.1}
+\contentsline {subsection}{\numberline {8.1.2}The Quick Way to $\mathbf {\mathaccentV {hat}05E{\beta }}$}{104}{subsection.8.1.2}
+\contentsline {subsection}{\numberline {8.1.3}The Long Way to $\mathbf {\mathaccentV {hat}05E{\beta }}$}{104}{subsection.8.1.3}
+\contentsline {subsection}{\numberline {8.1.4}Projection Matrix}{104}{subsection.8.1.4}
+\contentsline {subsection}{\numberline {8.1.5}Bayesian Perspective on Least Squares Regression}{105}{subsection.8.1.5}
+\contentsline {subsection}{\numberline {8.1.6}Q-plots}{105}{subsection.8.1.6}
+\contentsline {subsection}{\numberline {8.1.7}Variance Inflation Factor}{105}{subsection.8.1.7}
+\contentsline {section}{\numberline {8.2}Total Least Squares}{105}{section.8.2}
+\contentsline {section}{\numberline {8.3}Ridge Regression (Tikhonov Regularization, $\lambda ||\mathbf {\beta }||^2$)}{105}{section.8.3}
+\contentsline {subsection}{\numberline {8.3.1}Analytical Ridge Estimator}{105}{subsection.8.3.1}
+\contentsline {subsection}{\numberline {8.3.2}Bayesian Perspective on Ridge Regression}{105}{subsection.8.3.2}
+\contentsline {section}{\numberline {8.4}Least Absolute Shrinkage and Selection Operator Regression (LASSO)}{105}{section.8.4}
+\contentsline {section}{\numberline {8.5}Least Absolute Deviation Regression (LAD, $L^1$)}{105}{section.8.5}
+\contentsline {section}{\numberline {8.6}Generalized Linear Models}{105}{section.8.6}
+\contentsline {chapter}{\numberline {9}Bayesian Data Analysis}{107}{chapter.9}
 \ttl@stoptoc {default@9}
 \ttl@starttoc {default@10}
-\contentsline {section}{\numberline {9.1}Markov Chain Monte Carlo Methods}{105}{section.9.1}
-\contentsline {chapter}{\numberline {10}Unsupervised Learning}{107}{chapter.10}
+\contentsline {section}{\numberline {9.1}Markov Chain Monte Carlo Methods}{107}{section.9.1}
+\contentsline {chapter}{\numberline {10}Unsupervised Learning}{109}{chapter.10}
 \ttl@stoptoc {default@10}
 \ttl@starttoc {default@11}
-\contentsline {section}{\numberline {10.1}Blind Source Separation}{107}{section.10.1}
-\contentsline {section}{\numberline {10.2}Clustering}{107}{section.10.2}
-\contentsline {subsection}{\numberline {10.2.1}K-Means}{107}{subsection.10.2.1}
-\contentsline {subsection}{\numberline {10.2.2}Affinity Propagation}{107}{subsection.10.2.2}
-\contentsline {section}{\numberline {10.3}Independent Component Analysis (ICA)}{107}{section.10.3}
-\contentsline {section}{\numberline {10.4}Compressed Sensing}{107}{section.10.4}
-\contentsline {section}{\numberline {10.5}$\mathbf {X} = \mathbf {U\Sigma V^T}$ Eigenanalysis, Singular Value Decomposition (SVD)}{107}{section.10.5}
-\contentsline {subsection}{\numberline {10.5.1}Example: Eigenfaces and Facial Recognition}{108}{subsection.10.5.1}
-\contentsline {subsection}{\numberline {10.5.2}Tracking an Eigensystem over Time}{108}{subsection.10.5.2}
-\contentsline {subsubsection}{\numberline {10.5.2.1}Heuristic Method}{110}{subsubsection.10.5.2.1}
-\contentsline {subsubsection}{\numberline {10.5.2.2}Consistent Method}{110}{subsubsection.10.5.2.2}
-\contentsline {subsubsection}{\numberline {10.5.2.3}Rank Order Changes}{110}{subsubsection.10.5.2.3}
-\contentsline {subsection}{\numberline {10.5.3}Bayesian SVD}{110}{subsection.10.5.3}
-\contentsline {subsection}{\numberline {10.5.4}Randomized SVD}{110}{subsection.10.5.4}
-\contentsline {subsubsection}{\numberline {10.5.4.1}Step 1: Sample Column Space of $\mathbf {X}$ with $\mathbf {P}$}{110}{subsubsection.10.5.4.1}
-\contentsline {subsubsection}{\numberline {10.5.4.2}Step 2: Compute SVD on Projected $\mathbf {Y = Q^T X}$}{112}{subsubsection.10.5.4.2}
-\contentsline {section}{\numberline {10.6}Principal Component Analysis (PCA)}{112}{section.10.6}
-\contentsline {subsection}{\numberline {10.6.1}Relationship between PCA and SVD}{114}{subsection.10.6.1}
-\contentsline {subsection}{\numberline {10.6.2}Tracking Principal Components over Time}{114}{subsection.10.6.2}
-\contentsline {subsection}{\numberline {10.6.3}$L^1$-Norm Principal Component Analysis ($L^1$ PCA)}{114}{subsection.10.6.3}
-\contentsline {section}{\numberline {10.7}$\mathbf {X}=\mathbf {W}\mathbf {H}$ Non-Negative Matrix Factorization}{114}{section.10.7}
-\contentsline {section}{\numberline {10.8}Optimal Truncation}{116}{section.10.8}
-\contentsline {subsection}{\numberline {10.8.1}Scree Plots, Heuristic Methods}{116}{subsection.10.8.1}
-\contentsline {subsection}{\numberline {10.8.2}Gavish \& Donoho's Optimal Threshold for SVD}{118}{subsection.10.8.2}
-\contentsline {section}{\numberline {10.9}Matrix Completion, Imputation}{118}{section.10.9}
-\contentsline {subsection}{\numberline {10.9.1}Nuclear Norm Regularization}{118}{subsection.10.9.1}
-\contentsline {chapter}{\numberline {11}Dynamical Systems}{123}{chapter.11}
+\contentsline {section}{\numberline {10.1}Blind Source Separation}{109}{section.10.1}
+\contentsline {section}{\numberline {10.2}Clustering}{109}{section.10.2}
+\contentsline {subsection}{\numberline {10.2.1}K-Means}{109}{subsection.10.2.1}
+\contentsline {subsection}{\numberline {10.2.2}Affinity Propagation}{109}{subsection.10.2.2}
+\contentsline {section}{\numberline {10.3}Independent Component Analysis (ICA)}{109}{section.10.3}
+\contentsline {section}{\numberline {10.4}Compressed Sensing}{109}{section.10.4}
+\contentsline {section}{\numberline {10.5}$\mathbf {X} = \mathbf {U\Sigma V^T}$ Eigenanalysis, Singular Value Decomposition (SVD)}{109}{section.10.5}
+\contentsline {subsection}{\numberline {10.5.1}Example: Eigenfaces and Facial Recognition}{110}{subsection.10.5.1}
+\contentsline {subsection}{\numberline {10.5.2}Tracking an Eigensystem over Time}{110}{subsection.10.5.2}
+\contentsline {subsubsection}{\numberline {10.5.2.1}Heuristic Method}{112}{subsubsection.10.5.2.1}
+\contentsline {subsubsection}{\numberline {10.5.2.2}Consistent Method}{112}{subsubsection.10.5.2.2}
+\contentsline {subsubsection}{\numberline {10.5.2.3}Rank Order Changes}{112}{subsubsection.10.5.2.3}
+\contentsline {subsection}{\numberline {10.5.3}Bayesian SVD}{112}{subsection.10.5.3}
+\contentsline {subsection}{\numberline {10.5.4}Randomized SVD}{112}{subsection.10.5.4}
+\contentsline {subsubsection}{\numberline {10.5.4.1}Step 1: Sample Column Space of $\mathbf {X}$ with $\mathbf {P}$}{112}{subsubsection.10.5.4.1}
+\contentsline {subsubsection}{\numberline {10.5.4.2}Step 2: Compute SVD on Projected $\mathbf {Y = Q^T X}$}{114}{subsubsection.10.5.4.2}
+\contentsline {section}{\numberline {10.6}Principal Component Analysis (PCA)}{114}{section.10.6}
+\contentsline {subsection}{\numberline {10.6.1}Relationship between PCA and SVD}{116}{subsection.10.6.1}
+\contentsline {subsection}{\numberline {10.6.2}Tracking Principal Components over Time}{116}{subsection.10.6.2}
+\contentsline {subsection}{\numberline {10.6.3}$L^1$-Norm Principal Component Analysis ($L^1$ PCA)}{116}{subsection.10.6.3}
+\contentsline {section}{\numberline {10.7}$\mathbf {X}=\mathbf {W}\mathbf {H}$ Non-Negative Matrix Factorization}{116}{section.10.7}
+\contentsline {section}{\numberline {10.8}Optimal Truncation}{118}{section.10.8}
+\contentsline {subsection}{\numberline {10.8.1}Scree Plots, Heuristic Methods}{118}{subsection.10.8.1}
+\contentsline {subsection}{\numberline {10.8.2}Gavish \& Donoho's Optimal Threshold for SVD}{120}{subsection.10.8.2}
+\contentsline {section}{\numberline {10.9}Matrix Completion, Imputation}{120}{section.10.9}
+\contentsline {subsection}{\numberline {10.9.1}Nuclear Norm Regularization}{120}{subsection.10.9.1}
+\contentsline {chapter}{\numberline {11}Dynamical Systems}{125}{chapter.11}
 \ttl@stoptoc {default@11}
 \ttl@starttoc {default@12}
-\contentsline {section}{\numberline {11.1}Mode Decompositions}{123}{section.11.1}
-\contentsline {section}{\numberline {11.2}Koopman and Frobenius-Perron Operators}{124}{section.11.2}
-\contentsline {section}{\numberline {11.3}Proper Orthogonal Decomposition (POD)}{124}{section.11.3}
-\contentsline {section}{\numberline {11.4}Dynamic Mode Decomposition (DMD)}{125}{section.11.4}
-\contentsline {section}{\numberline {11.5}Extended Dynamical Mode Decomposition (EDMD)}{126}{section.11.5}
-\contentsline {section}{\numberline {11.6}Sparse Identification of Nonlinear Dynamics (SINDy)}{126}{section.11.6}
-\contentsline {section}{\numberline {11.7}DMD with Irregularly Sampled Timesteps}{126}{section.11.7}
-\contentsline {chapter}{\numberline {12}Exploratory Data Analysis}{127}{chapter.12}
+\contentsline {section}{\numberline {11.1}Mode Decompositions}{125}{section.11.1}
+\contentsline {section}{\numberline {11.2}Koopman and Frobenius-Perron Operators}{126}{section.11.2}
+\contentsline {section}{\numberline {11.3}Proper Orthogonal Decomposition (POD)}{126}{section.11.3}
+\contentsline {section}{\numberline {11.4}Dynamic Mode Decomposition (DMD)}{127}{section.11.4}
+\contentsline {section}{\numberline {11.5}Extended Dynamical Mode Decomposition (EDMD)}{128}{section.11.5}
+\contentsline {section}{\numberline {11.6}Sparse Identification of Nonlinear Dynamics (SINDy)}{128}{section.11.6}
+\contentsline {section}{\numberline {11.7}DMD with Irregularly Sampled Timesteps}{128}{section.11.7}
+\contentsline {chapter}{\numberline {12}Exploratory Data Analysis}{129}{chapter.12}
 \ttl@stoptoc {default@12}
 \ttl@starttoc {default@13}
-\contentsline {section}{\numberline {12.1}Basic Steps}{127}{section.12.1}
-\contentsline {subsection}{\numberline {12.1.1}Import, Clean, Data Census}{127}{subsection.12.1.1}
-\contentsline {subsection}{\numberline {12.1.2}Single Variable Explorations}{127}{subsection.12.1.2}
-\contentsline {subsection}{\numberline {12.1.3}Pair-wise Explorations}{127}{subsection.12.1.3}
-\contentsline {subsection}{\numberline {12.1.4}Multivariate Analysis}{127}{subsection.12.1.4}
-\contentsline {subsection}{\numberline {12.1.5}Estimation and Hypothesis Testing}{127}{subsection.12.1.5}
-\contentsline {subsection}{\numberline {12.1.6}Visualization}{127}{subsection.12.1.6}
-\contentsline {chapter}{\numberline {13}Machine Learning}{129}{chapter.13}
+\contentsline {section}{\numberline {12.1}Basic Steps}{129}{section.12.1}
+\contentsline {subsection}{\numberline {12.1.1}Import, Clean, Data Census}{129}{subsection.12.1.1}
+\contentsline {subsection}{\numberline {12.1.2}Single Variable Explorations}{129}{subsection.12.1.2}
+\contentsline {subsection}{\numberline {12.1.3}Pair-wise Explorations}{129}{subsection.12.1.3}
+\contentsline {subsection}{\numberline {12.1.4}Multivariate Analysis}{129}{subsection.12.1.4}
+\contentsline {subsection}{\numberline {12.1.5}Estimation and Hypothesis Testing}{129}{subsection.12.1.5}
+\contentsline {subsection}{\numberline {12.1.6}Visualization}{129}{subsection.12.1.6}
+\contentsline {chapter}{\numberline {13}Machine Learning}{131}{chapter.13}
 \ttl@stoptoc {default@13}
 \ttl@starttoc {default@14}
+\contentsline {chapter}{\numberline {14}Algorithms}{133}{chapter.14}
 \ttl@stoptoc {default@14}
 \ttl@starttoc {default@15}
+\ttl@stoptoc {default@15}
+\ttl@starttoc {default@16}
 \contentsfinish 

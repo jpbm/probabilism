@@ -12,6 +12,9 @@ The chain of implication is:
 
 For point mass distributions only, convergence in distribution implies convergence in probability. Similarlty, implication rules exist for functions of random variables when convergence for the underlying random variables is given. See Theorems 5.4, 5.5 and 5.17 in \citeasnoun{wasserman2013all} (pages 73-74, 81). 
 
+\subsection{Preasymptotics}
+The behavior in the intermediate regime, for example where $n$ large but not yet asymptotic. Asymptotic behavior kicks in at very different rates for different underlying processes. The ``baseline" in terms of speed is represented by normally distributed random variables.
+
 
 %convergence in probability
 \subsection{Convergence in Probability}
@@ -149,4 +152,5 @@ Rewriting, if $Y_n \xrightarrow{dist}\mathscr{N}(\mu,\frac{\sigma^2}{n})$ then $
 
 If $\mathbf{Y_n} \xrightarrow{dist}\mathscr{\mathbf{\mu},\mathbf{\Sigma}}$ then the scalar-valued function $g(\mathbf{Y_n}) \xrightarrow{dist}\mathscr{N}(g(\mathbf{\mu}),\frac{1}{n} (\nabla g(\mu))^T \mathbf{\Sigma} (\nabla g(\mu)) )$.
 
-Use case would be functions of several sample means, where the underlying samples have covariance (cf. \cite{wasserman2013all}, p. 80).
+Use case would be functions of several sample means, where the underlying samples have non-trivial covariance (cf. \cite{wasserman2013all}, p. 80).
+

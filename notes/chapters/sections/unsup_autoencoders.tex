@@ -17,7 +17,7 @@ Variational Autoencoders address this by pretending that the data are manifestat
 
 \begin{itemize}
 \item An encoder takes input sample to two parameters in the latent space of representations: mean, variance
-\item You sample a point from the latent normal distribution that's assumed to have generated the input via $z = \mu + \sigma \epsilon$ where $\epsilone \sim \mathcal{N}$. 
+\item You sample a point from the latent normal distribution that's assumed to have generated the input via $z = \mu + \sigma \epsilon$ where $\epsilon \sim \mathcal{N}$. 
 \item The decoder maps this point $z$ back to the input image. 
 \end{itemize} 
 

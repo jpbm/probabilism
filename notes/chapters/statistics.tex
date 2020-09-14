@@ -18,6 +18,9 @@
 
 \input{./chapters/sections/stats_features.tex}
 
+\input{./chapters/sections/stats_fattails.tex}
+
+
 
 \section{$R^2$ Value}
 
@@ -33,6 +36,11 @@
 
 
 \section{How to Combine Estimates with Different Uncertainties}
+A series of classic papers exist on this subject.  
+
 
 \section{How to Tackle Very High Dimensional Feature Spaces}
+In practice, high-dimensional feature spaces amplify the risk of overfitting. The answer, framed in the most general way, is to introduce limitations on the family of functions that are fit by the estimator of choice. The generic methods are regularization (i.e. penalizing variance), variable selection (i.e. filtering out irrelevant features) and dimensionality reduction through feature transformation (i.e. finding a lower-rank representation of the data). It's not possible to draw neat distinctions between this methods in terms of their effects. For example, regularization often amounts to variable selection through soft (or hard) thresholding. Drop out regularization in neural networks biases the model towards particular types of feature transformations.
+
+
 
