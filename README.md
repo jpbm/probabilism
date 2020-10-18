@@ -1,6 +1,6 @@
 # Probabilism
 
-A growing collection of calculations for rust removal, or perhaps I was just looking for answers. [notes](notes/notes.pdf)
+A growing collection of calculations for rust removal, or perhaps I was just looking for answers. [[notes]](notes/notes.pdf)
 
 ![](img/cover.png)
 
