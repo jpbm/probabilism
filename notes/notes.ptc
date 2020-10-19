@@ -559,12 +559,16 @@
 \contentsline {subsection}{\numberline {12.1.4}Multivariate Analysis}{129}{subsection.12.1.4}
 \contentsline {subsection}{\numberline {12.1.5}Estimation and Hypothesis Testing}{129}{subsection.12.1.5}
 \contentsline {subsection}{\numberline {12.1.6}Visualization}{129}{subsection.12.1.6}
-\contentsline {chapter}{\numberline {13}Machine Learning}{131}{chapter.13}
+\contentsline {chapter}{\numberline {13}Causality}{131}{chapter.13}
 \ttl@stoptoc {default@13}
 \ttl@starttoc {default@14}
-\contentsline {chapter}{\numberline {14}Algorithms}{133}{chapter.14}
+\contentsline {section}{\numberline {13.1}Generalized Random Forests}{131}{section.13.1}
+\contentsline {chapter}{\numberline {14}Machine Learning}{133}{chapter.14}
 \ttl@stoptoc {default@14}
 \ttl@starttoc {default@15}
+\contentsline {chapter}{\numberline {15}Algorithms}{135}{chapter.15}
 \ttl@stoptoc {default@15}
 \ttl@starttoc {default@16}
+\ttl@stoptoc {default@16}
+\ttl@starttoc {default@17}
 \contentsfinish 

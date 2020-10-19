@@ -534,6 +534,8 @@
 \contentsline {subsection}{\numberline {12.1.4}Multivariate Analysis}{129}{subsection.12.1.4}
 \contentsline {subsection}{\numberline {12.1.5}Estimation and Hypothesis Testing}{129}{subsection.12.1.5}
 \contentsline {subsection}{\numberline {12.1.6}Visualization}{129}{subsection.12.1.6}
-\contentsline {chapter}{\numberline {13}Machine Learning}{131}{chapter.13}
-\contentsline {chapter}{\numberline {14}Algorithms}{133}{chapter.14}
+\contentsline {chapter}{\numberline {13}Causality}{131}{chapter.13}
+\contentsline {section}{\numberline {13.1}Generalized Random Forests}{131}{section.13.1}
+\contentsline {chapter}{\numberline {14}Machine Learning}{133}{chapter.14}
+\contentsline {chapter}{\numberline {15}Algorithms}{135}{chapter.15}
 \contentsfinish 

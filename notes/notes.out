@@ -366,5 +366,7 @@
 \BOOKMARK [2][-]{subsection.12.1.4}{Multivariate Analysis}{section.12.1}% 366
 \BOOKMARK [2][-]{subsection.12.1.5}{Estimation and Hypothesis Testing}{section.12.1}% 367
 \BOOKMARK [2][-]{subsection.12.1.6}{Visualization}{section.12.1}% 368
-\BOOKMARK [0][-]{chapter.13}{Machine Learning}{}% 369
-\BOOKMARK [0][-]{chapter.14}{Algorithms}{}% 370
+\BOOKMARK [0][-]{chapter.13}{Causality}{}% 369
+\BOOKMARK [1][-]{section.13.1}{Generalized Random Forests}{chapter.13}% 370
+\BOOKMARK [0][-]{chapter.14}{Machine Learning}{}% 371
+\BOOKMARK [0][-]{chapter.15}{Algorithms}{}% 372
