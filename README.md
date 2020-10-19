@@ -1,11 +1,6 @@
 # Probabilism
 
-A growing collection of calculations for rust removal, or perhaps I was just looking for answers.
-
-<p align="center">
-<a href="notes/notes.pdf">[notes]</a>
-</p>
-
+A growing collection of calculations for rust removal, or perhaps I was just looking for answers. <a href="notes/notes.pdf">[see notes]</a>
 
 <p align="center">
 <img src="img/KU-around-1948.jpg" width="400">
