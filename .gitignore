@@ -130,3 +130,7 @@ dmypy.json
 
 # notes are not ready yet   
 # notes/
+
+# mist
+.DS_Store
+.envrc
