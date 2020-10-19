@@ -1,14 +1,10 @@
 # Probabilism
 
-<p align="center">
-A growing collection of calculations for rust removal, or perhaps I was just looking for answers. 
-</p>
+A growing collection of calculations for rust removal, or perhaps I was just looking for answers.
 
 <p align="center">
 <a href="notes/notes.pdf">[notes]</a>
 </p>
-
-
 
 
 <p align="center">
@@ -16,7 +12,7 @@ A growing collection of calculations for rust removal, or perhaps I was just loo
 </p>
 
 <p align="center">
-est. 2020
+Est. 2020
 </p>
 
 *In Catholic moral theology, probabilism provides a way of answering the question about what to do when one does not know what to do.*
