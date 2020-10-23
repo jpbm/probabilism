@@ -1,7 +1,5 @@
 # Probabilism
-A growing collection of calculations. 
-<br><a href="notes/notes.pdf">[see notes]</a>
-
+A growing collection of calculations. <a href="notes/notes.pdf">[see notes]</a>
 <br>
 <br>
 <br>
