@@ -147,6 +147,9 @@ f(x) = e^{-\Lambda}\frac{\Lambda^x}{x!}\ \ \mathrm{x\geq0}
 
 Just like for the Binomial distribution, if $X_1 \sim \mathrm{Poisson}(\Lambda_1)$ and $X_2 \sim \mathrm{Poisson}(\Lambda_2)$, then $X_1 + X_2 \sim \mathrm{Poisson}(\Lambda_1 + \Lambda_2)$. 
 
+The mean and variance of the poisson distribution are both $\lambda$. This link means that Poisson distributed data is inherently heteroskedastic. The Poisson distribution can be obtained from the Bernoulli distribution by considering a very large number of trials with a small probability of success in each trial. That is, if $Y \sim B(n,\pi)$ then letting $n\rightarrow \infty$ with $\pi \rightarrow 0$ and $\mu \rightarrow n\pi$ you recover the Poisson distribution. In this sense, the Poisson distribution is an approximation to a Binomial process with rare events with large $n$ and small $\pi$. 
+
+
 
 % exponential distribution
 \subsection{Exponential $\mathrm{Exp}(\lambda)$}
