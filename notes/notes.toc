@@ -489,7 +489,7 @@
 \contentsline {section}{\numberline {8.4}Least Absolute Shrinkage and Selection Operator Regression (LASSO)}{107}{section.8.4}
 \contentsline {section}{\numberline {8.5}Least Absolute Deviation Regression (LAD, $L^1$)}{107}{section.8.5}
 \contentsline {section}{\numberline {8.6}Generalized Linear Models}{107}{section.8.6}
-\contentsline {subsection}{\numberline {8.6.1}Poisson Models}{107}{subsection.8.6.1}
+\contentsline {subsection}{\numberline {8.6.1}Poisson Regression Models}{107}{subsection.8.6.1}
 \contentsline {chapter}{\numberline {9}Bayesian Data Analysis}{109}{chapter.9}
 \contentsline {section}{\numberline {9.1}Markov Chain Monte Carlo Methods}{109}{section.9.1}
 \contentsline {chapter}{\numberline {10}Unsupervised Learning}{111}{chapter.10}

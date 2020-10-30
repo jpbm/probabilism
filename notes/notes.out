@@ -326,7 +326,7 @@
 \BOOKMARK [1][-]{section.8.4}{Least Absolute Shrinkage and Selection Operator Regression \(LASSO\)}{chapter.8}% 326
 \BOOKMARK [1][-]{section.8.5}{Least Absolute Deviation Regression \(LAD, L1\)}{chapter.8}% 327
 \BOOKMARK [1][-]{section.8.6}{Generalized Linear Models}{chapter.8}% 328
-\BOOKMARK [2][-]{subsection.8.6.1}{Poisson Models}{section.8.6}% 329
+\BOOKMARK [2][-]{subsection.8.6.1}{Poisson Regression Models}{section.8.6}% 329
 \BOOKMARK [0][-]{chapter.9}{Bayesian Data Analysis}{}% 330
 \BOOKMARK [1][-]{section.9.1}{Markov Chain Monte Carlo Methods}{chapter.9}% 331
 \BOOKMARK [0][-]{chapter.10}{Unsupervised Learning}{}% 332
