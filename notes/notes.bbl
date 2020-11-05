@@ -5,6 +5,11 @@ amoeba  \harvardyearleft 2015\harvardyearright , `Relationship between svd and
   pca.'.
 \newline\harvardurl{\url{https://stats.stackexchange.com/questions/134282/relationship-between-svd-and-pca-how-to-use-svd-to-perform-pca}}
 
+\harvarditem[Athey et~al.]{Athey, Tibshirani \harvardand\
+  Wager}{2016}{athey2016generalized}
+Athey, S., Tibshirani, J. \harvardand\ Wager, S.  \harvardyearleft
+  2016\harvardyearright , `Generalized random forests'.
+
 \harvarditem{Barnes}{n/a}{barnesmatrixdiff}
 Barnes, R.~J.  \harvardyearleft n/a\harvardyearright , `Matrix differentiation
   (and some other stuff)'.
@@ -32,6 +37,12 @@ Bradley, A.~R.  \harvardyearleft n/a\harvardyearright , `Notes on sets and
 Brooks, J. \harvardand\ Jot, S.  \harvardyearleft n.d.\harvardyearright ,
   `pcal1: An implementation in r of three methods for l1-norm principal
   component analysis'.
+
+\harvarditem[Brooks et~al.]{Brooks, Dul{\'a} \harvardand\
+  Boone}{2013}{brooks2014pure}
+Brooks, J.~P., Dul{\'a}, J.~H. \harvardand\ Boone, E.~L.  \harvardyearleft
+  2013\harvardyearright , `A pure l1-norm principal component analysis', {\em
+  Computational statistics \& data analysis} {\bf 61},~83--98.
 
 \harvarditem{Brunton}{n/a}{stevebrunton}
 Brunton, S.  \harvardyearleft n/a\harvardyearright , `Steve brunton's youtube
@@ -106,6 +117,11 @@ Mazumder, R., Hastie, T. \harvardand\ Tibshirani, R.  \harvardyearleft
 Megretski, A.  \harvardyearleft 2004\harvardyearright , `Proper orthogonal
   decompostion'.
 \newline\harvardurl{\url{http://web.mit.edu/6.242/www/images/lec6_6242_2004.pdf}}
+
+\harvarditem{Rodriguez}{2007}{rodriguez2007generalized}
+Rodriguez, G.  \harvardyearleft 2007\harvardyearright , `Lecture notes on
+  generalized linear models'.
+\newline\harvardurl{\url{https://data.princeton.edu/wws509/notes/}}
 
 \harvarditem[Salova et~al.]{Salova, Emenheiser, Rupe, Crutchfield \harvardand\
   D’Souza}{2019}{salova2019koopman}

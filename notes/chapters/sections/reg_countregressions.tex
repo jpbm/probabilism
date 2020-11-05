@@ -1,0 +1,79 @@
+\section{Count Regressions}
+
+Count data is common, and often incorrectly analyzed using ordinary least squares. In general, least squares is only applicable when the error on the data, or a transformation of the data, has normal distribution with uniform variance. Count data tends to defy that expectation, especially for low counts where there are many incidences of "$0$" counts. Count data also tends to be heteroskedastic: higher counts tend to fluctuate more widely.
+
+\begin{itemize}
+\item The data is strictly positive. OLS models can predict negative values.
+\item The data is discrete, not continuous.
+\item If there are many $0$ counts, the high number of $0$ prevents the transformation of the skewed distribution into a normal one.     
+\end{itemize}
+
+\subsection{Poisson Regression Models}
+A concise reference is chapter 4 in \citeasnoun{rodriguez2007generalized}, but it is worth looking further to get a more complete picture. Out-of-the-box, a Poisson regression normally assumes the following:
+
+\begin{itemize}
+\item The error has Poisson distribution, and not a normal distribution as in OLS
+\item The data is strictly positive.
+\item The data is skewed.
+\item The data has discrete distribution (but can be generalized to continuous non-negative)
+\item The canonical case assumes a log-linear relationship: The dependent variable $(Y)$ is not a linear function of the coefficients. Rather, $ln(Y)$ is a linear function of the coefficients.
+\item The Poisson distribution does not have separate parameters for the mean and the variance, specifically $\mu = \sigma$. That implies that the distribution of the data is heteroskedastic, where higher counts also fluctuate more widely.
+\item The counting trials are independent and identically distributed. For example, the number of children one family has does not affect the number of children of the neighbors.
+\end{itemize}
+
+Poisson regression models are hence a natural choice for count data. For example, the number of V2 rocket strikes in different areas of London, the number of children a woman has, etc. The underlying assumption is that counts correspond to independent events, and the probability of two simultaneous events is negligible. 
+
+Specifically, the likelihood of observing a value $y$ is assumed to follow a Poisson distribution:
+
+\begin{equation}
+p(y|\mu) = \frac{e^{-\mu} \mu^{y}}{y!}
+\end{equation}
+
+Where the only parameter, $\mu$, is both the mean and the variance of the Poisson distribution. The model acquires additional structure when $\mu$ is assumed to be a function of some explanatory variables, $x$, i.e. $\mu = f(x)$. The canonical Poisson regression uses a log-linear relationship between the coefficients and the mean, i.e. $\mu = e^{\mathbf{\beta \cdot x}}$. The result is a generalized linear model with Poisson error and link log.
+
+
+\subsubsection{Analogy to Least Squares Regression}
+To anchor intuition in familiar territory, consider least squares regression with a log-linear relationship between endogenous and exogenous variables (that is, the model assumes a relationship of $log(y)=a + \mathbf{bx}$ that is beset with Gaussian noise). The familiar form for the model is:
+
+\begin{equation}
+\begin{array}{rl}
+y &= a\exp{\mathbf{b \cdot x}} + \epsilon \\
+&= \exp\mathbf{\beta \cdot x} + \epsilon
+\end{array}
+\end{equation}
+
+Where the constant $a$ was absorbed into the coefficient vector $\mathbf{\beta}$ in the second line, and $\mathbf{x} \rightarrow [1,\mathbf{x}]$. $\epsilon$ is an error term that is assumed to have normal distribution with zero mean, i.e. $\epsilon \sim \mathscr{N}(0,\sigma)$. It's a bit unnatural, but this can be rewritten, absorbing the parameters into the random term:
+
+\begin{equation}
+y = 0 + \epsilon'
+\end{equation}
+
+With $\epsilon' \sim \mathscr{N}(\mu = \exp{\mathbf{\beta \cdot x}},\sigma)$. Now what if the fluctuations aren't normally distributed about the mean, but they are Poisson distributed about the mean? In that case, $\epsilon' \sim \mathrm{Poisson}(\mu = \exp{\mathbf{\beta \cdot x}})$. 
+
+
+
+\subsubsection{Multivariate Poisson Model}
+For least squared regression, it's totally common to look at multivariate models with interesting codependence structure captured by a covariance matrix. In analogy to that, there is multivariate Poisson Regression. The math looks quite different. 
+
+\url{http://www2.stat-athens.aueb.gr/~karlis/multivariate%20Poisson%20models.pdf}
+
+\subsubsection{Goodness of Fit}
+For a log-linear Poisson model, the deviance is given by:
+
+\begin{equation}
+D = 2\sum\left\{ y_i \log\left( \frac{y_i}{\hat{\mu}_i} \right) - \left( y_i - \hat{\mu}_i \right) \right\}
+\end{equation}
+
+Here, $\hat{\mu}_i = e^{\mathbf{x}^T_i \hat{\mathbf{\beta}}}$ is the fitted mean of the $i$th data point, and $y_i$ is the observed count of the $i$th datapoint. 
+
+For large sample sizes, the deviance will be distributed approximately chi-squared with $n-p$ degrees of freedom, where $n$ is the number of data points and $p$ is the number of features. An alternative to the deviance is Pearson's chi-squared statistic. 
+
+\subsubsection{General$\mu = f(\mathbf{x})$}
+The Poisson-ness only has to do with how the data fluctuates about the mean. How the mean is expected to depend on the explanatory variables is another question. In so far, general other functions, including highly-nonlinear machine learning models, can be fit under the assumption of Poisson noise.
+
+
+\subsubsection{Criticisms}
+
+Empirically, there are often an overwhelming amount of zeros in count data. In that case, the Poisson distribution provides a poor fit. Also, the assumption that the mean and the variance of the data have the same value everywhere is often not appropriate. 
+
+Important alternatives are represented by negative binomial models and zero-inflated Poisson models. Negative binomial models enable modeling the mean and the variance separately.

@@ -129,15 +129,8 @@ Ridge Regression ads the $L^1$ norm of the weight vector to
 
 \section{Generalized Linear Models}
 
-\subsection{Poisson Regression Models}
-A concise reference is chapter 4 in \citeasnoun{rodriguez2007generalized}. A poisson regression model assumes Poisson noise. Two notable factors are: 
+\input{./chapters/sections/reg_countregressions.tex}
 
-\begin{itemize}
-\item The data is strictly positive.
-\item The Poisson distribution does not have separate parameters for the mean and the variance, specifically $\mu = \sigma$. That means the assumption is the distribution of the data is heteroskedastic, where higher counts also fluctuate more widely.
-\end{itemize}
-
-Poisson regression models are hence a natural choice for count data. For example, the number of V2 rocket strikes in different areas of London, the number of children a woman has, etc. The underlying assumption is that counts correspond to independent events, and the probability of two simultaneous events is negligible. 
 
 
 
