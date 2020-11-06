@@ -1,27 +1,23 @@
 \section{Count Regressions}
 
-Count data is common, and often incorrectly analyzed using ordinary least squares. In general, least squares is only applicable when the error on the data, or a transformation of the data, has normal distribution with uniform variance. Count data tends to defy that expectation, especially for low counts where there are many incidences of "$0$" counts. Count data also tends to be heteroskedastic: higher counts tend to fluctuate more widely.
+Count data is common, and often incorrectly analyzed using ordinary least squares. In general, least squares is only applicable when the error on the data, or a transformation of the data, has normal distribution with uniform variance. Count data tends to defy that expectation, especially for low counts. Count data also tends to be heteroskedastic: higher counts tend to fluctuate more widely.
 
 \begin{itemize}
 \item The data is strictly positive. OLS models can predict negative values.
+\item Especially for low counts, the distribution is highly skewed
 \item The data is discrete, not continuous.
-\item If there are many $0$ counts, the high number of $0$ prevents the transformation of the skewed distribution into a normal one.     
+\item The fluctuation on the mean is not constant. The data is heteroskedastic. 
 \end{itemize}
+
+The definite resource for modeling count data is \citeasnoun{hilbe2014modeling}.
+
 
 \subsection{Poisson Regression Models}
-A concise reference is chapter 4 in \citeasnoun{rodriguez2007generalized}, but it is worth looking further to get a more complete picture. Out-of-the-box, a Poisson regression normally assumes the following:
+Poisson models tend to be the first pass at modeling count data, perhaps analogous to how ordinary least squares (OLS) regression is the first pass at modeling continuous data. Poisson models distinguish themselves, in general, by assuming that the fluctuation of the data about the mean has Poisson distribution.
 
-\begin{itemize}
-\item The error has Poisson distribution, and not a normal distribution as in OLS
-\item The data is strictly positive.
-\item The data is skewed.
-\item The data has discrete distribution (but can be generalized to continuous non-negative)
-\item The canonical case assumes a log-linear relationship: The dependent variable $(Y)$ is not a linear function of the coefficients. Rather, $ln(Y)$ is a linear function of the coefficients.
-\item The Poisson distribution does not have separate parameters for the mean and the variance, specifically $\mu = \sigma$. That implies that the distribution of the data is heteroskedastic, where higher counts also fluctuate more widely.
-\item The counting trials are independent and identically distributed. For example, the number of children one family has does not affect the number of children of the neighbors.
-\end{itemize}
 
-Poisson regression models are hence a natural choice for count data. For example, the number of V2 rocket strikes in different areas of London, the number of children a woman has, etc. The underlying assumption is that counts correspond to independent events, and the probability of two simultaneous events is negligible. 
+\subsubsection{``Ordinary" Poisson Regression}
+The term Poisson regression tends to be used interchangeably with a specific type of model, which is a generalized linear model with Poisson noise and log link. A concise reference for those models is chapter 4 in \citeasnoun{rodriguez2007generalized}.
 
 Specifically, the likelihood of observing a value $y$ is assumed to follow a Poisson distribution:
 
@@ -31,8 +27,70 @@ p(y|\mu) = \frac{e^{-\mu} \mu^{y}}{y!}
 
 Where the only parameter, $\mu$, is both the mean and the variance of the Poisson distribution. The model acquires additional structure when $\mu$ is assumed to be a function of some explanatory variables, $x$, i.e. $\mu = f(x)$. The canonical Poisson regression uses a log-linear relationship between the coefficients and the mean, i.e. $\mu = e^{\mathbf{\beta \cdot x}}$. The result is a generalized linear model with Poisson error and link log.
 
+The assumptions of this "ordinary Poisson regression" (my idea to call it that) are: 
+\begin{itemize}
+\item The error has Poisson distribution.
+\item The data is strictly positive.
+\item The data has discrete distribution (though the generalization to continuous numbers is pretty trivial)
+\item The data is i.i.d., meaning that the observed count events are results of independent trials. (Example: the number of kids in a family is unaffected by the number of kids the neighbors have)
+\end{itemize}
 
-\subsubsection{Analogy to Least Squares Regression}
+And, very importantly:
+\begin{itemize}
+\item It is a log-linear model! The relationship between the dependent variable ($Y$) and the independent variables is log linear. I.e. $ln(Y)$ is a linear function of the coefficients.
+\item The distribution of the data is heteroskedastic so that the mean equals the variance. The Poisson distribution only has one parameter and (i.e. $\mu = \sigma$)!
+\end{itemize}
+
+In the model, the likelihood of observing a value $y$ is assumed to follow a Poisson distribution:
+
+\begin{equation}
+p(y|\mu) = \frac{e^{-\mu} \mu^{y}}{y!}
+\end{equation}
+
+Where the only parameter, $\mu$, is both the mean and the variance of the Poisson distribution. The model acquires additional structure when $\mu$ is assumed to be a function of some explanatory variables, $x$, i.e. $\mu = f(x)$. The canonical Poisson regression uses a log-linear relationship between the coefficients and the mean, i.e. $\mu = e^{\mathbf{\beta \cdot x}}$. The result is a generalized linear model with Poisson error and link log.
+
+\begin{equation}
+p(y|\mathbf{x};\mathbf{\beta}) = \frac{e^{-\exp(\mathbf{\beta\cdot x})} (\exp(\mathbf{\beta\cdot x}))^{y}}{y!}
+\end{equation}
+
+
+\begin{figure}
+\centering
+    \includegraphics[width=\textwidth]{poissonmodels02.png}
+    \caption{Left: Ordinary Poisson Regression on data that satisfies the assumptions of the model. For small rates, the model is approximately linear, but beyond that it shows exponential growth because of the log-link. Right: Residuals showing heteroskedasticity with variance increasing with the mean. Dividing the residuals by the mean yields constant variance.}
+    \label{fig:ordinarypoisson}
+\end{figure}
+
+
+\subsubsection{Poisson Noise \& Central Limit Theorem}
+
+For small count rates, the Poisson distribution is highly skewed and strictly positive. For large count rates, the Poisson distribution is essentially normal, except that variance and mean are locked.
+
+If you are dealing with large counts, then the Poisson model still has the feature of being heteroskedastic.
+
+\subparagraph{Advantages of using Poisson Noise}
+
+\begin{itemize}
+\item The Poisson Distribution is highly skewed for small rates, and strictly positive. For high enough count rates, this advantage disappears.
+\item The Poisson Distribution is heteroskedastic
+\end{itemize}
+
+\subparagraph{Drawbacks of using Poisson Noise}
+
+\begin{itemize}
+\item The Poisson distribution only has a single parameter. The assumption that the mean and the variance are the same is very restrictive.
+\end{itemize}
+
+
+\begin{figure}
+\centering
+    \includegraphics[width=\textwidth]{poissonmodels01.png}
+    \caption{Left: The Poisson Distribution for small rates is highly skewed. Right: The Poisson Distribution for intermediate rates looks very similar to a normal distribution. In both cases, the variance and the mean are the same value.}
+    \label{fig:poissonandcentrallimit}
+\end{figure}
+
+
+\subsubsection{Poisson Noise Analogy to Least Squares Regression}
 To anchor intuition in familiar territory, consider least squares regression with a log-linear relationship between endogenous and exogenous variables (that is, the model assumes a relationship of $log(y)=a + \mathbf{bx}$ that is beset with Gaussian noise). The familiar form for the model is:
 
 \begin{equation}
@@ -68,12 +126,15 @@ Here, $\hat{\mu}_i = e^{\mathbf{x}^T_i \hat{\mathbf{\beta}}}$ is the fitted mean
 
 For large sample sizes, the deviance will be distributed approximately chi-squared with $n-p$ degrees of freedom, where $n$ is the number of data points and $p$ is the number of features. An alternative to the deviance is Pearson's chi-squared statistic. 
 
-\subsubsection{General$\mu = f(\mathbf{x})$}
+\subsubsection{General $\mu = f(\mathbf{x})$}
 The Poisson-ness only has to do with how the data fluctuates about the mean. How the mean is expected to depend on the explanatory variables is another question. In so far, general other functions, including highly-nonlinear machine learning models, can be fit under the assumption of Poisson noise.
 
+XGBoost supports poisson loss. Empirically, it seems that Poisson loss performs worse in the regime where the model is underfitting, and slightly better in the regime where the model is overfitting. The difference is especially pronounced in the Poisson deviance and for sparse data.
 
-\subsubsection{Criticisms}
 
-Empirically, there are often an overwhelming amount of zeros in count data. In that case, the Poisson distribution provides a poor fit. Also, the assumption that the mean and the variance of the data have the same value everywhere is often not appropriate. 
-
-Important alternatives are represented by negative binomial models and zero-inflated Poisson models. Negative binomial models enable modeling the mean and the variance separately.
+\begin{figure}
+\centering
+    \includegraphics[width=\textwidth]{poissonmodels03.png}
+    \caption{Left: Ordinary Poisson Regression on data that satisfies the assumptions of the model. For small rates, the model is approximately linear, but beyond that it shows exponential growth because of the log-link. Right: Residuals showing heteroskedasticity with variance increasing with the mean. Dividing the residuals by the mean yields constant variance.}
+    \label{fig:ordinarypoisson}
+\end{figure}

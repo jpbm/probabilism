@@ -508,72 +508,75 @@
 \contentsline {section}{\numberline {8.6}Generalized Linear Models}{107}{section.8.6}
 \contentsline {section}{\numberline {8.7}Count Regressions}{107}{section.8.7}
 \contentsline {subsection}{\numberline {8.7.1}Poisson Regression Models}{107}{subsection.8.7.1}
-\contentsline {subsubsection}{\numberline {8.7.1.1}Analogy to Least Squares Regression}{108}{subsubsection.8.7.1.1}
-\contentsline {subsubsection}{\numberline {8.7.1.2}Multivariate Poisson Model}{108}{subsubsection.8.7.1.2}
-\contentsline {subsubsection}{\numberline {8.7.1.3}Goodness of Fit}{108}{subsubsection.8.7.1.3}
-\contentsline {subsubsection}{\numberline {8.7.1.4}General$\mu = f(\mathbf {x})$}{109}{subsubsection.8.7.1.4}
-\contentsline {subsubsection}{\numberline {8.7.1.5}Criticisms}{109}{subsubsection.8.7.1.5}
-\contentsline {chapter}{\numberline {9}Bayesian Data Analysis}{111}{chapter.9}
+\contentsline {subsubsection}{\numberline {8.7.1.1}``Ordinary" Poisson Regression}{107}{subsubsection.8.7.1.1}
+\contentsline {subsubsection}{\numberline {8.7.1.2}Poisson Noise \& Central Limit Theorem}{108}{subsubsection.8.7.1.2}
+\contentsline {subparagraph}{Advantages of using Poisson Noise}{108}{subparagraph*.101}
+\contentsline {subparagraph}{Drawbacks of using Poisson Noise}{108}{subparagraph*.102}
+\contentsline {subsubsection}{\numberline {8.7.1.3}Poisson Noise Analogy to Least Squares Regression}{110}{subsubsection.8.7.1.3}
+\contentsline {subsubsection}{\numberline {8.7.1.4}Multivariate Poisson Model}{110}{subsubsection.8.7.1.4}
+\contentsline {subsubsection}{\numberline {8.7.1.5}Goodness of Fit}{110}{subsubsection.8.7.1.5}
+\contentsline {subsubsection}{\numberline {8.7.1.6}General $\mu = f(\mathbf {x})$}{110}{subsubsection.8.7.1.6}
+\contentsline {chapter}{\numberline {9}Bayesian Data Analysis}{113}{chapter.9}
 \ttl@stoptoc {default@9}
 \ttl@starttoc {default@10}
-\contentsline {section}{\numberline {9.1}Markov Chain Monte Carlo Methods}{111}{section.9.1}
-\contentsline {chapter}{\numberline {10}Unsupervised Learning}{113}{chapter.10}
+\contentsline {section}{\numberline {9.1}Markov Chain Monte Carlo Methods}{113}{section.9.1}
+\contentsline {chapter}{\numberline {10}Unsupervised Learning}{115}{chapter.10}
 \ttl@stoptoc {default@10}
 \ttl@starttoc {default@11}
-\contentsline {section}{\numberline {10.1}Blind Source Separation}{113}{section.10.1}
-\contentsline {section}{\numberline {10.2}Clustering}{113}{section.10.2}
-\contentsline {subsection}{\numberline {10.2.1}K-Means}{113}{subsection.10.2.1}
-\contentsline {subsection}{\numberline {10.2.2}Affinity Propagation}{113}{subsection.10.2.2}
-\contentsline {section}{\numberline {10.3}Independent Component Analysis (ICA)}{113}{section.10.3}
-\contentsline {section}{\numberline {10.4}Compressed Sensing}{113}{section.10.4}
-\contentsline {section}{\numberline {10.5}$\mathbf {X} = \mathbf {U\Sigma V^T}$ Eigenanalysis, Singular Value Decomposition (SVD)}{113}{section.10.5}
-\contentsline {subsection}{\numberline {10.5.1}Example: Eigenfaces and Facial Recognition}{114}{subsection.10.5.1}
-\contentsline {subsection}{\numberline {10.5.2}Tracking an Eigensystem over Time}{114}{subsection.10.5.2}
-\contentsline {subsubsection}{\numberline {10.5.2.1}Heuristic Method}{116}{subsubsection.10.5.2.1}
-\contentsline {subsubsection}{\numberline {10.5.2.2}Consistent Method}{116}{subsubsection.10.5.2.2}
-\contentsline {subsubsection}{\numberline {10.5.2.3}Rank Order Changes}{116}{subsubsection.10.5.2.3}
-\contentsline {subsection}{\numberline {10.5.3}Bayesian SVD}{116}{subsection.10.5.3}
-\contentsline {subsection}{\numberline {10.5.4}Randomized SVD}{116}{subsection.10.5.4}
-\contentsline {subsubsection}{\numberline {10.5.4.1}Step 1: Sample Column Space of $\mathbf {X}$ with $\mathbf {P}$}{116}{subsubsection.10.5.4.1}
-\contentsline {subsubsection}{\numberline {10.5.4.2}Step 2: Compute SVD on Projected $\mathbf {Y = Q^T X}$}{118}{subsubsection.10.5.4.2}
-\contentsline {section}{\numberline {10.6}Principal Component Analysis (PCA)}{118}{section.10.6}
-\contentsline {subsection}{\numberline {10.6.1}Relationship between PCA and SVD}{120}{subsection.10.6.1}
-\contentsline {subsection}{\numberline {10.6.2}Tracking Principal Components over Time}{120}{subsection.10.6.2}
-\contentsline {subsection}{\numberline {10.6.3}$L^1$-Norm Principal Component Analysis ($L^1$ PCA)}{120}{subsection.10.6.3}
-\contentsline {section}{\numberline {10.7}$\mathbf {X}=\mathbf {W}\mathbf {H}$ Non-Negative Matrix Factorization}{120}{section.10.7}
-\contentsline {section}{\numberline {10.8}Optimal Truncation}{122}{section.10.8}
-\contentsline {subsection}{\numberline {10.8.1}Scree Plots, Heuristic Methods}{122}{subsection.10.8.1}
-\contentsline {subsection}{\numberline {10.8.2}Gavish \& Donoho's Optimal Threshold for SVD}{124}{subsection.10.8.2}
-\contentsline {section}{\numberline {10.9}Matrix Completion, Imputation}{124}{section.10.9}
-\contentsline {subsection}{\numberline {10.9.1}Nuclear Norm Regularization}{124}{subsection.10.9.1}
-\contentsline {chapter}{\numberline {11}Dynamical Systems}{129}{chapter.11}
+\contentsline {section}{\numberline {10.1}Blind Source Separation}{115}{section.10.1}
+\contentsline {section}{\numberline {10.2}Clustering}{115}{section.10.2}
+\contentsline {subsection}{\numberline {10.2.1}K-Means}{115}{subsection.10.2.1}
+\contentsline {subsection}{\numberline {10.2.2}Affinity Propagation}{115}{subsection.10.2.2}
+\contentsline {section}{\numberline {10.3}Independent Component Analysis (ICA)}{115}{section.10.3}
+\contentsline {section}{\numberline {10.4}Compressed Sensing}{115}{section.10.4}
+\contentsline {section}{\numberline {10.5}$\mathbf {X} = \mathbf {U\Sigma V^T}$ Eigenanalysis, Singular Value Decomposition (SVD)}{115}{section.10.5}
+\contentsline {subsection}{\numberline {10.5.1}Example: Eigenfaces and Facial Recognition}{116}{subsection.10.5.1}
+\contentsline {subsection}{\numberline {10.5.2}Tracking an Eigensystem over Time}{116}{subsection.10.5.2}
+\contentsline {subsubsection}{\numberline {10.5.2.1}Heuristic Method}{118}{subsubsection.10.5.2.1}
+\contentsline {subsubsection}{\numberline {10.5.2.2}Consistent Method}{118}{subsubsection.10.5.2.2}
+\contentsline {subsubsection}{\numberline {10.5.2.3}Rank Order Changes}{118}{subsubsection.10.5.2.3}
+\contentsline {subsection}{\numberline {10.5.3}Bayesian SVD}{118}{subsection.10.5.3}
+\contentsline {subsection}{\numberline {10.5.4}Randomized SVD}{118}{subsection.10.5.4}
+\contentsline {subsubsection}{\numberline {10.5.4.1}Step 1: Sample Column Space of $\mathbf {X}$ with $\mathbf {P}$}{118}{subsubsection.10.5.4.1}
+\contentsline {subsubsection}{\numberline {10.5.4.2}Step 2: Compute SVD on Projected $\mathbf {Y = Q^T X}$}{120}{subsubsection.10.5.4.2}
+\contentsline {section}{\numberline {10.6}Principal Component Analysis (PCA)}{120}{section.10.6}
+\contentsline {subsection}{\numberline {10.6.1}Relationship between PCA and SVD}{122}{subsection.10.6.1}
+\contentsline {subsection}{\numberline {10.6.2}Tracking Principal Components over Time}{122}{subsection.10.6.2}
+\contentsline {subsection}{\numberline {10.6.3}$L^1$-Norm Principal Component Analysis ($L^1$ PCA)}{122}{subsection.10.6.3}
+\contentsline {section}{\numberline {10.7}$\mathbf {X}=\mathbf {W}\mathbf {H}$ Non-Negative Matrix Factorization}{122}{section.10.7}
+\contentsline {section}{\numberline {10.8}Optimal Truncation}{124}{section.10.8}
+\contentsline {subsection}{\numberline {10.8.1}Scree Plots, Heuristic Methods}{124}{subsection.10.8.1}
+\contentsline {subsection}{\numberline {10.8.2}Gavish \& Donoho's Optimal Threshold for SVD}{126}{subsection.10.8.2}
+\contentsline {section}{\numberline {10.9}Matrix Completion, Imputation}{126}{section.10.9}
+\contentsline {subsection}{\numberline {10.9.1}Nuclear Norm Regularization}{126}{subsection.10.9.1}
+\contentsline {chapter}{\numberline {11}Dynamical Systems}{131}{chapter.11}
 \ttl@stoptoc {default@11}
 \ttl@starttoc {default@12}
-\contentsline {section}{\numberline {11.1}Mode Decompositions}{129}{section.11.1}
-\contentsline {section}{\numberline {11.2}Koopman and Frobenius-Perron Operators}{130}{section.11.2}
-\contentsline {section}{\numberline {11.3}Proper Orthogonal Decomposition (POD)}{130}{section.11.3}
-\contentsline {section}{\numberline {11.4}Dynamic Mode Decomposition (DMD)}{131}{section.11.4}
-\contentsline {section}{\numberline {11.5}Extended Dynamical Mode Decomposition (EDMD)}{132}{section.11.5}
-\contentsline {section}{\numberline {11.6}Sparse Identification of Nonlinear Dynamics (SINDy)}{132}{section.11.6}
-\contentsline {section}{\numberline {11.7}DMD with Irregularly Sampled Timesteps}{132}{section.11.7}
-\contentsline {chapter}{\numberline {12}Exploratory Data Analysis}{133}{chapter.12}
+\contentsline {section}{\numberline {11.1}Mode Decompositions}{131}{section.11.1}
+\contentsline {section}{\numberline {11.2}Koopman and Frobenius-Perron Operators}{132}{section.11.2}
+\contentsline {section}{\numberline {11.3}Proper Orthogonal Decomposition (POD)}{132}{section.11.3}
+\contentsline {section}{\numberline {11.4}Dynamic Mode Decomposition (DMD)}{133}{section.11.4}
+\contentsline {section}{\numberline {11.5}Extended Dynamical Mode Decomposition (EDMD)}{134}{section.11.5}
+\contentsline {section}{\numberline {11.6}Sparse Identification of Nonlinear Dynamics (SINDy)}{134}{section.11.6}
+\contentsline {section}{\numberline {11.7}DMD with Irregularly Sampled Timesteps}{134}{section.11.7}
+\contentsline {chapter}{\numberline {12}Exploratory Data Analysis}{135}{chapter.12}
 \ttl@stoptoc {default@12}
 \ttl@starttoc {default@13}
-\contentsline {section}{\numberline {12.1}Basic Steps}{133}{section.12.1}
-\contentsline {subsection}{\numberline {12.1.1}Import, Clean, Data Census}{133}{subsection.12.1.1}
-\contentsline {subsection}{\numberline {12.1.2}Single Variable Explorations}{133}{subsection.12.1.2}
-\contentsline {subsection}{\numberline {12.1.3}Pair-wise Explorations}{133}{subsection.12.1.3}
-\contentsline {subsection}{\numberline {12.1.4}Multivariate Analysis}{133}{subsection.12.1.4}
-\contentsline {subsection}{\numberline {12.1.5}Estimation and Hypothesis Testing}{133}{subsection.12.1.5}
-\contentsline {subsection}{\numberline {12.1.6}Visualization}{133}{subsection.12.1.6}
-\contentsline {chapter}{\numberline {13}Causality}{135}{chapter.13}
+\contentsline {section}{\numberline {12.1}Basic Steps}{135}{section.12.1}
+\contentsline {subsection}{\numberline {12.1.1}Import, Clean, Data Census}{135}{subsection.12.1.1}
+\contentsline {subsection}{\numberline {12.1.2}Single Variable Explorations}{135}{subsection.12.1.2}
+\contentsline {subsection}{\numberline {12.1.3}Pair-wise Explorations}{135}{subsection.12.1.3}
+\contentsline {subsection}{\numberline {12.1.4}Multivariate Analysis}{135}{subsection.12.1.4}
+\contentsline {subsection}{\numberline {12.1.5}Estimation and Hypothesis Testing}{135}{subsection.12.1.5}
+\contentsline {subsection}{\numberline {12.1.6}Visualization}{135}{subsection.12.1.6}
+\contentsline {chapter}{\numberline {13}Causality}{137}{chapter.13}
 \ttl@stoptoc {default@13}
 \ttl@starttoc {default@14}
-\contentsline {section}{\numberline {13.1}Generalized Random Forests}{135}{section.13.1}
-\contentsline {chapter}{\numberline {14}Machine Learning}{137}{chapter.14}
+\contentsline {section}{\numberline {13.1}Generalized Random Forests}{137}{section.13.1}
+\contentsline {chapter}{\numberline {14}Machine Learning}{139}{chapter.14}
 \ttl@stoptoc {default@14}
 \ttl@starttoc {default@15}
-\contentsline {chapter}{\numberline {15}Algorithms}{139}{chapter.15}
+\contentsline {chapter}{\numberline {15}Algorithms}{141}{chapter.15}
 \ttl@stoptoc {default@15}
 \ttl@starttoc {default@16}
 \ttl@stoptoc {default@16}

@@ -616,6 +616,7 @@
 \@writefile{toc}{\contentsline {subsection}{\numberline {8.1.2}The Quick Way to $\mathbf  {\mathaccentV {hat}05E{\beta }}$}{106}{subsection.8.1.2}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {8.1.3}The Long Way to $\mathbf  {\mathaccentV {hat}05E{\beta }}$}{106}{subsection.8.1.3}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {8.1.4}Projection Matrix}{106}{subsection.8.1.4}}
+\citation{hilbe2014modeling}
 \citation{rodriguez2007generalized}
 \@writefile{toc}{\contentsline {subsection}{\numberline {8.1.5}Bayesian Perspective on Least Squares Regression}{107}{subsection.8.1.5}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {8.1.6}Q-plots}{107}{subsection.8.1.6}}
@@ -629,148 +630,157 @@
 \@writefile{toc}{\contentsline {section}{\numberline {8.6}Generalized Linear Models}{107}{section.8.6}}
 \@writefile{toc}{\contentsline {section}{\numberline {8.7}Count Regressions}{107}{section.8.7}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {8.7.1}Poisson Regression Models}{107}{subsection.8.7.1}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {8.7.1.1}Analogy to Least Squares Regression}{108}{subsubsection.8.7.1.1}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {8.7.1.2}Multivariate Poisson Model}{108}{subsubsection.8.7.1.2}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {8.7.1.3}Goodness of Fit}{108}{subsubsection.8.7.1.3}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {8.7.1.4}General$\mu = f(\mathbf  {x})$}{109}{subsubsection.8.7.1.4}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {8.7.1.5}Criticisms}{109}{subsubsection.8.7.1.5}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {9}Bayesian Data Analysis}{111}{chapter.9}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {8.7.1.1}``Ordinary" Poisson Regression}{107}{subsubsection.8.7.1.1}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {8.7.1.2}Poisson Noise \& Central Limit Theorem}{108}{subsubsection.8.7.1.2}}
+\@writefile{toc}{\contentsline {subparagraph}{Advantages of using Poisson Noise}{108}{subparagraph*.101}}
+\@writefile{toc}{\contentsline {subparagraph}{Drawbacks of using Poisson Noise}{108}{subparagraph*.102}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8.1}{\ignorespaces Left: Ordinary Poisson Regression on data that satisfies the assumptions of the model. For small rates, the model is approximately linear, but beyond that it shows exponential growth because of the log-link. Right: Residuals showing heteroskedasticity with variance increasing with the mean. Dividing the residuals by the mean yields constant variance.}}{109}{figure.8.1}}
+\newlabel{fig:ordinarypoisson}{{8.1}{109}{Left: Ordinary Poisson Regression on data that satisfies the assumptions of the model. For small rates, the model is approximately linear, but beyond that it shows exponential growth because of the log-link. Right: Residuals showing heteroskedasticity with variance increasing with the mean. Dividing the residuals by the mean yields constant variance}{figure.8.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8.2}{\ignorespaces Left: The Poisson Distribution for small rates is highly skewed. Right: The Poisson Distribution for intermediate rates looks very similar to a normal distribution. In both cases, the variance and the mean are the same value.}}{109}{figure.8.2}}
+\newlabel{fig:poissonandcentrallimit}{{8.2}{109}{Left: The Poisson Distribution for small rates is highly skewed. Right: The Poisson Distribution for intermediate rates looks very similar to a normal distribution. In both cases, the variance and the mean are the same value}{figure.8.2}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {8.7.1.3}Poisson Noise Analogy to Least Squares Regression}{110}{subsubsection.8.7.1.3}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {8.7.1.4}Multivariate Poisson Model}{110}{subsubsection.8.7.1.4}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {8.7.1.5}Goodness of Fit}{110}{subsubsection.8.7.1.5}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {8.7.1.6}General $\mu = f(\mathbf  {x})$}{110}{subsubsection.8.7.1.6}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8.3}{\ignorespaces Left: Ordinary Poisson Regression on data that satisfies the assumptions of the model. For small rates, the model is approximately linear, but beyond that it shows exponential growth because of the log-link. Right: Residuals showing heteroskedasticity with variance increasing with the mean. Dividing the residuals by the mean yields constant variance.}}{111}{figure.8.3}}
+\newlabel{fig:ordinarypoisson}{{8.3}{111}{Left: Ordinary Poisson Regression on data that satisfies the assumptions of the model. For small rates, the model is approximately linear, but beyond that it shows exponential growth because of the log-link. Right: Residuals showing heteroskedasticity with variance increasing with the mean. Dividing the residuals by the mean yields constant variance}{figure.8.3}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {9}Bayesian Data Analysis}{113}{chapter.9}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \ttl@writefile{ptc}{\ttl@stoptoc{default@9}}
 \ttl@writefile{ptc}{\ttl@starttoc{default@10}}
-\@writefile{toc}{\contentsline {section}{\numberline {9.1}Markov Chain Monte Carlo Methods}{111}{section.9.1}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {10}Unsupervised Learning}{113}{chapter.10}}
+\@writefile{toc}{\contentsline {section}{\numberline {9.1}Markov Chain Monte Carlo Methods}{113}{section.9.1}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {10}Unsupervised Learning}{115}{chapter.10}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \ttl@writefile{ptc}{\ttl@stoptoc{default@10}}
 \ttl@writefile{ptc}{\ttl@starttoc{default@11}}
-\@writefile{toc}{\contentsline {section}{\numberline {10.1}Blind Source Separation}{113}{section.10.1}}
-\@writefile{toc}{\contentsline {section}{\numberline {10.2}Clustering}{113}{section.10.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {10.2.1}K-Means}{113}{subsection.10.2.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {10.2.2}Affinity Propagation}{113}{subsection.10.2.2}}
-\@writefile{toc}{\contentsline {section}{\numberline {10.3}Independent Component Analysis (ICA)}{113}{section.10.3}}
-\@writefile{toc}{\contentsline {section}{\numberline {10.4}Compressed Sensing}{113}{section.10.4}}
-\@writefile{toc}{\contentsline {section}{\numberline {10.5}$\mathbf  {X} = \mathbf  {U\Sigma V^T}$ Eigenanalysis, Singular Value Decomposition (SVD)}{113}{section.10.5}}
-\newlabel{sec:datasvd}{{10.5}{113}{$\mathbf {X} = \mathbf {U\Sigma V^T}$ Eigenanalysis, Singular Value Decomposition (SVD)}{section.10.5}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {10.5.1}Example: Eigenfaces and Facial Recognition}{114}{subsection.10.5.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {10.5.2}Tracking an Eigensystem over Time}{114}{subsection.10.5.2}}
-\newlabel{sec:svd_tracking}{{10.5.2}{114}{Tracking an Eigensystem over Time}{subsection.10.5.2}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {10.1}{\ignorespaces Left: The first 48 eigenfaces. The colorscale is consistent across the images. As can be expected, the eigenfaces seem to have an ordering from more general features, that are highly prevalent in the dataset, towards more specific features. Right: Five sample portraits from the dataset approximated using different numbers of eigenvectors. 2914 corresponds to the original image, which had 2914 pixels (degrees of freedom).}}{115}{figure.10.1}}
-\newlabel{fig:svd_eigenfaces}{{10.1}{115}{Left: The first 48 eigenfaces. The colorscale is consistent across the images. As can be expected, the eigenfaces seem to have an ordering from more general features, that are highly prevalent in the dataset, towards more specific features. Right: Five sample portraits from the dataset approximated using different numbers of eigenvectors. 2914 corresponds to the original image, which had 2914 pixels (degrees of freedom)}{figure.10.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {10.1}Blind Source Separation}{115}{section.10.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {10.2}Clustering}{115}{section.10.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {10.2.1}K-Means}{115}{subsection.10.2.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {10.2.2}Affinity Propagation}{115}{subsection.10.2.2}}
+\@writefile{toc}{\contentsline {section}{\numberline {10.3}Independent Component Analysis (ICA)}{115}{section.10.3}}
+\@writefile{toc}{\contentsline {section}{\numberline {10.4}Compressed Sensing}{115}{section.10.4}}
+\@writefile{toc}{\contentsline {section}{\numberline {10.5}$\mathbf  {X} = \mathbf  {U\Sigma V^T}$ Eigenanalysis, Singular Value Decomposition (SVD)}{115}{section.10.5}}
+\newlabel{sec:datasvd}{{10.5}{115}{$\mathbf {X} = \mathbf {U\Sigma V^T}$ Eigenanalysis, Singular Value Decomposition (SVD)}{section.10.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {10.5.1}Example: Eigenfaces and Facial Recognition}{116}{subsection.10.5.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {10.5.2}Tracking an Eigensystem over Time}{116}{subsection.10.5.2}}
+\newlabel{sec:svd_tracking}{{10.5.2}{116}{Tracking an Eigensystem over Time}{subsection.10.5.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10.1}{\ignorespaces Left: The first 48 eigenfaces. The colorscale is consistent across the images. As can be expected, the eigenfaces seem to have an ordering from more general features, that are highly prevalent in the dataset, towards more specific features. Right: Five sample portraits from the dataset approximated using different numbers of eigenvectors. 2914 corresponds to the original image, which had 2914 pixels (degrees of freedom).}}{117}{figure.10.1}}
+\newlabel{fig:svd_eigenfaces}{{10.1}{117}{Left: The first 48 eigenfaces. The colorscale is consistent across the images. As can be expected, the eigenfaces seem to have an ordering from more general features, that are highly prevalent in the dataset, towards more specific features. Right: Five sample portraits from the dataset approximated using different numbers of eigenvectors. 2914 corresponds to the original image, which had 2914 pixels (degrees of freedom)}{figure.10.1}{}}
 \citation{damask2019consistently}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {10.5.2.1}Heuristic Method}{116}{subsubsection.10.5.2.1}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {10.5.2.2}Consistent Method}{116}{subsubsection.10.5.2.2}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {10.5.2.3}Rank Order Changes}{116}{subsubsection.10.5.2.3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {10.5.3}Bayesian SVD}{116}{subsection.10.5.3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {10.5.4}Randomized SVD}{116}{subsection.10.5.4}}
-\newlabel{sec:rsvd}{{10.5.4}{116}{Randomized SVD}{subsection.10.5.4}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {10.5.4.1}Step 1: Sample Column Space of $\mathbf  {X}$ with $\mathbf  {P}$}{116}{subsubsection.10.5.4.1}}
-\@writefile{lof}{\contentsline {figure}{\numberline {10.2}{\ignorespaces Right singular vectors extracted using SVD, showing sign flips (top) and with a consistently oriented basis (bottom). The underlying data is a bivariate gaussian with principal axes undergoing a 180 degree rotation. With the consistently oriented basis, the singular vectors trace out a one-to-one trajectory that can be analyzed.}}{117}{figure.10.2}}
-\newlabel{fig:svd_consistently_oriented}{{10.2}{117}{Right singular vectors extracted using SVD, showing sign flips (top) and with a consistently oriented basis (bottom). The underlying data is a bivariate gaussian with principal axes undergoing a 180 degree rotation. With the consistently oriented basis, the singular vectors trace out a one-to-one trajectory that can be analyzed}{figure.10.2}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {10.5.4.2}Step 2: Compute SVD on Projected $\mathbf  {Y = Q^T X}$}{118}{subsubsection.10.5.4.2}}
-\@writefile{toc}{\contentsline {section}{\numberline {10.6}Principal Component Analysis (PCA)}{118}{section.10.6}}
-\newlabel{sec:pca}{{10.6}{118}{Principal Component Analysis (PCA)}{section.10.6}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {10.3}{\ignorespaces Left: Time taken to perform conventional SVD (black line) and randomized SVD (colored lines) on the photo of the two young aristocrats which had a data matrix with rank $r=1277$. The different colors correspond to different numbers of power iterations performed ($q$). Right: Average mean square error (AMSE) of truncated SVD using matrices derived with randomized SVD compared with conventional SVD. Especially for small $r$, rSVD is significantly faster even after a few power iterations. For very small $r$, power iterations easily reduce the error introduced by the randomized method by several orders of magnitude, but at some point the method seems to increase the error. Perhaps this is due to numerical stability. I'm not sure. To somewhat account for random fluctuations, the curves shown are averaged over 20 trials.}}{119}{figure.10.3}}
-\newlabel{fig:svd_scree}{{10.3}{119}{Left: Time taken to perform conventional SVD (black line) and randomized SVD (colored lines) on the photo of the two young aristocrats which had a data matrix with rank $r=1277$. The different colors correspond to different numbers of power iterations performed ($q$). Right: Average mean square error (AMSE) of truncated SVD using matrices derived with randomized SVD compared with conventional SVD. Especially for small $r$, rSVD is significantly faster even after a few power iterations. For very small $r$, power iterations easily reduce the error introduced by the randomized method by several orders of magnitude, but at some point the method seems to increase the error. Perhaps this is due to numerical stability. I'm not sure. To somewhat account for random fluctuations, the curves shown are averaged over 20 trials}{figure.10.3}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {10.5.2.1}Heuristic Method}{118}{subsubsection.10.5.2.1}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {10.5.2.2}Consistent Method}{118}{subsubsection.10.5.2.2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {10.5.2.3}Rank Order Changes}{118}{subsubsection.10.5.2.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {10.5.3}Bayesian SVD}{118}{subsection.10.5.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {10.5.4}Randomized SVD}{118}{subsection.10.5.4}}
+\newlabel{sec:rsvd}{{10.5.4}{118}{Randomized SVD}{subsection.10.5.4}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {10.5.4.1}Step 1: Sample Column Space of $\mathbf  {X}$ with $\mathbf  {P}$}{118}{subsubsection.10.5.4.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10.2}{\ignorespaces Right singular vectors extracted using SVD, showing sign flips (top) and with a consistently oriented basis (bottom). The underlying data is a bivariate gaussian with principal axes undergoing a 180 degree rotation. With the consistently oriented basis, the singular vectors trace out a one-to-one trajectory that can be analyzed.}}{119}{figure.10.2}}
+\newlabel{fig:svd_consistently_oriented}{{10.2}{119}{Right singular vectors extracted using SVD, showing sign flips (top) and with a consistently oriented basis (bottom). The underlying data is a bivariate gaussian with principal axes undergoing a 180 degree rotation. With the consistently oriented basis, the singular vectors trace out a one-to-one trajectory that can be analyzed}{figure.10.2}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {10.5.4.2}Step 2: Compute SVD on Projected $\mathbf  {Y = Q^T X}$}{120}{subsubsection.10.5.4.2}}
+\@writefile{toc}{\contentsline {section}{\numberline {10.6}Principal Component Analysis (PCA)}{120}{section.10.6}}
+\newlabel{sec:pca}{{10.6}{120}{Principal Component Analysis (PCA)}{section.10.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10.3}{\ignorespaces Left: Time taken to perform conventional SVD (black line) and randomized SVD (colored lines) on the photo of the two young aristocrats which had a data matrix with rank $r=1277$. The different colors correspond to different numbers of power iterations performed ($q$). Right: Average mean square error (AMSE) of truncated SVD using matrices derived with randomized SVD compared with conventional SVD. Especially for small $r$, rSVD is significantly faster even after a few power iterations. For very small $r$, power iterations easily reduce the error introduced by the randomized method by several orders of magnitude, but at some point the method seems to increase the error. Perhaps this is due to numerical stability. I'm not sure. To somewhat account for random fluctuations, the curves shown are averaged over 20 trials.}}{121}{figure.10.3}}
+\newlabel{fig:svd_scree}{{10.3}{121}{Left: Time taken to perform conventional SVD (black line) and randomized SVD (colored lines) on the photo of the two young aristocrats which had a data matrix with rank $r=1277$. The different colors correspond to different numbers of power iterations performed ($q$). Right: Average mean square error (AMSE) of truncated SVD using matrices derived with randomized SVD compared with conventional SVD. Especially for small $r$, rSVD is significantly faster even after a few power iterations. For very small $r$, power iterations easily reduce the error introduced by the randomized method by several orders of magnitude, but at some point the method seems to increase the error. Perhaps this is due to numerical stability. I'm not sure. To somewhat account for random fluctuations, the curves shown are averaged over 20 trials}{figure.10.3}{}}
 \citation{amoeba2015svdpca}
 \citation{brooks2012pcal1}
 \citation{brooks2014pure}
 \citation{brooks2014pure}
-\@writefile{toc}{\contentsline {subsection}{\numberline {10.6.1}Relationship between PCA and SVD}{120}{subsection.10.6.1}}
-\newlabel{sec:pcasvd}{{10.6.1}{120}{Relationship between PCA and SVD}{subsection.10.6.1}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {10.6.2}Tracking Principal Components over Time}{120}{subsection.10.6.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {10.6.3}$L^1$-Norm Principal Component Analysis ($L^1$ PCA)}{120}{subsection.10.6.3}}
-\newlabel{sec:l1pca}{{10.6.3}{120}{$L^1$-Norm Principal Component Analysis ($L^1$ PCA)}{subsection.10.6.3}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {10.7}$\mathbf  {X}=\mathbf  {W}\mathbf  {H}$ Non-Negative Matrix Factorization}{120}{section.10.7}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {10.6.1}Relationship between PCA and SVD}{122}{subsection.10.6.1}}
+\newlabel{sec:pcasvd}{{10.6.1}{122}{Relationship between PCA and SVD}{subsection.10.6.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {10.6.2}Tracking Principal Components over Time}{122}{subsection.10.6.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {10.6.3}$L^1$-Norm Principal Component Analysis ($L^1$ PCA)}{122}{subsection.10.6.3}}
+\newlabel{sec:l1pca}{{10.6.3}{122}{$L^1$-Norm Principal Component Analysis ($L^1$ PCA)}{subsection.10.6.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {10.7}$\mathbf  {X}=\mathbf  {W}\mathbf  {H}$ Non-Negative Matrix Factorization}{122}{section.10.7}}
 \citation{gillis2014nonnegative}
 \citation{morningpaper2019nnmf}
 \citation{gillis2014nonnegative}
-\@writefile{lof}{\contentsline {figure}{\numberline {10.4}{\ignorespaces Distance of a point to a hyperplane in $L^1$ and $L^2$. The $L^1$ distance in this case is just the distance along the $x$ axis. If the hyperplane was cutting a shallower angle, then the distance would be measured along the $y$ axis. The best fit hyperplane to many points in $\mathbb  {R}^2$ would be found by regressing the data points once with $y = \beta x + \epsilon $ and once with $x = \beta y + \epsilon $ and selecting the result with the smaller $||\epsilon ||_1$. (The figure is from J. P. Brooks (2014).}}{121}{figure.10.4}}
-\newlabel{fig:l1pca}{{10.4}{121}{Distance of a point to a hyperplane in $L^1$ and $L^2$. The $L^1$ distance in this case is just the distance along the $x$ axis. If the hyperplane was cutting a shallower angle, then the distance would be measured along the $y$ axis. The best fit hyperplane to many points in $\mathbb {R}^2$ would be found by regressing the data points once with $y = \beta x + \epsilon $ and once with $x = \beta y + \epsilon $ and selecting the result with the smaller $||\epsilon ||_1$. (The figure is from J. P. Brooks (2014)}{figure.10.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10.4}{\ignorespaces Distance of a point to a hyperplane in $L^1$ and $L^2$. The $L^1$ distance in this case is just the distance along the $x$ axis. If the hyperplane was cutting a shallower angle, then the distance would be measured along the $y$ axis. The best fit hyperplane to many points in $\mathbb  {R}^2$ would be found by regressing the data points once with $y = \beta x + \epsilon $ and once with $x = \beta y + \epsilon $ and selecting the result with the smaller $||\epsilon ||_1$. (The figure is from J. P. Brooks (2014).}}{123}{figure.10.4}}
+\newlabel{fig:l1pca}{{10.4}{123}{Distance of a point to a hyperplane in $L^1$ and $L^2$. The $L^1$ distance in this case is just the distance along the $x$ axis. If the hyperplane was cutting a shallower angle, then the distance would be measured along the $y$ axis. The best fit hyperplane to many points in $\mathbb {R}^2$ would be found by regressing the data points once with $y = \beta x + \epsilon $ and once with $x = \beta y + \epsilon $ and selecting the result with the smaller $||\epsilon ||_1$. (The figure is from J. P. Brooks (2014)}{figure.10.4}{}}
 \citation{gavish2013optimal}
 \citation{stevebrunton}
-\@writefile{lof}{\contentsline {figure}{\numberline {10.5}{\ignorespaces Left: The first 34 basis faces stored in the $\mathbf  {W}$ matrix extracted using NNMF under Frobenius norm from the "Labeled Faces in the Wild" Dataset. The basis images are normalized and shown on a log scale because they have very different contrast and brightness. The normalized images are then all shown on the same color scale. Right: Five sample portraits from the dataset approximated using different numbers of basis faces. The NNMF was done for a value of $r=300$. The original portraits had $2914$ pixels. In contrast to SVD, the basis vectors obtained through NNMF do not necessarily have an internal ordering in terms of how much of the variance in the dataset they explain.}}{122}{figure.10.5}}
-\newlabel{fig:nnmf_eigenfaces}{{10.5}{122}{Left: The first 34 basis faces stored in the $\mathbf {W}$ matrix extracted using NNMF under Frobenius norm from the "Labeled Faces in the Wild" Dataset. The basis images are normalized and shown on a log scale because they have very different contrast and brightness. The normalized images are then all shown on the same color scale. Right: Five sample portraits from the dataset approximated using different numbers of basis faces. The NNMF was done for a value of $r=300$. The original portraits had $2914$ pixels. In contrast to SVD, the basis vectors obtained through NNMF do not necessarily have an internal ordering in terms of how much of the variance in the dataset they explain}{figure.10.5}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {10.8}Optimal Truncation}{122}{section.10.8}}
-\newlabel{sec:truncation}{{10.8}{122}{Optimal Truncation}{section.10.8}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {10.8.1}Scree Plots, Heuristic Methods}{122}{subsection.10.8.1}}
-\newlabel{sec:scree}{{10.8.1}{122}{Scree Plots, Heuristic Methods}{subsection.10.8.1}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {10.6}{\ignorespaces Left: The first 6 basis faces stored in the $\mathbf  {W}$ matrix extracted using NNMF under Frobenius norm from the "Labeled Faces in the Wild" Dataset. Right: Sample images expressed in the reduced basis.}}{123}{figure.10.6}}
-\newlabel{fig:nnmf_eigenfaces2}{{10.6}{123}{Left: The first 6 basis faces stored in the $\mathbf {W}$ matrix extracted using NNMF under Frobenius norm from the "Labeled Faces in the Wild" Dataset. Right: Sample images expressed in the reduced basis}{figure.10.6}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {10.7}{\ignorespaces Left: Original image of Princess Yvonne und Prince Alexander zu Sayn-Wittgenstein, photographed by their mother, Princess Marianne, in 1955 (1280 by 1277 pixels). Middle: Scree plot, which shows that the first few components are dominant in the image. Right: Cumulative plot that shows that the first singular component accounts for more than 20\% of the decomposition.}}{123}{figure.10.7}}
-\newlabel{fig:svd_scree}{{10.7}{123}{Left: Original image of Princess Yvonne und Prince Alexander zu Sayn-Wittgenstein, photographed by their mother, Princess Marianne, in 1955 (1280 by 1277 pixels). Middle: Scree plot, which shows that the first few components are dominant in the image. Right: Cumulative plot that shows that the first singular component accounts for more than 20\% of the decomposition}{figure.10.7}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10.5}{\ignorespaces Left: The first 34 basis faces stored in the $\mathbf  {W}$ matrix extracted using NNMF under Frobenius norm from the "Labeled Faces in the Wild" Dataset. The basis images are normalized and shown on a log scale because they have very different contrast and brightness. The normalized images are then all shown on the same color scale. Right: Five sample portraits from the dataset approximated using different numbers of basis faces. The NNMF was done for a value of $r=300$. The original portraits had $2914$ pixels. In contrast to SVD, the basis vectors obtained through NNMF do not necessarily have an internal ordering in terms of how much of the variance in the dataset they explain.}}{124}{figure.10.5}}
+\newlabel{fig:nnmf_eigenfaces}{{10.5}{124}{Left: The first 34 basis faces stored in the $\mathbf {W}$ matrix extracted using NNMF under Frobenius norm from the "Labeled Faces in the Wild" Dataset. The basis images are normalized and shown on a log scale because they have very different contrast and brightness. The normalized images are then all shown on the same color scale. Right: Five sample portraits from the dataset approximated using different numbers of basis faces. The NNMF was done for a value of $r=300$. The original portraits had $2914$ pixels. In contrast to SVD, the basis vectors obtained through NNMF do not necessarily have an internal ordering in terms of how much of the variance in the dataset they explain}{figure.10.5}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {10.8}Optimal Truncation}{124}{section.10.8}}
+\newlabel{sec:truncation}{{10.8}{124}{Optimal Truncation}{section.10.8}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {10.8.1}Scree Plots, Heuristic Methods}{124}{subsection.10.8.1}}
+\newlabel{sec:scree}{{10.8.1}{124}{Scree Plots, Heuristic Methods}{subsection.10.8.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10.6}{\ignorespaces Left: The first 6 basis faces stored in the $\mathbf  {W}$ matrix extracted using NNMF under Frobenius norm from the "Labeled Faces in the Wild" Dataset. Right: Sample images expressed in the reduced basis.}}{125}{figure.10.6}}
+\newlabel{fig:nnmf_eigenfaces2}{{10.6}{125}{Left: The first 6 basis faces stored in the $\mathbf {W}$ matrix extracted using NNMF under Frobenius norm from the "Labeled Faces in the Wild" Dataset. Right: Sample images expressed in the reduced basis}{figure.10.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10.7}{\ignorespaces Left: Original image of Princess Yvonne und Prince Alexander zu Sayn-Wittgenstein, photographed by their mother, Princess Marianne, in 1955 (1280 by 1277 pixels). Middle: Scree plot, which shows that the first few components are dominant in the image. Right: Cumulative plot that shows that the first singular component accounts for more than 20\% of the decomposition.}}{125}{figure.10.7}}
+\newlabel{fig:svd_scree}{{10.7}{125}{Left: Original image of Princess Yvonne und Prince Alexander zu Sayn-Wittgenstein, photographed by their mother, Princess Marianne, in 1955 (1280 by 1277 pixels). Middle: Scree plot, which shows that the first few components are dominant in the image. Right: Cumulative plot that shows that the first singular component accounts for more than 20\% of the decomposition}{figure.10.7}{}}
 \citation{gavish2013optimal}
 \citation{gavish2013optimal}
 \citation{gavish2013optimal}
 \citation{hastie2015matrix}
-\@writefile{toc}{\contentsline {subsection}{\numberline {10.8.2}Gavish \& Donoho's Optimal Threshold for SVD}{124}{subsection.10.8.2}}
-\@writefile{toc}{\contentsline {section}{\numberline {10.9}Matrix Completion, Imputation}{124}{section.10.9}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {10.9.1}Nuclear Norm Regularization}{124}{subsection.10.9.1}}
-\@writefile{lof}{\contentsline {figure}{\numberline {10.8}{\ignorespaces Left: Princess and Prince zu Sayn-Wittgenstein with different amounts of Gaussian noise added. Center: The same image estimated using TSVD with Gavish \& Donoho's approximate rank threshold. Right: Singular value spectrum of original, noise and truncated images. TSVD reduces the average mean square error (AMSE) with respect to the original image by over 50\%. Visually, the difference is not too perceptible.}}{125}{figure.10.8}}
-\newlabel{fig:truncated_svd}{{10.8}{125}{Left: Princess and Prince zu Sayn-Wittgenstein with different amounts of Gaussian noise added. Center: The same image estimated using TSVD with Gavish \& Donoho's approximate rank threshold. Right: Singular value spectrum of original, noise and truncated images. TSVD reduces the average mean square error (AMSE) with respect to the original image by over 50\%. Visually, the difference is not too perceptible}{figure.10.8}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {10.9}{\ignorespaces Average means square error relative to the original image for the photo with added noise (blue) and after TSVD denoising (organge). The percentage of components retained via Gavish \& Donoho's approximate rank threshold shown in green. $\sigma _{\epsilon }$ is the standard deviation of the added (Gaussian) noise and $\sigma _0$ is the standard deviation of the pixel values of the original image. When $\sigma _{\epsilon }$ is small, G \& D automatically truncates the TSVD at about 40\% of the singular values, which is why, at first, the "denoised" image has greater error than the noisy issues.}}{126}{figure.10.9}}
-\newlabel{fig:truncated_svd}{{10.9}{126}{Average means square error relative to the original image for the photo with added noise (blue) and after TSVD denoising (organge). The percentage of components retained via Gavish \& Donoho's approximate rank threshold shown in green. $\sigma _{\epsilon }$ is the standard deviation of the added (Gaussian) noise and $\sigma _0$ is the standard deviation of the pixel values of the original image. When $\sigma _{\epsilon }$ is small, G \& D automatically truncates the TSVD at about 40\% of the singular values, which is why, at first, the "denoised" image has greater error than the noisy issues}{figure.10.9}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {10.10}{\ignorespaces Results for different imputation methods reconstructing the image of the man rumored to be Bayes himself after 50\% of the pixels are removed.}}{127}{figure.10.10}}
-\newlabel{fig:impute_05}{{10.10}{127}{Results for different imputation methods reconstructing the image of the man rumored to be Bayes himself after 50\% of the pixels are removed}{figure.10.10}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {10.8.2}Gavish \& Donoho's Optimal Threshold for SVD}{126}{subsection.10.8.2}}
+\@writefile{toc}{\contentsline {section}{\numberline {10.9}Matrix Completion, Imputation}{126}{section.10.9}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {10.9.1}Nuclear Norm Regularization}{126}{subsection.10.9.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10.8}{\ignorespaces Left: Princess and Prince zu Sayn-Wittgenstein with different amounts of Gaussian noise added. Center: The same image estimated using TSVD with Gavish \& Donoho's approximate rank threshold. Right: Singular value spectrum of original, noise and truncated images. TSVD reduces the average mean square error (AMSE) with respect to the original image by over 50\%. Visually, the difference is not too perceptible.}}{127}{figure.10.8}}
+\newlabel{fig:truncated_svd}{{10.8}{127}{Left: Princess and Prince zu Sayn-Wittgenstein with different amounts of Gaussian noise added. Center: The same image estimated using TSVD with Gavish \& Donoho's approximate rank threshold. Right: Singular value spectrum of original, noise and truncated images. TSVD reduces the average mean square error (AMSE) with respect to the original image by over 50\%. Visually, the difference is not too perceptible}{figure.10.8}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10.9}{\ignorespaces Average means square error relative to the original image for the photo with added noise (blue) and after TSVD denoising (organge). The percentage of components retained via Gavish \& Donoho's approximate rank threshold shown in green. $\sigma _{\epsilon }$ is the standard deviation of the added (Gaussian) noise and $\sigma _0$ is the standard deviation of the pixel values of the original image. When $\sigma _{\epsilon }$ is small, G \& D automatically truncates the TSVD at about 40\% of the singular values, which is why, at first, the "denoised" image has greater error than the noisy issues.}}{128}{figure.10.9}}
+\newlabel{fig:truncated_svd}{{10.9}{128}{Average means square error relative to the original image for the photo with added noise (blue) and after TSVD denoising (organge). The percentage of components retained via Gavish \& Donoho's approximate rank threshold shown in green. $\sigma _{\epsilon }$ is the standard deviation of the added (Gaussian) noise and $\sigma _0$ is the standard deviation of the pixel values of the original image. When $\sigma _{\epsilon }$ is small, G \& D automatically truncates the TSVD at about 40\% of the singular values, which is why, at first, the "denoised" image has greater error than the noisy issues}{figure.10.9}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10.10}{\ignorespaces Results for different imputation methods reconstructing the image of the man rumored to be Bayes himself after 50\% of the pixels are removed.}}{129}{figure.10.10}}
+\newlabel{fig:impute_05}{{10.10}{129}{Results for different imputation methods reconstructing the image of the man rumored to be Bayes himself after 50\% of the pixels are removed}{figure.10.10}{}}
 \citation{mazumder2010spectral}
-\newlabel{Autoencoders}{{10.9.1}{128}{Nuclear Norm Regularization}{equation.10.9.19}{}}
-\newlabel{Variational Autoencoders}{{10.9.1}{128}{Nuclear Norm Regularization}{equation.10.9.19}{}}
-\newlabel{Concept Vectors}{{10.9.1}{128}{Nuclear Norm Regularization}{equation.10.9.19}{}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {11}Dynamical Systems}{129}{chapter.11}}
+\newlabel{Autoencoders}{{10.9.1}{130}{Nuclear Norm Regularization}{equation.10.9.19}{}}
+\newlabel{Variational Autoencoders}{{10.9.1}{130}{Nuclear Norm Regularization}{equation.10.9.19}{}}
+\newlabel{Concept Vectors}{{10.9.1}{130}{Nuclear Norm Regularization}{equation.10.9.19}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {11}Dynamical Systems}{131}{chapter.11}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \ttl@writefile{ptc}{\ttl@stoptoc{default@11}}
 \ttl@writefile{ptc}{\ttl@starttoc{default@12}}
-\newlabel{chp:dynamicalsystems}{{11}{129}{Dynamical Systems}{chapter.11}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {11.1}Mode Decompositions}{129}{section.11.1}}
+\newlabel{chp:dynamicalsystems}{{11}{131}{Dynamical Systems}{chapter.11}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {11.1}Mode Decompositions}{131}{section.11.1}}
 \citation{cvitanovic2016chaos,salova2019koopman}
 \citation{megretski2004pod}
-\@writefile{toc}{\contentsline {section}{\numberline {11.2}Koopman and Frobenius-Perron Operators}{130}{section.11.2}}
-\@writefile{toc}{\contentsline {section}{\numberline {11.3}Proper Orthogonal Decomposition (POD)}{130}{section.11.3}}
+\@writefile{toc}{\contentsline {section}{\numberline {11.2}Koopman and Frobenius-Perron Operators}{132}{section.11.2}}
+\@writefile{toc}{\contentsline {section}{\numberline {11.3}Proper Orthogonal Decomposition (POD)}{132}{section.11.3}}
 \citation{stevebrunton}
 \citation{stevebrunton}
-\@writefile{toc}{\contentsline {section}{\numberline {11.4}Dynamic Mode Decomposition (DMD)}{131}{section.11.4}}
-\newlabel{sec:dmd}{{11.4}{131}{Dynamic Mode Decomposition (DMD)}{section.11.4}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {11.5}Extended Dynamical Mode Decomposition (EDMD)}{132}{section.11.5}}
-\newlabel{sec:edmd}{{11.5}{132}{Extended Dynamical Mode Decomposition (EDMD)}{section.11.5}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {11.6}Sparse Identification of Nonlinear Dynamics (SINDy)}{132}{section.11.6}}
-\newlabel{sec:sindy}{{11.6}{132}{Sparse Identification of Nonlinear Dynamics (SINDy)}{section.11.6}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {11.7}DMD with Irregularly Sampled Timesteps}{132}{section.11.7}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {12}Exploratory Data Analysis}{133}{chapter.12}}
+\@writefile{toc}{\contentsline {section}{\numberline {11.4}Dynamic Mode Decomposition (DMD)}{133}{section.11.4}}
+\newlabel{sec:dmd}{{11.4}{133}{Dynamic Mode Decomposition (DMD)}{section.11.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {11.5}Extended Dynamical Mode Decomposition (EDMD)}{134}{section.11.5}}
+\newlabel{sec:edmd}{{11.5}{134}{Extended Dynamical Mode Decomposition (EDMD)}{section.11.5}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {11.6}Sparse Identification of Nonlinear Dynamics (SINDy)}{134}{section.11.6}}
+\newlabel{sec:sindy}{{11.6}{134}{Sparse Identification of Nonlinear Dynamics (SINDy)}{section.11.6}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {11.7}DMD with Irregularly Sampled Timesteps}{134}{section.11.7}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {12}Exploratory Data Analysis}{135}{chapter.12}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \ttl@writefile{ptc}{\ttl@stoptoc{default@12}}
 \ttl@writefile{ptc}{\ttl@starttoc{default@13}}
-\@writefile{toc}{\contentsline {section}{\numberline {12.1}Basic Steps}{133}{section.12.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {12.1.1}Import, Clean, Data Census}{133}{subsection.12.1.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {12.1.2}Single Variable Explorations}{133}{subsection.12.1.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {12.1.3}Pair-wise Explorations}{133}{subsection.12.1.3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {12.1.4}Multivariate Analysis}{133}{subsection.12.1.4}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {12.1.5}Estimation and Hypothesis Testing}{133}{subsection.12.1.5}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {12.1.6}Visualization}{133}{subsection.12.1.6}}
+\@writefile{toc}{\contentsline {section}{\numberline {12.1}Basic Steps}{135}{section.12.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {12.1.1}Import, Clean, Data Census}{135}{subsection.12.1.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {12.1.2}Single Variable Explorations}{135}{subsection.12.1.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {12.1.3}Pair-wise Explorations}{135}{subsection.12.1.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {12.1.4}Multivariate Analysis}{135}{subsection.12.1.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {12.1.5}Estimation and Hypothesis Testing}{135}{subsection.12.1.5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {12.1.6}Visualization}{135}{subsection.12.1.6}}
 \citation{athey2016generalized}
-\@writefile{toc}{\contentsline {chapter}{\numberline {13}Causality}{135}{chapter.13}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {13}Causality}{137}{chapter.13}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \ttl@writefile{ptc}{\ttl@stoptoc{default@13}}
 \ttl@writefile{ptc}{\ttl@starttoc{default@14}}
-\@writefile{toc}{\contentsline {section}{\numberline {13.1}Generalized Random Forests}{135}{section.13.1}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {14}Machine Learning}{137}{chapter.14}}
+\@writefile{toc}{\contentsline {section}{\numberline {13.1}Generalized Random Forests}{137}{section.13.1}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {14}Machine Learning}{139}{chapter.14}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \ttl@writefile{ptc}{\ttl@stoptoc{default@14}}
 \ttl@writefile{ptc}{\ttl@starttoc{default@15}}
-\newlabel{chp:machinelearning}{{14}{137}{Machine Learning}{chapter.14}{}}
+\newlabel{chp:machinelearning}{{14}{139}{Machine Learning}{chapter.14}{}}
 \bibstyle{agsm}
 \bibdata{references}
-\@writefile{toc}{\contentsline {chapter}{\numberline {15}Algorithms}{139}{chapter.15}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {15}Algorithms}{141}{chapter.15}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \ttl@writefile{ptc}{\ttl@stoptoc{default@15}}
 \ttl@writefile{ptc}{\ttl@starttoc{default@16}}
-\@writefile{lof}{\contentsline {figure}{\numberline {15.1}{\ignorespaces Common time complexities for algorithms.}}{140}{figure.15.1}}
-\newlabel{fig:algorithms_time_complexity}{{15.1}{140}{Common time complexities for algorithms}{figure.15.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {15.1}{\ignorespaces Common time complexities for algorithms.}}{142}{figure.15.1}}
+\newlabel{fig:algorithms_time_complexity}{{15.1}{142}{Common time complexities for algorithms}{figure.15.1}{}}
 \harvardcite{amoeba2015svdpca}{amoeba}{amoeba}{2015}
 \harvardcite{athey2016generalized}{Athey, Tibshirani \harvardand \^^MWager}{Athey et~al.}{2016}
 \harvardcite{barnesmatrixdiff}{Barnes}{Barnes}{n/a}
@@ -789,11 +799,12 @@
 \harvardcite{rgeraNotes}{Gera}{Gera}{2009}
 \harvardcite{gillis2014nonnegative}{Gillis}{Gillis}{2014}
 \harvardcite{hastie2015matrix}{Hastie, Mazumder, Lee \harvardand \^^MZadeh}{Hastie et~al.}{2015}
+\harvardcite{hilbe2014modeling}{Hilbe}{Hilbe}{2014}
 \harvardcite{kronenburg2011binomial}{Kronenburg}{Kronenburg}{2011}
 \harvardcite{lindgren2006lectures}{Lindgren}{Lindgren}{2006}
-\harvardcite{mathworkseig}{Mathworks}{Mathworks}{n/a}
 \ttl@writefile{ptc}{\ttl@stoptoc{default@16}}
 \ttl@writefile{ptc}{\ttl@starttoc{default@17}}
+\harvardcite{mathworkseig}{Mathworks}{Mathworks}{n/a}
 \harvardcite{mazumder2010spectral}{Mazumder, Hastie \harvardand \^^MTibshirani}{Mazumder et~al.}{2010}
 \harvardcite{megretski2004pod}{Megretski}{Megretski}{2004}
 \harvardcite{rodriguez2007generalized}{Rodriguez}{Rodriguez}{2007}

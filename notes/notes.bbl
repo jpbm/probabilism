@@ -92,6 +92,10 @@ Hastie, T., Mazumder, R., Lee, J.~D. \harvardand\ Zadeh, R.  \harvardyearleft
   alternating least squares', {\em The Journal of Machine Learning Research}
   {\bf 16}(1),~3367--3402.
 
+\harvarditem{Hilbe}{2014}{hilbe2014modeling}
+Hilbe, J.~M.  \harvardyearleft 2014\harvardyearright , {\em Modeling count
+  data}, Cambridge University Press.
+
 \harvarditem{Kronenburg}{2011}{kronenburg2011binomial}
 Kronenburg, M.  \harvardyearleft 2011\harvardyearright , `The binomial
   coefficient for negative arguments', {\em arXiv preprint arXiv:1105.3689} .
