@@ -479,15 +479,15 @@
 \contentsline {subparagraph}{There is no ``typical" large deviation}{101}{subparagraph*.100}
 \contentsline {subsection}{\numberline {7.11.2}Maximum to Sum}{101}{subsection.7.11.2}
 \contentsline {subsection}{\numberline {7.11.3}Maximum Domain of Attraction}{101}{subsection.7.11.3}
-\contentsline {subsection}{\numberline {7.11.4}Hidden Tail, Problems in Estimating Moments}{103}{subsection.7.11.4}
-\contentsline {section}{\numberline {7.12}$R^2$ Value}{103}{section.7.12}
-\contentsline {section}{\numberline {7.13}Regression Diagnostics}{103}{section.7.13}
-\contentsline {section}{\numberline {7.14}t-Statistics}{103}{section.7.14}
-\contentsline {section}{\numberline {7.15}AIC and BIC}{103}{section.7.15}
-\contentsline {section}{\numberline {7.16}Factor Regression}{103}{section.7.16}
-\contentsline {section}{\numberline {7.17}Factor Models}{103}{section.7.17}
-\contentsline {section}{\numberline {7.18}How to Combine Estimates with Different Uncertainties}{103}{section.7.18}
-\contentsline {section}{\numberline {7.19}How to Tackle Very High Dimensional Feature Spaces}{103}{section.7.19}
+\contentsline {subsection}{\numberline {7.11.4}Hidden Tail, Problems in Estimating Moments}{104}{subsection.7.11.4}
+\contentsline {section}{\numberline {7.12}$R^2$ Value}{104}{section.7.12}
+\contentsline {section}{\numberline {7.13}Regression Diagnostics}{104}{section.7.13}
+\contentsline {section}{\numberline {7.14}t-Statistics}{104}{section.7.14}
+\contentsline {section}{\numberline {7.15}AIC and BIC}{104}{section.7.15}
+\contentsline {section}{\numberline {7.16}Factor Regression}{104}{section.7.16}
+\contentsline {section}{\numberline {7.17}Factor Models}{104}{section.7.17}
+\contentsline {section}{\numberline {7.18}How to Combine Estimates with Different Uncertainties}{104}{section.7.18}
+\contentsline {section}{\numberline {7.19}How to Tackle Very High Dimensional Feature Spaces}{104}{section.7.19}
 \contentsline {chapter}{\numberline {8}Linear Regression}{105}{chapter.8}
 \ttl@stoptoc {default@8}
 \ttl@starttoc {default@9}
