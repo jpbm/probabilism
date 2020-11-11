@@ -328,47 +328,50 @@
 \BOOKMARK [1][-]{section.8.6}{Generalized Linear Models}{chapter.8}% 328
 \BOOKMARK [1][-]{section.8.7}{Count Regressions}{chapter.8}% 329
 \BOOKMARK [2][-]{subsection.8.7.1}{Poisson Regression Models}{section.8.7}% 330
-\BOOKMARK [0][-]{chapter.9}{Bayesian Data Analysis}{}% 331
-\BOOKMARK [1][-]{section.9.1}{Markov Chain Monte Carlo Methods}{chapter.9}% 332
-\BOOKMARK [0][-]{chapter.10}{Unsupervised Learning}{}% 333
-\BOOKMARK [1][-]{section.10.1}{Blind Source Separation}{chapter.10}% 334
-\BOOKMARK [1][-]{section.10.2}{Clustering}{chapter.10}% 335
-\BOOKMARK [2][-]{subsection.10.2.1}{K-Means}{section.10.2}% 336
-\BOOKMARK [2][-]{subsection.10.2.2}{Affinity Propagation}{section.10.2}% 337
-\BOOKMARK [1][-]{section.10.3}{Independent Component Analysis \(ICA\)}{chapter.10}% 338
-\BOOKMARK [1][-]{section.10.4}{Compressed Sensing}{chapter.10}% 339
-\BOOKMARK [1][-]{section.10.5}{X = UVT Eigenanalysis, Singular Value Decomposition \(SVD\)}{chapter.10}% 340
-\BOOKMARK [2][-]{subsection.10.5.1}{Example: Eigenfaces and Facial Recognition}{section.10.5}% 341
-\BOOKMARK [2][-]{subsection.10.5.2}{Tracking an Eigensystem over Time}{section.10.5}% 342
-\BOOKMARK [2][-]{subsection.10.5.3}{Bayesian SVD}{section.10.5}% 343
-\BOOKMARK [2][-]{subsection.10.5.4}{Randomized SVD}{section.10.5}% 344
-\BOOKMARK [1][-]{section.10.6}{Principal Component Analysis \(PCA\)}{chapter.10}% 345
-\BOOKMARK [2][-]{subsection.10.6.1}{Relationship between PCA and SVD}{section.10.6}% 346
-\BOOKMARK [2][-]{subsection.10.6.2}{Tracking Principal Components over Time}{section.10.6}% 347
-\BOOKMARK [2][-]{subsection.10.6.3}{L1-Norm Principal Component Analysis \(L1 PCA\)}{section.10.6}% 348
-\BOOKMARK [1][-]{section.10.7}{X=WH Non-Negative Matrix Factorization}{chapter.10}% 349
-\BOOKMARK [1][-]{section.10.8}{Optimal Truncation}{chapter.10}% 350
-\BOOKMARK [2][-]{subsection.10.8.1}{Scree Plots, Heuristic Methods}{section.10.8}% 351
-\BOOKMARK [2][-]{subsection.10.8.2}{Gavish \046 Donoho's Optimal Threshold for SVD}{section.10.8}% 352
-\BOOKMARK [1][-]{section.10.9}{Matrix Completion, Imputation}{chapter.10}% 353
-\BOOKMARK [2][-]{subsection.10.9.1}{Nuclear Norm Regularization}{section.10.9}% 354
-\BOOKMARK [0][-]{chapter.11}{Dynamical Systems}{}% 355
-\BOOKMARK [1][-]{section.11.1}{Mode Decompositions}{chapter.11}% 356
-\BOOKMARK [1][-]{section.11.2}{Koopman and Frobenius-Perron Operators}{chapter.11}% 357
-\BOOKMARK [1][-]{section.11.3}{Proper Orthogonal Decomposition \(POD\)}{chapter.11}% 358
-\BOOKMARK [1][-]{section.11.4}{Dynamic Mode Decomposition \(DMD\)}{chapter.11}% 359
-\BOOKMARK [1][-]{section.11.5}{Extended Dynamical Mode Decomposition \(EDMD\)}{chapter.11}% 360
-\BOOKMARK [1][-]{section.11.6}{Sparse Identification of Nonlinear Dynamics \(SINDy\)}{chapter.11}% 361
-\BOOKMARK [1][-]{section.11.7}{DMD with Irregularly Sampled Timesteps}{chapter.11}% 362
-\BOOKMARK [0][-]{chapter.12}{Exploratory Data Analysis}{}% 363
-\BOOKMARK [1][-]{section.12.1}{Basic Steps}{chapter.12}% 364
-\BOOKMARK [2][-]{subsection.12.1.1}{Import, Clean, Data Census}{section.12.1}% 365
-\BOOKMARK [2][-]{subsection.12.1.2}{Single Variable Explorations}{section.12.1}% 366
-\BOOKMARK [2][-]{subsection.12.1.3}{Pair-wise Explorations}{section.12.1}% 367
-\BOOKMARK [2][-]{subsection.12.1.4}{Multivariate Analysis}{section.12.1}% 368
-\BOOKMARK [2][-]{subsection.12.1.5}{Estimation and Hypothesis Testing}{section.12.1}% 369
-\BOOKMARK [2][-]{subsection.12.1.6}{Visualization}{section.12.1}% 370
-\BOOKMARK [0][-]{chapter.13}{Causality}{}% 371
-\BOOKMARK [1][-]{section.13.1}{Generalized Random Forests}{chapter.13}% 372
-\BOOKMARK [0][-]{chapter.14}{Machine Learning}{}% 373
-\BOOKMARK [0][-]{chapter.15}{Algorithms}{}% 374
+\BOOKMARK [1][-]{section.8.8}{Logistic Regression}{chapter.8}% 331
+\BOOKMARK [2][-]{subsection.8.8.1}{Binary Response Case}{section.8.8}% 332
+\BOOKMARK [2][-]{subsection.8.8.2}{Pseudo-R2}{section.8.8}% 333
+\BOOKMARK [0][-]{chapter.9}{Bayesian Data Analysis}{}% 334
+\BOOKMARK [1][-]{section.9.1}{Markov Chain Monte Carlo Methods}{chapter.9}% 335
+\BOOKMARK [0][-]{chapter.10}{Unsupervised Learning}{}% 336
+\BOOKMARK [1][-]{section.10.1}{Blind Source Separation}{chapter.10}% 337
+\BOOKMARK [1][-]{section.10.2}{Clustering}{chapter.10}% 338
+\BOOKMARK [2][-]{subsection.10.2.1}{K-Means}{section.10.2}% 339
+\BOOKMARK [2][-]{subsection.10.2.2}{Affinity Propagation}{section.10.2}% 340
+\BOOKMARK [1][-]{section.10.3}{Independent Component Analysis \(ICA\)}{chapter.10}% 341
+\BOOKMARK [1][-]{section.10.4}{Compressed Sensing}{chapter.10}% 342
+\BOOKMARK [1][-]{section.10.5}{X = UVT Eigenanalysis, Singular Value Decomposition \(SVD\)}{chapter.10}% 343
+\BOOKMARK [2][-]{subsection.10.5.1}{Example: Eigenfaces and Facial Recognition}{section.10.5}% 344
+\BOOKMARK [2][-]{subsection.10.5.2}{Tracking an Eigensystem over Time}{section.10.5}% 345
+\BOOKMARK [2][-]{subsection.10.5.3}{Bayesian SVD}{section.10.5}% 346
+\BOOKMARK [2][-]{subsection.10.5.4}{Randomized SVD}{section.10.5}% 347
+\BOOKMARK [1][-]{section.10.6}{Principal Component Analysis \(PCA\)}{chapter.10}% 348
+\BOOKMARK [2][-]{subsection.10.6.1}{Relationship between PCA and SVD}{section.10.6}% 349
+\BOOKMARK [2][-]{subsection.10.6.2}{Tracking Principal Components over Time}{section.10.6}% 350
+\BOOKMARK [2][-]{subsection.10.6.3}{L1-Norm Principal Component Analysis \(L1 PCA\)}{section.10.6}% 351
+\BOOKMARK [1][-]{section.10.7}{X=WH Non-Negative Matrix Factorization}{chapter.10}% 352
+\BOOKMARK [1][-]{section.10.8}{Optimal Truncation}{chapter.10}% 353
+\BOOKMARK [2][-]{subsection.10.8.1}{Scree Plots, Heuristic Methods}{section.10.8}% 354
+\BOOKMARK [2][-]{subsection.10.8.2}{Gavish \046 Donoho's Optimal Threshold for SVD}{section.10.8}% 355
+\BOOKMARK [1][-]{section.10.9}{Matrix Completion, Imputation}{chapter.10}% 356
+\BOOKMARK [2][-]{subsection.10.9.1}{Nuclear Norm Regularization}{section.10.9}% 357
+\BOOKMARK [0][-]{chapter.11}{Dynamical Systems}{}% 358
+\BOOKMARK [1][-]{section.11.1}{Mode Decompositions}{chapter.11}% 359
+\BOOKMARK [1][-]{section.11.2}{Koopman and Frobenius-Perron Operators}{chapter.11}% 360
+\BOOKMARK [1][-]{section.11.3}{Proper Orthogonal Decomposition \(POD\)}{chapter.11}% 361
+\BOOKMARK [1][-]{section.11.4}{Dynamic Mode Decomposition \(DMD\)}{chapter.11}% 362
+\BOOKMARK [1][-]{section.11.5}{Extended Dynamical Mode Decomposition \(EDMD\)}{chapter.11}% 363
+\BOOKMARK [1][-]{section.11.6}{Sparse Identification of Nonlinear Dynamics \(SINDy\)}{chapter.11}% 364
+\BOOKMARK [1][-]{section.11.7}{DMD with Irregularly Sampled Timesteps}{chapter.11}% 365
+\BOOKMARK [0][-]{chapter.12}{Exploratory Data Analysis}{}% 366
+\BOOKMARK [1][-]{section.12.1}{Basic Steps}{chapter.12}% 367
+\BOOKMARK [2][-]{subsection.12.1.1}{Import, Clean, Data Census}{section.12.1}% 368
+\BOOKMARK [2][-]{subsection.12.1.2}{Single Variable Explorations}{section.12.1}% 369
+\BOOKMARK [2][-]{subsection.12.1.3}{Pair-wise Explorations}{section.12.1}% 370
+\BOOKMARK [2][-]{subsection.12.1.4}{Multivariate Analysis}{section.12.1}% 371
+\BOOKMARK [2][-]{subsection.12.1.5}{Estimation and Hypothesis Testing}{section.12.1}% 372
+\BOOKMARK [2][-]{subsection.12.1.6}{Visualization}{section.12.1}% 373
+\BOOKMARK [0][-]{chapter.13}{Causality}{}% 374
+\BOOKMARK [1][-]{section.13.1}{Generalized Random Forests}{chapter.13}% 375
+\BOOKMARK [0][-]{chapter.14}{Machine Learning}{}% 376
+\BOOKMARK [0][-]{chapter.15}{Algorithms}{}% 377
